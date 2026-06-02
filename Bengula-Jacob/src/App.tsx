@@ -9,6 +9,7 @@ import { Menu, X } from 'lucide-react';
 import { TabId } from './types';
 import { siteConfig } from './data/siteConfig';
 import { activeSections, SectionContext } from './sections';
+import RateTicker from './components/RateTicker';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<TabId>('home');
@@ -58,23 +59,8 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 font-sans flex flex-col justify-between selection:bg-blue-600/15 selection:text-blue-900">
 
-      {/* Sovereign Market Rate Ticker */}
-      <div className="bg-blue-950 py-1.5 px-4 overflow-hidden relative text-[10px] text-blue-100 font-mono border-b border-blue-900/40">
-        <div className="flex gap-8 whitespace-nowrap animate-marquee">
-          <span className="text-amber-400 font-bold">🇰🇪 Sovereign Rates Ticker:</span>
-          <span>MMF Average Yield: <strong className="text-emerald-400">~14.5% APR</strong></span>
-          <span>•</span>
-          <span>CBK T-Bills (91-Day): <strong className="text-emerald-400">15.82%</strong></span>
-          <span>•</span>
-          <span>CBK T-Bills (182-Day): <strong className="text-emerald-400">16.35%</strong></span>
-          <span>•</span>
-          <span>Sovereign IFB 17Yr (Tax-Free): <strong className="text-amber-400">16.85% coupon</strong></span>
-          <span>•</span>
-          <span>Absa Group Dividend Yield: <strong className="text-emerald-400">~11.5%</strong></span>
-          <span>•</span>
-          <span>Nairobi Securities Exchange blue-chips: <strong className="text-emerald-400 font-bold">Accumulation Stage</strong></span>
-        </div>
-      </div>
+      {/* Sovereign Market Rate Ticker (live FX + editable local rates) */}
+      <RateTicker />
 
       {/* Main Header / Navigation */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/85 shadow-xs">
