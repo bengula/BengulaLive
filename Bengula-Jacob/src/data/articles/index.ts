@@ -11,6 +11,7 @@ import { kikuyuRidgeInfrastructure } from "./kikuyu-ridge-infrastructure";
 import { agriExportSupplyChain } from "./agri-export-supply-chain";
 import { fintechAgriCooling } from "./fintech-agri-cooling";
 import { eastAfricanSovereignSummit } from "./east-african-sovereign-summit";
+import { saccoSaversGuarantors } from "./sacco-savers-guarantors";
 
 export {
   kbBondGuide,
@@ -25,7 +26,8 @@ export {
   kikuyuRidgeInfrastructure,
   agriExportSupplyChain,
   fintechAgriCooling,
-  eastAfricanSovereignSummit
+  eastAfricanSovereignSummit,
+  saccoSaversGuarantors
 };
 
 export const allArticles = [
@@ -41,5 +43,6 @@ export const allArticles = [
   kikuyuRidgeInfrastructure,
   agriExportSupplyChain,
   fintechAgriCooling,
-  eastAfricanSovereignSummit
+  eastAfricanSovereignSummit,
+  saccoSaversGuarantors
 ];

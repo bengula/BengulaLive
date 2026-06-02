@@ -7,7 +7,8 @@ export const fintechAgriCooling: BlogPost = {
   category: "Agri-Logistics",
   author: {
     name: "Jacob Bengula",
-    role: "Venture Sponsor"
+    role: "Venture Sponsor",
+    avatar: "/images/jacob.jpg"
   },
   date: "Jun 15, 2025",
   readTime: "8 min read",

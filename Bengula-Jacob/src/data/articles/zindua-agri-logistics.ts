@@ -7,7 +7,8 @@ export const zinduaAgriLogistics: BlogPost = {
   category: "Agri-Logistics",
   author: {
     name: "Jacob Bengula",
-    role: "Venture Partner, Bengula Inc."
+    role: "Venture Partner, Bengula Inc.",
+    avatar: "/images/jacob.jpg"
   },
   date: "Nov 02, 2025",
   readTime: "5 min read",

@@ -7,7 +7,8 @@ export const kikuyuRidgeSyndicate: BlogPost = {
   category: "Real Estate",
   author: {
     name: "Jacob Bengula",
-    role: "Founder, Bengula Inc."
+    role: "Founder, Bengula Inc.",
+    avatar: "/images/jacob.jpg"
   },
   date: "Dec 18, 2025",
   readTime: "6 min read",

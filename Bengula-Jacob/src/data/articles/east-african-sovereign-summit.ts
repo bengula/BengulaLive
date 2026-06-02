@@ -7,7 +7,8 @@ export const eastAfricanSovereignSummit: BlogPost = {
   category: "Bonds & Bills",
   author: {
     name: "Jacob Bengula",
-    role: "Keynote Speaker"
+    role: "Keynote Speaker",
+    avatar: "/images/jacob.jpg"
   },
   date: "May 02, 2025",
   readTime: "7 min read",

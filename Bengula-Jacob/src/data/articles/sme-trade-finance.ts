@@ -7,7 +7,8 @@ export const smeTradeFinance: BlogPost = {
   category: "SME Trade Finance",
   author: {
     name: "Jacob Bengula",
-    role: "Founder, Bengula Inc."
+    role: "Founder, Bengula Inc.",
+    avatar: "/images/jacob.jpg"
   },
   date: "March 11, 2026",
   readTime: "7 min read",

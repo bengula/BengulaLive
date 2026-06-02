@@ -7,9 +7,10 @@ import React, { useState, useMemo } from 'react';
 import { blogPosts } from '../data/blogData';
 import { BlogPost } from '../types';
 import { categoryImage } from '../data/media';
+import { getAuthorProfile } from '../data/authors';
 import { Search, Filter, BookOpen, Clock, Calendar, ArrowLeft, Heart, Share2, Sparkles, UserCircle2 } from 'lucide-react';
 
-export default function BlogTab({ activePostId, setActivePostId }: { activePostId?: string | null; setActivePostId?: (id: string | null) => void }) {
+export default function BlogTab({ activePostId, setActivePostId, onNavigateToAuthor }: { activePostId?: string | null; setActivePostId?: (id: string | null) => void; onNavigateToAuthor?: (authorId: string) => void }) {
   const [localActivePostId, setLocalActivePostId] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -204,8 +205,25 @@ export default function BlogTab({ activePostId, setActivePostId }: { activePostI
                   )}
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-slate-800">
-                    {[activePost.author, ...(activePost.coAuthors ?? [])].map((a) => a.name).join(' & ')}
+                  <p className="text-sm font-bold text-slate-800 flex flex-wrap items-center gap-x-1">
+                    {[activePost.author, ...(activePost.coAuthors ?? [])].map((a, i, arr) => {
+                      const profile = getAuthorProfile(a.name);
+                      return (
+                        <span key={i} className="flex items-center gap-x-1">
+                          {profile && onNavigateToAuthor ? (
+                            <button
+                              onClick={() => onNavigateToAuthor(profile.id)}
+                              className="text-blue-900 hover:text-blue-700 hover:underline decoration-blue-900/40 transition cursor-pointer"
+                            >
+                              {a.name}
+                            </button>
+                          ) : (
+                            <span>{a.name}</span>
+                          )}
+                          {i < arr.length - 1 && <span className="text-slate-400 font-normal">&amp;</span>}
+                        </span>
+                      );
+                    })}
                   </p>
                   <p className="text-[10px] text-slate-500 font-medium">
                     {[activePost.author, ...(activePost.coAuthors ?? [])].map((a) => a.role).join(' · ')}

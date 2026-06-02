@@ -7,7 +7,8 @@ export const kikuyuRidgeInfrastructure: BlogPost = {
   category: "Real Estate",
   author: {
     name: "Jacob Bengula",
-    role: "Sponsor Representative"
+    role: "Sponsor Representative",
+    avatar: "/images/jacob.jpg"
   },
   date: "Aug 05, 2025",
   readTime: "6 min read",

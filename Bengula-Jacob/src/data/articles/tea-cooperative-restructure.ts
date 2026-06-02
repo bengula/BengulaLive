@@ -7,7 +7,8 @@ export const teaCooperativeRestructure: BlogPost = {
   category: "Wealth Optimization",
   author: {
     name: "Jacob Bengula",
-    role: "SME Advisory Representative"
+    role: "SME Advisory Representative",
+    avatar: "/images/jacob.jpg"
   },
   date: "Jan 28, 2026",
   readTime: "5 min read",

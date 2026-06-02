@@ -15,11 +15,13 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<TabId>('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeBlogPostId, setActiveBlogPostId] = useState<string | null>(null);
+  const [activeAuthorId, setActiveAuthorId] = useState<string | null>(null);
 
-  // Navigate between sections. Landing on the Blog tab resets to the article
-  // list (so you don't reopen the last article you happened to read).
+  // Navigate between sections. Landing on the Blog/Authors tab resets to the
+  // list view (so you don't reopen the last article/author you happened to read).
   const navigate = (id: TabId) => {
     if (id === 'blog') setActiveBlogPostId(null);
+    if (id === 'authors') setActiveAuthorId(null);
     setActiveTab(id);
     setMobileMenuOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -34,6 +36,15 @@ export default function App() {
     window.location.hash = `blog/${postId}`;
   };
 
+  // Open a specific author profile (used by clickable article bylines).
+  const goToAuthor = (authorId: string) => {
+    setActiveAuthorId(authorId);
+    setActiveTab('authors');
+    setMobileMenuOpen(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.location.hash = `author/${authorId}`;
+  };
+
   React.useEffect(() => {
     const handleHash = () => {
       const hash = window.location.hash;
@@ -43,6 +54,12 @@ export default function App() {
           setActiveBlogPostId(blogId);
           setActiveTab('blog');
         }
+      } else if (hash && hash.startsWith('#author/')) {
+        const authorId = hash.replace('#author/', '');
+        if (authorId) {
+          setActiveAuthorId(authorId);
+          setActiveTab('authors');
+        }
       }
     };
     handleHash();
@@ -50,7 +67,15 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHash);
   }, []);
 
-  const ctx: SectionContext = { navigate, goToBlogPost, activeBlogPostId, setActiveBlogPostId };
+  const ctx: SectionContext = {
+    navigate,
+    goToBlogPost,
+    activeBlogPostId,
+    setActiveBlogPostId,
+    goToAuthor,
+    activeAuthorId,
+    setActiveAuthorId,
+  };
 
   // Resolve the section to render; fall back to the first section if the
   // active id was removed/disabled in the registry.

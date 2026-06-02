@@ -7,7 +7,8 @@ export const sleepingAssetOptimization: BlogPost = {
   category: "Wealth Optimization",
   author: {
     name: "Jacob Bengula",
-    role: "Senior Portfolio Advisor"
+    role: "Senior Portfolio Advisor",
+    avatar: "/images/jacob.jpg"
   },
   date: "Oct 12, 2025",
   readTime: "4 min read",

@@ -7,7 +7,8 @@ export const sovereignDebtMasterclass: BlogPost = {
   category: "Bonds & Bills",
   author: {
     name: "Jacob Bengula",
-    role: "Senior RM Absa Kenya"
+    role: "Senior RM Absa Kenya",
+    avatar: "/images/jacob.jpg"
   },
   date: "Feb 15, 2026",
   readTime: "5 min read",

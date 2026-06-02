@@ -7,7 +7,8 @@ export const smePackagerOptimization: BlogPost = {
   category: "SME Trade Finance",
   author: {
     name: "Jacob Bengula",
-    role: "Business Consultant"
+    role: "Business Consultant",
+    avatar: "/images/jacob.jpg"
   },
   date: "Sep 22, 2025",
   readTime: "6 min read",

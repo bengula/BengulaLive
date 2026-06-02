@@ -7,7 +7,8 @@ export const agriExportSupplyChain: BlogPost = {
   category: "Agri-Logistics",
   author: {
     name: "Jacob Bengula",
-    role: "Sponsor Representative"
+    role: "Sponsor Representative",
+    avatar: "/images/jacob.jpg"
   },
   date: "Jul 11, 2025",
   readTime: "5 min read",

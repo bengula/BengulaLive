@@ -19,7 +19,7 @@
 import React from 'react';
 import type { LucideIcon } from 'lucide-react';
 import {
-  Building, User, Layers, Briefcase, BookOpen, Compass, MessageSquare, Phone,
+  Building, User, Layers, Briefcase, BookOpen, Users, Compass, MessageSquare, Phone,
 } from 'lucide-react';
 
 import { TabId } from './types';
@@ -28,6 +28,7 @@ import AboutTab from './components/AboutTab';
 import ServicesTab from './components/ServicesTab';
 import PortfolioTab from './components/PortfolioTab';
 import BlogTab from './components/BlogTab';
+import AuthorsTab from './components/AuthorsTab';
 import InvestmentTab from './components/InvestmentTab';
 import AICoach from './components/AICoach';
 import ContactTab from './components/ContactTab';
@@ -41,6 +42,11 @@ export interface SectionContext {
   /** Currently open blog article (null = show the list). */
   activeBlogPostId: string | null;
   setActiveBlogPostId: (id: string | null) => void;
+  /** Open a specific author profile by id. */
+  goToAuthor: (authorId: string) => void;
+  /** Currently open author profile (null = show the list). */
+  activeAuthorId: string | null;
+  setActiveAuthorId: (id: string | null) => void;
 }
 
 export interface SectionDef {
@@ -87,7 +93,23 @@ export const sections: SectionDef[] = [
     footerLabel: 'Blog',
     icon: BookOpen,
     render: (ctx) => (
-      <BlogTab activePostId={ctx.activeBlogPostId} setActivePostId={ctx.setActiveBlogPostId} />
+      <BlogTab
+        activePostId={ctx.activeBlogPostId}
+        setActivePostId={ctx.setActiveBlogPostId}
+        onNavigateToAuthor={ctx.goToAuthor}
+      />
+    ),
+  },
+  {
+    id: 'authors',
+    label: 'Authors',
+    icon: Users,
+    render: (ctx) => (
+      <AuthorsTab
+        activeAuthorId={ctx.activeAuthorId}
+        setActiveAuthorId={ctx.setActiveAuthorId}
+        onNavigateToBlog={ctx.goToBlogPost}
+      />
     ),
   },
   {

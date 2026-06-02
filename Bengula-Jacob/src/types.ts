@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-export type TabId = 'home' | 'about' | 'services' | 'portfolio' | 'blog' | 'investments' | 'ai-coach' | 'contact';
+export type TabId = 'home' | 'about' | 'services' | 'portfolio' | 'blog' | 'authors' | 'investments' | 'ai-coach' | 'contact';
 
 export interface Author {
   name: string;

@@ -7,7 +7,8 @@ export const kbBondGuide: BlogPost = {
   category: "Bonds & Bills",
   author: {
     name: "Jacob Bengula",
-    role: "Relationship Manager, Absa Kenya & Founder of Bengula Inc."
+    role: "Relationship Manager, Absa Kenya & Founder of Bengula Inc.",
+    avatar: "/images/jacob.jpg"
   },
   date: "May 24, 2026",
   readTime: "8 min read",
