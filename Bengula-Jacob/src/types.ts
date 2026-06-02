@@ -5,17 +5,20 @@
 
 export type TabId = 'home' | 'about' | 'services' | 'portfolio' | 'blog' | 'investments' | 'ai-coach' | 'contact';
 
+export interface Author {
+  name: string;
+  role: string;
+  avatar?: string; // optional photo: an Unsplash URL or a /images/... path
+}
+
 export interface BlogPost {
   id: string;
   title: string;
   summary: string;
   content: string; // Markdown supported content
   category: string;
-  author: {
-    name: string;
-    role: string;
-    avatar?: string;
-  };
+  author: Author;       // primary author
+  coAuthors?: Author[]; // optional — additional authors for a co-authored piece
   date: string;
   readTime: string;
   featured?: boolean;

@@ -187,19 +187,29 @@ export default function BlogTab({ activePostId, setActivePostId }: { activePostI
             {/* Author row */}
             <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
               <div className="flex items-center gap-3">
-                {activePost.author.avatar ? (
-                  <img
-                    src={activePost.author.avatar}
-                    alt={activePost.author.name}
-                    loading="lazy"
-                    className="w-10 h-10 rounded-full object-cover border border-slate-200"
-                  />
-                ) : (
-                  <UserCircle2 className="w-10 h-10 text-slate-400" />
-                )}
+                {/* Stacked avatars — one per author (photo if set, else a fallback icon) */}
+                <div className="flex -space-x-3">
+                  {[activePost.author, ...(activePost.coAuthors ?? [])].map((a, i) =>
+                    a.avatar ? (
+                      <img
+                        key={i}
+                        src={a.avatar}
+                        alt={a.name}
+                        loading="lazy"
+                        className="w-10 h-10 rounded-full object-cover border-2 border-white shadow-xs bg-slate-100"
+                      />
+                    ) : (
+                      <UserCircle2 key={i} className="w-10 h-10 text-slate-400 bg-white rounded-full border-2 border-white" />
+                    )
+                  )}
+                </div>
                 <div>
-                  <p className="text-sm font-bold text-slate-800">{activePost.author.name}</p>
-                  <p className="text-[10px] text-slate-500 font-medium">{activePost.author.role}</p>
+                  <p className="text-sm font-bold text-slate-800">
+                    {[activePost.author, ...(activePost.coAuthors ?? [])].map((a) => a.name).join(' & ')}
+                  </p>
+                  <p className="text-[10px] text-slate-500 font-medium">
+                    {[activePost.author, ...(activePost.coAuthors ?? [])].map((a) => a.role).join(' · ')}
+                  </p>
                 </div>
               </div>
 
@@ -329,7 +339,9 @@ export default function BlogTab({ activePostId, setActivePostId }: { activePostI
                 </div>
 
                 <div className="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-sans">
-                  <span className="font-bold text-slate-650">By {post.author.name}</span>
+                  <span className="font-bold text-slate-650">
+                    By {[post.author, ...(post.coAuthors ?? [])].map((a) => a.name).join(' & ')}
+                  </span>
                   <div className="flex gap-2">
                     <button
                       onClick={(e) => handleLike(post.id, e)}
