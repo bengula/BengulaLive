@@ -19,9 +19,12 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
             <div className="absolute -inset-1.5 bg-gradient-to-r from-blue-900 to-amber-500 rounded-2xl blur opacity-25 group-hover:opacity-35 transition duration-1000 group-hover:duration-200"></div>
             {/* Visual Profile Panel */}
             <div className="relative bg-white border border-slate-200 rounded-2xl p-6 md:p-8 text-center space-y-4 shadow-md">
-              <div className="w-24 h-24 bg-gradient-to-tr from-blue-900 to-blue-800 rounded-full mx-auto flex items-center justify-center border-4 border-white shadow-lg">
-                <User className="w-12 h-12 text-white" />
-              </div>
+              <img
+                src="/images/jacob.jpg"
+                alt="Jacob Bengula"
+                loading="lazy"
+                className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-white shadow-lg"
+              />
               <div>
                 <h3 className="text-xl font-bold text-slate-900">Jacob Bengula</h3>
                 <p className="text-sm text-blue-900 font-extrabold mt-1">Relationship Manager, Absa Kenya</p>

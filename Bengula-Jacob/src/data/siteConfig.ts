@@ -20,7 +20,7 @@ export interface PartnerLink {
 
 export const siteConfig = {
   brand: {
-    fullName: "Jacob Bengula",
+    fullName: "Bengula Keith W Jacob",
     shortName: "Bengula Jacob",
     initials: "BJ",
     role: "Relationship Manager, Absa Kenya",
@@ -32,10 +32,10 @@ export const siteConfig = {
   // TODO: replace these placeholders with real, public contact info.
   // ──────────────────────────────────────────────────────────────
   contact: {
-    email: "REPLACE_ME@example.com",      // primary public email (shown on Contact page)
-    workEmail: "REPLACE_ME@example.com",  // where booking requests are emailed (your work inbox)
-    phone: "+254 7XX XXX XXX",            // shown + used for WhatsApp link
-    whatsapp: "2547XXXXXXXX",             // digits only, country code, no +
+    email: "kbengula@student.maseno.ac.ke",      // primary public email (shown on Contact page)
+    workEmail: "jacob.bengula@absa.africa",  // where booking requests are emailed (your work inbox)
+    phone: "+254 741 418 199",            // shown + used for WhatsApp link
+    whatsapp: "254741418199",             // digits only, country code, no +
     location: "Nairobi, Kenya",           // city / region (no street unless you want it)
     website: "",                          // e.g. "https://yourdomain.com" — leave "" to hide
   },
@@ -68,9 +68,9 @@ export const siteConfig = {
 
   // Add only the socials you actually use; leave the array empty to hide the bar.
   socials: [
-    // { label: "LinkedIn",  href: "https://linkedin.com/in/your-handle", handle: "Jacob Bengula" },
-    // { label: "X",         href: "https://x.com/your-handle",           handle: "@yourhandle" },
-    // { label: "Instagram", href: "https://instagram.com/your-handle",   handle: "@yourhandle" },
+     { label: "LinkedIn",  href: "https://www.linkedin.com/in/bengula/", handle: "bengula" },
+    // { label: "X",         href: "https://x.com/EruditeElder",           handle: "@EruditeElder" },
+    // { label: "Instagram", href: "https://www.instagram.com/bengula_bengula/",   handle: "@bengula_bengula" },
   ] as SocialLink[],
 };
 

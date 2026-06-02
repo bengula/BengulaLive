@@ -10,7 +10,6 @@ import Resources from './Resources';
 import FAQ from './FAQ';
 import { TabId } from '../types';
 import { siteConfig } from '../data/siteConfig';
-import { images } from '../data/media';
 
 export default function HomeTab({ navigate }: { navigate: (id: TabId) => void }) {
   const [newsletterEmail, setNewsletterEmail] = useState('');
@@ -91,21 +90,16 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
           <div className="bg-white border border-slate-200 rounded-3xl p-6 w-full max-w-md space-y-6 relative overflow-hidden shadow-lg flex flex-col items-center text-center">
             <div className="absolute right-0 top-0 w-32 h-32 bg-amber-500/5 rounded-full blur-2xl"></div>
 
-            {/* Headshot Mockup */}
+            {/* Headshot */}
             <div className="relative w-36 h-36 rounded-2xl bg-gradient-to-tr from-blue-950 via-blue-900 to-amber-700 p-0.5 shadow-md">
-              <div className="w-full h-full rounded-[14px] bg-slate-900 flex flex-col items-center justify-center text-white relative overflow-hidden">
+              <div className="w-full h-full rounded-[14px] bg-slate-900 relative overflow-hidden">
                 <img
-                  src={images.heroCorporate}
-                  alt=""
-                  aria-hidden="true"
+                  src="/images/jacob.jpg"
+                  alt="Jacob Bengula"
                   loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover opacity-35"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-blue-950/40"></div>
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(255,255,255,0.08)_0%,transparent_80%)]"></div>
-                <span className="relative z-10 font-sans font-extrabold text-3xl tracking-widest text-amber-500">JB</span>
-                <span className="relative z-10 text-[9px] uppercase tracking-widest text-slate-300 font-bold mt-1">Bengula Jacob</span>
-                <div className="absolute bottom-2 inset-x-0 text-center">
+                <div className="absolute bottom-0 inset-x-0 pt-6 pb-2 text-center bg-gradient-to-t from-slate-900/90 to-transparent">
                   <span className="text-[7.5px] bg-emerald-950 text-emerald-300 border border-emerald-900 px-2 py-0.5 rounded-full uppercase font-bold font-mono">Senior Absa RM</span>
                 </div>
               </div>
