@@ -13,6 +13,11 @@ export interface SocialLink {
   handle: string;
 }
 
+export interface PartnerLink {
+  label: string;
+  href: string; // official site — leave "" to show the name without a link
+}
+
 export const siteConfig = {
   brand: {
     fullName: "Jacob Bengula",
@@ -49,6 +54,17 @@ export const siteConfig = {
       { label: "NSE Blue-chips", value: "Accumulation Stage" },
     ] as { label: string; value: string; tone?: "amber" }[],
   },
+
+  // "Professional Ecosystem" logos on the home page. Each links out to the
+  // partner's official site (opens in a new tab). Leave href "" to show the
+  // name as plain text (e.g. a private co-op with no public website).
+  // ⚠️ Verify each URL before going live.
+  partners: [
+    { label: "Absa Bank Kenya",   href: "https://www.absabank.co.ke" },
+    { label: "CBK DhowCSD Portal", href: "https://www.dhowcsd.go.ke" },
+    { label: "Nairobi Securities Exchange", href: "https://www.nse.co.ke" },
+    { label: "Meru Agri Co-op",   href: "" }, // no public site — add if one exists
+  ] as PartnerLink[],
 
   // Add only the socials you actually use; leave the array empty to hide the bar.
   socials: [

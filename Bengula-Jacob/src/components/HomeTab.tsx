@@ -277,11 +277,28 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
           <p className="text-xs font-bold text-slate-800">Collaborative Networks & Desks</p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center opacity-65 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
-          <div className="text-sm font-extrabold text-slate-600 tracking-wider font-mono">ABSA BANK KENYA</div>
-          <div className="text-sm font-extrabold text-slate-600 tracking-wider font-mono">CBK DHOWCSD PORTAL</div>
-          <div className="text-sm font-extrabold text-slate-600 tracking-wider font-mono">NSE NAIROBI CO</div>
-          <div className="text-sm font-extrabold text-slate-600 tracking-wider font-mono">MERU AGRI CO-OP</div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
+          {siteConfig.partners.map((partner) =>
+            partner.href ? (
+              <a
+                key={partner.label}
+                href={partner.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={`Visit ${partner.label}`}
+                className="text-sm font-extrabold text-slate-600 tracking-wider font-mono uppercase text-center opacity-65 grayscale hover:opacity-100 hover:grayscale-0 hover:text-blue-900 transition-all duration-300 cursor-pointer"
+              >
+                {partner.label}
+              </a>
+            ) : (
+              <span
+                key={partner.label}
+                className="text-sm font-extrabold text-slate-600 tracking-wider font-mono uppercase text-center opacity-65 grayscale"
+              >
+                {partner.label}
+              </span>
+            )
+          )}
         </div>
       </div>
 
