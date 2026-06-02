@@ -37,14 +37,18 @@ export const templateArticle: BlogPost = {
   summary:
     "A short teaser that makes someone want to click. Keep it to one or two sentences.",
 
-  // ── Cover image ───────────────────────────────────────────────────────
-  // There is NO image field here. The cover photo is chosen automatically
-  // from the article's `category` (see src/data/media.ts → categoryIds).
-  // Use one of these exact category names to get a matching cover image:
+  // ── Category & cover image ────────────────────────────────────────────
+  // By default the cover photo is chosen automatically from `category`
+  // (see src/data/media.ts → categoryIds). Use one of these exact names:
   //   "Bonds & Bills" | "Unit Trusts" | "SME Trade Finance"
   //   "Real Estate"   | "Agri-Logistics" | "Wealth Optimization"
   // (Any other value still works but falls back to a generic chart photo.)
   category: "Bonds & Bills",
+
+  // OPTIONAL: give THIS article its own unique cover, overriding the category
+  // default. Use an Unsplash URL or a local "/images/..." path (file goes in
+  // public/images/). Delete this line to keep the category photo.
+  // coverImage: "https://images.unsplash.com/photo-XXXXXXXXXXXXX?auto=format&fit=crop&w=1200&q=70",
 
   // ── Author(s) ─────────────────────────────────────────────────────────
   // Primary author is required. `avatar` is optional — give it an Unsplash

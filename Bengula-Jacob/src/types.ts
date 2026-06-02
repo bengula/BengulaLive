@@ -17,6 +17,7 @@ export interface BlogPost {
   summary: string;
   content: string; // Markdown supported content
   category: string;
+  coverImage?: string;  // optional — own cover (Unsplash URL or /images/... path); falls back to the category photo
   author: Author;       // primary author
   coAuthors?: Author[]; // optional — additional authors for a co-authored piece
   date: string;

@@ -167,7 +167,7 @@ export default function BlogTab({ activePostId, setActivePostId }: { activePostI
           {/* Cover image */}
           <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-xs aspect-[16/7]">
             <img
-              src={categoryImage(activePost.category, 1200)}
+              src={activePost.coverImage ?? categoryImage(activePost.category, 1200)}
               alt={activePost.category}
               loading="lazy"
               className="w-full h-full object-cover"
@@ -309,7 +309,7 @@ export default function BlogTab({ activePostId, setActivePostId }: { activePostI
                 {/* Cover image */}
                 <div className="aspect-[16/9] overflow-hidden bg-slate-100">
                   <img
-                    src={categoryImage(post.category, 800)}
+                    src={post.coverImage ?? categoryImage(post.category, 800)}
                     alt={post.category}
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
