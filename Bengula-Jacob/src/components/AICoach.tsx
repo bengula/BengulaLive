@@ -8,6 +8,7 @@ import { User, Send, Bot, Sparkles, AlertCircle, RefreshCw, Layers, CheckCircle2
 import { ChatMessage, UserFinanceProfile } from '../types';
 import { getCoachReply } from '../data/coachKnowledge';
 import { images } from '../data/media';
+import { renderInlineMarkdown } from '../utils/markdownText';
 
 export default function AICoach() {
   const [profile, setProfile] = useState<UserFinanceProfile>({
@@ -123,11 +124,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
         const content = trimmed.substring(2);
         return (
           <li key={index} className="list-disc list-inside text-slate-650 ml-4 text-xs leading-relaxed my-1 font-medium">
-            {content.includes('**') ? (
-              <span>
-                <strong>{content.split('**')[1]}</strong>{content.split('**')[2] || ''}
-              </span>
-            ) : content}
+            {renderInlineMarkdown(content)}
           </li>
         );
       }
@@ -139,11 +136,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
         return (
           <li key={index} className="list-decimal list-inside text-slate-650 ml-4 text-xs leading-relaxed my-1 font-medium">
             <span className="font-extrabold text-blue-900 mr-1">{number}.</span>
-            {content.includes('**') ? (
-              <span>
-                <strong>{content.split('**')[1]}</strong>{content.split('**')[2] || ''}
-              </span>
-            ) : content}
+            {renderInlineMarkdown(content)}
           </li>
         );
       }
@@ -151,7 +144,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
       // Simple paragraphs
       return (
         <p key={index} className="text-xs text-slate-600 leading-relaxed font-normal my-1">
-          {trimmed.split('**').map((part, i) => i % 2 === 1 ? <strong key={i} className="text-slate-900 font-bold">{part}</strong> : part)}
+          {renderInlineMarkdown(trimmed)}
         </p>
       );
     });

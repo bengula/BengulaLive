@@ -10,6 +10,7 @@ Everything in `public/` is served from the site root, so a file saved as
 | Use | File to edit | Field |
 |-----|--------------|-------|
 | Article cover | `src/data/articles/<article>.ts` | `coverImage: "/images/...jpg"` |
+| Inline article image | `src/data/articles/<article>.ts` content | `![Alt text](/images/...jpg "Caption")` |
 | Author photo | same article file | `author.avatar` / `coAuthors[].avatar` |
 | Hero / About / Coach / Markets banners | `src/data/media.ts` | the relevant key |
 | Partner logos / other | wherever it's used | use the `/images/...` path |

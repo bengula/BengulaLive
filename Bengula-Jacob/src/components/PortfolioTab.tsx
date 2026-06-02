@@ -4,20 +4,22 @@
  */
 
 import React, { useState } from 'react';
-import { PortfolioItem } from '../types';
 import { portfolioItemsList } from '../data/portfolioData';
+import { categoryBadgeStyles, portfolioCategoryFilters, portfolioItemTags, type PortfolioCategory, type PortfolioCategoryFilter, riskBadgeStyles } from '../data/portfolioTags';
 import { Award, Layers, TrendingUp, Building, Code2, MapPin, Calendar, Compass, ArrowUpRight, HelpCircle } from 'lucide-react';
 
 export default function PortfolioTab({ onNavigateToBlog }: { onNavigateToBlog: (id: string) => void }) {
-  const [activeCategory, setActiveCategory] = useState<'All' | 'Featured Projects' | 'Business Ventures' | 'Case Studies'>('All');
+  const [activeCategory, setActiveCategory] = useState<PortfolioCategoryFilter>('All');
 
   const filteredItems = activeCategory === 'All'
     ? portfolioItemsList
     : portfolioItemsList.filter(item => item.category === activeCategory);
 
-  const categories: ('All' | 'Featured Projects' | 'Business Ventures' | 'Case Studies')[] = [
-    'All', 'Featured Projects', 'Business Ventures', 'Case Studies'
-  ];
+  const categoryIcons: Record<PortfolioCategory, React.ReactNode> = {
+    [portfolioItemTags.project]: <Award className="w-5 h-5 text-blue-900" />,
+    [portfolioItemTags.businessVenture]: <Layers className="w-5 h-5 text-indigo-600" />,
+    [portfolioItemTags.caseStudy]: <TrendingUp className="w-5 h-5 text-emerald-600" />,
+  };
 
   return (
     <div id="portfolio-tab-root" className="space-y-8 animate-fadeIn">
@@ -34,7 +36,7 @@ export default function PortfolioTab({ onNavigateToBlog }: { onNavigateToBlog: (
 
         {/* Category Pill Filters (horizontal scrolling on mobile) */}
         <div className="flex flex-wrap gap-2 max-w-full overflow-x-auto pb-1">
-          {categories.map((cat) => (
+          {portfolioCategoryFilters.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
@@ -64,24 +66,18 @@ export default function PortfolioTab({ onNavigateToBlog }: { onNavigateToBlog: (
             <div className="space-y-4">
               <div className="flex justify-between items-start gap-1.5">
                 <div className="flex flex-wrap gap-1.5 items-center">
-                  <span className="text-[10px] bg-blue-50 text-blue-900 border border-blue-100 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
+                  <span className={`text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono ${categoryBadgeStyles[item.category]}`}>
                     {item.category}
                   </span>
                   {item.riskProfile && (
-                    <span className={`text-[9px] px-2 py-0.5 rounded font-bold uppercase tracking-wider font-mono ${
-                      item.riskProfile === 'Low' ? 'bg-emerald-50 text-emerald-800 border border-emerald-150' :
-                      item.riskProfile === 'Moderate' ? 'bg-amber-50 text-amber-800 border border-amber-150' :
-                      'bg-red-50 text-red-800 border border-red-150'
-                    }`}>
+                    <span className={`text-[9px] px-2 py-0.5 rounded font-bold uppercase tracking-wider font-mono ${riskBadgeStyles[item.riskProfile]}`}>
                       {item.riskProfile} Risk
                     </span>
                   )}
                 </div>
 
                 <div className="text-slate-400 group-hover:text-blue-900 transition-colors duration-300">
-                  {item.category === "Featured Projects" && <Award className="w-5 h-5 text-blue-900" />}
-                  {item.category === "Business Ventures" && <Layers className="w-5 h-5 text-indigo-600" />}
-                  {item.category === "Case Studies" && <TrendingUp className="w-5 h-5 text-emerald-600" />}
+                  {categoryIcons[item.category]}
                 </div>
               </div>
 

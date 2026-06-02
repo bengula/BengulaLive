@@ -83,6 +83,7 @@ export const templateArticle: BlogPost = {
   //   #### Sub-heading
   //   -    bullet point       (one per line; **bold** works inside)
   //   **bold text**
+  //   ![Alt text](/images/file.jpg "Optional caption")
   //   $$ formula $$           (renders as a highlighted formula box)
   //   | ... with the word "Feature" → renders a comparison table (advanced)
   // Everything else becomes a normal paragraph.
@@ -97,6 +98,10 @@ Use bullet points to list key takeaways:
 - **Bold lead-in:** followed by the explanation.
 - A second point that stands on its own.
 - A third point to round it out.
+
+Add an inline article image like this. Place local image files in public/images/
+and reference them with a root-relative path:
+![Treasury auction dashboard](/images/treasury-dashboard.jpg "Optional caption shown under the image")
 
 You can highlight a calculation or formula like this:
 $$\\text{Net Yield} = \\text{Gross} \\times (1 - \\text{Tax Rate})$$

@@ -8,6 +8,7 @@ import { blogPosts } from '../data/blogData';
 import { BlogPost } from '../types';
 import { categoryImage } from '../data/media';
 import { getAuthorProfile } from '../data/authors';
+import { renderInlineMarkdown } from '../utils/markdownText';
 import { Search, Filter, BookOpen, Clock, Calendar, ArrowLeft, Heart, Share2, Sparkles, UserCircle2 } from 'lucide-react';
 
 export default function BlogTab({ activePostId, setActivePostId, onNavigateToAuthor }: { activePostId?: string | null; setActivePostId?: (id: string | null) => void; onNavigateToAuthor?: (authorId: string) => void }) {
@@ -60,95 +61,204 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
 
   // Helper to parse Markdown-like syntax for safe, high-polish local rendering
   const renderMarkdown = (text: string) => {
-    return text.split('\n\n').map((paragraph, index) => {
-      const trimmed = paragraph.trim();
-      if (trimmed.startsWith('###')) {
-        return (
-          <h3 key={index} className="text-xl font-bold text-slate-900 pt-6 pb-2 border-b border-slate-205">
-            {trimmed.replace('###', '').trim()}
-          </h3>
-        );
-      }
-      if (trimmed.startsWith('####')) {
-        return (
-          <h4 key={index} className="text-lg font-bold text-slate-800 pt-4 pb-1">
-            {trimmed.replace('####', '').trim()}
-          </h4>
-        );
-      }
-      if (trimmed.startsWith('-')) {
-        const items = trimmed.split('\n').map(item => item.replace('-', '').trim());
-        return (
-          <ul key={index} className="list-disc list-inside space-y-1.5 pl-4 text-slate-650 text-sm py-2">
-            {items.map((it, idx) => (
-              <li key={idx}>
-                {it.includes('**') ? (
-                  <span>
-                    <strong>{it.split('**')[1]}</strong>{it.split('**')[2] || ''}
-                  </span>
-                ) : it}
-              </li>
-            ))}
-          </ul>
-        );
-      }
-      if (trimmed.startsWith('|') || trimmed.startsWith('===')) {
-        // Simple visual divider table representation
-        if (paragraph.includes('Feature')) {
-          return (
-            <div key={index} className="overflow-x-auto my-4 border border-slate-200 rounded-xl bg-slate-50 p-1 shadow-xs">
-              <table className="w-full text-xs text-left text-slate-700">
-                <thead className="text-[10px] text-slate-700 uppercase bg-slate-100 divide-y divide-slate-200">
-                  <tr>
-                    <th className="p-3">Feature</th>
-                    <th className="p-3">M-Akiba</th>
-                    <th className="p-3">Money Market Fund (MMF)</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-200/60 leading-relaxed font-normal">
-                  <tr>
-                    <td className="p-3 font-semibold text-slate-900">Min. Deposit</td>
-                    <td className="p-3">KSh 3,000</td>
-                    <td className="p-3">KSh 100 - 5,000</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-semibold text-slate-900">Coupon Net Mode</td>
-                    <td className="p-3 text-emerald-700 font-extrabold">10% Fixed (Tax Exempt)</td>
-                    <td className="p-3 text-emerald-700 font-extrabold">11% - 15.5% Gross Floating</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-semibold text-slate-900">Compounding frequency</td>
-                    <td className="p-3">Semi-Annual Coupons</td>
-                    <td className="p-3">Daily compounding</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-semibold text-slate-900">Access liquidity</td>
-                    <td className="p-3">Sluggish secondary market</td>
-                    <td className="p-3">Highly Liquid (24-48 Hrs)</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          );
-        }
-        return <div key={index} className="w-full border-t border-slate-200 my-4"></div>;
-      }
+    const blocks: React.ReactNode[] = [];
+    const lines = text.split('\n');
+    let paragraphLines: string[] = [];
+    let listItems: string[] = [];
+    let orderedItems: string[] = [];
+    let tableLines: string[] = [];
 
-      // Check for math block or code block
-      if (trimmed.startsWith('$$') || trimmed.includes('$$')) {
-        return (
-          <div key={index} className="bg-blue-50 border border-blue-100 rounded-xl p-4 my-3 text-center text-sm font-mono text-blue-950 font-bold shadow-xs">
-            {trimmed.replace(/\$\$/g, '').trim()}
+    const parseImage = (value: string) => {
+      const match = value.match(/^!\[([^\]]*)\]\((\S+?)(?:\s+"([^"]+)")?\)$/);
+      if (!match) return null;
+
+      return {
+        alt: match[1],
+        src: match[2],
+        caption: match[3],
+      };
+    };
+
+    const flushParagraph = () => {
+      if (paragraphLines.length === 0) return;
+      const content = paragraphLines.join(' ').trim();
+      if (content) {
+        blocks.push(
+          <p key={`p-${blocks.length}`} className="text-slate-600 text-sm leading-relaxed font-normal">
+            {renderInlineMarkdown(content)}
+          </p>
+        );
+      }
+      paragraphLines = [];
+    };
+
+    const flushList = () => {
+      if (listItems.length === 0) return;
+      blocks.push(
+        <ul key={`ul-${blocks.length}`} className="list-disc list-outside space-y-1.5 pl-5 text-slate-650 text-sm py-2">
+          {listItems.map((item, idx) => (
+            <li key={idx}>{renderInlineMarkdown(item)}</li>
+          ))}
+        </ul>
+      );
+      listItems = [];
+    };
+
+    const flushOrderedList = () => {
+      if (orderedItems.length === 0) return;
+      blocks.push(
+        <ol key={`ol-${blocks.length}`} className="list-decimal list-outside space-y-1.5 pl-5 text-slate-650 text-sm py-2">
+          {orderedItems.map((item, idx) => (
+            <li key={idx}>{renderInlineMarkdown(item)}</li>
+          ))}
+        </ol>
+      );
+      orderedItems = [];
+    };
+
+    const flushTable = () => {
+      if (tableLines.length === 0) return;
+      const rows = tableLines
+        .filter((row) => !/^\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?$/.test(row))
+        .map((row) => row.replace(/^\||\|$/g, '').split('|').map((cell) => cell.trim()));
+
+      if (rows.length > 0) {
+        const [head, ...body] = rows;
+        blocks.push(
+          <div key={`table-${blocks.length}`} className="overflow-x-auto my-4 border border-slate-200 rounded-xl bg-slate-50 p-1 shadow-xs">
+            <table className="w-full text-xs text-left text-slate-700">
+              <thead className="text-[10px] text-slate-700 uppercase bg-slate-100">
+                <tr>
+                  {head.map((cell, idx) => (
+                    <th key={idx} className="p-3 font-extrabold">
+                      {renderInlineMarkdown(cell)}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-200/60 leading-relaxed font-normal">
+                {body.map((row, rowIdx) => (
+                  <tr key={rowIdx}>
+                    {row.map((cell, cellIdx) => (
+                      <td key={cellIdx} className="p-3">
+                        {renderInlineMarkdown(cell)}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         );
       }
 
-      return (
-        <p key={index} className="text-slate-600 text-sm leading-relaxed font-normal">
-          {trimmed}
-        </p>
-      );
+      tableLines = [];
+    };
+
+    const flushAll = () => {
+      flushParagraph();
+      flushList();
+      flushOrderedList();
+      flushTable();
+    };
+
+    lines.forEach((line) => {
+      const trimmed = line.trim();
+
+      if (!trimmed) {
+        flushAll();
+        return;
+      }
+
+      if (trimmed.startsWith('####')) {
+        flushAll();
+        blocks.push(
+          <h4 key={`h4-${blocks.length}`} className="text-lg font-bold text-slate-800 pt-4 pb-1">
+            {renderInlineMarkdown(trimmed.replace('####', '').trim())}
+          </h4>
+        );
+        return;
+      }
+
+      if (trimmed.startsWith('###')) {
+        flushAll();
+        blocks.push(
+          <h3 key={`h3-${blocks.length}`} className="text-xl font-bold text-slate-900 pt-6 pb-2 border-b border-slate-205">
+            {renderInlineMarkdown(trimmed.replace('###', '').trim())}
+          </h3>
+        );
+        return;
+      }
+
+      if (trimmed === '---' || trimmed.startsWith('===')) {
+        flushAll();
+        blocks.push(<div key={`hr-${blocks.length}`} className="w-full border-t border-slate-200 my-4"></div>);
+        return;
+      }
+
+      if (trimmed.startsWith('|')) {
+        flushParagraph();
+        flushList();
+        flushOrderedList();
+        tableLines.push(trimmed);
+        return;
+      }
+
+      const image = parseImage(trimmed);
+      if (image) {
+        flushAll();
+        blocks.push(
+          <figure key={`image-${blocks.length}`} className="my-6 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xs">
+            <img
+              src={image.src}
+              alt={image.alt}
+              loading="lazy"
+              className="w-full max-h-[520px] object-contain bg-slate-100"
+            />
+            {image.caption && (
+              <figcaption className="border-t border-slate-100 bg-slate-50 px-4 py-2 text-[11px] leading-relaxed text-slate-500">
+                {renderInlineMarkdown(image.caption)}
+              </figcaption>
+            )}
+          </figure>
+        );
+        return;
+      }
+
+      if (trimmed.startsWith('- ')) {
+        flushParagraph();
+        flushOrderedList();
+        flushTable();
+        listItems.push(trimmed.replace(/^-+\s*/, ''));
+        return;
+      }
+
+      if (/^\d+\.\s/.test(trimmed)) {
+        flushParagraph();
+        flushList();
+        flushTable();
+        orderedItems.push(trimmed.replace(/^\d+\.\s/, ''));
+        return;
+      }
+
+      if (trimmed.startsWith('$$') || trimmed.includes('$$')) {
+        flushAll();
+        blocks.push(
+          <div key={`math-${blocks.length}`} className="bg-blue-50 border border-blue-100 rounded-xl p-4 my-3 text-center text-sm font-mono text-blue-950 font-bold shadow-xs">
+            {trimmed.replace(/\$\$/g, '').trim()}
+          </div>
+        );
+        return;
+      }
+
+      flushList();
+      flushOrderedList();
+      flushTable();
+      paragraphLines.push(trimmed);
     });
+
+    flushAll();
+    return blocks;
   };
 
   return (

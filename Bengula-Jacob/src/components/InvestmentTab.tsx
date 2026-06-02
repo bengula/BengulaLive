@@ -6,6 +6,7 @@
 import React, { useState, useMemo } from 'react';
 import { InvestmentOpportunity } from '../types';
 import { investmentPoolsList } from '../data/investmentsData';
+import { riskBadgeStyles } from '../data/portfolioTags';
 import { Sparkles, TrendingUp, DollarSign, Award, ArrowUpRight, ArrowRight, Wallet, Percent, ShieldCheck, Heart, FileText, Download, Briefcase, Mail, Send } from 'lucide-react';
 import { images } from '../data/media';
 
@@ -143,11 +144,7 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
                   </div>
 
                   <div className="text-right">
-                    <span className={`text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase ${
-                      item.riskProfile === 'Low' ? 'bg-emerald-50 text-emerald-800 border border-emerald-200/50' :
-                      item.riskProfile === 'Moderate' ? 'bg-amber-50 text-amber-800 border border-amber-200/50' :
-                      'bg-red-50 text-red-800 border border-red-200/50'
-                    }`}>
+                    <span className={`text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase ${riskBadgeStyles[item.riskProfile]}`}>
                       {item.riskProfile} Risk
                     </span>
                     <p className="text-emerald-700 font-extrabold text-sm font-mono mt-1 leading-none">{item.expectedYield}% APR</p>

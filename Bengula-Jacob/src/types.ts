@@ -3,6 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import type { PortfolioCategory, RiskProfile } from './data/portfolioTags';
+
 export type TabId = 'home' | 'about' | 'services' | 'portfolio' | 'blog' | 'authors' | 'investments' | 'ai-coach' | 'contact';
 
 export interface Author {
@@ -28,14 +30,14 @@ export interface BlogPost {
 export interface PortfolioItem {
   id: string;
   title: string;
-  category: 'Featured Projects' | 'Business Ventures' | 'Case Studies';
+  category: PortfolioCategory;
   description: string;
   impact: string;
   location: string;
   year: string;
   metrics: { label: string; value: string }[];
   blogId?: string;
-  riskProfile?: 'Low' | 'Moderate' | 'High';
+  riskProfile?: RiskProfile;
 }
 
 export interface ServiceDetail {
@@ -52,7 +54,7 @@ export interface ServiceDetail {
 export interface InvestmentOpportunity {
   id: string;
   title: string;
-  riskProfile: 'Low' | 'Moderate' | 'High';
+  riskProfile: RiskProfile;
   minimumAmount: number; // in KSh
   expectedYield: number; // Annualized APR in %
   tenure: string; // e.g., "5.5 Years", "91 Days"
