@@ -6,6 +6,7 @@
 import React, { useState, useMemo } from 'react';
 import { blogPosts } from '../data/blogData';
 import { BlogPost } from '../types';
+import { categoryImage } from '../data/media';
 import { Search, Filter, BookOpen, Clock, Calendar, ArrowLeft, Heart, Share2, Sparkles, UserCircle2 } from 'lucide-react';
 
 export default function BlogTab({ activePostId, setActivePostId }: { activePostId?: string | null; setActivePostId?: (id: string | null) => void }) {
@@ -163,6 +164,16 @@ export default function BlogTab({ activePostId, setActivePostId }: { activePostI
             <span>Return to Financial Education Hub</span>
           </button>
 
+          {/* Cover image */}
+          <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-xs aspect-[16/7]">
+            <img
+              src={categoryImage(activePost.category, 1200)}
+              alt={activePost.category}
+              loading="lazy"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
           {/* Featured Header */}
           <div className="space-y-4 border-b border-slate-150 pb-6 pt-4">
             <span className="text-[10px] bg-blue-50 text-blue-900 border border-blue-100 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
@@ -274,8 +285,19 @@ export default function BlogTab({ activePostId, setActivePostId }: { activePostI
               <div
                 key={post.id}
                 onClick={() => currentSetActivePostId(post.id)}
-                className="bg-white border border-slate-205 rounded-2xl p-6 hover:border-blue-900/40 hover:shadow-md transition duration-300 flex flex-col justify-between cursor-pointer group shadow-xs relative"
+                className="bg-white border border-slate-205 rounded-2xl overflow-hidden hover:border-blue-900/40 hover:shadow-md transition duration-300 flex flex-col justify-between cursor-pointer group shadow-xs relative"
               >
+                {/* Cover image */}
+                <div className="aspect-[16/9] overflow-hidden bg-slate-100">
+                  <img
+                    src={categoryImage(post.category, 800)}
+                    alt={post.category}
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+
+                <div className="p-6 flex flex-col justify-between flex-1">
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="text-[10px] bg-blue-50 text-blue-900 border border-blue-100 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
@@ -314,6 +336,7 @@ export default function BlogTab({ activePostId, setActivePostId }: { activePostI
                       <Share2 className="w-3.5 h-3.5 text-slate-400" />
                     </button>
                   </div>
+                </div>
                 </div>
 
               </div>

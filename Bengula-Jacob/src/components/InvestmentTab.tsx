@@ -7,6 +7,7 @@ import React, { useState, useMemo } from 'react';
 import { InvestmentOpportunity } from '../types';
 import { investmentPoolsList } from '../data/investmentsData';
 import { Sparkles, TrendingUp, DollarSign, Award, ArrowUpRight, ArrowRight, Wallet, Percent, ShieldCheck, Heart, FileText, Download, Briefcase, Mail, Send } from 'lucide-react';
+import { images } from '../data/media';
 
 export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: (id: string) => void }) {
   const [selectedPoolId, setSelectedPoolId] = useState<string>('real-estate-project');
@@ -87,7 +88,26 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
 
   return (
     <div id="investments-tab-root" className="space-y-10 animate-fadeIn">
-      
+
+      {/* Markets banner */}
+      <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-xs h-40 md:h-48">
+        <img
+          src={images.markets}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-950/85 to-blue-950/30"></div>
+        <div className="relative h-full flex flex-col justify-center px-6 md:px-10 max-w-xl">
+          <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest font-mono">Alternative Placements</span>
+          <h2 className="text-xl md:text-2xl font-extrabold text-white mt-1 leading-tight">Co-Investment Syndicate Pools</h2>
+          <p className="text-xs text-blue-100 mt-1.5 leading-relaxed">
+            Vetted real-estate, agri-logistics, and SME placements structured through Bengula Inc.
+          </p>
+        </div>
+      </div>
+
       {/* Top Section: Header & Opportunities Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* Left Column: Pools display */}

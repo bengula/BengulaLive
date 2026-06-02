@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { User, Briefcase, Award, ShieldCheck, Milestone, ArrowRight, Star } from 'lucide-react';
+import { images } from '../data/media';
 
 export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blogId: string) => void }) {
   return (
@@ -118,8 +119,16 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
 
       {/* Bengula Inc Vision Card */}
       <div className="bg-blue-950 rounded-2xl p-6 md:p-8 space-y-4 relative overflow-hidden shadow-md">
-        <div className="absolute right-0 top-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl -z-10"></div>
-        <div className="flex items-center gap-3">
+        <img
+          src={images.aboutBuilding}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-950/90 to-blue-950/60"></div>
+        <div className="absolute right-0 top-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl"></div>
+        <div className="relative flex items-center gap-3">
           <div className="bg-blue-900/50 p-2.5 rounded-xl border border-blue-800">
             <Award className="w-6 h-6 text-amber-400" />
           </div>
@@ -128,7 +137,7 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
             <p className="text-xs text-blue-200 font-medium">Private Alternative Holding & Advisory</p>
           </div>
         </div>
-        <p className="text-blue-100 text-sm leading-relaxed font-normal font-sans">
+        <p className="relative text-blue-100 text-sm leading-relaxed font-normal font-sans">
           <strong>Bengula Inc</strong> is an independent advisory and alternative private assets holding corp. We observe that while active professional careers provide essential baseline capital, sustainable wealth multiplication requires systematic co-investment syndicates. Bengula Inc structures private placements in real estate land-banking, export logistics support, and SME venture funding, ensuring your passive reserves outpace inflation safely.
         </p>
       </div>

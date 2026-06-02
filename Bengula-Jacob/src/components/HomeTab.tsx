@@ -10,6 +10,7 @@ import Resources from './Resources';
 import FAQ from './FAQ';
 import { TabId } from '../types';
 import { siteConfig } from '../data/siteConfig';
+import { images } from '../data/media';
 
 export default function HomeTab({ navigate }: { navigate: (id: TabId) => void }) {
   const [newsletterEmail, setNewsletterEmail] = useState('');
@@ -93,9 +94,17 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
             {/* Headshot Mockup */}
             <div className="relative w-36 h-36 rounded-2xl bg-gradient-to-tr from-blue-950 via-blue-900 to-amber-700 p-0.5 shadow-md">
               <div className="w-full h-full rounded-[14px] bg-slate-900 flex flex-col items-center justify-center text-white relative overflow-hidden">
+                <img
+                  src={images.heroCorporate}
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover opacity-35"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-blue-950/40"></div>
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(255,255,255,0.08)_0%,transparent_80%)]"></div>
-                <span className="font-sans font-extrabold text-3xl tracking-widest text-amber-500">JB</span>
-                <span className="text-[9px] uppercase tracking-widest text-slate-400 font-bold mt-1">Bengula Jacob</span>
+                <span className="relative z-10 font-sans font-extrabold text-3xl tracking-widest text-amber-500">JB</span>
+                <span className="relative z-10 text-[9px] uppercase tracking-widest text-slate-300 font-bold mt-1">Bengula Jacob</span>
                 <div className="absolute bottom-2 inset-x-0 text-center">
                   <span className="text-[7.5px] bg-emerald-950 text-emerald-300 border border-emerald-900 px-2 py-0.5 rounded-full uppercase font-bold font-mono">Senior Absa RM</span>
                 </div>

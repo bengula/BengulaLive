@@ -7,6 +7,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { User, Send, Bot, Sparkles, AlertCircle, RefreshCw, Layers, CheckCircle2, UserCircle } from 'lucide-react';
 import { ChatMessage, UserFinanceProfile } from '../types';
 import { getCoachReply } from '../data/coachKnowledge';
+import { images } from '../data/media';
 
 export default function AICoach() {
   const [profile, setProfile] = useState<UserFinanceProfile>({
@@ -160,7 +161,21 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
     <div id="ai-coach-root" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-fadeIn">
       
       {/* Target Profile customization */}
-      <div className="lg:col-span-4 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-4 shadow-xs">
+      <div className="lg:col-span-4 bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs">
+        {/* Education banner */}
+        <div className="relative h-28">
+          <img
+            src={images.education}
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-950/55 to-transparent"></div>
+          <span className="absolute bottom-3 left-6 text-[10px] font-bold text-amber-300 uppercase tracking-widest font-mono">Offline Wealth Coach</span>
+        </div>
+
+        <div className="p-6 md:p-8 space-y-4">
         <div className="border-b border-slate-150 pb-3">
           <h3 className="text-base font-bold text-blue-900 flex items-center gap-2">
             <User className="w-5 h-5 text-blue-900" />
@@ -266,6 +281,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
             </button>
           </div>
         )}
+        </div>
       </div>
 
       {/* Main chat window */}
