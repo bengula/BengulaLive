@@ -4,13 +4,13 @@
  */
 
 import React, { useState } from 'react';
-import { Briefcase, ArrowRight, BookOpen, Layers, Shield, Sparkles, Clock, CheckCircle, Calendar, Send } from 'lucide-react';
+import { Briefcase, ArrowRight, BookOpen, Layers, Shield, Sparkles, Clock, CheckCircle, Calendar, Send, Landmark } from 'lucide-react';
 import { ServiceDetail } from '../types';
 import { servicesList } from '../data/servicesData';
 import { siteConfig } from '../data/siteConfig';
 
 export default function ServicesTab() {
-  const [selectedService, setSelectedService] = useState<string>('financial-consulting');
+  const [selectedService, setSelectedService] = useState<string>('banking-finance-advisory');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [date, setDate] = useState('');
@@ -78,10 +78,10 @@ export default function ServicesTab() {
       {/* Left Column: List and Detailed Card */}
       <div className="lg:col-span-7 space-y-6">
         <div className="space-y-1.5">
-          <span className="text-xs font-semibold text-blue-900 uppercase tracking-widest block font-extrabold font-sans">Consulting Strategy Desk</span>
-          <h2 className="text-2xl font-bold text-slate-900">Private Strategic Solutions</h2>
+          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest block font-extrabold font-sans">Two Pillars, One Desk</span>
+          <h2 className="text-2xl font-bold text-slate-900">How Bengula Inc Helps Your Business</h2>
           <p className="text-slate-500 text-xs">
-            Every elite portfolio requires specialized structuring. Choose a tactical advisory segment to inspect.
+            Finance & banking advisory and data & digital growth — pick the service that fits where your business is now.
           </p>
         </div>
 
@@ -103,6 +103,7 @@ export default function ServicesTab() {
               <div className={`p-2 rounded-lg shrink-0 ${
                 selectedService === svc.id ? 'bg-blue-900 text-white shadow-xs' : 'bg-slate-100 text-slate-500'
               }`}>
+                {svc.iconName === "Landmark" && <Landmark className="w-5 h-5" />}
                 {svc.iconName === "Layers" && <Layers className="w-5 h-5" />}
                 {svc.iconName === "Shield" && <Shield className="w-5 h-5" />}
                 {svc.iconName === "Briefcase" && <Briefcase className="w-5 h-5" />}
@@ -120,10 +121,10 @@ export default function ServicesTab() {
 
         {/* Detailed Service Inspection Card */}
         <div className="bg-white border border-slate-200 rounded-2xl p-6 space-y-4 shadow-xs">
-          <div className="flex flex-wrap justify-between items-start gap-2 border-b border-slate-150 pb-4">
+          <div className="flex flex-wrap justify-between items-start gap-2 border-b border-slate-100 pb-4">
             <div>
               <h3 className="text-lg font-bold text-slate-900">{activeSvc.title}</h3>
-              <p className="text-xs text-emerald-700 font-extrabold mt-0.5">{activeSvc.pricing}</p>
+              <p className="text-xs text-amber-700 font-extrabold mt-0.5">{activeSvc.pricing}</p>
             </div>
             <span className="text-[10px] bg-blue-50 border border-blue-100/55 text-blue-900 py-1 px-2.5 rounded-full font-bold font-mono flex items-center gap-1">
               <Clock className="w-3.5 h-3.5 text-blue-900" />
@@ -164,8 +165,8 @@ export default function ServicesTab() {
 
         {bookingResult?.success ? (
           // Booking Success View
-          <div className="bg-emerald-50 border border-emerald-250 rounded-xl p-5 text-center space-y-4 py-8">
-            <div className="w-12 h-12 bg-emerald-100/60 text-emerald-850 rounded-full flex items-center justify-center mx-auto border border-emerald-200 shadow-xs">
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 text-center space-y-4 py-8">
+            <div className="w-12 h-12 bg-emerald-100/60 text-emerald-800 rounded-full flex items-center justify-center mx-auto border border-emerald-200 shadow-xs">
               <CheckCircle className="w-6 h-6 text-emerald-600" />
             </div>
             <div className="space-y-1">
@@ -174,7 +175,7 @@ export default function ServicesTab() {
                 Your email app should have opened with the request pre-filled — just press <strong>send</strong> and Jacob's office will confirm your slot. If nothing opened, email <strong>{siteConfig.contact.workEmail}</strong> with your reference below.
               </p>
             </div>
-            <div className="bg-slate-50 rounded-lg p-3 text-xs border border-slate-150 space-y-1 text-left font-mono text-slate-700 shadow-xs">
+            <div className="bg-slate-50 rounded-lg p-3 text-xs border border-slate-100 space-y-1 text-left font-mono text-slate-700 shadow-xs">
               <div className="flex justify-between">
                 <span className="text-slate-400">Booking ID:</span>
                 <span className="text-emerald-700 font-bold">{bookingResult.id}</span>
@@ -222,10 +223,10 @@ export default function ServicesTab() {
               </select>
 
               {/* Dynamic Selected Service Detail Pop-In */}
-              <div className="p-3.5 bg-blue-50/70 border border-blue-105/45 rounded-xl space-y-2 animate-fadeIn text-xs">
+              <div className="p-3.5 bg-blue-50/70 border border-blue-100/45 rounded-xl space-y-2 animate-fadeIn text-xs">
                 <div className="flex justify-between items-center font-bold text-blue-950 text-xs">
                   <span className="text-slate-800 font-bold">{activeSvc.title}</span>
-                  <span className="text-emerald-700 font-extrabold text-[11px] whitespace-nowrap">{activeSvc.pricing}</span>
+                  <span className="text-amber-700 font-extrabold text-[11px] whitespace-nowrap">{activeSvc.pricing}</span>
                 </div>
                 <p className="text-slate-600 text-[11px] leading-relaxed font-normal">
                   {activeSvc.longDescription}
@@ -234,7 +235,7 @@ export default function ServicesTab() {
                   <Clock className="w-3.5 h-3.5" />
                   <span>Format: {activeSvc.duration}</span>
                 </div>
-                <div className="pt-2 border-t border-blue-105/30 space-y-1">
+                <div className="pt-2 border-t border-blue-100/30 space-y-1">
                   <span className="font-extrabold text-blue-950 text-[10px] uppercase tracking-widest block">Key Outcomes Included:</span>
                   <div className="grid grid-cols-1 gap-1 text-[10px] text-slate-600 font-medium">
                     {activeSvc.benefits.slice(0, 3).map((benefit, bIdx) => (

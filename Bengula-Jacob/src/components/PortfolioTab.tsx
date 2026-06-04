@@ -25,7 +25,7 @@ export default function PortfolioTab({ onNavigateToBlog }: { onNavigateToBlog: (
     <div id="portfolio-tab-root" className="space-y-8 animate-fadeIn">
       
       {/* Tab Header details */}
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-b border-slate-205 pb-6">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-b border-slate-200 pb-6">
         <div className="space-y-1.5">
           <span className="text-xs font-bold text-blue-900 uppercase tracking-widest block font-extrabold font-sans">Executive Placements</span>
           <h2 className="text-2xl font-bold text-slate-900">Portfolio & Case Studies</h2>
@@ -103,7 +103,7 @@ export default function PortfolioTab({ onNavigateToBlog }: { onNavigateToBlog: (
                 <p className="text-xs text-slate-500 leading-normal font-normal">
                   {item.description}
                 </p>
-                <div className="bg-slate-50 border border-slate-200 p-3 rounded-lg text-xs italic text-slate-650 border-l-2 border-l-amber-500">
+                <div className="bg-slate-50 border border-slate-200 p-3 rounded-lg text-xs italic text-slate-600 border-l-2 border-l-amber-500">
                   <span className="font-bold text-blue-900 not-italic uppercase text-[9px] block mb-0.5">Tactical Outcome</span>
                   {item.impact}
                 </div>

@@ -54,7 +54,7 @@ export default function AuthorsTab({
             setActive(null);
             window.location.hash = '';
           }}
-          className="flex items-center gap-2 text-xs font-semibold text-blue-900 hover:text-blue-850 bg-white p-2.5 rounded-lg border border-slate-200 shadow-xs cursor-pointer transition"
+          className="flex items-center gap-2 text-xs font-semibold text-blue-900 hover:text-blue-800 bg-white p-2.5 rounded-lg border border-slate-200 shadow-xs cursor-pointer transition"
         >
           <ArrowLeft className="w-4 h-4 text-blue-900" />
           <span>All Authors</span>
@@ -103,7 +103,7 @@ export default function AuthorsTab({
               <button
                 key={post.id}
                 onClick={() => onNavigateToBlog?.(post.id)}
-                className="w-full text-left bg-white border border-slate-205 rounded-xl p-4 hover:border-blue-900/40 hover:shadow-md transition group shadow-xs flex items-center justify-between gap-4 cursor-pointer"
+                className="w-full text-left bg-white border border-slate-200 rounded-xl p-4 hover:border-blue-900/40 hover:shadow-md transition group shadow-xs flex items-center justify-between gap-4 cursor-pointer"
               >
                 <div className="space-y-1 min-w-0">
                   <span className="text-[10px] bg-blue-50 text-blue-900 border border-blue-100 px-2 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
@@ -129,7 +129,7 @@ export default function AuthorsTab({
   // ================= AUTHORS LIST VIEW =================
   return (
     <div id="authors-tab-root" className="space-y-6 animate-fadeIn">
-      <div className="border-b border-slate-205 pb-6 space-y-1">
+      <div className="border-b border-slate-200 pb-6 space-y-1">
         <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
           <Users className="w-6 h-6 text-blue-900" />
           Our Authors
@@ -150,7 +150,7 @@ export default function AuthorsTab({
                 window.location.hash = `author/${profile.id}`;
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className="text-left bg-white border border-slate-205 rounded-2xl p-6 hover:border-blue-900/40 hover:shadow-md transition duration-300 shadow-xs group cursor-pointer flex gap-4 items-start"
+              className="text-left bg-white border border-slate-200 rounded-2xl p-6 hover:border-blue-900/40 hover:shadow-md transition duration-300 shadow-xs group cursor-pointer flex gap-4 items-start"
             >
               <Avatar a={profile} size="w-16 h-16" />
               <div className="space-y-1.5 min-w-0 flex-1">

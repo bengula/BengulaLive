@@ -129,13 +129,13 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
                 className={`border rounded-2xl p-5 transition duration-300 relative group overflow-hidden shadow-xs ${
                   selectedPoolId === item.id
                     ? 'bg-blue-50/20 border-blue-900'
-                    : 'bg-white border-slate-205 hover:border-slate-300'
+                    : 'bg-white border-slate-200 hover:border-slate-300'
                 }`}
               >
                 {/* Top meta row */}
                 <div className="flex justify-between items-start gap-2">
                   <div>
-                    <span className="text-[10px] bg-blue-50 text-blue-900 border border-blue-105 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
+                    <span className="text-[10px] bg-blue-50 text-blue-900 border border-blue-100 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
                       {item.category}
                     </span>
                     <h3 className="text-base font-bold text-slate-900 mt-2 flex items-center gap-1.5">
@@ -203,7 +203,7 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
         <div className="lg:col-span-5 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
           <div className="border-b border-slate-100 pb-4">
             <h3 className="text-sm md:text-base font-bold text-blue-900 flex items-center gap-2">
-              <TrendingUp className="w-5 h-5 text-blue-905" />
+              <TrendingUp className="w-5 h-5 text-blue-900" />
               Co-Investment Simulator
             </h3>
             <p className="text-xs text-slate-500 mt-1">
@@ -243,7 +243,7 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
               onChange={(e) => setInvestAmount(Math.max(activePool.minimumAmount, Number(e.target.value)))}
               className="w-full bg-slate-50 text-slate-900 text-xs py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 transition-colors font-mono font-medium"
             />
-            <span className="text-[9px] text-slate-450 block leading-tight font-medium">
+            <span className="text-[9px] text-slate-400 block leading-tight font-medium">
               *Minimum allocation required for {activePool.title} is {formatKSh(activePool.minimumAmount)}.
             </span>
           </div>
@@ -253,17 +253,17 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
             <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider block">Annual Return matrix:</span>
             
             <div className="grid grid-cols-2 gap-4 text-xs">
-              <div className="bg-white p-2.5 rounded-lg border border-slate-150 shadow-xs">
+              <div className="bg-white p-2.5 rounded-lg border border-slate-100 shadow-xs">
                 <span className="text-[9px] text-slate-400 uppercase font-bold block">Gross Gains</span>
                 <span className="text-sm font-bold font-mono text-slate-800 block mt-1">{formatKSh(projectedReturns.gross)}</span>
               </div>
-              <div className="bg-white p-2.5 rounded-lg border border-slate-150 shadow-xs">
+              <div className="bg-white p-2.5 rounded-lg border border-slate-100 shadow-xs">
                 <span className="text-[9px] text-slate-400 uppercase font-bold block">Withholding Tax (15%)</span>
                 <span className="text-sm font-bold font-mono text-rose-700 block mt-1">-{formatKSh(projectedReturns.tax)}</span>
               </div>
             </div>
 
-            <div className="border-t border-slate-150 pt-3 flex justify-between items-center text-sm">
+            <div className="border-t border-slate-100 pt-3 flex justify-between items-center text-sm">
               <div className="flex items-center gap-1.5 font-bold">
                 <Wallet className="w-4.5 h-4.5 text-emerald-600" />
                 <span className="text-slate-800">Net Compounded Interest:</span>
@@ -271,7 +271,7 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
               <span className="font-mono font-extrabold text-emerald-700 text-base">{formatKSh(projectedReturns.net)}</span>
             </div>
 
-            <div className="border-t border-slate-150 pt-3 flex justify-between items-center text-sm font-bold">
+            <div className="border-t border-slate-100 pt-3 flex justify-between items-center text-sm font-bold">
               <span className="text-slate-900 font-extrabold">Terminal Payout Value:</span>
               <span className="font-mono text-emerald-700 font-extrabold text-lg">{formatKSh(projectedReturns.total)}</span>
             </div>
@@ -280,10 +280,10 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
           {/* Benefits bullets list */}
           <div className="space-y-3">
             <span className="text-xs font-bold text-slate-800 block">Co-Investor Safeguards Summary:</span>
-            <div className="space-y-2 bg-white p-3 rounded-lg border border-slate-150 text-[11px] leading-relaxed text-slate-500 shadow-xs">
+            <div className="space-y-2 bg-white p-3 rounded-lg border border-slate-100 text-[11px] leading-relaxed text-slate-500 shadow-xs">
               {activePool.keyBenefits.map((item, idx) => (
                 <div key={idx} className="flex gap-2 items-start font-medium">
-                  <ShieldCheck className="w-4 h-4 text-emerald-601 shrink-0 mt-0.5 text-emerald-600" />
+                  <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5 text-emerald-600" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -296,7 +296,7 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
         {/* Investment Insights Column */}
         <div className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
-          <div className="border-b border-slate-150 pb-3">
+          <div className="border-b border-slate-100 pb-3">
             <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
               <FileText className="w-5 h-5 text-blue-900" />
               Investment Insights & Analysis
@@ -348,7 +348,7 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
 
         {/* Investor Resources Column */}
         <div className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
-          <div className="border-b border-slate-150 pb-3">
+          <div className="border-b border-slate-100 pb-3">
             <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-600" />
               Investor Resources & Safekeeping
@@ -391,7 +391,7 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
           <div className="text-center space-y-2">
             <span className="text-xs font-bold text-blue-400 uppercase tracking-widest block font-extrabold font-mono">Structured Alliance</span>
             <h3 className="text-2xl font-extrabold text-white">Co-Investor Partnership Inquiry</h3>
-            <p className="text-xs text-slate-350 max-w-lg mx-auto">
+            <p className="text-xs text-slate-300 max-w-lg mx-auto">
               Ready to deploy capital into double-digit frontier placements? Submit your budget tier confidentially to request a private mandate pack.
             </p>
           </div>
@@ -419,7 +419,7 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
                     placeholder="e.g. Rachel Kamau"
                     value={partnerName}
                     onChange={(e) => setPartnerName(e.target.value)}
-                    className="w-full bg-slate-800 text-white border border-slate-705 p-2.5 pl-9 rounded focus:outline-none focus:border-blue-400 font-semibold"
+                    className="w-full bg-slate-800 text-white border border-slate-700 p-2.5 pl-9 rounded focus:outline-none focus:border-blue-400 font-semibold"
                   />
                 </div>
               </div>
@@ -436,7 +436,7 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
                     placeholder="e.g. rkamau@domain.com"
                     value={partnerEmail}
                     onChange={(e) => setPartnerEmail(e.target.value)}
-                    className="w-full bg-slate-800 text-white border border-slate-705 p-2.5 pl-9 rounded focus:outline-none focus:border-blue-400 font-mono font-semibold"
+                    className="w-full bg-slate-800 text-white border border-slate-700 p-2.5 pl-9 rounded focus:outline-none focus:border-blue-400 font-mono font-semibold"
                   />
                 </div>
               </div>
@@ -446,7 +446,7 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
                 <select
                   value={partnerBudget}
                   onChange={(e) => setPartnerBudget(e.target.value)}
-                  className="w-full bg-slate-800 text-white border border-slate-705 p-2.5 rounded focus:outline-none focus:border-blue-400 cursor-pointer font-semibold"
+                  className="w-full bg-slate-800 text-white border border-slate-700 p-2.5 rounded focus:outline-none focus:border-blue-400 cursor-pointer font-semibold"
                 >
                   <option value="500,000 - 1,000,000">KSh 500,000 - KSh 1,000,000</option>
                   <option value="1,000,000 - 5,000,000">KSh 1,000,000 - KSh 5,000,000</option>
@@ -460,7 +460,7 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
                 <select
                   value={partnerSubject}
                   onChange={(e) => setPartnerSubject(e.target.value)}
-                  className="w-full bg-slate-800 text-white border border-slate-705 p-2.5 rounded focus:outline-none focus:border-blue-400 cursor-pointer font-semibold"
+                  className="w-full bg-slate-800 text-white border border-slate-700 p-2.5 rounded focus:outline-none focus:border-blue-400 cursor-pointer font-semibold"
                 >
                   {pools.map((item) => (
                     <option key={item.id} value={item.id}>{item.title}</option>
@@ -476,7 +476,7 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
                   placeholder="Outline any key risk benchmarks, required timeline schedules, or previous placement background."
                   value={partnerMessage}
                   onChange={(e) => setPartnerMessage(e.target.value)}
-                  className="w-full bg-slate-800 text-white border border-slate-705 p-2.5 rounded focus:outline-none focus:border-blue-400 text-slate-200"
+                  className="w-full bg-slate-800 text-white border border-slate-700 p-2.5 rounded focus:outline-none focus:border-blue-400 text-slate-200"
                 />
               </div>
 

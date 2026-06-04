@@ -98,7 +98,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
     const flushList = () => {
       if (listItems.length === 0) return;
       blocks.push(
-        <ul key={`ul-${blocks.length}`} className="list-disc list-outside space-y-1.5 pl-5 text-slate-650 text-sm py-2">
+        <ul key={`ul-${blocks.length}`} className="list-disc list-outside space-y-1.5 pl-5 text-slate-600 text-sm py-2">
           {listItems.map((item, idx) => (
             <li key={idx}>{renderInlineMarkdown(item)}</li>
           ))}
@@ -110,7 +110,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
     const flushOrderedList = () => {
       if (orderedItems.length === 0) return;
       blocks.push(
-        <ol key={`ol-${blocks.length}`} className="list-decimal list-outside space-y-1.5 pl-5 text-slate-650 text-sm py-2">
+        <ol key={`ol-${blocks.length}`} className="list-decimal list-outside space-y-1.5 pl-5 text-slate-600 text-sm py-2">
           {orderedItems.map((item, idx) => (
             <li key={idx}>{renderInlineMarkdown(item)}</li>
           ))}
@@ -186,7 +186,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
       if (trimmed.startsWith('###')) {
         flushAll();
         blocks.push(
-          <h3 key={`h3-${blocks.length}`} className="text-xl font-bold text-slate-900 pt-6 pb-2 border-b border-slate-205">
+          <h3 key={`h3-${blocks.length}`} className="text-xl font-bold text-slate-900 pt-6 pb-2 border-b border-slate-200">
             {renderInlineMarkdown(trimmed.replace('###', '').trim())}
           </h3>
         );
@@ -291,7 +291,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
         <div id="blog-editorial-article-detail" className="max-w-3xl mx-auto space-y-6">
           <button
             onClick={() => currentSetActivePostId(null)}
-            className="flex items-center gap-2 text-xs font-semibold text-blue-900 hover:text-blue-850 bg-white p-2.5 rounded-lg border border-slate-200 shadow-xs cursor-pointer transition"
+            className="flex items-center gap-2 text-xs font-semibold text-blue-900 hover:text-blue-800 bg-white p-2.5 rounded-lg border border-slate-200 shadow-xs cursor-pointer transition"
           >
             <ArrowLeft className="w-4 h-4 text-blue-900" />
             <span>Return to Financial Education Hub</span>
@@ -308,7 +308,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
           </div>
 
           {/* Featured Header */}
-          <div className="space-y-4 border-b border-slate-150 pb-6 pt-4">
+          <div className="space-y-4 border-b border-slate-100 pb-6 pt-4">
             <span className="text-[10px] bg-blue-50 text-blue-900 border border-blue-100 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
               {activePost.category}
             </span>
@@ -368,7 +368,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
                   <Calendar className="w-3.5 h-3.5 text-slate-400" />
                   {activePost.date}
                 </span>
-                <span className="flex items-center gap-1 font-semibold text-blue-905">
+                <span className="flex items-center gap-1 font-semibold text-blue-900">
                   <Clock className="w-3.5 h-3.5 text-blue-900" />
                   {activePost.readTime}
                 </span>
@@ -382,19 +382,19 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
           </div>
 
           {/* Share / Social reactions footer */}
-          <div className="border-t border-slate-150 pt-6 flex items-center justify-between text-xs text-slate-500 font-sans">
+          <div className="border-t border-slate-100 pt-6 flex items-center justify-between text-xs text-slate-500 font-sans">
             <span className="font-medium text-slate-600">Did you find this educational segment helpful?</span>
             <div className="flex gap-3">
               <button
                 onClick={(e) => handleLike(activePost.id, e)}
-                className="flex items-center gap-1.5 py-2 px-3 bg-white border border-slate-200 rounded-lg text-slate-605 hover:text-rose-600 hover:bg-slate-50 transition cursor-pointer shadow-xs font-bold"
+                className="flex items-center gap-1.5 py-2 px-3 bg-white border border-slate-200 rounded-lg text-slate-600 hover:text-rose-600 hover:bg-slate-50 transition cursor-pointer shadow-xs font-bold"
               >
                 <Heart className={`w-4 h-4 ${likes[activePost.id] ? 'fill-rose-500 text-rose-500' : ''}`} />
                 <span className="font-mono">{likes[activePost.id] || 8} Likes</span>
               </button>
               <button
                 onClick={(e) => handleShare(activePost.id, e)}
-                className="flex items-center gap-1.5 py-2 px-3 bg-white border border-slate-200 rounded-lg text-slate-605 hover:text-blue-900 hover:bg-slate-50 transition cursor-pointer shadow-xs font-bold"
+                className="flex items-center gap-1.5 py-2 px-3 bg-white border border-slate-200 rounded-lg text-slate-600 hover:text-blue-900 hover:bg-slate-50 transition cursor-pointer shadow-xs font-bold"
               >
                 <Share2 className="w-4 h-4" />
                 <span>{shared[activePost.id] ? "Link Copied!" : "Share Link"}</span>
@@ -407,7 +407,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
         // ================= GENERAL ARTICLES SELECTION LIST =================
         <div className="space-y-6">
           {/* Controls Box */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center border-b border-slate-205 pb-6">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center border-b border-slate-200 pb-6">
             <div className="md:col-span-5 space-y-1">
               <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
                 <BookOpen className="w-6 h-6 text-blue-900 animate-pulse" />
@@ -454,7 +454,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
               <div
                 key={post.id}
                 onClick={() => currentSetActivePostId(post.id)}
-                className="bg-white border border-slate-205 rounded-2xl overflow-hidden hover:border-blue-900/40 hover:shadow-md transition duration-300 flex flex-col justify-between cursor-pointer group shadow-xs relative"
+                className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-blue-900/40 hover:shadow-md transition duration-300 flex flex-col justify-between cursor-pointer group shadow-xs relative"
               >
                 {/* Cover image */}
                 <div className="aspect-[16/9] overflow-hidden bg-slate-100">
@@ -489,7 +489,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
                 </div>
 
                 <div className="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-sans">
-                  <span className="font-bold text-slate-650">
+                  <span className="font-bold text-slate-600">
                     By {[post.author, ...(post.coAuthors ?? [])].map((a) => a.name).join(' & ')}
                   </span>
                   <div className="flex gap-2">

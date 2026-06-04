@@ -135,7 +135,7 @@ export default function ContactTab() {
 
         {contactSuccess ? (
           <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 text-center space-y-3 py-10">
-            <div className="w-12 h-12 bg-emerald-100/60 text-emerald-750 rounded-full flex items-center justify-center mx-auto border border-emerald-200/80 shadow-xs">
+            <div className="w-12 h-12 bg-emerald-100/60 text-emerald-700 rounded-full flex items-center justify-center mx-auto border border-emerald-200/80 shadow-xs">
               <ShieldCheck className="w-6 h-6 text-emerald-600" />
             </div>
             <h4 className="text-sm md:text-base font-bold text-emerald-900">Email Ready to Send</h4>

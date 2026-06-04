@@ -25,7 +25,25 @@ export const siteConfig = {
     initials: "BJ",
     role: "Relationship Manager, Absa Kenya",
     company: "Bengula Inc",
-    tagline: "Data-led digital growth, strategic finance education, and business advisory in East Africa.",
+    slogan: "Adding meaning to life",
+    // One-line positioning used in the hero + meta description.
+    tagline: "We help East African businesses grow — pairing data-driven digital visibility with finance and banking advisory.",
+    // The two equal pillars the whole brand is organised around. Reused across
+    // the home page, services, and about so the message stays consistent.
+    pillars: [
+      {
+        key: "growth",
+        name: "Data & Digital Growth",
+        promise: "Turn your data and online presence into customers.",
+        blurb: "Data analysis, SEO, and digital systems that help businesses make decisions with evidence and get found online.",
+      },
+      {
+        key: "finance",
+        name: "Finance & Banking Advisory",
+        promise: "Match your business to the right banking and capital tools.",
+        blurb: "Practical finance advisory that connects you to business accounts, lending, trade finance, treasury, and protection products that fit your cash cycle.",
+      },
+    ] as { key: string; name: string; promise: string; blurb: string }[],
   },
 
   // ──────────────────────────────────────────────────────────────

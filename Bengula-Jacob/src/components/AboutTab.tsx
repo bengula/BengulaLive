@@ -45,7 +45,7 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
                 </div>
               </div>
               
-              <div className="flex justify-center gap-2 items-center text-xs text-amber-850 bg-amber-50 py-1.5 px-3 border border-amber-200/55 rounded-lg font-bold">
+              <div className="flex justify-center gap-2 items-center text-xs text-amber-800 bg-amber-50 py-1.5 px-3 border border-amber-200/55 rounded-lg font-bold">
                 <Star className="w-3.5 h-3.5 fill-current text-amber-500" />
                 <span className="tracking-wider uppercase">Accredited RM Representative</span>
               </div>
@@ -56,7 +56,7 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
         {/* Narrative bio details */}
         <div className="lg:col-span-7 space-y-6">
           <div className="space-y-2 text-center lg:text-left">
-            <span className="text-xs font-bold text-blue-900 uppercase tracking-widest block font-extrabold">Executive Profile</span>
+            <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Executive Profile</span>
             <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">Who is Bengula Jacob?</h2>
           </div>
           <p className="text-slate-600 leading-relaxed text-sm md:text-base font-normal">
@@ -66,9 +66,9 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
           <div className="bg-slate-50 border border-slate-200/60 p-4 rounded-xl space-y-2 text-xs">
             <h3 className="font-bold text-blue-900 font-sans uppercase tracking-widest text-[10px]">Mission & Vision</h3>
             <p className="text-slate-600 leading-relaxed font-normal">
-              <strong>Mission:</strong> To democratize high-grade financial education, closing the gap between institutional banking and individual wealth, making alternative compound assets safe and accessible.
+              <strong>Mission:</strong> To help East African businesses grow by pairing data-driven decisions and online visibility with honest, practical access to the right banking and capital tools.
               <br />
-              <strong className="mt-1.5 block">Vision:</strong> To serve as East Africa's premier digital bridging office, helping over 50,000 local and diaspora professionals build sustainable wealth through structured sovereign portfolios and private investment syndicates.
+              <strong className="mt-1.5 block">Vision:</strong> To be the trusted growth desk for owners and professionals across Kenya and the diaspora — where digital strategy and banking advice sit at one table.
             </p>
           </div>
 
@@ -81,7 +81,7 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
             <div className="bg-white border border-slate-200 p-4 rounded-xl space-y-1.5 shadow-xs">
               <User className="w-5 h-5 text-blue-900" />
               <p className="text-sm font-bold text-slate-800">Tech & Finance Interests</p>
-              <p className="text-xs text-slate-505">Leveraging Artificial Intelligence, automated credit risk evaluation, and modern digital portals (like DhowCSD) to optimize returns.</p>
+              <p className="text-xs text-slate-500">Leveraging Artificial Intelligence, automated credit risk evaluation, and modern digital portals (like DhowCSD) to optimize returns.</p>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
       {/* Core Values Section */}
       <div className="space-y-6">
         <div className="text-center max-w-xl mx-auto space-y-1.5">
-          <span className="text-xs font-bold text-blue-900 uppercase tracking-widest block font-extrabold">Foundational Beliefs</span>
+          <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Foundational Beliefs</span>
           <h3 className="text-2xl font-bold text-slate-950">Our Core Values</h3>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -137,18 +137,18 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
           </div>
           <div>
             <h3 className="text-lg font-bold text-white">About Bengula Inc</h3>
-            <p className="text-xs text-blue-200 font-medium">Private Alternative Holding & Advisory</p>
+            <p className="text-xs text-blue-200 font-medium">Adding meaning to life · Business growth & banking advisory</p>
           </div>
         </div>
         <p className="relative text-blue-100 text-sm leading-relaxed font-normal font-sans">
-          <strong>Bengula Inc</strong> is an independent advisory and alternative private assets holding corp. We observe that while active professional careers provide essential baseline capital, sustainable wealth multiplication requires systematic co-investment syndicates. Bengula Inc structures private placements in real estate land-banking, export logistics support, and SME venture funding, ensuring your passive reserves outpace inflation safely.
+          <strong>Bengula Inc</strong> is a business-growth brand built on a simple belief: the businesses that use data to make decisions, put their services online, and use the right banking tools are the ones that survive and grow. We work with owners across two pillars — <strong>Data &amp; Digital Growth</strong> (analytics, SEO, and online systems) and <strong>Finance &amp; Banking Advisory</strong> (accounts, lending, trade finance, treasury, and protection) — so strategy and capital move together.
         </p>
       </div>
 
       {/* Media & Recognition Section */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-4">
         <div className="lg:col-span-5 space-y-4">
-          <span className="text-xs font-bold text-blue-900 uppercase tracking-widest block font-extrabold">Global Resonance</span>
+          <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Global Resonance</span>
           <h3 className="text-2xl font-bold text-slate-950 leading-snug">Media & Recognition</h3>
           <p className="text-xs text-slate-500 leading-relaxed">
             Jacob's professional insights on sovereign debt coupon laddering and SME growth strategy are regularly featured across leading channels:
@@ -210,7 +210,7 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
       {/* Timeline Section */}
       <div className="space-y-6">
         <div className="space-y-2 text-center lg:text-left">
-          <div className="flex justify-center lg:justify-start items-center gap-2 text-xs text-blue-900 font-extrabold tracking-wider uppercase">
+          <div className="flex justify-center lg:justify-start items-center gap-2 text-xs text-violet-700 font-extrabold tracking-wider uppercase">
             <Milestone className="w-4 h-4" />
             <span>Our Chronology</span>
           </div>

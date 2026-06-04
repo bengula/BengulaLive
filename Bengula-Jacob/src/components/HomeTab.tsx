@@ -7,7 +7,6 @@ import React, { useState } from 'react';
 import {
   ArrowUpRight,
   BadgeCheck,
-  BriefcaseBusiness,
   Building2,
   ChevronRight,
   Compass,
@@ -46,57 +45,57 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
   };
 
   const metrics = [
-    { label: 'Finance Focus', value: 'East Africa', desc: 'Kenya-led market literacy and capital insight' },
-    { label: 'Advisory Lens', value: 'SME + Private', desc: 'Business owners, professionals, and diaspora clients' },
-    { label: 'Research Areas', value: '4 Core Desks', desc: 'Treasury, equities, real assets, and enterprise growth' },
-    { label: 'Operating Model', value: 'Education First', desc: 'Clear analysis before any structured decision' },
+    { label: 'Who We Serve', value: 'SMEs & Owners', desc: 'Businesses, professionals, and diaspora clients in East Africa' },
+    { label: 'Two Pillars', value: 'Growth + Finance', desc: 'Data & digital growth and finance & banking advisory' },
+    { label: 'Banking Edge', value: 'Inside Track', desc: 'Advice from a practising bank Relationship Manager' },
+    { label: 'How We Work', value: 'Plain & Practical', desc: 'Clear analysis before any product or decision' },
   ];
 
   const portals = [
     {
-      id: 'about',
-      title: 'About Bengula Inc',
-      desc: 'Understand the firm philosophy, founder background, and the disciplined education-first approach behind the platform.',
-      icon: Building2,
-      btn: 'View Profile',
+      id: 'services',
+      title: 'Finance & Banking Advisory',
+      desc: 'Match your business to the right bank products — accounts, lending, trade finance, treasury, and protection — with a banker structuring the deal.',
+      icon: Landmark,
+      btn: 'Book Session',
     },
     {
       id: 'services',
-      title: 'Advisory Desk',
-      desc: 'Book focused sessions for business finance, portfolio planning, treasury literacy, or alternative asset readiness.',
-      icon: BriefcaseBusiness,
-      btn: 'Book Session',
+      title: 'Data & Digital Growth',
+      desc: 'Turn your data and online presence into customers with analytics, SEO, and digital systems built for East African businesses.',
+      icon: LineChart,
+      btn: 'Grow Online',
     },
     {
       id: 'blog',
       title: 'Research Library',
-      desc: 'Read practical notes on money markets, debt instruments, NSE income strategies, and East African business finance.',
-      icon: LineChart,
+      desc: 'Read practical notes on money markets, debt instruments, business finance, and getting found online.',
+      icon: Compass,
       btn: 'Read Insights',
     },
     {
-      id: 'investments',
-      title: 'Asset Intelligence',
-      desc: 'Review structured education around real estate, agri-logistics, and private placement evaluation frameworks.',
-      icon: Compass,
-      btn: 'Explore Models',
+      id: 'about',
+      title: 'About Bengula Inc',
+      desc: 'Meet the firm behind "Adding meaning to life" — the founder, the philosophy, and how the two pillars work together.',
+      icon: Building2,
+      btn: 'View Profile',
     },
   ];
 
   const priorities = [
     {
-      title: 'Capital Clarity',
-      text: 'Translate rates, yields, cash cycles, and risk terms into decisions that owners and professionals can actually use.',
+      title: 'Right Banking, Properly Structured',
+      text: 'Map your cash cycle and growth plan, then connect you to the accounts, lending, trade finance, and treasury tools that actually fit — and help you qualify for them.',
       icon: Landmark,
     },
     {
-      title: 'Business Discipline',
-      text: 'Help SMEs think through margins, working capital, borrowing costs, and expansion choices with sharper financial controls.',
+      title: 'Decisions Backed by Data',
+      text: 'Collect the numbers that matter, turn them into clear insight, and put your services online so growth comes from evidence, not guesswork.',
       icon: Layers,
     },
     {
-      title: 'Investor Readiness',
-      text: 'Prepare clients to evaluate opportunities with stronger due diligence, scenario testing, and documented assumptions.',
+      title: 'A Partner on Your Side',
+      text: 'You get an advisor who speaks both finance and banking and sits on your side of the table — not a form to fill in alone.',
       icon: BadgeCheck,
     },
   ];
@@ -112,15 +111,15 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
 
           <div className="space-y-4">
             <h1 className="text-3xl md:text-5xl font-extrabold text-slate-950 tracking-tight leading-[1.08] font-sans">
-              Data-led growth and strategic finance education for disciplined business decisions.
+              We help East African businesses grow — with <span className="text-blue-900">data</span> and the right <span className="text-violet-700">banking</span>.
             </h1>
             <p className="text-sm md:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Bengula Inc is a professional platform for data analysis, digital growth, financial education, and business advisory across Kenya and the East African diaspora.
+              Bengula Inc works with business owners across Kenya and the diaspora on two fronts: turning data and online visibility into customers, and matching you to the banking and capital tools that fit your business.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl mx-auto lg:mx-0">
-            {['Data analysis and insight', 'SEO and online growth', 'Finance education'].map((item) => (
+            {['Banking & capital advisory', 'Data & SEO growth', 'Finance education'].map((item) => (
               <div key={item} className="bg-white border border-slate-200 rounded-lg px-3 py-2 text-[11px] font-bold text-slate-700 shadow-sm">
                 {item}
               </div>
@@ -159,7 +158,7 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
               <p className="text-[10px] font-bold text-amber-600 uppercase tracking-widest">Adding Meaning To Life</p>
               <h2 className="text-xl font-extrabold text-slate-950">Bengula Inc</h2>
               <p className="text-xs text-slate-500 leading-relaxed">
-                A focused advisory and education brand helping clients turn data, online visibility, and financial context into practical growth decisions.
+                A business-growth brand helping owners turn data and online visibility into customers, and pair it with the right banking and capital tools.
               </p>
             </div>
 
@@ -167,7 +166,7 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
               {[
                 ['Base', siteConfig.contact.location],
                 ['Founder', 'Jacob Bengula'],
-                ['Focus', 'Data + Capital Strategy'],
+                ['Focus', 'Growth + Banking'],
                 ['Audience', 'Kenya + Diaspora'],
               ].map(([label, value]) => (
                 <div key={label} className="border border-slate-200 rounded-lg p-3">
@@ -182,7 +181,7 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
 
       <section id="quick-statistics-dashboard" className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
         <div className="text-center max-w-xl mx-auto space-y-1 pb-6">
-          <span className="text-[10px] font-bold text-blue-900 uppercase tracking-widest font-mono">Firm Snapshot</span>
+          <span className="text-[10px] font-bold text-violet-700 uppercase tracking-widest font-mono">Firm Snapshot</span>
           <h3 className="text-xl font-bold text-slate-900">Bengula Inc at a Glance</h3>
         </div>
 
@@ -199,8 +198,8 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
 
       <section className="space-y-6">
         <div className="text-center max-w-xl mx-auto space-y-1.5">
-          <span className="text-xs font-semibold text-blue-900 uppercase tracking-widest">Client Pathways</span>
-          <h2 className="text-2xl font-bold text-slate-900">Work With the Bengula Inc Desk</h2>
+          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Two Pillars, One Desk</span>
+          <h2 className="text-2xl font-bold text-slate-900">How Bengula Inc Helps Your Business</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -246,7 +245,7 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
 
       <section className="bg-white border border-slate-200 rounded-2xl p-6 md:p-10 space-y-8 shadow-sm">
         <div className="max-w-xl mx-auto text-center space-y-1.5">
-          <span className="text-xs font-semibold text-blue-900 uppercase tracking-widest">Decision Tool</span>
+          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Decision Tool</span>
           <h3 className="text-xl md:text-2xl font-bold text-slate-900">Interactive Wealth Compounder</h3>
           <p className="text-xs text-slate-500">
             Estimate how contribution discipline, time, and rate assumptions can affect long-term outcomes.
@@ -293,10 +292,10 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
       <section id="newsletter-signup-section" className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-10 text-white relative overflow-hidden shadow-md">
         <div className="max-w-2xl mx-auto text-center space-y-6">
           <div className="space-y-2">
-            <span className="text-xs font-bold text-blue-300 tracking-widest uppercase font-mono">Weekly Market Notes</span>
+            <span className="text-xs font-bold text-blue-300 tracking-widest uppercase font-mono">Weekly Business Notes</span>
             <h4 className="text-xl md:text-2xl font-extrabold">Subscribe to The Sovereign Ledger</h4>
             <p className="text-xs text-slate-300 leading-relaxed max-w-md mx-auto">
-              Receive concise education on Treasury rates, market structure, business finance, and alternative asset evaluation.
+              Concise, practical notes on business finance, banking products, market rates, and using data to grow — written for owners and professionals.
             </p>
           </div>
 
