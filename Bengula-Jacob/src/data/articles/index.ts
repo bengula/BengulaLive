@@ -12,6 +12,7 @@ import { agriExportSupplyChain } from "./agri-export-supply-chain";
 import { fintechAgriCooling } from "./fintech-agri-cooling";
 import { eastAfricanSovereignSummit } from "./east-african-sovereign-summit";
 import { saccoSaversGuarantors } from "./sacco-savers-guarantors";
+import { bengulaLegacyArchive } from "./bengula-legacy-archive";
 
 export {
   kbBondGuide,
@@ -27,7 +28,8 @@ export {
   agriExportSupplyChain,
   fintechAgriCooling,
   eastAfricanSovereignSummit,
-  saccoSaversGuarantors
+  saccoSaversGuarantors,
+  bengulaLegacyArchive
 };
 
 export const allArticles = [
@@ -44,5 +46,6 @@ export const allArticles = [
   agriExportSupplyChain,
   fintechAgriCooling,
   eastAfricanSovereignSummit,
-  saccoSaversGuarantors
+  saccoSaversGuarantors,
+  ...bengulaLegacyArchive
 ];

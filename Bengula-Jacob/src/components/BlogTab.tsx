@@ -21,7 +21,10 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
   const currentActivePostId = activePostId !== undefined ? activePostId : localActivePostId;
   const currentSetActivePostId = setActivePostId || setLocalActivePostId;
 
-  const categories = ['All', 'Bonds & Bills', 'Unit Trusts', 'SME Trade Finance', 'Real Estate', 'Agri-Logistics', 'Wealth Optimization'];
+  const categories = useMemo(
+    () => ['All', ...Array.from(new Set(blogPosts.map((post) => post.category)))],
+    []
+  );
 
   // --- Filter and Search ---
   const filteredPosts = useMemo(() => {
@@ -186,6 +189,25 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
           <h3 key={`h3-${blocks.length}`} className="text-xl font-bold text-slate-900 pt-6 pb-2 border-b border-slate-205">
             {renderInlineMarkdown(trimmed.replace('###', '').trim())}
           </h3>
+        );
+        return;
+      }
+
+      if (trimmed.startsWith('Original source: http')) {
+        flushAll();
+        const sourceUrl = trimmed.replace('Original source:', '').trim();
+        blocks.push(
+          <p key={`source-${blocks.length}`} className="text-xs leading-relaxed font-bold text-blue-900">
+            Original source:{' '}
+            <a
+              href={sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-blue-900/30 underline-offset-2 hover:text-blue-700"
+            >
+              {sourceUrl}
+            </a>
+          </p>
         );
         return;
       }

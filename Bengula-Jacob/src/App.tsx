@@ -92,14 +92,19 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
 
-            {/* Logo / Personal Brand */}
+            {/* Logo / Brand */}
             <div className="flex items-center gap-3">
-              <div
+              <button
                 onClick={() => navigate('home')}
-                className="w-9 h-9 bg-blue-900 rounded-lg flex items-center justify-center font-black text-white text-base shadow-md cursor-pointer transform hover:scale-105 transition"
+                className="w-10 h-10 bg-white rounded-lg border border-slate-200 flex items-center justify-center shadow-sm cursor-pointer transform hover:scale-105 transition overflow-hidden"
+                aria-label="Go to Bengula Inc home"
               >
-                {siteConfig.brand.initials}
-              </div>
+                <img
+                  src="/images/ColoredBengulaIncLogo.png"
+                  alt="Bengula Inc"
+                  className="w-9 h-9 object-contain"
+                />
+              </button>
               <div>
                 <span
                   onClick={() => navigate('home')}
@@ -107,7 +112,7 @@ export default function App() {
                 >
                   {siteConfig.brand.shortName.toUpperCase()}
                 </span>
-                <span className="text-[9px] text-slate-500 uppercase tracking-widest block font-bold mt-0.5">Absa RM • Bengula Inc Founder</span>
+                <span className="text-[9px] text-slate-500 uppercase tracking-widest block font-bold mt-0.5">Strategic Finance & Advisory</span>
               </div>
             </div>
 
@@ -180,7 +185,14 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
             <div className="space-y-2">
-              <p className="font-extrabold text-blue-900 text-sm tracking-widest uppercase font-sans">Bengula Jacob holdings</p>
+              <div className="flex items-center gap-3 justify-center md:justify-start">
+                <img
+                  src="/images/GrayBengulaIncLogo.png"
+                  alt="Bengula Inc"
+                  className="w-10 h-10 object-contain"
+                />
+                <p className="font-extrabold text-blue-900 text-sm tracking-widest uppercase font-sans">Bengula Inc</p>
+              </div>
               <p className="text-[10px] mt-0.5 text-slate-500">{siteConfig.brand.tagline}</p>
               {siteConfig.socials.length > 0 && (
                 <div className="flex flex-wrap gap-2 justify-center md:justify-start pt-1">
@@ -214,7 +226,7 @@ export default function App() {
 
           <div className="border-t border-slate-100 pt-6 text-[10px] text-slate-400 space-y-2 text-center md:text-left leading-normal">
             <p>
-              © {new Date().getFullYear()} Bengula Jacob / Bengula Inc. All Rights Reserved. Private holding platform. {siteConfig.contact.email}
+              Copyright {new Date().getFullYear()} Bengula Inc. All Rights Reserved. Private holding platform. {siteConfig.contact.email}
             </p>
             <p>
               Disclaimer: The analytical calculators, projections, and educational tools provided on this site are built exclusively for academic, informational, and general financial literacy education. They do not constitute formal, binding regulated financial, legal, or licensed brokerage counsel. Formal commercial banking requests must be finalized on official channels at Absa Bank Kenya key locations.

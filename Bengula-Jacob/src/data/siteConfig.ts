@@ -21,11 +21,11 @@ export interface PartnerLink {
 export const siteConfig = {
   brand: {
     fullName: "Bengula Keith W Jacob",
-    shortName: "Bengula Jacob",
+    shortName: "Bengula Inc",
     initials: "BJ",
     role: "Relationship Manager, Absa Kenya",
     company: "Bengula Inc",
-    tagline: "Financial education, personal branding, and alternative assets in East Africa.",
+    tagline: "Data-led digital growth, strategic finance education, and business advisory in East Africa.",
   },
 
   // ──────────────────────────────────────────────────────────────
@@ -36,7 +36,7 @@ export const siteConfig = {
     workEmail: "jacob.bengula@absa.africa",  // where booking requests are emailed (your work inbox)
     phone: "+254 741 418 199",            // shown + used for WhatsApp link
     whatsapp: "254741418199",             // digits only, country code, no +
-    location: "Nairobi, Kenya",           // city / region (no street unless you want it)
+    location: "Nairobi & Malindi, Kenya", // city / region (no street unless you want it)
     website: "",                          // e.g. "https://yourdomain.com" — leave "" to hide
   },
 
