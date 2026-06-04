@@ -1,19 +1,18 @@
-import { BlogPost } from "../../types";
+---
+id: kb-bond-guide-2026
+title: "Kenyan Treasury Bonds Demystified: The Anchor of Long-Term Wealth in Kenya"
+summary: With recent yields hovering between 15% and 17.5%, government infrastructure bonds represent one of the most reliable passive income engines for Kenyan investors.
+category: Bonds & Bills
+author:
+  name: Jacob Bengula
+  role: Relationship Manager & Founder of Bengula Inc.
+  avatar: /images/jacob.jpg
+date: May 24, 2026
+readTime: 8 min read
+featured: true
+---
 
-export const kbBondGuide: BlogPost = {
-  id: "kb-bond-guide-2026",
-  title: "Kenyan Treasury Bonds Demystified: The Anchor of Long-Term Wealth in Kenya",
-  summary: "With recent yields hovering between 15% and 17.5%, government infrastructure bonds represent one of the most reliable passive income engines for Kenyan investors.",
-  category: "Bonds & Bills",
-  author: {
-    name: "Jacob Bengula",
-    role: "Relationship Manager & Founder of Bengula Inc.",
-    avatar: "/images/jacob.jpg"
-  },
-  date: "May 24, 2026",
-  readTime: "8 min read",
-  featured: true,
-  content: `### The Power of Government Debt in Wealth Building
+### The Power of Government Debt in Wealth Building
 
 As a corporate-banking Relationship Manager, one of the most common questions clients ask me is: **"How can I securely deposit capital and generate predictable, tax-free or low-tax returns that exceed inflation?"**
 
@@ -42,5 +41,4 @@ When you buy a Treasury Bond, you are lending money to the Government of Kenya t
 
 To purchase Government securities, you use the Central Bank's online DhowCSD system. Open an account with KRA PIN and ID, then make bids for Treasury Bills or Bonds. 
 
-Instead of putting KSh 1,000,000 in a single 15-year bond, we utilize a strategy called **Bond Laddering**. Distribute KSh 200,000 in a 91-Day T-Bill, KSh 300,000 in a 5-year Treasury Bond, and KSh 500,000 in a tax-free Infrastructure Bond. This ensures liquid cash comes rolling in every single quarter!`
-};
+Instead of putting KSh 1,000,000 in a single 15-year bond, we utilize a strategy called **Bond Laddering**. Distribute KSh 200,000 in a 91-Day T-Bill, KSh 300,000 in a 5-year Treasury Bond, and KSh 500,000 in a tax-free Infrastructure Bond. This ensures liquid cash comes rolling in every single quarter!

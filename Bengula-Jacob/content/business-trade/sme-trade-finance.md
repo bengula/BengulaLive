@@ -1,18 +1,17 @@
-import { BlogPost } from "../../types";
+---
+id: sme-trade-finance
+title: SME Trade Finance & Supply-Chain Optimization in Frontier Markets
+summary: Exploring capital constraints in agricultural supply chains, showing how co-investment syndicates mitigate bank interest and boost SME exporters.
+category: SME Trade Finance
+author:
+  name: Jacob Bengula
+  role: Founder, Bengula Inc.
+  avatar: /images/jacob.jpg
+date: March 11, 2026
+readTime: 9 min read
+---
 
-export const smeTradeFinance: BlogPost = {
-  id: "sme-trade-finance",
-  title: "SME Trade Finance & Supply-Chain Optimization in Frontier Markets",
-  summary: "Exploring capital constraints in agricultural supply chains, showing how co-investment syndicates mitigate bank interest and boost SME exporters.",
-  category: "SME Trade Finance",
-  author: {
-    name: "Jacob Bengula",
-    role: "Founder, Bengula Inc.",
-    avatar: "/images/jacob.jpg"
-  },
-  date: "March 11, 2026",
-  readTime: "9 min read",
-  content: `### Why Good Exporters Still Run Out of Cash
+### Why Good Exporters Still Run Out of Cash
 
 Mid-sized agro-exporters are the heartbeat of East Africa, driving avocado, macadamia, French bean, and tea shipments worldwide. Yet many of them are profitable on paper and broke in the bank account at the same time. The reason is almost never demand — it is **timing**.
 
@@ -24,7 +23,7 @@ Most SMEs plug the hole with an overdraft or a quick digital loan. In Kenya thos
 
 A simple way to see it: if you borrow KSh 1,000,000 for a 60-day shipment cycle at an effective 24% APR, the finance cost is roughly:
 
-$$\\text{Cost} = 1{,}000{,}000 \\times 24\\% \\times \\tfrac{60}{365} \\approx \\text{KSh } 39{,}450 \\text{ per cycle}$$
+$$\text{Cost} = 1{,}000{,}000 \times 24\% \times \tfrac{60}{365} \approx \text{KSh } 39{,}450 \text{ per cycle}$$
 
 Run six cycles a year and you have handed the lender close to a quarter of a million shillings — money that should have funded the next container.
 
@@ -53,5 +52,4 @@ The point of trade finance is to match the *structure* of the money to the *stru
 
 This is exactly the kind of problem the **Finance & Banking Advisory** pillar exists for: we map your cash cycle, get your documents and numbers into bankable shape, and connect you to the right trade-finance facility — invoice finance, LPO finance, or an LC line — rather than letting an expensive overdraft quietly eat the margin you worked for.
 
-*Figures above are illustrative and for education only. They are not an offer of finance or a guarantee of any rate; actual terms are set by the licensed lender after assessment.*`
-};
+*Figures above are illustrative and for education only. They are not an offer of finance or a guarantee of any rate; actual terms are set by the licensed lender after assessment.*

@@ -1,18 +1,17 @@
-import { BlogPost } from "../../types";
+---
+id: tea-cooperative-restructure
+title: Tea Cooperative Strategic Restructure
+summary: A consulting breakdown showing how debt consolidation saved a Meru agricultural cooperative KSh 4,200,500 in borrowing interest.
+category: Wealth Optimization
+author:
+  name: Jacob Bengula
+  role: SME Advisory Representative
+  avatar: /images/jacob.jpg
+date: Jan 28, 2026
+readTime: 8 min read
+---
 
-export const teaCooperativeRestructure: BlogPost = {
-  id: "tea-cooperative-restructure",
-  title: "Tea Cooperative Strategic Restructure",
-  summary: "A consulting breakdown showing how debt consolidation saved a Meru agricultural cooperative KSh 4,200,500 in borrowing interest.",
-  category: "Wealth Optimization",
-  author: {
-    name: "Jacob Bengula",
-    role: "SME Advisory Representative",
-    avatar: "/images/jacob.jpg"
-  },
-  date: "Jan 28, 2026",
-  readTime: "8 min read",
-  content: `### The Problem: Profit Eaten by Interest
+### The Problem: Profit Eaten by Interest
 
 A tea cooperative in Meru came to us with a familiar complaint — strong volumes, loyal members, and almost nothing left at year-end. On-site, the picture was clear: the co-op was carrying **four separate short-term overdrafts** from different lenders, each taken on at a moment of cash pressure, each at a different (high) rate.
 
@@ -54,5 +53,4 @@ The point was never a clever finance structure — it was the **farmers' payout*
 3. **Match the facility to the asset:** receivables-backed term debt beats rolling overdrafts for predictable cash needs.
 4. **Close the visibility gap** so you stop borrowing out of surprise.
 
-This is the **Finance & Banking Advisory** pillar in practice: get the numbers visible, get the structure right, and put the savings back into the business and the people behind it.`
-};
+This is the **Finance & Banking Advisory** pillar in practice: get the numbers visible, get the structure right, and put the savings back into the business and the people behind it.

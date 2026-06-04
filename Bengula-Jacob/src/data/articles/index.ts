@@ -1,51 +1,46 @@
-import { kbBondGuide } from "./kb-bond-guide-2026";
-import { futureMmfsKenya } from "./future-mmfs-kenya";
-import { smeTradeFinance } from "./sme-trade-finance";
-import { sovereignDebtExplained } from "./sovereign-debt-masterclass";
-import { teaCooperativeRestructure } from "./tea-cooperative-restructure";
-import { kikuyuRidgeSyndicate } from "./kikuyu-ridge-syndicate";
-import { zinduaAgriLogistics } from "./zindua-agri-logistics";
-import { sleepingAssetOptimization } from "./sleeping-asset-optimization";
-import { smePackagerOptimization } from "./sme-packager-optimization";
-import { kikuyuRidgeInfrastructure } from "./kikuyu-ridge-infrastructure";
-import { agriExportSupplyChain } from "./agri-export-supply-chain";
-import { fintechAgriCooling } from "./fintech-agri-cooling";
-import { eastAfricanSovereignSummit } from "./east-african-sovereign-summit";
-import { saccoSaversGuarantors } from "./sacco-savers-guarantors";
-import { bengulaLegacyArchive } from "./bengula-legacy-archive";
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * ┌─────────────────────────────────────────────────────────────────────┐
+ * │  ARTICLE LOADER                                                       │
+ * │  Articles live as Markdown files in  content/<section>/<id>.md        │
+ * │  (YAML frontmatter + Markdown body). This module loads every one of   │
+ * │  them at build time and exposes them as `allArticles`.                │
+ * └─────────────────────────────────────────────────────────────────────┘
+ *
+ * TO ADD AN ARTICLE: copy content/_TEMPLATE.md into the right section folder,
+ * rename it to your-article-id.md, fill in the frontmatter + body. That's it —
+ * the card and page appear automatically. No code change needed.
+ *
+ * Files whose name starts with "_" (e.g. _TEMPLATE.md) are ignored.
+ */
 
-export {
-  kbBondGuide,
-  futureMmfsKenya,
-  smeTradeFinance,
-  sovereignDebtExplained,
-  teaCooperativeRestructure,
-  kikuyuRidgeSyndicate,
-  zinduaAgriLogistics,
-  sleepingAssetOptimization,
-  smePackagerOptimization,
-  kikuyuRidgeInfrastructure,
-  agriExportSupplyChain,
-  fintechAgriCooling,
-  eastAfricanSovereignSummit,
-  saccoSaversGuarantors,
-  bengulaLegacyArchive
-};
+import yaml from "js-yaml";
+import { BlogPost } from "../../types";
 
-export const allArticles = [
-  kbBondGuide,
-  futureMmfsKenya,
-  smeTradeFinance,
-  sovereignDebtExplained,
-  teaCooperativeRestructure,
-  kikuyuRidgeSyndicate,
-  zinduaAgriLogistics,
-  sleepingAssetOptimization,
-  smePackagerOptimization,
-  kikuyuRidgeInfrastructure,
-  agriExportSupplyChain,
-  fintechAgriCooling,
-  eastAfricanSovereignSummit,
-  saccoSaversGuarantors,
-  ...bengulaLegacyArchive
-];
+// Vite inlines each Markdown file's raw text into the bundle at build time, so
+// no runtime filesystem access is needed (works with the static server too).
+// The negative pattern excludes underscore-prefixed files (e.g. _TEMPLATE.md)
+// so the template is never bundled or loaded.
+const rawFiles = import.meta.glob(["/content/**/*.md", "!/content/**/_*.md"], {
+  eager: true,
+  query: "?raw",
+  import: "default",
+}) as Record<string, string>;
+
+const FRONTMATTER = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/;
+
+function parseArticle(path: string, text: string): BlogPost {
+  const match = text.match(FRONTMATTER);
+  if (!match) throw new Error(`Article ${path} is missing YAML frontmatter`);
+  const meta = yaml.load(match[1]) as Omit<BlogPost, "content">;
+  return { ...meta, content: match[2].trim() };
+}
+
+const basename = (p: string) => p.split("/").pop() ?? p;
+
+export const allArticles: BlogPost[] = Object.entries(rawFiles)
+  .filter(([path]) => !basename(path).startsWith("_")) // skip _TEMPLATE.md
+  .map(([path, text]) => parseArticle(path, text))
+  .sort((a, b) => Date.parse(b.date) - Date.parse(a.date)); // newest first

@@ -1,18 +1,17 @@
-import { BlogPost } from "../../types";
+---
+id: sme-packager-optimization
+title: SME Packager Margin Optimization
+summary: Reforming pricing metrics and implementing lightweight CRM pipelines, lifting EBITDA margins from 6% to 18% for an FMCG packager.
+category: SME Trade Finance
+author:
+  name: Jacob Bengula
+  role: Business Consultant
+  avatar: /images/jacob.jpg
+date: Sep 22, 2025
+readTime: 9 min read
+---
 
-export const smePackagerOptimization: BlogPost = {
-  id: "sme-packager-optimization",
-  title: "SME Packager Margin Optimization",
-  summary: "Reforming pricing metrics and implementing lightweight CRM pipelines, lifting EBITDA margins from 6% to 18% for an FMCG packager.",
-  category: "SME Trade Finance",
-  author: {
-    name: "Jacob Bengula",
-    role: "Business Consultant",
-    avatar: "/images/jacob.jpg"
-  },
-  date: "Sep 22, 2025",
-  readTime: "9 min read",
-  content: `### Busy, Growing, and Quietly Losing Money
+### Busy, Growing, and Quietly Losing Money
 
 A Nairobi FMCG packaging manufacturer came to us with a confusing problem: order sheets were full, the factory ran flat out, revenue was climbing — and yet the business lurched from one overdraft to the next. Net margin sat at a painful **6%**.
 
@@ -63,5 +62,4 @@ Over twelve months the turnaround compounded:
 3. **Make the numbers live** — a one-month-old ledger is a blindfold.
 4. **Use the freed cash to retire the most expensive debt first.**
 
-Strong sales are not the same as a strong business. Margin and visibility are what turn a busy factory into a profitable one.`
-};
+Strong sales are not the same as a strong business. Margin and visibility are what turn a busy factory into a profitable one.

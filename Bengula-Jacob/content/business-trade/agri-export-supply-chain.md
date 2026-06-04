@@ -1,18 +1,17 @@
-import { BlogPost } from "../../types";
+---
+id: agri-export-supply-chain
+title: Agri-Export Supply-Chain Logistics Pool
+summary: Unlocking stable, export-driven dollar revenues by financing regional macadamia and avocado shipments.
+category: Agri-Logistics
+author:
+  name: Jacob Bengula
+  role: Sponsor Representative
+  avatar: /images/jacob.jpg
+date: Jul 11, 2025
+readTime: 8 min read
+---
 
-export const agriExportSupplyChain: BlogPost = {
-  id: "agri-export-supply-chain",
-  title: "Agri-Export Supply-Chain Logistics Pool",
-  summary: "Unlocking stable, export-driven dollar revenues by financing regional macadamia and avocado shipments.",
-  category: "Agri-Logistics",
-  author: {
-    name: "Jacob Bengula",
-    role: "Sponsor Representative",
-    avatar: "/images/jacob.jpg"
-  },
-  date: "Jul 11, 2025",
-  readTime: "8 min read",
-  content: `### The Gap Between a Signed Order and a Shipped Container
+### The Gap Between a Signed Order and a Shipped Container
 
 East Africa's premium horticulture — macadamia, avocado, French beans — sells well abroad. The hard part is the middle. Once an exporter holds a confirmed international order, they still need cash *today* to buy the crop from farmers, clear and grade it, lease processing space, and pay freight, all weeks before the overseas buyer pays.
 
@@ -59,5 +58,4 @@ Before money moves, insist on seeing:
 
 The constructive role here is advisory: helping an exporter get **bankable** — clean documents, confirmed buyers, the right trade-finance facility from a licensed lender — so growth is funded by structure, not by guesswork or expensive overdrafts.
 
-*This is an educational case study, not an offer of securities or a solicitation to invest, and the figures are illustrative only. Any regulated investment or finance product is arranged and finalised through the appropriately licensed institution.*`
-};
+*This is an educational case study, not an offer of securities or a solicitation to invest, and the figures are illustrative only. Any regulated investment or finance product is arranged and finalised through the appropriately licensed institution.*

@@ -59,8 +59,27 @@ Most things you'll want to change live in plain data files under `src/data/`:
 | Services & pricing | `src/data/servicesData.ts` |
 | Portfolio items | `src/data/portfolioData.ts` |
 | Investment pools | `src/data/investmentsData.ts` |
-| Blog articles | `src/data/articles/*.ts` |
+| Blog articles | `content/<section>/*.md` (Markdown — see below) |
 | Downloadable dossiers | `public/documents/*.txt` |
+
+### ✍️ Writing blog articles (Markdown)
+
+Articles are plain Markdown files — edit them in Obsidian, GitHub, or any editor:
+
+```
+content/
+├── banking-credit/
+├── investing/
+├── technology/
+├── economy-policy/
+└── business-trade/
+```
+
+To add one, copy **`content/_TEMPLATE.md`** into the right section folder, rename it to
+`your-article-id.md`, and fill in the YAML frontmatter (title, summary, category, date, author…)
+plus the Markdown body. The card and article page appear automatically — no code change. Files
+whose name starts with `_` are ignored. The folder is just for organising; the blog category comes
+from the `category:` field in the frontmatter.
 
 ### ⚠️ Set your real contact details
 

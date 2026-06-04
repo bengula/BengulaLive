@@ -1,18 +1,17 @@
-import { BlogPost } from "../../types";
+---
+id: kikuyu-ridge-syndicate
+title: Kikuyu Ridge land-Banking Syndicate
+summary: Group land acquisition case study. How 14 elite co-investors purchased a 5-acre piece of prime suburban land in Kiambu County safely.
+category: Real Estate
+author:
+  name: Jacob Bengula
+  role: Founder, Bengula Inc.
+  avatar: /images/jacob.jpg
+date: Dec 18, 2025
+readTime: 9 min read
+---
 
-export const kikuyuRidgeSyndicate: BlogPost = {
-  id: "kikuyu-ridge-syndicate",
-  title: "Kikuyu Ridge land-Banking Syndicate",
-  summary: "Group land acquisition case study. How 14 elite co-investors purchased a 5-acre piece of prime suburban land in Kiambu County safely.",
-  category: "Real Estate",
-  author: {
-    name: "Jacob Bengula",
-    role: "Founder, Bengula Inc.",
-    avatar: "/images/jacob.jpg"
-  },
-  date: "Dec 18, 2025",
-  readTime: "9 min read",
-  content: `### Why Solo Land Deals Go Wrong in Kenya
+### Why Solo Land Deals Go Wrong in Kenya
 
 Land is the most trusted asset class in Kenya — and the one where individuals lose the most money. The failures rarely come from price; they come from **process**: a fake or contested title, the same plot sold to several buyers, hidden broker margins, boundary disputes, or capital that sits dead for a decade because the buyer could never afford to develop or exit.
 
@@ -51,5 +50,4 @@ A realistic investor judges a land deal on **clean title, location, a credible e
 
 Group land investing can work very well. It works because of paperwork and governance, not despite them.
 
-*This is an educational case study, not an offer of securities or a solicitation to invest. Appreciation figures are illustrative and not guaranteed; property values can fall and land can be illiquid.*`
-};
+*This is an educational case study, not an offer of securities or a solicitation to invest. Appreciation figures are illustrative and not guaranteed; property values can fall and land can be illiquid.*

@@ -1,18 +1,17 @@
-import { BlogPost } from "../../types";
+---
+id: east-african-sovereign-summit
+title: East African Sovereign Debt & Inflation Summit 2025
+summary: Keynote recap. Discussing DhowCSD access models, inflationary rebalancing, and regional bond market forecasts.
+category: Bonds & Bills
+author:
+  name: Jacob Bengula
+  role: Keynote Speaker
+  avatar: /images/jacob.jpg
+date: May 02, 2025
+readTime: 8 min read
+---
 
-export const eastAfricanSovereignSummit: BlogPost = {
-  id: "east-african-sovereign-summit",
-  title: "East African Sovereign Debt & Inflation Summit 2025",
-  summary: "Keynote recap. Discussing DhowCSD access models, inflationary rebalancing, and regional bond market forecasts.",
-  category: "Bonds & Bills",
-  author: {
-    name: "Jacob Bengula",
-    role: "Keynote Speaker",
-    avatar: "/images/jacob.jpg"
-  },
-  date: "May 02, 2025",
-  readTime: "8 min read",
-  content: `### A Market That Was Built for Institutions
+### A Market That Was Built for Institutions
 
 For most of its history, the Kenyan government-securities market was effectively a members-only club. To buy a Treasury bond you needed a CDS account opened through a bank, a relationship with that bank's treasury desk, and enough money to be taken seriously. The result: the safest, highest-yielding shilling instrument in the country was earning interest mostly for banks and large institutions, while ordinary savers sat in 3% accounts.
 
@@ -47,5 +46,4 @@ Finally, the structural ambition: **harmonising EAC debt markets** so that, over
 
 The headline is simple and worth repeating to every saver: **the door is now open.** The instruments that were once reserved for institutions are reachable from a phone. The remaining barrier is no longer access — it is **knowing how to use it.** Closing that knowledge gap is exactly the work this platform exists to do.
 
-*General financial education, not personal investment advice. Bond yields and tax treatment can change; transact only through the official DhowCSD/CBK channels.*`
-};
+*General financial education, not personal investment advice. Bond yields and tax treatment can change; transact only through the official DhowCSD/CBK channels.*

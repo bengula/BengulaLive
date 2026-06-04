@@ -1,35 +1,16 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
+---
+id: sovereign-debt-explained
+title: "Sovereign Debt Explained: How Ordinary Kenyans Can Lend to Government and Build Long-Term Wealth"
+summary: Most people assume government borrowing is the domain of banks and pension funds. But ordinary Kenyans can lend directly to government through Treasury Bills and Treasury Bonds — and build real wealth doing it.
+category: Bonds & Bills
+author:
+  name: Jacob Bengula
+  role: Relationship Manager & Founder of Bengula Inc.
+date: February 15, 2026
+readTime: 8 min read
+---
 
-import { BlogPost } from "../../types";
-
-export const sovereignDebtExplained: BlogPost = {
-  // ── Identity ──────────────────────────────────────────────────────────
-  id: "sovereign-debt-explained",
-
-  title: "Sovereign Debt Explained: How Ordinary Kenyans Can Lend to Government and Build Long-Term Wealth",
-
-  summary:
-    "Most people assume government borrowing is the domain of banks and pension funds. But ordinary Kenyans can lend directly to government through Treasury Bills and Treasury Bonds — and build real wealth doing it.",
-
-  // ── Category & cover image ────────────────────────────────────────────
-  category: "Bonds & Bills",
-
-  // ── Author(s) ─────────────────────────────────────────────────────────
-  author: {
-    name: "Jacob Bengula",
-    role: "Relationship Manager & Founder of Bengula Inc.",
-    // avatar: "/images/jacob.jpg",
-  },
-
-  // ── Meta ──────────────────────────────────────────────────────────────
-  date: "February 15, 2026",
-  readTime: "8 min read",
-
-  // ── Content ───────────────────────────────────────────────────────────
-  content: `### Introduction
+### Introduction
 
 Every year, the Government of Kenya borrows hundreds of billions of shillings from investors.
 
@@ -159,5 +140,4 @@ The goal is not simply to earn interest. It is to understand how money moves thr
 - **Bond laddering** can improve flexibility and cash flow.
 - Investors should understand inflation, liquidity, and interest-rate risks.
 - **DhowCSD** has made participation significantly easier for retail investors.
-- Understanding sovereign debt helps investors better understand the wider economy.`,
-};
+- Understanding sovereign debt helps investors better understand the wider economy.

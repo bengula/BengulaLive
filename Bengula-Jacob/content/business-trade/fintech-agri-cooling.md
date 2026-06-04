@@ -1,18 +1,17 @@
-import { BlogPost } from "../../types";
+---
+id: fintech-agri-cooling
+title: Fintech Agri-Cooling Tech Seed Syndicate & Supply-Chain Optimization in Frontier Markets
+summary: Angel backing for solar-powered cooling rooms, extending fresh crop storage life by extreme durations.
+category: Agri-Logistics
+author:
+  name: Jacob Bengula
+  role: Venture Sponsor
+  avatar: /images/jacob.jpg
+date: Jun 15, 2025
+readTime: 8 min read
+---
 
-export const fintechAgriCooling: BlogPost = {
-  id: "fintech-agri-cooling",
-  title: "Fintech Agri-Cooling Tech Seed Syndicate & Supply-Chain Optimization in Frontier Markets",
-  summary: "Angel backing for solar-powered cooling rooms, extending fresh crop storage life by extreme durations.",
-  category: "Agri-Logistics",
-  author: {
-    name: "Jacob Bengula",
-    role: "Venture Sponsor",
-    avatar: "/images/jacob.jpg"
-  },
-  date: "Jun 15, 2025",
-  readTime: "8 min read",
-  content: `### The Problem: Good Produce, Bad Timing
+### The Problem: Good Produce, Bad Timing
 
 A smallholder farmer harvests perfect avocados on a Tuesday. Without anywhere to keep them cool, the clock starts immediately — within a couple of hot days the fruit softens, grades drop, and the farmer is forced to sell at a distress price to whoever shows up. Across a season, that spoilage and forced-selling can erase a huge share of a farm's potential income.
 
@@ -47,5 +46,4 @@ Early-stage agri-tech is genuinely high-risk, and honest analysis treats it that
 
 Cold storage is a small piece of hardware with an outsized effect: it shifts power back toward the farmer by removing the tyranny of the clock. That is what makes the sector interesting — but interesting is not the same as safe. The right posture is curiosity backed by hard due diligence.
 
-*This is an educational case study, not an offer of securities or a solicitation to invest. Figures are illustrative projections, not guarantees. Early-stage investments can lose value; any regulated raise is conducted only through appropriately licensed channels.*`
-};
+*This is an educational case study, not an offer of securities or a solicitation to invest. Figures are illustrative projections, not guarantees. Early-stage investments can lose value; any regulated raise is conducted only through appropriately licensed channels.*

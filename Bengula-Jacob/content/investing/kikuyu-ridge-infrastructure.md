@@ -1,18 +1,17 @@
-import { BlogPost } from "../../types";
+---
+id: kikuyu-ridge-infrastructure
+title: Kikuyu Ridge Infrastructure & Land Venture
+summary: Strategic dossier detailing co-ownership structures in Kiambu land developments. Purchase, clear, title, and exit parameters.
+category: Real Estate
+author:
+  name: Jacob Bengula
+  role: Sponsor Representative
+  avatar: /images/jacob.jpg
+date: Aug 05, 2025
+readTime: 8 min read
+---
 
-export const kikuyuRidgeInfrastructure: BlogPost = {
-  id: "kikuyu-ridge-infrastructure",
-  title: "Kikuyu Ridge Infrastructure & Land Venture",
-  summary: "Strategic dossier detailing co-ownership structures in Kiambu land developments. Purchase, clear, title, and exit parameters.",
-  category: "Real Estate",
-  author: {
-    name: "Jacob Bengula",
-    role: "Sponsor Representative",
-    avatar: "/images/jacob.jpg"
-  },
-  date: "Aug 05, 2025",
-  readTime: "8 min read",
-  content: `### Raw Land vs. Ready Land
+### Raw Land vs. Ready Land
 
 Two plots sit side by side in the Kikuyu corridor. One is raw bush with no access road, no power, and an old title. The other has a graded access road, a power connection nearby, a clean subdivided title, and a fence. They started as the same land — but the second one is worth far more, sells far faster, and attracts serious buyers.
 
@@ -50,5 +49,4 @@ A KSh 500,000 minimum co-ownership slice lowers the entry barrier, but a small t
 
 Land appreciation is a story everyone believes; **manufactured** land value is a process you can actually verify. The discipline is the same as any project: a real budget, a real timeline, clean legal title, and an honest view of what can slip. Judge the plan, not the percentage.
 
-*This is an educational case study, not an offer of securities or a solicitation to invest. The IRR is an illustrative target, not a guarantee; property projects can run over budget, sell slowly, and lose value.*`
-};
+*This is an educational case study, not an offer of securities or a solicitation to invest. The IRR is an illustrative target, not a guarantee; property projects can run over budget, sell slowly, and lose value.*

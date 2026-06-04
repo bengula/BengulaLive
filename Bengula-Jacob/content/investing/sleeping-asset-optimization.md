@@ -1,18 +1,17 @@
-import { BlogPost } from "../../types";
+---
+id: sleeping-asset-optimization
+title: Sleeping Asset Yield Optimization
+summary: Case study on reallocating vacant suburban land tracts into direct, tax-free sovereign income streams, generating KSh 340,000 monthly.
+category: Wealth Optimization
+author:
+  name: Jacob Bengula
+  role: Senior Portfolio Advisor
+  avatar: /images/jacob.jpg
+date: Oct 12, 2025
+readTime: 8 min read
+---
 
-export const sleepingAssetOptimization: BlogPost = {
-  id: "sleeping-asset-optimization",
-  title: "Sleeping Asset Yield Optimization",
-  summary: "Case study on reallocating vacant suburban land tracts into direct, tax-free sovereign income streams, generating KSh 340,000 monthly.",
-  category: "Wealth Optimization",
-  author: {
-    name: "Jacob Bengula",
-    role: "Senior Portfolio Advisor",
-    avatar: "/images/jacob.jpg"
-  },
-  date: "Oct 12, 2025",
-  readTime: "8 min read",
-  content: `### "Asset-Rich, Cash-Poor" Is a Real Problem
+### "Asset-Rich, Cash-Poor" Is a Real Problem
 
 A senior corporate executive came to us looking successful on paper and feeling stuck in practice. His net worth was healthy, but most of it sat in **vacant suburban land** bought years earlier on the theory that "land always goes up." Meanwhile the parcels paid no rent, generated no income, and quietly cost money every year in land rates and the occasional boundary dispute.
 
@@ -55,5 +54,4 @@ No instrument is risk-free, and good advice says so plainly:
 
 Every shilling you own should have a job. If an asset's job is income, idle land is the wrong employee for it. The exercise here was not exotic — it was simply forcing each holding to justify itself against the owner's real goal, then matching the capital to an instrument that delivers it.
 
-*This is an educational case study, not personal investment advice. Bond yields and tax treatment can change; confirm current terms on the official DhowCSD/CBK channels before investing.*`
-};
+*This is an educational case study, not personal investment advice. Bond yields and tax treatment can change; confirm current terms on the official DhowCSD/CBK channels before investing.*

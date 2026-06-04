@@ -1,18 +1,17 @@
-import { BlogPost } from "../../types";
+---
+id: future-mmfs-kenya
+title: The Future of MMFs & Double-Digit Fixed Yields in Kenya
+summary: As CBK rates adjust, what is the trajectory of local Money Market Funds? We analyze compounding advantages, liquidity parameters, and rate predictions for 2026.
+category: Unit Trusts
+author:
+  name: Jacob Bengula
+  role: Relationship Manager & Founder of Bengula Inc.
+  avatar: /images/jacob.jpg
+date: April 18, 2026
+readTime: 8 min read
+---
 
-export const futureMmfsKenya: BlogPost = {
-  id: "future-mmfs-kenya",
-  title: "The Future of MMFs & Double-Digit Fixed Yields in Kenya",
-  summary: "As CBK rates adjust, what is the trajectory of local Money Market Funds? We analyze compounding advantages, liquidity parameters, and rate predictions for 2026.",
-  category: "Unit Trusts",
-  author: {
-    name: "Jacob Bengula",
-    role: "Relationship Manager & Founder of Bengula Inc.",
-    avatar: "/images/jacob.jpg"
-  },
-  date: "April 18, 2026",
-  readTime: "8 min read",
-  content: `### The Job an Emergency Fund Actually Does
+### The Job an Emergency Fund Actually Does
 
 Every sound financial plan starts with the same boring, powerful step: an **emergency fund** of three to six months of living expenses. Its job is not to grow your wealth — it is to stop one bad month (a job loss, a medical bill, a slow quarter for your business) from forcing you to sell a long-term asset or take an expensive loan at the worst possible time.
 
@@ -34,7 +33,7 @@ In Kenya, MMF yields have recently sat between roughly **11% and 15.5% gross**. 
 
 Fund marketing always quotes the **gross** rate. What lands in your pocket is the net rate after withholding tax. If a fund advertises 14% per annum gross:
 
-$$\\text{Net Yield} = 14\\% \\times (1 - 0.15) = 11.9\\% \\text{ net per annum}$$
+$$\text{Net Yield} = 14\% \times (1 - 0.15) = 11.9\% \text{ net per annum}$$
 
 That ~11.9% net still comfortably beats a savings account and, in most periods, beats inflation — which is exactly what you want from a *buffer*.
 
@@ -50,5 +49,4 @@ An MMF is the right home for money you might need *soon* — your emergency fund
 
 Used together — MMF for liquidity, bonds for locked long-term yield — you get a simple, powerful cash strategy that most savers never set up.
 
-*This article is general financial education, not personal investment advice. Yields change and are not guaranteed; always read a fund's documents and confirm it is CMA-licensed before investing.*`
-};
+*This article is general financial education, not personal investment advice. Yields change and are not guaranteed; always read a fund's documents and confirm it is CMA-licensed before investing.*

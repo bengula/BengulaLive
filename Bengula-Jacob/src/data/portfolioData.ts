@@ -16,7 +16,7 @@ export const portfolioItemsList: PortfolioItem[] = [
       { label: "Bids Submitted", value: "KSh 95,000,000+" },
       { label: "Bond Ladder Tool", value: "Distributed Free" }
     ],
-    blogId: "sovereign-debt-masterclass",
+    blogId: "sovereign-debt-explained",
     riskProfile: "Low"
   },
   {

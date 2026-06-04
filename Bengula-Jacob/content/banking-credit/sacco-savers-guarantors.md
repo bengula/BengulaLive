@@ -1,37 +1,27 @@
-import { BlogPost } from "../../types";
+---
+id: sacco-savers-guarantors
+title: "Safe for Savers, Risky for Guarantors: The Changing Calculus of SACCO Membership in Kenya"
+summary: SACCOs remain one of Kenya's best wealth-building vehicles for disciplined savers — but the guarantor model is quietly transferring credit risk onto members who never borrowed a shilling. Here's how the calculus has changed.
+category: Wealth Optimization
+author:
+  name: Jacob Bengula
+  role: Relationship Manager & Founder of Bengula Inc.
+  avatar: /images/jacob.jpg
+coAuthors:
+  - name: Winnie Njoroge
+    role: Creative Strategist, Martin Munroe LLC
+    avatar: /images/bebe.jpg
+  - name: Claude Opus
+    role: AI Research & Drafting Assistant
+    avatar: /images/claude-avatar.svg
+  - name: Gemini
+    role: AI Research Assistant
+    avatar: /images/gemini-avatar.svg
+date: June 2, 2026
+readTime: 9 min read
+---
 
-export const saccoSaversGuarantors: BlogPost = {
-  id: "sacco-savers-guarantors",
-  title:
-    "Safe for Savers, Risky for Guarantors: The Changing Calculus of SACCO Membership in Kenya",
-  summary:
-    "SACCOs remain one of Kenya's best wealth-building vehicles for disciplined savers — but the guarantor model is quietly transferring credit risk onto members who never borrowed a shilling. Here's how the calculus has changed.",
-  category: "Wealth Optimization",
-  author: {
-    name: "Jacob Bengula",
-    role: "Relationship Manager & Founder of Bengula Inc.",
-    avatar: "/images/jacob.jpg",
-  },
-  coAuthors: [
-    {
-      name: "Winnie Njoroge",
-      role: "Creative Strategist, Martin Munroe LLC",
-      avatar: "/images/bebe.jpg",
-    },
-    {
-      name: "Claude Opus",
-      role: "AI Research & Drafting Assistant",
-      avatar: "/images/claude-avatar.svg",
-    },
-    {
-      name: "Gemini",
-      role: "AI Research Assistant",
-      avatar: "/images/gemini-avatar.svg",
-    },
-  ],
-  date: "June 2, 2026",
-  readTime: "9 min read",
-  content: `For decades, Savings and Credit Cooperative Organisations (SACCOs) have been one of Kenya's great financial success stories. They have helped millions of Kenyans save, access affordable credit, build homes, educate their children, and start businesses. For the disciplined saver, they remain among the most effective wealth-building vehicles available, offering dividends, member ownership, and a savings culture that few traditional products can match.
+For decades, Savings and Credit Cooperative Organisations (SACCOs) have been one of Kenya's great financial success stories. They have helped millions of Kenyans save, access affordable credit, build homes, educate their children, and start businesses. For the disciplined saver, they remain among the most effective wealth-building vehicles available, offering dividends, member ownership, and a savings culture that few traditional products can match.
 
 Yet a troubling trend has taken hold in recent years. While SACCOs continue to reward savers, they are becoming markedly riskier for borrowers, and especially for guarantors. A growing number of members are discovering that the same system that makes credit so accessible can expose them to serious financial and legal consequences when a loan goes wrong.
 
@@ -121,5 +111,4 @@ The SACCO sector remains one of Kenya's most important financial pillars. But as
 
 SACCOs remain among the best institutions for building savings and accumulating wealth in Kenya. Their member-owned structure and strong savings culture continue to deliver real value to millions of households.
 
-The risks attached to borrowing and guaranteeing, however, have grown significantly. Rising defaults, economic pressure, more aggressive recovery action, and the widespread use of guarantees all mean that members must weigh their exposure carefully before signing any loan document. Saving through a SACCO remains a sound strategy. Borrowing and guaranteeing now demand a level of caution and due diligence that many members have historically overlooked.`,
-};
+The risks attached to borrowing and guaranteeing, however, have grown significantly. Rising defaults, economic pressure, more aggressive recovery action, and the widespread use of guarantees all mean that members must weigh their exposure carefully before signing any loan document. Saving through a SACCO remains a sound strategy. Borrowing and guaranteeing now demand a level of caution and due diligence that many members have historically overlooked.

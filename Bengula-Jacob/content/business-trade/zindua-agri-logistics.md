@@ -1,18 +1,17 @@
-import { BlogPost } from "../../types";
+---
+id: zindua-agri-logistics
+title: Zindua Agri-Logistics Seed Alliance
+summary: Fintech integration in regional horticulture transport corridors, reducing transport crop shrinkage by -35% during Mt. Kenya transit.
+category: Agri-Logistics
+author:
+  name: Jacob Bengula
+  role: Venture Partner, Bengula Inc.
+  avatar: /images/jacob.jpg
+date: Nov 02, 2025
+readTime: 8 min read
+---
 
-export const zinduaAgriLogistics: BlogPost = {
-  id: "zindua-agri-logistics",
-  title: "Zindua Agri-Logistics Seed Alliance",
-  summary: "Fintech integration in regional horticulture transport corridors, reducing transport crop shrinkage by -35% during Mt. Kenya transit.",
-  category: "Agri-Logistics",
-  author: {
-    name: "Jacob Bengula",
-    role: "Venture Partner, Bengula Inc.",
-    avatar: "/images/jacob.jpg"
-  },
-  date: "Nov 02, 2025",
-  readTime: "8 min read",
-  content: `### The Loss That Happens on the Road
+### The Loss That Happens on the Road
 
 Cold storage at the farm solves half the problem. The other half happens in transit. A horticulture crop kept perfectly cool in Meru can still arrive at Mombasa port bruised and heat-damaged after a long, hot, bumpy ride — and a damaged consignment is rejected or down-graded exactly when the most money is at stake. Across the corridor, transit losses of around **40%** were normal.
 
@@ -49,5 +48,4 @@ That said, "asset-backed" is not "risk-free." The honest risk list includes:
 
 The most durable agri-logistics plays are boring in the best way: real trucks, real contracts, measurable quality, prompt farmer payments. The fancy part — the temperature data — exists to turn "trust me" into evidence, which is what lets the produce command its full export price.
 
-*This is an educational case study, not an offer of securities or a solicitation to invest. Figures are illustrative; asset-backed does not mean guaranteed, and any regulated raise is conducted only through appropriately licensed channels.*`
-};
+*This is an educational case study, not an offer of securities or a solicitation to invest. Figures are illustrative; asset-backed does not mean guaranteed, and any regulated raise is conducted only through appropriately licensed channels.*
