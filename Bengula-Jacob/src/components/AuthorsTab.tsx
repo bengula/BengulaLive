@@ -130,6 +130,7 @@ export default function AuthorsTab({
   return (
     <div id="authors-tab-root" className="space-y-6 animate-fadeIn">
       <div className="border-b border-slate-200 pb-6 space-y-1">
+        <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Contributors</span>
         <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
           <Users className="w-6 h-6 text-blue-900" />
           Our Authors

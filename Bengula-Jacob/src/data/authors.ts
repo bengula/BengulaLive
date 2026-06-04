@@ -36,9 +36,9 @@ export const authorProfiles: AuthorProfile[] = [
   {
     id: "jacob-bengula",
     name: "Jacob Bengula",
-    role: "Relationship Manager, Absa Kenya & Founder of Bengula Inc.",
+    role: "Relationship Manager & Founder of Bengula Inc.",
     avatar: "/images/jacob.jpg",
-    bio: "Jacob Bengula is a private wealth relationship manager at Absa Kenya and the founder of Bengula Inc. He writes on financial education, personal branding, and alternative assets across East Africa — translating sovereign debt, unit trusts, SME trade finance, and real-estate syndication into practical strategy for everyday savers and investors.",
+    bio: "Jacob Bengula is a private wealth relationship manager at a tier-1 Kenyan bank and the founder of Bengula Inc. He writes on financial education, personal branding, and alternative assets across East Africa — translating sovereign debt, unit trusts, SME trade finance, and real-estate syndication into practical strategy for everyday savers and investors.",
     links: [
       { label: "LinkedIn", href: "https://www.linkedin.com/in/bengula/" },
     ],

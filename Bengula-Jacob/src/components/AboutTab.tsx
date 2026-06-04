@@ -27,7 +27,7 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
               />
               <div>
                 <h3 className="text-xl font-bold text-slate-900">Jacob Bengula</h3>
-                <p className="text-sm text-blue-900 font-extrabold mt-1">Relationship Manager, Absa Kenya</p>
+                <p className="text-sm text-blue-900 font-extrabold mt-1">Relationship Manager, Corporate & Business Banking</p>
                 <p className="text-xs text-slate-500 font-semibold mt-0.5">Founder, Bengula Inc</p>
               </div>
               <div className="bg-slate-50 rounded-xl p-3 text-xs text-slate-500 font-mono border border-slate-100 text-left space-y-2">
@@ -60,7 +60,7 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
             <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">Who is Bengula Jacob?</h2>
           </div>
           <p className="text-slate-600 leading-relaxed text-sm md:text-base font-normal">
-            I currently operate as an active <strong>Senior Relationship Manager (RM) for Absa Kenya</strong>, overseeing premium corporate portfolios, investment lines, and bulk treasury allocations. My career journey centers on helping corporate entities and high-net-worth clients navigate complex treasury bid options, trade financing, and sovereign bond allocations.
+            I currently operate as an active <strong>Senior Corporate & Business Banking Relationship Manager</strong>, overseeing premium corporate portfolios, investment lines, and bulk treasury allocations. My career journey centers on helping corporate entities and high-net-worth clients navigate complex treasury bid options, trade financing, and sovereign bond allocations.
           </p>
           
           <div className="bg-slate-50 border border-slate-200/60 p-4 rounded-xl space-y-2 text-xs">
@@ -229,7 +229,7 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
             {
               year: "2021 - Present",
               title: "Senior Relationship Manager (RM)",
-              company: "Absa Bank Kenya PLC",
+              company: "Tier-1 Kenyan Bank",
               desc: "Managing high-profile corporate deposits, commercial credit facilities, and liquidity structures. Leading capital placement strategies in double-digit yield Treasury Bond auctions (now averaging 15%+ APR)."
             },
             {

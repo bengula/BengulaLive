@@ -20,7 +20,7 @@ export const sovereignDebtExplained: BlogPost = {
   // ── Author(s) ─────────────────────────────────────────────────────────
   author: {
     name: "Jacob Bengula",
-    role: "Relationship Manager, Absa Kenya & Founder of Bengula Inc.",
+    role: "Relationship Manager & Founder of Bengula Inc.",
     // avatar: "/images/jacob.jpg",
   },
 

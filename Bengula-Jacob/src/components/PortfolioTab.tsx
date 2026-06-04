@@ -17,8 +17,8 @@ export default function PortfolioTab({ onNavigateToBlog }: { onNavigateToBlog: (
 
   const categoryIcons: Record<PortfolioCategory, React.ReactNode> = {
     [portfolioItemTags.project]: <Award className="w-5 h-5 text-blue-900" />,
-    [portfolioItemTags.businessVenture]: <Layers className="w-5 h-5 text-indigo-600" />,
-    [portfolioItemTags.caseStudy]: <TrendingUp className="w-5 h-5 text-emerald-600" />,
+    [portfolioItemTags.businessVenture]: <Layers className="w-5 h-5 text-violet-600" />,
+    [portfolioItemTags.caseStudy]: <TrendingUp className="w-5 h-5 text-amber-600" />,
   };
 
   return (
@@ -27,10 +27,10 @@ export default function PortfolioTab({ onNavigateToBlog }: { onNavigateToBlog: (
       {/* Tab Header details */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-b border-slate-200 pb-6">
         <div className="space-y-1.5">
-          <span className="text-xs font-bold text-blue-900 uppercase tracking-widest block font-extrabold font-sans">Executive Placements</span>
+          <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold font-sans">Selected Work</span>
           <h2 className="text-2xl font-bold text-slate-900">Portfolio & Case Studies</h2>
           <p className="text-slate-500 text-xs">
-            A review of structured bond campaigns, corporate consulting projects, and seed investments conducted by Jacob Bengula and Bengula Inc.
+            Work across both Bengula Inc pillars — data, SEO, and digital growth projects alongside finance, banking, and investment engagements.
           </p>
         </div>
 
@@ -141,7 +141,7 @@ export default function PortfolioTab({ onNavigateToBlog }: { onNavigateToBlog: (
 
       {/* Footer reassurance callout */}
       <div className="bg-blue-50/70 rounded-xl p-4 border border-blue-100 text-xs text-blue-950 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xs">
-        <span className="font-semibold text-center sm:text-left">To coordinate custom placement pipelines or syndicate investments via Absa Securities or Bengula Inc desks:</span>
+        <span className="font-semibold text-center sm:text-left">To plan a growth engagement, banking introduction, or co-investment with the Bengula Inc desk:</span>
         <button
           onClick={() => {
             const btn = document.getElementById('nav-btn-services');

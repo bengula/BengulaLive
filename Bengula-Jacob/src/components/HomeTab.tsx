@@ -119,10 +119,19 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl mx-auto lg:mx-0">
-            {['Banking & capital advisory', 'Data & SEO growth', 'Finance education'].map((item) => (
-              <div key={item} className="bg-white border border-slate-200 rounded-lg px-3 py-2 text-[11px] font-bold text-slate-700 shadow-sm">
-                {item}
-              </div>
+            {([
+              { label: 'Banking & capital advisory', tab: 'services' },
+              { label: 'Data & SEO growth', tab: 'portfolio' },
+              { label: 'Finance education', tab: 'blog' },
+            ] as { label: string; tab: TabId }[]).map((item) => (
+              <button
+                key={item.label}
+                onClick={() => navigate(item.tab)}
+                className="group bg-white border border-slate-200 rounded-lg px-3 py-2 text-[11px] font-bold text-slate-700 shadow-sm flex items-center justify-between gap-1 cursor-pointer hover:border-violet-300 hover:text-violet-700 hover:bg-violet-50/50 transition text-left"
+              >
+                <span>{item.label}</span>
+                <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-violet-600 shrink-0 transition-colors" />
+              </button>
             ))}
           </div>
 

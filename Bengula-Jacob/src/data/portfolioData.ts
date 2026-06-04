@@ -35,7 +35,37 @@ export const portfolioItemsList: PortfolioItem[] = [
     blogId: "tea-cooperative-restructure",
     riskProfile: "Low"
   },
+  {
+    id: "seo-lead-engine",
+    title: "SME SEO & Inbound Lead Engine",
+    category: portfolioItemTags.project,
+    description: "Rebuilt the website, search visibility, and content engine for a Nairobi professional-services SME that was invisible on Google and relying entirely on referrals.",
+    impact: "Took the business from page 4 to the top 3 results for its core service terms, turning organic search into a predictable, month-on-month source of qualified enquiries.",
+    location: "Nairobi",
+    year: "2025 - 2026",
+    metrics: [
+      { label: "Organic Traffic", value: "+310% in 6 mo" },
+      { label: "Inbound Leads", value: "12 → 90 / mo" },
+      { label: "Cost / Lead", value: "-64%" }
+    ],
+    riskProfile: "Low"
+  },
   // --- BUSINESS VENTURES ---
+  {
+    id: "retail-data-dashboard",
+    title: "Retail Data & Decision Dashboard",
+    category: portfolioItemTags.businessVenture,
+    description: "Built a live sales, stock, and margin dashboard for a multi-branch retailer that was making buying and pricing calls on gut feel and stale spreadsheets.",
+    impact: "Put daily numbers in front of the owner, exposing dead stock and underpriced lines — decisions moved from monthly guesswork to weekly, evidence-led action.",
+    location: "Mombasa & Nairobi",
+    year: "2025",
+    metrics: [
+      { label: "Dead Stock", value: "-38% in Q1" },
+      { label: "Gross Margin", value: "+5.2 pts" },
+      { label: "Report Lag", value: "30 days → live" }
+    ],
+    riskProfile: "Low"
+  },
   {
     id: "kikuyu-ridge-syndicate",
     title: "Kikuyu Ridge land-Banking Syndicate",
@@ -69,6 +99,21 @@ export const portfolioItemsList: PortfolioItem[] = [
     riskProfile: "Moderate"
   },
   // --- CASE STUDIES ---
+  {
+    id: "ecommerce-conversion-launch",
+    title: "E-commerce Storefront & Conversion Launch",
+    category: portfolioItemTags.caseStudy,
+    description: "Took an agri-products brand online from scratch — storefront, payments, analytics, and a search-and-social funnel — then tuned the checkout against real drop-off data.",
+    impact: "Launched a working online channel that now sells beyond the physical shop, with conversion tracking that shows exactly which campaigns and pages pay back.",
+    location: "Meru & Online",
+    year: "2025",
+    metrics: [
+      { label: "Online Revenue", value: "0 → 28% of sales" },
+      { label: "Checkout Conv.", value: "1.1% → 3.4%" },
+      { label: "Return Buyers", value: "31% repeat rate" }
+    ],
+    riskProfile: "Low"
+  },
   {
     id: "high-earner-transition",
     title: "Sleeping Asset Yield Optimization",

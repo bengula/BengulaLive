@@ -409,12 +409,13 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
           {/* Controls Box */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center border-b border-slate-200 pb-6">
             <div className="md:col-span-5 space-y-1">
+              <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Research Library</span>
               <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
                 <BookOpen className="w-6 h-6 text-blue-900 animate-pulse" />
                 Financial Education Hub
               </h2>
               <p className="text-xs text-slate-500">
-                Explore real and actionable guidelines addressing the Kenyan market ecosystem.
+                Practical notes across both pillars — business finance and banking, plus data, SEO, and digital growth.
               </p>
             </div>
 

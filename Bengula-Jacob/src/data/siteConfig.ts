@@ -23,7 +23,7 @@ export const siteConfig = {
     fullName: "Bengula Keith W Jacob",
     shortName: "Bengula Inc",
     initials: "BJ",
-    role: "Relationship Manager, Absa Kenya",
+    role: "Relationship Manager, Corporate & Business Banking",
     company: "Bengula Inc",
     slogan: "Adding meaning to life",
     // One-line positioning used in the hero + meta description.
@@ -51,7 +51,7 @@ export const siteConfig = {
   // ──────────────────────────────────────────────────────────────
   contact: {
     email: "kbengula@student.maseno.ac.ke",      // primary public email (shown on Contact page)
-    workEmail: "jacob.bengula@absa.africa",  // where booking requests are emailed (your work inbox)
+    workEmail: "kbengula@student.maseno.ac.ke",  // where booking requests are emailed — TODO: set a Bengula Inc inbox (e.g. hello@bengula.co.ke)
     phone: "+254 741 418 199",            // shown + used for WhatsApp link
     whatsapp: "254741418199",             // digits only, country code, no +
     location: "Nairobi & Malindi, Kenya", // city / region (no street unless you want it)
@@ -68,7 +68,7 @@ export const siteConfig = {
       { label: "CBK T-Bills (91-Day)", value: "15.82%" },
       { label: "CBK T-Bills (182-Day)", value: "16.35%" },
       { label: "Sovereign IFB 17Yr (Tax-Free)", value: "16.85% coupon", tone: "amber" as const },
-      { label: "Absa Group Dividend Yield", value: "~11.5%" },
+      { label: "Tier-1 Bank Dividend Yield", value: "~11.5%" },
       { label: "NSE Blue-chips", value: "Accumulation Stage" },
     ] as { label: string; value: string; tone?: "amber" }[],
   },
@@ -78,9 +78,9 @@ export const siteConfig = {
   // name as plain text (e.g. a private co-op with no public website).
   // ⚠️ Verify each URL before going live.
   partners: [
-    { label: "Absa Bank Kenya",   href: "https://www.absabank.co.ke" },
     { label: "CBK DhowCSD Portal", href: "https://www.dhowcsd.go.ke" },
     { label: "Nairobi Securities Exchange", href: "https://www.nse.co.ke" },
+    { label: "Capital Markets Authority", href: "https://www.cma.or.ke" },
     { label: "Meru Agri Co-op",   href: "" }, // no public site — add if one exists
   ] as PartnerLink[],
 

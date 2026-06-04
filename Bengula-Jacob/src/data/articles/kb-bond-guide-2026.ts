@@ -7,7 +7,7 @@ export const kbBondGuide: BlogPost = {
   category: "Bonds & Bills",
   author: {
     name: "Jacob Bengula",
-    role: "Relationship Manager, Absa Kenya & Founder of Bengula Inc.",
+    role: "Relationship Manager & Founder of Bengula Inc.",
     avatar: "/images/jacob.jpg"
   },
   date: "May 24, 2026",
@@ -15,7 +15,7 @@ export const kbBondGuide: BlogPost = {
   featured: true,
   content: `### The Power of Government Debt in Wealth Building
 
-As a Relationship Manager at Absa Kenya, one of the most common questions clients ask me is: **"How can I securely deposit capital and generate predictable, tax-free or low-tax returns that exceed inflation?"**
+As a corporate-banking Relationship Manager, one of the most common questions clients ask me is: **"How can I securely deposit capital and generate predictable, tax-free or low-tax returns that exceed inflation?"**
 
 The answer almost always begins with **Kenyan Government Treasury Bonds (especially Infrastructure Bonds - IFBs)**.
 

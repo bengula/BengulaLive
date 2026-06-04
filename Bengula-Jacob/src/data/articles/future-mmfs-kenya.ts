@@ -7,7 +7,7 @@ export const futureMmfsKenya: BlogPost = {
   category: "Unit Trusts",
   author: {
     name: "Jacob Bengula",
-    role: "Relationship Manager, Absa Kenya & Founder of Bengula Inc.",
+    role: "Relationship Manager & Founder of Bengula Inc.",
     avatar: "/images/jacob.jpg"
   },
   date: "April 18, 2026",

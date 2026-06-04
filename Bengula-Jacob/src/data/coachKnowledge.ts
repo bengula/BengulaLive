@@ -169,7 +169,7 @@ Bengula Inc structures **private co-investment placements** (land-banking, logis
 - A short **due-diligence / KYC** step.
 - A defined **tenure and exit** for each placement.
 
-These are **separate from regulated Absa banking products**. The best next step is to **book a consultation** so we can match you to a suitable pool.`,
+These are **separate from regulated bank products**. The best next step is to **book a consultation** so we can match you to a suitable pool.`,
   },
   {
     id: "services-pricing",

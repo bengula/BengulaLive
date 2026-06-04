@@ -229,7 +229,7 @@ export default function App() {
               Copyright {new Date().getFullYear()} Bengula Inc. All Rights Reserved. Private holding platform. {siteConfig.contact.email}
             </p>
             <p>
-              Disclaimer: The analytical calculators, projections, and educational tools provided on this site are built exclusively for academic, informational, and general financial literacy education. They do not constitute formal, binding regulated financial, legal, or licensed brokerage counsel. Formal commercial banking requests must be finalized on official channels at Absa Bank Kenya key locations.
+              Disclaimer: The analytical calculators, projections, and educational tools provided on this site are built exclusively for academic, informational, and general financial literacy education. They do not constitute formal, binding regulated financial, legal, or licensed brokerage counsel. Any regulated banking product is opened and finalised directly with the licensed bank or provider that issues it.
             </p>
           </div>
         </div>

@@ -55,7 +55,7 @@ export const templateArticle: BlogPost = {
   // URL or a local path like "/images/jane.jpg" (file goes in public/images/).
   author: {
     name: "Jacob Bengula",
-    role: "Relationship Manager, Absa Kenya & Founder of Bengula Inc.",
+    role: "Relationship Manager & Founder of Bengula Inc.",
     // avatar: "/images/jacob.jpg",
   },
 

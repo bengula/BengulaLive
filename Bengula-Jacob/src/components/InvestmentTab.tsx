@@ -114,7 +114,7 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
         {/* Left Column: Pools display */}
         <div className="lg:col-span-7 space-y-6">
           <div className="space-y-1.5">
-            <span className="text-xs font-bold text-blue-900 uppercase tracking-widest block font-extrabold font-sans">Strategic Allocations</span>
+            <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold font-sans">Strategic Allocations</span>
             <h2 className="text-2xl font-bold text-slate-900">Current Investment Opportunities</h2>
             <p className="text-slate-500 text-xs font-medium leading-relaxed">
               Through Bengula Inc private holding networks, we sponsor high-gain real-estate development, agricultural exports support, and tech-driven seed cooperatives.

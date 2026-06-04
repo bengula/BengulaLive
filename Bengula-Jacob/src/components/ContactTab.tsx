@@ -46,7 +46,7 @@ export default function ContactTab() {
       {/* Left Column: Coordinates */}
       <div className="lg:col-span-5 space-y-6">
         <div className="space-y-1.5">
-          <span className="text-xs font-semibold text-blue-900 uppercase tracking-widest block font-bold">Confidential Desk</span>
+          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest block font-bold">Confidential Desk</span>
           <h2 className="text-2xl font-bold text-slate-900">Contact Jacob Bengula</h2>
           <p className="text-slate-600 text-xs">
             Please route questions concerning corporate advisor structures, bulk treasury placements, or Bengula Inc syndications directly.
@@ -111,12 +111,12 @@ export default function ContactTab() {
           )}
         </div>
 
-        {/* Absa warning banner */}
+        {/* Compliance separation banner */}
         <div className="bg-amber-50 border border-amber-200 text-amber-900 text-[11px] p-4 rounded-xl leading-relaxed flex gap-2 shadow-xs">
           <span className="font-bold uppercase tracking-wider text-xs block leading-none shrink-0 mt-0.5">⚠️</span>
           <div>
-            <span className="font-extrabold block mb-0.5 text-xs text-amber-950">Notice on Absa Kenya Protocols:</span>
-            Strict separation parameters are preserved in compliance with CMA mandates. Core retail deposits or conventional debt offerings are strictly finalized utilizing official Absa bank locations and secure banking platforms. Alternative syndications remain under the exclusive domain of Bengula Inc private holdings.
+            <span className="font-extrabold block mb-0.5 text-xs text-amber-900">A Note on How We Work:</span>
+            Bengula Inc is an independent advisory firm, not a bank. We help you choose and prepare for banking and capital products; the products themselves are opened, regulated, and finalised directly with the licensed bank or provider on their official channels.
           </div>
         </div>
       </div>
