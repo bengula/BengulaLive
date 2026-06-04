@@ -55,7 +55,7 @@ export const siteConfig = {
     phone: "+254 741 418 199",            // shown + used for WhatsApp link
     whatsapp: "254741418199",             // digits only, country code, no +
     location: "Nairobi & Malindi, Kenya", // city / region (no street unless you want it)
-    website: "",                          // e.g. "https://yourdomain.com" — leave "" to hide
+    website: "https://bengula.co.ke",     // public site URL — leave "" to hide
   },
 
   // Ticker: Kenyan market rates. FX (USD/KES etc.) is fetched live in the
