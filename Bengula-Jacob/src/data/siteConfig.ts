@@ -50,8 +50,8 @@ export const siteConfig = {
   // TODO: replace these placeholders with real, public contact info.
   // ──────────────────────────────────────────────────────────────
   contact: {
-    email: "kbengula@student.maseno.ac.ke",      // primary public email (shown on Contact page)
-    workEmail: "kbengula@student.maseno.ac.ke",  // where booking requests are emailed — TODO: set a Bengula Inc inbox (e.g. hello@bengula.co.ke)
+    email: "bookings@bengula.co.ke",      // primary public inbox (shown on Contact page + footer)
+    workEmail: "bookings@bengula.co.ke",  // where booking + contact requests are emailed (dedicated Bengula Inc inbox)
     phone: "+254 741 418 199",            // shown + used for WhatsApp link
     whatsapp: "254741418199",             // digits only, country code, no +
     location: "Nairobi & Malindi, Kenya", // city / region (no street unless you want it)
