@@ -68,9 +68,9 @@ export const siteConfig = {
 
   // Add only the socials you actually use; leave the array empty to hide the bar.
   socials: [
-     { label: "LinkedIn",  href: "https://www.linkedin.com/in/bengula/", handle: "bengula" },
-    // { label: "X",         href: "https://x.com/EruditeElder",           handle: "@EruditeElder" },
-    // { label: "Instagram", href: "https://www.instagram.com/bengula_bengula/",   handle: "@bengula_bengula" },
+    { label: "LinkedIn",  href: "https://www.linkedin.com/in/bengula/", handle: "bengula" },
+    { label: "X",         href: "https://x.com/EruditeElder",           handle: "@EruditeElder" },
+    { label: "Instagram", href: "https://www.instagram.com/bengula_bengula/",   handle: "@bengula_bengula" },
   ] as SocialLink[],
 };
 
