@@ -1,7 +1,7 @@
 import { kbBondGuide } from "./kb-bond-guide-2026";
 import { futureMmfsKenya } from "./future-mmfs-kenya";
 import { smeTradeFinance } from "./sme-trade-finance";
-import { sovereignDebtMasterclass } from "./sovereign-debt-masterclass";
+import { sovereignDebtExplained } from "./sovereign-debt-masterclass";
 import { teaCooperativeRestructure } from "./tea-cooperative-restructure";
 import { kikuyuRidgeSyndicate } from "./kikuyu-ridge-syndicate";
 import { zinduaAgriLogistics } from "./zindua-agri-logistics";
@@ -18,7 +18,7 @@ export {
   kbBondGuide,
   futureMmfsKenya,
   smeTradeFinance,
-  sovereignDebtMasterclass,
+  sovereignDebtExplained,
   teaCooperativeRestructure,
   kikuyuRidgeSyndicate,
   zinduaAgriLogistics,
