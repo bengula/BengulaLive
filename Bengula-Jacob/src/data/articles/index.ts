@@ -36,7 +36,7 @@ export const allArticles = [
   kbBondGuide,
   futureMmfsKenya,
   smeTradeFinance,
-  sovereignDebtMasterclass,
+  sovereignDebtExplained,
   teaCooperativeRestructure,
   kikuyuRidgeSyndicate,
   zinduaAgriLogistics,
