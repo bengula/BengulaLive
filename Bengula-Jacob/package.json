@@ -9,6 +9,7 @@
     "build:web": "vite-react-ssg build && node scripts/gen-sitemap.mjs",
     "preview": "vite preview",
     "clean": "rm -rf dist",
+    "update-rates": "node scripts/update-rates.mjs",
     "lint": "tsc --noEmit",
     "deploy": "npm run build && wrangler deploy"
   },

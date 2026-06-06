@@ -3,77 +3,26 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * Scrolling market ticker.
- *  • FX (USD/KES, EUR/KES, GBP/KES) is fetched LIVE from a free, no-key,
- *    CORS-enabled API (open.er-api.com) — works on a static host.
- *  • Kenyan local-market rates come from siteConfig.marketRates (editable),
- *    since there's no free browser-accessible API for those.
- *  • If the fetch fails (offline), it silently falls back to indicative FX.
+ *  • FX (USD/KES, EUR/KES, GBP/KES, …) comes from official Central Bank of
+ *    Kenya indicative rates in src/data/exchangeRates.ts. Refresh them daily:
+ *    download the CBK CSV, run `npm run update-rates`, then commit + push.
+ *  • Kenyan local-market rates come from siteConfig.marketRates (editable).
  */
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { siteConfig } from '../data/siteConfig';
-
-interface Fx {
-  pair: string;
-  value: string;
-}
-
-const FX_FALLBACK: Fx[] = [
-  { pair: 'USD/KES', value: '129.50' },
-  { pair: 'EUR/KES', value: '140.20' },
-  { pair: 'GBP/KES', value: '164.80' },
-];
-
-const REFRESH_MS = 5 * 60 * 1000; // 5 minutes
+import { exchangeRates } from '../data/exchangeRates';
 
 export default function RateTicker() {
-  const [fx, setFx] = useState<Fx[]>(FX_FALLBACK);
-  const [live, setLive] = useState(false);
-  const [updated, setUpdated] = useState('');
-
-  useEffect(() => {
-    let cancelled = false;
-
-    const load = async () => {
-      try {
-        const res = await fetch('https://open.er-api.com/v6/latest/USD');
-        const data = await res.json();
-        const r = data?.rates;
-        if (r?.KES && r?.EUR && r?.GBP) {
-          const usdKes: number = r.KES;
-          const next: Fx[] = [
-            { pair: 'USD/KES', value: usdKes.toFixed(2) },
-            { pair: 'EUR/KES', value: (usdKes / r.EUR).toFixed(2) },
-            { pair: 'GBP/KES', value: (usdKes / r.GBP).toFixed(2) },
-          ];
-          if (!cancelled) {
-            setFx(next);
-            setLive(true);
-            setUpdated(new Date().toLocaleTimeString('en-KE', { hour: '2-digit', minute: '2-digit' }));
-          }
-        }
-      } catch {
-        /* keep indicative fallback */
-      }
-    };
-
-    load();
-    const timer = window.setInterval(load, REFRESH_MS);
-    return () => {
-      cancelled = true;
-      window.clearInterval(timer);
-    };
-  }, []);
-
   // One full pass of the ticker content (rendered twice for a seamless loop).
   const Run = () => (
     <div className="flex gap-8 items-center pr-8 shrink-0">
       <span className="text-amber-400 font-bold">🇰🇪 Sovereign Rates Ticker</span>
       <span className="text-slate-500">•</span>
 
-      {fx.map((f) => (
-        <span key={f.pair} className="flex items-center gap-1.5">
-          {f.pair}: <strong className="text-emerald-400">{f.value}</strong>
+      {exchangeRates.rates.map((f) => (
+        <span key={f.label} className="flex items-center gap-1.5">
+          {f.label}: <strong className="text-emerald-400">{f.value}</strong>
         </span>
       ))}
 
@@ -100,13 +49,11 @@ export default function RateTicker() {
         <Run />
       </div>
 
-      {/* Live / indicative status badge (masks the scroll on the right edge) */}
+      {/* Source / freshness badge (masks the scroll on the right edge) */}
       <div className="hidden sm:flex absolute right-0 top-0 h-full items-center pl-6 pr-4 bg-gradient-to-l from-blue-950 via-blue-950 to-transparent">
         <span className="flex items-center gap-1.5">
-          <span className={`w-1.5 h-1.5 rounded-full ${live ? 'bg-emerald-400 animate-pulse' : 'bg-amber-400'}`}></span>
-          <span className={live ? 'text-emerald-300' : 'text-amber-300'}>
-            {live ? `FX LIVE · ${updated}` : 'FX indicative'}
-          </span>
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+          <span className="text-emerald-300">CBK · {exchangeRates.asOf}</span>
         </span>
       </div>
     </div>
