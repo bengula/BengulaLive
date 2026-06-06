@@ -136,7 +136,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
         const number = trimmed.match(/^\d+/)?.[0] || '1';
         return (
           <li key={index} className="list-decimal list-inside text-slate-600 ml-4 text-xs leading-relaxed my-1 font-medium">
-            <span className="font-extrabold text-blue-900 mr-1">{number}.</span>
+            <span className="font-extrabold text-violet-800 mr-1">{number}.</span>
             {renderInlineMarkdown(content)}
           </li>
         );
@@ -170,14 +170,14 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
             loading="lazy"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-950/55 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-violet-950 via-violet-950/55 to-transparent"></div>
           <span className="absolute bottom-3 left-6 text-[10px] font-bold text-amber-300 uppercase tracking-widest font-mono">Offline Wealth Coach</span>
         </div>
 
         <div className="p-6 md:p-8 space-y-4">
         <div className="border-b border-slate-100 pb-3">
-          <h3 className="text-base font-bold text-blue-900 flex items-center gap-2">
-            <User className="w-5 h-5 text-blue-900" />
+          <h3 className="text-base font-bold text-violet-800 flex items-center gap-2">
+            <User className="w-5 h-5 text-violet-800" />
             Coaching Persona File
           </h3>
           <p className="text-[10px] text-slate-500 mt-0.5 font-medium leading-normal">
@@ -210,9 +210,9 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
             <button
               id="btn-edit-coach-persona"
               onClick={() => setProfileSaved(false)}
-              className="w-full py-2.5 px-3 rounded-lg border border-slate-200 text-xs text-slate-600 bg-slate-50 hover:text-blue-900 hover:bg-slate-100 transition flex items-center justify-center gap-1.5 cursor-pointer font-bold shadow-xs"
+              className="w-full py-2.5 px-3 rounded-lg border border-slate-200 text-xs text-slate-600 bg-slate-50 hover:text-violet-800 hover:bg-slate-100 transition flex items-center justify-center gap-1.5 cursor-pointer font-bold shadow-xs"
             >
-              <RefreshCw className="w-3.5 h-3.5 text-blue-900" />
+              <RefreshCw className="w-3.5 h-3.5 text-violet-800" />
               <span>Adjust Persona Parameters</span>
             </button>
           </div>
@@ -226,7 +226,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
                 type="text"
                 value={profile.name}
                 onChange={(e) => setProfile({ ...profile, name: e.target.value })}
-                className="w-full bg-slate-50 border border-slate-200 focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 rounded p-2 text-slate-800 focus:outline-none font-semibold"
+                className="w-full bg-slate-50 border border-slate-200 focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 rounded p-2 text-slate-800 focus:outline-none font-semibold"
               />
             </div>
 
@@ -237,7 +237,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
                 type="text"
                 value={profile.monthlySavings}
                 onChange={(e) => setProfile({ ...profile, monthlySavings: e.target.value })}
-                className="w-full bg-slate-50 border border-slate-200 focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 rounded p-2 text-slate-800 focus:outline-none font-mono font-semibold"
+                className="w-full bg-slate-50 border border-slate-200 focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 rounded p-2 text-slate-800 focus:outline-none font-mono font-semibold"
               />
             </div>
 
@@ -247,7 +247,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
                 id="select-persona-goal"
                 value={profile.goal}
                 onChange={(e) => setProfile({ ...profile, goal: e.target.value })}
-                className="w-full bg-slate-50 border border-slate-200 focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 rounded p-2 text-slate-800 focus:outline-none font-semibold cursor-pointer text-xs"
+                className="w-full bg-slate-50 border border-slate-200 focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 rounded p-2 text-slate-800 focus:outline-none font-semibold cursor-pointer text-xs"
               >
                 <option value="Sovereign Debt Passive Income">Sovereign Debt Passive Income</option>
                 <option value="Syndicated Real Estate">Syndicated Real Estate</option>
@@ -262,7 +262,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
                 id="select-persona-risk"
                 value={profile.riskTolerance}
                 onChange={(e) => setProfile({ ...profile, riskTolerance: e.target.value as any })}
-                className="w-full bg-slate-50 border border-slate-200 focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 rounded p-2 text-slate-800 focus:outline-none cursor-pointer text-xs font-semibold"
+                className="w-full bg-slate-50 border border-slate-200 focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 rounded p-2 text-slate-800 focus:outline-none cursor-pointer text-xs font-semibold"
               >
                 <option value="Low (Bond/Treasury focus)">Low Capital Volatility Focus</option>
                 <option value="Moderate (Diversified wealth)">Moderate Diversified Balance</option>
@@ -273,7 +273,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
             <button
               id="btn-save-coach-persona"
               onClick={() => setProfileSaved(true)}
-              className="w-full bg-blue-900 hover:bg-blue-800 text-white py-2.5 rounded-lg font-bold transition flex justify-center items-center gap-1 cursor-pointer shadow-md"
+              className="w-full bg-violet-800 hover:bg-violet-700 text-white py-2.5 rounded-lg font-bold transition flex justify-center items-center gap-1 cursor-pointer shadow-md"
             >
               <CheckCircle2 className="w-4 h-4 text-white" />
               <span>Apply & Reset Coach</span>
@@ -288,7 +288,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
         {/* Chat Title bar */}
         <div className="bg-slate-50 border-b border-slate-200 p-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <Bot className="w-5 h-5 text-blue-900 animate-pulse" />
+            <Bot className="w-5 h-5 text-violet-800 animate-pulse" />
             <div>
               <span className="text-xs font-extrabold text-slate-900 block font-sans">Bengula Jacob Wealth Coach</span>
               <p className="text-[9px] text-slate-500 font-medium font-sans">Curated knowledge guide • Kenyan markets</p>
@@ -305,13 +305,13 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
               className={`flex gap-3 max-w-[85%] ${m.role === 'user' ? 'ml-auto flex-row-reverse' : 'mr-auto'}`}
             >
               <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 border shadow-xs ${
-                m.role === 'user' ? 'bg-slate-100 border-slate-200 text-slate-600' : 'bg-blue-50 border-blue-100 text-blue-900'
+                m.role === 'user' ? 'bg-slate-100 border-slate-200 text-slate-600' : 'bg-violet-50 border-violet-100 text-violet-800'
               }`}>
-                {m.role === 'user' ? <User className="w-4 h-4 text-slate-500" /> : <Bot className="w-4 h-4 text-blue-900" />}
+                {m.role === 'user' ? <User className="w-4 h-4 text-slate-500" /> : <Bot className="w-4 h-4 text-violet-800" />}
               </div>
               <div className={`p-4.5 rounded-2xl text-xs space-y-1 border shadow-xs leading-relaxed font-normal ${
                 m.role === 'user' 
-                  ? 'bg-blue-900 text-white rounded-tr-none border-blue-900' 
+                  ? 'bg-violet-800 text-white rounded-tr-none border-violet-800' 
                   : 'bg-slate-50 border-slate-200 text-slate-600 rounded-tl-none'
               }`}>
                 {m.role === 'user' ? (
@@ -321,7 +321,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
                     {formatAIResponse(m.content)}
                   </div>
                 )}
-                <span className={`text-[8px] text-right block pt-1.5 font-mono ${m.role === 'user' ? 'text-blue-100' : 'text-slate-400 font-medium'}`}>
+                <span className={`text-[8px] text-right block pt-1.5 font-mono ${m.role === 'user' ? 'text-violet-100' : 'text-slate-400 font-medium'}`}>
                   {m.timestamp}
                 </span>
               </div>
@@ -331,13 +331,13 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
           {/* Prompting animation loader */}
           {loading && (
             <div className="flex gap-3 max-w-[85%] mr-auto">
-              <div className="w-8 h-8 rounded-full bg-blue-50 border border-blue-100 text-blue-900 flex items-center justify-center animate-spin">
-                <Sparkles className="w-4 h-4 text-blue-900" />
+              <div className="w-8 h-8 rounded-full bg-violet-50 border border-violet-100 text-violet-800 flex items-center justify-center animate-spin">
+                <Sparkles className="w-4 h-4 text-violet-800" />
               </div>
               <div className="bg-slate-50 border border-slate-200 p-3 rounded-2xl rounded-tl-none animate-pulse flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-blue-900 rounded-full animate-bounce"></span>
-                <span className="w-1.5 h-1.5 bg-blue-900 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></span>
-                <span className="w-1.5 h-1.5 bg-blue-900 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></span>
+                <span className="w-1.5 h-1.5 bg-violet-800 rounded-full animate-bounce"></span>
+                <span className="w-1.5 h-1.5 bg-violet-800 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></span>
+                <span className="w-1.5 h-1.5 bg-violet-800 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></span>
                 <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-widest">Mapping Portfolios...</span>
               </div>
             </div>
@@ -365,7 +365,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
                 key={idx}
                 onClick={(e) => handleSendMessage(e, `Can you please detail: ${p}?`)}
                 disabled={loading}
-                className="bg-white hover:bg-blue-900 text-slate-600 hover:text-white border border-slate-200 hover:border-blue-900 px-3 py-1 rounded-full text-[10px] font-bold whitespace-nowrap transition cursor-pointer shadow-xs"
+                className="bg-white hover:bg-violet-800 text-slate-600 hover:text-white border border-slate-200 hover:border-violet-800 px-3 py-1 rounded-full text-[10px] font-bold whitespace-nowrap transition cursor-pointer shadow-xs"
               >
                 {p}
               </button>
@@ -380,13 +380,13 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
               placeholder="Ask me anything: M-Akiba vs MMFs, DhowCSD accounts..."
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
-              className="flex-1 bg-white text-slate-800 text-xs py-2.5 px-3 rounded-xl border border-slate-200 focus:outline-none focus:border-blue-900 focus:ring-1 focus:ring-blue-900 font-semibold"
+              className="flex-1 bg-white text-slate-800 text-xs py-2.5 px-3 rounded-xl border border-slate-200 focus:outline-none focus:border-violet-800 focus:ring-1 focus:ring-violet-800 font-semibold"
             />
             <button
               id="btn-send-coach-msg"
               type="submit"
               disabled={loading}
-              className="bg-blue-900 hover:bg-blue-800 text-white rounded-xl py-2 px-3.5 flex items-center justify-center cursor-pointer disabled:opacity-50 transition shadow-xs"
+              className="bg-violet-800 hover:bg-violet-700 text-white rounded-xl py-2 px-3.5 flex items-center justify-center cursor-pointer disabled:opacity-50 transition shadow-xs"
             >
               <Send className="w-4 h-4 text-white" />
             </button>
@@ -398,3 +398,4 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
     </div>
   );
 }
+

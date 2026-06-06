@@ -119,8 +119,8 @@ export default function Calculators() {
           onClick={() => setActiveCalc('compound')}
           className={`flex-1 py-3 text-center text-sm font-bold rounded-lg transition-all cursor-pointer ${
             activeCalc === 'compound'
-              ? 'bg-blue-900 text-white shadow-xs'
-              : 'text-slate-600 hover:text-blue-900 hover:bg-slate-100'
+              ? 'bg-violet-800 text-white shadow-xs'
+              : 'text-slate-600 hover:text-violet-800 hover:bg-slate-100'
           }`}
         >
           <div className="flex items-center justify-center gap-2">
@@ -133,8 +133,8 @@ export default function Calculators() {
           onClick={() => setActiveCalc('bond')}
           className={`flex-1 py-3 text-center text-sm font-bold rounded-lg transition-all cursor-pointer ${
             activeCalc === 'bond'
-              ? 'bg-blue-900 text-white shadow-xs'
-              : 'text-slate-600 hover:text-blue-900 hover:bg-slate-100'
+              ? 'bg-violet-800 text-white shadow-xs'
+              : 'text-slate-600 hover:text-violet-800 hover:bg-slate-100'
           }`}
         >
           <div className="flex items-center justify-center gap-2">
@@ -151,8 +151,8 @@ export default function Calculators() {
           {/* Inputs Section */}
           <div className="lg:col-span-5 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
             <div className="border-b border-slate-100 pb-4">
-              <h3 className="text-lg font-bold text-blue-900 flex items-center gap-2">
-                <TrendingUp className="w-5 h-5 text-blue-900" />
+              <h3 className="text-lg font-bold text-violet-800 flex items-center gap-2">
+                <TrendingUp className="w-5 h-5 text-violet-800" />
                 Investment Parameters
               </h3>
               <p className="text-xs text-slate-500 mt-1 font-medium">
@@ -174,13 +174,13 @@ export default function Calculators() {
                 step="5000"
                 value={initialAmount}
                 onChange={(e) => setInitialAmount(Number(e.target.value))}
-                className="w-full h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-900"
+                className="w-full h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-violet-800"
               />
               <input
                 type="number"
                 value={initialAmount}
                 onChange={(e) => setInitialAmount(Math.max(0, Number(e.target.value)))}
-                className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 font-mono font-semibold"
+                className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 font-mono font-semibold"
               />
             </div>
 
@@ -198,13 +198,13 @@ export default function Calculators() {
                 step="1000"
                 value={monthlyContribution}
                 onChange={(e) => setMonthlyContribution(Number(e.target.value))}
-                className="w-full h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-900"
+                className="w-full h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-violet-800"
               />
               <input
                 type="number"
                 value={monthlyContribution}
                 onChange={(e) => setMonthlyContribution(Math.max(0, Number(e.target.value)))}
-                className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 font-mono font-semibold"
+                className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 font-mono font-semibold"
               />
             </div>
 
@@ -212,7 +212,7 @@ export default function Calculators() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
                 <label className="text-xs text-slate-700 font-bold flex items-center gap-1">
-                  <Percent className="w-3.5 h-3.5 text-blue-900" />
+                  <Percent className="w-3.5 h-3.5 text-violet-800" />
                   Interest (APR %)
                 </label>
                 <input
@@ -223,14 +223,14 @@ export default function Calculators() {
                   step="0.1"
                   value={annualRate}
                   onChange={(e) => setAnnualRate(Number(e.target.value))}
-                  className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 font-mono font-bold"
+                  className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 font-mono font-bold"
                 />
                 <span className="text-[10px] text-slate-500 font-medium leading-none block">Standard Kenyan MMF yields ~13%-15%</span>
               </div>
 
               <div className="space-y-2">
                 <label className="text-xs text-slate-700 font-bold flex items-center gap-1">
-                  <Calendar className="w-3.5 h-3.5 text-blue-900" />
+                  <Calendar className="w-3.5 h-3.5 text-violet-800" />
                   Horizon (Years)
                 </label>
                 <input
@@ -240,7 +240,7 @@ export default function Calculators() {
                   max="40"
                   value={years}
                   onChange={(e) => setYears(Math.max(1, Number(e.target.value)))}
-                  className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 font-mono font-bold"
+                  className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 font-mono font-bold"
                 />
                 <span className="text-[10px] text-slate-500 font-medium leading-none block">Long term yields more compound power</span>
               </div>
@@ -256,8 +256,8 @@ export default function Calculators() {
                     onClick={() => setCompoundingPeriod(freq)}
                     className={`py-2 text-xs font-bold rounded-lg capitalize border transition-all cursor-pointer ${
                       compoundingPeriod === freq
-                        ? 'bg-blue-50 border-blue-900 text-blue-900'
-                        : 'bg-slate-50 border-slate-200 text-slate-500 hover:text-blue-900 hover:bg-slate-100'
+                        ? 'bg-violet-50 border-violet-800 text-violet-800'
+                        : 'bg-slate-50 border-slate-200 text-slate-500 hover:text-violet-800 hover:bg-slate-100'
                     }`}
                   >
                     {freq.replace('-', ' ')}
@@ -280,7 +280,7 @@ export default function Calculators() {
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-4">
               <div className="bg-slate-50 border border-slate-100 p-4 rounded-xl shadow-inner min-w-0">
                 <span className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Total Balance</span>
-                <p className="text-xl md:text-lg xl:text-xl font-bold font-mono text-blue-950 mt-1 leading-tight tracking-tight tabular-nums break-words">
+                <p className="text-xl md:text-lg xl:text-xl font-bold font-mono text-violet-950 mt-1 leading-tight tracking-tight tabular-nums break-words">
                   {formatKSh(compoundResults.finalTotal)}
                 </p>
               </div>
@@ -307,8 +307,8 @@ export default function Calculators() {
                     <span className="w-2.5 h-2.5 bg-slate-300 rounded-full inline-block"></span>
                     Principal
                   </span>
-                  <span className="flex items-center gap-1 text-blue-900">
-                    <span className="w-2.5 h-2.5 bg-blue-900 rounded-full inline-block"></span>
+                  <span className="flex items-center gap-1 text-violet-800">
+                    <span className="w-2.5 h-2.5 bg-violet-800 rounded-full inline-block"></span>
                     Interest Earned
                   </span>
                 </div>
@@ -336,7 +336,7 @@ export default function Calculators() {
 
                       {/* Bar columns */}
                       <div className="w-full flex flex-col justify-end rounded-t overflow-hidden cursor-pointer" style={{ height: `${totalHeightPercent}%` }}>
-                        <div className="w-full bg-blue-900 hover:bg-blue-800 transition-colors" style={{ height: `${interestHeightPercent}%` }}></div>
+                        <div className="w-full bg-violet-800 hover:bg-violet-700 transition-colors" style={{ height: `${interestHeightPercent}%` }}></div>
                         <div className="w-full bg-slate-300 hover:bg-slate-300 transition-colors" style={{ height: `${principalHeightPercent}%` }}></div>
                       </div>
 
@@ -365,7 +365,7 @@ export default function Calculators() {
                         <div className="text-slate-500 space-y-0.5 mt-1 font-mono">
                           <p>Principal: {formatKSh(milestone.data.principal)}</p>
                           <p className="text-emerald-700 font-semibold font-bold">Interest: +{formatKSh(milestone.data.interest)}</p>
-                          <p className="text-blue-950 font-extrabold text-sm pt-0.5 font-sans">Total: {formatKSh(milestone.data.total)}</p>
+                          <p className="text-violet-950 font-extrabold text-sm pt-0.5 font-sans">Total: {formatKSh(milestone.data.total)}</p>
                         </div>
                       </div>
                     </div>
@@ -383,8 +383,8 @@ export default function Calculators() {
           {/* Inputs */}
           <div className="lg:col-span-5 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
             <div className="border-b border-slate-100 pb-4">
-              <h3 className="text-lg font-bold text-blue-900 flex items-center gap-2">
-                <Calculator className="w-5 h-5 text-blue-900" />
+              <h3 className="text-lg font-bold text-violet-800 flex items-center gap-2">
+                <Calculator className="w-5 h-5 text-violet-800" />
                 Bond Selection & Matrix
               </h3>
               <p className="text-xs text-slate-500 mt-1 font-medium leading-relaxed">
@@ -401,8 +401,8 @@ export default function Calculators() {
                   onClick={() => setBondType('infrastructure')}
                   className={`p-3 text-left text-xs font-semibold rounded-xl border transition-all cursor-pointer ${
                     bondType === 'infrastructure'
-                      ? 'bg-blue-50/50 border-blue-900 text-blue-950 shadow-xs'
-                      : 'bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100 hover:text-blue-900'
+                      ? 'bg-violet-50/50 border-violet-800 text-violet-950 shadow-xs'
+                      : 'bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100 hover:text-violet-800'
                   }`}
                 >
                   <div className="flex items-center justify-between font-bold">
@@ -417,8 +417,8 @@ export default function Calculators() {
                   onClick={() => setBondType('standard-long')}
                   className={`p-3 text-left text-xs font-semibold rounded-xl border transition-all cursor-pointer ${
                     bondType === 'standard-long'
-                      ? 'bg-blue-50/50 border-blue-900 text-blue-950 shadow-xs'
-                      : 'bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100 hover:text-blue-900'
+                      ? 'bg-violet-50/50 border-violet-800 text-violet-950 shadow-xs'
+                      : 'bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100 hover:text-violet-800'
                   }`}
                 >
                   <div className="flex items-center justify-between font-bold">
@@ -433,8 +433,8 @@ export default function Calculators() {
                   onClick={() => setBondType('standard-short')}
                   className={`p-3 text-left text-xs font-semibold rounded-xl border transition-all cursor-pointer ${
                     bondType === 'standard-short'
-                      ? 'bg-blue-50/50 border-blue-900 text-blue-950 shadow-xs'
-                      : 'bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100 hover:text-blue-900'
+                      ? 'bg-violet-50/50 border-violet-800 text-violet-950 shadow-xs'
+                      : 'bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100 hover:text-violet-800'
                   }`}
                 >
                   <div className="flex items-center justify-between font-bold">
@@ -460,13 +460,13 @@ export default function Calculators() {
                 step="50000"
                 value={bondFaceValue}
                 onChange={(e) => setBondFaceValue(Number(e.target.value))}
-                className="w-full h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-900"
+                className="w-full h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-violet-800"
               />
               <input
                 type="number"
                 value={bondFaceValue}
                 onChange={(e) => setBondFaceValue(Math.max(50000, Number(e.target.value)))}
-                className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 font-mono font-semibold"
+                className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 font-mono font-semibold"
               />
               <span className="text-[10px] text-slate-500 block leading-tight font-medium">Minimum CBK Bond bids start at KSh 50,000</span>
             </div>
@@ -483,7 +483,7 @@ export default function Calculators() {
                   step="0.05"
                   value={bondCoupon}
                   onChange={(e) => setBondCoupon(Number(e.target.value))}
-                  className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 font-mono font-bold"
+                  className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 font-mono font-bold"
                 />
               </div>
 
@@ -496,7 +496,7 @@ export default function Calculators() {
                   max="30"
                   value={bondTenure}
                   onChange={(e) => setBondTenure(Math.max(1, Number(e.target.value)))}
-                  className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 font-mono font-bold"
+                  className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 font-mono font-bold"
                 />
               </div>
             </div>
@@ -504,7 +504,7 @@ export default function Calculators() {
 
           {/* Results Summary */}
           <div className="lg:col-span-7 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
-            <h4 className="text-xs font-extrabold text-blue-900 uppercase tracking-widest font-sans">Projected Inflow Matrix</h4>
+            <h4 className="text-xs font-extrabold text-violet-800 uppercase tracking-widest font-sans">Projected Inflow Matrix</h4>
             
             {/* Main Yield Card */}
             <div className="bg-emerald-50 rounded-xl p-5 border border-emerald-100 flex items-center justify-between shadow-xs">
@@ -549,7 +549,7 @@ export default function Calculators() {
               <span className="text-xs font-bold text-slate-800 block">Payout Timing Logistics (Kenya Protocol):</span>
               <div className="bg-white p-4 border border-slate-200 rounded-xl space-y-4 shadow-xs">
                 <div className="flex items-start gap-4">
-                  <div className="bg-blue-50 text-blue-900 border border-blue-100 px-3 py-1.5 rounded-lg text-xs font-extrabold shrink-0 mt-0.5">H1</div>
+                  <div className="bg-violet-50 text-violet-800 border border-violet-100 px-3 py-1.5 rounded-lg text-xs font-extrabold shrink-0 mt-0.5">H1</div>
                   <div className="text-xs">
                     <p className="font-bold text-slate-800 text-sm">First Half-Year Coupon Payment</p>
                     <p className="text-slate-500 mt-0.5 leading-relaxed font-semibold">Paid direct to your bank account via CBS RTGS transfer every 6 months.</p>
@@ -558,7 +558,7 @@ export default function Calculators() {
                 </div>
 
                 <div className="flex items-start gap-4 border-t border-slate-100 pt-4">
-                  <div className="bg-blue-50 text-blue-900 border border-blue-100 px-3 py-1.5 rounded-lg text-xs font-extrabold shrink-0 mt-0.5">H2</div>
+                  <div className="bg-violet-50 text-violet-800 border border-violet-100 px-3 py-1.5 rounded-lg text-xs font-extrabold shrink-0 mt-0.5">H2</div>
                   <div className="text-xs">
                     <p className="font-bold text-slate-800 text-sm">Second Half-Year Coupon Payment</p>
                     <p className="text-slate-500 mt-0.5 leading-relaxed font-semibold">Final annualized return coupon segment for the operating calendar.</p>
@@ -582,3 +582,5 @@ export default function Calculators() {
     </div>
   );
 }
+
+

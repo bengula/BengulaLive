@@ -78,3 +78,4 @@ export interface UserFinanceProfile {
   goal: string;
   riskTolerance: 'Low (Bond/Treasury focus)' | 'Moderate (Diversified wealth)' | 'High (Equities/Real estate)';
 }
+

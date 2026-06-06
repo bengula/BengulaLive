@@ -19,7 +19,7 @@ export default function PortfolioTab() {
     : portfolioItemsList.filter(item => item.category === activeCategory);
 
   const categoryIcons: Record<PortfolioCategory, React.ReactNode> = {
-    [portfolioItemTags.project]: <Award className="w-5 h-5 text-blue-900" />,
+    [portfolioItemTags.project]: <Award className="w-5 h-5 text-violet-800" />,
     [portfolioItemTags.businessVenture]: <Layers className="w-5 h-5 text-violet-600" />,
     [portfolioItemTags.caseStudy]: <TrendingUp className="w-5 h-5 text-amber-600" />,
   };
@@ -50,8 +50,8 @@ export default function PortfolioTab() {
               onClick={() => setActiveCategory(cat)}
               className={`px-3 py-1.5 text-xs font-semibold rounded-full border transition-all cursor-pointer whitespace-nowrap ${
                 activeCategory === cat
-                  ? 'bg-blue-900 text-white border-blue-900'
-                  : 'bg-slate-100 border-slate-200 text-slate-600 hover:text-blue-900 hover:bg-slate-200'
+                  ? 'bg-violet-800 text-white border-violet-800'
+                  : 'bg-slate-100 border-slate-200 text-slate-600 hover:text-violet-800 hover:bg-slate-200'
               }`}
             >
               {cat}
@@ -66,7 +66,7 @@ export default function PortfolioTab() {
           <div
             key={item.id}
             onClick={() => item.blogId && navigate(`/blog/${item.blogId}`)}
-            className={`bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-900/40 hover:shadow-md transition duration-300 relative group overflow-hidden shadow-xs ${
+            className={`bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-violet-800/40 hover:shadow-md transition duration-300 relative group overflow-hidden shadow-xs ${
               item.blogId ? 'cursor-pointer' : ''
             }`}
           >
@@ -84,7 +84,7 @@ export default function PortfolioTab() {
                   )}
                 </div>
 
-                <div className="text-slate-400 group-hover:text-blue-900 transition-colors duration-300">
+                <div className="text-slate-400 group-hover:text-violet-800 transition-colors duration-300">
                   {categoryIcons[item.category]}
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default function PortfolioTab() {
               {/* Title & Narrative */}
               <div className="space-y-2">
                 <div className="flex justify-between items-start gap-2">
-                  <h3 className="text-base font-bold text-slate-900 group-hover:text-blue-900 transition-colors duration-200">
+                  <h3 className="text-base font-bold text-slate-900 group-hover:text-violet-800 transition-colors duration-200">
                     {item.title}
                   </h3>
                   {item.blogId && (
@@ -101,10 +101,10 @@ export default function PortfolioTab() {
                         e.stopPropagation();
                         navigate(`/blog/${item.blogId!}`);
                       }}
-                      className="text-[10px] bg-blue-50 hover:bg-blue-100 text-blue-900 border border-blue-100 px-2 py-0.5 rounded font-extrabold flex items-center gap-0.5 cursor-pointer transition shrink-0 font-sans"
+                      className="text-[10px] bg-violet-50 hover:bg-violet-100 text-violet-800 border border-violet-100 px-2 py-0.5 rounded font-extrabold flex items-center gap-0.5 cursor-pointer transition shrink-0 font-sans"
                     >
                       <span>Analysis</span>
-                      <ArrowUpRight className="w-3.5 h-3.5 text-blue-900" />
+                      <ArrowUpRight className="w-3.5 h-3.5 text-violet-800" />
                     </button>
                   )}
                 </div>
@@ -112,7 +112,7 @@ export default function PortfolioTab() {
                   {item.description}
                 </p>
                 <div className="bg-slate-50 border border-slate-200 p-3 rounded-lg text-xs italic text-slate-600 border-l-2 border-l-amber-500">
-                  <span className="font-bold text-blue-900 not-italic uppercase text-[9px] block mb-0.5">Tactical Outcome</span>
+                  <span className="font-bold text-violet-800 not-italic uppercase text-[9px] block mb-0.5">Tactical Outcome</span>
                   {item.impact}
                 </div>
               </div>
@@ -148,14 +148,14 @@ export default function PortfolioTab() {
       </div>
 
       {/* Footer reassurance callout */}
-      <div className="bg-blue-50/70 rounded-xl p-4 border border-blue-100 text-xs text-blue-950 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xs">
+      <div className="bg-violet-50/70 rounded-xl p-4 border border-violet-100 text-xs text-violet-950 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xs">
         <span className="font-semibold text-center sm:text-left">To plan a growth engagement, banking introduction, or co-investment with the Bengula Inc desk:</span>
         <button
           onClick={() => {
             const btn = document.getElementById('nav-btn-services');
             if (btn) btn.click();
           }}
-          className="bg-blue-900 hover:bg-blue-800 text-white py-2 px-4 rounded-xl font-bold text-[11px] shrink-0 transition-all uppercase tracking-wider cursor-pointer shadow-xs"
+          className="bg-violet-800 hover:bg-violet-700 text-white py-2 px-4 rounded-xl font-bold text-[11px] shrink-0 transition-all uppercase tracking-wider cursor-pointer shadow-xs"
         >
           Book Strategic Briefing
         </button>
@@ -164,3 +164,4 @@ export default function PortfolioTab() {
     </div>
   );
 }
+

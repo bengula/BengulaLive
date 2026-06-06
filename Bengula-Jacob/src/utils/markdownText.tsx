@@ -1,6 +1,5 @@
 import React from "react";
 
-// Bold (**…**) and italic (*…*) only. Internal helper used by renderInlineMarkdown.
 function renderEmphasis(text: string, strongClassName: string, keyPrefix: string) {
   const nodes: React.ReactNode[] = [];
   let cursor = 0;
@@ -21,7 +20,7 @@ function renderEmphasis(text: string, strongClassName: string, keyPrefix: string
     if (text.startsWith("**", nextMarker)) {
       const close = text.indexOf("**", nextMarker + 2);
       if (close === -1) {
-        nodes.push(text.slice(nextMarker + 2));
+        nodes.push(text.slice(nextMarker));
         break;
       }
 
@@ -36,7 +35,7 @@ function renderEmphasis(text: string, strongClassName: string, keyPrefix: string
 
     const close = text.indexOf("*", nextMarker + 1);
     if (close === -1) {
-      nodes.push(text.slice(nextMarker + 1));
+      nodes.push(text.slice(nextMarker));
       break;
     }
 
@@ -51,9 +50,8 @@ function renderEmphasis(text: string, strongClassName: string, keyPrefix: string
   return nodes;
 }
 
-// Markdown links: [label](url). Splits the text on links and runs the emphasis
-// parser over the plain segments so **bold**/*italic* still work around links.
-const LINK_RE = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+const TOKEN_RE =
+  /(`[^`]+`)|(!?\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/[^\s)]+)(?:\s+"([^"]+)")?\))|(https?:\/\/[^\s<)]+)/g;
 
 export function renderInlineMarkdown(text: string, strongClassName = "text-slate-900 font-bold") {
   const nodes: React.ReactNode[] = [];
@@ -61,24 +59,62 @@ export function renderInlineMarkdown(text: string, strongClassName = "text-slate
   let key = 0;
   let match: RegExpExecArray | null;
 
-  LINK_RE.lastIndex = 0;
-  while ((match = LINK_RE.exec(text)) !== null) {
+  TOKEN_RE.lastIndex = 0;
+  while ((match = TOKEN_RE.exec(text)) !== null) {
     if (match.index > lastIndex) {
       nodes.push(...renderEmphasis(text.slice(lastIndex, match.index), strongClassName, `seg-${key}`));
     }
 
+    if (match[1]) {
+      nodes.push(
+        <code
+          key={`code-${key++}`}
+          className="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[0.88em] font-semibold text-slate-800"
+        >
+          {match[1].slice(1, -1)}
+        </code>
+      );
+      lastIndex = TOKEN_RE.lastIndex;
+      continue;
+    }
+
+    if (match[2]) {
+      const isImage = match[2].startsWith("!");
+      const label = match[3];
+      const href = match[4];
+
+      if (isImage) {
+        nodes.push(label);
+      } else {
+        nodes.push(
+          <a
+            key={`link-${key++}`}
+            href={href}
+            target={href.startsWith("http") ? "_blank" : undefined}
+            rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+            className="text-violet-800 underline decoration-violet-800/30 underline-offset-2 hover:text-violet-700 break-words"
+          >
+            {label}
+          </a>
+        );
+      }
+      lastIndex = TOKEN_RE.lastIndex;
+      continue;
+    }
+
+    const href = match[6];
     nodes.push(
       <a
-        key={`link-${key++}`}
-        href={match[2]}
+        key={`url-${key++}`}
+        href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-900 underline decoration-blue-900/30 underline-offset-2 hover:text-blue-700 break-words"
+        className="text-violet-800 underline decoration-violet-800/30 underline-offset-2 hover:text-violet-700 break-words"
       >
-        {match[1]}
+        {href}
       </a>
     );
-    lastIndex = LINK_RE.lastIndex;
+    lastIndex = TOKEN_RE.lastIndex;
   }
 
   if (lastIndex < text.length) {
@@ -87,3 +123,4 @@ export function renderInlineMarkdown(text: string, strongClassName = "text-slate
 
   return nodes;
 }
+

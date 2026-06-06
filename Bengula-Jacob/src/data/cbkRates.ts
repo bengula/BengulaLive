@@ -100,3 +100,4 @@ export const exchangeRates = {
 };
 
 export const keyRates: KeyRate[] = parseKeyRates(keyRatesCsv);
+

@@ -98,3 +98,4 @@ export const telHref = (phone: string) => `tel:${phone.replace(/[^\d+]/g, "")}`;
 /** Convenience: a wa.me link from the configured whatsapp number. */
 export const whatsappHref = (digits: string, text?: string) =>
   `https://wa.me/${digits.replace(/\D/g, "")}${text ? `?text=${encodeURIComponent(text)}` : ""}`;
+

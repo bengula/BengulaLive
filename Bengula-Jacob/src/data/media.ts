@@ -36,3 +36,4 @@ const FALLBACK_ID = 'photo-1518186285589-2f7649de83e0'; // chart on laptop
 
 export const categoryImage = (category: string, w = 800) =>
   u(categoryIds[category] ?? FALLBACK_ID, w);
+

@@ -39,7 +39,7 @@ export default function Layout() {
     path === '/' ? pathname === '/' : pathname === path || pathname.startsWith(path + '/');
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans flex flex-col justify-between selection:bg-blue-600/15 selection:text-blue-900">
+    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans flex flex-col justify-between selection:bg-violet-600/15 selection:text-violet-900">
 
       {/* Site-wide structured data. */}
       <Head>
@@ -70,7 +70,7 @@ export default function Layout() {
               <div>
                 <Link
                   to="/"
-                  className="font-extrabold text-sm tracking-widest text-blue-900 hover:text-blue-800 cursor-pointer block leading-none font-sans"
+                  className="font-extrabold text-sm tracking-widest text-violet-800 hover:text-violet-900 cursor-pointer block leading-none font-sans"
                 >
                   {siteConfig.brand.shortName.toUpperCase()}
                 </Link>
@@ -89,8 +89,8 @@ export default function Layout() {
                     to={item.path}
                     className={`px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer ${
                       isActive(item.path)
-                        ? 'bg-blue-900 text-white shadow-xs'
-                        : 'text-slate-600 hover:text-blue-900 hover:bg-white/80'
+                        ? 'bg-violet-700 text-white shadow-xs'
+                        : 'text-slate-600 hover:text-violet-800 hover:bg-white/80'
                     }`}
                   >
                     <Icon className="w-3.5 h-3.5" />
@@ -103,7 +103,7 @@ export default function Layout() {
             {/* Mobile menu trigger */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg text-slate-500 hover:text-blue-900 hover:bg-slate-100 focus:outline-none cursor-pointer"
+              className="lg:hidden p-2 rounded-lg text-slate-500 hover:text-violet-800 hover:bg-slate-100 focus:outline-none cursor-pointer"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -123,8 +123,8 @@ export default function Layout() {
                   to={item.path}
                   className={`w-full text-left px-4 py-3 rounded-lg text-xs font-bold flex items-center gap-3 transition-colors cursor-pointer ${
                     isActive(item.path)
-                      ? 'bg-blue-900 text-white shadow-xs'
-                      : 'text-slate-600 hover:text-blue-900 hover:bg-slate-50'
+                      ? 'bg-violet-700 text-white shadow-xs'
+                      : 'text-slate-600 hover:text-violet-800 hover:bg-slate-50'
                   }`}
                 >
                   <Icon className="w-4.5 h-4.5" />
@@ -154,7 +154,7 @@ export default function Layout() {
                   alt="Bengula Inc"
                   className="w-10 h-10 object-contain"
                 />
-                <p className="font-extrabold text-blue-900 text-sm tracking-widest uppercase font-sans">Bengula Inc</p>
+                <p className="font-extrabold text-violet-800 text-sm tracking-widest uppercase font-sans">Bengula Inc</p>
               </div>
               <p className="text-[10px] mt-0.5 text-slate-500">{siteConfig.brand.tagline}</p>
               {siteConfig.socials.length > 0 && (
@@ -165,7 +165,7 @@ export default function Layout() {
                       href={s.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[10px] font-bold text-slate-600 bg-slate-100 hover:bg-blue-900 hover:text-white border border-slate-200 px-2.5 py-1 rounded-full transition-colors"
+                      className="text-[10px] font-bold text-slate-600 bg-slate-100 hover:bg-violet-700 hover:text-white border border-slate-200 px-2.5 py-1 rounded-full transition-colors"
                     >
                       {s.label}
                     </a>
@@ -176,7 +176,7 @@ export default function Layout() {
 
             <div className="flex flex-wrap gap-4 font-semibold text-slate-600">
               {activeNav.map((s) => (
-                <Link key={s.id} to={s.path} className="hover:text-blue-900 cursor-pointer">
+                <Link key={s.id} to={s.path} className="hover:text-violet-800 cursor-pointer">
                   {s.footerLabel ?? s.label}
                 </Link>
               ))}
@@ -197,3 +197,4 @@ export default function Layout() {
     </div>
   );
 }
+

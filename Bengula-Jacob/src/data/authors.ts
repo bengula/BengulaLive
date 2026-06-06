@@ -79,3 +79,4 @@ export const getAuthorProfile = (name: string): AuthorProfile | undefined =>
 /** Look up a profile by its URL id. */
 export const getAuthorById = (id: string): AuthorProfile | undefined =>
   authorProfiles.find((a) => a.id === id);
+

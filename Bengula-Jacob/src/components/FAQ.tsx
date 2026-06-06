@@ -44,7 +44,7 @@ export default function FAQ() {
   return (
     <div className="space-y-6">
       <div className="text-center max-w-xl mx-auto space-y-1.5">
-        <span className="text-xs font-semibold text-blue-900 uppercase tracking-widest flex items-center gap-1.5 justify-center">
+        <span className="text-xs font-semibold text-violet-800 uppercase tracking-widest flex items-center gap-1.5 justify-center">
           <HelpCircle className="w-3.5 h-3.5" />
           Common Questions
         </span>
@@ -61,7 +61,7 @@ export default function FAQ() {
             <div
               key={idx}
               className={`bg-white border rounded-xl overflow-hidden transition-colors shadow-xs ${
-                isOpen ? 'border-blue-900/40' : 'border-slate-200'
+                isOpen ? 'border-violet-800/40' : 'border-slate-200'
               }`}
             >
               <button
@@ -70,7 +70,7 @@ export default function FAQ() {
                 aria-expanded={isOpen}
               >
                 <span className="text-sm font-bold text-slate-800">{item.q}</span>
-                <span className={`shrink-0 p-1 rounded-full ${isOpen ? 'bg-blue-900 text-white' : 'bg-slate-100 text-slate-500'}`}>
+                <span className={`shrink-0 p-1 rounded-full ${isOpen ? 'bg-violet-800 text-white' : 'bg-slate-100 text-slate-500'}`}>
                   {isOpen ? <Minus className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
                 </span>
               </button>
@@ -88,3 +88,4 @@ export default function FAQ() {
     </div>
   );
 }
+

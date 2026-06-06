@@ -13,10 +13,12 @@ import {
   Landmark,
   Layers,
   LineChart,
+  Calculator,
   ShieldCheck,
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Calculators from './Calculators';
+import LoanAppraisalCalculator from './LoanAppraisalCalculator';
 import Resources from './Resources';
 import FAQ from './FAQ';
 import Seo from '../seo';
@@ -110,19 +112,19 @@ export default function HomeTab() {
         description={siteConfig.brand.tagline}
         path="/"
       />
-      <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+      <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center rounded-3xl border border-violet-100 bg-white p-6 md:p-10 shadow-sm">
         <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white border border-slate-200 rounded-full text-[10px] font-bold text-blue-900 uppercase tracking-widest leading-none shadow-sm">
-            <ShieldCheck className="w-3.5 h-3.5 text-amber-600" />
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-violet-50 border border-violet-100 rounded-full text-[10px] font-bold text-violet-800 uppercase tracking-widest leading-none shadow-sm">
+            <ShieldCheck className="w-3.5 h-3.5 text-violet-700" />
             <span>Bengula Inc Advisory Platform</span>
           </div>
 
           <div className="space-y-4">
             <h1 className="text-3xl md:text-5xl font-extrabold text-slate-950 tracking-tight leading-[1.08] font-sans">
-              We help East African businesses grow — with <span className="text-blue-900">data</span> and the right <span className="text-violet-700">banking</span>.
+              Finance tools and advisory for businesses that need <span className="text-violet-700">clear decisions</span>, not guesswork.
             </h1>
             <p className="text-sm md:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Bengula Inc works with business owners across Kenya and the diaspora on two fronts: turning data and online visibility into customers, and matching you to the banking and capital tools that fit your business.
+              Bengula Inc helps Kenyan and East African business owners connect numbers, banking products, digital visibility, and growth strategy into one practical decision desk.
             </p>
           </div>
 
@@ -146,24 +148,24 @@ export default function HomeTab() {
           <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
             <button
               onClick={() => navigate('/services')}
-              className="bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-2 cursor-pointer shadow-md transform hover:-translate-y-0.5 transition"
+              className="bg-violet-700 hover:bg-violet-800 text-white font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-2 cursor-pointer shadow-md transform hover:-translate-y-0.5 transition"
             >
               <span>Book Consultation</span>
               <ChevronRight className="w-4 h-4" />
             </button>
             <button
-              onClick={() => navigate('/blog')}
+              onClick={() => document.getElementById('loan-appraisal-calculator')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
               className="border border-slate-200 hover:border-slate-300 bg-white text-slate-700 font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-1.5 cursor-pointer hover:bg-slate-50 transition shadow-sm"
             >
-              <span>Explore Research</span>
-              <ArrowUpRight className="w-4 h-4 text-slate-500" />
+              <span>Use Loan Calculator</span>
+              <Calculator className="w-4 h-4 text-violet-700" />
             </button>
           </div>
         </div>
 
         <div className="lg:col-span-5">
-          <div className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-lg space-y-6">
-            <div className="bg-slate-950 rounded-xl p-6 flex items-center justify-center">
+          <div className="bg-gradient-to-br from-violet-950 via-violet-900 to-slate-950 border border-violet-200 rounded-2xl p-6 md:p-8 shadow-lg space-y-6 text-white">
+            <div className="bg-white rounded-xl p-6 flex items-center justify-center">
               <img
                 src="/images/ColoredBengulaIncLogo.png"
                 alt="Bengula Inc logo"
@@ -172,10 +174,10 @@ export default function HomeTab() {
             </div>
 
             <div className="space-y-2 text-center">
-              <p className="text-[10px] font-bold text-amber-600 uppercase tracking-widest">Adding Meaning To Life</p>
-              <h2 className="text-xl font-extrabold text-slate-950">Bengula Inc</h2>
-              <p className="text-xs text-slate-500 leading-relaxed">
-                A business-growth brand helping owners turn data and online visibility into customers, and pair it with the right banking and capital tools.
+              <p className="text-[10px] font-bold text-violet-200 uppercase tracking-widest">Adding Meaning To Life</p>
+              <h2 className="text-xl font-extrabold text-white">Bengula Inc</h2>
+              <p className="text-xs text-violet-100 leading-relaxed">
+                A business-growth brand pairing data, digital visibility, credit appraisal, and banking advisory.
               </p>
             </div>
 
@@ -186,9 +188,9 @@ export default function HomeTab() {
                 ['Focus', 'Growth + Banking'],
                 ['Audience', 'Kenya + Diaspora'],
               ].map(([label, value]) => (
-                <div key={label} className="border border-slate-200 rounded-lg p-3">
-                  <span className="text-[10px] text-slate-400 uppercase tracking-wider block font-bold">{label}</span>
-                  <span className="text-xs font-bold text-slate-800 block mt-1">{value}</span>
+                <div key={label} className="border border-white/10 bg-white/5 rounded-lg p-3">
+                  <span className="text-[10px] text-violet-200 uppercase tracking-wider block font-bold">{label}</span>
+                  <span className="text-xs font-bold text-white block mt-1">{value}</span>
                 </div>
               ))}
             </div>
@@ -205,7 +207,7 @@ export default function HomeTab() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
           {metrics.map((stat) => (
             <div key={stat.label} className="space-y-1.5 p-4 rounded-lg bg-slate-50 border border-slate-200">
-              <span className="text-xl font-black text-blue-900 block font-sans tracking-tight">{stat.value}</span>
+              <span className="text-xl font-black text-violet-800 block font-sans tracking-tight">{stat.value}</span>
               <span className="text-xs font-bold text-slate-900 block">{stat.label}</span>
               <span className="text-[10px] text-slate-500 block leading-tight font-medium">{stat.desc}</span>
             </div>
@@ -234,7 +236,7 @@ export default function HomeTab() {
               {keyRates.map((r) => (
                 <tr key={r.name} className="border-b border-slate-100 last:border-0">
                   <td className="py-2.5 pr-4 text-xs font-semibold text-slate-700">{r.name}</td>
-                  <td className="py-2.5 pr-4 text-xs font-bold text-blue-900 font-mono text-right">{r.value}</td>
+                  <td className="py-2.5 pr-4 text-xs font-bold text-violet-800 font-mono text-right">{r.value}</td>
                   <td className="py-2.5 text-[11px] text-slate-500 font-mono text-right">{r.date}</td>
                 </tr>
               ))}
@@ -253,20 +255,20 @@ export default function HomeTab() {
           {portals.map((portal) => (
             <div
               key={portal.title}
-              className="bg-white border border-slate-200 rounded-xl p-6 hover:border-blue-900/35 hover:shadow-md transition duration-300 flex flex-col justify-between group shadow-sm"
+              className="bg-white border border-slate-200 rounded-xl p-6 hover:border-violet-500/45 hover:shadow-md transition duration-300 flex flex-col justify-between group shadow-sm"
             >
               <div className="space-y-4">
-                <div className="bg-blue-50 text-blue-900 border border-blue-100 p-2.5 rounded-lg w-fit group-hover:bg-blue-900 group-hover:text-white transition duration-300">
+                <div className="bg-violet-50 text-violet-800 border border-violet-100 p-2.5 rounded-lg w-fit group-hover:bg-violet-700 group-hover:text-white transition duration-300">
                   <portal.icon className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-blue-900">{portal.title}</h3>
+                  <h3 className="text-base font-bold text-violet-800">{portal.title}</h3>
                   <p className="text-xs text-slate-500 mt-1.5 leading-normal font-normal">{portal.desc}</p>
                 </div>
               </div>
               <button
                 onClick={() => navigate(portal.path)}
-                className="text-xs font-bold text-blue-900 hover:text-blue-800 flex items-center gap-1 pt-6 transition duration-300 cursor-pointer"
+                className="text-xs font-bold text-violet-800 hover:text-violet-900 flex items-center gap-1 pt-6 transition duration-300 cursor-pointer"
               >
                 <span>{portal.btn}</span>
                 <ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
@@ -290,12 +292,23 @@ export default function HomeTab() {
         ))}
       </section>
 
-      <section className="bg-white border border-slate-200 rounded-2xl p-6 md:p-10 space-y-8 shadow-sm">
+      <section id="loan-appraisal-calculator" className="space-y-6">
         <div className="max-w-xl mx-auto text-center space-y-1.5">
-          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Decision Tool</span>
-          <h3 className="text-xl md:text-2xl font-bold text-slate-900">Interactive Wealth Compounder</h3>
+          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Credit Decision Tool</span>
+          <h3 className="text-xl md:text-2xl font-bold text-slate-900">Loan Appraisal Calculator</h3>
           <p className="text-xs text-slate-500">
-            Estimate how contribution discipline, time, and rate assumptions can affect long-term outcomes.
+            Estimate qualification, repayment factors, APR, and amortization before starting a formal loan discussion.
+          </p>
+        </div>
+        <LoanAppraisalCalculator />
+      </section>
+
+      <section className="bg-white border border-violet-100 rounded-2xl p-6 md:p-10 space-y-8 shadow-sm">
+        <div className="max-w-xl mx-auto text-center space-y-1.5">
+          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Investment Yield Tool</span>
+          <h3 className="text-xl md:text-2xl font-bold text-slate-900">Bond Yield & Wealth Calculator</h3>
+          <p className="text-xs text-slate-500">
+            Help customers compare borrowing decisions with investment outcomes across treasury bonds, infrastructure bonds, and compound savings.
           </p>
         </div>
         <Calculators />
@@ -316,7 +329,7 @@ export default function HomeTab() {
                 target="_blank"
                 rel="noopener noreferrer"
                 title={`Visit ${partner.label}`}
-                className="text-sm font-extrabold text-slate-600 tracking-wider font-mono uppercase text-center opacity-70 hover:opacity-100 hover:text-blue-900 transition-all duration-300 cursor-pointer"
+                className="text-sm font-extrabold text-slate-600 tracking-wider font-mono uppercase text-center opacity-70 hover:opacity-100 hover:text-violet-800 transition-all duration-300 cursor-pointer"
               >
                 {partner.label}
               </a>
@@ -339,7 +352,7 @@ export default function HomeTab() {
       <section id="newsletter-signup-section" className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-10 text-white relative overflow-hidden shadow-md">
         <div className="max-w-2xl mx-auto text-center space-y-6">
           <div className="space-y-2">
-            <span className="text-xs font-bold text-blue-300 tracking-widest uppercase font-mono">Weekly Business Notes</span>
+            <span className="text-xs font-bold text-violet-300 tracking-widest uppercase font-mono">Weekly Business Notes</span>
             <h4 className="text-xl md:text-2xl font-extrabold">Subscribe to The Sovereign Ledger</h4>
             <p className="text-xs text-slate-300 leading-relaxed max-w-md mx-auto">
               Concise, practical notes on business finance, banking products, market rates, and using data to grow — written for owners and professionals.
@@ -362,11 +375,11 @@ export default function HomeTab() {
                 placeholder="Your email address"
                 value={newsletterEmail}
                 onChange={(e) => setNewsletterEmail(e.target.value)}
-                className="bg-slate-800 text-white border border-slate-700 rounded-lg px-4 py-3 flex-1 focus:outline-none focus:border-blue-400 font-mono font-bold"
+                className="bg-slate-800 text-white border border-slate-700 rounded-lg px-4 py-3 flex-1 focus:outline-none focus:border-violet-400 font-mono font-bold"
               />
               <button
                 type="submit"
-                className="bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-lg transition cursor-pointer text-xs uppercase tracking-wider"
+                className="bg-violet-600 hover:bg-violet-500 text-white font-bold px-6 py-3 rounded-lg transition cursor-pointer text-xs uppercase tracking-wider"
               >
                 Subscribe
               </button>
@@ -377,3 +390,5 @@ export default function HomeTab() {
     </div>
   );
 }
+
+

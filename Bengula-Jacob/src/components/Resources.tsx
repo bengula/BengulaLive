@@ -43,7 +43,7 @@ export default function Resources() {
   return (
     <div className="space-y-6">
       <div className="text-center max-w-xl mx-auto space-y-1.5">
-        <span className="text-xs font-semibold text-blue-900 uppercase tracking-widest flex items-center gap-1.5 justify-center">
+        <span className="text-xs font-semibold text-violet-800 uppercase tracking-widest flex items-center gap-1.5 justify-center">
           <FileText className="w-3.5 h-3.5" />
           Free Resource Library
         </span>
@@ -59,11 +59,11 @@ export default function Resources() {
           return (
             <div
               key={idx}
-              className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-xs hover:border-blue-900/35 hover:shadow-md transition group"
+              className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-xs hover:border-violet-800/35 hover:shadow-md transition group"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <div className="bg-blue-50 text-blue-900 border border-blue-100/60 p-2.5 rounded-xl w-fit group-hover:bg-blue-900 group-hover:text-white transition">
+                  <div className="bg-violet-50 text-violet-800 border border-violet-100/60 p-2.5 rounded-xl w-fit group-hover:bg-violet-800 group-hover:text-white transition">
                     <Icon className="w-5 h-5" />
                   </div>
                   <span className="text-[9px] bg-slate-100 text-slate-600 border border-slate-200 font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full font-mono">
@@ -71,7 +71,7 @@ export default function Resources() {
                   </span>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-slate-900 leading-snug group-hover:text-blue-900 transition-colors">{doc.title}</h4>
+                  <h4 className="text-sm font-bold text-slate-900 leading-snug group-hover:text-violet-800 transition-colors">{doc.title}</h4>
                   <p className="text-xs text-slate-500 mt-1.5 leading-relaxed">{doc.desc}</p>
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default function Resources() {
               <a
                 href={doc.file}
                 download
-                className="mt-6 inline-flex items-center justify-center gap-2 text-xs font-bold text-white bg-blue-900 hover:bg-blue-800 py-2.5 rounded-xl transition shadow-xs cursor-pointer"
+                className="mt-6 inline-flex items-center justify-center gap-2 text-xs font-bold text-white bg-violet-800 hover:bg-violet-700 py-2.5 rounded-xl transition shadow-xs cursor-pointer"
               >
                 <Download className="w-4 h-4" />
                 <span>Download Dossier</span>
@@ -91,3 +91,4 @@ export default function Resources() {
     </div>
   );
 }
+

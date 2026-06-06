@@ -22,7 +22,8 @@ import { BlogPost } from "../../types";
 // Vite inlines each Markdown file's raw text into the bundle at build time, so
 // no runtime filesystem access is needed (works with the static server too).
 // The negative pattern excludes underscore-prefixed files (e.g. _TEMPLATE.md)
-// so the template is never bundled or loaded.
+// so the template is never bundled or loaded. Touch this file when adding a
+// brand-new article during local dev if Vite has a stale glob cache.
 const rawFiles = import.meta.glob(["/content/**/*.md", "!/content/**/_*.md"], {
   eager: true,
   query: "?raw",
@@ -44,3 +45,4 @@ export const allArticles: BlogPost[] = Object.entries(rawFiles)
   .filter(([path]) => !basename(path).startsWith("_")) // skip _TEMPLATE.md
   .map(([path, text]) => parseArticle(path, text))
   .sort((a, b) => Date.parse(b.date) - Date.parse(a.date)); // newest first
+

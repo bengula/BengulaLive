@@ -24,7 +24,7 @@ export default function AboutTab() {
         <div className="lg:col-span-5 flex justify-center">
           <div className="relative group w-full max-w-sm">
             {/* Soft decorative background rings */}
-            <div className="absolute -inset-1.5 bg-gradient-to-r from-blue-900 to-amber-500 rounded-2xl blur opacity-25 group-hover:opacity-35 transition duration-1000 group-hover:duration-200"></div>
+            <div className="absolute -inset-1.5 bg-gradient-to-r from-violet-800 to-amber-500 rounded-2xl blur opacity-25 group-hover:opacity-35 transition duration-1000 group-hover:duration-200"></div>
             {/* Visual Profile Panel */}
             <div className="relative bg-white border border-slate-200 rounded-2xl p-6 md:p-8 text-center space-y-4 shadow-md">
               <img
@@ -35,7 +35,7 @@ export default function AboutTab() {
               />
               <div>
                 <h3 className="text-xl font-bold text-slate-900">Jacob Bengula</h3>
-                <p className="text-sm text-blue-900 font-extrabold mt-1">Relationship Manager, Corporate & Business Banking</p>
+                <p className="text-sm text-violet-800 font-extrabold mt-1">Relationship Manager, Corporate & Business Banking</p>
                 <p className="text-xs text-slate-500 font-semibold mt-0.5">Founder, Bengula Inc</p>
               </div>
               <div className="bg-slate-50 rounded-xl p-3 text-xs text-slate-500 font-mono border border-slate-100 text-left space-y-2">
@@ -72,7 +72,7 @@ export default function AboutTab() {
           </p>
           
           <div className="bg-slate-50 border border-slate-200/60 p-4 rounded-xl space-y-2 text-xs">
-            <h3 className="font-bold text-blue-900 font-sans uppercase tracking-widest text-[10px]">Mission & Vision</h3>
+            <h3 className="font-bold text-violet-800 font-sans uppercase tracking-widest text-[10px]">Mission & Vision</h3>
             <p className="text-slate-600 leading-relaxed font-normal">
               <strong>Mission:</strong> To help East African businesses grow by pairing data-driven decisions and online visibility with honest, practical access to the right banking and capital tools.
               <br />
@@ -82,12 +82,12 @@ export default function AboutTab() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             <div className="bg-white border border-slate-200 p-4 rounded-xl space-y-1.5 shadow-xs">
-              <ShieldCheck className="w-5 h-5 text-blue-900" />
+              <ShieldCheck className="w-5 h-5 text-violet-800" />
               <p className="text-sm font-bold text-slate-800">Banking Experience</p>
               <p className="text-xs text-slate-500">Over a decade of core commercial banking experience, managing liquid assets, structured debt, and relationship management lines.</p>
             </div>
             <div className="bg-white border border-slate-200 p-4 rounded-xl space-y-1.5 shadow-xs">
-              <User className="w-5 h-5 text-blue-900" />
+              <User className="w-5 h-5 text-violet-800" />
               <p className="text-sm font-bold text-slate-800">Tech & Finance Interests</p>
               <p className="text-xs text-slate-500">Leveraging Artificial Intelligence, automated credit risk evaluation, and modern digital portals (like DhowCSD) to optimize returns.</p>
             </div>
@@ -120,7 +120,7 @@ export default function AboutTab() {
               desc: "Chasing reliable long-term double-digit cash flows rather than volatile, high-risk, or speculative get-rich-quick vectors."
             }
           ].map((val, idx) => (
-            <div key={idx} className="bg-white border border-slate-200 rounded-xl p-5 space-y-2 shadow-xs border-t-4 border-t-blue-900">
+            <div key={idx} className="bg-white border border-slate-200 rounded-xl p-5 space-y-2 shadow-xs border-t-4 border-t-violet-800">
               <h4 className="font-bold text-slate-950 text-sm">{val.title}</h4>
               <p className="text-xs text-slate-500 leading-normal">{val.desc}</p>
             </div>
@@ -129,7 +129,7 @@ export default function AboutTab() {
       </div>
 
       {/* Bengula Inc Vision Card */}
-      <div className="bg-blue-950 rounded-2xl p-6 md:p-8 space-y-4 relative overflow-hidden shadow-md">
+      <div className="bg-violet-950 rounded-2xl p-6 md:p-8 space-y-4 relative overflow-hidden shadow-md">
         <img
           src={images.aboutBuilding}
           alt=""
@@ -137,18 +137,18 @@ export default function AboutTab() {
           loading="lazy"
           className="absolute inset-0 w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-950/90 to-blue-950/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-violet-950 via-violet-950/90 to-violet-950/60"></div>
         <div className="absolute right-0 top-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl"></div>
         <div className="relative flex items-center gap-3">
-          <div className="bg-blue-900/50 p-2.5 rounded-xl border border-blue-800">
+          <div className="bg-violet-800/50 p-2.5 rounded-xl border border-violet-700">
             <Award className="w-6 h-6 text-amber-400" />
           </div>
           <div>
             <h3 className="text-lg font-bold text-white">About Bengula Inc</h3>
-            <p className="text-xs text-blue-200 font-medium">Adding meaning to life · Business growth & banking advisory</p>
+            <p className="text-xs text-violet-200 font-medium">Adding meaning to life · Business growth & banking advisory</p>
           </div>
         </div>
-        <p className="relative text-blue-100 text-sm leading-relaxed font-normal font-sans">
+        <p className="relative text-violet-100 text-sm leading-relaxed font-normal font-sans">
           <strong>Bengula Inc</strong> is a business-growth brand built on a simple belief: the businesses that use data to make decisions, put their services online, and use the right banking tools are the ones that survive and grow. We work with owners across two pillars — <strong>Data &amp; Digital Growth</strong> (analytics, SEO, and online systems) and <strong>Finance &amp; Banking Advisory</strong> (accounts, lending, trade finance, treasury, and protection) — so strategy and capital move together.
         </p>
       </div>
@@ -196,18 +196,18 @@ export default function AboutTab() {
             <div 
               key={idx} 
               onClick={() => navigate(`/blog/${rec.blogId}`)}
-              className="bg-white border border-slate-200 rounded-xl p-4 space-y-1.5 shadow-xs hover:border-blue-900/40 hover:shadow-xs transition cursor-pointer group"
+              className="bg-white border border-slate-200 rounded-xl p-4 space-y-1.5 shadow-xs hover:border-violet-800/40 hover:shadow-xs transition cursor-pointer group"
             >
               <div className="flex justify-between items-start">
-                <span className="text-[9px] bg-blue-50 text-blue-900 border border-blue-100 font-extrabold tracking-wide uppercase px-2.5 py-0.5 rounded-full inline-block font-mono">
+                <span className="text-[9px] bg-violet-50 text-violet-800 border border-violet-100 font-extrabold tracking-wide uppercase px-2.5 py-0.5 rounded-full inline-block font-mono">
                   {rec.type}
                 </span>
-                <span className="text-[9px] text-blue-900 font-bold opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                <span className="text-[9px] text-violet-800 font-bold opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
                   <span>Read Article</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </span>
               </div>
-              <h4 className="font-bold text-slate-900 text-sm group-hover:text-blue-900 transition-colors">{rec.title}</h4>
+              <h4 className="font-bold text-slate-900 text-sm group-hover:text-violet-800 transition-colors">{rec.title}</h4>
               <p className="text-[11px] text-slate-500 font-semibold">{rec.venue}</p>
               <p className="text-xs text-slate-500 font-light leading-relaxed pt-1">{rec.desc}</p>
             </div>
@@ -255,11 +255,11 @@ export default function AboutTab() {
           ].map((milestone, i) => (
             <div key={i} className="relative">
               {/* Dot decoration */}
-              <span className="absolute -left-9 top-1.5 bg-white border-2 border-blue-900 rounded-full w-4 h-4 z-10 flex items-center justify-center">
-                <span className="w-1.5 h-1.5 bg-blue-900 rounded-full"></span>
+              <span className="absolute -left-9 top-1.5 bg-white border-2 border-violet-800 rounded-full w-4 h-4 z-10 flex items-center justify-center">
+                <span className="w-1.5 h-1.5 bg-violet-800 rounded-full"></span>
               </span>
               <div className="space-y-1">
-                <span className="text-[10px] bg-blue-50 text-blue-900 border border-blue-100 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
+                <span className="text-[10px] bg-violet-50 text-violet-800 border border-violet-100 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
                   {milestone.year}
                 </span>
                 <h4 className="text-base font-bold text-slate-800 pt-1">{milestone.title}</h4>
@@ -273,3 +273,4 @@ export default function AboutTab() {
     </div>
   );
 }
+

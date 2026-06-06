@@ -38,14 +38,14 @@ export default function RateTicker() {
   );
 
   return (
-    <div className="bg-blue-950 py-1.5 pl-4 overflow-hidden relative text-[10px] text-blue-100 font-mono border-b border-blue-900/40">
+    <div className="bg-violet-950 py-1.5 pl-4 overflow-hidden relative text-[10px] text-violet-100 font-mono border-b border-violet-800/40">
       <div className="flex w-max animate-marquee">
         <Run />
         <Run />
       </div>
 
       {/* Source / freshness badge (masks the scroll on the right edge) */}
-      <div className="hidden sm:flex absolute right-0 top-0 h-full items-center pl-6 pr-4 bg-gradient-to-l from-blue-950 via-blue-950 to-transparent">
+      <div className="hidden sm:flex absolute right-0 top-0 h-full items-center pl-6 pr-4 bg-gradient-to-l from-violet-950 via-violet-950 to-transparent">
         <span className="flex items-center gap-1.5">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
           <span className="text-emerald-300">CBK · {exchangeRates.asOf}</span>
@@ -54,3 +54,4 @@ export default function RateTicker() {
     </div>
   );
 }
+

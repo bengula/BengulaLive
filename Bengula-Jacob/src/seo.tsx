@@ -78,3 +78,4 @@ export const organizationJsonLd = {
     'https://www.instagram.com/bengula_bengula/',
   ],
 };
+
