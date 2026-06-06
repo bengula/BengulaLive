@@ -277,22 +277,22 @@ export default function Calculators() {
           <div className="lg:col-span-7 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-8 shadow-xs">
             
             {/* Cards Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div className="bg-slate-50 border border-slate-100 p-4 rounded-xl shadow-inner">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-4">
+              <div className="bg-slate-50 border border-slate-100 p-4 rounded-xl shadow-inner min-w-0">
                 <span className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Total Balance</span>
-                <p className="text-xl md:text-2xl font-bold font-mono text-blue-950 mt-1">
+                <p className="text-xl md:text-lg xl:text-xl font-bold font-mono text-blue-950 mt-1 leading-tight tracking-tight tabular-nums break-words">
                   {formatKSh(compoundResults.finalTotal)}
                 </p>
               </div>
-              <div className="bg-slate-50 border border-slate-100 p-4 rounded-xl shadow-inner">
+              <div className="bg-slate-50 border border-slate-100 p-4 rounded-xl shadow-inner min-w-0">
                 <span className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Contributions</span>
-                <p className="text-xl md:text-2xl font-bold font-mono text-slate-700 mt-1">
+                <p className="text-xl md:text-lg xl:text-xl font-bold font-mono text-slate-700 mt-1 leading-tight tracking-tight tabular-nums break-words">
                   {formatKSh(compoundResults.totalPrincipal)}
                 </p>
               </div>
-              <div className="bg-slate-50 border border-slate-100 p-4 rounded-xl shadow-inner">
+              <div className="bg-slate-50 border border-slate-100 p-4 rounded-xl shadow-inner min-w-0">
                 <span className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Interest Gained</span>
-                <p className="text-xl md:text-2xl font-bold font-mono text-emerald-700 mt-1 animate-pulse">
+                <p className="text-xl md:text-lg xl:text-xl font-bold font-mono text-emerald-700 mt-1 leading-tight tracking-tight tabular-nums break-words animate-pulse">
                   {formatKSh(compoundResults.totalInterest)}
                 </p>
               </div>

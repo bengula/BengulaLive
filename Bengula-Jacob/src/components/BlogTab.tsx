@@ -70,6 +70,7 @@ export default function BlogTab() {
     let listItems: string[] = [];
     let orderedItems: string[] = [];
     let tableLines: string[] = [];
+    let quoteLines: string[] = [];
 
     const parseImage = (value: string) => {
       const match = value.match(/^!\[([^\]]*)\]\((\S+?)(?:\s+"([^"]+)")?\)$/);
@@ -158,11 +159,25 @@ export default function BlogTab() {
       tableLines = [];
     };
 
+    const flushQuote = () => {
+      if (quoteLines.length === 0) return;
+      blocks.push(
+        <blockquote
+          key={`quote-${blocks.length}`}
+          className="border-l-4 border-blue-900/30 bg-blue-50/40 pl-4 pr-3 py-2 my-3 text-slate-700 italic text-sm leading-relaxed rounded-r-lg"
+        >
+          {renderInlineMarkdown(quoteLines.join(' '))}
+        </blockquote>
+      );
+      quoteLines = [];
+    };
+
     const flushAll = () => {
       flushParagraph();
       flushList();
       flushOrderedList();
       flushTable();
+      flushQuote();
     };
 
     lines.forEach((line) => {
@@ -173,23 +188,35 @@ export default function BlogTab() {
         return;
       }
 
-      if (trimmed.startsWith('####')) {
+      const heading = trimmed.match(/^(#{1,6})\s+(.+)$/);
+      if (heading) {
+        const level = heading[1].length;
+        const content = heading[2].replace(/\s+#+$/, '').trim();
+        const headingClass =
+          level === 1
+            ? "text-2xl md:text-3xl font-extrabold text-slate-950 pt-8 pb-2 leading-tight"
+            : level === 2
+              ? "text-2xl font-extrabold text-slate-950 pt-8 pb-2 border-b-2 border-slate-200 leading-snug"
+              : level === 3
+                ? "text-xl font-bold text-slate-900 pt-6 pb-2 border-b border-slate-200"
+                : "text-lg font-bold text-slate-800 pt-4 pb-1";
+        const HeadingTag: React.ElementType = `h${Math.min(level, 4)}`;
+
         flushAll();
         blocks.push(
-          <h4 key={`h4-${blocks.length}`} className="text-lg font-bold text-slate-800 pt-4 pb-1">
-            {renderInlineMarkdown(trimmed.replace('####', '').trim())}
-          </h4>
+          <HeadingTag key={`h${level}-${blocks.length}`} className={headingClass}>
+            {renderInlineMarkdown(content)}
+          </HeadingTag>
         );
         return;
       }
 
-      if (trimmed.startsWith('###')) {
-        flushAll();
-        blocks.push(
-          <h3 key={`h3-${blocks.length}`} className="text-xl font-bold text-slate-900 pt-6 pb-2 border-b border-slate-200">
-            {renderInlineMarkdown(trimmed.replace('###', '').trim())}
-          </h3>
-        );
+      if (trimmed.startsWith('>')) {
+        flushParagraph();
+        flushList();
+        flushOrderedList();
+        flushTable();
+        quoteLines.push(trimmed.replace(/^>\s?/, ''));
         return;
       }
 
@@ -222,6 +249,7 @@ export default function BlogTab() {
         flushParagraph();
         flushList();
         flushOrderedList();
+        flushQuote();
         tableLines.push(trimmed);
         return;
       }
@@ -251,6 +279,7 @@ export default function BlogTab() {
         flushParagraph();
         flushOrderedList();
         flushTable();
+        flushQuote();
         listItems.push(trimmed.replace(/^-+\s*/, ''));
         return;
       }
@@ -259,6 +288,7 @@ export default function BlogTab() {
         flushParagraph();
         flushList();
         flushTable();
+        flushQuote();
         orderedItems.push(trimmed.replace(/^\d+\.\s/, ''));
         return;
       }
@@ -276,6 +306,7 @@ export default function BlogTab() {
       flushList();
       flushOrderedList();
       flushTable();
+      flushQuote();
       paragraphLines.push(trimmed);
     });
 
