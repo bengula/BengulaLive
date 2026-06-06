@@ -45,10 +45,10 @@ export const authorProfiles: AuthorProfile[] = [
   },
   {
     id: "winnie-njoroge",
-    name: "Winnie Njoroge",
-    role: "Creative Strategist, Martin Munroe LLC",
+    name: "Winnie N.",
+    role: "Creative Strategist, Bengula Inc",
     avatar: "/images/bebe.jpg",
-    bio: "Winnie Njoroge is a creative strategist at Martin Munroe LLC, where she shapes brand narrative and editorial direction. She collaborates on long-form features that make complex financial topics clear, human, and engaging for a wider readership.",
+    bio: "Winnie N. is a creative strategist at Bengula Inc, where she shapes brand narrative and editorial direction. She collaborates on long-form features that make complex financial topics clear, human, and engaging for a wider readership.",
   },
   {
     id: "claude-opus",

@@ -8,8 +8,8 @@ author:
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
 coAuthors:
-  - name: Winnie Njoroge
-    role: Creative Strategist, Martin Munroe LLC
+  - name: Winnie N.
+    role: Creative Strategist, Bengula Inc
     avatar: /images/bebe.jpg
   - name: Claude Opus
     role: AI Research & Drafting Assistant
