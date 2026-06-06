@@ -4,10 +4,12 @@
  */
 
 import React, { useMemo } from 'react';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { Users, ArrowLeft, ExternalLink, BookOpen, Clock, UserCircle2, ChevronRight } from 'lucide-react';
 import { authorProfiles, getAuthorById, AuthorProfile } from '../data/authors';
 import { blogPosts } from '../data/blogData';
 import { BlogPost } from '../types';
+import Seo, { SITE_URL } from '../seo';
 
 /** Every post this author wrote or co-wrote (matched by name). */
 function articlesFor(profile: AuthorProfile): BlogPost[] {
@@ -29,31 +31,34 @@ function Avatar({ a, size }: { a: AuthorProfile; size: string }) {
   );
 }
 
-export default function AuthorsTab({
-  activeAuthorId,
-  setActiveAuthorId,
-  onNavigateToBlog,
-}: {
-  activeAuthorId?: string | null;
-  setActiveAuthorId?: (id: string | null) => void;
-  onNavigateToBlog?: (postId: string) => void;
-}) {
-  const setActive = setActiveAuthorId ?? (() => {});
-  const activeProfile = useMemo(
-    () => (activeAuthorId ? getAuthorById(activeAuthorId) : undefined),
-    [activeAuthorId],
-  );
+export default function AuthorsTab() {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const activeProfile = useMemo(() => (id ? getAuthorById(id) : undefined), [id]);
 
   // ================= AUTHOR DETAIL VIEW =================
   if (activeProfile) {
     const articles = articlesFor(activeProfile);
+    const personJsonLd = {
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      name: activeProfile.name,
+      jobTitle: activeProfile.role,
+      description: activeProfile.bio,
+      worksFor: { '@type': 'Organization', name: 'Bengula Inc', url: SITE_URL },
+      url: `${SITE_URL}/authors/${activeProfile.id}`,
+    };
     return (
       <div id="author-detail" className="max-w-3xl mx-auto space-y-6 animate-fadeIn">
+        <Seo
+          title={`${activeProfile.name} | ${activeProfile.role} — Bengula Inc`}
+          description={activeProfile.bio}
+          path={`/authors/${activeProfile.id}`}
+          image={activeProfile.avatar}
+          jsonLd={personJsonLd}
+        />
         <button
-          onClick={() => {
-            setActive(null);
-            window.location.hash = '';
-          }}
+          onClick={() => navigate('/authors')}
           className="flex items-center gap-2 text-xs font-semibold text-blue-900 hover:text-blue-800 bg-white p-2.5 rounded-lg border border-slate-200 shadow-xs cursor-pointer transition"
         >
           <ArrowLeft className="w-4 h-4 text-blue-900" />
@@ -100,9 +105,9 @@ export default function AuthorsTab({
           </h3>
           <div className="space-y-3">
             {articles.map((post) => (
-              <button
+              <Link
                 key={post.id}
-                onClick={() => onNavigateToBlog?.(post.id)}
+                to={`/blog/${post.id}`}
                 className="w-full text-left bg-white border border-slate-200 rounded-xl p-4 hover:border-blue-900/40 hover:shadow-md transition group shadow-xs flex items-center justify-between gap-4 cursor-pointer"
               >
                 <div className="space-y-1 min-w-0">
@@ -118,7 +123,7 @@ export default function AuthorsTab({
                   </p>
                 </div>
                 <ChevronRight className="w-4 h-4 text-slate-400 group-hover:text-blue-900 shrink-0" />
-              </button>
+              </Link>
             ))}
           </div>
         </div>
@@ -129,6 +134,11 @@ export default function AuthorsTab({
   // ================= AUTHORS LIST VIEW =================
   return (
     <div id="authors-tab-root" className="space-y-6 animate-fadeIn">
+      <Seo
+        title="Our Authors | Bengula Inc"
+        description="The people and tools behind the Bengula Inc Financial Education Hub — contributors writing on banking, finance, investing, and digital growth in East Africa."
+        path="/authors"
+      />
       <div className="border-b border-slate-200 pb-6 space-y-1">
         <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Contributors</span>
         <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
@@ -144,13 +154,9 @@ export default function AuthorsTab({
         {authorProfiles.map((profile) => {
           const count = articlesFor(profile).length;
           return (
-            <button
+            <Link
               key={profile.id}
-              onClick={() => {
-                setActive(profile.id);
-                window.location.hash = `author/${profile.id}`;
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
+              to={`/authors/${profile.id}`}
               className="text-left bg-white border border-slate-200 rounded-2xl p-6 hover:border-blue-900/40 hover:shadow-md transition duration-300 shadow-xs group cursor-pointer flex gap-4 items-start"
             >
               <Avatar a={profile} size="w-16 h-16" />
@@ -165,7 +171,7 @@ export default function AuthorsTab({
                   {count} article{count === 1 ? '' : 's'}
                 </p>
               </div>
-            </button>
+            </Link>
           );
         })}
       </div>

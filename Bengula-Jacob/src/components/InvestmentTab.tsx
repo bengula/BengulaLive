@@ -9,8 +9,11 @@ import { investmentPoolsList } from '../data/investmentsData';
 import { riskBadgeStyles } from '../data/portfolioTags';
 import { Sparkles, TrendingUp, DollarSign, Award, ArrowUpRight, ArrowRight, Wallet, Percent, ShieldCheck, Heart, FileText, Download, Briefcase, Mail, Send } from 'lucide-react';
 import { images } from '../data/media';
+import { useNavigate } from 'react-router-dom';
+import Seo from '../seo';
 
-export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: (id: string) => void }) {
+export default function InvestmentTab() {
+  const navigate = useNavigate();
   const [selectedPoolId, setSelectedPoolId] = useState<string>('real-estate-project');
   const [investAmount, setInvestAmount] = useState<number>(1000000);
 
@@ -89,6 +92,11 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
 
   return (
     <div id="investments-tab-root" className="space-y-10 animate-fadeIn">
+      <Seo
+        title="Investment Pools & Opportunities | Bengula Inc"
+        description="Structured education on real estate, agri-logistics, and private placement evaluation — how Bengula Inc frames risk, yield, and due diligence for East African investors."
+        path="/investments"
+      />
 
       {/* Markets banner */}
       <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-xs h-40 md:h-48">
@@ -185,7 +193,7 @@ export default function InvestmentTab({ onNavigateToBlog }: { onNavigateToBlog: 
                   {item.blogId && (
                     <button
                       type="button"
-                      onClick={() => onNavigateToBlog(item.blogId!)}
+                      onClick={() => navigate(`/blog/${item.blogId!}`)}
                       className="text-[10px] font-semibold uppercase tracking-wider py-1.5 px-3 bg-white border border-slate-200 text-blue-900 hover:bg-blue-50 rounded cursor-pointer transition flex items-center gap-1"
                     >
                       <span>Read Deep Dive</span>

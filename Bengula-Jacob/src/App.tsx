@@ -1,88 +1,50 @@
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
+ *
+ * Layout shell: header/nav, footer, market ticker, and the routed page outlet.
  */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { Head } from 'vite-react-ssg';
 
-import { TabId } from './types';
 import { siteConfig } from './data/siteConfig';
-import { activeSections, SectionContext } from './sections';
+import { activeNav } from './sections';
+import { organizationJsonLd } from './seo';
 import RateTicker from './components/RateTicker';
 
-export default function App() {
-  const [activeTab, setActiveTab] = useState<TabId>('home');
+export default function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeBlogPostId, setActiveBlogPostId] = useState<string | null>(null);
-  const [activeAuthorId, setActiveAuthorId] = useState<string | null>(null);
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
 
-  // Navigate between sections. Landing on the Blog/Authors tab resets to the
-  // list view (so you don't reopen the last article/author you happened to read).
-  const navigate = (id: TabId) => {
-    if (id === 'blog') setActiveBlogPostId(null);
-    if (id === 'authors') setActiveAuthorId(null);
-    setActiveTab(id);
-    setMobileMenuOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  // Open a specific article (used by About / Portfolio / Investments links).
-  const goToBlogPost = (postId: string) => {
-    setActiveBlogPostId(postId);
-    setActiveTab('blog');
-    setMobileMenuOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    window.location.hash = `blog/${postId}`;
-  };
-
-  // Open a specific author profile (used by clickable article bylines).
-  const goToAuthor = (authorId: string) => {
-    setActiveAuthorId(authorId);
-    setActiveTab('authors');
-    setMobileMenuOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    window.location.hash = `author/${authorId}`;
-  };
-
-  React.useEffect(() => {
-    const handleHash = () => {
-      const hash = window.location.hash;
-      if (hash && hash.startsWith('#blog/')) {
-        const blogId = hash.replace('#blog/', '');
-        if (blogId) {
-          setActiveBlogPostId(blogId);
-          setActiveTab('blog');
-        }
-      } else if (hash && hash.startsWith('#author/')) {
-        const authorId = hash.replace('#author/', '');
-        if (authorId) {
-          setActiveAuthorId(authorId);
-          setActiveTab('authors');
-        }
-      }
-    };
-    handleHash();
-    window.addEventListener('hashchange', handleHash);
-    return () => window.removeEventListener('hashchange', handleHash);
+  // Redirect legacy hash links (#blog/x, #author/x) to their new paths so
+  // anything shared before this change still resolves.
+  useEffect(() => {
+    const h = window.location.hash;
+    if (h.startsWith('#blog/')) navigate('/blog/' + h.slice(6), { replace: true });
+    else if (h.startsWith('#author/')) navigate('/authors/' + h.slice(8), { replace: true });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const ctx: SectionContext = {
-    navigate,
-    goToBlogPost,
-    activeBlogPostId,
-    setActiveBlogPostId,
-    goToAuthor,
-    activeAuthorId,
-    setActiveAuthorId,
-  };
+  // Scroll to top on every route change + close the mobile menu.
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setMobileMenuOpen(false);
+  }, [pathname]);
 
-  // Resolve the section to render; fall back to the first section if the
-  // active id was removed/disabled in the registry.
-  const current = activeSections.find((s) => s.id === activeTab) ?? activeSections[0];
+  const isActive = (path: string) =>
+    path === '/' ? pathname === '/' : pathname === path || pathname.startsWith(path + '/');
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 font-sans flex flex-col justify-between selection:bg-blue-600/15 selection:text-blue-900">
+
+      {/* Site-wide structured data. */}
+      <Head>
+        <script type="application/ld+json">{JSON.stringify(organizationJsonLd)}</script>
+      </Head>
 
       {/* Sovereign Market Rate Ticker (live FX + editable local rates) */}
       <RateTicker />
@@ -94,8 +56,8 @@ export default function App() {
 
             {/* Logo / Brand */}
             <div className="flex items-center gap-3">
-              <button
-                onClick={() => navigate('home')}
+              <Link
+                to="/"
                 className="w-10 h-10 bg-white rounded-lg border border-slate-200 flex items-center justify-center shadow-sm cursor-pointer transform hover:scale-105 transition overflow-hidden"
                 aria-label="Go to Bengula Inc home"
               >
@@ -104,36 +66,36 @@ export default function App() {
                   alt="Bengula Inc"
                   className="w-9 h-9 object-contain"
                 />
-              </button>
+              </Link>
               <div>
-                <span
-                  onClick={() => navigate('home')}
+                <Link
+                  to="/"
                   className="font-extrabold text-sm tracking-widest text-blue-900 hover:text-blue-800 cursor-pointer block leading-none font-sans"
                 >
                   {siteConfig.brand.shortName.toUpperCase()}
-                </span>
-                <span className="text-[9px] text-slate-500 uppercase tracking-widest block font-bold mt-0.5">Strategic Finance & Advisory</span>
+                </Link>
+                <span className="text-[9px] text-slate-500 uppercase tracking-widest block font-bold mt-0.5">Strategic Finance &amp; Advisory</span>
               </div>
             </div>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex space-x-1.5 bg-slate-100 p-1 border border-slate-200/65 rounded-xl animate-fadeIn">
-              {activeSections.map((item) => {
+              {activeNav.map((item) => {
                 const Icon = item.icon;
                 return (
-                  <button
+                  <Link
                     key={item.id}
                     id={`nav-btn-${item.id}`}
-                    onClick={() => navigate(item.id)}
+                    to={item.path}
                     className={`px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer ${
-                      activeTab === item.id
+                      isActive(item.path)
                         ? 'bg-blue-900 text-white shadow-xs'
                         : 'text-slate-600 hover:text-blue-900 hover:bg-white/80'
                     }`}
                   >
                     <Icon className="w-3.5 h-3.5" />
                     <span>{item.label}</span>
-                  </button>
+                  </Link>
                 );
               })}
             </nav>
@@ -142,6 +104,7 @@ export default function App() {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="lg:hidden p-2 rounded-lg text-slate-500 hover:text-blue-900 hover:bg-slate-100 focus:outline-none cursor-pointer"
+              aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -152,31 +115,31 @@ export default function App() {
         {/* Mobile Navigation Dropdown */}
         {mobileMenuOpen && (
           <div className="lg:hidden border-b border-slate-200 bg-white p-4 space-y-2 shadow-sm">
-            {activeSections.map((item) => {
+            {activeNav.map((item) => {
               const Icon = item.icon;
               return (
-                <button
+                <Link
                   key={item.id}
-                  onClick={() => navigate(item.id)}
+                  to={item.path}
                   className={`w-full text-left px-4 py-3 rounded-lg text-xs font-bold flex items-center gap-3 transition-colors cursor-pointer ${
-                    activeTab === item.id
+                    isActive(item.path)
                       ? 'bg-blue-900 text-white shadow-xs'
                       : 'text-slate-600 hover:text-blue-900 hover:bg-slate-50'
                   }`}
                 >
                   <Icon className="w-4.5 h-4.5" />
                   <span>{item.label}</span>
-                </button>
+                </Link>
               );
             })}
           </div>
         )}
       </header>
 
-      {/* Main Page Area — rendered from the section registry */}
+      {/* Main Page Area — routed content */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-        <div key={current.id} className="animate-fadeIn">
-          {current.render(ctx)}
+        <div key={pathname} className="animate-fadeIn">
+          <Outlet />
         </div>
       </main>
 
@@ -212,14 +175,10 @@ export default function App() {
             </div>
 
             <div className="flex flex-wrap gap-4 font-semibold text-slate-600">
-              {activeSections.map((s) => (
-                <button
-                  key={s.id}
-                  onClick={() => navigate(s.id)}
-                  className="hover:text-blue-900 cursor-pointer"
-                >
+              {activeNav.map((s) => (
+                <Link key={s.id} to={s.path} className="hover:text-blue-900 cursor-pointer">
                   {s.footerLabel ?? s.label}
-                </button>
+                </Link>
               ))}
             </div>
           </div>

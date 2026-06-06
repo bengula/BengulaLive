@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { Briefcase, ArrowRight, BookOpen, Layers, Shield, Sparkles, Clock, CheckCircle, Calendar, Send, Landmark } from 'lucide-react';
+import Seo from '../seo';
 import { ServiceDetail } from '../types';
 import { servicesList } from '../data/servicesData';
 import { siteConfig } from '../data/siteConfig';
@@ -74,6 +75,11 @@ export default function ServicesTab() {
 
   return (
     <div id="services-tab-root" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-fadeIn">
+      <Seo
+        title="Services | Banking, Finance & Digital Growth Advisory — Bengula Inc"
+        description="Book Bengula Inc advisory: banking & business finance, investment & treasury, business consulting, technology & digital growth, and corporate training across East Africa."
+        path="/services"
+      />
       
       {/* Left Column: List and Detailed Card */}
       <div className="lg:col-span-7 space-y-6">

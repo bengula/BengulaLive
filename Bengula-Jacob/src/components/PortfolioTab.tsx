@@ -4,11 +4,14 @@
  */
 
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Seo from '../seo';
 import { portfolioItemsList } from '../data/portfolioData';
 import { categoryBadgeStyles, portfolioCategoryFilters, portfolioItemTags, type PortfolioCategory, type PortfolioCategoryFilter, riskBadgeStyles } from '../data/portfolioTags';
 import { Award, Layers, TrendingUp, Building, Code2, MapPin, Calendar, Compass, ArrowUpRight, HelpCircle } from 'lucide-react';
 
-export default function PortfolioTab({ onNavigateToBlog }: { onNavigateToBlog: (id: string) => void }) {
+export default function PortfolioTab() {
+  const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState<PortfolioCategoryFilter>('All');
 
   const filteredItems = activeCategory === 'All'
@@ -23,6 +26,11 @@ export default function PortfolioTab({ onNavigateToBlog }: { onNavigateToBlog: (
 
   return (
     <div id="portfolio-tab-root" className="space-y-8 animate-fadeIn">
+      <Seo
+        title="Portfolio & Case Studies | Bengula Inc"
+        description="Selected Bengula Inc work across both pillars — data, SEO, and digital growth projects alongside finance, banking, and investment engagements in East Africa."
+        path="/portfolio"
+      />
       
       {/* Tab Header details */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-b border-slate-200 pb-6">
@@ -57,7 +65,7 @@ export default function PortfolioTab({ onNavigateToBlog }: { onNavigateToBlog: (
         {filteredItems.map((item) => (
           <div
             key={item.id}
-            onClick={() => item.blogId && onNavigateToBlog(item.blogId)}
+            onClick={() => item.blogId && navigate(`/blog/${item.blogId}`)}
             className={`bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-900/40 hover:shadow-md transition duration-300 relative group overflow-hidden shadow-xs ${
               item.blogId ? 'cursor-pointer' : ''
             }`}
@@ -91,7 +99,7 @@ export default function PortfolioTab({ onNavigateToBlog }: { onNavigateToBlog: (
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
-                        onNavigateToBlog(item.blogId!);
+                        navigate(`/blog/${item.blogId!}`);
                       }}
                       className="text-[10px] bg-blue-50 hover:bg-blue-100 text-blue-900 border border-blue-100 px-2 py-0.5 rounded font-extrabold flex items-center gap-0.5 cursor-pointer transition shrink-0 font-sans"
                     >

@@ -4,12 +4,20 @@
  */
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { User, Briefcase, Award, ShieldCheck, Milestone, ArrowRight, Star } from 'lucide-react';
 import { images } from '../data/media';
+import Seo from '../seo';
 
-export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blogId: string) => void }) {
+export default function AboutTab() {
+  const navigate = useNavigate();
   return (
     <div id="about-tab-root" className="space-y-12 animate-fadeIn">
+      <Seo
+        title="About Bengula Inc | Founder & Two-Pillar Philosophy"
+        description="Meet Jacob Bengula and the firm behind Bengula Inc — how data & digital growth and finance & banking advisory work together to help East African businesses grow."
+        path="/about"
+      />
       {/* Bio Section */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         {/* Placeholder Avatar / Profile Frame */}
@@ -187,7 +195,7 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
           ].map((rec, idx) => (
             <div 
               key={idx} 
-              onClick={() => onNavigateToBlog(rec.blogId)}
+              onClick={() => navigate(`/blog/${rec.blogId}`)}
               className="bg-white border border-slate-200 rounded-xl p-4 space-y-1.5 shadow-xs hover:border-blue-900/40 hover:shadow-xs transition cursor-pointer group"
             >
               <div className="flex justify-between items-start">

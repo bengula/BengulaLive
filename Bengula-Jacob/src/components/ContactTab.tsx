@@ -6,6 +6,7 @@
 import React, { useState } from 'react';
 import { MapPin, Mail, Phone, Globe, ShieldCheck, ChevronRight } from 'lucide-react';
 import { siteConfig, telHref, whatsappHref } from '../data/siteConfig';
+import Seo from '../seo';
 
 export default function ContactTab() {
   const [contactName, setContactName] = useState('');
@@ -42,6 +43,11 @@ export default function ContactTab() {
 
   return (
     <div id="contact-view" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-fadeIn">
+      <Seo
+        title="Contact Bengula Inc | Book a Consultation"
+        description="Get in touch with Bengula Inc for banking, finance, and digital-growth advisory. Book a confidential consultation or reach us by email, phone, or WhatsApp."
+        path="/contact"
+      />
 
       {/* Left Column: Coordinates */}
       <div className="lg:col-span-5 space-y-6">

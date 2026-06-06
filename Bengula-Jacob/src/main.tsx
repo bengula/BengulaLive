@@ -1,10 +1,7 @@
-import {StrictMode} from 'react';
-import {createRoot} from 'react-dom/client';
-import App from './App.tsx';
+import { ViteReactSSG } from 'vite-react-ssg';
+import { routes } from './routes';
 import './index.css';
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-);
+// vite-react-ssg drives both the build-time prerender and the client-side
+// hydration from this single exported entry.
+export const createRoot = ViteReactSSG({ routes });

@@ -4,22 +4,22 @@
  */
 
 import React, { useState, useMemo } from 'react';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogData';
-import { BlogPost } from '../types';
 import { categoryImage } from '../data/media';
 import { getAuthorProfile } from '../data/authors';
 import { renderInlineMarkdown } from '../utils/markdownText';
+import Seo, { SITE_URL } from '../seo';
 import { Search, Filter, BookOpen, Clock, Calendar, ArrowLeft, Heart, Share2, Sparkles, UserCircle2 } from 'lucide-react';
 
-export default function BlogTab({ activePostId, setActivePostId, onNavigateToAuthor }: { activePostId?: string | null; setActivePostId?: (id: string | null) => void; onNavigateToAuthor?: (authorId: string) => void }) {
-  const [localActivePostId, setLocalActivePostId] = useState<string | null>(null);
+export default function BlogTab() {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const currentActivePostId = id ?? null;
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [likes, setLikes] = useState<Record<string, number>>({});
   const [shared, setShared] = useState<Record<string, boolean>>({});
-
-  const currentActivePostId = activePostId !== undefined ? activePostId : localActivePostId;
-  const currentSetActivePostId = setActivePostId || setLocalActivePostId;
 
   const categories = useMemo(
     () => ['All', ...Array.from(new Set(blogPosts.map((post) => post.category)))],
@@ -59,7 +59,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
     }, 2000);
     
     // Copy URL to clipboard
-    navigator.clipboard.writeText(`${window.location.origin}/#blog/${id}`).catch(() => {});
+    navigator.clipboard.writeText(`${window.location.origin}/blog/${id}`).catch(() => {});
   };
 
   // Helper to parse Markdown-like syntax for safe, high-polish local rendering
@@ -283,14 +283,60 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
     return blocks;
   };
 
+  const articleImage = activePost
+    ? activePost.coverImage ?? categoryImage(activePost.category, 1200)
+    : undefined;
+  const articleIso =
+    activePost && !isNaN(Date.parse(activePost.date))
+      ? new Date(activePost.date).toISOString()
+      : undefined;
+  const articleJsonLd = activePost
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: activePost.title,
+        description: activePost.summary,
+        image: articleImage,
+        datePublished: articleIso,
+        author: [activePost.author, ...(activePost.coAuthors ?? [])].map((a) => ({
+          '@type': 'Person',
+          name: a.name,
+        })),
+        publisher: {
+          '@type': 'Organization',
+          name: 'Bengula Inc',
+          logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/ColoredBengulaIncLogo.png` },
+        },
+        mainEntityOfPage: `${SITE_URL}/blog/${activePost.id}`,
+        articleSection: activePost.category,
+      }
+    : undefined;
+
   return (
     <div id="blog-tab-root" className="space-y-8 animate-fadeIn">
-      
+
+      {activePost ? (
+        <Seo
+          title={`${activePost.title} | Bengula Inc`}
+          description={activePost.summary}
+          path={`/blog/${activePost.id}`}
+          image={articleImage}
+          type="article"
+          jsonLd={articleJsonLd}
+        />
+      ) : (
+        <Seo
+          title="Blog & Education | Bengula Inc"
+          description="Practical notes on Kenyan treasury bonds, MMFs, SACCOs, SME trade finance, real estate, and using data to grow — financial education for owners and professionals."
+          path="/blog"
+        />
+      )}
+
       {currentActivePostId && activePost ? (
         // ================= EDITORIAL DETAIL ARTICLE VIEW =================
         <div id="blog-editorial-article-detail" className="max-w-3xl mx-auto space-y-6">
           <button
-            onClick={() => currentSetActivePostId(null)}
+            onClick={() => navigate('/blog')}
             className="flex items-center gap-2 text-xs font-semibold text-blue-900 hover:text-blue-800 bg-white p-2.5 rounded-lg border border-slate-200 shadow-xs cursor-pointer transition"
           >
             <ArrowLeft className="w-4 h-4 text-blue-900" />
@@ -342,13 +388,13 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
                       const profile = getAuthorProfile(a.name);
                       return (
                         <span key={i} className="flex items-center gap-x-1">
-                          {profile && onNavigateToAuthor ? (
-                            <button
-                              onClick={() => onNavigateToAuthor(profile.id)}
+                          {profile ? (
+                            <Link
+                              to={`/authors/${profile.id}`}
                               className="text-blue-900 hover:text-blue-700 hover:underline decoration-blue-900/40 transition cursor-pointer"
                             >
                               {a.name}
-                            </button>
+                            </Link>
                           ) : (
                             <span>{a.name}</span>
                           )}
@@ -454,7 +500,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
             {filteredPosts.map((post) => (
               <div
                 key={post.id}
-                onClick={() => currentSetActivePostId(post.id)}
+                onClick={() => navigate(`/blog/${post.id}`)}
                 className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-blue-900/40 hover:shadow-md transition duration-300 flex flex-col justify-between cursor-pointer group shadow-xs relative"
               >
                 {/* Cover image */}
@@ -480,9 +526,11 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="text-base font-bold text-slate-900 group-hover:text-blue-900 transition-colors duration-200 leading-snug">
-                      {post.title}
-                    </h3>
+                    <Link to={`/blog/${post.id}`} onClick={(e) => e.stopPropagation()} className="block">
+                      <h3 className="text-base font-bold text-slate-900 group-hover:text-blue-900 transition-colors duration-200 leading-snug">
+                        {post.title}
+                      </h3>
+                    </Link>
                     <p className="text-xs text-slate-500 leading-relaxed font-normal">
                       {post.summary}
                     </p>

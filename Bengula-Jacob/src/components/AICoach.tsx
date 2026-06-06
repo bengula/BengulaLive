@@ -8,6 +8,7 @@ import { User, Send, Bot, Sparkles, AlertCircle, RefreshCw, Layers, CheckCircle2
 import { ChatMessage, UserFinanceProfile } from '../types';
 import { getCoachReply } from '../data/coachKnowledge';
 import { images } from '../data/media';
+import Seo from '../seo';
 import { renderInlineMarkdown } from '../utils/markdownText';
 
 export default function AICoach() {
@@ -152,7 +153,12 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
 
   return (
     <div id="ai-coach-root" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-fadeIn">
-      
+      <Seo
+        title="AI Wealth Coach | Bengula Inc"
+        description="Ask Bengula Inc's AI Wealth Coach practical questions on Kenyan treasury bonds, MMFs, SACCOs, and personal wealth building — financial education, not formal advice."
+        path="/ai-coach"
+      />
+
       {/* Target Profile customization */}
       <div className="lg:col-span-4 bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs">
         {/* Education banner */}

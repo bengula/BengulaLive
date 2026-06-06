@@ -15,13 +15,15 @@ import {
   LineChart,
   ShieldCheck,
 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import Calculators from './Calculators';
 import Resources from './Resources';
 import FAQ from './FAQ';
-import { TabId } from '../types';
+import Seo from '../seo';
 import { siteConfig } from '../data/siteConfig';
 
-export default function HomeTab({ navigate }: { navigate: (id: TabId) => void }) {
+export default function HomeTab() {
+  const navigate = useNavigate();
   const [newsletterEmail, setNewsletterEmail] = useState('');
   const [newsletterSuccess, setNewsletterSuccess] = useState(false);
 
@@ -53,28 +55,28 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
 
   const portals = [
     {
-      id: 'services',
+      path: '/services',
       title: 'Finance & Banking Advisory',
       desc: 'Match your business to the right bank products — accounts, lending, trade finance, treasury, and protection — with a banker structuring the deal.',
       icon: Landmark,
       btn: 'Book Session',
     },
     {
-      id: 'services',
+      path: '/services',
       title: 'Data & Digital Growth',
       desc: 'Turn your data and online presence into customers with analytics, SEO, and digital systems built for East African businesses.',
       icon: LineChart,
       btn: 'Grow Online',
     },
     {
-      id: 'blog',
+      path: '/blog',
       title: 'Research Library',
       desc: 'Read practical notes on money markets, debt instruments, business finance, and getting found online.',
       icon: Compass,
       btn: 'Read Insights',
     },
     {
-      id: 'about',
+      path: '/about',
       title: 'About Bengula Inc',
       desc: 'Meet the firm behind "Adding meaning to life" — the founder, the philosophy, and how the two pillars work together.',
       icon: Building2,
@@ -102,6 +104,11 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
 
   return (
     <div id="home-view" className="space-y-14 md:space-y-16">
+      <Seo
+        title="Bengula Inc | Business Growth, Data & Banking Advisory"
+        description={siteConfig.brand.tagline}
+        path="/"
+      />
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
         <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white border border-slate-200 rounded-full text-[10px] font-bold text-blue-900 uppercase tracking-widest leading-none shadow-sm">
@@ -120,13 +127,13 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl mx-auto lg:mx-0">
             {([
-              { label: 'Banking & capital advisory', tab: 'services' },
-              { label: 'Data & SEO growth', tab: 'portfolio' },
-              { label: 'Finance education', tab: 'blog' },
-            ] as { label: string; tab: TabId }[]).map((item) => (
+              { label: 'Banking & capital advisory', path: '/services' },
+              { label: 'Data & SEO growth', path: '/portfolio' },
+              { label: 'Finance education', path: '/blog' },
+            ] as { label: string; path: string }[]).map((item) => (
               <button
                 key={item.label}
-                onClick={() => navigate(item.tab)}
+                onClick={() => navigate(item.path)}
                 className="group bg-white border border-slate-200 rounded-lg px-3 py-2 text-[11px] font-bold text-slate-700 shadow-sm flex items-center justify-between gap-1 cursor-pointer hover:border-violet-300 hover:text-violet-700 hover:bg-violet-50/50 transition text-left"
               >
                 <span>{item.label}</span>
@@ -137,14 +144,14 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
 
           <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
             <button
-              onClick={() => navigate('services')}
+              onClick={() => navigate('/services')}
               className="bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-2 cursor-pointer shadow-md transform hover:-translate-y-0.5 transition"
             >
               <span>Book Consultation</span>
               <ChevronRight className="w-4 h-4" />
             </button>
             <button
-              onClick={() => navigate('blog')}
+              onClick={() => navigate('/blog')}
               className="border border-slate-200 hover:border-slate-300 bg-white text-slate-700 font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-1.5 cursor-pointer hover:bg-slate-50 transition shadow-sm"
             >
               <span>Explore Research</span>
@@ -214,7 +221,7 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {portals.map((portal) => (
             <div
-              key={portal.id}
+              key={portal.title}
               className="bg-white border border-slate-200 rounded-xl p-6 hover:border-blue-900/35 hover:shadow-md transition duration-300 flex flex-col justify-between group shadow-sm"
             >
               <div className="space-y-4">
@@ -227,7 +234,7 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
                 </div>
               </div>
               <button
-                onClick={() => navigate(portal.id as TabId)}
+                onClick={() => navigate(portal.path)}
                 className="text-xs font-bold text-blue-900 hover:text-blue-800 flex items-center gap-1 pt-6 transition duration-300 cursor-pointer"
               >
                 <span>{portal.btn}</span>
