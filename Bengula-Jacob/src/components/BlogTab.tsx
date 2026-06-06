@@ -312,6 +312,14 @@ export default function BlogTab() {
       }
     : undefined;
 
+  // Related reading: same-category articles first, then fill to 3 with others.
+  const relatedPosts = activePost
+    ? [
+        ...blogPosts.filter((p) => p.id !== activePost.id && p.category === activePost.category),
+        ...blogPosts.filter((p) => p.id !== activePost.id && p.category !== activePost.category),
+      ].slice(0, 3)
+    : [];
+
   return (
     <div id="blog-tab-root" className="space-y-8 animate-fadeIn">
 
@@ -426,6 +434,36 @@ export default function BlogTab() {
           <div className="space-y-5 prose prose-slate font-sans pb-12">
             {renderMarkdown(activePost.content)}
           </div>
+
+          {/* Related reading — internal links to keep readers (and crawlers) moving */}
+          {relatedPosts.length > 0 && (
+            <div className="border-t border-slate-100 pt-6 space-y-4">
+              <h3 className="text-sm font-bold text-slate-800 flex items-center gap-2">
+                <BookOpen className="w-4 h-4 text-blue-900" />
+                Related reading
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {relatedPosts.map((post) => (
+                  <Link
+                    key={post.id}
+                    to={`/blog/${post.id}`}
+                    className="group bg-white border border-slate-200 rounded-xl p-4 hover:border-blue-900/40 hover:shadow-md transition shadow-xs flex flex-col gap-2"
+                  >
+                    <span className="text-[9px] bg-blue-50 text-blue-900 border border-blue-100 px-2 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono w-fit">
+                      {post.category}
+                    </span>
+                    <h4 className="text-xs font-bold text-slate-900 group-hover:text-blue-900 transition-colors leading-snug">
+                      {post.title}
+                    </h4>
+                    <span className="text-[10px] text-slate-400 font-mono flex items-center gap-1 mt-auto">
+                      <Clock className="w-3 h-3 text-blue-900" />
+                      {post.readTime}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Share / Social reactions footer */}
           <div className="border-t border-slate-100 pt-6 flex items-center justify-between text-xs text-slate-500 font-sans">
