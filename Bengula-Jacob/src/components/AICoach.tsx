@@ -159,6 +159,18 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
         path="/ai-coach"
       />
 
+      {/* Page Header */}
+      <div className="lg:col-span-12 border-b border-slate-200 pb-6 space-y-1">
+        <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Strategic Advisor</span>
+        <h1 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
+          <Bot className="w-6 h-6 text-violet-805" />
+          AI Wealth Coach
+        </h1>
+        <p className="text-xs text-slate-500">
+          Ask practical questions on money market funds, bonds, DhowCSD accounts, and wealth compounding.
+        </p>
+      </div>
+
       {/* Target Profile customization */}
       <div className="lg:col-span-4 bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs">
         {/* Education banner */}

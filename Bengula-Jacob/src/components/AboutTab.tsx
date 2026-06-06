@@ -65,7 +65,7 @@ export default function AboutTab() {
         <div className="lg:col-span-7 space-y-6">
           <div className="space-y-2 text-center lg:text-left">
             <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Executive Profile</span>
-            <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">Who is Bengula Jacob?</h2>
+            <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">Who is Bengula Jacob?</h1>
           </div>
           <p className="text-slate-600 leading-relaxed text-sm md:text-base font-normal">
             I currently operate as an active <strong>Senior Corporate & Business Banking Relationship Manager</strong>, overseeing premium corporate portfolios, investment lines, and bulk treasury allocations. My career journey centers on helping corporate entities and high-net-worth clients navigate complex treasury bid options, trade financing, and sovereign bond allocations.

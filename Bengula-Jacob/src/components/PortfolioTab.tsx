@@ -36,7 +36,7 @@ export default function PortfolioTab() {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-b border-slate-200 pb-6">
         <div className="space-y-1.5">
           <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold font-sans">Selected Work</span>
-          <h2 className="text-2xl font-bold text-slate-900">Portfolio & Case Studies</h2>
+          <h1 className="text-2xl font-bold text-slate-900">Portfolio & Case Studies</h1>
           <p className="text-slate-500 text-xs">
             Work across both Bengula Inc pillars — data, SEO, and digital growth projects alongside finance, banking, and investment engagements.
           </p>

@@ -85,7 +85,7 @@ export default function ServicesTab() {
       <div className="lg:col-span-7 space-y-6">
         <div className="space-y-1.5">
           <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest block font-extrabold font-sans">Two Pillars, One Desk</span>
-          <h2 className="text-2xl font-bold text-slate-900">How Bengula Inc Helps Your Business</h2>
+          <h1 className="text-2xl font-bold text-slate-900">How Bengula Inc Helps Your Business</h1>
           <p className="text-slate-500 text-xs">
             Finance & banking advisory and data & digital growth — pick the service that fits where your business is now.
           </p>

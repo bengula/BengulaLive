@@ -71,7 +71,7 @@ export default function AuthorsTab() {
             <Avatar a={activeProfile} size="w-24 h-24" />
             <div className="space-y-3 flex-1">
               <div>
-                <h2 className="text-2xl font-extrabold text-slate-950 leading-tight">{activeProfile.name}</h2>
+                <h1 className="text-2xl font-extrabold text-slate-950 leading-tight">{activeProfile.name}</h1>
                 <p className="text-sm font-semibold text-violet-800 mt-0.5">{activeProfile.role}</p>
               </div>
               <p className="text-sm text-slate-600 leading-relaxed font-normal">{activeProfile.bio}</p>
@@ -141,10 +141,10 @@ export default function AuthorsTab() {
       />
       <div className="border-b border-slate-200 pb-6 space-y-1">
         <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Contributors</span>
-        <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
+        <h1 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
           <Users className="w-6 h-6 text-violet-800" />
           Our Authors
-        </h2>
+        </h1>
         <p className="text-xs text-slate-500">
           The people — and tools — behind the Financial Education Hub.
         </p>

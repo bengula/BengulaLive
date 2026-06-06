@@ -25,20 +25,23 @@ export interface SeoProps {
   /** Absolute URL or root-relative path; falls back to the brand logo. */
   image?: string;
   type?: 'website' | 'article';
+  keywords?: string | string[];
   /** One or more JSON-LD objects injected as <script type="application/ld+json">. */
   jsonLd?: object | object[];
 }
 
-export default function Seo({ title, description, path, image, type = 'website', jsonLd }: SeoProps) {
+export default function Seo({ title, description, path, image, type = 'website', keywords, jsonLd }: SeoProps) {
   const url = `${SITE_URL}${path === '/' ? '' : path}`;
   const img = absolute(image);
   const blocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+  const kws = keywords ? (Array.isArray(keywords) ? keywords.join(', ') : keywords) : '';
 
   return (
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={url} />
+      {kws && <meta name="keywords" content={kws} />}
 
       <meta property="og:site_name" content="Bengula Inc" />
       <meta property="og:title" content={title} />
