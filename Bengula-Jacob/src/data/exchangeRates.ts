@@ -39,6 +39,18 @@ export const exchangeRates = {
     {
       "label": "ZAR/KES",
       "value": "7.92"
+    },
+    {
+      "label": "KES/TZS",
+      "value": "20.30"
+    },
+    {
+      "label": "KES/RWF",
+      "value": "11.31"
+    },
+    {
+      "label": "KES/BIF",
+      "value": "23.03"
     }
   ] as FxRate[],
 };

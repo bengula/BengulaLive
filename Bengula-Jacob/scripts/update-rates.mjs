@@ -8,10 +8,11 @@
 //
 // It reads the most recent date in the CSV and writes src/data/exchangeRates.ts.
 import { readFileSync, writeFileSync } from "node:fs";
+import { execSync } from "node:child_process";
 import { join } from "node:path";
 import { homedir } from "node:os";
 
-// Which currencies to show, in order. CBK label -> display pair.
+// Which rates to show, in order. CBK label (exactly as in the CSV) -> display pair.
 // Edit this list to change what appears in the ticker.
 const DISPLAY = [
   ["US DOLLAR", "USD/KES"],
@@ -20,12 +21,19 @@ const DISPLAY = [
   ["AE DIRHAM", "AED/KES"],
   ["CHINESE YUAN", "CNY/KES"],
   ["SA RAND", "ZAR/KES"],
+  // EAC cross-rates: units of the regional currency per 1 KES
+  ["KES / TSHS", "KES/TZS"],
+  ["KES / RWF", "KES/RWF"],
+  ["KES / BIF", "KES/BIF"],
 ];
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+const args = process.argv.slice(2);
+const publish = args.includes("--publish");
 const csvPath =
-  process.argv[2] || join(homedir(), "Downloads", "TRADE WEIGHTED AVERAGE INDICATIVE RATES.csv");
+  args.find((a) => !a.startsWith("--")) ||
+  join(homedir(), "Downloads", "TRADE WEIGHTED AVERAGE INDICATIVE RATES.csv");
 
 const raw = readFileSync(csvPath, "utf8").trim();
 const rows = raw
@@ -86,3 +94,15 @@ export const exchangeRates = {
 writeFileSync(join("src", "data", "exchangeRates.ts"), out);
 console.log(`Updated src/data/exchangeRates.ts — ${rates.length} rates as of ${asOf}:`);
 for (const r of rates) console.log(`  ${r.label.padEnd(9)} ${r.value}`);
+
+// `npm run rates:publish` passes --publish: commit just the rates file and push.
+if (publish) {
+  try {
+    execSync("git add src/data/exchangeRates.ts", { stdio: "inherit" });
+    execSync(`git commit -m "Update FX rates (${asOf})"`, { stdio: "inherit" });
+    execSync("git push", { stdio: "inherit" });
+    console.log("\nPublished — Cloudflare will redeploy shortly.");
+  } catch {
+    console.log("\nNothing to publish (rates unchanged?) or a git step failed — see above.");
+  }
+}
