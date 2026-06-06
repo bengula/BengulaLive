@@ -11,6 +11,7 @@
     "clean": "rm -rf dist",
     "update-rates": "node scripts/update-rates.mjs",
     "rates:publish": "node scripts/update-rates.mjs --publish",
+    "scrape-rates": "node scripts/scrape-cbk-rates.mjs",
     "lint": "tsc --noEmit",
     "deploy": "npm run build && wrangler deploy"
   },
