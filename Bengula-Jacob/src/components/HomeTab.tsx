@@ -21,6 +21,7 @@ import Resources from './Resources';
 import FAQ from './FAQ';
 import Seo from '../seo';
 import { siteConfig } from '../data/siteConfig';
+import { keyRates } from '../data/cbkRates';
 
 export default function HomeTab() {
   const navigate = useNavigate();
@@ -209,6 +210,36 @@ export default function HomeTab() {
               <span className="text-[10px] text-slate-500 block leading-tight font-medium">{stat.desc}</span>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section id="cbk-key-rates" className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
+        <div className="flex flex-wrap items-end justify-between gap-2 pb-5">
+          <div className="space-y-1">
+            <span className="text-[10px] font-bold text-violet-700 uppercase tracking-widest font-mono">Central Bank of Kenya</span>
+            <h3 className="text-xl font-bold text-slate-900">Key Market Rates</h3>
+          </div>
+          <span className="text-[10px] text-slate-400 font-mono">Official CBK figures · updated periodically</span>
+        </div>
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border-collapse">
+            <thead>
+              <tr className="text-[10px] uppercase tracking-wider text-slate-400 border-b border-slate-200">
+                <th className="py-2 pr-4 font-bold">Rate</th>
+                <th className="py-2 pr-4 font-bold text-right">Current</th>
+                <th className="py-2 font-bold text-right">As of</th>
+              </tr>
+            </thead>
+            <tbody>
+              {keyRates.map((r) => (
+                <tr key={r.name} className="border-b border-slate-100 last:border-0">
+                  <td className="py-2.5 pr-4 text-xs font-semibold text-slate-700">{r.name}</td>
+                  <td className="py-2.5 pr-4 text-xs font-bold text-blue-900 font-mono text-right">{r.value}</td>
+                  <td className="py-2.5 text-[11px] text-slate-500 font-mono text-right">{r.date}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
 
