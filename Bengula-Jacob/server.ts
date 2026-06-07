@@ -51,7 +51,7 @@ app.get("/api/health", (req, res) => {
   res.json({ status: "ok", time: new Date().toISOString() });
 });
 
-// Chat with Jacob's AI Assistant
+// Chat with Bengula's AI Assistant
 app.post("/api/chat", async (req, res) => {
   try {
     const { messages, userProfile } = req.body;
@@ -78,9 +78,9 @@ To provide fully tailored AI financial coaching live, please ensure your GEMINI_
     const client = getGeminiClient();
     
     // Format conversation history for Gemini
-    const systemInstruction = `You are Bengula Jacob's Wealth Coaching AI Assistant, representing Jacob Bengula, private wealth relationship manager at Absa Kenya and founder of Bengula Inc. 
+    const systemInstruction = `You are Bengula Jacob's Wealth Coaching AI Assistant, representing Bengula Jacob, private wealth relationship manager at Absa Bank's Malindi branch and founder of Bengula Inc. 
 Your tone should be highly professional, encouraging, and deeply knowledgeable about the Kenyan financial ecosystem. This includes Kenyan Treasury Bonds, Treasury Bills, M-Akiba, NSE Stocks, Unit Trusts, real estate syndicates, SACCOs, and general personal wealth building. 
-Frame yourself as Jacob's professional digital assistant. Frame financial calculations, compound interest, tax withholding (typically 10% or 15% on bond interest in Kenya), and personal budgeting tips in a coaching-focused, practical way.
+Frame yourself as Bengula Jacob's professional digital assistant. Frame financial calculations, compound interest, tax withholding (typically 10% or 15% on bond interest in Kenya), and personal budgeting tips in a coaching-focused, practical way.
 Do NOT give formal, binding regulated financial advice, but offer highly informative and educational perspectives. The user's name is ${userProfile?.name || 'Valued Guest'} with a financial goal of "${userProfile?.goal || 'General Financial Literacy'}".
 Always respond in clear, beautiful Markdown. Keep your responses structured with bullet points or numbered lists where appropriate to ensure they are easy to read.`;
 

@@ -180,18 +180,50 @@ Available advisory tracks include **Financial Consulting** (KSh 10,000), **Inves
 
 Head to the **Services** tab to pick a track and reserve a slot, or use the **Contact** page for a tailored enquiry.`,
   },
+  {
+    id: "content-creation",
+    keywords: ["scale business", "content creation", "content", "scale", "marketing", "seo"],
+    answer: `**Scaling Business through Content & SEO (Bengula Inc Pillar 1)**
+
+Since **2014**, Bengula Inc has helped companies scale their operations by turning data and online presence into active customer channels:
+
+- **Content Creation Strategy**: Build informative, search-optimized articles, guides, and profiles (like the ones in our Research Library) that address the actual problems your target audience is searching for.
+- **Search Engine Optimization (SEO)**: Ensure your platform is technically sound, mobile-responsive, and structured so search engines index it authoritatively.
+- **Data-Driven Decisions**: Audit traffic metrics and conversion pipelines rather than operating on guesswork.
+
+By publishing high-quality, educational content, a business earns authority, gets found organically, and converts reader trust into long-term customer relationships.`,
+  },
+  {
+    id: "wise-investments",
+    keywords: ["wise investments", "wise investment", "investment advisory", "how to invest"],
+    answer: `**Wise Investments & Wealth Preservation (Bengula Inc Pillar 2)**
+
+Bengula Inc advises individuals and organizations on allocating capital systematically to minimize downside risk while capturing solid yields:
+
+- **Anchor in Sovereign Debt**: Utilize risk-free government instruments (Treasury Bills and Infrastructure Bonds via DhowCSD) to establish a predictable, tax-efficient baseline cash flow.
+- **Regulated Wealth Aggregators**: Match short-term liquidity needs with CMA-licensed Money Market Funds (MMFs) and deposit-taking SACCOs regulated by SASRA.
+- **Calculated Alternatives**: Transition to alternative co-ownership syndicates (such as vetted agricultural logistics or real estate developments) only after establishing your liquid reserve.
+
+A wise investment plan is defined by clear due diligence, diversification, tax efficiency, and matching asset durations with your capital timeline.`,
+  },
+  {
+    id: "founder-background",
+    keywords: ["founder", "bengula", "jacob", "education", "maseno university", "mathematics", "absa", "cv"],
+    answer: `**About the Founder: Bengula Jacob**
+
+- **Academic Foundation**: Bengula Jacob holds a **B.Sc. in Mathematics & Economics with IT** from **Maseno University** (2014–2017), equipping him with strong quantitative, data-modeling, and economic analytical skills.
+- **Professional Role**: He currently serves as a **Relationship Manager at Absa Bank's Malindi branch**, managing portfolios for 5,000+ high-profile corporate and retail clients, ensuring regulatory compliance (AML/KYC), and advising on capital placement.
+- **Bengula Inc**: Bengula Jacob founded Bengula Inc in **2014** to bridge the gap between corporate banking structures and independent growth consulting, helping businesses scale and individuals invest wisely.`,
+  },
 ];
 
-export const COACH_FALLBACK = `I'm Jacob's curated finance assistant. I can walk you through topics like:
+export const COACH_FALLBACK = `I am the Bengula Inc Business & Wealth Coach. I can help you with topics like:
 
-- **Treasury Bills & Bonds** and how to *ladder* them
-- **DhowCSD / CDS** account setup
-- **Money Market Funds**, **SACCOs**, and **NSE** dividends
-- **Withholding tax** rules
-- A starter **portfolio allocation**
-- **Diaspora** investing and **Bengula Inc** syndicates
+- **Pillar 1: Data & Digital Growth** (scaling business with content creation, SEO optimization)
+- **Pillar 2: Finance & Banking Advisory** (wise investments, DhowCSD account setup, Treasury T-Bills & Bonds, Money Market Funds, SACCOs)
+- **Founder Bio**: Bengula Jacob's B.Sc. from Maseno University, corporate banking experience, and the founding of Bengula Inc in 2014
 
-Try one of the quick chips below, or ask in those terms and I'll share what I know. For anything specific to your situation, **book a consultation** — Jacob reviews these personally.`;
+Try one of the quick chips below, or ask in those terms and I'll share what I know. For anything specific to your situation, **book a consultation** — Bengula Jacob reviews these personally.`;
 
 /**
  * Pure, offline responder. Scores each entry by keyword hits and returns the best match.

@@ -16,7 +16,7 @@ export default function AICoach() {
     name: "Wanjiku",
     age: "30",
     monthlySavings: "20,000",
-    goal: "Sovereign Debt Passive Income",
+    goal: "Scaling Business with Content & SEO",
     riskTolerance: "Moderate (Diversified wealth)"
   });
 
@@ -33,14 +33,16 @@ export default function AICoach() {
   useEffect(() => {
     const greeting = `Habari ${profile.name}!
 
-I am the **Bengula Jacob Wealth Coach** — a curated guide to Kenyan markets drawn from Jacob's advisory playbook. I answer from a built-in knowledge base (no internet required), so for anything specific to your situation, **book a consultation** and Jacob will review it personally.
+I am the **Bengula Inc Business & Wealth Coach** — a curated guide built to support our twin missions: scaling businesses through high-impact content creation and helping individuals/organizations make wise investments. 
 
-Based on your target goal of **\"${profile.goal}\"** and monthly saving block of **KSh ${profile.monthlySavings}**, we have a prime foundation to compile wealth safely!
+Whether you are looking to grow your business's online visibility, design an SEO strategy, or navigate Kenyan treasury bonds, money market funds (MMFs), and DhowCSD setups, I am here to help you structure a clear roadmap.
+
+Based on your target goal of **\"${profile.goal}\"** and monthly saving block of **KSh ${profile.monthlySavings}**, we have a prime foundation to build upon!
 
 **How would you like to start our financial education session today?** Feel free to ask me:
-1. *How do I open a Central Bank CDS Account online through DhowCSD?*
-2. *Can you explain the withholding tax protocol on standard bonds versus IFBs?*
-3. *How should I divide KSh ${profile.monthlySavings} between Money Market Funds and Treasury Bills?*`;
+1. *How can Bengula Inc help scale my business using content creation and SEO?*
+2. *How do I open a Central Bank CDS Account online through DhowCSD?*
+3. *What is the best way to allocate KSh ${profile.monthlySavings} between T-Bills and MMFs?*`;
 
     setMessages([
       {
@@ -93,10 +95,10 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
   };
 
   const quickPrompts = [
-    "DhowCSD Setup Guidelines",
-    "Bond Tax witholding rule",
-    "T-Bills vs Money Market Funds",
-    "Bengula Syndicate eligibility"
+    "Scale Business with Content",
+    "Wise Investment Advice",
+    "DhowCSD Account Setup",
+    "T-Bills vs MMF Allocation"
   ];
 
   // Manual fast Markdown wrapper to bold titles, handle bullets and lists beautifully
@@ -154,8 +156,8 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
   return (
     <div id="ai-coach-root" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-fadeIn">
       <Seo
-        title="AI Wealth Coach | Bengula Inc"
-        description="Ask Bengula Inc's AI Wealth Coach practical questions on Kenyan treasury bonds, MMFs, SACCOs, and personal wealth building — financial education, not formal advice."
+        title="Bengula Inc Business & Wealth Coach | Bengula Inc"
+        description="Ask Bengula Inc's Business & Wealth Coach practical questions on content creation, scaling businesses, treasury bonds, MMFs, and personal wealth building."
         path="/ai-coach"
       />
 
@@ -164,7 +166,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
         <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Strategic Advisor</span>
         <h1 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
           <Bot className="w-6 h-6 text-violet-805" />
-          AI Wealth Coach
+          Bengula Inc Business & Wealth Coach
         </h1>
         <p className="text-xs text-slate-500">
           Ask practical questions on money market funds, bonds, DhowCSD accounts, and wealth compounding.
@@ -261,10 +263,10 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
                 onChange={(e) => setProfile({ ...profile, goal: e.target.value })}
                 className="w-full bg-slate-50 border border-slate-200 focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 rounded p-2 text-slate-800 focus:outline-none font-semibold cursor-pointer text-xs"
               >
+                <option value="Scaling Business with Content & SEO">Scaling Business with Content & SEO</option>
+                <option value="Wise Investments & Capital Placement">Wise Investments & Capital Placement</option>
                 <option value="Sovereign Debt Passive Income">Sovereign Debt Passive Income</option>
-                <option value="Syndicated Real Estate">Syndicated Real Estate</option>
                 <option value="Starting Emergency Cushion">Starting Emergency Cushion</option>
-                <option value="Long Term Blue-chip Stock Dividends">Long Term Stock Dividends</option>
               </select>
             </div>
 
@@ -302,8 +304,8 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
           <div className="flex items-center gap-2">
             <Bot className="w-5 h-5 text-violet-800 animate-pulse" />
             <div>
-              <span className="text-xs font-extrabold text-slate-900 block font-sans">Bengula Jacob Wealth Coach</span>
-              <p className="text-[9px] text-slate-500 font-medium font-sans">Curated knowledge guide • Kenyan markets</p>
+              <span className="text-xs font-extrabold text-slate-900 block font-sans">Bengula Inc Business & Wealth Coach</span>
+              <p className="text-[9px] text-slate-500 font-medium font-sans">Curated knowledge guide • Content & Investments</p>
             </div>
           </div>
           <span className="text-[9px] bg-emerald-50 border border-emerald-200/50 text-emerald-800 py-0.5 px-2 rounded-full font-bold font-mono">Offline Knowledge Mode</span>
@@ -389,7 +391,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
               id="input-ai-coach-message"
               type="text"
               disabled={loading}
-              placeholder="Ask me anything: M-Akiba vs MMFs, DhowCSD accounts..."
+              placeholder="Ask me anything: Content SEO, MMFs, DhowCSD bonds..."
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
               className="flex-1 bg-white text-slate-800 text-xs py-2.5 px-3 rounded-xl border border-slate-200 focus:outline-none focus:border-violet-800 focus:ring-1 focus:ring-violet-800 font-semibold"

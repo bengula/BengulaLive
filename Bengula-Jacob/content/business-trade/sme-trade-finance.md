@@ -4,7 +4,7 @@ title: SME Trade Finance & Supply-Chain Optimization in Frontier Markets
 summary: Exploring capital constraints in agricultural supply chains, showing how co-investment syndicates mitigate bank interest and boost SME exporters.
 category: SME Trade Finance
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Founder, Bengula Inc.
   avatar: /images/jacob.jpg
 date: March 11, 2026

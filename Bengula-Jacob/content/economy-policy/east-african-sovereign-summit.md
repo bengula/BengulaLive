@@ -4,7 +4,7 @@ title: East African Sovereign Debt & Inflation Summit 2025
 summary: Keynote recap. Discussing DhowCSD access models, inflationary rebalancing, and regional bond market forecasts.
 category: Bonds & Bills
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Keynote Speaker
   avatar: /images/jacob.jpg
 date: May 02, 2025

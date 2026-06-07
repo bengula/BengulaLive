@@ -4,7 +4,7 @@ title: Zindua Agri-Logistics Seed Alliance
 summary: Fintech integration in regional horticulture transport corridors, reducing transport crop shrinkage by -35% during Mt. Kenya transit.
 category: Agri-Logistics
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Venture Partner, Bengula Inc.
   avatar: /images/jacob.jpg
 date: Nov 02, 2025

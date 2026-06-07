@@ -4,7 +4,7 @@ title: "Kenyan Treasury Bonds Demystified: The Anchor of Long-Term Wealth in Ken
 summary: With recent yields hovering between 15% and 17.5%, government infrastructure bonds represent one of the most reliable passive income engines for Kenyan investors.
 category: Bonds & Bills
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
 date: May 24, 2026

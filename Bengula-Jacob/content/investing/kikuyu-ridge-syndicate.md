@@ -4,7 +4,7 @@ title: Kikuyu Ridge land-Banking Syndicate
 summary: Group land acquisition case study. How 14 elite co-investors purchased a 5-acre piece of prime suburban land in Kiambu County safely.
 category: Real Estate
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Founder, Bengula Inc.
   avatar: /images/jacob.jpg
 date: Dec 18, 2025

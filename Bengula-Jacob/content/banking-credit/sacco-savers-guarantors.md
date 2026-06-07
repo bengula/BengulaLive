@@ -4,7 +4,7 @@ title: "Safe for Savers, Risky for Guarantors: The Changing Calculus of SACCO Me
 summary: SACCOs remain one of Kenya's best wealth-building vehicles for disciplined savers — but the guarantor model is quietly transferring credit risk onto members who never borrowed a shilling. Here's how the calculus has changed.
 category: Wealth Optimization
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
 coAuthors:

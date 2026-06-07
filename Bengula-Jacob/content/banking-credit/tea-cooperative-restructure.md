@@ -4,7 +4,7 @@ title: Tea Cooperative Strategic Restructure
 summary: A consulting breakdown showing how debt consolidation saved a Meru agricultural cooperative KSh 4,200,500 in borrowing interest.
 category: Wealth Optimization
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: SME Advisory Representative
   avatar: /images/jacob.jpg
 date: Jan 28, 2026

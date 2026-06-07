@@ -184,7 +184,7 @@ export default function HomeTab() {
             <div className="grid grid-cols-2 gap-3 pt-2">
               {[
                 ['Base', siteConfig.contact.location],
-                ['Founder', 'Jacob Bengula'],
+                ['Founder', 'Bengula Jacob'],
                 ['Focus', 'Growth + Banking'],
                 ['Audience', 'Kenya + Diaspora'],
               ].map(([label, value]) => (

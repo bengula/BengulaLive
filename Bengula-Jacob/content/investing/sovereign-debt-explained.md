@@ -4,7 +4,7 @@ title: "Sovereign Debt Explained: How Ordinary Kenyans Can Lend to Government an
 summary: Most people assume government borrowing is the domain of banks and pension funds. But ordinary Kenyans can lend directly to government through Treasury Bills and Treasury Bonds — and build real wealth doing it.
 category: Bonds & Bills
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
 date: February 15, 2026
 readTime: 8 min read

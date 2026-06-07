@@ -53,7 +53,7 @@ export default function ContactTab() {
       <div className="lg:col-span-5 space-y-6">
         <div className="space-y-1.5">
           <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest block font-bold">Confidential Desk</span>
-          <h2 className="text-2xl font-bold text-slate-900">Contact Jacob Bengula</h2>
+          <h2 className="text-2xl font-bold text-slate-900">Contact Bengula Jacob</h2>
           <p className="text-slate-600 text-xs">
             Please route questions concerning corporate advisor structures, bulk treasury placements, or Bengula Inc syndications directly.
           </p>
@@ -95,7 +95,7 @@ export default function ContactTab() {
                 <a href={telHref(siteConfig.contact.phone)} className="hover:text-blue-900 transition-colors">
                   {siteConfig.contact.phone}
                 </a>
-                <a href={whatsappHref(siteConfig.contact.whatsapp, 'Hello Jacob, I have an enquiry from your website.')} target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:text-emerald-600 transition-colors font-bold">
+                <a href={whatsappHref(siteConfig.contact.whatsapp, 'Hello Bengula Jacob, I have an enquiry from your website.')} target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:text-emerald-600 transition-colors font-bold">
                   WhatsApp →
                 </a>
               </div>

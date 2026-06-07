@@ -4,7 +4,7 @@ title: SME Packager Margin Optimization
 summary: Reforming pricing metrics and implementing lightweight CRM pipelines, lifting EBITDA margins from 6% to 18% for an FMCG packager.
 category: SME Trade Finance
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Business Consultant
   avatar: /images/jacob.jpg
 date: Sep 22, 2025

@@ -4,7 +4,7 @@ title: Agri-Export Supply-Chain Logistics Pool
 summary: Unlocking stable, export-driven dollar revenues by financing regional macadamia and avocado shipments.
 category: Agri-Logistics
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Sponsor Representative
   avatar: /images/jacob.jpg
 date: Jul 11, 2025

@@ -4,7 +4,7 @@ title: Kikuyu Ridge Infrastructure & Land Venture
 summary: Strategic dossier detailing co-ownership structures in Kiambu land developments. Purchase, clear, title, and exit parameters.
 category: Real Estate
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Sponsor Representative
   avatar: /images/jacob.jpg
 date: Aug 05, 2025

@@ -4,7 +4,7 @@ title: Sleeping Asset Yield Optimization
 summary: Case study on reallocating vacant suburban land tracts into direct, tax-free sovereign income streams, generating KSh 340,000 monthly.
 category: Wealth Optimization
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Senior Portfolio Advisor
   avatar: /images/jacob.jpg
 date: Oct 12, 2025

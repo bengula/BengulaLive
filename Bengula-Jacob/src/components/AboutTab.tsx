@@ -15,7 +15,7 @@ export default function AboutTab() {
     <div id="about-tab-root" className="space-y-12 animate-fadeIn">
       <Seo
         title="About Bengula Inc | Founder & Two-Pillar Philosophy"
-        description="Meet Jacob Bengula and the firm behind Bengula Inc — how data & digital growth and finance & banking advisory work together to help East African businesses grow."
+        description="Meet Bengula Jacob and the firm behind Bengula Inc — how content creation and investment advisory work together to scale businesses and grow wealth."
         path="/about"
       />
       {/* Bio Section */}
@@ -29,23 +29,23 @@ export default function AboutTab() {
             <div className="relative bg-white border border-slate-200 rounded-2xl p-6 md:p-8 text-center space-y-4 shadow-md">
               <img
                 src="/images/jacob.jpg"
-                alt="Jacob Bengula"
+                alt="Bengula Jacob"
                 loading="lazy"
                 className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-white shadow-lg"
               />
               <div>
-                <h3 className="text-xl font-bold text-slate-900">Jacob Bengula</h3>
-                <p className="text-sm text-violet-800 font-extrabold mt-1">Relationship Manager, Corporate & Business Banking</p>
+                <h3 className="text-xl font-bold text-slate-900">Bengula Jacob</h3>
+                <p className="text-sm text-violet-800 font-extrabold mt-1">Relationship Manager, Absa Bank (Malindi Branch)</p>
                 <p className="text-xs text-slate-500 font-semibold mt-0.5">Founder, Bengula Inc</p>
               </div>
               <div className="bg-slate-50 rounded-xl p-3 text-xs text-slate-500 font-mono border border-slate-100 text-left space-y-2">
                 <div className="flex justify-between">
                   <span>HQ Location:</span>
-                  <span className="text-slate-800 font-semibold">Nairobi, Kenya</span>
+                  <span className="text-slate-800 font-semibold">Malindi, Kenya</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Credentials:</span>
-                  <span className="text-slate-800 font-semibold">CISB, Wealth Advisory</span>
+                  <span className="text-slate-800 font-semibold">B.Sc. Math & Econ (IT)</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Specialties:</span>
@@ -68,28 +68,26 @@ export default function AboutTab() {
             <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">Who is Bengula Jacob?</h1>
           </div>
           <p className="text-slate-600 leading-relaxed text-sm md:text-base font-normal">
-            I currently operate as an active <strong>Senior Corporate & Business Banking Relationship Manager</strong>, overseeing premium corporate portfolios, investment lines, and bulk treasury allocations. My career journey centers on helping corporate entities and high-net-worth clients navigate complex treasury bid options, trade financing, and sovereign bond allocations.
+            I currently operate as a <strong>Relationship Manager at Absa Bank's Malindi branch</strong>, where I manage and deepen relationships with a portfolio of over 5,000 retail and high-profile clients, ensuring AML/KYC/CDD compliance under CBK guidelines. I hold a B.Sc. in Mathematics and Economics with IT from Maseno University (2014-2017).
           </p>
           
           <div className="bg-slate-50 border border-slate-200/60 p-4 rounded-xl space-y-2 text-xs">
-            <h3 className="font-bold text-violet-800 font-sans uppercase tracking-widest text-[10px]">Mission & Vision</h3>
+            <h3 className="font-bold text-violet-800 font-sans uppercase tracking-widest text-[10px]">Bengula Inc Mission & Vision</h3>
             <p className="text-slate-600 leading-relaxed font-normal">
-              <strong>Mission:</strong> To help East African businesses grow by pairing data-driven decisions and online visibility with honest, practical access to the right banking and capital tools.
-              <br />
-              <strong className="mt-1.5 block">Vision:</strong> To be the trusted growth desk for owners and professionals across Kenya and the diaspora — where digital strategy and banking advice sit at one table.
+              Founded in 2014, <strong>Bengula Inc</strong> has been helping customers scale their businesses through data-driven content creation and digital growth strategy. We also help individuals and organizations make wise, calculated investments in sovereign debt, unit trusts, and alternative assets.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             <div className="bg-white border border-slate-200 p-4 rounded-xl space-y-1.5 shadow-xs">
               <ShieldCheck className="w-5 h-5 text-violet-800" />
-              <p className="text-sm font-bold text-slate-800">Banking Experience</p>
-              <p className="text-xs text-slate-500">Over a decade of core commercial banking experience, managing liquid assets, structured debt, and relationship management lines.</p>
+              <p className="text-sm font-bold text-slate-800">Business Scaling & Content</p>
+              <p className="text-xs text-slate-500">Helping businesses achieve organic growth and high visibility via SEO-optimized content creation, copywriting, and digital tools.</p>
             </div>
             <div className="bg-white border border-slate-200 p-4 rounded-xl space-y-1.5 shadow-xs">
               <User className="w-5 h-5 text-violet-800" />
-              <p className="text-sm font-bold text-slate-800">Tech & Finance Interests</p>
-              <p className="text-xs text-slate-500">Leveraging Artificial Intelligence, automated credit risk evaluation, and modern digital portals (like DhowCSD) to optimize returns.</p>
+              <p className="text-sm font-bold text-slate-800">Wise Investment Advisory</p>
+              <p className="text-xs text-slate-500">Advising individuals and organizations on secure capital placement, bond laddering, MMF allocation, and risk management.</p>
             </div>
           </div>
         </div>
@@ -145,11 +143,11 @@ export default function AboutTab() {
           </div>
           <div>
             <h3 className="text-lg font-bold text-white">About Bengula Inc</h3>
-            <p className="text-xs text-violet-200 font-medium">Adding meaning to life · Business growth & banking advisory</p>
+            <p className="text-xs text-violet-200 font-medium">Founded in 2014 · Scaling Content & Wise Investments</p>
           </div>
         </div>
         <p className="relative text-violet-100 text-sm leading-relaxed font-normal font-sans">
-          <strong>Bengula Inc</strong> is a business-growth brand built on a simple belief: the businesses that use data to make decisions, put their services online, and use the right banking tools are the ones that survive and grow. We work with owners across two pillars — <strong>Data &amp; Digital Growth</strong> (analytics, SEO, and online systems) and <strong>Finance &amp; Banking Advisory</strong> (accounts, lending, trade finance, treasury, and protection) — so strategy and capital move together.
+          Founded in 2014, <strong>Bengula Inc</strong> has spent over a decade helping businesses scale through premium, data-driven content creation and high-impact digital strategy. In parallel, we empower individuals and organizations to make wise investments in the Kenyan financial landscape, specializing in Treasury Bonds, bills, Money Market Funds, and structured private wealth solutions.
         </p>
       </div>
 
@@ -159,7 +157,7 @@ export default function AboutTab() {
           <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Global Resonance</span>
           <h3 className="text-2xl font-bold text-slate-950 leading-snug">Media & Recognition</h3>
           <p className="text-xs text-slate-500 leading-relaxed">
-            Jacob's professional insights on sovereign debt coupon laddering and SME growth strategy are regularly featured across leading channels:
+            Bengula's professional insights on sovereign debt coupon laddering and SME growth strategy are regularly featured across leading channels:
           </p>
           <div className="bg-amber-50 border border-amber-200/60 p-4 rounded-xl text-xs text-amber-950 space-y-1">
             <span className="font-bold block">🎙️ Speaking Bookings:</span>
@@ -229,28 +227,34 @@ export default function AboutTab() {
         <div className="relative border-l border-slate-200 pl-6 ml-4 space-y-8">
           {[
             {
-              year: "2018 - 2020",
-              title: "Early Foundations & Portfolio Support",
-              company: "Commercial Bank Environment (Nairobi)",
-              desc: "Engineered baseline investment reviews and structured private savings frameworks for retail clients, mastering the logistics of CDS Accounts and local money markets."
+              year: "2014",
+              title: "Founding of Bengula Inc & Academic Launch",
+              company: "Bengula Inc / Maseno University (Kisumu, Kenya)",
+              desc: "Founded Bengula Inc to help customers scale their businesses through data-driven content creation. Enrolled for a B.Sc. in Mathematics and Economics with IT."
             },
             {
-              year: "2021 - Present",
-              title: "Senior Relationship Manager (RM)",
-              company: "Tier-1 Kenyan Bank",
-              desc: "Managing high-profile corporate deposits, commercial credit facilities, and liquidity structures. Leading capital placement strategies in double-digit yield Treasury Bond auctions (now averaging 15%+ APR)."
+              year: "2018",
+              title: "Economic Analyst",
+              company: "County Government of Bungoma",
+              desc: "Conducted public economic research, authored feasibility studies, and formulated budget analyses and funding proposals."
             },
             {
-              year: "2023",
-              title: "Establishment of Bengula Inc",
-              company: "Private Alternative Syndicate",
-              desc: "Founded Bengula Inc to support private wealth consulting. Created vetted co-investment frameworks in high-yield syndicates, addressing a lack of reliable local advisory desks."
+              year: "2020 - 2022",
+              title: "Direct Sales Representative",
+              company: "National Bank of Kenya (NBK) (Mombasa)",
+              desc: "Onboarded and managed retail accounts, retail products, and Islamic Finance (Amanah) solutions, ensuring full AML/KYC/CDD compliance."
             },
             {
               year: "2025",
-              title: "Digital Access Initiative",
-              company: "Financial Education & Digital Assistance Portal",
-              desc: "Created the digital advisory platform to democratize corporate bond knowledge, launching interactive tools to simplify compound calculation rules for local and diaspora Kenyans."
+              title: "Sales Associate",
+              company: "Platinum Credit Limited (Malindi)",
+              desc: "Managed a portfolio of active lending clients, coordinating consumer credit lifecycle evaluations and risk profiling."
+            },
+            {
+              year: "2025 - Present",
+              title: "Relationship Manager",
+              company: "Absa Bank Kenya (Malindi Branch)",
+              desc: "Overseeing end-to-end relationships for over 5,000 retail and premium client portfolios, executing data-driven deep-selling and portfolio optimization."
             }
           ].map((milestone, i) => (
             <div key={i} className="relative">

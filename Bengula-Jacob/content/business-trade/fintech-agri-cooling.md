@@ -4,7 +4,7 @@ title: Fintech Agri-Cooling Tech Seed Syndicate & Supply-Chain Optimization in F
 summary: Angel backing for solar-powered cooling rooms, extending fresh crop storage life by extreme durations.
 category: Agri-Logistics
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Venture Sponsor
   avatar: /images/jacob.jpg
 date: Jun 15, 2025

@@ -8,7 +8,10 @@ const fmt = (value: number) =>
     ? Math.round(value).toLocaleString('en-KE')
     : '-';
 
-const fmtMoney = (value: number) => `KSh ${fmt(value)}`;
+const fmtMoney = (value: number) =>
+  Number.isFinite(value)
+    ? `KSh ${value.toLocaleString('en-KE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+    : 'KSh -';
 
 const fmtD = (value: number, digits = 2) =>
   Number.isFinite(value)
@@ -119,7 +122,7 @@ export default function LoanAppraisalCalculator() {
   const [netPay, setNetPay] = useState(13414);
   const [basicSalary, setBasicSalary] = useState(38900);
   const [temporaryAllowances, setTemporaryAllowances] = useState(0);
-  const [serviceFee, setServiceFee] = useState(116);
+  const [serviceFee, setServiceFee] = useState(0);
   const [hasBuyoff, setHasBuyoff] = useState(false);
   const [currentDeduction, setCurrentDeduction] = useState(0);
   const [buyoffBalance, setBuyoffBalance] = useState(0);
