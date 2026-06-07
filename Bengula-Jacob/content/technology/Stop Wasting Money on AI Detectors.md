@@ -10,31 +10,37 @@ author:
 date: June 6, 2026
 readTime: 10 min
 ---
-
-
+_This article was first written in 2024 on [LinkedIn](https://www.linkedin.com/pulse/stop-wasting-money-ai-detectors-random-guesses-bengula-inc-5mwef/?trackingId=2BdTdrEW7INUM1zQhYHc0A%3D%3D)_
 
   
-Artificial Intelligence has undoubtedly been used to cheat.
+Artificial Intelligence has is a very important tool. It has been used in Advanced research in Biology, medicine, Mathematics and other groundbreaking work. Its therefore not surprising that students, professional and academicians have used AI to cheat.
 
 Students have used it to write assignments. Researchers have used it to draft papers. Businesses have used it to generate content at scale. The concern is legitimate. In fact you can find a lot of articles online with telltale signs of AI use.
 
-While obvious solutions like human reviews exist, a lazy approach of use AI to catch to catch AI I is the most popular fallback. Yeah the dreadful AI detector. Does it work? sometimes. is it reliable? I wouldn't bet my money on it. i have my reason that I laid out in my previous article when AI detector had been elevated to the God of the internet arbitrating every small sentence on the internet
+While obvious solutions like human reviews exist, a lazy approach of use AI to catch to catch AI I is the most popular fallback. Yeah the dreadful AI detector. Does it work? sometimes. Is it reliable? I wouldn't bet my money on it. I have my reason that I laid out in my previous article when AI detector had been elevated to the God of the internet arbitrating every small sentence on the internet
 
 AI detectors are often marketed as if they can determine whether a piece of content was written by a human or its AI generated. Well, they cannot. It is also not practical when we use so many AI tools and AI is now embedded in every software we use Microsoft office, Grammarly, Google docs, email and so on to assist as in our mundane tasks.
 
 How do AI detector work and why do I dismiss them so fast. Well I have used them for client content and what I can say is they randomly guess some things. In practice, they provide a statistical estimate based on patterns observed during training. At worst, they create a false sense of certainty. Well that can have repercussion especially at work and in Academia. 
 
-Only a human familiar with your writing style can notice a meaningful shift in tone, vocabulary, or structure. Even then, changes in writing style can occur naturally as people read new material, gain expertise, or adapt to different audiences.
+Is true that students are cheating? Yes. Should AI detector be the final arbiter? No. That because AI detector method of detection is deeply flawed. However a human familiar with your writing style can notice a meaningful shift in tone, vocabulary, or structure. 
 
-Human writing is not unique. It is influenced by everything we consume, from books and articles to conversations and experiences.
+Even then, changes in writing style can occur naturally as people read new material, gain expertise, or adapt to different audiences. A change in the writing style may be influenced by the content we consume, from books and articles to conversations and experiences.
 
-## How AI Detectors Actually Work
+## Examples of Obviously AI Content
 
-People have cheated using AI to earn academic credentials and publish research.
 
-Researcher Bilal Mushtaq has documented numerous examples of papers containing traces of AI-generated text. Interestingly, many of these papers were not discovered because AI detectors successfully identified sophisticated AI writing.
+AI content can be detected sometime for use of em-dashes, making every topic seem deep. However in most cases its very nuanced and mistakes by the writers are what get the caught as exemplified curated by [Bilal Mushtaq](https://www.linkedin.com/in/bilal-mushtaq-civil/) [on X, formerly known as Twitter](https://twitter.com/MushtaqBilalPhD/status/1769740682632020103).
 
-They were exposed because authors accidentally left behind obvious AI-generated boilerplate text.
+When you review the papers, you will see that most have been flagged for leaving some standard boilerplate text and not for any other specific wording.
+
+AI detectors pretend to detect a specific wording and hide behind the words "proprietary technology" without providing any detection methodology. Some word sequences may seem unnatural. Many trigger words have also been noted to trigger AI detectors despite such expressions being common in everyday language. But since language, in terms of vocabulary and style, varies from person to person, it is easy to attribute the oddities to other things rather than AI.
+
+AI-generated and human-generated text are indistinguishable with asterisks. While you may be able to detect some AI content from a mile away, AI detectors have struggled, resulting in many false positives and negatives. That is because AI detectors try to guess how common human authors often write a sentence versus AI. Unfortunately AI-generators are not 100% correct in fact their accuracy is in the lower digits. As AI advances
+
+## Examples of False Positives and False Negatives
+
+A classic example of AI detectors displaying their inconsistency is when they labelled the Bible as AI-generated. You can check the articles by [Atheer Mahir](https://www.linkedin.com/in/atheermahir/) below. He cites various studies on the topic, with each study further proving how unreliable AI detectors can be.
 
 That distinction matters.
 
@@ -81,11 +87,7 @@ One of the most widely discussed examples involved AI detectors identifying pass
 
 I conducted a similar experiment using ZeroGPT, one of the most popular AI detectors on the market.
 
-I submitted a CNN article written by journalist Greg Krieg in 2016, years before modern generative AI systems became publicly available.
-
-According to ZeroGPT, the article was **100% AI-generated**.
-
-That should have been impossible.
+I tested ZeroGPT, one of the most popular AI detectors in the market, with some of the pre-AI articles today, and the results were astounding. The first article I tested was a [CNN](https://www.linkedin.com/company/cnn/) article by [Greg Krieg](https://www.linkedin.com/in/greg-krieg-5921002a/) , and what do you know, his article was created 100% by AI. According to ZeroGPT, the article was **100% AI-generated**. Given the year the article came out we all know that is impossible.
 
 Yet the detector confidently produced a result that was demonstrably wrong.
 
@@ -119,9 +121,7 @@ According to the Wikipedia article on Artificial Intelligence Content Detection,
 
 These characteristics are not unique to AI.
 
-Human writers can produce them, and modern AI systems can often avoid them.
-
-Likewise, a skilled writer using AI responsibly may produce work that contains none of these indicators.
+Human writers can produce them, and modern AI systems can often avoid them. Likewise, a skilled writer using AI responsibly may produce work that contains none of these indicators.
 
 This is why experienced reviewers rarely rely on a single clue. Instead, they consider context, drafts, revision history, subject knowledge, and whether the author can explain the reasoning behind the work.
 
@@ -129,7 +129,7 @@ The challenge becomes even greater when content is partially AI-assisted rather 
 
 In such cases, the question is no longer whether AI was used.
 
-The question becomes how it was used.
+> The question becomes how it was used.
 
 ## What AI Detector Companies Say
 
@@ -152,11 +152,7 @@ Consider what that means.
 
 Many of these characteristics are indicators of quality writing.
 
-Research papers should contain statistics.
-
-Journalistic work should contain quotations.
-
-Academic writing should contain citations.
+Research papers should contain statistics. Journalistic work should contain quotations. Academic writing should contain citations.
 
 If the same features that improve writing also increase the likelihood of false positives, then writers have little practical way of determining whether a detector's verdict can be trusted.
 
@@ -231,9 +227,7 @@ Modern medicine, engineering, climate science, economics, genetics, mathematics,
 
 AI is already helping researchers discover new materials, accelerate medical breakthroughs, analyze massive datasets, generate software, compose music, create art, and solve mathematical problems that would otherwise require significantly more time and resources.
 
-The important question is not whether AI is being used.
-
-It already is.
+The important question is not whether AI is being used. It already is.
 
 The important question is whether the person using AI understands the work, can verify the results, and remains accountable for the final output.
 
