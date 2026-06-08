@@ -41,7 +41,7 @@ export default function HomeTab() {
     ].join('\n');
 
     window.location.href =
-      `mailto:${siteConfig.contact.email}` +
+      `mailto:${siteConfig.contact.wealthEmail}` +
       `?subject=${encodeURIComponent(subject)}` +
       `&body=${encodeURIComponent(body)}`;
 

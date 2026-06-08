@@ -27,18 +27,30 @@ export interface KeyRate {
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-// Which forex rows to show, in order. CBK label (exactly as in the CSV) -> pair.
-const FX_DISPLAY: [string, string][] = [
-  ['US DOLLAR', 'USD/KES'],
-  ['STG POUND', 'GBP/KES'],
-  ['EURO', 'EUR/KES'],
-  ['AE DIRHAM', 'AED/KES'],
-  ['CHINESE YUAN', 'CNY/KES'],
-  ['SA RAND', 'ZAR/KES'],
-  ['KES / TSHS', 'KES/TZS'],
-  ['KES / RWF', 'KES/RWF'],
-  ['KES / BIF', 'KES/BIF'],
-];
+// Map CBK label to display symbol pair
+const FX_MAP: Record<string, string> = {
+  'US DOLLAR': 'USD/KES',
+  'SW KRONER': 'SEK/KES',
+  'NOR KRONER': 'NOK/KES',
+  'DAN KRONER': 'DKK/KES',
+  'IND RUPEE': 'INR/KES',
+  'HONGKONG DOLLAR': 'HKD/KES',
+  'SINGAPORE DOLLAR': 'SGD/KES',
+  'SAUDI RIYAL': 'SAR/KES',
+  'CHINESE YUAN': 'CNY/KES',
+  'JPY (100)': '100JPY/KES',
+  'S FRANC': 'CHF/KES',
+  'CAN $': 'CAD/KES',
+  'STG POUND': 'GBP/KES',
+  'EURO': 'EUR/KES',
+  'SA RAND': 'ZAR/KES',
+  'KES / USHS': 'KES/UGX',
+  'KES / TSHS': 'KES/TZS',
+  'KES / RWF': 'KES/RWF',
+  'KES / BIF': 'KES/BIF',
+  'AE DIRHAM': 'AED/KES',
+  'AUSTRALIAN $': 'AUD/KES',
+};
 
 const stripBom = (s: string) => s.replace(/^﻿/, '');
 
@@ -65,11 +77,14 @@ function parseForex(csv: string): { asOf: string; rates: FxRate[] } {
     }
   }
 
-  const map = new Map(rows.filter(([d]) => d === latestKey).map(([, c, r]) => [c.trim(), r]));
-  const rates = FX_DISPLAY.flatMap(([cbk, pair]) => {
-    const v = map.get(cbk);
-    return v == null ? [] : [{ label: pair, value: Number(v).toFixed(2) }];
-  });
+  const rates: FxRate[] = [];
+  for (const [, c, r] of rows.filter(([d]) => d === latestKey)) {
+    const cbkName = c.trim();
+    const label = FX_MAP[cbkName] || `${cbkName}/KES`;
+    const value = isNaN(Number(r)) ? r : Number(r).toFixed(2);
+    rates.push({ label, value });
+  }
+
   const asOf = latestKey ? `${latest.getDate()} ${MONTHS[latest.getMonth()]} ${latest.getFullYear()}` : '';
   return { asOf, rates };
 }

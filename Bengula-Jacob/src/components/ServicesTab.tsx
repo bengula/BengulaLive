@@ -56,7 +56,7 @@ export default function ServicesTab() {
     ].join("\n");
 
     const mailto =
-      `mailto:${siteConfig.contact.workEmail}` +
+      `mailto:${siteConfig.contact.wealthEmail}` +
       `?subject=${encodeURIComponent(subject)}` +
       `&body=${encodeURIComponent(body)}`;
 

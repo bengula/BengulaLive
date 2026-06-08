@@ -50,8 +50,9 @@ export const siteConfig = {
   // TODO: replace these placeholders with real, public contact info.
   // ──────────────────────────────────────────────────────────────
   contact: {
-    email: "bookings@bengula.co.ke",      // primary public inbox (shown on Contact page + footer)
-    workEmail: "bookings@bengula.co.ke",  // where booking + contact requests are emailed (dedicated Bengula Inc inbox)
+    email: "business@bengula.co.ke",      // primary public inbox (shown on Contact page + footer)
+    workEmail: "business@bengula.co.ke",  // where general inquiries are routed
+    wealthEmail: "money@bengula.co.ke",   // where wealth growing / investment requests are routed
     phone: "+254 741 418 199",            // shown + used for WhatsApp link
     whatsapp: "254741418199",             // digits only, country code, no +
     location: "Nairobi & Malindi, Kenya", // city / region (no street unless you want it)
