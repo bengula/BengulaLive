@@ -122,7 +122,7 @@ export default function InvestmentTab() {
         {/* Left Column: Pools display */}
         <div className="lg:col-span-7 space-y-6">
           <div className="space-y-1.5">
-            <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold font-sans">Strategic Allocations</span>
+            <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest block font-sans">Strategic Allocations</span>
             <h1 className="text-2xl font-bold text-slate-900">Current Investment Opportunities</h1>
             <p className="text-slate-500 text-xs font-medium leading-relaxed">
               Through Bengula Inc private holding networks, we sponsor high-gain real-estate development, agricultural exports support, and tech-driven seed cooperatives.
@@ -208,7 +208,7 @@ export default function InvestmentTab() {
         </div>
 
         {/* Right Column: Live Yield compounding Simulator */}
-        <div className="lg:col-span-5 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
+        <div className="lg:col-span-5 glass-strong rounded-2xl p-6 md:p-8 space-y-6">
           <div className="border-b border-slate-100 pb-4">
             <h3 className="text-sm md:text-base font-bold text-violet-800 flex items-center gap-2">
               <TrendingUp className="w-5 h-5 text-violet-800" />
@@ -303,7 +303,7 @@ export default function InvestmentTab() {
       {/* Structured Sections for Investment Insights & Investor Resources */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
         {/* Investment Insights Column */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
+        <div className="glass-strong rounded-2xl p-6 md:p-8 space-y-6">
           <div className="border-b border-slate-100 pb-3">
             <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
               <FileText className="w-5 h-5 text-violet-800" />
@@ -355,7 +355,7 @@ export default function InvestmentTab() {
         </div>
 
         {/* Investor Resources Column */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
+        <div className="glass-strong rounded-2xl p-6 md:p-8 space-y-6">
           <div className="border-b border-slate-100 pb-3">
             <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-600" />
@@ -397,7 +397,7 @@ export default function InvestmentTab() {
         
         <div className="max-w-3xl mx-auto space-y-8">
           <div className="text-center space-y-2">
-            <span className="text-xs font-bold text-violet-400 uppercase tracking-widest block font-extrabold font-mono">Structured Alliance</span>
+            <span className="text-xs font-extrabold text-violet-400 uppercase tracking-widest block font-mono">Structured Alliance</span>
             <h3 className="text-2xl font-extrabold text-white">Co-Investor Partnership Inquiry</h3>
             <p className="text-xs text-slate-300 max-w-lg mx-auto">
               Ready to deploy capital into double-digit frontier placements? Submit your budget tier confidentially to request a private mandate pack.

@@ -19,6 +19,7 @@ import {
 import { useNavigate } from 'react-router-dom';
 import Calculators from './Calculators';
 import LoanAppraisalCalculator from './LoanAppraisalCalculator';
+import InsightDeck from './InsightDeck';
 import Resources from './Resources';
 import FAQ from './FAQ';
 import Seo from '../seo';
@@ -112,7 +113,7 @@ export default function HomeTab() {
         description={siteConfig.brand.tagline}
         path="/"
       />
-      <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center rounded-3xl border border-violet-100 bg-white p-6 md:p-10 shadow-sm">
+      <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center rounded-3xl glass-strong p-6 md:p-10 animate-popIn">
         <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-violet-50 border border-violet-100 rounded-full text-[10px] font-bold text-violet-800 uppercase tracking-widest leading-none shadow-sm">
             <ShieldCheck className="w-3.5 h-3.5 text-violet-700" />
@@ -121,7 +122,7 @@ export default function HomeTab() {
 
           <div className="space-y-4">
             <h1 className="text-3xl md:text-5xl font-extrabold text-slate-950 tracking-tight leading-[1.08] font-sans">
-              Finance tools and advisory for businesses that need <span className="text-violet-700">clear decisions</span>, not guesswork.
+              Finance tools and advisory for businesses that need <span className="text-gradient">clear decisions</span>, not guesswork.
             </h1>
             <p className="text-sm md:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               Bengula Inc helps Kenyan and East African business owners connect numbers, banking products, digital visibility, and growth strategy into one practical decision desk.
@@ -137,7 +138,7 @@ export default function HomeTab() {
               <button
                 key={item.label}
                 onClick={() => navigate(item.path)}
-                className="group bg-white border border-slate-200 rounded-lg px-3 py-2 text-[11px] font-bold text-slate-700 shadow-sm flex items-center justify-between gap-1 cursor-pointer hover:border-violet-300 hover:text-violet-700 hover:bg-violet-50/50 transition text-left"
+                className="group sheen hover-lift glass rounded-lg px-3 py-2 text-[11px] font-bold text-slate-700 flex items-center justify-between gap-1 cursor-pointer hover:text-violet-700 text-left"
               >
                 <span>{item.label}</span>
                 <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-violet-600 shrink-0 transition-colors" />
@@ -148,14 +149,14 @@ export default function HomeTab() {
           <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
             <button
               onClick={() => navigate('/services')}
-              className="bg-violet-700 hover:bg-violet-800 text-white font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-2 cursor-pointer shadow-md transform hover:-translate-y-0.5 transition"
+              className="sheen bg-violet-700 hover:bg-violet-800 text-white font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-2 cursor-pointer shadow-lg shadow-violet-700/30 transform hover:-translate-y-0.5 transition"
             >
               <span>Book Consultation</span>
               <ChevronRight className="w-4 h-4" />
             </button>
             <button
               onClick={() => document.getElementById('loan-appraisal-calculator')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-              className="border border-slate-200 hover:border-slate-300 bg-white text-slate-700 font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-1.5 cursor-pointer hover:bg-slate-50 transition shadow-sm"
+              className="sheen glass text-slate-700 font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-1.5 cursor-pointer hover:text-violet-800 transition"
             >
               <span>Use Loan Calculator</span>
               <Calculator className="w-4 h-4 text-violet-700" />
@@ -164,12 +165,12 @@ export default function HomeTab() {
         </div>
 
         <div className="lg:col-span-5">
-          <div className="bg-gradient-to-br from-violet-950 via-violet-900 to-slate-950 border border-violet-200 rounded-2xl p-6 md:p-8 shadow-lg space-y-6 text-white">
+          <div className="bg-gradient-to-br from-violet-950 via-violet-900 to-slate-950 border border-violet-300/30 rounded-2xl p-6 md:p-8 shadow-2xl shadow-violet-900/40 space-y-6 text-white hover-lift">
             <div className="bg-white rounded-xl p-6 flex items-center justify-center">
               <img
                 src="/images/ColoredBengulaIncLogo.png"
                 alt="Bengula Inc logo"
-                className="w-full max-w-xs object-contain"
+                className="w-full max-w-xs object-contain animate-float"
               />
             </div>
 
@@ -198,7 +199,7 @@ export default function HomeTab() {
         </div>
       </section>
 
-      <section id="quick-statistics-dashboard" className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
+      <section id="quick-statistics-dashboard" className="glass-strong rounded-2xl p-6 md:p-8 reveal">
         <div className="text-center max-w-xl mx-auto space-y-1 pb-6">
           <span className="text-[10px] font-bold text-violet-700 uppercase tracking-widest font-mono">Firm Snapshot</span>
           <h3 className="text-xl font-bold text-slate-900">Bengula Inc at a Glance</h3>
@@ -206,7 +207,7 @@ export default function HomeTab() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
           {metrics.map((stat) => (
-            <div key={stat.label} className="space-y-1.5 p-4 rounded-lg bg-slate-50 border border-slate-200">
+            <div key={stat.label} className="glass-card space-y-1.5 p-4 rounded-lg">
               <span className="text-xl font-black text-violet-800 block font-sans tracking-tight">{stat.value}</span>
               <span className="text-xs font-bold text-slate-900 block">{stat.label}</span>
               <span className="text-[10px] text-slate-500 block leading-tight font-medium">{stat.desc}</span>
@@ -215,7 +216,7 @@ export default function HomeTab() {
         </div>
       </section>
 
-      <section id="cbk-key-rates" className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
+      <section id="cbk-key-rates" className="glass-strong rounded-2xl p-6 md:p-8 reveal">
         <div className="flex flex-wrap items-end justify-between gap-2 pb-5">
           <div className="space-y-1">
             <span className="text-[10px] font-bold text-violet-700 uppercase tracking-widest font-mono">Central Bank of Kenya</span>
@@ -255,7 +256,7 @@ export default function HomeTab() {
           {portals.map((portal) => (
             <div
               key={portal.title}
-              className="bg-white border border-slate-200 rounded-xl p-6 hover:border-violet-500/45 hover:shadow-md transition duration-300 flex flex-col justify-between group shadow-sm"
+              className="glass-card rounded-xl p-6 flex flex-col justify-between group"
             >
               <div className="space-y-4">
                 <div className="bg-violet-50 text-violet-800 border border-violet-100 p-2.5 rounded-lg w-fit group-hover:bg-violet-700 group-hover:text-white transition duration-300">
@@ -280,7 +281,7 @@ export default function HomeTab() {
 
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         {priorities.map((item) => (
-          <div key={item.title} className="bg-white border border-slate-200 rounded-xl p-6 space-y-4 shadow-sm">
+          <div key={item.title} className="glass-card rounded-xl p-6 space-y-4">
             <div className="bg-amber-50 text-amber-700 border border-amber-100 p-2.5 rounded-lg w-fit">
               <item.icon className="w-5 h-5" />
             </div>
@@ -290,6 +291,19 @@ export default function HomeTab() {
             </div>
           </div>
         ))}
+      </section>
+
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center glass-strong rounded-2xl p-6 md:p-10 reveal">
+        <div className="space-y-4 text-center lg:text-left">
+          <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest">Insights You Can Act On</span>
+          <h2 className="text-2xl font-bold text-slate-900">A quick deck of money truths</h2>
+          <p className="text-sm text-slate-600 leading-relaxed max-w-md mx-auto lg:mx-0">
+            Five practical takes on saving, borrowing, and sovereign debt in Kenya. Tap the top card to flip it, then tap again to shuffle to the next one.
+          </p>
+        </div>
+        <div className="flex justify-center">
+          <InsightDeck />
+        </div>
       </section>
 
       <section id="loan-appraisal-calculator" className="space-y-6">
@@ -303,7 +317,7 @@ export default function HomeTab() {
         <LoanAppraisalCalculator />
       </section>
 
-      <section className="bg-white border border-violet-100 rounded-2xl p-6 md:p-10 space-y-8 shadow-sm">
+      <section className="glass-strong rounded-2xl p-6 md:p-10 space-y-8 reveal">
         <div className="max-w-xl mx-auto text-center space-y-1.5">
           <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Investment Yield Tool</span>
           <h3 className="text-xl md:text-2xl font-bold text-slate-900">Bond Yield & Wealth Calculator</h3>
@@ -314,7 +328,7 @@ export default function HomeTab() {
         <Calculators />
       </section>
 
-      <section className="space-y-4 bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-8">
+      <section className="space-y-4 glass rounded-2xl p-6 md:p-8 reveal">
         <div className="text-center space-y-1 mb-4">
           <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider font-mono">Professional Ecosystem</span>
           <p className="text-xs font-bold text-slate-800">Markets, Desks, and Reference Institutions</p>
@@ -349,8 +363,10 @@ export default function HomeTab() {
 
       <FAQ />
 
-      <section id="newsletter-signup-section" className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-10 text-white relative overflow-hidden shadow-md">
-        <div className="max-w-2xl mx-auto text-center space-y-6">
+      <section id="newsletter-signup-section" className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-10 text-white relative overflow-hidden shadow-md reveal">
+        <div className="pointer-events-none absolute -top-16 -left-10 w-72 h-72 rounded-full bg-violet-600/30 blur-3xl animate-float" aria-hidden="true"></div>
+        <div className="pointer-events-none absolute -bottom-20 -right-10 w-72 h-72 rounded-full bg-fuchsia-500/20 blur-3xl" aria-hidden="true"></div>
+        <div className="relative max-w-2xl mx-auto text-center space-y-6">
           <div className="space-y-2">
             <span className="text-xs font-bold text-violet-300 tracking-widest uppercase font-mono">Weekly Business Notes</span>
             <h4 className="text-xl md:text-2xl font-extrabold">Subscribe to The Sovereign Ledger</h4>
@@ -379,7 +395,7 @@ export default function HomeTab() {
               />
               <button
                 type="submit"
-                className="bg-violet-600 hover:bg-violet-500 text-white font-bold px-6 py-3 rounded-lg transition cursor-pointer text-xs uppercase tracking-wider"
+                className="sheen bg-violet-600 hover:bg-violet-500 text-white font-bold px-6 py-3 rounded-lg transition cursor-pointer text-xs uppercase tracking-wider shadow-lg shadow-violet-600/30"
               >
                 Subscribe
               </button>

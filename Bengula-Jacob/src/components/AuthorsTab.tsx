@@ -66,7 +66,7 @@ export default function AuthorsTab() {
         </button>
 
         {/* Profile header */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-xs">
+        <div className="glass-strong rounded-2xl p-6 md:p-8">
           <div className="flex flex-col sm:flex-row gap-6 items-start">
             <Avatar a={activeProfile} size="w-24 h-24" />
             <div className="space-y-3 flex-1">
@@ -108,7 +108,7 @@ export default function AuthorsTab() {
               <Link
                 key={post.id}
                 to={`/blog/${post.id}`}
-                className="w-full text-left bg-white border border-slate-200 rounded-xl p-4 hover:border-violet-800/40 hover:shadow-md transition group shadow-xs flex items-center justify-between gap-4 cursor-pointer"
+                className="w-full text-left glass-card rounded-xl p-4 transition group flex items-center justify-between gap-4 cursor-pointer"
               >
                 <div className="space-y-1 min-w-0">
                   <span className="text-[10px] bg-violet-50 text-violet-800 border border-violet-100 px-2 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
@@ -140,7 +140,7 @@ export default function AuthorsTab() {
         path="/authors"
       />
       <div className="border-b border-slate-200 pb-6 space-y-1">
-        <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Contributors</span>
+        <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest block">Contributors</span>
         <h1 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
           <Users className="w-6 h-6 text-violet-800" />
           Our Authors
@@ -157,7 +157,7 @@ export default function AuthorsTab() {
             <Link
               key={profile.id}
               to={`/authors/${profile.id}`}
-              className="text-left bg-white border border-slate-200 rounded-2xl p-6 hover:border-violet-800/40 hover:shadow-md transition duration-300 shadow-xs group cursor-pointer flex gap-4 items-start"
+              className="text-left glass-card rounded-2xl p-6 transition duration-300 group cursor-pointer flex gap-4 items-start"
             >
               <Avatar a={profile} size="w-16 h-16" />
               <div className="space-y-1.5 min-w-0 flex-1">

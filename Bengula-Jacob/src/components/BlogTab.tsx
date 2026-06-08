@@ -540,7 +540,7 @@ export default function BlogTab() {
                   <Link
                     key={post.id}
                     to={`/blog/${post.id}`}
-                    className="group bg-white border border-slate-200 rounded-xl p-4 hover:border-violet-800/40 hover:shadow-md transition shadow-xs flex flex-col gap-2"
+                    className="group glass-card rounded-xl p-4 transition flex flex-col gap-2"
                   >
                     <span className="text-[9px] bg-violet-50 text-violet-800 border border-violet-100 px-2 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono w-fit">
                       {post.category}
@@ -586,7 +586,7 @@ export default function BlogTab() {
           {/* Controls Box */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center border-b border-slate-200 pb-6">
             <div className="md:col-span-5 space-y-1">
-              <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Research Library</span>
+              <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest block">Research Library</span>
               <h1 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
                 <BookOpen className="w-6 h-6 text-violet-800 animate-pulse" />
                 Financial Education Hub
@@ -632,7 +632,7 @@ export default function BlogTab() {
               <div
                 key={post.id}
                 onClick={() => navigate(`/blog/${post.id}`)}
-                className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-violet-800/40 hover:shadow-md transition duration-300 flex flex-col justify-between cursor-pointer group shadow-xs relative"
+                className="glass-card rounded-2xl overflow-hidden transition duration-300 flex flex-col justify-between cursor-pointer group relative"
               >
                 {/* Cover image */}
                 <div className="aspect-[16/9] overflow-hidden bg-slate-100">

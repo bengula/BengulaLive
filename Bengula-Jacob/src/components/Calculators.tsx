@@ -149,7 +149,7 @@ export default function Calculators() {
         <div id="compound-calculator-element" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* Inputs Section */}
-          <div className="lg:col-span-5 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
+          <div className="lg:col-span-5 glass-strong rounded-2xl p-6 md:p-8 space-y-6">
             <div className="border-b border-slate-100 pb-4">
               <h3 className="text-lg font-bold text-violet-800 flex items-center gap-2">
                 <TrendingUp className="w-5 h-5 text-violet-800" />
@@ -274,7 +274,7 @@ export default function Calculators() {
           </div>
 
           {/* Results Visual & Breakdown Section */}
-          <div className="lg:col-span-7 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-8 shadow-xs">
+          <div className="lg:col-span-7 glass-strong rounded-2xl p-6 md:p-8 space-y-8">
             
             {/* Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-4">
@@ -381,7 +381,7 @@ export default function Calculators() {
         <div id="bond-calculator-element" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* Inputs */}
-          <div className="lg:col-span-5 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
+          <div className="lg:col-span-5 glass-strong rounded-2xl p-6 md:p-8 space-y-6">
             <div className="border-b border-slate-100 pb-4">
               <h3 className="text-lg font-bold text-violet-800 flex items-center gap-2">
                 <Calculator className="w-5 h-5 text-violet-800" />
@@ -503,7 +503,7 @@ export default function Calculators() {
           </div>
 
           {/* Results Summary */}
-          <div className="lg:col-span-7 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
+          <div className="lg:col-span-7 glass-strong rounded-2xl p-6 md:p-8 space-y-6">
             <h4 className="text-xs font-extrabold text-violet-800 uppercase tracking-widest font-sans">Projected Inflow Matrix</h4>
             
             {/* Main Yield Card */}

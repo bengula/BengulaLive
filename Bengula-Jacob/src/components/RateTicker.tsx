@@ -47,7 +47,7 @@ export default function RateTicker() {
       {/* Source / freshness badge (masks the scroll on the right edge) */}
       <div className="hidden sm:flex absolute right-0 top-0 h-full items-center pl-6 pr-4 bg-gradient-to-l from-violet-950 via-violet-950 to-transparent">
         <span className="flex items-center gap-1.5">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-glow"></span>
           <span className="text-emerald-300">CBK · {exchangeRates.asOf}</span>
         </span>
       </div>

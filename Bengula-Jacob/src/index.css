@@ -1,9 +1,26 @@
 @import "tailwindcss";
 
-/* ── Animations used across the app ───────────────────────────────
-   These classes (animate-marquee / animate-fadeIn) are referenced in
-   the markup; Tailwind v4 doesn't ship them, so define them here. */
+/* ════════════════════════════════════════════════════════════════════
+   Bengula Inc — motion & "liquid glass" design layer
+   Tailwind v4 doesn't ship these, so the bespoke surfaces and keyframe
+   animations referenced throughout the markup are defined here.
+   Everything degrades gracefully and respects prefers-reduced-motion.
+   ════════════════════════════════════════════════════════════════════ */
 
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.62);
+  --glass-bg-strong: rgba(255, 255, 255, 0.78);
+  --glass-border: rgba(255, 255, 255, 0.7);
+  --glass-shadow: 0 8px 30px -12px rgba(76, 29, 149, 0.25);
+  --glass-highlight: inset 0 1px 0 0 rgba(255, 255, 255, 0.65);
+}
+
+/* Soft tinted canvas so the frosted surfaces have light to refract. */
+body {
+  background-color: #f6f5fb;
+}
+
+/* ── Marquee (rate ticker) ──────────────────────────────────────── */
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
@@ -15,6 +32,7 @@
   animation-play-state: paused;
 }
 
+/* ── Entrance: gentle rise + fade ───────────────────────────────── */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(6px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -23,8 +41,285 @@
   animation: fadeIn 0.45s ease-out both;
 }
 
-/* Respect users who prefer reduced motion. */
+/* ── Entrance: pop / scale in ───────────────────────────────────── */
+@keyframes popIn {
+  0%   { opacity: 0; transform: translateY(14px) scale(0.97); }
+  100% { opacity: 1; transform: translateY(0)    scale(1); }
+}
+.animate-popIn {
+  animation: popIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Stagger helpers — add alongside an entrance animation. */
+.stagger-1 { animation-delay: 0.06s; }
+.stagger-2 { animation-delay: 0.12s; }
+.stagger-3 { animation-delay: 0.18s; }
+.stagger-4 { animation-delay: 0.24s; }
+.stagger-5 { animation-delay: 0.30s; }
+.stagger-6 { animation-delay: 0.36s; }
+
+/* ── Liquid-glass surfaces ──────────────────────────────────────── */
+.glass {
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow), var(--glass-highlight);
+}
+.glass-strong {
+  background: var(--glass-bg-strong);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow), var(--glass-highlight);
+}
+
+/* A glass card that lifts and reveals a moving specular sheen on hover. */
+.glass-card {
+  position: relative;
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow), var(--glass-highlight);
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.55) 48%,
+    transparent 66%
+  );
+  transform: translateX(-120%);
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 48px -18px rgba(76, 29, 149, 0.4), var(--glass-highlight);
+}
+.glass-card:hover::before {
+  transform: translateX(120%);
+}
+
+/* Dark glass — for violet/slate panels. */
+.glass-dark {
+  background: rgba(30, 18, 64, 0.55);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  backdrop-filter: blur(18px) saturate(160%);
+  border: 1px solid rgba(196, 181, 253, 0.18);
+  box-shadow: 0 12px 40px -14px rgba(0, 0, 0, 0.6),
+              inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
+}
+
+/* ── Hover lift (non-glass elements) ────────────────────────────── */
+.hover-lift {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px -16px rgba(76, 29, 149, 0.35);
+}
+
+/* ── Specular sheen sweep (buttons / chips) ─────────────────────── */
+.sheen {
+  position: relative;
+  overflow: hidden;
+}
+.sheen::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    100deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+.sheen:hover::after {
+  left: 130%;
+}
+
+/* ── Animated aurora backdrop (gives glass something to refract) ── */
+.aurora-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.aurora-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: 0.38;
+  will-change: transform;
+}
+.aurora-blob.a {
+  width: 42vw; height: 42vw;
+  top: -8vw; left: -6vw;
+  background: radial-gradient(circle at 30% 30%, #a78bfa, transparent 70%);
+  animation: drift1 26s ease-in-out infinite;
+}
+.aurora-blob.b {
+  width: 38vw; height: 38vw;
+  top: 18vw; right: -8vw;
+  background: radial-gradient(circle at 70% 30%, #f0abfc, transparent 70%);
+  animation: drift2 32s ease-in-out infinite;
+}
+.aurora-blob.c {
+  width: 34vw; height: 34vw;
+  bottom: -10vw; left: 28vw;
+  background: radial-gradient(circle at 50% 50%, #7dd3fc, transparent 70%);
+  animation: drift3 38s ease-in-out infinite;
+}
+@keyframes drift1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(6vw, 5vw) scale(1.12); }
+}
+@keyframes drift2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(-7vw, 6vw) scale(1.08); }
+}
+@keyframes drift3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(4vw, -6vw) scale(1.15); }
+}
+
+/* ── Animated gradient text ─────────────────────────────────────── */
+@keyframes gradientPan {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+.text-gradient {
+  background: linear-gradient(90deg, #7c3aed, #a855f7, #6366f1, #7c3aed);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: gradientPan 6s linear infinite;
+}
+
+/* ── Soft floating (logos / badges) ─────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-7px); }
+}
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* ── Glow pulse (live indicators) ───────────────────────────────── */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5); }
+  50%      { box-shadow: 0 0 0 5px rgba(16, 185, 129, 0); }
+}
+.animate-glow {
+  animation: glowPulse 2.2s ease-in-out infinite;
+}
+
+/* ── Shimmer line / underline accent ────────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ── Scroll-reveal (progressive enhancement) ────────────────────────
+   Only enabled where the browser supports scroll-driven animations, so
+   unsupported browsers always render content fully visible — no risk of
+   stranded hidden content. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      animation: revealUp linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 22%;
+    }
+  }
+}
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Card-stack flip deck ───────────────────────────────────────────
+   A deck of stacked cards: the top card flips in 3D to reveal its back,
+   then flips back and shuffles to the bottom of the stack. The depth
+   transform (stack offset) lives on .deck-card; the flip lives on the
+   nested .deck-card-inner so the two animate independently. */
+.deck {
+  perspective: 1500px;
+  /* Grid-stack every card in one cell so the deck's height grows to fit
+     the tallest card's content instead of being fixed (no clipping). */
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+.deck-card {
+  grid-area: 1 / 1;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              opacity 0.6s ease;
+  will-change: transform, opacity;
+}
+.deck-card.is-top {
+  cursor: pointer;
+}
+.deck-card:not(.is-top) .deck-face > * {
+  opacity: 0;
+}
+.deck-card-inner {
+  /* Stack both faces in one cell too, so each card sizes to its taller face. */
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.6, 0.05, 0.2, 1);
+}
+.deck-card.is-flipped .deck-card-inner {
+  transform: rotateY(180deg);
+}
+.deck-face {
+  grid-area: 1 / 1;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+.deck-face-back {
+  transform: rotateY(180deg);
+}
+
+/* ── Respect users who prefer reduced motion ────────────────────── */
 @media (prefers-reduced-motion: reduce) {
-  .animate-marquee { animation: none; }
-  .animate-fadeIn { animation: none; }
+  .deck-card,
+  .deck-card-inner { transition: none !important; }
+  .animate-marquee,
+  .animate-fadeIn,
+  .animate-popIn,
+  .animate-float,
+  .animate-glow,
+  .text-gradient,
+  .aurora-blob {
+    animation: none !important;
+  }
+  .glass-card,
+  .hover-lift,
+  .glass-card::before,
+  .sheen::after {
+    transition: none !important;
+  }
 }

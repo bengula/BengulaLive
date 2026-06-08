@@ -59,7 +59,7 @@ export default function Resources() {
           return (
             <div
               key={idx}
-              className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-xs hover:border-violet-800/35 hover:shadow-md transition group"
+              className="glass-card rounded-2xl p-6 flex flex-col justify-between transition group"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">

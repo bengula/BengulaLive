@@ -60,7 +60,7 @@ export default function ContactTab() {
         </div>
 
         {/* Address Cards */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-6 space-y-5 shadow-xs">
+        <div className="glass-strong rounded-2xl p-6 space-y-5">
           <div className="flex gap-4">
             <div className="bg-blue-50 text-blue-900 p-2.5 rounded-xl border border-blue-100 w-fit shrink-0">
               <MapPin className="w-5 h-5" />
@@ -128,7 +128,7 @@ export default function ContactTab() {
       </div>
 
       {/* Right Column: Dynamic Form panel */}
-      <div className="lg:col-span-7 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
+      <div className="lg:col-span-7 glass-strong rounded-2xl p-6 md:p-8 space-y-6">
         <div className="border-b border-slate-100 pb-4">
           <h3 className="text-lg font-semibold text-blue-900 flex items-center gap-2">
             <Mail className="w-5 h-5 text-blue-900" />

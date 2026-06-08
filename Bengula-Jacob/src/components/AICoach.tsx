@@ -163,9 +163,9 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
 
       {/* Page Header */}
       <div className="lg:col-span-12 border-b border-slate-200 pb-6 space-y-1">
-        <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Strategic Advisor</span>
+        <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest block">Strategic Advisor</span>
         <h1 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
-          <Bot className="w-6 h-6 text-violet-805" />
+          <Bot className="w-6 h-6 text-violet-800" />
           Bengula Inc Business & Wealth Coach
         </h1>
         <p className="text-xs text-slate-500">
@@ -174,7 +174,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
       </div>
 
       {/* Target Profile customization */}
-      <div className="lg:col-span-4 bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs">
+      <div className="lg:col-span-4 glass-strong rounded-2xl overflow-hidden">
         {/* Education banner */}
         <div className="relative h-28">
           <img
@@ -211,7 +211,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
                 <span className="text-slate-500 font-bold">Planned Savings (Monthly):</span>
                 <span className="text-emerald-700 font-extrabold font-mono">KSh {profile.monthlySavings}</span>
               </div>
-              <div className="flex justify-between items-center border-b border-slate-100 pb-2 border-b">
+              <div className="flex justify-between items-center border-b border-slate-100 pb-2">
                 <span className="text-slate-500 font-bold">Strategic Goal:</span>
                 <span className="text-slate-800 font-bold text-right max-w-[150px] truncate">{profile.goal}</span>
               </div>
@@ -298,7 +298,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
       </div>
 
       {/* Main chat window */}
-      <div className="lg:col-span-8 bg-white border border-slate-200 rounded-2xl h-[480px] flex flex-col justify-between overflow-hidden relative shadow-sm">
+      <div className="lg:col-span-8 glass-strong rounded-2xl h-[480px] flex flex-col justify-between overflow-hidden relative">
         {/* Chat Title bar */}
         <div className="bg-slate-50 border-b border-slate-200 p-4 flex justify-between items-center">
           <div className="flex items-center gap-2">

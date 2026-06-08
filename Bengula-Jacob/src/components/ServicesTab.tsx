@@ -126,7 +126,7 @@ export default function ServicesTab() {
         </div>
 
         {/* Detailed Service Inspection Card */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-6 space-y-4 shadow-xs">
+        <div className="glass-strong rounded-2xl p-6 space-y-4">
           <div className="flex flex-wrap justify-between items-start gap-2 border-b border-slate-100 pb-4">
             <div>
               <h3 className="text-lg font-bold text-slate-900">{activeSvc.title}</h3>
@@ -158,7 +158,7 @@ export default function ServicesTab() {
       </div>
 
       {/* Right Column: Live Interactive Booking Scheduler Form */}
-      <div className="lg:col-span-5 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
+      <div className="lg:col-span-5 glass-strong rounded-2xl p-6 md:p-8 space-y-6">
         <div className="border-b border-slate-100 pb-4">
           <h3 className="text-lg font-bold text-violet-800 flex items-center gap-2">
             <Calendar className="w-5 h-5 text-violet-800" />

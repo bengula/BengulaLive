@@ -39,7 +39,17 @@ export default function Layout() {
     path === '/' ? pathname === '/' : pathname === path || pathname.startsWith(path + '/');
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans flex flex-col justify-between selection:bg-violet-600/15 selection:text-violet-900">
+    <div className="relative min-h-screen text-slate-800 font-sans flex flex-col justify-between selection:bg-violet-600/15 selection:text-violet-900">
+
+      {/* Animated aurora backdrop — gives the frosted-glass surfaces light to refract. */}
+      <div className="aurora-bg" aria-hidden="true">
+        <div className="aurora-blob a"></div>
+        <div className="aurora-blob b"></div>
+        <div className="aurora-blob c"></div>
+      </div>
+
+      {/* Everything sits above the backdrop. */}
+      <div className="relative z-10 flex flex-col min-h-screen justify-between">
 
       {/* Site-wide structured data. */}
       <Head>
@@ -50,7 +60,7 @@ export default function Layout() {
       <RateTicker />
 
       {/* Main Header / Navigation */}
-      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/85 shadow-xs">
+      <header className="sticky top-0 z-50 glass-strong border-b border-white/60 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
 
@@ -79,7 +89,7 @@ export default function Layout() {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex space-x-1.5 bg-slate-100 p-1 border border-slate-200/65 rounded-xl animate-fadeIn">
+            <nav className="hidden lg:flex space-x-1.5 glass p-1 rounded-xl animate-fadeIn">
               {activeNav.map((item) => {
                 const Icon = item.icon;
                 return (
@@ -87,9 +97,9 @@ export default function Layout() {
                     key={item.id}
                     id={`nav-btn-${item.id}`}
                     to={item.path}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer ${
+                    className={`sheen px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer ${
                       isActive(item.path)
-                        ? 'bg-violet-700 text-white shadow-xs'
+                        ? 'bg-violet-700 text-white shadow-sm'
                         : 'text-slate-600 hover:text-violet-800 hover:bg-white/80'
                     }`}
                   >
@@ -114,7 +124,7 @@ export default function Layout() {
 
         {/* Mobile Navigation Dropdown */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-b border-slate-200 bg-white p-4 space-y-2 shadow-sm">
+          <div className="lg:hidden border-b border-white/60 glass-strong p-4 space-y-2 shadow-sm animate-fadeIn">
             {activeNav.map((item) => {
               const Icon = item.icon;
               return (
@@ -144,7 +154,7 @@ export default function Layout() {
       </main>
 
       {/* Main Footer */}
-      <footer className="bg-white border-t border-slate-200/90 py-8 text-xs text-slate-500 font-normal">
+      <footer className="glass-strong border-t border-white/60 py-8 text-xs text-slate-500 font-normal">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
             <div className="space-y-2">
@@ -194,6 +204,7 @@ export default function Layout() {
         </div>
       </footer>
 
+      </div>
     </div>
   );
 }

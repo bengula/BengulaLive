@@ -35,7 +35,7 @@ export default function PortfolioTab() {
       {/* Tab Header details */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-b border-slate-200 pb-6">
         <div className="space-y-1.5">
-          <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold font-sans">Selected Work</span>
+          <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest block font-sans">Selected Work</span>
           <h1 className="text-2xl font-bold text-slate-900">Portfolio & Case Studies</h1>
           <p className="text-slate-500 text-xs">
             Work across both Bengula Inc pillars — data, SEO, and digital growth projects alongside finance, banking, and investment engagements.
@@ -66,7 +66,7 @@ export default function PortfolioTab() {
           <div
             key={item.id}
             onClick={() => item.blogId && navigate(`/blog/${item.blogId}`)}
-            className={`bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-violet-800/40 hover:shadow-md transition duration-300 relative group overflow-hidden shadow-xs ${
+            className={`glass-card rounded-2xl p-6 flex flex-col justify-between transition duration-300 relative group overflow-hidden ${
               item.blogId ? 'cursor-pointer' : ''
             }`}
           >
