@@ -19,7 +19,7 @@
  */
 
 export interface AuthorLink {
-  label: string;       // e.g. "LinkedIn", "Website", "Try Claude"
+  label: string;       // e.g. "LinkedIn", "Website"
   href: string;
 }
 
@@ -49,26 +49,6 @@ export const authorProfiles: AuthorProfile[] = [
     role: "Creative Strategist, Bengula Inc",
     avatar: "/images/bebe.jpg",
     bio: "Winnie N. is a creative strategist at Bengula Inc, where she shapes brand narrative and editorial direction. She collaborates on long-form features that make complex financial topics clear, human, and engaging for a wider readership.",
-  },
-  {
-    id: "claude-opus",
-    name: "Claude Opus",
-    role: "AI Research & Drafting Assistant",
-    avatar: "/images/claude-avatar.svg",
-    bio: "Claude Opus is an AI assistant by Anthropic, used in the editorial process for research synthesis, structural drafting, and copy refinement. Its contributions are reviewed and edited by the human authors before publication.",
-    links: [
-      { label: "About Claude", href: "https://claude.ai" },
-    ],
-  },
-  {
-    id: "gemini",
-    name: "Gemini",
-    role: "AI Research Assistant",
-    avatar: "/images/gemini-avatar.svg",
-    bio: "Gemini is an AI assistant by Google, used in the editorial process for research, fact-gathering, and drafting support. Its contributions are reviewed and edited by the human authors before publication.",
-    links: [
-      { label: "About Gemini", href: "https://gemini.google.com" },
-    ],
   },
 ];
 

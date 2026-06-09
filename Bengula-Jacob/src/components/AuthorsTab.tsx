@@ -136,7 +136,7 @@ export default function AuthorsTab() {
     <div id="authors-tab-root" className="space-y-6 animate-fadeIn">
       <Seo
         title="Our Authors | Bengula Inc"
-        description="The people and tools behind the Bengula Inc Financial Education Hub — contributors writing on banking, finance, investing, and digital growth in East Africa."
+        description="The people behind the Bengula Inc Financial Education Hub — contributors writing on banking, finance, investing, and digital growth in East Africa."
         path="/authors"
       />
       <div className="border-b border-slate-200 pb-6 space-y-1">
@@ -146,7 +146,7 @@ export default function AuthorsTab() {
           Our Authors
         </h1>
         <p className="text-xs text-slate-500">
-          The people — and tools — behind the Financial Education Hub.
+          The people behind the Financial Education Hub.
         </p>
       </div>
 
