@@ -8,7 +8,7 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogData';
 import { categoryImage } from '../data/media';
 import { getAuthorProfile } from '../data/authors';
-import { renderInlineMarkdown } from '../utils/markdownText';
+import { MarkdownContent, renderInlineMarkdown } from '../utils/markdownText';
 import Seo, { SITE_URL } from '../seo';
 import { Search, Filter, BookOpen, Clock, Calendar, ArrowLeft, Heart, Share2, Sparkles, UserCircle2 } from 'lucide-react';
 
@@ -239,7 +239,7 @@ export default function BlogTab() {
               : level === 3
                 ? "text-xl font-bold text-slate-900 pt-6 pb-2 border-b border-slate-200"
                 : "text-lg font-bold text-slate-800 pt-4 pb-1";
-        const HeadingTag: React.ElementType = `h${Math.min(level, 4)}`;
+        const HeadingTag = `h${Math.min(level, 4)}` as React.ElementType;
 
         flushAll();
         blocks.push(
@@ -525,7 +525,7 @@ export default function BlogTab() {
 
           {/* Body Narrative details */}
           <div className="space-y-5 prose prose-slate font-sans pb-12">
-            {renderMarkdown(activePost.content)}
+            <MarkdownContent content={activePost.content} />
           </div>
 
           {/* Related reading — internal links to keep readers (and crawlers) moving */}
