@@ -147,3 +147,4 @@ export const portfolioItemsList: PortfolioItem[] = [
     riskProfile: "Low"
   }
 ];
+

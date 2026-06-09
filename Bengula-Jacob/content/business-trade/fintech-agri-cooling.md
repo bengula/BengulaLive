@@ -4,12 +4,15 @@ title: Fintech Agri-Cooling Tech Seed Syndicate & Supply-Chain Optimization in F
 summary: Angel backing for solar-powered cooling rooms, extending fresh crop storage life by extreme durations.
 category: Agri-Logistics
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Venture Sponsor
   avatar: /images/jacob.jpg
 date: Jun 15, 2025
 readTime: 8 min read
+coverImage: https://images.pexels.com/photos/15751124/pexels-photo-15751124.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
+
+![Solar panels in a field](https://images.pexels.com/photos/15751124/pexels-photo-15751124.jpeg?auto=compress&cs=tinysrgb&w=1200 "Off-grid solar makes cold storage viable exactly where the crops are. Photo: Pexels")
 
 ### The Problem: Good Produce, Bad Timing
 
@@ -26,6 +29,17 @@ A **solar-powered cold room** sited near the farm or collection centre lets prod
 - **Aggregation:** A shared cold room lets many smallholders pool volume to meet an exporter's order size.
 
 In the case we studied, on-farm spoilage on the connected crops fell from around **40% to a fraction of that**, and the value retained showed up directly in higher, more stable farmer payments.
+
+#### The Scale of the Problem Being Solved
+
+| Metric | Figure | Source |
+| --- | ---: | --- |
+| Kenyan food lost or wasted each year | KSh 72 billion (~US$578m) | [WRI Africa, 2025](https://www.freshplaza.com/north-america/article/9841203/) |
+| Post-harvest loss, fruits & vegetables | 30% – 50% (up to 80% in some chains) | [Frontiers, 2024](https://www.frontiersin.org/journals/horticulture/articles/10.3389/fhort.2024.1474056/full) |
+| Avocado loss: domestic vs export channel | 35% vs 15% | [Frontiers, 2024](https://www.frontiersin.org/journals/horticulture/articles/10.3389/fhort.2024.1474056/full) |
+| Grant funding for solar cold storage (2024–2034) | €23.3 million | [UNCDF / Mitigation Action Facility](https://www.uncdf.org/article/8922/catalysing-climate-resilient-agriculture-in-kenya-with-solar-powered-cold-storage) |
+
+Those numbers are why donors and impact investors are leaning in: a 2024 Mitigation Action Facility programme committed **€23.3 million** to scale solar cold storage for over **60,000 smallholder farmers** through 2034. The thesis in this case study sits inside a much larger, well-documented opportunity.
 
 ### Why It's a *Venture*, Not a Sure Thing
 
@@ -45,5 +59,15 @@ Early-stage agri-tech is genuinely high-risk, and honest analysis treats it that
 ### The Bigger Picture
 
 Cold storage is a small piece of hardware with an outsized effect: it shifts power back toward the farmer by removing the tyranny of the clock. That is what makes the sector interesting — but interesting is not the same as safe. The right posture is curiosity backed by hard due diligence.
+
+### Related Reading
+- [Zindua Agri-Logistics Seed Alliance](/blog/zindua-agri-logistics) — closing the *other* half of the loss, in transit.
+- [Agri-Export Supply-Chain Logistics Pool](/blog/agri-export-supply-chain) — financing the shipment once the crop is preserved.
+- [SME Trade Finance in Frontier Markets](/blog/sme-trade-finance) — the working-capital tools behind export growth.
+
+### References
+- [Frontiers in Horticulture (2024) — food loss in Kiambu County value chains](https://www.frontiersin.org/journals/horticulture/articles/10.3389/fhort.2024.1474056/full)
+- [UNCDF — solar-powered cold storage in Kenya](https://www.uncdf.org/article/8922/catalysing-climate-resilient-agriculture-in-kenya-with-solar-powered-cold-storage)
+- ["Kenya ramps up cold chain investment as post-harvest losses reach US$578 million" — FreshPlaza](https://www.freshplaza.com/north-america/article/9841203/)
 
 *This is an educational case study, not an offer of securities or a solicitation to invest. Figures are illustrative projections, not guarantees. Early-stage investments can lose value; any regulated raise is conducted only through appropriately licensed channels.*

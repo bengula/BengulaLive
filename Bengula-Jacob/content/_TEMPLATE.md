@@ -19,7 +19,7 @@ readTime: 6 min read
 # coverImage: /images/your-cover.jpg   # optional — overrides the category photo (file in public/images/)
 
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
 

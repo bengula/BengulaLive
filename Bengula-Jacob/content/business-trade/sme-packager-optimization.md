@@ -4,18 +4,33 @@ title: SME Packager Margin Optimization
 summary: Reforming pricing metrics and implementing lightweight CRM pipelines, lifting EBITDA margins from 6% to 18% for an FMCG packager.
 category: SME Trade Finance
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Business Consultant
   avatar: /images/jacob.jpg
 date: Sep 22, 2025
 readTime: 9 min read
+coverImage: https://images.pexels.com/photos/13974251/pexels-photo-13974251.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
+
+![A factory production line](https://images.pexels.com/photos/13974251/pexels-photo-13974251.jpeg?auto=compress&cs=tinysrgb&w=1200 "High volume can hide weak unit economics — growth then accelerates the cash bleed. Photo: Pexels")
 
 ### Busy, Growing, and Quietly Losing Money
 
 A Nairobi FMCG packaging manufacturer came to us with a confusing problem: order sheets were full, the factory ran flat out, revenue was climbing — and yet the business lurched from one overdraft to the next. Net margin sat at a painful **6%**.
 
 This is one of the most common traps for a scaling SME. High volume hides weak unit economics. When you are selling a lot of something that barely makes money, growth doesn't save you — it accelerates the cash bleed.
+
+It is worth pausing on why this matters at national scale. [Micro, small and medium enterprises make up roughly 98% of Kenyan businesses and account for about 30% of GDP and the bulk of employment](https://www.knbs.or.ke/) — yet [KNBS survey data has shown that a large share of new MSMEs close within their first few years](https://www.knbs.or.ke/), very often because of exactly this problem: turnover without margin. Fixing unit economics is not a finance nicety; it is survival.
+
+#### The Twelve-Month Turnaround at a Glance
+
+| Metric | Before | After |
+| --- | ---: | ---: |
+| EBITDA margin | 6% | 18% |
+| Time-to-invoice | Baseline | −40% |
+| Bookkeeping lag | ~1 month | Near real-time |
+| Expensive overdrafts | Rolling | Cleared from internal cash |
+| Loss-making SKUs | Several | Repriced or retired |
 
 ### Finding the Leak: Unit Economics First
 
@@ -63,3 +78,14 @@ Over twelve months the turnaround compounded:
 4. **Use the freed cash to retire the most expensive debt first.**
 
 Strong sales are not the same as a strong business. Margin and visibility are what turn a busy factory into a profitable one.
+
+### Related Reading
+- [SME Trade Finance in Frontier Markets](/blog/sme-trade-finance) — financing growth against the deal, not the overdraft.
+- [Tea Cooperative Strategic Restructure](/blog/tea-cooperative-restructure) — consolidating debt and fixing cash visibility.
+- [Customer Avatars & Buyer Personas](/blog/archive-customer-avatars-buyer-persona) — the demand-side discipline behind repricing.
+
+### References
+- [Kenya National Bureau of Statistics (KNBS) — MSME and Economic Survey data](https://www.knbs.or.ke/)
+- [Central Bank of Kenya](https://www.centralbank.go.ke/) — the lending-rate backdrop for SME overdrafts.
+
+*This is an educational case study. Figures are illustrative of a real engagement and not a guarantee of any specific result.*

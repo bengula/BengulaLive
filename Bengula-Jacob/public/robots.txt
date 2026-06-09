@@ -1,0 +1,5 @@
+# Bengula Inc — allow all crawlers, including search and AI engines.
+User-agent: *
+Allow: /
+
+Sitemap: https://bengula.co.ke/sitemap.xml

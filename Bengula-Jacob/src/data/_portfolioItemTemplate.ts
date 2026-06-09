@@ -36,3 +36,4 @@ export const templatePortfolioItem: PortfolioItem = {
   blogId: "matching-article-id",
   riskProfile: "Moderate",
 };
+

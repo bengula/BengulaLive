@@ -92,3 +92,4 @@ export const servicesList: ServiceDetail[] = [
     iconName: "BookOpen"
   }
 ];
+

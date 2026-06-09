@@ -4,12 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "tsx server.ts",
-    "build:web": "vite build",
-    "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
-    "start": "node dist/server.cjs",
-    "preview": "npm run build && wrangler dev",
-    "clean": "rm -rf dist server.js",
+    "dev": "vite-react-ssg dev",
+    "build": "vite-react-ssg build && node scripts/gen-sitemap.mjs",
+    "build:web": "vite-react-ssg build && node scripts/gen-sitemap.mjs",
+    "preview": "vite preview",
+    "clean": "rm -rf dist",
+    "update-rates": "node scripts/update-rates.mjs",
+    "rates:publish": "node scripts/update-rates.mjs --publish",
+    "scrape-rates": "node scripts/scrape-cbk-rates.mjs",
     "lint": "tsc --noEmit",
     "deploy": "npm run build && wrangler deploy"
   },
@@ -21,10 +23,15 @@
     "express": "^4.21.2",
     "js-yaml": "^4.2.0",
     "lucide-react": "^0.546.0",
-    "motion": "^12.23.24",
     "react": "^19.0.1",
     "react-dom": "^19.0.1",
-    "vite": "^6.2.3"
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^6.30.4",
+    "rehype-raw": "^7.0.0",
+    "rehype-sanitize": "^6.0.0",
+    "remark-gfm": "^4.0.1",
+    "vite": "^6.2.3",
+    "vite-react-ssg": "^0.9.1-beta.1"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.40.0",

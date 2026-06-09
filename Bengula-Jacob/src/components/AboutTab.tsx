@@ -4,40 +4,48 @@
  */
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { User, Briefcase, Award, ShieldCheck, Milestone, ArrowRight, Star } from 'lucide-react';
 import { images } from '../data/media';
+import Seo from '../seo';
 
-export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blogId: string) => void }) {
+export default function AboutTab() {
+  const navigate = useNavigate();
   return (
     <div id="about-tab-root" className="space-y-12 animate-fadeIn">
+      <Seo
+        title="About Bengula Inc | Founder & Two-Pillar Philosophy"
+        description="Meet Bengula Jacob and the firm behind Bengula Inc — how content creation and investment advisory work together to scale businesses and grow wealth."
+        path="/about"
+      />
       {/* Bio Section */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         {/* Placeholder Avatar / Profile Frame */}
         <div className="lg:col-span-5 flex justify-center">
           <div className="relative group w-full max-w-sm">
             {/* Soft decorative background rings */}
-            <div className="absolute -inset-1.5 bg-gradient-to-r from-blue-900 to-amber-500 rounded-2xl blur opacity-25 group-hover:opacity-35 transition duration-1000 group-hover:duration-200"></div>
+            <div className="absolute -inset-1.5 bg-gradient-to-r from-violet-800 to-amber-500 rounded-2xl blur opacity-25 group-hover:opacity-35 transition duration-1000 group-hover:duration-200"></div>
             {/* Visual Profile Panel */}
-            <div className="relative bg-white border border-slate-200 rounded-2xl p-6 md:p-8 text-center space-y-4 shadow-md">
+            <div className="relative glass-strong rounded-2xl p-6 md:p-8 text-center space-y-4">
               <img
                 src="/images/jacob.jpg"
-                alt="Jacob Bengula"
+                alt="Bengula Jacob"
                 loading="lazy"
                 className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-white shadow-lg"
               />
               <div>
-                <h3 className="text-xl font-bold text-slate-900">Jacob Bengula</h3>
-                <p className="text-sm text-blue-900 font-extrabold mt-1">Relationship Manager, Corporate & Business Banking</p>
+                <h3 className="text-xl font-bold text-slate-900">Bengula Jacob</h3>
+                <p className="text-sm text-violet-800 font-extrabold mt-1">Relationship Manager, Absa Bank (Malindi Branch)</p>
                 <p className="text-xs text-slate-500 font-semibold mt-0.5">Founder, Bengula Inc</p>
               </div>
               <div className="bg-slate-50 rounded-xl p-3 text-xs text-slate-500 font-mono border border-slate-100 text-left space-y-2">
                 <div className="flex justify-between">
                   <span>HQ Location:</span>
-                  <span className="text-slate-800 font-semibold">Nairobi, Kenya</span>
+                  <span className="text-slate-800 font-semibold">Malindi, Kenya</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Credentials:</span>
-                  <span className="text-slate-800 font-semibold">CISB, Wealth Advisory</span>
+                  <span className="text-slate-800 font-semibold">B.Sc. Math & Econ (IT)</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Specialties:</span>
@@ -56,32 +64,30 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
         {/* Narrative bio details */}
         <div className="lg:col-span-7 space-y-6">
           <div className="space-y-2 text-center lg:text-left">
-            <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Executive Profile</span>
-            <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">Who is Bengula Jacob?</h2>
+            <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest block">Executive Profile</span>
+            <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">Who is Bengula Jacob?</h1>
           </div>
           <p className="text-slate-600 leading-relaxed text-sm md:text-base font-normal">
-            I currently operate as an active <strong>Senior Corporate & Business Banking Relationship Manager</strong>, overseeing premium corporate portfolios, investment lines, and bulk treasury allocations. My career journey centers on helping corporate entities and high-net-worth clients navigate complex treasury bid options, trade financing, and sovereign bond allocations.
+            I currently operate as a <strong>Relationship Manager at Absa Bank's Malindi branch</strong>, where I manage and deepen relationships with a portfolio of over 5,000 retail and high-profile clients, ensuring AML/KYC/CDD compliance under CBK guidelines. I hold a B.Sc. in Mathematics and Economics with IT from Maseno University (2014-2017).
           </p>
           
           <div className="bg-slate-50 border border-slate-200/60 p-4 rounded-xl space-y-2 text-xs">
-            <h3 className="font-bold text-blue-900 font-sans uppercase tracking-widest text-[10px]">Mission & Vision</h3>
+            <h3 className="font-bold text-violet-800 font-sans uppercase tracking-widest text-[10px]">Bengula Inc Mission & Vision</h3>
             <p className="text-slate-600 leading-relaxed font-normal">
-              <strong>Mission:</strong> To help East African businesses grow by pairing data-driven decisions and online visibility with honest, practical access to the right banking and capital tools.
-              <br />
-              <strong className="mt-1.5 block">Vision:</strong> To be the trusted growth desk for owners and professionals across Kenya and the diaspora — where digital strategy and banking advice sit at one table.
+              Founded in 2014, <strong>Bengula Inc</strong> has been helping customers scale their businesses through data-driven content creation and digital growth strategy. We also help individuals and organizations make wise, calculated investments in sovereign debt, unit trusts, and alternative assets.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-            <div className="bg-white border border-slate-200 p-4 rounded-xl space-y-1.5 shadow-xs">
-              <ShieldCheck className="w-5 h-5 text-blue-900" />
-              <p className="text-sm font-bold text-slate-800">Banking Experience</p>
-              <p className="text-xs text-slate-500">Over a decade of core commercial banking experience, managing liquid assets, structured debt, and relationship management lines.</p>
+            <div className="glass-card p-4 rounded-xl space-y-1.5">
+              <ShieldCheck className="w-5 h-5 text-violet-800" />
+              <p className="text-sm font-bold text-slate-800">Business Scaling & Content</p>
+              <p className="text-xs text-slate-500">Helping businesses achieve organic growth and high visibility via SEO-optimized content creation, copywriting, and digital tools.</p>
             </div>
-            <div className="bg-white border border-slate-200 p-4 rounded-xl space-y-1.5 shadow-xs">
-              <User className="w-5 h-5 text-blue-900" />
-              <p className="text-sm font-bold text-slate-800">Tech & Finance Interests</p>
-              <p className="text-xs text-slate-500">Leveraging Artificial Intelligence, automated credit risk evaluation, and modern digital portals (like DhowCSD) to optimize returns.</p>
+            <div className="glass-card p-4 rounded-xl space-y-1.5">
+              <User className="w-5 h-5 text-violet-800" />
+              <p className="text-sm font-bold text-slate-800">Wise Investment Advisory</p>
+              <p className="text-xs text-slate-500">Advising individuals and organizations on secure capital placement, bond laddering, MMF allocation, and risk management.</p>
             </div>
           </div>
         </div>
@@ -90,7 +96,7 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
       {/* Core Values Section */}
       <div className="space-y-6">
         <div className="text-center max-w-xl mx-auto space-y-1.5">
-          <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Foundational Beliefs</span>
+          <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest block">Foundational Beliefs</span>
           <h3 className="text-2xl font-bold text-slate-950">Our Core Values</h3>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -112,7 +118,7 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
               desc: "Chasing reliable long-term double-digit cash flows rather than volatile, high-risk, or speculative get-rich-quick vectors."
             }
           ].map((val, idx) => (
-            <div key={idx} className="bg-white border border-slate-200 rounded-xl p-5 space-y-2 shadow-xs border-t-4 border-t-blue-900">
+            <div key={idx} className="glass-card rounded-xl p-5 space-y-2 border-t-4 border-t-violet-700">
               <h4 className="font-bold text-slate-950 text-sm">{val.title}</h4>
               <p className="text-xs text-slate-500 leading-normal">{val.desc}</p>
             </div>
@@ -121,7 +127,7 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
       </div>
 
       {/* Bengula Inc Vision Card */}
-      <div className="bg-blue-950 rounded-2xl p-6 md:p-8 space-y-4 relative overflow-hidden shadow-md">
+      <div className="bg-violet-950 rounded-2xl p-6 md:p-8 space-y-4 relative overflow-hidden shadow-md">
         <img
           src={images.aboutBuilding}
           alt=""
@@ -129,29 +135,29 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
           loading="lazy"
           className="absolute inset-0 w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-950/90 to-blue-950/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-violet-950 via-violet-950/90 to-violet-950/60"></div>
         <div className="absolute right-0 top-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl"></div>
         <div className="relative flex items-center gap-3">
-          <div className="bg-blue-900/50 p-2.5 rounded-xl border border-blue-800">
+          <div className="bg-violet-800/50 p-2.5 rounded-xl border border-violet-700">
             <Award className="w-6 h-6 text-amber-400" />
           </div>
           <div>
             <h3 className="text-lg font-bold text-white">About Bengula Inc</h3>
-            <p className="text-xs text-blue-200 font-medium">Adding meaning to life · Business growth & banking advisory</p>
+            <p className="text-xs text-violet-200 font-medium">Founded in 2014 · Scaling Content & Wise Investments</p>
           </div>
         </div>
-        <p className="relative text-blue-100 text-sm leading-relaxed font-normal font-sans">
-          <strong>Bengula Inc</strong> is a business-growth brand built on a simple belief: the businesses that use data to make decisions, put their services online, and use the right banking tools are the ones that survive and grow. We work with owners across two pillars — <strong>Data &amp; Digital Growth</strong> (analytics, SEO, and online systems) and <strong>Finance &amp; Banking Advisory</strong> (accounts, lending, trade finance, treasury, and protection) — so strategy and capital move together.
+        <p className="relative text-violet-100 text-sm leading-relaxed font-normal font-sans">
+          Founded in 2014, <strong>Bengula Inc</strong> has spent over a decade helping businesses scale through premium, data-driven content creation and high-impact digital strategy. In parallel, we empower individuals and organizations to make wise investments in the Kenyan financial landscape, specializing in Treasury Bonds, bills, Money Market Funds, and structured private wealth solutions.
         </p>
       </div>
 
       {/* Media & Recognition Section */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-4">
         <div className="lg:col-span-5 space-y-4">
-          <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Global Resonance</span>
+          <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest block">Global Resonance</span>
           <h3 className="text-2xl font-bold text-slate-950 leading-snug">Media & Recognition</h3>
           <p className="text-xs text-slate-500 leading-relaxed">
-            Jacob's professional insights on sovereign debt coupon laddering and SME growth strategy are regularly featured across leading channels:
+            Bengula's professional insights on sovereign debt coupon laddering and SME growth strategy are regularly featured across leading channels:
           </p>
           <div className="bg-amber-50 border border-amber-200/60 p-4 rounded-xl text-xs text-amber-950 space-y-1">
             <span className="font-bold block">🎙️ Speaking Bookings:</span>
@@ -187,19 +193,19 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
           ].map((rec, idx) => (
             <div 
               key={idx} 
-              onClick={() => onNavigateToBlog(rec.blogId)}
-              className="bg-white border border-slate-200 rounded-xl p-4 space-y-1.5 shadow-xs hover:border-blue-900/40 hover:shadow-xs transition cursor-pointer group"
+              onClick={() => navigate(`/blog/${rec.blogId}`)}
+              className="glass-card rounded-xl p-4 space-y-1.5 transition cursor-pointer group"
             >
               <div className="flex justify-between items-start">
-                <span className="text-[9px] bg-blue-50 text-blue-900 border border-blue-100 font-extrabold tracking-wide uppercase px-2.5 py-0.5 rounded-full inline-block font-mono">
+                <span className="text-[9px] bg-violet-50 text-violet-800 border border-violet-100 font-extrabold tracking-wide uppercase px-2.5 py-0.5 rounded-full inline-block font-mono">
                   {rec.type}
                 </span>
-                <span className="text-[9px] text-blue-900 font-bold opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                <span className="text-[9px] text-violet-800 font-bold opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
                   <span>Read Article</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </span>
               </div>
-              <h4 className="font-bold text-slate-900 text-sm group-hover:text-blue-900 transition-colors">{rec.title}</h4>
+              <h4 className="font-bold text-slate-900 text-sm group-hover:text-violet-800 transition-colors">{rec.title}</h4>
               <p className="text-[11px] text-slate-500 font-semibold">{rec.venue}</p>
               <p className="text-xs text-slate-500 font-light leading-relaxed pt-1">{rec.desc}</p>
             </div>
@@ -221,37 +227,43 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
         <div className="relative border-l border-slate-200 pl-6 ml-4 space-y-8">
           {[
             {
-              year: "2018 - 2020",
-              title: "Early Foundations & Portfolio Support",
-              company: "Commercial Bank Environment (Nairobi)",
-              desc: "Engineered baseline investment reviews and structured private savings frameworks for retail clients, mastering the logistics of CDS Accounts and local money markets."
+              year: "2014",
+              title: "Founding of Bengula Inc & Academic Launch",
+              company: "Bengula Inc / Maseno University (Kisumu, Kenya)",
+              desc: "Founded Bengula Inc to help customers scale their businesses through data-driven content creation. Enrolled for a B.Sc. in Mathematics and Economics with IT."
             },
             {
-              year: "2021 - Present",
-              title: "Senior Relationship Manager (RM)",
-              company: "Tier-1 Kenyan Bank",
-              desc: "Managing high-profile corporate deposits, commercial credit facilities, and liquidity structures. Leading capital placement strategies in double-digit yield Treasury Bond auctions (now averaging 15%+ APR)."
+              year: "2018",
+              title: "Economic Analyst",
+              company: "County Government of Bungoma",
+              desc: "Conducted public economic research, authored feasibility studies, and formulated budget analyses and funding proposals."
             },
             {
-              year: "2023",
-              title: "Establishment of Bengula Inc",
-              company: "Private Alternative Syndicate",
-              desc: "Founded Bengula Inc to support private wealth consulting. Created vetted co-investment frameworks in high-yield syndicates, addressing a lack of reliable local advisory desks."
+              year: "2020 - 2022",
+              title: "Direct Sales Representative",
+              company: "National Bank of Kenya (NBK) (Mombasa)",
+              desc: "Onboarded and managed retail accounts, retail products, and Islamic Finance (Amanah) solutions, ensuring full AML/KYC/CDD compliance."
             },
             {
               year: "2025",
-              title: "Digital Access Initiative",
-              company: "Financial Education & Digital Assistance Portal",
-              desc: "Created the digital advisory platform to democratize corporate bond knowledge, launching interactive tools to simplify compound calculation rules for local and diaspora Kenyans."
+              title: "Sales Associate",
+              company: "Platinum Credit Limited (Malindi)",
+              desc: "Managed a portfolio of active lending clients, coordinating consumer credit lifecycle evaluations and risk profiling."
+            },
+            {
+              year: "2025 - Present",
+              title: "Relationship Manager",
+              company: "Absa Bank Kenya (Malindi Branch)",
+              desc: "Overseeing end-to-end relationships for over 5,000 retail and premium client portfolios, executing data-driven deep-selling and portfolio optimization."
             }
           ].map((milestone, i) => (
             <div key={i} className="relative">
               {/* Dot decoration */}
-              <span className="absolute -left-9 top-1.5 bg-white border-2 border-blue-900 rounded-full w-4 h-4 z-10 flex items-center justify-center">
-                <span className="w-1.5 h-1.5 bg-blue-900 rounded-full"></span>
+              <span className="absolute -left-9 top-1.5 bg-white border-2 border-violet-800 rounded-full w-4 h-4 z-10 flex items-center justify-center">
+                <span className="w-1.5 h-1.5 bg-violet-800 rounded-full"></span>
               </span>
               <div className="space-y-1">
-                <span className="text-[10px] bg-blue-50 text-blue-900 border border-blue-100 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
+                <span className="text-[10px] bg-violet-50 text-violet-800 border border-violet-100 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
                   {milestone.year}
                 </span>
                 <h4 className="text-base font-bold text-slate-800 pt-1">{milestone.title}</h4>
@@ -265,3 +277,4 @@ export default function AboutTab({ onNavigateToBlog }: { onNavigateToBlog: (blog
     </div>
   );
 }
+

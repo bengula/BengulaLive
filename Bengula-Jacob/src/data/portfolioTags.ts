@@ -14,7 +14,7 @@ export const riskLevels = ["Low", "Moderate", "High"] as const;
 export type RiskProfile = (typeof riskLevels)[number];
 
 export const categoryBadgeStyles: Record<PortfolioCategory, string> = {
-  [portfolioItemTags.project]: "bg-blue-50 text-blue-900 border border-blue-100",
+  [portfolioItemTags.project]: "bg-violet-50 text-violet-800 border border-violet-100",
   [portfolioItemTags.businessVenture]: "bg-violet-50 text-violet-700 border border-violet-100",
   [portfolioItemTags.caseStudy]: "bg-amber-50 text-amber-800 border border-amber-100",
 };
@@ -24,3 +24,4 @@ export const riskBadgeStyles: Record<RiskProfile, string> = {
   Moderate: "bg-amber-50 text-amber-800 border border-amber-200/60",
   High: "bg-red-50 text-red-800 border border-red-200/60",
 };
+

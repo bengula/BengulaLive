@@ -6,6 +6,7 @@
 import React, { useState } from 'react';
 import { MapPin, Mail, Phone, Globe, ShieldCheck, ChevronRight } from 'lucide-react';
 import { siteConfig, telHref, whatsappHref } from '../data/siteConfig';
+import Seo from '../seo';
 
 export default function ContactTab() {
   const [contactName, setContactName] = useState('');
@@ -42,19 +43,24 @@ export default function ContactTab() {
 
   return (
     <div id="contact-view" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-fadeIn">
+      <Seo
+        title="Contact Bengula Inc | Book a Consultation"
+        description="Get in touch with Bengula Inc for banking, finance, and digital-growth advisory. Book a confidential consultation or reach us by email, phone, or WhatsApp."
+        path="/contact"
+      />
 
       {/* Left Column: Coordinates */}
       <div className="lg:col-span-5 space-y-6">
         <div className="space-y-1.5">
           <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest block font-bold">Confidential Desk</span>
-          <h2 className="text-2xl font-bold text-slate-900">Contact Jacob Bengula</h2>
+          <h2 className="text-2xl font-bold text-slate-900">Contact Bengula Jacob</h2>
           <p className="text-slate-600 text-xs">
             Please route questions concerning corporate advisor structures, bulk treasury placements, or Bengula Inc syndications directly.
           </p>
         </div>
 
         {/* Address Cards */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-6 space-y-5 shadow-xs">
+        <div className="glass-strong rounded-2xl p-6 space-y-5">
           <div className="flex gap-4">
             <div className="bg-blue-50 text-blue-900 p-2.5 rounded-xl border border-blue-100 w-fit shrink-0">
               <MapPin className="w-5 h-5" />
@@ -89,7 +95,7 @@ export default function ContactTab() {
                 <a href={telHref(siteConfig.contact.phone)} className="hover:text-blue-900 transition-colors">
                   {siteConfig.contact.phone}
                 </a>
-                <a href={whatsappHref(siteConfig.contact.whatsapp, 'Hello Jacob, I have an enquiry from your website.')} target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:text-emerald-600 transition-colors font-bold">
+                <a href={whatsappHref(siteConfig.contact.whatsapp, 'Hello Bengula Jacob, I have an enquiry from your website.')} target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:text-emerald-600 transition-colors font-bold">
                   WhatsApp →
                 </a>
               </div>
@@ -122,7 +128,7 @@ export default function ContactTab() {
       </div>
 
       {/* Right Column: Dynamic Form panel */}
-      <div className="lg:col-span-7 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
+      <div className="lg:col-span-7 glass-strong rounded-2xl p-6 md:p-8 space-y-6">
         <div className="border-b border-slate-100 pb-4">
           <h3 className="text-lg font-semibold text-blue-900 flex items-center gap-2">
             <Mail className="w-5 h-5 text-blue-900" />

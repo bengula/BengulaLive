@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { Briefcase, ArrowRight, BookOpen, Layers, Shield, Sparkles, Clock, CheckCircle, Calendar, Send, Landmark } from 'lucide-react';
+import Seo from '../seo';
 import { ServiceDetail } from '../types';
 import { servicesList } from '../data/servicesData';
 import { siteConfig } from '../data/siteConfig';
@@ -55,7 +56,7 @@ export default function ServicesTab() {
     ].join("\n");
 
     const mailto =
-      `mailto:${siteConfig.contact.workEmail}` +
+      `mailto:${siteConfig.contact.wealthEmail}` +
       `?subject=${encodeURIComponent(subject)}` +
       `&body=${encodeURIComponent(body)}`;
 
@@ -74,12 +75,17 @@ export default function ServicesTab() {
 
   return (
     <div id="services-tab-root" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-fadeIn">
+      <Seo
+        title="Services | Banking, Finance & Digital Growth Advisory — Bengula Inc"
+        description="Book Bengula Inc advisory: banking & business finance, investment & treasury, business consulting, technology & digital growth, and corporate training across East Africa."
+        path="/services"
+      />
       
       {/* Left Column: List and Detailed Card */}
       <div className="lg:col-span-7 space-y-6">
         <div className="space-y-1.5">
           <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest block font-extrabold font-sans">Two Pillars, One Desk</span>
-          <h2 className="text-2xl font-bold text-slate-900">How Bengula Inc Helps Your Business</h2>
+          <h1 className="text-2xl font-bold text-slate-900">How Bengula Inc Helps Your Business</h1>
           <p className="text-slate-500 text-xs">
             Finance & banking advisory and data & digital growth — pick the service that fits where your business is now.
           </p>
@@ -96,12 +102,12 @@ export default function ServicesTab() {
               }}
               className={`w-full text-left p-4 rounded-xl border transition-all cursor-pointer flex gap-4 items-center group shadow-xs ${
                 selectedService === svc.id
-                  ? 'bg-blue-50/55 border-blue-900 text-blue-950'
-                  : 'bg-white border-slate-200 text-slate-700 hover:text-blue-900 hover:bg-slate-50'
+                  ? 'bg-violet-50/55 border-violet-800 text-violet-950'
+                  : 'bg-white border-slate-200 text-slate-700 hover:text-violet-800 hover:bg-slate-50'
               }`}
             >
               <div className={`p-2 rounded-lg shrink-0 ${
-                selectedService === svc.id ? 'bg-blue-900 text-white shadow-xs' : 'bg-slate-100 text-slate-500'
+                selectedService === svc.id ? 'bg-violet-800 text-white shadow-xs' : 'bg-slate-100 text-slate-500'
               }`}>
                 {svc.iconName === "Landmark" && <Landmark className="w-5 h-5" />}
                 {svc.iconName === "Layers" && <Layers className="w-5 h-5" />}
@@ -111,23 +117,23 @@ export default function ServicesTab() {
                 {svc.iconName === "BookOpen" && <BookOpen className="w-5 h-5" />}
               </div>
               <div className="flex-1 min-w-0">
-                <p className="font-bold text-sm text-slate-800 group-hover:text-blue-900 transition-colors">{svc.title}</p>
+                <p className="font-bold text-sm text-slate-800 group-hover:text-violet-800 transition-colors">{svc.title}</p>
                 <p className="text-xs text-slate-500 truncate mt-0.5">{svc.description}</p>
               </div>
-              <ArrowRight className={`w-4 h-4 shrink-0 transition-transform ${selectedService === svc.id ? 'translate-x-1 text-blue-900' : 'text-slate-400'}`} />
+              <ArrowRight className={`w-4 h-4 shrink-0 transition-transform ${selectedService === svc.id ? 'translate-x-1 text-violet-800' : 'text-slate-400'}`} />
             </button>
           ))}
         </div>
 
         {/* Detailed Service Inspection Card */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-6 space-y-4 shadow-xs">
+        <div className="glass-strong rounded-2xl p-6 space-y-4">
           <div className="flex flex-wrap justify-between items-start gap-2 border-b border-slate-100 pb-4">
             <div>
               <h3 className="text-lg font-bold text-slate-900">{activeSvc.title}</h3>
               <p className="text-xs text-amber-700 font-extrabold mt-0.5">{activeSvc.pricing}</p>
             </div>
-            <span className="text-[10px] bg-blue-50 border border-blue-100/55 text-blue-900 py-1 px-2.5 rounded-full font-bold font-mono flex items-center gap-1">
-              <Clock className="w-3.5 h-3.5 text-blue-900" />
+            <span className="text-[10px] bg-violet-50 border border-violet-100/55 text-violet-800 py-1 px-2.5 rounded-full font-bold font-mono flex items-center gap-1">
+              <Clock className="w-3.5 h-3.5 text-violet-800" />
               {activeSvc.duration}
             </span>
           </div>
@@ -152,10 +158,10 @@ export default function ServicesTab() {
       </div>
 
       {/* Right Column: Live Interactive Booking Scheduler Form */}
-      <div className="lg:col-span-5 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-xs">
+      <div className="lg:col-span-5 glass-strong rounded-2xl p-6 md:p-8 space-y-6">
         <div className="border-b border-slate-100 pb-4">
-          <h3 className="text-lg font-bold text-blue-900 flex items-center gap-2">
-            <Calendar className="w-5 h-5 text-blue-900" />
+          <h3 className="text-lg font-bold text-violet-800 flex items-center gap-2">
+            <Calendar className="w-5 h-5 text-violet-800" />
             Strategic Booking Desk
           </h3>
           <p className="text-xs text-slate-500 mt-1">
@@ -189,7 +195,7 @@ export default function ServicesTab() {
             </div>
             <button
               onClick={() => setBookingResult(null)}
-              className="text-xs font-bold text-blue-900 hover:text-blue-800 transition duration-200 underline decoration-blue-900/30"
+              className="text-xs font-bold text-violet-800 hover:text-violet-700 transition duration-200 underline decoration-violet-800/30"
             >
               Schedule Another Consultation slot
             </button>
@@ -213,7 +219,7 @@ export default function ServicesTab() {
                   setSelectedService(e.target.value);
                   setBookingResult(null);
                 }}
-                className="w-full bg-slate-50 text-slate-900 text-xs py-2.5 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 font-medium cursor-pointer"
+                className="w-full bg-slate-50 text-slate-900 text-xs py-2.5 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 font-medium cursor-pointer"
               >
                 {services.map((svc) => (
                   <option key={svc.id} value={svc.id}>
@@ -223,20 +229,20 @@ export default function ServicesTab() {
               </select>
 
               {/* Dynamic Selected Service Detail Pop-In */}
-              <div className="p-3.5 bg-blue-50/70 border border-blue-100/45 rounded-xl space-y-2 animate-fadeIn text-xs">
-                <div className="flex justify-between items-center font-bold text-blue-950 text-xs">
+              <div className="p-3.5 bg-violet-50/70 border border-violet-100/45 rounded-xl space-y-2 animate-fadeIn text-xs">
+                <div className="flex justify-between items-center font-bold text-violet-950 text-xs">
                   <span className="text-slate-800 font-bold">{activeSvc.title}</span>
                   <span className="text-amber-700 font-extrabold text-[11px] whitespace-nowrap">{activeSvc.pricing}</span>
                 </div>
                 <p className="text-slate-600 text-[11px] leading-relaxed font-normal">
                   {activeSvc.longDescription}
                 </p>
-                <div className="flex items-center gap-1.5 font-bold text-blue-900 text-[10px] uppercase tracking-wider">
+                <div className="flex items-center gap-1.5 font-bold text-violet-800 text-[10px] uppercase tracking-wider">
                   <Clock className="w-3.5 h-3.5" />
                   <span>Format: {activeSvc.duration}</span>
                 </div>
-                <div className="pt-2 border-t border-blue-100/30 space-y-1">
-                  <span className="font-extrabold text-blue-950 text-[10px] uppercase tracking-widest block">Key Outcomes Included:</span>
+                <div className="pt-2 border-t border-violet-100/30 space-y-1">
+                  <span className="font-extrabold text-violet-950 text-[10px] uppercase tracking-widest block">Key Outcomes Included:</span>
                   <div className="grid grid-cols-1 gap-1 text-[10px] text-slate-600 font-medium">
                     {activeSvc.benefits.slice(0, 3).map((benefit, bIdx) => (
                       <div key={bIdx} className="flex gap-1.5 items-start">
@@ -259,7 +265,7 @@ export default function ServicesTab() {
                 placeholder="e.g. David Mwangi"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full bg-slate-50 text-slate-900 text-xs py-2.5 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 transition-colors font-medium text-sm"
+                className="w-full bg-slate-50 text-slate-900 text-xs py-2.5 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 transition-colors font-medium text-sm"
               />
             </div>
 
@@ -273,7 +279,7 @@ export default function ServicesTab() {
                 placeholder="e.g. dmwangi@domain.co.ke"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full bg-slate-50 text-slate-900 text-xs py-2.5 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 transition-colors font-mono text-sm"
+                className="w-full bg-slate-50 text-slate-900 text-xs py-2.5 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 transition-colors font-mono text-sm"
               />
             </div>
 
@@ -287,7 +293,7 @@ export default function ServicesTab() {
                   required
                   value={date}
                   onChange={(e) => setDate(e.target.value)}
-                  className="w-full bg-slate-50 text-slate-900 text-xs py-2.5 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 font-mono text-xs cursor-pointer"
+                  className="w-full bg-slate-50 text-slate-900 text-xs py-2.5 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 font-mono text-xs cursor-pointer"
                 />
               </div>
 
@@ -298,7 +304,7 @@ export default function ServicesTab() {
                   required
                   value={time}
                   onChange={(e) => setTime(e.target.value)}
-                  className="w-full bg-slate-50 text-slate-900 text-xs py-2.5 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 font-mono text-xs cursor-pointer"
+                  className="w-full bg-slate-50 text-slate-900 text-xs py-2.5 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 font-mono text-xs cursor-pointer"
                 >
                   <option value="">-- Choose --</option>
                   <option value="09:00 AM">09:00 AM (EAT)</option>
@@ -318,7 +324,7 @@ export default function ServicesTab() {
                 placeholder="Briefly state your liquid asset tier or current investment challenges (Confidential)."
                 value={notes}
                 onChange={(e) => setNotes(e.target.value)}
-                className="w-full bg-slate-50 text-slate-900 text-xs py-2.5 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 transition-colors text-xs"
+                className="w-full bg-slate-50 text-slate-900 text-xs py-2.5 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 transition-colors text-xs"
               />
             </div>
 
@@ -327,7 +333,7 @@ export default function ServicesTab() {
               id="submit-booking-form"
               type="submit"
               disabled={loading}
-              className={`w-full py-3 px-4 rounded-xl font-bold text-sm text-white bg-blue-900 hover:bg-blue-800 transition duration-300 flex items-center justify-center gap-2 cursor-pointer shadow-md ${
+              className={`w-full py-3 px-4 rounded-xl font-bold text-sm text-white bg-violet-800 hover:bg-violet-700 transition duration-300 flex items-center justify-center gap-2 cursor-pointer shadow-md ${
                 loading ? 'opacity-80 cursor-wait' : ''
               }`}
             >
@@ -347,3 +353,4 @@ export default function ServicesTab() {
     </div>
   );
 }
+

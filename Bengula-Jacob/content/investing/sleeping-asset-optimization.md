@@ -4,18 +4,31 @@ title: Sleeping Asset Yield Optimization
 summary: Case study on reallocating vacant suburban land tracts into direct, tax-free sovereign income streams, generating KSh 340,000 monthly.
 category: Wealth Optimization
 author:
-  name: Jacob Bengula
+  name: Bengula Jacob
   role: Senior Portfolio Advisor
   avatar: /images/jacob.jpg
 date: Oct 12, 2025
 readTime: 8 min read
+coverImage: https://images.pexels.com/photos/259065/pexels-photo-259065.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
+
+![Coins and a calculator representing yield planning](https://images.pexels.com/photos/259065/pexels-photo-259065.jpeg?auto=compress&cs=tinysrgb&w=1200 "Idle land pays nothing; a sovereign bond ladder pays every quarter. Photo: Pexels")
 
 ### "Asset-Rich, Cash-Poor" Is a Real Problem
 
 A senior corporate executive came to us looking successful on paper and feeling stuck in practice. His net worth was healthy, but most of it sat in **vacant suburban land** bought years earlier on the theory that "land always goes up." Meanwhile the parcels paid no rent, generated no income, and quietly cost money every year in land rates and the occasional boundary dispute.
 
-This is one of the most common — and most expensive — habits in Kenyan wealth: confusing **owning an asset** with **earning from an asset**. Speculative land can appreciate, but it pays you nothing while you wait, and "nothing" is a very poor yield to live on.
+This is one of the most common — and most expensive — habits in Kenyan wealth: confusing **owning an asset** with **earning from an asset**. Speculative land can appreciate, but it pays you nothing while you wait, and "nothing" is a very poor yield to live on. And the appreciation story has cooled: [Hass Consult's land index](https://www.hassconsult.com/hassindex) shows annual land-price growth in Nairobi's satellite towns slowing to **6.2% in 2025**, down from 10.6% in 2024 — with Kiambu actually posting a small **annual decline**. Land that neither pays income nor reliably appreciates is dead capital.
+
+#### From Zero Yield to Sovereign Income
+
+| | Before | After |
+| --- | ---: | ---: |
+| Capital | KSh 25,000,000 in two parcels | KSh 25,000,000 IFB ladder |
+| Monthly income | KSh 0 | ~KSh 340,000 |
+| Tax on income | n/a | Tax-free (IFB exemption) |
+| Annual holding cost | Land rates + disputes | Effectively none |
+| Liquidity | Sell whole parcel only | Periodic ladder maturities |
 
 ### The Question We Always Ask First
 
@@ -53,5 +66,15 @@ No instrument is risk-free, and good advice says so plainly:
 ### The Principle
 
 Every shilling you own should have a job. If an asset's job is income, idle land is the wrong employee for it. The exercise here was not exotic — it was simply forcing each holding to justify itself against the owner's real goal, then matching the capital to an instrument that delivers it.
+
+### Related Reading
+- [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026) — how to build and ladder an IFB portfolio.
+- [Sovereign Debt Explained](/blog/sovereign-debt-explained) — auctions, DhowCSD, and bidding.
+- [The Future of MMFs in Kenya](/blog/future-mmfs-kenya) — where to keep the liquid buffer.
+
+### References
+- [Hass Consult Land & House Price Index](https://www.hassconsult.com/hassindex) — satellite-town land appreciation data.
+- [Central Bank of Kenya — Treasury Bonds](https://www.centralbank.go.ke/securities/treasury-bonds/)
+- [DhowCSD investor portal](https://dhowcsd.centralbank.go.ke/)
 
 *This is an educational case study, not personal investment advice. Bond yields and tax treatment can change; confirm current terms on the official DhowCSD/CBK channels before investing.*

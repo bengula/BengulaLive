@@ -13,15 +13,21 @@ import {
   Landmark,
   Layers,
   LineChart,
+  Calculator,
   ShieldCheck,
 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import Calculators from './Calculators';
+import LoanAppraisalCalculator from './LoanAppraisalCalculator';
+import InsightDeck from './InsightDeck';
 import Resources from './Resources';
 import FAQ from './FAQ';
-import { TabId } from '../types';
+import Seo from '../seo';
 import { siteConfig } from '../data/siteConfig';
+import { keyRates } from '../data/cbkRates';
 
-export default function HomeTab({ navigate }: { navigate: (id: TabId) => void }) {
+export default function HomeTab() {
+  const navigate = useNavigate();
   const [newsletterEmail, setNewsletterEmail] = useState('');
   const [newsletterSuccess, setNewsletterSuccess] = useState(false);
 
@@ -36,7 +42,7 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
     ].join('\n');
 
     window.location.href =
-      `mailto:${siteConfig.contact.email}` +
+      `mailto:${siteConfig.contact.wealthEmail}` +
       `?subject=${encodeURIComponent(subject)}` +
       `&body=${encodeURIComponent(body)}`;
 
@@ -53,28 +59,28 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
 
   const portals = [
     {
-      id: 'services',
+      path: '/services',
       title: 'Finance & Banking Advisory',
       desc: 'Match your business to the right bank products — accounts, lending, trade finance, treasury, and protection — with a banker structuring the deal.',
       icon: Landmark,
       btn: 'Book Session',
     },
     {
-      id: 'services',
+      path: '/services',
       title: 'Data & Digital Growth',
       desc: 'Turn your data and online presence into customers with analytics, SEO, and digital systems built for East African businesses.',
       icon: LineChart,
       btn: 'Grow Online',
     },
     {
-      id: 'blog',
+      path: '/blog',
       title: 'Research Library',
       desc: 'Read practical notes on money markets, debt instruments, business finance, and getting found online.',
       icon: Compass,
       btn: 'Read Insights',
     },
     {
-      id: 'about',
+      path: '/about',
       title: 'About Bengula Inc',
       desc: 'Meet the firm behind "Adding meaning to life" — the founder, the philosophy, and how the two pillars work together.',
       icon: Building2,
@@ -102,32 +108,37 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
 
   return (
     <div id="home-view" className="space-y-14 md:space-y-16">
-      <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+      <Seo
+        title="Bengula Inc | Business Growth, Data & Banking Advisory"
+        description={siteConfig.brand.tagline}
+        path="/"
+      />
+      <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center rounded-3xl glass-strong p-6 md:p-10 animate-popIn">
         <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white border border-slate-200 rounded-full text-[10px] font-bold text-blue-900 uppercase tracking-widest leading-none shadow-sm">
-            <ShieldCheck className="w-3.5 h-3.5 text-amber-600" />
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-violet-50 border border-violet-100 rounded-full text-[10px] font-bold text-violet-800 uppercase tracking-widest leading-none shadow-sm">
+            <ShieldCheck className="w-3.5 h-3.5 text-violet-700" />
             <span>Bengula Inc Advisory Platform</span>
           </div>
 
           <div className="space-y-4">
             <h1 className="text-3xl md:text-5xl font-extrabold text-slate-950 tracking-tight leading-[1.08] font-sans">
-              We help East African businesses grow — with <span className="text-blue-900">data</span> and the right <span className="text-violet-700">banking</span>.
+              Finance tools and advisory for businesses that need <span className="text-gradient">clear decisions</span>, not guesswork.
             </h1>
             <p className="text-sm md:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Bengula Inc works with business owners across Kenya and the diaspora on two fronts: turning data and online visibility into customers, and matching you to the banking and capital tools that fit your business.
+              Bengula Inc helps Kenyan and East African business owners connect numbers, banking products, digital visibility, and growth strategy into one practical decision desk.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl mx-auto lg:mx-0">
             {([
-              { label: 'Banking & capital advisory', tab: 'services' },
-              { label: 'Data & SEO growth', tab: 'portfolio' },
-              { label: 'Finance education', tab: 'blog' },
-            ] as { label: string; tab: TabId }[]).map((item) => (
+              { label: 'Banking & capital advisory', path: '/services' },
+              { label: 'Data & SEO growth', path: '/portfolio' },
+              { label: 'Finance education', path: '/blog' },
+            ] as { label: string; path: string }[]).map((item) => (
               <button
                 key={item.label}
-                onClick={() => navigate(item.tab)}
-                className="group bg-white border border-slate-200 rounded-lg px-3 py-2 text-[11px] font-bold text-slate-700 shadow-sm flex items-center justify-between gap-1 cursor-pointer hover:border-violet-300 hover:text-violet-700 hover:bg-violet-50/50 transition text-left"
+                onClick={() => navigate(item.path)}
+                className="group sheen hover-lift glass rounded-lg px-3 py-2 text-[11px] font-bold text-slate-700 flex items-center justify-between gap-1 cursor-pointer hover:text-violet-700 text-left"
               >
                 <span>{item.label}</span>
                 <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-violet-600 shrink-0 transition-colors" />
@@ -137,50 +148,50 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
 
           <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
             <button
-              onClick={() => navigate('services')}
-              className="bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-2 cursor-pointer shadow-md transform hover:-translate-y-0.5 transition"
+              onClick={() => navigate('/services')}
+              className="sheen bg-violet-700 hover:bg-violet-800 text-white font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-2 cursor-pointer shadow-lg shadow-violet-700/30 transform hover:-translate-y-0.5 transition"
             >
               <span>Book Consultation</span>
               <ChevronRight className="w-4 h-4" />
             </button>
             <button
-              onClick={() => navigate('blog')}
-              className="border border-slate-200 hover:border-slate-300 bg-white text-slate-700 font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-1.5 cursor-pointer hover:bg-slate-50 transition shadow-sm"
+              onClick={() => document.getElementById('loan-appraisal-calculator')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+              className="sheen glass text-slate-700 font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-1.5 cursor-pointer hover:text-violet-800 transition"
             >
-              <span>Explore Research</span>
-              <ArrowUpRight className="w-4 h-4 text-slate-500" />
+              <span>Use Loan Calculator</span>
+              <Calculator className="w-4 h-4 text-violet-700" />
             </button>
           </div>
         </div>
 
         <div className="lg:col-span-5">
-          <div className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-lg space-y-6">
-            <div className="bg-slate-950 rounded-xl p-6 flex items-center justify-center">
+          <div className="bg-gradient-to-br from-violet-950 via-violet-900 to-slate-950 border border-violet-300/30 rounded-2xl p-6 md:p-8 shadow-2xl shadow-violet-900/40 space-y-6 text-white hover-lift">
+            <div className="bg-white rounded-xl p-6 flex items-center justify-center">
               <img
                 src="/images/ColoredBengulaIncLogo.png"
                 alt="Bengula Inc logo"
-                className="w-full max-w-xs object-contain"
+                className="w-full max-w-xs object-contain animate-float"
               />
             </div>
 
             <div className="space-y-2 text-center">
-              <p className="text-[10px] font-bold text-amber-600 uppercase tracking-widest">Adding Meaning To Life</p>
-              <h2 className="text-xl font-extrabold text-slate-950">Bengula Inc</h2>
-              <p className="text-xs text-slate-500 leading-relaxed">
-                A business-growth brand helping owners turn data and online visibility into customers, and pair it with the right banking and capital tools.
+              <p className="text-[10px] font-bold text-violet-200 uppercase tracking-widest">Adding Meaning To Life</p>
+              <h2 className="text-xl font-extrabold text-white">Bengula Inc</h2>
+              <p className="text-xs text-violet-100 leading-relaxed">
+                A business-growth brand pairing data, digital visibility, credit appraisal, and banking advisory.
               </p>
             </div>
 
             <div className="grid grid-cols-2 gap-3 pt-2">
               {[
                 ['Base', siteConfig.contact.location],
-                ['Founder', 'Jacob Bengula'],
+                ['Founder', 'Bengula Jacob'],
                 ['Focus', 'Growth + Banking'],
                 ['Audience', 'Kenya + Diaspora'],
               ].map(([label, value]) => (
-                <div key={label} className="border border-slate-200 rounded-lg p-3">
-                  <span className="text-[10px] text-slate-400 uppercase tracking-wider block font-bold">{label}</span>
-                  <span className="text-xs font-bold text-slate-800 block mt-1">{value}</span>
+                <div key={label} className="border border-white/10 bg-white/5 rounded-lg p-3">
+                  <span className="text-[10px] text-violet-200 uppercase tracking-wider block font-bold">{label}</span>
+                  <span className="text-xs font-bold text-white block mt-1">{value}</span>
                 </div>
               ))}
             </div>
@@ -188,7 +199,7 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
         </div>
       </section>
 
-      <section id="quick-statistics-dashboard" className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
+      <section id="quick-statistics-dashboard" className="glass-strong rounded-2xl p-6 md:p-8 reveal">
         <div className="text-center max-w-xl mx-auto space-y-1 pb-6">
           <span className="text-[10px] font-bold text-violet-700 uppercase tracking-widest font-mono">Firm Snapshot</span>
           <h3 className="text-xl font-bold text-slate-900">Bengula Inc at a Glance</h3>
@@ -196,12 +207,42 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
           {metrics.map((stat) => (
-            <div key={stat.label} className="space-y-1.5 p-4 rounded-lg bg-slate-50 border border-slate-200">
-              <span className="text-xl font-black text-blue-900 block font-sans tracking-tight">{stat.value}</span>
+            <div key={stat.label} className="glass-card space-y-1.5 p-4 rounded-lg">
+              <span className="text-xl font-black text-violet-800 block font-sans tracking-tight">{stat.value}</span>
               <span className="text-xs font-bold text-slate-900 block">{stat.label}</span>
               <span className="text-[10px] text-slate-500 block leading-tight font-medium">{stat.desc}</span>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section id="cbk-key-rates" className="glass-strong rounded-2xl p-6 md:p-8 reveal">
+        <div className="flex flex-wrap items-end justify-between gap-2 pb-5">
+          <div className="space-y-1">
+            <span className="text-[10px] font-bold text-violet-700 uppercase tracking-widest font-mono">Central Bank of Kenya</span>
+            <h3 className="text-xl font-bold text-slate-900">Key Market Rates</h3>
+          </div>
+          <span className="text-[10px] text-slate-400 font-mono">Official CBK figures · updated periodically</span>
+        </div>
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border-collapse">
+            <thead>
+              <tr className="text-[10px] uppercase tracking-wider text-slate-400 border-b border-slate-200">
+                <th className="py-2 pr-4 font-bold">Rate</th>
+                <th className="py-2 pr-4 font-bold text-right">Current</th>
+                <th className="py-2 font-bold text-right">As of</th>
+              </tr>
+            </thead>
+            <tbody>
+              {keyRates.map((r) => (
+                <tr key={r.name} className="border-b border-slate-100 last:border-0">
+                  <td className="py-2.5 pr-4 text-xs font-semibold text-slate-700">{r.name}</td>
+                  <td className="py-2.5 pr-4 text-xs font-bold text-violet-800 font-mono text-right">{r.value}</td>
+                  <td className="py-2.5 text-[11px] text-slate-500 font-mono text-right">{r.date}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -214,21 +255,21 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {portals.map((portal) => (
             <div
-              key={portal.id}
-              className="bg-white border border-slate-200 rounded-xl p-6 hover:border-blue-900/35 hover:shadow-md transition duration-300 flex flex-col justify-between group shadow-sm"
+              key={portal.title}
+              className="glass-card rounded-xl p-6 flex flex-col justify-between group"
             >
               <div className="space-y-4">
-                <div className="bg-blue-50 text-blue-900 border border-blue-100 p-2.5 rounded-lg w-fit group-hover:bg-blue-900 group-hover:text-white transition duration-300">
+                <div className="bg-violet-50 text-violet-800 border border-violet-100 p-2.5 rounded-lg w-fit group-hover:bg-violet-700 group-hover:text-white transition duration-300">
                   <portal.icon className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-blue-900">{portal.title}</h3>
+                  <h3 className="text-base font-bold text-violet-800">{portal.title}</h3>
                   <p className="text-xs text-slate-500 mt-1.5 leading-normal font-normal">{portal.desc}</p>
                 </div>
               </div>
               <button
-                onClick={() => navigate(portal.id as TabId)}
-                className="text-xs font-bold text-blue-900 hover:text-blue-800 flex items-center gap-1 pt-6 transition duration-300 cursor-pointer"
+                onClick={() => navigate(portal.path)}
+                className="text-xs font-bold text-violet-800 hover:text-violet-900 flex items-center gap-1 pt-6 transition duration-300 cursor-pointer"
               >
                 <span>{portal.btn}</span>
                 <ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
@@ -240,7 +281,7 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
 
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         {priorities.map((item) => (
-          <div key={item.title} className="bg-white border border-slate-200 rounded-xl p-6 space-y-4 shadow-sm">
+          <div key={item.title} className="glass-card rounded-xl p-6 space-y-4">
             <div className="bg-amber-50 text-amber-700 border border-amber-100 p-2.5 rounded-lg w-fit">
               <item.icon className="w-5 h-5" />
             </div>
@@ -252,18 +293,42 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
         ))}
       </section>
 
-      <section className="bg-white border border-slate-200 rounded-2xl p-6 md:p-10 space-y-8 shadow-sm">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center glass-strong rounded-2xl p-6 md:p-10 reveal">
+        <div className="space-y-4 text-center lg:text-left">
+          <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest">Insights You Can Act On</span>
+          <h2 className="text-2xl font-bold text-slate-900">A quick deck of money truths</h2>
+          <p className="text-sm text-slate-600 leading-relaxed max-w-md mx-auto lg:mx-0">
+            Five practical takes on saving, borrowing, and sovereign debt in Kenya. Tap the top card to flip it, then tap again to shuffle to the next one.
+          </p>
+        </div>
+        <div className="flex justify-center">
+          <InsightDeck />
+        </div>
+      </section>
+
+      <section id="loan-appraisal-calculator" className="space-y-6">
         <div className="max-w-xl mx-auto text-center space-y-1.5">
-          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Decision Tool</span>
-          <h3 className="text-xl md:text-2xl font-bold text-slate-900">Interactive Wealth Compounder</h3>
+          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Credit Decision Tool</span>
+          <h3 className="text-xl md:text-2xl font-bold text-slate-900">Loan Appraisal Calculator</h3>
           <p className="text-xs text-slate-500">
-            Estimate how contribution discipline, time, and rate assumptions can affect long-term outcomes.
+            Estimate qualification, repayment factors, APR, and amortization before starting a formal loan discussion.
+          </p>
+        </div>
+        <LoanAppraisalCalculator />
+      </section>
+
+      <section className="glass-strong rounded-2xl p-6 md:p-10 space-y-8 reveal">
+        <div className="max-w-xl mx-auto text-center space-y-1.5">
+          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Investment Yield Tool</span>
+          <h3 className="text-xl md:text-2xl font-bold text-slate-900">Bond Yield & Wealth Calculator</h3>
+          <p className="text-xs text-slate-500">
+            Help customers compare borrowing decisions with investment outcomes across treasury bonds, infrastructure bonds, and compound savings.
           </p>
         </div>
         <Calculators />
       </section>
 
-      <section className="space-y-4 bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-8">
+      <section className="space-y-4 glass rounded-2xl p-6 md:p-8 reveal">
         <div className="text-center space-y-1 mb-4">
           <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider font-mono">Professional Ecosystem</span>
           <p className="text-xs font-bold text-slate-800">Markets, Desks, and Reference Institutions</p>
@@ -278,7 +343,7 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
                 target="_blank"
                 rel="noopener noreferrer"
                 title={`Visit ${partner.label}`}
-                className="text-sm font-extrabold text-slate-600 tracking-wider font-mono uppercase text-center opacity-70 hover:opacity-100 hover:text-blue-900 transition-all duration-300 cursor-pointer"
+                className="text-sm font-extrabold text-slate-600 tracking-wider font-mono uppercase text-center opacity-70 hover:opacity-100 hover:text-violet-800 transition-all duration-300 cursor-pointer"
               >
                 {partner.label}
               </a>
@@ -298,10 +363,12 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
 
       <FAQ />
 
-      <section id="newsletter-signup-section" className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-10 text-white relative overflow-hidden shadow-md">
-        <div className="max-w-2xl mx-auto text-center space-y-6">
+      <section id="newsletter-signup-section" className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-10 text-white relative overflow-hidden shadow-md reveal">
+        <div className="pointer-events-none absolute -top-16 -left-10 w-72 h-72 rounded-full bg-violet-600/30 blur-3xl animate-float" aria-hidden="true"></div>
+        <div className="pointer-events-none absolute -bottom-20 -right-10 w-72 h-72 rounded-full bg-fuchsia-500/20 blur-3xl" aria-hidden="true"></div>
+        <div className="relative max-w-2xl mx-auto text-center space-y-6">
           <div className="space-y-2">
-            <span className="text-xs font-bold text-blue-300 tracking-widest uppercase font-mono">Weekly Business Notes</span>
+            <span className="text-xs font-bold text-violet-300 tracking-widest uppercase font-mono">Weekly Business Notes</span>
             <h4 className="text-xl md:text-2xl font-extrabold">Subscribe to The Sovereign Ledger</h4>
             <p className="text-xs text-slate-300 leading-relaxed max-w-md mx-auto">
               Concise, practical notes on business finance, banking products, market rates, and using data to grow — written for owners and professionals.
@@ -324,11 +391,11 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
                 placeholder="Your email address"
                 value={newsletterEmail}
                 onChange={(e) => setNewsletterEmail(e.target.value)}
-                className="bg-slate-800 text-white border border-slate-700 rounded-lg px-4 py-3 flex-1 focus:outline-none focus:border-blue-400 font-mono font-bold"
+                className="bg-slate-800 text-white border border-slate-700 rounded-lg px-4 py-3 flex-1 focus:outline-none focus:border-violet-400 font-mono font-bold"
               />
               <button
                 type="submit"
-                className="bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-lg transition cursor-pointer text-xs uppercase tracking-wider"
+                className="sheen bg-violet-600 hover:bg-violet-500 text-white font-bold px-6 py-3 rounded-lg transition cursor-pointer text-xs uppercase tracking-wider shadow-lg shadow-violet-600/30"
               >
                 Subscribe
               </button>
@@ -339,3 +406,5 @@ export default function HomeTab({ navigate }: { navigate: (id: TabId) => void })
     </div>
   );
 }
+
+

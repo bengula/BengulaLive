@@ -53,3 +53,4 @@ export const investmentPoolsList: InvestmentOpportunity[] = [
     blogId: "fintech-agri-cooling"
   }
 ];
+

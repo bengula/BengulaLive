@@ -19,7 +19,7 @@
  */
 
 export interface AuthorLink {
-  label: string;       // e.g. "LinkedIn", "Website", "Try Claude"
+  label: string;       // e.g. "LinkedIn", "Website"
   href: string;
 }
 
@@ -35,40 +35,20 @@ export interface AuthorProfile {
 export const authorProfiles: AuthorProfile[] = [
   {
     id: "jacob-bengula",
-    name: "Jacob Bengula",
+    name: "Bengula Jacob",
     role: "Relationship Manager & Founder of Bengula Inc.",
     avatar: "/images/jacob.jpg",
-    bio: "Jacob Bengula is a private wealth relationship manager at a tier-1 Kenyan bank and the founder of Bengula Inc. He writes on financial education, personal branding, and alternative assets across East Africa — translating sovereign debt, unit trusts, SME trade finance, and real-estate syndication into practical strategy for everyday savers and investors.",
+    bio: "Bengula Jacob is a private wealth relationship manager at Absa Bank Kenya (Malindi Branch) and the founder of Bengula Inc. He writes on financial education, personal branding, and alternative assets across East Africa — translating sovereign debt, unit trusts, SME trade finance, and real-estate syndication into practical strategy for everyday savers and investors.",
     links: [
       { label: "LinkedIn", href: "https://www.linkedin.com/in/bengula/" },
     ],
   },
   {
     id: "winnie-njoroge",
-    name: "Winnie Njoroge",
-    role: "Creative Strategist, Martin Munroe LLC",
+    name: "Winnie N.",
+    role: "Creative Strategist, Bengula Inc",
     avatar: "/images/bebe.jpg",
-    bio: "Winnie Njoroge is a creative strategist at Martin Munroe LLC, where she shapes brand narrative and editorial direction. She collaborates on long-form features that make complex financial topics clear, human, and engaging for a wider readership.",
-  },
-  {
-    id: "claude-opus",
-    name: "Claude Opus",
-    role: "AI Research & Drafting Assistant",
-    avatar: "/images/claude-avatar.svg",
-    bio: "Claude Opus is an AI assistant by Anthropic, used in the editorial process for research synthesis, structural drafting, and copy refinement. Its contributions are reviewed and edited by the human authors before publication.",
-    links: [
-      { label: "About Claude", href: "https://claude.ai" },
-    ],
-  },
-  {
-    id: "gemini",
-    name: "Gemini",
-    role: "AI Research Assistant",
-    avatar: "/images/gemini-avatar.svg",
-    bio: "Gemini is an AI assistant by Google, used in the editorial process for research, fact-gathering, and drafting support. Its contributions are reviewed and edited by the human authors before publication.",
-    links: [
-      { label: "About Gemini", href: "https://gemini.google.com" },
-    ],
+    bio: "Winnie N. is a creative strategist at Bengula Inc, where she shapes brand narrative and editorial direction. She collaborates on long-form features that make complex financial topics clear, human, and engaging for a wider readership.",
   },
 ];
 
@@ -79,3 +59,4 @@ export const getAuthorProfile = (name: string): AuthorProfile | undefined =>
 /** Look up a profile by its URL id. */
 export const getAuthorById = (id: string): AuthorProfile | undefined =>
   authorProfiles.find((a) => a.id === id);
+

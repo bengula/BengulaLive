@@ -4,22 +4,22 @@
  */
 
 import React, { useState, useMemo } from 'react';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogData';
-import { BlogPost } from '../types';
 import { categoryImage } from '../data/media';
 import { getAuthorProfile } from '../data/authors';
-import { renderInlineMarkdown } from '../utils/markdownText';
+import { MarkdownContent, renderInlineMarkdown } from '../utils/markdownText';
+import Seo, { SITE_URL } from '../seo';
 import { Search, Filter, BookOpen, Clock, Calendar, ArrowLeft, Heart, Share2, Sparkles, UserCircle2 } from 'lucide-react';
 
-export default function BlogTab({ activePostId, setActivePostId, onNavigateToAuthor }: { activePostId?: string | null; setActivePostId?: (id: string | null) => void; onNavigateToAuthor?: (authorId: string) => void }) {
-  const [localActivePostId, setLocalActivePostId] = useState<string | null>(null);
+export default function BlogTab() {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const currentActivePostId = id ?? null;
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [likes, setLikes] = useState<Record<string, number>>({});
   const [shared, setShared] = useState<Record<string, boolean>>({});
-
-  const currentActivePostId = activePostId !== undefined ? activePostId : localActivePostId;
-  const currentSetActivePostId = setActivePostId || setLocalActivePostId;
 
   const categories = useMemo(
     () => ['All', ...Array.from(new Set(blogPosts.map((post) => post.category)))],
@@ -59,7 +59,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
     }, 2000);
     
     // Copy URL to clipboard
-    navigator.clipboard.writeText(`${window.location.origin}/#blog/${id}`).catch(() => {});
+    navigator.clipboard.writeText(`${window.location.origin}/blog/${id}`).catch(() => {});
   };
 
   // Helper to parse Markdown-like syntax for safe, high-polish local rendering
@@ -70,6 +70,10 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
     let listItems: string[] = [];
     let orderedItems: string[] = [];
     let tableLines: string[] = [];
+    let quoteLines: string[] = [];
+    let codeLines: string[] = [];
+    let codeLanguage = '';
+    let inCodeBlock = false;
 
     const parseImage = (value: string) => {
       const match = value.match(/^!\[([^\]]*)\]\((\S+?)(?:\s+"([^"]+)")?\)$/);
@@ -158,38 +162,100 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
       tableLines = [];
     };
 
+    const flushQuote = () => {
+      if (quoteLines.length === 0) return;
+      blocks.push(
+        <blockquote
+          key={`quote-${blocks.length}`}
+          className="border-l-4 border-violet-800/30 bg-violet-50/40 pl-4 pr-3 py-2 my-3 text-slate-700 italic text-sm leading-relaxed rounded-r-lg"
+        >
+          {renderInlineMarkdown(quoteLines.join(' '))}
+        </blockquote>
+      );
+      quoteLines = [];
+    };
+
+    const flushCode = () => {
+      if (codeLines.length === 0 && !codeLanguage) return;
+      blocks.push(
+        <figure key={`code-${blocks.length}`} className="my-5 overflow-hidden rounded-xl border border-slate-200 bg-slate-950 shadow-xs">
+          {codeLanguage && (
+            <figcaption className="border-b border-white/10 px-4 py-2 font-mono text-[10px] font-bold uppercase tracking-wider text-slate-300">
+              {codeLanguage}
+            </figcaption>
+          )}
+          <pre className="overflow-x-auto p-4 text-xs leading-relaxed text-slate-100">
+            <code>{codeLines.join('\n')}</code>
+          </pre>
+        </figure>
+      );
+      codeLines = [];
+      codeLanguage = '';
+    };
+
     const flushAll = () => {
       flushParagraph();
       flushList();
       flushOrderedList();
       flushTable();
+      flushQuote();
+      flushCode();
     };
 
     lines.forEach((line) => {
       const trimmed = line.trim();
+
+      if (trimmed.startsWith('```')) {
+        if (inCodeBlock) {
+          inCodeBlock = false;
+          flushCode();
+        } else {
+          flushAll();
+          inCodeBlock = true;
+          codeLanguage = trimmed.replace(/^```/, '').trim();
+        }
+        return;
+      }
+
+      if (inCodeBlock) {
+        codeLines.push(line.replace(/\s+$/, ''));
+        return;
+      }
 
       if (!trimmed) {
         flushAll();
         return;
       }
 
-      if (trimmed.startsWith('####')) {
+      const heading = trimmed.match(/^(#{1,6})\s+(.+)$/);
+      if (heading) {
+        const level = heading[1].length;
+        const content = heading[2].replace(/\s+#+$/, '').trim();
+        const headingClass =
+          level === 1
+            ? "text-2xl md:text-3xl font-extrabold text-slate-950 pt-8 pb-2 leading-tight"
+            : level === 2
+              ? "text-2xl font-extrabold text-slate-950 pt-8 pb-2 border-b-2 border-slate-200 leading-snug"
+              : level === 3
+                ? "text-xl font-bold text-slate-900 pt-6 pb-2 border-b border-slate-200"
+                : "text-lg font-bold text-slate-800 pt-4 pb-1";
+        const HeadingTag = `h${Math.min(level, 4)}` as React.ElementType;
+
         flushAll();
         blocks.push(
-          <h4 key={`h4-${blocks.length}`} className="text-lg font-bold text-slate-800 pt-4 pb-1">
-            {renderInlineMarkdown(trimmed.replace('####', '').trim())}
-          </h4>
+          <HeadingTag key={`h${level}-${blocks.length}`} className={headingClass}>
+            {renderInlineMarkdown(content)}
+          </HeadingTag>
         );
         return;
       }
 
-      if (trimmed.startsWith('###')) {
-        flushAll();
-        blocks.push(
-          <h3 key={`h3-${blocks.length}`} className="text-xl font-bold text-slate-900 pt-6 pb-2 border-b border-slate-200">
-            {renderInlineMarkdown(trimmed.replace('###', '').trim())}
-          </h3>
-        );
+      if (trimmed.startsWith('>')) {
+        flushParagraph();
+        flushList();
+        flushOrderedList();
+        flushTable();
+        quoteLines.push(trimmed.replace(/^>\s?/, ''));
         return;
       }
 
@@ -197,13 +263,13 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
         flushAll();
         const sourceUrl = trimmed.replace('Original source:', '').trim();
         blocks.push(
-          <p key={`source-${blocks.length}`} className="text-xs leading-relaxed font-bold text-blue-900">
+          <p key={`source-${blocks.length}`} className="text-xs leading-relaxed font-bold text-violet-800">
             Original source:{' '}
             <a
               href={sourceUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="underline decoration-blue-900/30 underline-offset-2 hover:text-blue-700"
+              className="underline decoration-violet-800/30 underline-offset-2 hover:text-violet-700"
             >
               {sourceUrl}
             </a>
@@ -222,6 +288,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
         flushParagraph();
         flushList();
         flushOrderedList();
+        flushQuote();
         tableLines.push(trimmed);
         return;
       }
@@ -247,11 +314,35 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
         return;
       }
 
-      if (trimmed.startsWith('- ')) {
+      const checklist = trimmed.match(/^[-*]\s+\[( |x|X)\]\s+(.+)$/);
+      if (checklist) {
         flushParagraph();
         flushOrderedList();
         flushTable();
-        listItems.push(trimmed.replace(/^-+\s*/, ''));
+        flushQuote();
+        blocks.push(
+          <div key={`check-${blocks.length}`} className="flex items-start gap-2 rounded-lg bg-slate-50 px-3 py-2 text-sm leading-relaxed text-slate-700">
+            <span
+              className={`mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded border text-[10px] font-bold ${
+                checklist[1].toLowerCase() === 'x'
+                  ? 'border-violet-800 bg-violet-800 text-white'
+                  : 'border-slate-300 bg-white text-transparent'
+              }`}
+            >
+              ✓
+            </span>
+            <span>{renderInlineMarkdown(checklist[2])}</span>
+          </div>
+        );
+        return;
+      }
+
+      if (/^[-*]\s+/.test(trimmed)) {
+        flushParagraph();
+        flushOrderedList();
+        flushTable();
+        flushQuote();
+        listItems.push(trimmed.replace(/^[-*]\s+/, ''));
         return;
       }
 
@@ -259,6 +350,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
         flushParagraph();
         flushList();
         flushTable();
+        flushQuote();
         orderedItems.push(trimmed.replace(/^\d+\.\s/, ''));
         return;
       }
@@ -266,7 +358,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
       if (trimmed.startsWith('$$') || trimmed.includes('$$')) {
         flushAll();
         blocks.push(
-          <div key={`math-${blocks.length}`} className="bg-blue-50 border border-blue-100 rounded-xl p-4 my-3 text-center text-sm font-mono text-blue-950 font-bold shadow-xs">
+          <div key={`math-${blocks.length}`} className="bg-violet-50 border border-violet-100 rounded-xl p-4 my-3 text-center text-sm font-mono text-violet-950 font-bold shadow-xs">
             {trimmed.replace(/\$\$/g, '').trim()}
           </div>
         );
@@ -276,6 +368,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
       flushList();
       flushOrderedList();
       flushTable();
+      flushQuote();
       paragraphLines.push(trimmed);
     });
 
@@ -283,17 +376,71 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
     return blocks;
   };
 
+  const articleImage = activePost
+    ? activePost.coverImage ?? categoryImage(activePost.category, 1200)
+    : undefined;
+  const articleIso =
+    activePost && !isNaN(Date.parse(activePost.date))
+      ? new Date(activePost.date).toISOString()
+      : undefined;
+  const articleJsonLd = activePost
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: activePost.title,
+        description: activePost.summary,
+        image: articleImage,
+        datePublished: articleIso,
+        author: [activePost.author, ...(activePost.coAuthors ?? [])].map((a) => ({
+          '@type': 'Person',
+          name: a.name,
+        })),
+        publisher: {
+          '@type': 'Organization',
+          name: 'Bengula Inc',
+          logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/ColoredBengulaIncLogo.png` },
+        },
+        mainEntityOfPage: `${SITE_URL}/blog/${activePost.id}`,
+        articleSection: activePost.category,
+      }
+    : undefined;
+
+  // Related reading: same-category articles first, then fill to 3 with others.
+  const relatedPosts = activePost
+    ? [
+        ...blogPosts.filter((p) => p.id !== activePost.id && p.category === activePost.category),
+        ...blogPosts.filter((p) => p.id !== activePost.id && p.category !== activePost.category),
+      ].slice(0, 3)
+    : [];
+
   return (
     <div id="blog-tab-root" className="space-y-8 animate-fadeIn">
-      
+
+      {activePost ? (
+        <Seo
+          title={`${activePost.title} | Bengula Inc`}
+          description={activePost.summary}
+          path={`/blog/${activePost.id}`}
+          image={articleImage}
+          type="article"
+          jsonLd={articleJsonLd}
+        />
+      ) : (
+        <Seo
+          title="Blog & Education | Bengula Inc"
+          description="Practical notes on Kenyan treasury bonds, MMFs, SACCOs, SME trade finance, real estate, and using data to grow — financial education for owners and professionals."
+          path="/blog"
+        />
+      )}
+
       {currentActivePostId && activePost ? (
         // ================= EDITORIAL DETAIL ARTICLE VIEW =================
         <div id="blog-editorial-article-detail" className="max-w-3xl mx-auto space-y-6">
           <button
-            onClick={() => currentSetActivePostId(null)}
-            className="flex items-center gap-2 text-xs font-semibold text-blue-900 hover:text-blue-800 bg-white p-2.5 rounded-lg border border-slate-200 shadow-xs cursor-pointer transition"
+            onClick={() => navigate('/blog')}
+            className="flex items-center gap-2 text-xs font-semibold text-violet-800 hover:text-violet-700 bg-white p-2.5 rounded-lg border border-slate-200 shadow-xs cursor-pointer transition"
           >
-            <ArrowLeft className="w-4 h-4 text-blue-900" />
+            <ArrowLeft className="w-4 h-4 text-violet-800" />
             <span>Return to Financial Education Hub</span>
           </button>
 
@@ -309,7 +456,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
 
           {/* Featured Header */}
           <div className="space-y-4 border-b border-slate-100 pb-6 pt-4">
-            <span className="text-[10px] bg-blue-50 text-blue-900 border border-blue-100 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
+            <span className="text-[10px] bg-violet-50 text-violet-800 border border-violet-100 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
               {activePost.category}
             </span>
 
@@ -342,13 +489,13 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
                       const profile = getAuthorProfile(a.name);
                       return (
                         <span key={i} className="flex items-center gap-x-1">
-                          {profile && onNavigateToAuthor ? (
-                            <button
-                              onClick={() => onNavigateToAuthor(profile.id)}
-                              className="text-blue-900 hover:text-blue-700 hover:underline decoration-blue-900/40 transition cursor-pointer"
+                          {profile ? (
+                            <Link
+                              to={`/authors/${profile.id}`}
+                              className="text-violet-800 hover:text-violet-700 hover:underline decoration-violet-800/40 transition cursor-pointer"
                             >
                               {a.name}
-                            </button>
+                            </Link>
                           ) : (
                             <span>{a.name}</span>
                           )}
@@ -368,8 +515,8 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
                   <Calendar className="w-3.5 h-3.5 text-slate-400" />
                   {activePost.date}
                 </span>
-                <span className="flex items-center gap-1 font-semibold text-blue-900">
-                  <Clock className="w-3.5 h-3.5 text-blue-900" />
+                <span className="flex items-center gap-1 font-semibold text-violet-800">
+                  <Clock className="w-3.5 h-3.5 text-violet-800" />
                   {activePost.readTime}
                 </span>
               </div>
@@ -378,8 +525,38 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
 
           {/* Body Narrative details */}
           <div className="space-y-5 prose prose-slate font-sans pb-12">
-            {renderMarkdown(activePost.content)}
+            <MarkdownContent content={activePost.content} />
           </div>
+
+          {/* Related reading — internal links to keep readers (and crawlers) moving */}
+          {relatedPosts.length > 0 && (
+            <div className="border-t border-slate-100 pt-6 space-y-4">
+              <h3 className="text-sm font-bold text-slate-800 flex items-center gap-2">
+                <BookOpen className="w-4 h-4 text-violet-800" />
+                Related reading
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {relatedPosts.map((post) => (
+                  <Link
+                    key={post.id}
+                    to={`/blog/${post.id}`}
+                    className="group glass-card rounded-xl p-4 transition flex flex-col gap-2"
+                  >
+                    <span className="text-[9px] bg-violet-50 text-violet-800 border border-violet-100 px-2 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono w-fit">
+                      {post.category}
+                    </span>
+                    <h4 className="text-xs font-bold text-slate-900 group-hover:text-violet-800 transition-colors leading-snug">
+                      {post.title}
+                    </h4>
+                    <span className="text-[10px] text-slate-400 font-mono flex items-center gap-1 mt-auto">
+                      <Clock className="w-3 h-3 text-violet-800" />
+                      {post.readTime}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Share / Social reactions footer */}
           <div className="border-t border-slate-100 pt-6 flex items-center justify-between text-xs text-slate-500 font-sans">
@@ -394,7 +571,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
               </button>
               <button
                 onClick={(e) => handleShare(activePost.id, e)}
-                className="flex items-center gap-1.5 py-2 px-3 bg-white border border-slate-200 rounded-lg text-slate-600 hover:text-blue-900 hover:bg-slate-50 transition cursor-pointer shadow-xs font-bold"
+                className="flex items-center gap-1.5 py-2 px-3 bg-white border border-slate-200 rounded-lg text-slate-600 hover:text-violet-800 hover:bg-slate-50 transition cursor-pointer shadow-xs font-bold"
               >
                 <Share2 className="w-4 h-4" />
                 <span>{shared[activePost.id] ? "Link Copied!" : "Share Link"}</span>
@@ -409,11 +586,11 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
           {/* Controls Box */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center border-b border-slate-200 pb-6">
             <div className="md:col-span-5 space-y-1">
-              <span className="text-xs font-bold text-violet-700 uppercase tracking-widest block font-extrabold">Research Library</span>
-              <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
-                <BookOpen className="w-6 h-6 text-blue-900 animate-pulse" />
+              <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest block">Research Library</span>
+              <h1 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                <BookOpen className="w-6 h-6 text-violet-800 animate-pulse" />
                 Financial Education Hub
-              </h2>
+              </h1>
               <p className="text-xs text-slate-500">
                 Practical notes across both pillars — business finance and banking, plus data, SEO, and digital growth.
               </p>
@@ -428,7 +605,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
                 placeholder="Search bonds, stocks, coaching..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-white text-slate-800 text-xs py-2.5 pl-10 pr-3 rounded-xl border border-slate-200 focus:outline-none focus:border-blue-900 focus:ring-1 focus:ring-blue-900 text-sm font-medium"
+                className="w-full bg-white text-slate-800 text-xs py-2.5 pl-10 pr-3 rounded-xl border border-slate-200 focus:outline-none focus:border-violet-800 focus:ring-1 focus:ring-violet-800 text-sm font-medium"
               />
             </div>
 
@@ -438,7 +615,7 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
                 id="blog-category-select-dropdown"
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="w-full bg-white text-slate-800 text-xs py-2.5 px-3 rounded-xl border border-slate-200 focus:outline-none focus:border-blue-900 focus:ring-1 focus:ring-blue-900 font-semibold cursor-pointer"
+                className="w-full bg-white text-slate-800 text-xs py-2.5 px-3 rounded-xl border border-slate-200 focus:outline-none focus:border-violet-800 focus:ring-1 focus:ring-violet-800 font-semibold cursor-pointer"
               >
                 {categories.map((cat) => (
                   <option key={cat} value={cat}>
@@ -454,8 +631,8 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
             {filteredPosts.map((post) => (
               <div
                 key={post.id}
-                onClick={() => currentSetActivePostId(post.id)}
-                className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-blue-900/40 hover:shadow-md transition duration-300 flex flex-col justify-between cursor-pointer group shadow-xs relative"
+                onClick={() => navigate(`/blog/${post.id}`)}
+                className="glass-card rounded-2xl overflow-hidden transition duration-300 flex flex-col justify-between cursor-pointer group relative"
               >
                 {/* Cover image */}
                 <div className="aspect-[16/9] overflow-hidden bg-slate-100">
@@ -470,19 +647,21 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
                 <div className="p-6 flex flex-col justify-between flex-1">
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
-                    <span className="text-[10px] bg-blue-50 text-blue-900 border border-blue-100 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
+                    <span className="text-[10px] bg-violet-50 text-violet-800 border border-violet-100 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
                       {post.category}
                     </span>
                     <span className="text-[10px] text-slate-500 font-mono flex items-center gap-1 font-semibold">
-                      <Clock className="w-3 h-3 text-blue-900" />
+                      <Clock className="w-3 h-3 text-violet-800" />
                       {post.readTime}
                     </span>
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="text-base font-bold text-slate-900 group-hover:text-blue-900 transition-colors duration-200 leading-snug">
-                      {post.title}
-                    </h3>
+                    <Link to={`/blog/${post.id}`} onClick={(e) => e.stopPropagation()} className="block">
+                      <h3 className="text-base font-bold text-slate-900 group-hover:text-violet-800 transition-colors duration-200 leading-snug">
+                        {post.title}
+                      </h3>
+                    </Link>
                     <p className="text-xs text-slate-500 leading-relaxed font-normal">
                       {post.summary}
                     </p>
@@ -529,3 +708,4 @@ export default function BlogTab({ activePostId, setActivePostId, onNavigateToAut
     </div>
   );
 }
+
