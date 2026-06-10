@@ -46,10 +46,13 @@ NOTE_TONES = {
 
 # ── Type scale ───────────────────────────────────────────────────────
 # Brand sans is Helvetica Neue. ReportLab can only embed it from font
-# files, so drop HelveticaNeue.ttf / HelveticaNeue-Bold.ttf into
-# scripts/fonts/ and they are picked up automatically; otherwise the
-# built-in base-14 Helvetica is the fallback. Times stands in for the
-# Georgia/Charter editorial serif.
+# files; genuine Helvetica Neue is a commercial Monotype font, so the
+# repo ships Liberation Sans (SIL-licensed, metrically Helvetica/Arial
+# compatible) in scripts/fonts/ as the embeddable stand-in. If licensed
+# HelveticaNeue.ttf / HelveticaNeue-Bold.ttf are dropped into that
+# folder they take priority automatically. Built-in base-14 Helvetica
+# is the last-resort fallback. Times stands in for the Georgia/Charter
+# editorial serif.
 FONT_DIR = Path(__file__).resolve().parents[1] / "fonts"
 
 
@@ -63,12 +66,12 @@ def _register_ttf(name, filenames):
 
 
 SERIF_BOLD = "Times-Bold"
-_neue = _register_ttf("HelveticaNeue", ["HelveticaNeue.ttf", "HelveticaNeue-Regular.ttf"])
-_neue_bold = _register_ttf("HelveticaNeue-Bold", ["HelveticaNeue-Bold.ttf", "HelveticaNeueBold.ttf"])
-if _neue and _neue_bold:
-    # Both weights present: use the real brand sans and let <b> markup resolve.
-    pdfmetrics.registerFontFamily("HelveticaNeue", normal=_neue, bold=_neue_bold, italic=_neue, boldItalic=_neue_bold)
-    SANS, SANS_BOLD = _neue, _neue_bold
+_sans = _register_ttf("BrandSans", ["HelveticaNeue.ttf", "HelveticaNeue-Regular.ttf", "LiberationSans-Regular.ttf"])
+_sans_bold = _register_ttf("BrandSans-Bold", ["HelveticaNeue-Bold.ttf", "HelveticaNeueBold.ttf", "LiberationSans-Bold.ttf"])
+if _sans and _sans_bold:
+    # Both weights present: embed the brand sans and let <b> markup resolve.
+    pdfmetrics.registerFontFamily("BrandSans", normal=_sans, bold=_sans_bold, italic=_sans, boldItalic=_sans_bold)
+    SANS, SANS_BOLD = _sans, _sans_bold
 else:
     SANS, SANS_BOLD = "Helvetica", "Helvetica-Bold"
 

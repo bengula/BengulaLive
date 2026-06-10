@@ -12,6 +12,9 @@ from .sources import SOURCES
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT_DIR = ROOT / "public" / "documents"
+# Internal documents are kept out of public/ so they never ship with the
+# static build or appear on the website.
+INTERNAL_OUT_DIR = ROOT / "internal-docs"
 
 BLOCK_BUILDERS = {
     "heading": lambda b: c.para(b[1], "H2B"),
@@ -25,10 +28,10 @@ BLOCK_BUILDERS = {
 }
 
 
-def source_page(keys):
+def source_page(keys, sourcenote=None):
     story = [PageBreak(), c.para("Selected Sources", "H2B")]
     if not keys:
-        story.append(c.para("This internal brand guide is derived from the current Bengula Inc website, logo assets, resource-library styling, and stated brand positioning.", "BodyB"))
+        story.append(c.para(sourcenote or "Prepared by the Bengula Inc research desk.", "BodyB"))
     for key in keys:
         label, url = SOURCES[key]
         story.append(c.para(f"<b>{label}</b><br/><font color='#5B21B6'>{url}</font>", "SmallB"))
@@ -38,8 +41,10 @@ def source_page(keys):
 
 
 def build_doc(spec):
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    path = OUT_DIR / spec["file"]
+    internal = str(spec.get("internal", "")).lower() in ("true", "yes", "1")
+    out_dir = INTERNAL_OUT_DIR if internal else OUT_DIR
+    out_dir.mkdir(parents=True, exist_ok=True)
+    path = out_dir / spec["file"]
     today = date.today()
     as_of = spec.get("date") or f"{today.day} {today.strftime('%B %Y')}"
     doc = SimpleDocTemplate(
@@ -58,6 +63,6 @@ def build_doc(spec):
     ]
     for block in spec["body"]:
         story.append(BLOCK_BUILDERS[block[0]](block))
-    story.extend(source_page(spec["sources"]))
+    story.extend(source_page(spec["sources"], spec.get("sourcenote")))
     doc.build(story, onFirstPage=c.footer, onLaterPages=c.footer)
     return path

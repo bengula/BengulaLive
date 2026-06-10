@@ -4,6 +4,8 @@
 :tag: Brand Guide
 :summary: The Bengula Inc brand should feel sharp, trustworthy, financially literate, and human: advisory enough for boardrooms, warm enough for entrepreneurs, and visually consistent across web, PDF, slide, and social formats.
 :sources:
+:sourcenote: This internal brand guide is derived from the current Bengula Inc website, logo assets, resource-library styling, and stated brand positioning.
+:internal: true
 :date: 9 June 2026
 
 ## Brand Position

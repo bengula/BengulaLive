@@ -16,3 +16,6 @@ coverage/
 # python
 __pycache__/
 *.pyc
+
+# generated internal documents (not deployed)
+internal-docs/

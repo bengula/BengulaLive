@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { FileText, Download, TrendingUp, ShieldCheck, Sprout, Palette } from 'lucide-react';
+import { FileText, Download, TrendingUp, ShieldCheck, Sprout, Calculator } from 'lucide-react';
 
 interface ResourceDoc {
   title: string;
@@ -38,11 +38,11 @@ const resources: ResourceDoc[] = [
     icon: Sprout,
   },
   {
-    title: "Bengula Inc Brand Style Guide",
-    tag: "Brand Guide",
-    desc: "Reusable guidance for brand voice, colors, typography, layouts, and marketing material across PDFs, decks, social, and web.",
-    file: "/documents/bengula_inc_brand_style_guide.pdf",
-    icon: Palette,
+    title: "ABSA Scheme Loan Repayment Schedule",
+    tag: "Loan Schedule",
+    desc: "Indicative monthly repayments at 14.5% reducing balance for unsecured scheme loans up to KES 6M, terms from 12 to 132 months.",
+    file: "/documents/absa_scheme_loan_repayment_schedule.pdf",
+    icon: Calculator,
   },
 ];
 
