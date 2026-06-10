@@ -22,9 +22,13 @@ Content format (line oriented):
     1. numbered item, one per line
 
     [table widths=35,70,65]          widths in mm, optional
-    Header | Header | Header
-    cell | cell | cell
+    Header | Header | Header        add "compact" for tighter row padding:
+    cell | cell | cell              [table widths=... compact]
     [/table]
+
+    @landscape                       switch to landscape pages from here
+    @portrait                        switch back to portrait pages
+    (each starts a new page)
 
     [cards]
     Card Title :: card body text
@@ -83,6 +87,10 @@ def parse_file(path):
             body.append(("heading", escape(line[3:].strip())))
             continue
 
+        if line in ("@landscape", "@portrait"):
+            body.append(("orient", line[1:].capitalize()))
+            continue
+
         if line.startswith(">"):
             text = line.lstrip(">").strip()
             tone = "info"
@@ -136,7 +144,7 @@ def parse_file(path):
         parts = [line]
         while i < n:
             nxt = lines[i].strip()
-            if not nxt or nxt.startswith(("## ", "- ", ">", "[", ":", "//")) or ORDERED_RE.match(nxt):
+            if not nxt or nxt.startswith(("## ", "- ", ">", "[", ":", "//", "@")) or ORDERED_RE.match(nxt):
                 break
             parts.append(nxt)
             i += 1
@@ -161,7 +169,7 @@ def _parse_block(kind, attrs, rows, path):
         for r in data:
             if len(r) != len(header):
                 raise ContentError(f"{path.name}: table row has {len(r)} cells, header has {len(header)}")
-        return ("table", header, data, widths)
+        return ("table", header, data, widths, "compact" in attrs.split())
 
     if kind == "cards":
         items = []

@@ -5,7 +5,6 @@ from xml.sax.saxutils import escape
 
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_LEFT
-from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
 from reportlab.platypus import (
@@ -167,12 +166,13 @@ def note(text, tone="info"):
     return KeepTogether([t, Spacer(1, 5)])
 
 
-def data_table(headers, rows, widths=None):
+def data_table(headers, rows, widths=None, compact=False):
     if widths is None:
         widths = [brand.CONTENT_WIDTH / len(headers)] * len(headers)
     data = [[para(f"<b>{h}</b>", "SmallB") for h in headers]]
     data.extend([[para(cell, "SmallB") for cell in row] for row in rows])
     t = Table(data, colWidths=widths, repeatRows=1, hAlign=TA_LEFT)
+    vpad = 3 if compact else 6
     style = [
         ("BACKGROUND", (0, 0), (-1, 0), brand.PRIMARY_DEEPEST),
         ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
@@ -180,8 +180,8 @@ def data_table(headers, rows, widths=None):
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("LEFTPADDING", (0, 0), (-1, -1), 6),
         ("RIGHTPADDING", (0, 0), (-1, -1), 6),
-        ("TOPPADDING", (0, 0), (-1, -1), 6),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 6),
+        ("TOPPADDING", (0, 0), (-1, -1), vpad),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), vpad),
     ]
     for idx in range(1, len(data), 2):
         style.append(("BACKGROUND", (0, idx), (-1, idx), brand.TINT))
@@ -245,5 +245,6 @@ def footer(canvas, doc):
     canvas.setFont(brand.SANS, 7.5)
     canvas.setFillColor(brand.MUTED)
     canvas.drawString(doc.leftMargin, 9 * mm, "Bengula Inc Research Desk")
-    canvas.drawRightString(A4[0] - doc.rightMargin, 9 * mm, f"Page {doc.page}")
+    # doc.pagesize follows the active page template (portrait or landscape).
+    canvas.drawRightString(doc.pagesize[0] - doc.rightMargin, 9 * mm, f"Page {doc.page}")
     canvas.restoreState()

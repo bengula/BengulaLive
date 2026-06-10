@@ -3,9 +3,16 @@
 from datetime import date
 from pathlib import Path
 
-from reportlab.lib.pagesizes import A4
+from reportlab.lib.pagesizes import A4, landscape
 from reportlab.lib.units import mm
-from reportlab.platypus import PageBreak, SimpleDocTemplate, Spacer
+from reportlab.platypus import (
+    BaseDocTemplate,
+    Frame,
+    NextPageTemplate,
+    PageBreak,
+    PageTemplate,
+    Spacer,
+)
 
 from . import components as c
 from .sources import SOURCES
@@ -17,15 +24,35 @@ OUT_DIR = ROOT / "public" / "documents"
 INTERNAL_OUT_DIR = ROOT / "internal-docs"
 
 BLOCK_BUILDERS = {
-    "heading": lambda b: c.para(b[1], "H2B"),
-    "para": lambda b: c.para(b[1]),
-    "note": lambda b: c.note(b[2], b[1]),
-    "bullets": lambda b: c.bullets(b[1]),
-    "ordered": lambda b: c.ordered(b[1]),
-    "table": lambda b: c.data_table(b[1], b[2], [w * mm for w in b[3]] if b[3] else None),
-    "cards": lambda b: c.cards(b[1]),
-    "palette": lambda b: c.palette_table(b[1]),
+    "heading": lambda b: [c.para(b[1], "H2B")],
+    "para": lambda b: [c.para(b[1])],
+    "note": lambda b: [c.note(b[2], b[1])],
+    "bullets": lambda b: [c.bullets(b[1])],
+    "ordered": lambda b: [c.ordered(b[1])],
+    "table": lambda b: [c.data_table(b[1], b[2], [w * mm for w in b[3]] if b[3] else None, compact=b[4])],
+    "cards": lambda b: [c.cards(b[1])],
+    "palette": lambda b: [c.palette_table(b[1])],
+    # Orientation switches start a fresh page on the named template.
+    "orient": lambda b: [NextPageTemplate(b[1]), PageBreak()],
 }
+
+MARGIN = 20 * mm
+TOP_MARGIN = 17 * mm
+BOTTOM_MARGIN = 18 * mm
+
+
+def _frame(pagesize, frame_id):
+    return Frame(
+        MARGIN,
+        BOTTOM_MARGIN,
+        pagesize[0] - 2 * MARGIN,
+        pagesize[1] - TOP_MARGIN - BOTTOM_MARGIN,
+        id=frame_id,
+        leftPadding=0,
+        rightPadding=0,
+        topPadding=0,
+        bottomPadding=0,
+    )
 
 
 def source_page(keys, sourcenote=None):
@@ -47,22 +74,27 @@ def build_doc(spec):
     path = out_dir / spec["file"]
     today = date.today()
     as_of = spec.get("date") or f"{today.day} {today.strftime('%B %Y')}"
-    doc = SimpleDocTemplate(
+    doc = BaseDocTemplate(
         str(path),
         pagesize=A4,
-        rightMargin=20 * mm,
-        leftMargin=20 * mm,
-        topMargin=17 * mm,
-        bottomMargin=18 * mm,
+        rightMargin=MARGIN,
+        leftMargin=MARGIN,
+        topMargin=TOP_MARGIN,
+        bottomMargin=BOTTOM_MARGIN,
         title=spec["title"],
         author="Bengula Inc",
     )
+    land = landscape(A4)
+    doc.addPageTemplates([
+        PageTemplate(id="Portrait", frames=[_frame(A4, "p")], onPage=c.footer, pagesize=A4),
+        PageTemplate(id="Landscape", frames=[_frame(land, "l")], onPage=c.footer, pagesize=land),
+    ])
     story = [
         c.CoverBlock(spec["title"], spec["subtitle"], spec["tag"], spec["summary"], as_of),
         PageBreak(),
     ]
     for block in spec["body"]:
-        story.append(BLOCK_BUILDERS[block[0]](block))
+        story.extend(BLOCK_BUILDERS[block[0]](block))
     story.extend(source_page(spec["sources"], spec.get("sourcenote")))
-    doc.build(story, onFirstPage=c.footer, onLaterPages=c.footer)
+    doc.build(story)
     return path

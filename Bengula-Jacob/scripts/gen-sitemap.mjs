@@ -26,6 +26,9 @@ const today = new Date().toISOString().slice(0, 10);
 
 const xml =
   `<?xml version="1.0" encoding="UTF-8"?>\n` +
+  // Cosmetic only: renders the sitemap as a branded page in browsers.
+  // Crawlers ignore the stylesheet and parse the XML directly.
+  `<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>\n` +
   `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
   unique.map((u) => `  <url><loc>${u}</loc><lastmod>${today}</lastmod></url>`).join("\n") +
   `\n</urlset>\n`;
