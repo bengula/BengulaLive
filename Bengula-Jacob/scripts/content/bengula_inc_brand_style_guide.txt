@@ -1,0 +1,87 @@
+:file: bengula_inc_brand_style_guide.pdf
+:title: Bengula Inc Brand Style Guide
+:subtitle: A concise visual and verbal system for research PDFs, social posts, pitch decks, articles, proposals, and client-facing marketing material.
+:tag: Brand Guide
+:summary: The Bengula Inc brand should feel sharp, trustworthy, financially literate, and human: advisory enough for boardrooms, warm enough for entrepreneurs, and visually consistent across web, PDF, slide, and social formats.
+:sources:
+:date: 9 June 2026
+
+## Brand Position
+
+Bengula Inc helps East African businesses grow by combining data-driven
+digital visibility with finance and banking advisory. The brand voice
+should make complex money, trade, and growth decisions feel understandable
+without making them feel simplistic.
+
+[table widths=42,128]
+Element | Guidance
+Core promise | Practical clarity for business growth, capital access, and investment decisions.
+Tone | Clear, composed, precise, optimistic, and evidence-led.
+Avoid | Guaranteed-return language, hype, excessive luxury cues, jargon without explanation, and overly casual finance claims.
+Signature line | Adding meaning to life.
+Audience | Kenyan and East African SMEs, professionals, investors, founders, cooperatives, and diaspora clients.
+[/table]
+
+## Color System
+
+The palette is drawn directly from the bengula.co.ke interface: violet
+carries authority and brand recognition, slate carries text and structure,
+emerald marks growth and positive signals, and amber marks caution or
+premium emphasis. Web work uses the matching Tailwind utilities noted
+below; print and slide work uses the hex values.
+
+[palette]
+Bengula Violet | #5B21B6 | Primary brand color (violet-800): headings, buttons, links, icon chips, PDF rules.
+Deep Violet | #4C1D95 | Covers, dark hero panels, and brand shadows over glass surfaces (violet-900).
+Midnight Violet | #2E1065 | Table headers and the darkest brand surfaces (violet-950).
+Electric Violet | #7C3AED | Gradient accents, charts, hover and active states (violet-600).
+Orchid | #A855F7 | Gradient midpoint and decorative highlights (purple-500).
+Indigo Pulse | #6366F1 | Gradient endpoint and secondary data accents (indigo-500).
+Slate Ink | #0F172A | Headlines and primary text (slate-900).
+Slate Body | #334155 | Body copy and long-form text (slate-700).
+Slate Mist | #64748B | Captions, metadata, and secondary text (slate-500).
+Slate Hairline | #E2E8F0 | Borders, dividers, and table grids (slate-200).
+Emerald Growth | #047857 | Positive signals, growth metrics, and live indicators (emerald-700).
+Amber Signal | #B45309 | Cautions, risk callouts, and premium markers (amber-700).
+Canvas | #F6F5FB | Page and app background tint behind glass surfaces.
+Violet Wash | #F5F3FF | Chips, zebra rows, and soft brand-tinted fills (violet-50).
+[/palette]
+
+> info: Hierarchy rule: violet is the authority color and should anchor
+> every asset; emerald and amber are semantic accents, never decoration.
+> Keep backgrounds light for documents and reserve dark violet gradients
+> for covers, heroes, and closing slides.
+
+## Signature Effects
+
+The website pairs the palette with a liquid-glass aesthetic: frosted white
+cards over a softly tinted canvas, an aurora backdrop of blurred violet,
+orchid, and sky gradients, and a panning violet-to-indigo gradient on
+headline text. In static formats, echo this with light backgrounds, soft
+violet shadows, rounded corners, and a single dark-violet cover moment.
+
+- Glass cards: white at roughly 62 percent opacity with a hairline border and a soft violet shadow.
+- Gradient text: Electric Violet to Orchid to Indigo Pulse, reserved for one headline per asset.
+- Dark panels: Deep Violet with light violet text, used sparingly for contrast moments.
+
+## Typography
+
+[table widths=36,50,84]
+Role | Recommended font | Usage
+Headlines | Georgia or Charter | Editorial, credible, advisory. Use for PDF covers, article titles, and major section headings.
+Body/UI | Helvetica Neue, Inter, or Segoe UI | Clean, highly readable, modern. Use for web, decks, tables, captions, and body copy.
+Numbers/data | JetBrains Mono or Aptos Mono | Use sparingly for rates, tickers, tags, IDs, and compact dashboards.
+Fallback | Helvetica | Use where platform compatibility matters more than character.
+[/table]
+
+- Do not use more than two font families in one asset unless data tables need a mono style.
+- Headlines should be confident and plain, not slogan-heavy.
+- Tables should use smaller type only when spacing remains comfortable.
+
+## Layout And Voice Rules
+
+- Use generous white space and clean section hierarchy before adding decoration.
+- Use tables only for true comparisons, checklists, or data. Use prose for explanation.
+- Every marketing PDF should include a cover, executive summary, practical framework, source list, and compliance note.
+- Say: Target return depends on execution, liquidity, and documented risk controls.
+- Say: We help clients understand the evidence, risks, and next steps before capital moves.

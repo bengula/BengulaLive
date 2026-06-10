@@ -12,3 +12,7 @@ coverage/
 .wrangler
 .dev.vars*
 !.dev.vars.example
+
+# python
+__pycache__/
+*.pyc

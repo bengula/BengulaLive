@@ -1,0 +1,55 @@
+:file: due_diligence_framework_for_alternative_placements.pdf
+:title: Due Diligence Framework for Alternative Placements
+:subtitle: A field-ready checklist for private placements, land syndicates, SPVs, private credit, agribusiness pools, and other off-market opportunities.
+:tag: Due Diligence Guide
+:summary: Alternative placements can improve diversification, but the manager, documents, custody, valuation, and exit mechanics are often more important than the underlying asset.
+:sources: ilpa, cmaAif, secRisk, worldBankKeu
+:date: 9 June 2026
+
+## Use This Before You Send Money
+
+The purpose of diligence is not to prove that a deal is exciting. It is to
+prove that the deal survives boring questions: who owns the asset, who
+controls cash, who marks value, who can sell, who reports performance, and
+who is accountable if the plan fails.
+
+> info: Decision rule: no subscription, deposit, contribution, or capital
+> call should move until the investor can independently verify registration
+> or exemption basis, ownership documents, bank/custody flow, fees,
+> related-party conflicts, and exit terms.
+
+## The Seven-Gate Review
+
+[table widths=30,73,67]
+Gate | Evidence to request | Pass standard
+Sponsor | Profiles, track record, audited history, references, adverse media search, litigation search. | The people asking for capital have a verifiable history and no unresolved integrity concern.
+Structure | Term sheet, trust deed/SPV documents, shareholder agreement, offering memorandum, tax opinion. | Rights, obligations, voting, transfer, and wind-up terms are written in enforceable documents.
+Asset | Title, leases, invoices, purchase contracts, licenses, insurance, technical reports. | Underlying asset exists, is legally controlled, and can produce the claimed cash flow.
+Cash control | Bank account mandate, signatories, escrow/custody arrangement, payment waterfall. | Investor funds cannot be casually redirected by the sponsor or a related party.
+Valuation | Methodology, assumptions, comparable evidence, independent valuation where relevant. | Value is supported by market or income evidence, not merely sponsor-stated.
+Liquidity | Lock-up, redemption, transfer rights, secondary sale process, penalties, gates. | Exit limits are explicit and suitable for the investor's time horizon.
+Reporting | Frequency, content, audit rights, covenant package, breach remedies. | Investors receive enough evidence to monitor performance and intervene early.
+[/table]
+
+## Questions That Change The Conversation
+
+- Which regulated entity, advocate, trustee, or administrator is responsible for investor records?
+- What exact document proves the sponsor can sell, lease, pledge, farm, build on, or collect from the asset?
+- Where will investor cash sit before deployment, and who must approve movement out of that account?
+- Which fees are charged at entry, during management, on exit, and on performance?
+- What happens if the sponsor dies, loses key staff, is sued, or misses two reporting periods?
+
+## Risk Scoring
+
+[table widths=18,87,65]
+Score | Meaning | Action
+1 | Institutional-grade evidence, clean structure, strong reporting, aligned incentives. | Proceed to suitability and sizing review.
+2 | Mostly clear, with fixable document gaps or limited operating history. | Proceed only after conditions are closed in writing.
+3 | Promising asset but weak controls, valuation uncertainty, or narrow exit path. | Reduce size, require protections, or pause.
+4 | Material legal, custody, conflict, or reporting weakness. | Do not fund until independently remediated.
+5 | Unverified ownership, pressure selling, guaranteed returns, or evasive sponsor. | Reject and document why.
+[/table]
+
+> risk: Do not accept urgency as a substitute for diligence. Scarcity
+> language, guaranteed returns, incomplete documents, or requests to pay
+> into personal accounts are practical stop signs.

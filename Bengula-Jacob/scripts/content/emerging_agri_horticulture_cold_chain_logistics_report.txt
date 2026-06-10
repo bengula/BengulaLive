@@ -1,0 +1,59 @@
+:file: emerging_agri_horticulture_cold_chain_logistics_report.pdf
+:title: Agri-Horticulture Cold-Chain Logistics Report
+:subtitle: A sector brief on Kenya's perishable-produce logistics opportunity, from farm-gate cooling to export reliability and financing readiness.
+:tag: Sector Report
+:summary: Cold-chain investment is moving from nice-to-have infrastructure to a competitiveness requirement. The investable edge is utilization, energy reliability, route density, quality assurance, and buyer-linked offtake.
+:sources: energy4Impact, investKenya, knaFlowers, worldBankKeu
+:date: 9 June 2026
+
+## Sector Thesis
+
+Kenya's horticulture, dairy, fish, and fresh-food systems lose value when
+cooling is too far from the farm, too expensive to run, or disconnected
+from buyers. The strongest projects in 2026 are modular, energy-aware,
+buyer-linked, and built around measurable utilization rather than
+cold-room capacity alone.
+
+> info: A cold room is not the business model. The business model is
+> reliable throughput: producer aggregation, grading, temperature logs,
+> route planning, buyer contracts, and payment discipline.
+
+## Market Drivers
+
+[table widths=38,72,60]
+Driver | Current signal | Investment implication
+Post-harvest loss | Kenya-focused cold-chain programmes cite high fresh-produce losses where affordable cooling is unavailable close to production. | Farm-gate and aggregation-point cooling can unlock value before produce reaches urban or export nodes.
+Export pressure | Flower exporters are seeking new markets while facing freight cost and logistics disruption pressure. | Exporters need quality assurance, temperature proof, and routing flexibility.
+Agro-processing policy | Invest Kenya's 2026 sector pack positions agro-processing, fruit, vegetables, logistics, and value addition as investable themes. | Cold chain should be packaged with processing, packaging, and market access.
+Energy transition | Solar and hybrid systems reduce diesel exposure and improve uptime in rural nodes. | Finance models must consider capex, maintenance, battery replacement, and utilization ramp-up.
+Data visibility | Sensors and digital logs are becoming part of buyer assurance and insurance conversations. | Temperature records can improve claims, pricing, and buyer confidence.
+[/table]
+
+## Project Bankability Checklist
+
+- Anchor demand: signed buyer, exporter, processor, cooperative, or distributor commitments.
+- Utilization model: daily tonnage assumptions by crop, season, price, and route.
+- Energy plan: solar, grid, generator, battery, maintenance, and uptime responsibilities.
+- Quality system: grading, crates, pre-cooling standards, temperature logs, and rejection process.
+- Working capital: farmer payment timing, buyer payment timing, spoilage reserve, and insurance.
+
+## Financing Structures
+
+[cards]
+Asset Finance :: Suitable for solar refrigeration units, reefer trucks, crates, and monitoring hardware when utilization is predictable and collateral can be identified.
+Receivables Finance :: Useful where exporters, processors, or institutional buyers create verifiable invoices and repeat payment flows.
+Cooperative/SPV Pool :: Works when farmers or investors share infrastructure, but requires strong governance, transparent pricing, and independent accounts.
+Blended Capital :: Appropriate for rural nodes where grant, guarantee, or concessional funds can absorb early utilization risk.
+[/cards]
+
+## 90-Day Pilot Plan
+
+1. Select one crop corridor with recurring losses and a named buyer.
+2. Measure baseline rejection, spoilage, price discounting, and transport delays for two harvest cycles.
+3. Install or contract cooling capacity only after demand and operator accountability are clear.
+4. Track temperature, volume, revenue, loss reduction, energy cost, and farmer payment timing weekly.
+5. Convert pilot data into a lending memo: capex, utilization, margins, downside case, and expansion trigger.
+
+> risk: Red flag: capacity-first projects with no buyer contract, no
+> utilization floor, weak maintenance plan, or unclear farmer-payment
+> process are vulnerable even when the technology is good.
