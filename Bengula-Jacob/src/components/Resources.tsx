@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { FileText, Download, TrendingUp, ShieldCheck, Sprout } from 'lucide-react';
+import { FileText, Download, TrendingUp, ShieldCheck, Sprout, Palette } from 'lucide-react';
 
 interface ResourceDoc {
   title: string;
@@ -20,22 +20,29 @@ const resources: ResourceDoc[] = [
     title: "East Africa Fiscal & Macro-Trends Analysis (2026)",
     tag: "Market Analysis",
     desc: "Annual dossier on regional fiscal direction, CBK rate movements, and the macro backdrop for treasury and equity positioning.",
-    file: "/documents/annual_east_africa_fiscal_macro_trends_analysis_2026.txt",
+    file: "/documents/annual_east_africa_fiscal_macro_trends_analysis_2026.pdf",
     icon: TrendingUp,
   },
   {
     title: "Due Diligence Framework for Alternative Placements",
     tag: "Due Diligence Guide",
-    desc: "The checklist Bengula Inc uses to vet syndicates and private placements — titles, sponsor track record, exit terms, and risk flags.",
-    file: "/documents/due_diligence_framework_for_alternative_placements.txt",
+    desc: "The checklist Bengula Inc uses to vet syndicates and private placements: titles, sponsor track record, exit terms, and risk flags.",
+    file: "/documents/due_diligence_framework_for_alternative_placements.pdf",
     icon: ShieldCheck,
   },
   {
     title: "Agri-Horticulture Cold-Chain Logistics Report",
     tag: "Sector Report",
     desc: "Deep-dive into capital bottlenecks and opportunities across Kenya's horticulture export and cold-chain supply lines.",
-    file: "/documents/emerging_agri_horticulture_cold_chain_logistics_report.txt",
+    file: "/documents/emerging_agri_horticulture_cold_chain_logistics_report.pdf",
     icon: Sprout,
+  },
+  {
+    title: "Bengula Inc Brand Style Guide",
+    tag: "Brand Guide",
+    desc: "Reusable guidance for brand voice, colors, typography, layouts, and marketing material across PDFs, decks, social, and web.",
+    file: "/documents/bengula_inc_brand_style_guide.pdf",
+    icon: Palette,
   },
 ];
 
@@ -49,11 +56,11 @@ export default function Resources() {
         </span>
         <h3 className="text-2xl font-bold text-slate-900">Download Research & Frameworks</h3>
         <p className="text-xs text-slate-500">
-          Complimentary dossiers prepared by Jacob's desk — no signup required.
+          Complimentary dossiers prepared by Jacob's desk: no signup required.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {resources.map((doc, idx) => {
           const Icon = doc.icon;
           return (
@@ -91,4 +98,3 @@ export default function Resources() {
     </div>
   );
 }
-
