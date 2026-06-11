@@ -20,7 +20,7 @@ export default function AboutTab() {
       />
       {/* Bio Section */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        {/* Placeholder Avatar / Profile Frame */}
+        {/* Founder profile frame */}
         <div className="lg:col-span-5 flex justify-center">
           <div className="relative group w-full max-w-sm">
             {/* Soft decorative background rings */}

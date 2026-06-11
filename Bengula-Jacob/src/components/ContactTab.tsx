@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import { MapPin, Mail, Phone, Globe, ShieldCheck, ChevronRight } from 'lucide-react';
 import { siteConfig, telHref, whatsappHref } from '../data/siteConfig';
 import Seo from '../seo';
+import { openMailto } from '../utils/mailto';
 
 export default function ContactTab() {
   const [contactName, setContactName] = useState('');
@@ -19,20 +20,14 @@ export default function ContactTab() {
     e.preventDefault();
 
     // Static-host friendly: open a pre-filled email instead of POSTing to a server.
-    const subject = contactSubject || `Website enquiry from ${contactName}`;
-    const body = [
+    openMailto(siteConfig.contact.email, contactSubject || `Website enquiry from ${contactName}`, [
       `Name:  ${contactName}`,
       `Email: ${contactEmail}`,
       ``,
       contactBody,
       ``,
       `Sent from the Bengula Jacob website.`,
-    ].join('\n');
-
-    window.location.href =
-      `mailto:${siteConfig.contact.email}` +
-      `?subject=${encodeURIComponent(subject)}` +
-      `&body=${encodeURIComponent(body)}`;
+    ]);
 
     setContactSuccess(true);
     setContactName('');

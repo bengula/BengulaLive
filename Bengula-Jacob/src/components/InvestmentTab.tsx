@@ -7,10 +7,35 @@ import React, { useState, useMemo } from 'react';
 import { InvestmentOpportunity } from '../types';
 import { investmentPoolsList } from '../data/investmentsData';
 import { riskBadgeStyles } from '../data/portfolioTags';
-import { Sparkles, TrendingUp, DollarSign, Award, ArrowUpRight, ArrowRight, Wallet, Percent, ShieldCheck, Heart, FileText, Download, Briefcase, Mail, Send } from 'lucide-react';
+import { TrendingUp, ArrowUpRight, Wallet, ShieldCheck, FileText, Download, Briefcase, Mail, Send } from 'lucide-react';
 import { images } from '../data/media';
 import { useNavigate } from 'react-router-dom';
 import Seo from '../seo';
+import { formatKSh } from '../utils/format';
+import { openMailto } from '../utils/mailto';
+import { siteConfig } from '../data/siteConfig';
+
+// Downloadable analyses — files ship with the static build in /public/documents.
+const investmentInsights = [
+  {
+    title: "Annual East Africa Fiscal & Macro-Trends Analysis (2026)",
+    type: "Market Analysis",
+    file: "/documents/annual_east_africa_fiscal_macro_trends_analysis_2026.pdf",
+    desc: "Comparing currency movements, inflation profiles, and the subsequent trajectory of Central Bank primary rate adjustments."
+  },
+  {
+    title: "Emerging Agri-Horticulture Cold-Chain Logistics Report",
+    type: "Sector Report",
+    file: "/documents/emerging_agri_horticulture_cold_chain_logistics_report.pdf",
+    desc: "Analyzing export volume capabilities, logistical bottlenecks, and transport unit economics across Mt. Kenya hubs."
+  },
+  {
+    title: "Due Diligence Framework For Alternative Placements",
+    type: "Due Diligence Guide",
+    file: "/documents/due_diligence_framework_for_alternative_placements.pdf",
+    desc: "A systematic structural checklist to auditing off-market land holdings, developers, and agricultural export agreements."
+  }
+];
 
 export default function InvestmentTab() {
   const navigate = useNavigate();
@@ -24,27 +49,8 @@ export default function InvestmentTab() {
   const [partnerSubject, setPartnerSubject] = useState('real-estate-project');
   const [partnerMessage, setPartnerMessage] = useState('');
   const [formSuccess, setFormSuccess] = useState(false);
-  const [formLoading, setFormLoading] = useState(false);
 
   const pools: InvestmentOpportunity[] = investmentPoolsList;
-
-  const handleDownload = (title: string) => {
-    let filename = "";
-    if (title.includes("Annual East Africa")) {
-      filename = "annual_east_africa_fiscal_macro_trends_analysis_2026.txt";
-    } else if (title.includes("Agri-Horticulture")) {
-      filename = "emerging_agri_horticulture_cold_chain_logistics_report.txt";
-    } else {
-      filename = "due_diligence_framework_for_alternative_placements.txt";
-    }
-
-    const element = document.createElement("a");
-    element.href = `/documents/${filename}`;
-    element.download = filename;
-    document.body.appendChild(element);
-    element.click();
-    document.body.removeChild(element);
-  };
 
   const activePool = useMemo(() => {
     return pools.find(p => p.id === selectedPoolId) || pools[0];
@@ -68,26 +74,34 @@ export default function InvestmentTab() {
     };
   }, [investAmount, activePool]);
 
-  const formatKSh = (val: number) => {
-    return new Intl.NumberFormat('en-KE', {
-      style: 'currency',
-      currency: 'KES',
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0
-    }).format(val).replace('KES', 'KSh');
-  };
-
   const handleInquirySubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setFormLoading(true);
-    setTimeout(() => {
-      setFormSuccess(true);
-      setFormLoading(false);
-      // reset fields
-      setPartnerName('');
-      setPartnerEmail('');
-      setPartnerMessage('');
-    }, 1000);
+
+    // Static-host friendly: open a pre-filled email instead of POSTing to a server.
+    const focusTitle =
+      pools.find((p) => p.id === partnerSubject)?.title ||
+      'General Co-Investment Syndication Program';
+
+    openMailto(siteConfig.contact.wealthEmail, `Co-investor partnership inquiry — ${focusTitle}`, [
+      'Hello Jacob,',
+      '',
+      'I would like to request a private mandate pack. Details below:',
+      '',
+      `Name:         ${partnerName}`,
+      `Email:        ${partnerEmail}`,
+      `Budget (KSh): ${partnerBudget}`,
+      `Focus theme:  ${focusTitle}`,
+      '',
+      'Brief / criteria:',
+      partnerMessage || '(none provided)',
+      '',
+      'Sent from bengula.co.ke',
+    ]);
+
+    setFormSuccess(true);
+    setPartnerName('');
+    setPartnerEmail('');
+    setPartnerMessage('');
   };
 
   return (
@@ -315,40 +329,22 @@ export default function InvestmentTab() {
           </div>
 
           <div className="space-y-4">
-            {[
-              {
-                title: "Annual East Africa Fiscal & Macro-Trends Analysis (2026)",
-                type: "Market Analysis",
-                size: "2.4 MB (PDF)",
-                desc: "Comparing currency movements, inflation profiles, and the subsequent trajectory of Central Bank primary rate adjustments."
-              },
-              {
-                title: "Emerging Agri-Horticulture Cold-Chain Logistics Report",
-                type: "Sector Report",
-                size: "1.8 MB (PDF)",
-                desc: "Analyzing export volume capabilities, logistical bottlenecks, and transport unit economics across Mt. Kenya hubs."
-              },
-              {
-                title: "Due Diligence Framework For Alternative Placements",
-                type: "Due Diligence Guide",
-                size: "950 KB (PDF)",
-                desc: "A systematic structural checklist to auditing off-market land holdings, developers, and agricultural export agreements."
-              }
-            ].map((insight, idx) => (
-              <div key={idx} className="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 hover:border-slate-300 transition">
+            {investmentInsights.map((insight) => (
+              <div key={insight.file} className="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 hover:border-slate-300 transition">
                 <div className="flex justify-between items-center text-[10px] font-bold font-mono">
                   <span className="text-violet-800 uppercase">{insight.type}</span>
-                  <span className="text-slate-400">{insight.size}</span>
+                  <span className="text-slate-400">PDF</span>
                 </div>
                 <h4 className="font-bold text-slate-950 text-xs leading-snug">{insight.title}</h4>
                 <p className="text-[10px] text-slate-500 leading-normal">{insight.desc}</p>
-                <button 
-                  onClick={() => handleDownload(insight.title)}
-                  className="text-[10px] font-bold text-violet-800 flex items-center gap-1 hover:text-violet-700 transition cursor-pointer pt-1"
+                <a
+                  href={insight.file}
+                  download
+                  className="text-[10px] font-bold text-violet-800 inline-flex items-center gap-1 hover:text-violet-700 transition cursor-pointer pt-1"
                 >
                   <Download className="w-3 h-3 text-violet-800" />
                   <span>Obtain Analysis</span>
-                </button>
+                </a>
               </div>
             ))}
           </div>
@@ -407,10 +403,16 @@ export default function InvestmentTab() {
           {formSuccess ? (
             <div className="bg-emerald-950 border border-emerald-900 p-6 rounded-xl text-center space-y-3 max-w-md mx-auto">
               <ShieldCheck className="w-10 h-10 text-emerald-400 mx-auto" />
-              <h4 className="text-base font-bold text-emerald-400">Mandate Request Received</h4>
+              <h4 className="text-base font-bold text-emerald-400">Inquiry Email Ready</h4>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Thank your for your interest. Jacob's portfolio desk has logged your financial mandate and will dispatch the relevant due diligence binders within 24 hours.
+                Your email app should have opened with the inquiry pre-filled — just press <strong>send</strong> and Jacob's portfolio desk will dispatch the relevant due diligence binders. If nothing opened, email <strong>{siteConfig.contact.wealthEmail}</strong> directly.
               </p>
+              <button
+                onClick={() => setFormSuccess(false)}
+                className="text-xs font-bold text-emerald-300 hover:text-emerald-200 transition cursor-pointer underline decoration-emerald-300/40"
+              >
+                Send Another Inquiry
+              </button>
             </div>
           ) : (
             <form onSubmit={handleInquirySubmit} className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs text-white">
@@ -491,17 +493,10 @@ export default function InvestmentTab() {
               <div className="sm:col-span-2 flex justify-center pt-2">
                 <button
                   type="submit"
-                  disabled={formLoading}
                   className="bg-violet-600 hover:bg-violet-500 text-white px-8 py-3 rounded-xl font-bold transition flex items-center gap-2 cursor-pointer shadow-md text-xs uppercase tracking-wider"
                 >
-                  {formLoading ? (
-                    <span>Logging mandate details...</span>
-                  ) : (
-                    <>
-                      <Send className="w-4 h-4 text-white" />
-                      <span>Transmit Partnership Inquiry</span>
-                    </>
-                  )}
+                  <Send className="w-4 h-4 text-white" />
+                  <span>Transmit Partnership Inquiry</span>
                 </button>
               </div>
 

@@ -4,7 +4,8 @@
  */
 
 import React, { useState, useMemo } from 'react';
-import { Calculator, Award, TrendingUp, DollarSign, ArrowRight, CornerDownRight, Percent, Calendar } from 'lucide-react';
+import { Calculator, Award, TrendingUp, Percent, Calendar } from 'lucide-react';
+import { formatKSh } from '../utils/format';
 
 export default function Calculators() {
   const [activeCalc, setActiveCalc] = useState<'compound' | 'bond'>('compound');
@@ -21,16 +22,6 @@ export default function Calculators() {
   const [bondCoupon, setBondCoupon] = useState<number>(16.5); // 16.5% standard for premium CBK issues
   const [bondTenure, setBondTenure] = useState<number>(10);
   const [bondType, setBondType] = useState<'infrastructure' | 'standard-long' | 'standard-short'>('infrastructure');
-
-  // --- Helpers to format Currency (KSh) ---
-  const formatKSh = (val: number) => {
-    return new Intl.NumberFormat('en-KE', {
-      style: 'currency',
-      currency: 'KES',
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0
-    }).format(val).replace('KES', 'KSh');
-  };
 
   // --- Compound Calculator Computations ---
   const compoundResults = useMemo(() => {

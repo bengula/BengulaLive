@@ -9,6 +9,17 @@ import Seo from '../seo';
 import { ServiceDetail } from '../types';
 import { servicesList } from '../data/servicesData';
 import { siteConfig } from '../data/siteConfig';
+import { openMailto } from '../utils/mailto';
+
+// Maps the iconName stored in servicesData to its lucide component.
+const serviceIcons: Record<string, React.ElementType> = {
+  Landmark,
+  Layers,
+  Shield,
+  Briefcase,
+  Sparkles,
+  BookOpen,
+};
 
 export default function ServicesTab() {
   const [selectedService, setSelectedService] = useState<string>('banking-finance-advisory');
@@ -17,7 +28,6 @@ export default function ServicesTab() {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [notes, setNotes] = useState('');
-  const [loading, setLoading] = useState(false);
   const [bookingResult, setBookingResult] = useState<{ success: boolean; id?: string } | null>(null);
   const [errorMsg, setErrorMsg] = useState('');
 
@@ -36,8 +46,7 @@ export default function ServicesTab() {
     const svcTitle = services.find(s => s.id === selectedService)?.title || selectedService;
     const ref = "BNG-" + Math.random().toString(36).slice(2, 8).toUpperCase();
 
-    const subject = `Consultation request — ${svcTitle} [${ref}]`;
-    const body = [
+    openMailto(siteConfig.contact.wealthEmail, `Consultation request — ${svcTitle} [${ref}]`, [
       `Hello Jacob,`,
       ``,
       `I'd like to book a consultation. Details below:`,
@@ -53,15 +62,7 @@ export default function ServicesTab() {
       notes || "(none provided)",
       ``,
       `Sent from bengula.co.ke`,
-    ].join("\n");
-
-    const mailto =
-      `mailto:${siteConfig.contact.wealthEmail}` +
-      `?subject=${encodeURIComponent(subject)}` +
-      `&body=${encodeURIComponent(body)}`;
-
-    // Trigger the user's email client.
-    window.location.href = mailto;
+    ]);
 
     setBookingResult({ success: true, id: ref });
     setName('');
@@ -93,7 +94,9 @@ export default function ServicesTab() {
 
         {/* Vertical Service list buttons */}
         <div className="space-y-3">
-          {services.map((svc) => (
+          {services.map((svc) => {
+            const SvcIcon = serviceIcons[svc.iconName] ?? Briefcase;
+            return (
             <button
               key={svc.id}
               onClick={() => {
@@ -109,12 +112,7 @@ export default function ServicesTab() {
               <div className={`p-2 rounded-lg shrink-0 ${
                 selectedService === svc.id ? 'bg-violet-800 text-white shadow-xs' : 'bg-slate-100 text-slate-500'
               }`}>
-                {svc.iconName === "Landmark" && <Landmark className="w-5 h-5" />}
-                {svc.iconName === "Layers" && <Layers className="w-5 h-5" />}
-                {svc.iconName === "Shield" && <Shield className="w-5 h-5" />}
-                {svc.iconName === "Briefcase" && <Briefcase className="w-5 h-5" />}
-                {svc.iconName === "Sparkles" && <Sparkles className="w-5 h-5" />}
-                {svc.iconName === "BookOpen" && <BookOpen className="w-5 h-5" />}
+                <SvcIcon className="w-5 h-5" />
               </div>
               <div className="flex-1 min-w-0">
                 <p className="font-bold text-sm text-slate-800 group-hover:text-violet-800 transition-colors">{svc.title}</p>
@@ -122,7 +120,8 @@ export default function ServicesTab() {
               </div>
               <ArrowRight className={`w-4 h-4 shrink-0 transition-transform ${selectedService === svc.id ? 'translate-x-1 text-violet-800' : 'text-slate-400'}`} />
             </button>
-          ))}
+            );
+          })}
         </div>
 
         {/* Detailed Service Inspection Card */}
@@ -332,19 +331,10 @@ export default function ServicesTab() {
             <button
               id="submit-booking-form"
               type="submit"
-              disabled={loading}
-              className={`w-full py-3 px-4 rounded-xl font-bold text-sm text-white bg-violet-800 hover:bg-violet-700 transition duration-300 flex items-center justify-center gap-2 cursor-pointer shadow-md ${
-                loading ? 'opacity-80 cursor-wait' : ''
-              }`}
+              className="w-full py-3 px-4 rounded-xl font-bold text-sm text-white bg-violet-800 hover:bg-violet-700 transition duration-300 flex items-center justify-center gap-2 cursor-pointer shadow-md"
             >
-              {loading ? (
-                <span>Registering details ...</span>
-              ) : (
-                <>
-                  <Send className="w-4 h-4" />
-                  <span>Secure Strategic Consultation Slot</span>
-                </>
-              )}
+              <Send className="w-4 h-4" />
+              <span>Secure Strategic Consultation Slot</span>
             </button>
           </form>
         )}

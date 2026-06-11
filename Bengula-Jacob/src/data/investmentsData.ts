@@ -22,7 +22,7 @@ export const investmentPoolsList: InvestmentOpportunity[] = [
     id: "business-partnership",
     title: "Agri-Export Supply-Chain Logistics Pool",
     riskProfile: "Moderate",
-    minimumAmount: 1000005,
+    minimumAmount: 1000000,
     expectedYield: 18.5,
     tenure: "18 Months (Rolling)",
     category: "Business Partnerships",

@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * Central site configuration — contact details, socials, and brand info.
- * ⚠️ REPLACE the placeholder values below with Jacob's real details.
  * Everything that displays a contact point reads from here.
  */
 
@@ -46,9 +45,6 @@ export const siteConfig = {
     ] as { key: string; name: string; promise: string; blurb: string }[],
   },
 
-  // ──────────────────────────────────────────────────────────────
-  // TODO: replace these placeholders with real, public contact info.
-  // ──────────────────────────────────────────────────────────────
   contact: {
     email: "business@bengula.co.ke",      // primary public inbox (shown on Contact page + footer)
     workEmail: "business@bengula.co.ke",  // where general inquiries are routed

@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import Seo from '../seo';
 import { portfolioItemsList } from '../data/portfolioData';
 import { categoryBadgeStyles, portfolioCategoryFilters, portfolioItemTags, type PortfolioCategory, type PortfolioCategoryFilter, riskBadgeStyles } from '../data/portfolioTags';
-import { Award, Layers, TrendingUp, Building, Code2, MapPin, Calendar, Compass, ArrowUpRight, HelpCircle } from 'lucide-react';
+import { Award, Layers, TrendingUp, MapPin, Calendar, ArrowUpRight } from 'lucide-react';
 
 export default function PortfolioTab() {
   const navigate = useNavigate();
@@ -151,10 +151,7 @@ export default function PortfolioTab() {
       <div className="bg-violet-50/70 rounded-xl p-4 border border-violet-100 text-xs text-violet-950 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xs">
         <span className="font-semibold text-center sm:text-left">To plan a growth engagement, banking introduction, or co-investment with the Bengula Inc desk:</span>
         <button
-          onClick={() => {
-            const btn = document.getElementById('nav-btn-services');
-            if (btn) btn.click();
-          }}
+          onClick={() => navigate('/services')}
           className="bg-violet-800 hover:bg-violet-700 text-white py-2 px-4 rounded-xl font-bold text-[11px] shrink-0 transition-all uppercase tracking-wider cursor-pointer shadow-xs"
         >
           Book Strategic Briefing

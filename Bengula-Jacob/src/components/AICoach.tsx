@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useEffect, useRef } from 'react';
-import { User, Send, Bot, Sparkles, AlertCircle, RefreshCw, Layers, CheckCircle2, UserCircle } from 'lucide-react';
+import { User, Send, Bot, Sparkles, RefreshCw, CheckCircle2 } from 'lucide-react';
 import { ChatMessage, UserFinanceProfile } from '../types';
 import { getCoachReply } from '../data/coachKnowledge';
 import { images } from '../data/media';
@@ -25,7 +25,6 @@ export default function AICoach() {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [inputText, setInputText] = useState('');
   const [loading, setLoading] = useState(false);
-  const [errorText, setErrorText] = useState('');
 
   const chatEndRef = useRef<HTMLDivElement>(null);
 
@@ -74,7 +73,6 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
     setMessages(prev => [...prev, userMsg]);
     setInputText('');
     setLoading(true);
-    setErrorText('');
 
     // Offline, fully client-side responder — no API key or backend required.
     const replyText = getCoachReply(query, {
@@ -298,7 +296,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
       </div>
 
       {/* Main chat window */}
-      <div className="lg:col-span-8 glass-strong rounded-2xl h-[480px] flex flex-col justify-between overflow-hidden relative">
+      <div className="lg:col-span-8 glass-strong rounded-2xl h-[480px] md:h-[560px] flex flex-col justify-between overflow-hidden relative">
         {/* Chat Title bar */}
         <div className="bg-slate-50 border-b border-slate-200 p-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
@@ -353,16 +351,6 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
                 <span className="w-1.5 h-1.5 bg-violet-800 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></span>
                 <span className="w-1.5 h-1.5 bg-violet-800 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></span>
                 <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-widest">Mapping Portfolios...</span>
-              </div>
-            </div>
-          )}
-
-          {errorText && (
-            <div className="bg-red-50 border border-red-200 text-red-800 p-3.5 rounded-xl text-xs flex gap-2 items-start max-w-sm mx-auto shadow-xs font-semibold">
-              <AlertCircle className="w-4.5 h-4.5 shrink-0 text-red-600" />
-              <div className="space-y-0.5">
-                <p className="font-bold text-red-950">Analysis interruption</p>
-                <p className="text-slate-500 text-[10px]">{errorText}</p>
               </div>
             </div>
           )}

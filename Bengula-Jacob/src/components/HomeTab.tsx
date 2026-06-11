@@ -25,6 +25,7 @@ import FAQ from './FAQ';
 import Seo from '../seo';
 import { siteConfig } from '../data/siteConfig';
 import { keyRates } from '../data/cbkRates';
+import { openMailto } from '../utils/mailto';
 
 export default function HomeTab() {
   const navigate = useNavigate();
@@ -34,17 +35,11 @@ export default function HomeTab() {
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const subject = 'Newsletter signup - The Sovereign Ledger';
-    const body = [
+    openMailto(siteConfig.contact.wealthEmail, 'Newsletter signup - The Sovereign Ledger', [
       'Please add me to The Sovereign Ledger newsletter.',
       '',
       `Email: ${newsletterEmail}`,
-    ].join('\n');
-
-    window.location.href =
-      `mailto:${siteConfig.contact.wealthEmail}` +
-      `?subject=${encodeURIComponent(subject)}` +
-      `&body=${encodeURIComponent(body)}`;
+    ]);
 
     setNewsletterSuccess(true);
     setNewsletterEmail('');
