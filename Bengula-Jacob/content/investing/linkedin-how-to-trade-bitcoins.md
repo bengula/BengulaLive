@@ -9,7 +9,10 @@ author:
   avatar: /images/jacob.jpg
 date: May 3, 2026
 readTime: 9 min read
+coverImage: https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
+
+![Physical Bitcoin, Ethereum, and Ripple tokens on a dark background](https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1200 "A market that never sleeps gives you more chances to act — and more chances to overtrade. Photo: Pexels")
 
 ### Start with the uncomfortable truth
 

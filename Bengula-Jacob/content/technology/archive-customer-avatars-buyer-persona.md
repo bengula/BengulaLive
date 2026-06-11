@@ -9,7 +9,10 @@ author:
   avatar: /images/jacob.jpg
 date: June 9, 2022
 readTime: 8 min read
+coverImage: https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
+
+![A customer profile document and analytics charts next to a laptop](https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=1200 "A buyer persona is not a fictional character for decoration — it is a working document that makes the business more specific. Photo: Pexels")
 
 ### Why customer avatars still matter
 

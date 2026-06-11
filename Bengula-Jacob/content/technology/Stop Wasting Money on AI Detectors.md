@@ -9,8 +9,11 @@ author:
   avatar: /images/jacob.jpg
 date: June 6, 2026
 readTime: 10 min
+coverImage: https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 _This article was first written in 2024 on [LinkedIn](https://www.linkedin.com/pulse/stop-wasting-money-ai-detectors-random-guesses-bengula-inc-5mwef/?trackingId=2BdTdrEW7INUM1zQhYHc0A%3D%3D). This version has been expanded with additional research and updated examples._
+
+![A robotic hand reaching toward a glowing network of connected nodes](https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1200 "Detectors do not see authorship — they see statistical patterns, and patterns can mislead. Photo: Pexels")
 
 Artificial intelligence is now part of ordinary writing, research, coding, education, marketing, and office work. Students use it to brainstorm assignments. Researchers use it to organise literature and draft sections. Businesses use it to generate product descriptions, emails, reports, and customer support content. The concern about undisclosed AI use is legitimate.
 

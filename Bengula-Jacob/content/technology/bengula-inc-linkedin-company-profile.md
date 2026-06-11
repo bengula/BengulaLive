@@ -9,7 +9,10 @@ author:
   avatar: /images/jacob.jpg
 date: June 2026
 readTime: 7 min read
+coverImage: https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
+
+![A team working around a table covered with laptops, tablets, and data dashboards](https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200 "The core thesis: businesses that collect data, analyse it, and act on it online are the ones that grow. Photo: Pexels")
 
 ### Bengula Inc on LinkedIn
 

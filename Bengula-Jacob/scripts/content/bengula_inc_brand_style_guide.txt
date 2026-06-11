@@ -1,28 +1,127 @@
 :file: bengula_inc_brand_style_guide.pdf
-:title: Bengula Inc Brand Style Guide
-:subtitle: A concise visual and verbal system for research PDFs, social posts, pitch decks, articles, proposals, and client-facing marketing material.
+:title: Bengula Inc Brand & Editorial Style Guide
+:subtitle: A concise visual, verbal, and editorial system for research PDFs, articles, social posts, pitch decks, proposals, and client-facing marketing material.
+:summary: The Bengula Inc brand should feel sharp, trustworthy, financially literate, and human: advisory enough for boardrooms, warm enough for entrepreneurs, and visually consistent across web, PDF, slide, and social formats. Every piece of content should reduce uncertainty for the reader.
 :tag: Brand Guide
-:summary: The Bengula Inc brand should feel sharp, trustworthy, financially literate, and human: advisory enough for boardrooms, warm enough for entrepreneurs, and visually consistent across web, PDF, slide, and social formats.
 :sources:
-:sourcenote: This internal brand guide is derived from the current Bengula Inc website, logo assets, resource-library styling, and stated brand positioning.
+:sourcenote: This internal brand guide is derived from the current Bengula Inc website, logo assets, resource-library styling, stated brand positioning, and the Bengula Editorial Style Guide v1.0.
 :internal: true
-:date: 9 June 2026
+:date: 11 June 2026
 
 ## Brand Position
 
-Bengula Inc helps East African businesses grow by combining data-driven
-digital visibility with finance and banking advisory. The brand voice
-should make complex money, trade, and growth decisions feel understandable
-without making them feel simplistic.
+Bengula Inc is a decision-intelligence and advisory platform focused on
+finance, technology, business growth, trade, and economic systems in East
+Africa. It helps businesses, investors, and professionals make better
+decisions by combining finance, technology, and strategic analysis into
+practical guidance. The brand voice should make complex money, trade, and
+growth decisions feel understandable without making them feel simplistic.
+
+The Bengula Research Desk explains the systems, incentives, and risks
+behind business, finance, technology, and economic change so readers can
+act with greater confidence.
 
 [table widths=42,128]
 Element | Guidance
 Core promise | Practical clarity for business growth, capital access, and investment decisions.
-Tone | Clear, composed, precise, optimistic, and evidence-led.
-Avoid | Guaranteed-return language, hype, excessive luxury cues, jargon without explanation, and overly casual finance claims.
+Tone | Clear, composed, precise, optimistic, and evidence-led. A trusted analyst, not a salesperson.
+Avoid | Guaranteed-return language, hype, secrets, sensationalism, excessive luxury cues, jargon without explanation, and overly casual finance claims.
 Signature line | Adding meaning to life.
-Audience | Kenyan and East African SMEs, professionals, investors, founders, cooperatives, and diaspora clients.
+Audience | Kenyan and East African SMEs, founders, professionals, investors, cooperatives, diaspora clients, and decision makers seeking evidence-led guidance.
 [/table]
+
+## Editorial North Star
+
+Every piece of content should reduce uncertainty for the reader. Readers
+should leave knowing what matters, what risks exist, and what actions are
+available. Content that informs without helping the reader decide is not
+finished.
+
+> positive: The test of any Bengula asset is simple: did it move the
+> reader from information to a clearer decision?
+
+## Voice & Tone Mix
+
+Bengula writing blends five registers in deliberate proportion. The mix
+keeps analysis at the centre and promotion at the margin.
+
+[table widths=36,24,110]
+Register | Weight | What it sounds like
+Analytical | 35% | Explains causes, mechanisms, incentives, and trade-offs with evidence.
+Practical | 30% | Converts analysis into steps, checklists, thresholds, and next actions.
+Educational | 20% | Defines terms plainly and builds the reader's mental model.
+Strategic | 10% | Connects today's facts to long-term positioning and second-order effects.
+Promotional | 5% | Points to Bengula services only where they genuinely fit the reader's need.
+[/table]
+
+## Editorial Principles
+
+- Clarity over complexity: simplify the language, never the thinking.
+- Evidence over opinion: claims carry data, sources, or worked numbers.
+- Insight over information: reveal something non-obvious, not a news recap.
+- Long-term thinking over short-term reactions.
+- Explain systems, not just events: show why things happen, not only that they happened.
+
+## Article Structure
+
+Long-form articles and research PDFs follow a six-part arc:
+
+1. Hook: a sharp opening fact, tension, or question that earns attention.
+2. Context: what the reader needs to know to follow the analysis.
+3. Analysis: the mechanism — causes, incentives, and evidence.
+4. Implications: what this means for the reader's money, business, or strategy.
+5. Recommendations: concrete, prioritised actions with their trade-offs.
+6. Conclusion: tie back to the reader's goals; one memorable takeaway.
+
+## The Bengula Lens
+
+Every article examines its subject through the same analytical lens.
+Before publishing, check that the piece has addressed each angle.
+
+[cards]
+Incentives :: Who gains, who pays, and what behaviour does the structure reward?
+Constraints :: What limits the actors involved — capital, regulation, liquidity, infrastructure, execution capacity?
+Risks :: What can go wrong, how likely is it, and who carries the loss when it does?
+Opportunities :: Where does the change create openings for readers positioned to act?
+Trade-offs :: What does each course of action cost, and what is given up by choosing it?
+[/cards]
+
+## Signature Sections
+
+Recurring, named sections make Bengula content recognisable and easy to
+scan. Use them consistently across articles, PDFs, and decks.
+
+[cards]
+Key Insight :: The single non-obvious conclusion of the piece, stated early and plainly.
+Risk Factors :: An honest list of what can go wrong, with severity and likelihood where possible.
+Decision Framework :: A short checklist or table the reader can apply to their own situation.
+Bengula View :: The desk's position — what we would weigh most heavily, and why.
+[/cards]
+
+## Brand Vocabulary
+
+[table widths=30,140]
+Direction | Words
+Use | Evidence, capital, growth, liquidity, resilience, incentives, infrastructure, systems, execution, risk, opportunity, strategy.
+Avoid | Hype, secrets, guaranteed returns, get-rich language, sensationalism, fear-bait, and urgency theatrics.
+[/table]
+
+- Say: Target return depends on execution, liquidity, and documented risk controls.
+- Say: We help clients understand the evidence, risks, and next steps before capital moves.
+
+## The Publication Test
+
+Before any asset ships, it must pass four questions. If the answer to any
+is no, the piece goes back for another pass.
+
+1. Does it reveal something non-obvious?
+2. Does it explain causes rather than symptoms?
+3. Does it help readers make better decisions?
+4. Does it connect information to action?
+
+> risk: Content that fails the test but ships anyway erodes the advisory
+> positioning the brand depends on. When in doubt, cut the piece, not the
+> standard.
 
 ## Color System
 
@@ -80,10 +179,8 @@ Fallback | Helvetica | Use where platform compatibility matters more than charac
 - Headlines should be confident and plain, not slogan-heavy.
 - Tables should use smaller type only when spacing remains comfortable.
 
-## Layout And Voice Rules
+## Layout Rules
 
-- Use generous white space and clean section hierarchy before adding decoration.
+- Use generous white space and a strong typographic hierarchy before adding decoration.
 - Use tables only for true comparisons, checklists, or data. Use prose for explanation.
-- Every marketing PDF should include a cover, executive summary, practical framework, source list, and compliance note.
-- Say: Target return depends on execution, liquidity, and documented risk controls.
-- Say: We help clients understand the evidence, risks, and next steps before capital moves.
+- Advisory-grade presentation: every marketing PDF includes a cover, executive summary, practical framework, source list, and compliance note.

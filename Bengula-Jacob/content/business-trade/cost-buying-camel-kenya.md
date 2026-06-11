@@ -12,6 +12,8 @@ readTime: 8 min read
 coverImage: https://images.pexels.com/photos/13365866/pexels-photo-13365866.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
+![A caravan of camels in northern Kenya](https://images.pexels.com/photos/13365866/pexels-photo-13365866.jpeg?auto=compress&cs=tinysrgb&w=1200 "Camels are transport, milk, meat, and increasingly a commercial livestock investment in Kenya's arid counties. Photo: Twilight Kenya, Pexels")
+
 If you are asking **how much a camel costs in Kenya**, the useful answer is not one number. A young calf may cost about **KSh 12,000 to KSh 60,000**, while mature camels commonly fall around **KSh 65,000 to KSh 110,000** depending on age, sex, breed, condition, location, and training.
 
 Camels are important livestock in Kenya's arid and semi-arid lands, especially among pastoralist communities in northern and northeastern Kenya. They are used for transport, milk, meat, breeding, cultural functions, and increasingly, commercial livestock investment.

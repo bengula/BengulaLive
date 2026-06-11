@@ -27,13 +27,14 @@ S = brand.STYLES
 
 
 class CoverBlock(Flowable):
-    def __init__(self, title, subtitle, tag, summary, as_of):
+    def __init__(self, title, subtitle, tag, summary, as_of, internal=False):
         super().__init__()
         self.title = title
         self.subtitle = subtitle
         self.tag = tag
         self.summary = summary
         self.as_of = as_of
+        self.internal = internal
         self.width = 178 * mm
         self.height = 246 * mm
 
@@ -111,7 +112,8 @@ class CoverBlock(Flowable):
 
         c.setFillColor(brand.MUTED)
         c.setFont(brand.SANS, 8)
-        meta = [("Brand", "Bengula Inc"), ("Prepared", self.as_of), ("Use", "Client education"), ("Status", "Public download")]
+        use, status = ("Team reference", "Internal only") if self.internal else ("Client education", "Public download")
+        meta = [("Brand", "Bengula Inc"), ("Prepared", self.as_of), ("Use", use), ("Status", status)]
         for i, (k, v) in enumerate(meta):
             x = i * 45 * mm
             c.setFont(brand.SANS_BOLD, 7)

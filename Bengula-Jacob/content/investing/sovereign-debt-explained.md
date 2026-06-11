@@ -8,7 +8,10 @@ author:
   role: Relationship Manager & Founder of Bengula Inc.
 date: February 15, 2026
 readTime: 8 min read
+coverImage: https://images.pexels.com/photos/7821487/pexels-photo-7821487.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
+
+![A man reading a book on the fundamentals of financial planning](https://images.pexels.com/photos/7821487/pexels-photo-7821487.jpeg?auto=compress&cs=tinysrgb&w=1200 "Lending to government through Treasury Bills and Bonds is one of the most overlooked tools in personal financial planning. Photo: Pexels")
 
 ### Introduction
 

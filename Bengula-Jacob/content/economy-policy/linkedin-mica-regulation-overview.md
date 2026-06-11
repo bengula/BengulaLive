@@ -9,7 +9,10 @@ author:
   avatar: /images/jacob.jpg
 date: May 3, 2026
 readTime: 8 min read
+coverImage: https://images.pexels.com/photos/113885/pexels-photo-113885.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
+
+![The circle of yellow stars of the European Union flag on a blue background](https://images.pexels.com/photos/113885/pexels-photo-113885.jpeg?auto=compress&cs=tinysrgb&w=1200 "MiCA moves crypto-assets from a national patchwork into one harmonised EU rulebook — and the rest of the world is watching. Photo: Pexels")
 
 ### Why MiCA matters beyond Europe
 
