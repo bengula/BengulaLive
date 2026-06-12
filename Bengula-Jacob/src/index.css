@@ -279,9 +279,8 @@ body {
 .deck-card.is-top {
   cursor: pointer;
 }
-.deck-card:not(.is-top) .deck-face > * {
-  opacity: 0;
-}
+/* Cards beneath the top one sit face down, so they all show the same
+   patterned card back — exactly like a real deck. */
 .deck-card-inner {
   /* Stack both faces in one cell too, so each card sizes to its taller face. */
   display: grid;
@@ -301,6 +300,120 @@ body {
 }
 .deck-face-back {
   transform: rotateY(180deg);
+}
+
+/* ── Deck faces: playing-card back + old-book page ──────────────────
+   Face-down side imitates an ordinary playing-card back: a pale card-
+   stock border around a deep violet panel with a woven diamond lattice
+   and a central monogram medallion. */
+.card-back {
+  display: flex;
+  padding: 12px;
+  background: #f7f1e1;
+  box-shadow:
+    inset 0 0 0 1px rgba(120, 90, 50, 0.18),
+    0 16px 36px -14px rgba(34, 16, 78, 0.5);
+}
+.card-back-panel {
+  flex: 1;
+  position: relative;
+  min-height: 16rem;
+  border-radius: 0.55rem;
+  border: 1px solid rgba(247, 241, 225, 0.5);
+  background-color: #44217b;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.28) 1px, transparent 1.8px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.14) 1px, transparent 1.8px),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.12) 0 1px, transparent 1px 11px),
+    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.12) 0 1px, transparent 1px 11px);
+  background-size: 22px 22px, 22px 22px, auto, auto;
+  background-position: 0 0, 11px 11px, 0 0, 0 0;
+  box-shadow:
+    inset 0 0 0 3px rgba(247, 241, 225, 0.14),
+    inset 0 0 48px rgba(18, 6, 48, 0.55);
+}
+.card-back-medallion {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+.card-back-medallion > span {
+  display: grid;
+  place-items: center;
+  width: 5.25rem;
+  height: 6.75rem;
+  border-radius: 50%;
+  background: #f7f1e1;
+  border: 4px double rgba(68, 33, 123, 0.85);
+  box-shadow:
+    0 0 0 5px rgba(247, 241, 225, 0.22),
+    0 6px 18px rgba(18, 6, 48, 0.45);
+  color: #44217b;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Revealed side: set like a page from an old book, in Charter. */
+.font-charter {
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', 'Iowan Old Style',
+    Cambria, Georgia, 'Times New Roman', serif;
+}
+.book-page {
+  position: relative;
+  color: #2e2a21;
+  background-color: #f7f1e1;
+  /* Warm tonal drift so the paper reads aged rather than flat. */
+  background-image:
+    radial-gradient(ellipse at 15% 6%, rgba(186, 152, 96, 0.14), transparent 55%),
+    radial-gradient(ellipse at 88% 96%, rgba(146, 108, 58, 0.16), transparent 52%);
+  box-shadow:
+    inset 0 0 64px rgba(150, 114, 62, 0.22),
+    0 16px 36px -14px rgba(63, 44, 14, 0.4);
+}
+.book-page::before {
+  /* Double hairline frame, like a printer's plate border. */
+  content: '';
+  position: absolute;
+  inset: 11px;
+  border: 1px solid rgba(150, 112, 58, 0.5);
+  outline: 1px solid rgba(150, 112, 58, 0.24);
+  outline-offset: 3px;
+  border-radius: 0.4rem;
+  pointer-events: none;
+}
+.book-page-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: #9a7434;
+}
+.book-page-tag::before,
+.book-page-tag::after {
+  content: '';
+  height: 1px;
+  width: 2.25rem;
+  background: rgba(154, 116, 52, 0.55);
+}
+.book-page-body {
+  text-align: justify;
+  hyphens: auto;
+  color: #3a3428;
+}
+.book-page-body::first-letter {
+  /* Drop cap, in the specimen's warm tan. */
+  float: left;
+  font-size: 3em;
+  line-height: 0.82;
+  padding: 0.06em 0.12em 0 0;
+  font-weight: 700;
+  color: #9a7434;
 }
 
 /* ── Respect users who prefer reduced motion ────────────────────── */
