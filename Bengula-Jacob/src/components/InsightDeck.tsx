@@ -15,57 +15,23 @@ import {
   ShieldCheck,
   TrendingUp,
   Sprout,
+  HelpCircle,
 } from 'lucide-react';
+import { allInsights } from '../data/insights';
+import { renderInlineMarkdown } from '../utils/markdownText';
 
-type Insight = {
-  tag: string;
-  title: string;
-  body: string;
-  icon: React.ElementType;
+const insightIcons: Record<string, React.ElementType> = {
+  Landmark,
+  Percent,
+  PiggyBank,
+  ShieldCheck,
+  TrendingUp,
+  Sprout,
 };
 
-const INSIGHTS: Insight[] = [
-  {
-    tag: 'Sovereign Debt',
-    title: 'Infrastructure Bonds Pay Tax-Free',
-    body: 'Unlike most treasury bonds, CBK infrastructure bonds are exempt from the 10–15% withholding tax — so their coupon is effectively a higher real yield than the headline suggests.',
-    icon: Landmark,
-  },
-  {
-    tag: 'Borrowing',
-    title: 'APR Is Not the Interest Rate',
-    body: 'The APR folds in negotiation fees, service charges, excise duty and credit-life insurance. Two loans at the same 13% rate can have very different true costs — always compare APR.',
-    icon: Percent,
-  },
-  {
-    tag: 'Saving',
-    title: 'MMFs Compound the Boring Way',
-    body: 'A Kenyan money-market fund yielding ~13% with daily compounding quietly outpaces most "high-return" schemes — because consistency, not excitement, is what builds the balance.',
-    icon: PiggyBank,
-  },
-  {
-    tag: 'Access',
-    title: 'You Can Open a CDS Online',
-    body: 'DhowCSD lets you open a Central Bank CDS account and bid for T-bills and bonds straight from your phone — no broker, minimum bids from KSh 50,000.',
-    icon: ShieldCheck,
-  },
-  {
-    tag: 'Strategy',
-    title: 'Ladder Your Tenors',
-    body: 'Splitting capital across 91-day, 1-year and longer instruments keeps cash maturing regularly while still capturing the higher yields further out the curve.',
-    icon: TrendingUp,
-  },
-  {
-    tag: 'Mindset',
-    title: "You Can't Save Your Way Out of Poverty",
-    body: 'Saving protects what you already earn; it rarely multiplies it. Lasting wealth comes from growing your income and putting capital to work — a business, investments, yield-bearing assets — not from cutting expenses alone.',
-    icon: Sprout,
-  },
-];
-
 export default function InsightDeck() {
-  // `order` holds indices into INSIGHTS; order[0] is the visible top card.
-  const [order, setOrder] = useState(() => INSIGHTS.map((_, i) => i));
+  // `order` holds indices into allInsights; order[0] is the visible top card.
+  const [order, setOrder] = useState(() => allInsights.map((_, i) => i));
   const [flipped, setFlipped] = useState(false);
   const [animating, setAnimating] = useState(false);
 
@@ -93,8 +59,8 @@ export default function InsightDeck() {
     <div className="flex w-full max-w-[34rem] flex-col items-center gap-5">
       <div className="deck relative w-full pb-14">
         {order.map((cardIndex, depth) => {
-          const insight = INSIGHTS[cardIndex];
-          const Icon = insight.icon;
+          const insight = allInsights[cardIndex];
+          const Icon = insightIcons[insight.iconName] || HelpCircle;
           const isTop = depth === 0;
 
           return (
@@ -147,7 +113,7 @@ export default function InsightDeck() {
                     {insight.title}
                   </h4>
                   <p className="book-page-body text-[15px] sm:text-base leading-relaxed">
-                    {insight.body}
+                    {renderInlineMarkdown(insight.body, "font-bold text-[#241f14]")}
                   </p>
                   <span className="mt-auto flex flex-col items-center gap-1 pt-1">
                     <Icon className="h-4 w-4 text-[#9a7434]" aria-hidden="true" />

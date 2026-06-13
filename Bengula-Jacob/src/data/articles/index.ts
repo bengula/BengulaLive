@@ -24,11 +24,14 @@ import { BlogPost } from "../../types";
 // The negative pattern excludes underscore-prefixed files (e.g. _TEMPLATE.md)
 // so the template is never bundled or loaded. Touch this file when adding a
 // brand-new article during local dev if Vite has a stale glob cache.
-const rawFiles = import.meta.glob(["/content/**/*.md", "!/content/**/_*.md"], {
-  eager: true,
-  query: "?raw",
-  import: "default",
-}) as Record<string, string>;
+const rawFiles = import.meta.glob(
+  ["/content/**/*.md", "!/content/**/_*.md", "!/content/insights/**/*.md"],
+  {
+    eager: true,
+    query: "?raw",
+    import: "default",
+  }
+) as Record<string, string>;
 
 const FRONTMATTER = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/;
 
