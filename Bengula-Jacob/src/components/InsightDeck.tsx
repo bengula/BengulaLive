@@ -101,7 +101,13 @@ export default function InsightDeck() {
                 <div className="deck-face card-back" aria-hidden="true">
                   <div className="card-back-panel">
                     <div className="card-back-medallion">
-                      <span className="font-charter">B</span>
+                      <div className="card-back-disc">
+                        <img
+                          src="/images/WhiteBengulaIncLogo.png"
+                          alt=""
+                          className="card-back-logo"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -1,12 +1,12 @@
 :file: bengula_inc_brand_style_guide.pdf
 :title: Bengula Inc Brand & Editorial Style Guide
-:subtitle: A concise visual, verbal, and editorial system for research PDFs, articles, social posts, pitch decks, proposals, and client-facing marketing material.
-:summary: The Bengula Inc brand should feel sharp, trustworthy, financially literate, and human: advisory enough for boardrooms, warm enough for entrepreneurs, and visually consistent across web, PDF, slide, and social formats. Every piece of content should reduce uncertainty for the reader.
+:subtitle: A practical visual, verbal, and editorial system for research PDFs, articles, social posts, pitch decks, proposals, and client-facing marketing material.
+:summary: The Bengula Inc brand should feel sharp, trustworthy, financially literate, and human: advisory enough for boardrooms, warm enough for entrepreneurs, and visually consistent across web, PDF, slide, and social formats. Every piece of content should reduce uncertainty for the reader while making evidence, assumptions, and expert judgment clear.
 :tag: Brand Guide
 :sources:
-:sourcenote: This internal brand guide is derived from the current Bengula Inc website, logo assets, resource-library styling, stated brand positioning, and the Bengula Editorial Style Guide v1.0.
+:sourcenote: This internal brand guide is derived from the current Bengula Inc website, logo assets, resource-library styling, stated brand positioning, the Bengula Editorial Style Guide v1.0, and common editorial standards used in advisory, financial education, and research publishing.
 :internal: true
-:date: 11 June 2026
+:date: 13 June 2026
 
 ## Brand Position
 
@@ -61,6 +61,167 @@ Promotional | 5% | Points to Bengula services only where they genuinely fit the 
 - Insight over information: reveal something non-obvious, not a news recap.
 - Long-term thinking over short-term reactions.
 - Explain systems, not just events: show why things happen, not only that they happened.
+- Transparency over false certainty: separate facts, estimates, assumptions, and judgment.
+- Reader usefulness over completeness: include what helps a decision, and point to what remains unknown.
+
+## Editorial Standards
+
+Bengula content should meet the standard of professional financial education
+and advisory publishing. It should be accurate, fair, current, useful, and
+clear about its limits. Writers may have a point of view, but the point of
+view must be earned by evidence, domain experience, or a stated analytical
+framework.
+
+[table widths=38,132]
+Standard | Requirement
+Accuracy | Verify names, dates, figures, regulations, rates, formulas, and definitions before publication.
+Attribution | Credit original sources for data, quotations, charts, claims, and specialist insights.
+Independence | Do not let a commercial interest, client relationship, or desired conclusion distort the analysis.
+Fairness | Represent material risks, counterarguments, and alternative interpretations, especially on investment or policy topics.
+Freshness | Date-sensitive content must state the effective date or "as at" date of the information.
+Usefulness | End with implications, decision criteria, or practical next steps for the target reader.
+[/table]
+
+> info: Bengula can be opinionated, but it should never be casual with
+> accuracy. A confident voice is strongest when the evidence trail is visible.
+
+## Evidence And Sourcing
+
+Use primary sources wherever possible: regulator notices, official statistics,
+audited financial statements, product documents, prospectuses, exchange
+filings, government publications, court or policy documents, and direct
+interviews. Secondary sources can support context, but they should not carry a
+major conclusion unless the primary source is unavailable.
+
+[table widths=38,132]
+Evidence type | Editorial treatment
+Official data | Treat as preferred evidence, but check date, coverage, methodology, and revision history.
+Company or product material | Use for stated terms and positioning; verify performance, risk, and market claims independently where possible.
+News reporting | Use for chronology and reported statements; avoid building technical conclusions on a single article.
+Interviews and expert input | Identify the expertise, role, and perspective of the source. Record what is fact, interpretation, and recommendation.
+Market observations | Label as observation or field intelligence unless supported by a documented dataset.
+Estimates and models | Show the assumptions, formula, range, and sensitivity where the result affects a reader decision.
+[/table]
+
+- Prefer links or source names that allow a reader or editor to retrace the claim.
+- Avoid anonymous sourcing unless the information is important, credible, and cannot reasonably be obtained another way.
+- Do not cite a source for a claim it does not actually support.
+- When sources conflict, state the conflict and explain which source carries more weight.
+- For charts and tables, include the source, period covered, unit of measurement, and calculation method.
+
+## Scarce Data And Expert Judgment
+
+Some East African business, credit, trade, agriculture, private-market, and
+SME topics will not have complete public datasets. Bengula should still serve
+readers in those areas, provided the article is transparent about the evidence
+level and gives domain experts room to add informed interpretation.
+
+[table widths=36,44,90]
+Confidence level | Label | How to write it
+High | Documented | Multiple reliable sources or one authoritative primary source support the claim.
+Medium | Supported estimate | Partial data, comparable benchmarks, or a model support the conclusion; assumptions are stated.
+Low | Expert judgment | Public data is limited; the view is based on domain experience, interviews, field observation, or professional reasoning.
+Unknown | Open question | The evidence is insufficient; explain what data would change the view.
+[/table]
+
+Domain expert editors may add their touch through context, judgment, and
+practical interpretation when little data is available. Their additions should
+make the piece more useful without pretending that expert judgment is the same
+as measured fact.
+
+- Use phrases such as "based on available data", "our working assumption", "field interviews suggest", "a reasonable range is", or "in our view".
+- Provide ranges instead of precise numbers when precision would be misleading.
+- Name the missing data: sample size, geography, time period, product terms, repayment history, yield history, or comparable transactions.
+- Explain why the expert view is reasonable: experience, mechanism, benchmark, incentive structure, or observed market behaviour.
+- Preserve dissent where it matters. A strong expert note can say, "A credit analyst may weigh this differently because..."
+
+> positive: Scarce data is not a reason to publish vague content. It is a
+> reason to publish careful content: clear assumptions, practical judgment,
+> and honest confidence levels.
+
+## Subject Matter Editors
+
+Domain expert editors are responsible for adding nuance that a general writer
+may miss: local market practice, product mechanics, execution constraints,
+regulatory context, behavioural realities, and the questions a serious reader
+would ask before acting.
+
+[cards]
+Add Context :: Explain the local or sector-specific detail that changes the reader's interpretation.
+Stress Test Claims :: Challenge assumptions, optimistic scenarios, and hidden execution risks.
+Improve Practicality :: Replace abstract advice with thresholds, documents to check, questions to ask, or actions to sequence.
+Mark Confidence :: Label where the piece is documented, estimated, judgment-led, or unresolved.
+Protect The Reader :: Flag suitability, liquidity, leverage, tax, legal, regulatory, and operational risks.
+[/cards]
+
+Expert edits should be visible in the substance of the piece, not only in the
+byline. A strong expert pass usually improves examples, caveats, decision
+criteria, and risk language.
+
+## Fact Checking And Review
+
+Every substantial article, PDF, proposal, or public advisory asset should pass
+through a light but explicit review workflow before publication.
+
+[table widths=36,134]
+Review step | What to check
+Editorial edit | Structure, clarity, tone, headline accuracy, reader usefulness, and unnecessary repetition.
+Fact check | Names, numbers, dates, claims, calculations, links, quotes, captions, charts, and source alignment.
+Expert review | Technical soundness, practical realism, missing risks, assumptions, and whether the conclusion follows from the evidence.
+Compliance review | Investment language, guarantees, regulated advice boundaries, conflicts, disclaimers, and suitability warnings.
+Final proof | Grammar, formatting, metadata, image rights, mobile readability, PDF rendering, and broken links.
+[/table]
+
+- Keep a short record of material assumptions and source files for research PDFs.
+- Recheck time-sensitive facts within 48 hours of publication.
+- Update or retire evergreen articles when regulations, rates, product terms, or market conditions materially change.
+- Correct errors promptly and, for material changes, note the correction or update date.
+
+## Financial And Compliance Language
+
+Bengula content may educate, analyse, and explain options, but it should avoid
+language that sounds like a guaranteed outcome or personalised regulated advice
+unless the proper advisory process has occurred.
+
+[table widths=52,118]
+Avoid | Use instead
+This investment will earn... | The target return depends on...
+Risk-free opportunity | Lower-risk instrument, subject to issuer, liquidity, market, and operational risks.
+Guaranteed profit | Expected return, projected yield, or target outcome, with assumptions stated.
+Everyone should buy... | This may suit readers who meet these conditions...
+Secret strategy | A documented approach, framework, or market observation.
+[/table]
+
+- Include risk language near the claim it qualifies, not only at the end.
+- Do not imply affiliation, endorsement, or regulatory approval unless documented.
+- Do not use client examples without permission and careful anonymisation.
+- Distinguish education from recommendations, and recommendations from personalised advice.
+- For tax, legal, or regulated investment matters, encourage readers to consult qualified professionals where appropriate.
+
+## Writing Mechanics
+
+Use clear modern business English. Follow a practical house style based on
+common newsroom and professional-services standards: plain language, consistent
+terms, active voice where natural, precise attribution, and reader-first
+structure.
+
+[table widths=44,126]
+Element | House style
+Headlines | Specific, plain, and useful. Avoid clickbait, excessive punctuation, and unsupported superlatives.
+Lead paragraph | State the tension, decision, or insight within the first 80 words.
+Paragraphs | Keep most paragraphs to 2-4 sentences. Use shorter paragraphs for web reading.
+Numbers | Use numerals for figures, percentages, years, rates, currency amounts, and comparisons.
+Currency | Use the clearest local format for the audience: KES, USD, EUR, or written shillings where context requires.
+Acronyms | Spell out on first use unless the acronym is universally understood by the target audience.
+Quotes | Quote only when wording matters. Otherwise paraphrase and attribute.
+Images | Use images, charts, and diagrams to clarify the subject, not as generic decoration.
+[/table]
+
+- Prefer "because" to vague causal language such as "due to the fact that".
+- Prefer concrete verbs: "raises", "reduces", "delays", "prices", "funds", "limits", "transfers".
+- Define technical terms once, then use them consistently.
+- Cut throat-clearing phrases such as "it is important to note that" unless they add meaning.
+- Avoid loaded adjectives unless the evidence supports them.
 
 ## Article Structure
 
@@ -95,6 +256,7 @@ scan. Use them consistently across articles, PDFs, and decks.
 Key Insight :: The single non-obvious conclusion of the piece, stated early and plainly.
 Risk Factors :: An honest list of what can go wrong, with severity and likelihood where possible.
 Decision Framework :: A short checklist or table the reader can apply to their own situation.
+Confidence Note :: A short statement on whether the evidence is documented, estimated, judgment-led, or unresolved.
 Bengula View :: The desk's position — what we would weigh most heavily, and why.
 [/cards]
 
@@ -111,13 +273,16 @@ Avoid | Hype, secrets, guaranteed returns, get-rich language, sensationalism, fe
 
 ## The Publication Test
 
-Before any asset ships, it must pass four questions. If the answer to any
+Before any asset ships, it must pass seven questions. If the answer to any
 is no, the piece goes back for another pass.
 
 1. Does it reveal something non-obvious?
 2. Does it explain causes rather than symptoms?
 3. Does it help readers make better decisions?
 4. Does it connect information to action?
+5. Are facts, figures, dates, and claims sourced or clearly labelled as assumptions?
+6. Are risks, limitations, and conflicts fairly represented?
+7. Would a domain expert be comfortable standing behind the practical guidance?
 
 > risk: Content that fails the test but ships anyway erodes the advisory
 > positioning the brand depends on. When in doubt, cut the piece, not the
