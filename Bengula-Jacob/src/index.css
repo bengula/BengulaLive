@@ -271,15 +271,44 @@ body {
 }
 .deck-card {
   grid-area: 1 / 1;
+  /* Match the faces' radius so the hover/shuffle box-shadow is rounded too,
+     instead of casting a sharp-cornered rectangle past the rounded card. */
+  border-radius: 1rem;
   transform-style: preserve-3d;
-  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
-              opacity 0.6s ease;
-  will-change: transform, opacity;
+  transition: transform 0.7s cubic-bezier(0.2, 1, 0.3, 1),
+              opacity 0.6s ease,
+              box-shadow 0.7s cubic-bezier(0.2, 1, 0.3, 1);
+  will-change: transform, opacity, box-shadow;
   height: 100%;
 }
 .deck-card.is-top {
   cursor: pointer;
 }
+
+/* 3D stack physics: top card lifts on hover, expanding the ambient shadow */
+.deck-card.is-top:hover {
+  transform: translateY(-8px) translateZ(15px) scale(1.01) !important;
+  box-shadow:
+    0 24px 50px -12px rgba(34, 16, 78, 0.38),
+    0 1px 3px rgba(34, 16, 78, 0.1);
+}
+
+/* Shuffling animations: flying out and sliding back in */
+.deck-card.is-shuffling-out {
+  transform: translate(118%, -24px) rotateZ(10deg) rotateY(-80deg) scale(1.06) translateZ(100px) !important;
+  opacity: 0.96;
+  z-index: 100 !important;
+  box-shadow: 0 40px 90px -20px rgba(34, 16, 78, 0.55) !important;
+  pointer-events: none;
+}
+
+.deck-card.is-shuffling-in {
+  transform: translate(45%, 32px) rotateZ(3deg) scale(0.94) translateZ(-40px) !important;
+  z-index: 1 !important;
+  box-shadow: 0 8px 20px -8px rgba(34, 16, 78, 0.3) !important;
+  pointer-events: none;
+}
+
 /* Cards beneath the top one sit face down, so they all show the same
    patterned card back — exactly like a real deck. */
 .deck-card-inner {
@@ -288,8 +317,9 @@ body {
   grid-template-columns: minmax(0, 1fr);
   width: 100%;
   height: 100%;
+  border-radius: 1rem;
   transform-style: preserve-3d;
-  transition: transform 0.7s cubic-bezier(0.6, 0.05, 0.2, 1);
+  transition: transform 0.75s cubic-bezier(0.34, 1.56, 0.64, 1); /* Tactile 3D bounce wobble */
 }
 .deck-card.is-flipped .deck-card-inner {
   transform: rotateY(180deg);
@@ -315,38 +345,60 @@ body {
   background: #f7f1e1;
   box-shadow:
     inset 0 0 0 1px rgba(120, 90, 50, 0.18),
-    0 16px 36px -14px rgba(34, 16, 78, 0.5);
+    0 14px 30px -12px rgba(34, 16, 78, 0.45);
 }
 .card-back-panel {
   flex: 1;
   position: relative;
   min-height: 16rem;
   border-radius: 0.55rem;
-  border: 1px solid rgba(247, 241, 225, 0.5);
+  border: 1px solid rgba(247, 241, 225, 0.55);
   overflow: hidden;
   /* Multi-hue base: violet base washed with orchid / indigo / electric
      accents so the back reads with more colour than a flat panel. */
-  background-color: #44217b;
+  background-color: #3b1770;
   background-image:
+    /* repeating micro grain noise texture overlay */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)'/%3E%3C/svg%3E"),
     /* woven diamond lattice + dot grid sit on top of the colour washes */
     radial-gradient(circle, rgba(255, 255, 255, 0.28) 1px, transparent 1.8px),
     radial-gradient(circle, rgba(255, 255, 255, 0.14) 1px, transparent 1.8px),
-    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.12) 0 1px, transparent 1px 11px),
-    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.12) 0 1px, transparent 1px 11px),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.11) 0 1px, transparent 1px 11px),
+    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.11) 0 1px, transparent 1px 11px),
     /* colour accents */
-    radial-gradient(circle at 18% 12%, rgba(168, 85, 247, 0.6), transparent 48%),
-    radial-gradient(circle at 86% 90%, rgba(99, 102, 241, 0.6), transparent 48%),
-    radial-gradient(circle at 50% 52%, rgba(124, 58, 237, 0.42), transparent 66%);
+    radial-gradient(circle at 18% 12%, rgba(168, 85, 247, 0.65), transparent 48%),
+    radial-gradient(circle at 86% 90%, rgba(99, 102, 241, 0.65), transparent 48%),
+    radial-gradient(circle at 50% 52%, rgba(124, 58, 237, 0.45), transparent 66%);
   background-size:
-    22px 22px, 22px 22px, auto, auto,
+    auto, 22px 22px, 22px 22px, auto, auto,
     auto, auto, auto;
   background-position:
-    0 0, 11px 11px, 0 0, 0 0,
+    0 0, 0 0, 11px 11px, 0 0, 0 0,
     0 0, 0 0, 0 0;
   box-shadow:
     inset 0 0 0 3px rgba(247, 241, 225, 0.14),
-    inset 0 0 48px rgba(18, 6, 48, 0.55);
+    inset 0 0 48px rgba(18, 6, 48, 0.65);
 }
+
+/* Golden filigree frame on the card-back */
+.card-back-panel::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(212, 175, 55, 0.18); /* Outer hairline */
+  box-shadow: inset 0 0 0 2px #3b1770, inset 0 0 0 3px rgba(212, 175, 55, 0.45); /* Violet gap + Inner hairline */
+  border-radius: 0.35rem;
+  pointer-events: none;
+  z-index: 2;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23d4af37' stroke-width='1'%3E%3Cpath d='M2 10V2h8'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23d4af37' stroke-width='1'%3E%3Cpath d='M10 10V2H2'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23d4af37' stroke-width='1'%3E%3Cpath d='M2 2v8h8'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23d4af37' stroke-width='1'%3E%3Cpath d='M10 2v8H2'/%3E%3C/svg%3E");
+  background-position: top left 2px, top right 2px, bottom left 2px, bottom right 2px;
+  background-repeat: no-repeat;
+}
+
 /* Glossy diagonal sheen — the wet, refractive highlight of liquid glass. */
 .card-back-panel::after {
   content: '';
@@ -355,19 +407,42 @@ body {
   border-radius: inherit;
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.24) 0%,
+    rgba(255, 255, 255, 0.22) 0%,
     rgba(255, 255, 255, 0.04) 30%,
     transparent 55%,
     rgba(168, 85, 247, 0.12) 100%
   );
   pointer-events: none;
+  z-index: 2;
 }
+
+/* Gold foil sheen sweeping across card back on hover */
+.card-back-panel-sheen {
+  position: absolute;
+  inset: -100px;
+  background: linear-gradient(
+    115deg,
+    transparent 35%,
+    rgba(212, 175, 55, 0.28) 42%,
+    rgba(255, 255, 255, 0.55) 50%,
+    rgba(212, 175, 55, 0.28) 58%,
+    transparent 65%
+  );
+  transform: translateX(-130%) rotate(25deg);
+  pointer-events: none;
+  z-index: 3;
+}
+.deck-card.is-top:hover .card-back-panel-sheen {
+  transform: translateX(130%) rotate(25deg);
+  transition: transform 1.5s cubic-bezier(0.25, 1, 0.35, 1);
+}
+
 .card-back-medallion {
   position: absolute;
   inset: 0;
   display: grid;
   place-items: center;
-  z-index: 1;
+  z-index: 4;
 }
 /* Liquid-glass disc: a frosted, translucent lens that refracts the
    patterned panel behind it, rimmed with a bright specular edge. */
@@ -381,18 +456,20 @@ body {
   background:
     linear-gradient(
       135deg,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(255, 255, 255, 0.08) 45%,
-      rgba(168, 85, 247, 0.16) 100%
+      rgba(255, 255, 255, 0.45) 0%,
+      rgba(255, 255, 255, 0.1) 45%,
+      rgba(212, 175, 55, 0.2) 100%
     );
-  backdrop-filter: blur(8px) saturate(160%);
-  -webkit-backdrop-filter: blur(8px) saturate(160%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  /* Thick metallic gold rim */
+  border: 2px solid rgba(212, 175, 55, 0.7);
   box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.8),
-    inset 0 -10px 22px rgba(124, 58, 237, 0.4),
-    inset 0 0 0 4px rgba(255, 255, 255, 0.06),
-    0 12px 30px rgba(18, 6, 48, 0.5);
+    inset 0 1px 2px rgba(255, 255, 255, 0.9),
+    inset 0 -10px 22px rgba(124, 58, 237, 0.35),
+    inset 0 0 0 4px rgba(255, 255, 255, 0.08),
+    0 12px 30px rgba(18, 6, 48, 0.45),
+    0 0 15px rgba(212, 175, 55, 0.3); /* Subtle gold halo */
   overflow: hidden;
 }
 /* Specular hot-spot in the upper-left, as on a glass bead. */
@@ -425,25 +502,48 @@ body {
   position: relative;
   color: #2e2a21;
   background-color: #f7f1e1;
-  /* Warm tonal drift so the paper reads aged rather than flat. */
+  /* Warm tonal drift and physical paper noise texture */
   background-image:
-    radial-gradient(ellipse at 15% 6%, rgba(186, 152, 96, 0.14), transparent 55%),
-    radial-gradient(ellipse at 88% 96%, rgba(146, 108, 58, 0.16), transparent 52%);
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23noise)'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse at 15% 6%, rgba(186, 152, 96, 0.16), transparent 55%),
+    radial-gradient(ellipse at 88% 96%, rgba(146, 108, 58, 0.18), transparent 52%);
   box-shadow:
     inset 0 0 64px rgba(150, 114, 62, 0.22),
-    0 16px 36px -14px rgba(63, 44, 14, 0.4);
+    0 14px 30px -12px rgba(63, 44, 14, 0.38);
 }
+
+/* Double hairline frame, like a printer's plate border, with corner filigrees */
 .book-page::before {
-  /* Double hairline frame, like a printer's plate border. */
   content: '';
   position: absolute;
   inset: 11px;
-  border: 1px solid rgba(150, 112, 58, 0.5);
-  outline: 1px solid rgba(150, 112, 58, 0.24);
-  outline-offset: 3px;
+  border: 1px solid rgba(150, 112, 58, 0.24); /* Outer hairline */
+  box-shadow: inset 0 0 0 3px #f7f1e1, inset 0 0 0 4px rgba(150, 112, 58, 0.5); /* Page gap + Inner hairline */
   border-radius: 0.4rem;
   pointer-events: none;
+  z-index: 1;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%239a7434' stroke-width='1.2'%3E%3Cpath d='M2 14V2h12'/%3E%3Cpath d='M5 11V5h6'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%239a7434' stroke-width='1.2'%3E%3Cpath d='M14 14V2H2'/%3E%3Cpath d='M11 11V5H5'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%239a7434' stroke-width='1.2'%3E%3Cpath d='M2 2v12h12'/%3E%3Cpath d='M5 5v6h6'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%239a7434' stroke-width='1.2'%3E%3Cpath d='M14 2v12H2'/%3E%3Cpath d='M11 5v6H5'/%3E%3C/svg%3E");
+  background-position: top left 4px, top right 4px, bottom left 4px, bottom right 4px;
+  background-repeat: no-repeat;
 }
+
+/* Subtle page shadows to simulate page thickness curvature */
+.book-page::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  background: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 0%, transparent 4%, transparent 96%, rgba(0, 0, 0, 0.04) 100%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 0%, transparent 2%, transparent 98%, rgba(0, 0, 0, 0.03) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
 .book-page-tag {
   display: flex;
   align-items: center;
@@ -454,6 +554,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.28em;
   color: #9a7434;
+  z-index: 3;
 }
 .book-page-tag::before,
 .book-page-tag::after {
@@ -466,6 +567,7 @@ body {
   text-align: justify;
   hyphens: auto;
   color: #3a3428;
+  z-index: 3;
 }
 .book-page-body::first-letter {
   /* Drop cap, in the specimen's warm tan. */
@@ -475,6 +577,8 @@ body {
   padding: 0.06em 0.12em 0 0;
   font-weight: 700;
   color: #9a7434;
+  /* Metallic stamped foil drop-shadow detail */
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8), 2px 2px 0px rgba(154, 116, 52, 0.2);
 }
 
 /* ── Respect users who prefer reduced motion ────────────────────── */

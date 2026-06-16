@@ -2,6 +2,7 @@
 :title: Agri-Horticulture Cold-Chain Logistics Report
 :subtitle: A sector brief on Kenya's perishable-produce logistics opportunity, from farm-gate cooling to export reliability and financing readiness.
 :tag: Sector Report
+:pillars: Utilization economics, Energy reliability, Buyer-linked offtake
 :summary: Cold-chain investment is moving from nice-to-have infrastructure to a competitiveness requirement. The investable edge is utilization, energy reliability, route density, quality assurance, and buyer-linked offtake.
 :sources: energy4Impact, investKenya, knaFlowers, worldBankKeu
 :date: 9 June 2026

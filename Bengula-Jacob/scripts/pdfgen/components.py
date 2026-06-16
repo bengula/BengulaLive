@@ -27,7 +27,7 @@ S = brand.STYLES
 
 
 class CoverBlock(Flowable):
-    def __init__(self, title, subtitle, tag, summary, as_of, internal=False):
+    def __init__(self, title, subtitle, tag, summary, as_of, internal=False, pillars=None):
         super().__init__()
         self.title = title
         self.subtitle = subtitle
@@ -35,6 +35,10 @@ class CoverBlock(Flowable):
         self.summary = summary
         self.as_of = as_of
         self.internal = internal
+        # The three numbered chips below the desk summary. Each document sets
+        # its own via the :pillars: field; fall back to generic ones only when
+        # a document omits them. Capped at 3 to fit the row.
+        self.pillars = (pillars or ["Evidence-led positioning", "Risk-first execution", "East Africa context"])[:3]
         self.width = 178 * mm
         self.height = 246 * mm
 
@@ -111,7 +115,7 @@ class CoverBlock(Flowable):
         c.setFont(brand.SANS_BOLD, 8)
         c.drawString(8 * mm, card_top - 12 * mm, "DESK SUMMARY")
         s.drawOn(c, 8 * mm, summary_top - ph)
-        for i, label in enumerate(["Evidence-led positioning", "Risk-first execution", "East Africa context"]):
+        for i, label in enumerate(self.pillars):
             x = 8 * mm + i * 54 * mm
             c.setFillColor(brand.TINT)
             c.roundRect(x, chips_top - chips_h, 49 * mm, chips_h, 2 * mm, stroke=0, fill=1)

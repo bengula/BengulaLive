@@ -2,6 +2,7 @@
 :title: Due Diligence Framework for Alternative Placements
 :subtitle: A field-ready checklist for private placements, land syndicates, SPVs, private credit, agribusiness pools, and other off-market opportunities.
 :tag: Due Diligence Guide
+:pillars: Manager & documents, Custody & valuation, Exit mechanics
 :summary: Alternative placements can improve diversification, but the manager, documents, custody, valuation, and exit mechanics are often more important than the underlying asset.
 :sources: ilpa, cmaAif, secRisk, worldBankKeu
 :date: 9 June 2026

@@ -2,6 +2,7 @@
 :title: East Africa Fiscal & Macro-Trends Analysis 2026
 :subtitle: A practical market brief for Kenyan business owners, treasury teams, and investors reading rate, fiscal, currency, and regional-growth signals.
 :tag: Market Analysis
+:pillars: Fiscal & debt signals, Currency & rates, Regional growth
 :summary: East Africa remains one of Africa's stronger growth regions, but the investable story in 2026 is selective: fiscal consolidation, debt-service pressure, food and fuel sensitivity, infrastructure spend, and local-rate transmission all matter more than a simple growth headline.
 :sources: afdb2026, worldBankKeu, treasuryBps, cbkWeekly
 :date: 9 June 2026

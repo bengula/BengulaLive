@@ -34,9 +34,11 @@ export default function InsightDeck() {
   const [order, setOrder] = useState(() => allInsights.map((_, i) => i));
   const [flipped, setFlipped] = useState(false);
   const [animating, setAnimating] = useState(false);
+  const [shuffleState, setShuffleState] = useState<'idle' | 'flying-out' | 'flying-in'>('idle');
+  const [shufflingCardIndex, setShufflingCardIndex] = useState<number | null>(null);
 
   const advance = () => {
-    if (animating) return;
+    if (animating || shuffleState !== 'idle') return;
 
     // First tap: flip the top card to reveal the insight.
     if (!flipped) {
@@ -44,16 +46,29 @@ export default function InsightDeck() {
       return;
     }
 
-    // Second tap: flip back, then shuffle this card to the bottom.
+    // Second tap: flip back, slide out to side, shift order, slide in to bottom of deck.
     setFlipped(false);
+    setShuffleState('flying-out');
+    setShufflingCardIndex(order[0]);
     setAnimating(true);
+
+    // Wait for the fly-out flip-back phase (400ms is the peak when the card is in the air)
     window.setTimeout(() => {
+      // Put the current top card at the bottom of the stack
       setOrder((prev) => [...prev.slice(1), prev[0]]);
-      setAnimating(false);
-    }, 650);
+      setShuffleState('flying-in');
+
+      // Wait for the slide-in phase to settle
+      window.setTimeout(() => {
+        setShuffleState('idle');
+        setShufflingCardIndex(null);
+        setAnimating(false);
+      }, 400);
+    }, 400);
   };
 
   const total = order.length;
+  const stackRotations = [0, -1.8, 1.2, -0.8, 1.5];
 
   return (
     <div className="flex w-full max-w-[34rem] flex-col items-center gap-5">
@@ -63,17 +78,26 @@ export default function InsightDeck() {
           const Icon = insightIcons[insight.iconName] || HelpCircle;
           const isTop = depth === 0;
 
+          const isShufflingOut = shuffleState === 'flying-out' && cardIndex === shufflingCardIndex;
+          const isShufflingIn = shuffleState === 'flying-in' && cardIndex === shufflingCardIndex;
+
+          const cardClass = `deck-card ${isTop ? 'is-top' : ''} ${
+            isTop && flipped ? 'is-flipped' : ''
+          } ${isShufflingOut ? 'is-shuffling-out' : ''} ${
+            isShufflingIn ? 'is-shuffling-in' : ''
+          }`;
+
           return (
             <div
               key={cardIndex}
-              className={`deck-card ${isTop ? 'is-top' : ''} ${
-                isTop && flipped ? 'is-flipped' : ''
-              }`}
+              className={cardClass}
               style={{
-                transform: `translateY(${depth * 16}px) scale(${1 - depth * 0.05})`,
+                transform: `translateY(${depth * 16}px) scale(${1 - depth * 0.05}) rotate(${
+                  stackRotations[depth] || 0
+                }deg)`,
                 zIndex: total - depth,
                 opacity: depth > 3 ? 0 : 1,
-                pointerEvents: isTop ? 'auto' : 'none',
+                pointerEvents: isTop && shuffleState === 'idle' ? 'auto' : 'none',
               }}
               onClick={isTop ? advance : undefined}
               onKeyDown={
@@ -100,6 +124,8 @@ export default function InsightDeck() {
                 {/* Face-down side — an ordinary playing-card back. */}
                 <div className="deck-face card-back" aria-hidden="true">
                   <div className="card-back-panel">
+                    {/* Glowing gold foil sheen overlay on hover */}
+                    <div className="card-back-panel-sheen" />
                     <div className="card-back-medallion">
                       <div className="card-back-disc">
                         <img
@@ -118,7 +144,7 @@ export default function InsightDeck() {
                   <h4 className="text-center text-2xl sm:text-[1.75rem] font-bold leading-snug text-[#241f14]">
                     {insight.title}
                   </h4>
-                  <p className="book-page-body text-[15px] sm:text-base leading-relaxed">
+                  <p className="book-page-body text-[15px] sm:text-base leading-relaxed animate-fadeIn">
                     {renderInlineMarkdown(insight.body, "font-bold text-[#241f14]")}
                   </p>
                   <span className="mt-auto flex flex-col items-center gap-1 pt-1">

@@ -79,6 +79,8 @@ def parse_file(path):
             key, value = m.group(1), m.group(2).strip()
             if key == "sources":
                 spec["sources"] = [k.strip() for k in value.split(",") if k.strip()]
+            elif key == "pillars":
+                spec["pillars"] = [k.strip() for k in value.split(",") if k.strip()]
             else:
                 spec[key] = value
             continue

@@ -2,6 +2,7 @@
 :title: ABSA Scheme Loan Repayment Schedule
 :subtitle: Indicative monthly repayments for the ABSA Bank scheme loan at 14.5% per annum on a reducing balance, for amounts from KES 200,000 to KES 6,000,000.
 :tag: Loan Schedule
+:pillars: Unsecured to KES 6M, 14.5% reducing balance, No guarantors needed
 :summary: Unsecured scheme loans up to KES 6,000,000 at a competitive 14.5% reducing-balance rate, with no guarantors required. Applications are open to ABSA and non-ABSA customers, and existing microfinance, bank, and Sacco loans can be taken over. Read your indicative monthly repayment by amount and term below.
 :sources:
 :sourcenote: Prepared from the ABSA Bank scheme-loan repayment schedule shared with Bengula Inc clients (Malindi branch, contact: Bengula Jacob). Factors, rates, and terms are indicative and subject to bank confirmation at the point of application.

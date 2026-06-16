@@ -90,7 +90,7 @@ def build_doc(spec):
         PageTemplate(id="Landscape", frames=[_frame(land, "l")], onPage=c.footer, pagesize=land),
     ])
     story = [
-        c.CoverBlock(spec["title"], spec["subtitle"], spec["tag"], spec["summary"], as_of, internal=internal),
+        c.CoverBlock(spec["title"], spec["subtitle"], spec["tag"], spec["summary"], as_of, internal=internal, pillars=spec.get("pillars")),
         PageBreak(),
     ]
     for block in spec["body"]:
