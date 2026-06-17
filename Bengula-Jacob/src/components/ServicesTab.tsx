@@ -46,7 +46,7 @@ export default function ServicesTab() {
     const svcTitle = services.find(s => s.id === selectedService)?.title || selectedService;
     const ref = "BNG-" + Math.random().toString(36).slice(2, 8).toUpperCase();
 
-    openMailto(siteConfig.contact.wealthEmail, `Consultation request — ${svcTitle} [${ref}]`, [
+    openMailto(siteConfig.contact.wealthEmail, `Consultation request, ${svcTitle} [${ref}]`, [
       `Hello Jacob,`,
       ``,
       `I'd like to book a consultation. Details below:`,
@@ -77,7 +77,7 @@ export default function ServicesTab() {
   return (
     <div id="services-tab-root" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-fadeIn">
       <Seo
-        title="Services | Banking, Finance & Digital Growth Advisory — Bengula Inc"
+        title="Services | Banking, Finance & Digital Growth Advisory, Bengula Inc"
         description="Book Bengula Inc advisory: banking & business finance, investment & treasury, business consulting, technology & digital growth, and corporate training across East Africa."
         path="/services"
       />
@@ -88,7 +88,7 @@ export default function ServicesTab() {
           <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest block font-extrabold font-sans">Two Pillars, One Desk</span>
           <h1 className="text-2xl font-bold text-slate-900">How Bengula Inc Helps Your Business</h1>
           <p className="text-slate-500 text-xs">
-            Finance & banking advisory and data & digital growth — pick the service that fits where your business is now.
+            Finance & banking advisory and data & digital growth, pick the service that fits where your business is now.
           </p>
         </div>
 
@@ -177,7 +177,7 @@ export default function ServicesTab() {
             <div className="space-y-1">
               <h4 className="text-base font-bold text-emerald-950">Booking Email Ready</h4>
               <p className="text-xs text-slate-600 leading-normal">
-                Your email app should have opened with the request pre-filled — just press <strong>send</strong> and Jacob's office will confirm your slot. If nothing opened, email <strong>{siteConfig.contact.workEmail}</strong> with your reference below.
+                Your email app should have opened with the request pre-filled, just press <strong>send</strong> and Jacob's office will confirm your slot. If nothing opened, email <strong>{siteConfig.contact.workEmail}</strong> with your reference below.
               </p>
             </div>
             <div className="bg-slate-50 rounded-lg p-3 text-xs border border-slate-100 space-y-1 text-left font-mono text-slate-700 shadow-xs">

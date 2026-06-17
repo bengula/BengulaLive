@@ -56,7 +56,7 @@ export const portfolioItemsList: PortfolioItem[] = [
     title: "Retail Data & Decision Dashboard",
     category: portfolioItemTags.businessVenture,
     description: "Built a live sales, stock, and margin dashboard for a multi-branch retailer that was making buying and pricing calls on gut feel and stale spreadsheets.",
-    impact: "Put daily numbers in front of the owner, exposing dead stock and underpriced lines — decisions moved from monthly guesswork to weekly, evidence-led action.",
+    impact: "Put daily numbers in front of the owner, exposing dead stock and underpriced lines, decisions moved from monthly guesswork to weekly, evidence-led action.",
     location: "Mombasa & Nairobi",
     year: "2025",
     metrics: [
@@ -103,7 +103,7 @@ export const portfolioItemsList: PortfolioItem[] = [
     id: "ecommerce-conversion-launch",
     title: "E-commerce Storefront & Conversion Launch",
     category: portfolioItemTags.caseStudy,
-    description: "Took an agri-products brand online from scratch — storefront, payments, analytics, and a search-and-social funnel — then tuned the checkout against real drop-off data.",
+    description: "Took an agri-products brand online from scratch, storefront, payments, analytics, and a search-and-social funnel, then tuned the checkout against real drop-off data.",
     impact: "Launched a working online channel that now sells beyond the physical shop, with conversion tracking that shows exactly which campaigns and pages pay back.",
     location: "Meru & Online",
     year: "2025",

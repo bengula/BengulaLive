@@ -16,15 +16,15 @@ coverImage: https://images.pexels.com/photos/7054801/pexels-photo-7054801.jpeg?a
 
 ### The Job an Emergency Fund Actually Does
 
-Every sound financial plan starts with the same boring, powerful step: an **emergency fund** of three to six months of living expenses. Its job is not to grow your wealth — it is to stop one bad month (a job loss, a medical bill, a slow quarter for your business) from forcing you to sell a long-term asset or take an expensive loan at the worst possible time.
+Every sound financial plan starts with the same boring, powerful step: an **emergency fund** of three to six months of living expenses. Its job is not to grow your wealth, it is to stop one bad month (a job loss, a medical bill, a slow quarter for your business) from forcing you to sell a long-term asset or take an expensive loan at the worst possible time.
 
 The mistake most people make is leaving that buffer in a standard savings account paying around 3%. With inflation running higher than that, your "safe" money is quietly losing purchasing power every month.
 
 ### Why Money Market Funds Fit This Job So Well
 
-A **Money Market Fund (MMF)** is a regulated collective-investment scheme that pools members' money and lends it short-term to high-quality borrowers — Treasury Bills, fixed deposits, and top-tier corporate paper. You get a share of that interest while keeping near-instant access to your cash.
+A **Money Market Fund (MMF)** is a regulated collective-investment scheme that pools members' money and lends it short-term to high-quality borrowers, Treasury Bills, fixed deposits, and top-tier corporate paper. You get a share of that interest while keeping near-instant access to your cash.
 
-In Kenya, MMF yields have moved with the Central Bank's rate cycle: when the CBK raises rates, the short-term instruments the fund holds reprice upward, and your yield follows — usually within weeks. The flip side is now playing out. After [ten consecutive rate cuts since August 2024](https://www.businessdailyafrica.com/), the [Central Bank of Kenya](https://www.centralbank.go.ke/) held its benchmark rate at **8.75%** in April 2026, and average MMF yields have eased from the mid-teens toward **9% to 12% gross** in the first half of 2026. The strongest funds — Cytonn, Nabo Africa, and Etica among them — were still posting effective annual rates around **12%**.
+In Kenya, MMF yields have moved with the Central Bank's rate cycle: when the CBK raises rates, the short-term instruments the fund holds reprice upward, and your yield follows, usually within weeks. The flip side is now playing out. After [ten consecutive rate cuts since August 2024](https://www.businessdailyafrica.com/), the [Central Bank of Kenya](https://www.centralbank.go.ke/) held its benchmark rate at **8.75%** in April 2026, and average MMF yields have eased from the mid-teens toward **9% to 12% gross** in the first half of 2026. The strongest funds, Cytonn, Nabo Africa, and Etica among them, were still posting effective annual rates around **12%**.
 
 #### Where MMF Money Actually Sits (2026 Snapshot)
 
@@ -50,7 +50,7 @@ Fund marketing always quotes the **gross** rate. What lands in your pocket is th
 
 > **Net yield = 14% × (1 − 0.15) = 11.9% net per annum**
 
-That ~11.9% net still comfortably beats a savings account and, in most periods, beats inflation — which is exactly what you want from a *buffer*.
+That ~11.9% net still comfortably beats a savings account and, in most periods, beats inflation, which is exactly what you want from a *buffer*.
 
 #### How to Compare Funds Honestly
 - **Look at the effective annual yield, not one good day.** Daily rates bounce around; the trailing average tells the real story.
@@ -60,21 +60,21 @@ That ~11.9% net still comfortably beats a savings account and, in most periods, 
 
 ### Where the MMF Stops and Bonds Begin
 
-An MMF is the right home for money you might need *soon* — your emergency fund, a business's float, cash waiting to be deployed. It is not designed to lock in today's high rates for years. Once your buffer is full, the next step for longer-horizon capital is usually a **Treasury bond or tax-free Infrastructure Bond** ladder, which locks a high coupon for the long term while the MMF keeps your liquid reserve productive.
+An MMF is the right home for money you might need *soon*, your emergency fund, a business's float, cash waiting to be deployed. It is not designed to lock in today's high rates for years. Once your buffer is full, the next step for longer-horizon capital is usually a **Treasury bond or tax-free Infrastructure Bond** ladder, which locks a high coupon for the long term while the MMF keeps your liquid reserve productive.
 
-This is exactly why the falling-rate environment matters. As MMF yields drift down with the CBK rate, the case for *moving idle, long-horizon cash into longer instruments* gets stronger — see [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026) for how to build that bond ladder, and [Sovereign Debt Explained](/blog/sovereign-debt-explained) for the mechanics of lending directly to the government.
+This is exactly why the falling-rate environment matters. As MMF yields drift down with the CBK rate, the case for *moving idle, long-horizon cash into longer instruments* gets stronger, see [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026) for how to build that bond ladder, and [Sovereign Debt Explained](/blog/sovereign-debt-explained) for the mechanics of lending directly to the government.
 
-Used together — MMF for liquidity, bonds for locked long-term yield — you get a simple, powerful cash strategy that most savers never set up.
+Used together, MMF for liquidity, bonds for locked long-term yield, you get a simple, powerful cash strategy that most savers never set up.
 
 ### Related Reading
-- [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026) — the next step once your buffer is full.
-- [Sovereign Debt Explained](/blog/sovereign-debt-explained) — Treasury Bills vs Bonds, and how DhowCSD works.
-- [Sleeping Asset Yield Optimization](/blog/sleeping-asset-optimization) — turning idle capital into monthly income.
+- [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026). The next step once your buffer is full.
+- [Sovereign Debt Explained](/blog/sovereign-debt-explained). Treasury Bills vs Bonds, and how DhowCSD works.
+- [Sleeping Asset Yield Optimization](/blog/sleeping-asset-optimization). Turning idle capital into monthly income.
 
 ### References
-- [Capital Markets Authority](https://www.cma.or.ke/) — fund licensing and quarterly statistics.
-- [Cytonn Q3'2025 Unit Trust Funds Performance Note](https://www.cytonn.com/uploads/downloads/q32025-utf-performance-note-compiled-vff.pdf) — AUM and fund-by-fund yields.
-- [Central Bank of Kenya](https://www.centralbank.go.ke/) — Central Bank Rate and monetary policy.
-- ["Special funds surge as CIS assets hit Sh680bn" — Capital FM](https://www.capitalfm.co.ke/business/2025/12/special-funds-surge-as-cis-assets-hit-sh680bn/)
+- [Capital Markets Authority](https://www.cma.or.ke/). Fund licensing and quarterly statistics.
+- [Cytonn Q3'2025 Unit Trust Funds Performance Note](https://www.cytonn.com/uploads/downloads/q32025-utf-performance-note-compiled-vff.pdf). AUM and fund-by-fund yields.
+- [Central Bank of Kenya](https://www.centralbank.go.ke/). Central Bank Rate and monetary policy.
+- ["Special funds surge as CIS assets hit Sh680bn", Capital FM](https://www.capitalfm.co.ke/business/2025/12/special-funds-surge-as-cis-assets-hit-sh680bn/)
 
 *This article is general financial education, not personal investment advice. Yields change and are not guaranteed; always read a fund's documents and confirm it is CMA-licensed before investing.*

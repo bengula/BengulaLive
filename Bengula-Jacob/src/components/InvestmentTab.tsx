@@ -82,7 +82,7 @@ export default function InvestmentTab() {
       pools.find((p) => p.id === partnerSubject)?.title ||
       'General Co-Investment Syndication Program';
 
-    openMailto(siteConfig.contact.wealthEmail, `Co-investor partnership inquiry — ${focusTitle}`, [
+    openMailto(siteConfig.contact.wealthEmail, `Co-investor partnership inquiry, ${focusTitle}`, [
       'Hello Jacob,',
       '',
       'I would like to request a private mandate pack. Details below:',
@@ -108,7 +108,7 @@ export default function InvestmentTab() {
     <div id="investments-tab-root" className="space-y-10 animate-fadeIn">
       <Seo
         title="Investment Pools & Opportunities | Bengula Inc"
-        description="Structured education on real estate, agri-logistics, and private placement evaluation — how Bengula Inc frames risk, yield, and due diligence for East African investors."
+        description="Structured education on real estate, agri-logistics, and private placement evaluation, how Bengula Inc frames risk, yield, and due diligence for East African investors."
         path="/investments"
       />
 
@@ -405,7 +405,7 @@ export default function InvestmentTab() {
               <ShieldCheck className="w-10 h-10 text-emerald-400 mx-auto" />
               <h4 className="text-base font-bold text-emerald-400">Inquiry Email Ready</h4>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Your email app should have opened with the inquiry pre-filled — just press <strong>send</strong> and Jacob's portfolio desk will dispatch the relevant due diligence binders. If nothing opened, email <strong>{siteConfig.contact.wealthEmail}</strong> directly.
+                Your email app should have opened with the inquiry pre-filled, just press <strong>send</strong> and Jacob's portfolio desk will dispatch the relevant due diligence binders. If nothing opened, email <strong>{siteConfig.contact.wealthEmail}</strong> directly.
               </p>
               <button
                 onClick={() => setFormSuccess(false)}

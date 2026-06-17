@@ -16,9 +16,9 @@ coverImage: https://images.pexels.com/photos/15751124/pexels-photo-15751124.jpeg
 
 ### The Problem: Good Produce, Bad Timing
 
-A smallholder farmer harvests perfect avocados on a Tuesday. Without anywhere to keep them cool, the clock starts immediately — within a couple of hot days the fruit softens, grades drop, and the farmer is forced to sell at a distress price to whoever shows up. Across a season, that spoilage and forced-selling can erase a huge share of a farm's potential income.
+A smallholder farmer harvests perfect avocados on a Tuesday. Without anywhere to keep them cool, the clock starts immediately, within a couple of hot days the fruit softens, grades drop, and the farmer is forced to sell at a distress price to whoever shows up. Across a season, that spoilage and forced-selling can erase a huge share of a farm's potential income.
 
-The technology that fixes this is not exotic. It is **refrigeration** — the issue has always been that grid power is unreliable or absent where the crops are. This piece looks at how solar-powered cold storage changes the economics, and how to think about backing a venture like it.
+The technology that fixes this is not exotic. It is **refrigeration**, the issue has always been that grid power is unreliable or absent where the crops are. This piece looks at how solar-powered cold storage changes the economics, and how to think about backing a venture like it.
 
 ### How Solar Cooling Changes the Maths
 
@@ -43,7 +43,7 @@ Those numbers are why donors and impact investors are leaning in: a 2024 Mitigat
 
 ### Why It's a *Venture*, Not a Sure Thing
 
-Early-stage agri-tech is genuinely high-risk, and honest analysis treats it that way. The return profile is **equity-style** — you are backing a young company, not lending against a contract — which means the upside is real but so is the chance of loss. Targets quoted for such ventures (in the mid-twenties annualised at exit) are **aspirational projections**, not guarantees, and depend on things like:
+Early-stage agri-tech is genuinely high-risk, and honest analysis treats it that way. The return profile is **equity-style**, you are backing a young company, not lending against a contract, which means the upside is real but so is the chance of loss. Targets quoted for such ventures (in the mid-twenties annualised at exit) are **aspirational projections**, not guarantees, and depend on things like:
 
 - **Utilisation:** a cold room only pays back if it stays full.
 - **Offtake reliability:** the exporters at the other end must keep buying.
@@ -51,23 +51,23 @@ Early-stage agri-tech is genuinely high-risk, and honest analysis treats it that
 - **Adoption:** farmers must trust and use the facility consistently.
 
 #### What to Check Before Backing Any Agri-Venture
-1. **Unit economics of one cold room** — does a single site pay back on realistic utilisation?
-2. **The exit path** — how, and to whom, do you eventually realise a return?
-3. **The legal and regulatory wrapper** — is the raise structured under appropriate, CMA-compliant templates?
+1. **Unit economics of one cold room**, does a single site pay back on realistic utilisation?
+2. **The exit path**, how, and to whom, do you eventually realise a return?
+3. **The legal and regulatory wrapper**, is the raise structured under appropriate, CMA-compliant templates?
 4. **Founder track record** and how your money is ring-fenced and reported.
 
 ### The Bigger Picture
 
-Cold storage is a small piece of hardware with an outsized effect: it shifts power back toward the farmer by removing the tyranny of the clock. That is what makes the sector interesting — but interesting is not the same as safe. The right posture is curiosity backed by hard due diligence.
+Cold storage is a small piece of hardware with an outsized effect: it shifts power back toward the farmer by removing the tyranny of the clock. That is what makes the sector interesting, but interesting is not the same as safe. The right posture is curiosity backed by hard due diligence.
 
 ### Related Reading
-- [Zindua Agri-Logistics Seed Alliance](/blog/zindua-agri-logistics) — closing the *other* half of the loss, in transit.
-- [Agri-Export Supply-Chain Logistics Pool](/blog/agri-export-supply-chain) — financing the shipment once the crop is preserved.
-- [SME Trade Finance in Frontier Markets](/blog/sme-trade-finance) — the working-capital tools behind export growth.
+- [Zindua Agri-Logistics Seed Alliance](/blog/zindua-agri-logistics). Closing the *other* half of the loss, in transit.
+- [Agri-Export Supply-Chain Logistics Pool](/blog/agri-export-supply-chain). Financing the shipment once the crop is preserved.
+- [SME Trade Finance in Frontier Markets](/blog/sme-trade-finance). The working-capital tools behind export growth.
 
 ### References
-- [Frontiers in Horticulture (2024) — food loss in Kiambu County value chains](https://www.frontiersin.org/journals/horticulture/articles/10.3389/fhort.2024.1474056/full)
-- [UNCDF — solar-powered cold storage in Kenya](https://www.uncdf.org/article/8922/catalysing-climate-resilient-agriculture-in-kenya-with-solar-powered-cold-storage)
-- ["Kenya ramps up cold chain investment as post-harvest losses reach US$578 million" — FreshPlaza](https://www.freshplaza.com/north-america/article/9841203/)
+- [Frontiers in Horticulture (2024), food loss in Kiambu County value chains](https://www.frontiersin.org/journals/horticulture/articles/10.3389/fhort.2024.1474056/full)
+- [UNCDF, solar-powered cold storage in Kenya](https://www.uncdf.org/article/8922/catalysing-climate-resilient-agriculture-in-kenya-with-solar-powered-cold-storage)
+- ["Kenya ramps up cold chain investment as post-harvest losses reach US$578 million", FreshPlaza](https://www.freshplaza.com/north-america/article/9841203/)
 
 *This is an educational case study, not an offer of securities or a solicitation to invest. Figures are illustrative projections, not guarantees. Early-stage investments can lose value; any regulated raise is conducted only through appropriately licensed channels.*

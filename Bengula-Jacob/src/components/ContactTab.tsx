@@ -141,7 +141,7 @@ export default function ContactTab() {
             </div>
             <h4 className="text-sm md:text-base font-bold text-emerald-900">Email Ready to Send</h4>
             <p className="text-xs text-slate-600 leading-relaxed max-w-sm mx-auto font-normal">
-              Your email app should have opened with your message pre-filled — just press <strong>send</strong>. If nothing opened, email <strong>{siteConfig.contact.email}</strong> directly.
+              Your email app should have opened with your message pre-filled, just press <strong>send</strong>. If nothing opened, email <strong>{siteConfig.contact.email}</strong> directly.
             </p>
             <button
               onClick={() => setContactSuccess(false)}

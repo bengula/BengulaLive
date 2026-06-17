@@ -32,7 +32,7 @@ export default function AICoach() {
   useEffect(() => {
     const greeting = `Habari ${profile.name}!
 
-I am the **Bengula Inc Business & Wealth Coach** — a curated guide built to support our twin missions: scaling businesses through high-impact content creation and helping individuals/organizations make wise investments. 
+I am the **Bengula Inc Business & Wealth Coach**, a curated guide built to support our twin missions: scaling businesses through high-impact content creation and helping individuals/organizations make wise investments. 
 
 Whether you are looking to grow your business's online visibility, design an SEO strategy, or navigate Kenyan treasury bonds, money market funds (MMFs), and DhowCSD setups, I am here to help you structure a clear roadmap.
 

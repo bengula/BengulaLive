@@ -51,7 +51,7 @@ export default function AuthorsTab() {
     return (
       <div id="author-detail" className="max-w-3xl mx-auto space-y-6 animate-fadeIn">
         <Seo
-          title={`${activeProfile.name} | ${activeProfile.role} — Bengula Inc`}
+          title={`${activeProfile.name} | ${activeProfile.role}, Bengula Inc`}
           description={activeProfile.bio}
           path={`/authors/${activeProfile.id}`}
           image={activeProfile.avatar}
@@ -136,7 +136,7 @@ export default function AuthorsTab() {
     <div id="authors-tab-root" className="space-y-6 animate-fadeIn">
       <Seo
         title="Our Authors | Bengula Inc"
-        description="The people behind the Bengula Inc Financial Education Hub — contributors writing on banking, finance, investing, and digital growth in East Africa."
+        description="The people behind the Bengula Inc Financial Education Hub, contributors writing on banking, finance, investing, and digital growth in East Africa."
         path="/authors"
       />
       <div className="border-b border-slate-200 pb-6 space-y-1">

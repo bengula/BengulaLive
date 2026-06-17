@@ -23,7 +23,7 @@ The answer almost always begins with **Kenyan Government Treasury Bonds (especia
 
 Historically, retail investors in Kenya parked savings in commercial bank accounts yielding 3-6% annually. However, with true inflation hovering around 6-8%, these savings lose purchasing power. At the same time, the [Central Bank of Kenya (CBK)](https://www.centralbank.go.ke/) issues debt instruments with coupons that have recently ranged from the **low teens to as high as 17.5% per annum**.
 
-Demand tells the story better than any sales pitch. When the Treasury reopened two Infrastructure Bonds in August 2025 targeting KSh 50 billion, investors bid **over KSh 207 billion** — a roughly **415% oversubscription**. Retail investors, Saccos, and self-help groups now hold close to **KSh 888.5 billion** of government debt, and IFB holders have collectively saved an estimated [KSh 30 billion in taxes](https://www.businessdailyafrica.com/bd/markets/capital-markets/investors-save-sh30bn-in-taxes-from-infrastructure-bonds-5196814) thanks to the tax exemption.
+Demand tells the story better than any sales pitch. When the Treasury reopened two Infrastructure Bonds in August 2025 targeting KSh 50 billion, investors bid **over KSh 207 billion**, a roughly **415% oversubscription**. Retail investors, Saccos, and self-help groups now hold close to **KSh 888.5 billion** of government debt, and IFB holders have collectively saved an estimated [KSh 30 billion in taxes](https://www.businessdailyafrica.com/bd/markets/capital-markets/investors-save-sh30bn-in-taxes-from-infrastructure-bonds-5196814) thanks to the tax exemption.
 
 #### Current Indicative IFB Yields (2025–2026)
 
@@ -34,7 +34,7 @@ Demand tells the story better than any sales pitch. When the Treasury reopened t
 | 12-year IFB | 14.5% – 15.5% | Tax-free |
 | 15-year IFB | 15.0% – 16.0% | Tax-free |
 
-*Yields are indicative of recent auctions and move with each issue — always check the prospectus on [DhowCSD](https://dhowcsd.centralbank.go.ke/) before bidding.*
+*Yields are indicative of recent auctions and move with each issue, always check the prospectus on [DhowCSD](https://dhowcsd.centralbank.go.ke/) before bidding.*
 
 ---
 
@@ -75,9 +75,9 @@ That **KSh 21,000 a year** difference, reinvested across a 15-year tenor, is the
 Bonds are the long-horizon anchor, not the whole portfolio. Keep your *liquid* buffer in a [Money Market Fund](/blog/future-mmfs-kenya), then ladder bonds for locked, long-term yield. For the mechanics of auctions, competitive vs non-competitive bids, and DhowCSD, read [Sovereign Debt Explained](/blog/sovereign-debt-explained). For a real case of idle land redeployed into a bond ladder generating monthly income, see [Sleeping Asset Yield Optimization](/blog/sleeping-asset-optimization).
 
 ### References
-- [Central Bank of Kenya — Treasury Bonds](https://www.centralbank.go.ke/securities/treasury-bonds/)
+- [Central Bank of Kenya, Treasury Bonds](https://www.centralbank.go.ke/securities/treasury-bonds/)
 - [DhowCSD investor portal](https://dhowcsd.centralbank.go.ke/)
-- ["Investors save Sh30bn in taxes from infrastructure bonds" — Business Daily](https://www.businessdailyafrica.com/bd/markets/capital-markets/investors-save-sh30bn-in-taxes-from-infrastructure-bonds-5196814)
+- ["Investors save Sh30bn in taxes from infrastructure bonds", Business Daily](https://www.businessdailyafrica.com/bd/markets/capital-markets/investors-save-sh30bn-in-taxes-from-infrastructure-bonds-5196814)
 - [August 2025 reopened 15- and 19-year IFB prospectus (CBK)](https://www.centralbank.go.ke/uploads/treasury_bonds_prospectuses/654434758_AUGUST%202025%20IFB1-2018-15%20AND%20IFB1-2022-019%20DATED%20%2018-08-2025.pdf)
 
 *General financial education, not personal investment advice. Coupon rates, yields, and tax treatment change with each issue; transact only through official DhowCSD/CBK channels.*

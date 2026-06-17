@@ -73,7 +73,7 @@ export const organizationJsonLd = {
   logo: DEFAULT_OG_IMAGE,
   slogan: 'Adding meaning to life',
   description:
-    'Bengula Inc helps East African businesses grow — pairing data-driven digital visibility with finance and banking advisory across Kenya and the diaspora.',
+    'Bengula Inc helps East African businesses grow, pairing data-driven digital visibility with finance and banking advisory across Kenya and the diaspora.',
   areaServed: 'Kenya and the East African diaspora',
   sameAs: [
     'https://www.linkedin.com/in/bengula/',

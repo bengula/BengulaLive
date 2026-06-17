@@ -16,14 +16,14 @@ date: June 2, 2026             # any readable format; shown as-is and used for o
 readTime: 6 min read
 
 # featured: true               # optional flag
-# coverImage: /images/your-cover.jpg   # optional — overrides the category photo (file in public/images/)
+# coverImage: /images/your-cover.jpg   # optional, overrides the category photo (file in public/images/)
 
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
 
-# coAuthors:                   # optional — delete if single-author
+# coAuthors:                   # optional, delete if single-author
 #   - name: Jane Mwangi
 #     role: Guest Analyst
 #     avatar: /images/jane.jpg

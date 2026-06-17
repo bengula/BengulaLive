@@ -28,7 +28,7 @@ export default function PortfolioTab() {
     <div id="portfolio-tab-root" className="space-y-8 animate-fadeIn">
       <Seo
         title="Portfolio & Case Studies | Bengula Inc"
-        description="Selected Bengula Inc work across both pillars — data, SEO, and digital growth projects alongside finance, banking, and investment engagements in East Africa."
+        description="Selected Bengula Inc work across both pillars, data, SEO, and digital growth projects alongside finance, banking, and investment engagements in East Africa."
         path="/portfolio"
       />
       
@@ -38,7 +38,7 @@ export default function PortfolioTab() {
           <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest block font-sans">Selected Work</span>
           <h1 className="text-2xl font-bold text-slate-900">Portfolio & Case Studies</h1>
           <p className="text-slate-500 text-xs">
-            Work across both Bengula Inc pillars — data, SEO, and digital growth projects alongside finance, banking, and investment engagements.
+            Work across both Bengula Inc pillars, data, SEO, and digital growth projects alongside finance, banking, and investment engagements.
           </p>
         </div>
 

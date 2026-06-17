@@ -114,7 +114,7 @@ export default function BlogTab() {
       ) : (
         <Seo
           title="Blog & Education | Bengula Inc"
-          description="Practical notes on Kenyan treasury bonds, MMFs, SACCOs, SME trade finance, real estate, and using data to grow — financial education for owners and professionals."
+          description="Practical notes on Kenyan treasury bonds, MMFs, SACCOs, SME trade finance, real estate, and using data to grow, financial education for owners and professionals."
           path="/blog"
         />
       )}
@@ -278,7 +278,7 @@ export default function BlogTab() {
                 Financial Education Hub
               </h1>
               <p className="text-xs text-slate-500">
-                Practical notes across both pillars — business finance and banking, plus data, SEO, and digital growth.
+                Practical notes across both pillars, business finance and banking, plus data, SEO, and digital growth.
               </p>
             </div>
 

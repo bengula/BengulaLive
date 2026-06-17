@@ -272,7 +272,7 @@ export default function LoanAppraisalCalculator() {
               Loan Appraisal Calculator
             </h3>
             <p className="mt-1 max-w-2xl text-xs leading-relaxed text-slate-600">
-              Unsecured loans — creditworthiness &amp; APR.
+              Unsecured loans, creditworthiness &amp; APR.
             </p>
           </div>
           <span className="rounded-full border border-violet-200 bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-violet-800">

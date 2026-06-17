@@ -16,7 +16,7 @@ coverImage: https://images.pexels.com/photos/6694543/pexels-photo-6694543.jpeg?a
 
 ### Why Good Exporters Still Run Out of Cash
 
-Mid-sized agro-exporters are the heartbeat of East Africa, driving avocado, macadamia, French bean, and tea shipments worldwide. Yet many of them are profitable on paper and broke in the bank account at the same time. The reason is almost never demand — it is **timing**.
+Mid-sized agro-exporters are the heartbeat of East Africa, driving avocado, macadamia, French bean, and tea shipments worldwide. Yet many of them are profitable on paper and broke in the bank account at the same time. The reason is almost never demand, it is **timing**.
 
 An exporter pays the farmer, the packhouse, the cold-truck, and the freight forwarder *today*, but the overseas buyer pays 30, 60, or even 90 days after the container ships. That gap between "money out" and "money in" is the working-capital hole that swallows good businesses.
 
@@ -24,7 +24,7 @@ An exporter pays the farmer, the packhouse, the cold-truck, and the freight forw
 
 Most SMEs plug the hole with an overdraft or a quick digital loan. In Kenya those facilities can effectively cost **18% to 24% per year** once fees and short tenors are annualised. On a horticulture gross margin that is often 12–20%, that is the difference between growth and slowly going backwards.
 
-This is not a Kenya-only quirk — it is a continent-sized funding gap. The [African Development Bank](https://www.afdb.org/) puts Africa's unmet demand for trade finance at **US$74–92 billion in 2024**, and SMEs bear the brunt: banks approve just **63% of SME trade-finance applications** versus **80% overall**, usually citing weak creditworthiness and insufficient collateral. The fix is rarely "borrow more" — it is "borrow *smarter*", against the deal rather than the balance sheet.
+This is not a Kenya-only quirk, it is a continent-sized funding gap. The [African Development Bank](https://www.afdb.org/) puts Africa's unmet demand for trade finance at **US$74–92 billion in 2024**, and SMEs bear the brunt: banks approve just **63% of SME trade-finance applications** versus **80% overall**, usually citing weak creditworthiness and insufficient collateral. The fix is rarely "borrow more", it is "borrow *smarter*", against the deal rather than the balance sheet.
 
 #### The Cost of the Wrong Tool
 
@@ -39,7 +39,7 @@ A simple way to see it: if you borrow KSh 1,000,000 for a 60-day shipment cycle 
 
 > **KSh 1,000,000 × 24% × (60 ÷ 365) ≈ KSh 39,450 per cycle**
 
-Run six cycles a year and you have handed the lender close to a quarter of a million shillings — money that should have funded the next container.
+Run six cycles a year and you have handed the lender close to a quarter of a million shillings, money that should have funded the next container.
 
 ### The Trade-Finance Tools That Fit the Cash Cycle
 
@@ -53,7 +53,7 @@ The point of trade finance is to match the *structure* of the money to the *stru
 #### Why Structure Beats a Bigger Overdraft
 - **Self-liquidating:** The shipment repays the facility. You are not carrying open-ended debt.
 - **Currency awareness:** Export revenues are usually in dollars; a well-structured facility lets you manage the USD/KES timing instead of being whipsawed by it.
-- **Document discipline:** Bills of lading, phytosanitary certificates, and confirmed offtake contracts become the backbone of your credit story — and a clean document trail is what gets you a *better* rate next season.
+- **Document discipline:** Bills of lading, phytosanitary certificates, and confirmed offtake contracts become the backbone of your credit story, and a clean document trail is what gets you a *better* rate next season.
 
 ### A Practical Checklist Before You Seek Finance
 
@@ -64,16 +64,16 @@ The point of trade finance is to match the *structure* of the money to the *stru
 
 ### Where Bengula Inc Comes In
 
-This is exactly the kind of problem the **Finance & Banking Advisory** pillar exists for: we map your cash cycle, get your documents and numbers into bankable shape, and connect you to the right trade-finance facility — invoice finance, LPO finance, or an LC line — rather than letting an expensive overdraft quietly eat the margin you worked for.
+This is exactly the kind of problem the **Finance & Banking Advisory** pillar exists for: we map your cash cycle, get your documents and numbers into bankable shape, and connect you to the right trade-finance facility, invoice finance, LPO finance, or an LC line, rather than letting an expensive overdraft quietly eat the margin you worked for.
 
 ### Related Reading
-- [Agri-Export Supply-Chain Logistics Pool](/blog/agri-export-supply-chain) — purchase-order financing in action.
-- [Tea Cooperative Strategic Restructure](/blog/tea-cooperative-restructure) — consolidating expensive overdrafts into one asset-backed facility.
-- [SME Packager Margin Optimization](/blog/sme-packager-optimization) — fixing the unit economics behind the cash squeeze.
+- [Agri-Export Supply-Chain Logistics Pool](/blog/agri-export-supply-chain). Purchase-order financing in action.
+- [Tea Cooperative Strategic Restructure](/blog/tea-cooperative-restructure). Consolidating expensive overdrafts into one asset-backed facility.
+- [SME Packager Margin Optimization](/blog/sme-packager-optimization). Fixing the unit economics behind the cash squeeze.
 
 ### References
-- [African Development Bank — 2025 Trade Finance Report](https://www.afdb.org/en/news-and-events/press-releases/am2026-afdb-2025-trade-finance-report-highlights-resilience-african-financial-institutions-after-covid-19-93697)
-- ["Africa's trade finance gap tops US$74bn as banks retreat" — GTR](https://www.gtreview.com/news/africa/africas-trade-finance-gap-tops-us74bn-as-banks-retreat-afdb-warns/)
-- [Central Bank of Kenya](https://www.centralbank.go.ke/) — lending-rate environment.
+- [African Development Bank, 2025 Trade Finance Report](https://www.afdb.org/en/news-and-events/press-releases/am2026-afdb-2025-trade-finance-report-highlights-resilience-african-financial-institutions-after-covid-19-93697)
+- ["Africa's trade finance gap tops US$74bn as banks retreat", GTR](https://www.gtreview.com/news/africa/africas-trade-finance-gap-tops-us74bn-as-banks-retreat-afdb-warns/)
+- [Central Bank of Kenya](https://www.centralbank.go.ke/). Lending-rate environment.
 
 *Figures above are illustrative and for education only. They are not an offer of finance or a guarantee of any rate; actual terms are set by the licensed lender after assessment.*

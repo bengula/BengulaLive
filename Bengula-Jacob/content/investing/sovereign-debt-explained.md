@@ -1,7 +1,7 @@
 ---
 id: sovereign-debt-explained
 title: "Sovereign Debt Explained: How Ordinary Kenyans Can Lend to Government and Build Long-Term Wealth"
-summary: Most people assume government borrowing is the domain of banks and pension funds. But ordinary Kenyans can lend directly to government through Treasury Bills and Treasury Bonds — and build real wealth doing it.
+summary: Most people assume government borrowing is the domain of banks and pension funds. But ordinary Kenyans can lend directly to government through Treasury Bills and Treasury Bonds, and build real wealth doing it.
 category: Bonds & Bills
 author:
   name: Bengula Jacob
@@ -73,7 +73,7 @@ When participating in an auction, investors may choose between two approaches.
 
 **Non-Competitive Bidding:** The investor accepts the weighted average rate determined by the auction. This approach offers simplicity, a high likelihood of allocation, and is suitable for most retail investors.
 
-**Competitive Bidding:** The investor specifies a desired yield, which can result in potentially higher returns — but carries the risk of receiving no allocation if the bid falls outside the accepted range.
+**Competitive Bidding:** The investor specifies a desired yield, which can result in potentially higher returns, but carries the risk of receiving no allocation if the bid falls outside the accepted range.
 
 For most individual investors, non-competitive bids offer the most practical approach.
 

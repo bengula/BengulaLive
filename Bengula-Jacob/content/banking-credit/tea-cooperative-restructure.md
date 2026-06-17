@@ -16,9 +16,9 @@ coverImage: https://images.pexels.com/photos/5672690/pexels-photo-5672690.jpeg?a
 
 ### The Problem: Profit Eaten by Interest
 
-A tea cooperative in Meru came to us with a familiar complaint — strong volumes, loyal members, and almost nothing left at year-end. On-site, the picture was clear: the co-op was carrying **four separate short-term overdrafts** from different lenders, each taken on at a moment of cash pressure, each at a different (high) rate.
+A tea cooperative in Meru came to us with a familiar complaint, strong volumes, loyal members, and almost nothing left at year-end. On-site, the picture was clear: the co-op was carrying **four separate short-term overdrafts** from different lenders, each taken on at a moment of cash pressure, each at a different (high) rate.
 
-When we added it up, interest and facility fees were consuming **over 28% of gross operating cash flow**. More than a quarter of every shilling the farmers produced was leaving as the cost of borrowing — not as payout, not as reinvestment.
+When we added it up, interest and facility fees were consuming **over 28% of gross operating cash flow**. More than a quarter of every shilling the farmers produced was leaving as the cost of borrowing, not as payout, not as reinvestment.
 
 The timing made it worse. The 2024/25 season was a hard one for tea: national production fell roughly **11%**, the Mombasa auction average slipped, and [KTDA paid growers about KSh 69 billion, down from KSh 89.29 billion the previous year](https://nation.africa/kenya/business/ktda-shake-up-will-reforms-boost-smallholder-tea-farmers-earnings--5330776). When the top line is shrinking, an over-leveraged balance sheet stops being an inconvenience and becomes an existential threat.
 
@@ -36,7 +36,7 @@ The timing made it worse. The 2024/25 season was a hard one for tea: national pr
 
 Before fixing anything, we built a single schedule of every facility: lender, balance, rate, fees, repayment date, and what security was pledged. This sounds obvious, but most stressed businesses have never seen their debt on one page. The schedule immediately exposed two things:
 
-- The co-op was paying for **overlapping facilities** — borrowing from lender B to service lender A.
+- The co-op was paying for **overlapping facilities**, borrowing from lender B to service lender A.
 - Two of the overdrafts were the most expensive money in the whole structure and the easiest to retire.
 
 ### Step Two: Consolidate Into One Asset-Backed Facility
@@ -59,11 +59,11 @@ Consolidation treats the symptom; weak cash visibility was the disease. The co-o
 
 ### The Outcome That Mattered Most
 
-The point was never a clever finance structure — it was the **farmers' payout**. The interest savings were redirected straight into higher, more regular tea and coffee-cherry payments to member families, and the co-op built its first small cash reserve instead of starting each season in the red.
+The point was never a clever finance structure, it was the **farmers' payout**. The interest savings were redirected straight into higher, more regular tea and coffee-cherry payments to member families, and the co-op built its first small cash reserve instead of starting each season in the red.
 
 ### The Takeaway for Any SME or Co-op
 
-1. **Put all your debt on one page** — you cannot fix what you cannot see.
+1. **Put all your debt on one page**, you cannot fix what you cannot see.
 2. **Retire the most expensive money first.**
 3. **Match the facility to the asset:** receivables-backed term debt beats rolling overdrafts for predictable cash needs.
 4. **Close the visibility gap** so you stop borrowing out of surprise.
@@ -71,13 +71,13 @@ The point was never a clever finance structure — it was the **farmers' payout*
 This is the **Finance & Banking Advisory** pillar in practice: get the numbers visible, get the structure right, and put the savings back into the business and the people behind it.
 
 ### Related Reading
-- [SME Trade Finance in Frontier Markets](/blog/sme-trade-finance) — matching finance structure to the cash cycle.
-- [SME Packager Margin Optimization](/blog/sme-packager-optimization) — making the numbers live and bankable.
-- [SACCO Savers & Guarantors](/blog/sacco-savers-guarantors) — member-owned finance and shared risk.
+- [SME Trade Finance in Frontier Markets](/blog/sme-trade-finance). Matching finance structure to the cash cycle.
+- [SME Packager Margin Optimization](/blog/sme-packager-optimization). Making the numbers live and bankable.
+- [SACCO Savers & Guarantors](/blog/sacco-savers-guarantors). Member-owned finance and shared risk.
 
 ### References
-- ["KTDA shake-up: Will reforms boost smallholder tea farmers' earnings?" — Daily Nation](https://nation.africa/kenya/business/ktda-shake-up-will-reforms-boost-smallholder-tea-farmers-earnings--5330776)
-- ["Kenya's tea output drops 11% in 2025" — Kenyan Wall Street](https://kenyanwallstreet.com/kenyas-tea-output-drops-11-in-2025-as-prices-and-key-exports-falter)
-- [Central Bank of Kenya](https://www.centralbank.go.ke/) — interest-rate environment.
+- ["KTDA shake-up: Will reforms boost smallholder tea farmers' earnings?", Daily Nation](https://nation.africa/kenya/business/ktda-shake-up-will-reforms-boost-smallholder-tea-farmers-earnings--5330776)
+- ["Kenya's tea output drops 11% in 2025", Kenyan Wall Street](https://kenyanwallstreet.com/kenyas-tea-output-drops-11-in-2025-as-prices-and-key-exports-falter)
+- [Central Bank of Kenya](https://www.centralbank.go.ke/). Interest-rate environment.
 
 *This is an educational case study. Figures are illustrative of a real engagement and not a guarantee of any specific result.*

@@ -14,15 +14,15 @@ interface FaqItem {
 const faqs: FaqItem[] = [
   {
     q: "Are you giving regulated financial advice?",
-    a: "No. Everything on this site — the calculators, articles, and the Wealth Coach — is for financial education and general literacy. It is not formal, binding, or licensed investment advice. Any regulated banking product is opened and finalised directly with the licensed bank that provides it.",
+    a: "No. Everything on this site, the calculators, articles, and the Wealth Coach, is for financial education and general literacy. It is not formal, binding, or licensed investment advice. Any regulated banking product is opened and finalised directly with the licensed bank that provides it.",
   },
   {
     q: "Is Bengula Inc a bank?",
-    a: "No. Bengula Inc is an independent business-growth and advisory firm. We help you decide what you need and connect you to the right banking and capital products — but the products themselves are issued, regulated, and finalised by the licensed banks and providers, not by Bengula Inc.",
+    a: "No. Bengula Inc is an independent business-growth and advisory firm. We help you decide what you need and connect you to the right banking and capital products, but the products themselves are issued, regulated, and finalised by the licensed banks and providers, not by Bengula Inc.",
   },
   {
     q: "How do I book a consultation?",
-    a: "Open the Services tab, pick the advisory track that fits, choose a date and time, and submit. Your email app opens with the request pre-filled — press send and the office confirms your slot.",
+    a: "Open the Services tab, pick the advisory track that fits, choose a date and time, and submit. Your email app opens with the request pre-filled, press send and the office confirms your slot.",
   },
   {
     q: "What does a consultation cost?",

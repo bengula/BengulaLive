@@ -15,7 +15,7 @@ export default function AboutTab() {
     <div id="about-tab-root" className="space-y-12 animate-fadeIn">
       <Seo
         title="About Bengula Inc | Founder & Two-Pillar Philosophy"
-        description="Meet Bengula Jacob and the firm behind Bengula Inc — how content creation and investment advisory work together to scale businesses and grow wealth."
+        description="Meet Bengula Jacob and the firm behind Bengula Inc, how content creation and investment advisory work together to scale businesses and grow wealth."
         path="/about"
       />
       {/* Bio Section */}

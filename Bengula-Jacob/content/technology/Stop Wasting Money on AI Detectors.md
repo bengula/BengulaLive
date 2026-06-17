@@ -13,7 +13,7 @@ coverImage: https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?a
 ---
 _This article was first written in 2024 on [LinkedIn](https://www.linkedin.com/pulse/stop-wasting-money-ai-detectors-random-guesses-bengula-inc-5mwef/?trackingId=2BdTdrEW7INUM1zQhYHc0A%3D%3D). This version has been expanded with additional research and updated examples._
 
-![A robotic hand reaching toward a glowing network of connected nodes](https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1200 "Detectors do not see authorship — they see statistical patterns, and patterns can mislead. Photo: Pexels")
+![A robotic hand reaching toward a glowing network of connected nodes](https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1200 "Detectors do not see authorship, they see statistical patterns, and patterns can mislead. Photo: Pexels")
 
 Artificial intelligence is now part of ordinary writing, research, coding, education, marketing, and office work. Students use it to brainstorm assignments. Researchers use it to organise literature and draft sections. Businesses use it to generate product descriptions, emails, reports, and customer support content. The concern about undisclosed AI use is legitimate.
 
@@ -96,7 +96,7 @@ One of the most widely discussed examples involved AI detectors identifying pass
 
 I conducted a similar experiment using ZeroGPT, one of the most popular AI detectors on the market.
 
-I tested ZeroGPT, one of the most popular AI detectors in the market, with some of the pre-AI articles today, and the results were astounding. The first article I tested was a [CNN](https://www.linkedin.com/company/cnn/) article by [Greg Krieg](https://www.linkedin.com/in/greg-krieg-5921002a/) , and what do you know, his article was created 100% by AI. According to ZeroGPT, the article was **100% AI-generated**. Given the year the article came out we all know that is impossible.
+I tested ZeroGPT, one of the most popular AI detectors in the market, with some of the pre-AI articles today, and the results were astounding. The first article I tested was a [CNN](https://www.linkedin.com/company/cnn/) article by [Greg Krieg](https://www.linkedin.com/in/greg-krieg-5921002a/), and what do you know, his article was created 100% by AI. According to ZeroGPT, the article was **100% AI-generated**. Given the year the article came out we all know that is impossible.
 
 Yet the detector confidently produced a result that was demonstrably wrong.
 

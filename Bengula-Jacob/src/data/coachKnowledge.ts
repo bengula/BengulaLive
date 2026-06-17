@@ -21,7 +21,7 @@ export const coachKnowledge: KnowledgeEntry[] = [
     keywords: ["dhowcsd", "cds", "central depository", "cds account", "open account", "csd"],
     answer: `**Opening a CDS account via DhowCSD**
 
-The Central Bank of Kenya runs **DhowCSD**, the digital portal for buying Treasury Bills & Bonds directly — no broker fees.
+The Central Bank of Kenya runs **DhowCSD**, the digital portal for buying Treasury Bills & Bonds directly, no broker fees.
 
 1. Visit the DhowCSD portal (or app) and register with your **ID/passport, KRA PIN, and an active bank account**.
 2. Link a Kenyan commercial bank account for settlement (the same one receives your coupon payments).
@@ -35,11 +35,11 @@ Tip: start with a **non-competitive bid** on a 91-day T-Bill to learn the cycle 
     keywords: ["bond", "t-bill", "tbill", "treasury", "ifb", "coupon", "auction", "ladder"],
     answer: `**Treasury Bills vs Bonds (Kenya)**
 
-- **T-Bills** — short term: **91, 182, 364 days**. Sold at a discount; you get the full face value at maturity. Great for parking cash.
-- **T-Bonds** — longer term (2–30 yrs), pay a fixed **coupon twice a year**. Good for predictable income.
-- **IFBs (Infrastructure Bonds)** — coupons are usually **tax-free**, which lifts the effective yield meaningfully.
+- **T-Bills**, short term: **91, 182, 364 days**. Sold at a discount; you get the full face value at maturity. Great for parking cash.
+- **T-Bonds**, longer term (2–30 yrs), pay a fixed **coupon twice a year**. Good for predictable income.
+- **IFBs (Infrastructure Bonds)**, coupons are usually **tax-free**, which lifts the effective yield meaningfully.
 
-**Laddering** means splitting capital across maturities (e.g. 91d / 182d / 1yr) so something is always maturing — that gives you liquidity *and* rolling reinvestment at fresh rates.`,
+**Laddering** means splitting capital across maturities (e.g. 91d / 182d / 1yr) so something is always maturing, that gives you liquidity *and* rolling reinvestment at fresh rates.`,
   },
   {
     id: "mmf",
@@ -50,29 +50,29 @@ MMFs pool investor cash into short-term instruments (T-Bills, fixed deposits, co
 
 Why people like them:
 - **Low entry** (often KSh 1,000–2,500) and easy top-ups.
-- **Liquid** — withdrawals typically settle in 1–3 business days.
+- **Liquid**, withdrawals typically settle in 1–3 business days.
 - **Regulated** by the CMA.
 
-Note: the quoted yield is *gross* — **15% withholding tax** applies to the interest. Always check the fund's effective (net) rate and management fee.`,
+Note: the quoted yield is *gross*, **15% withholding tax** applies to the interest. Always check the fund's effective (net) rate and management fee.`,
   },
   {
     id: "tax",
     keywords: ["tax", "withholding", "wht", "withhold"],
     answer: `**Withholding tax on investment income (Kenya)**
 
-- **Treasury Bonds** — generally **10%** withholding on the coupon (bonds with tenor ≥ 10 yrs); shorter bonds and bills are typically **15%**.
-- **Infrastructure Bonds (IFBs)** — coupons are usually **tax-exempt** (a key reason their effective yield beats ordinary bonds).
-- **Money Market Funds / bank interest** — **15%** withholding on interest earned.
-- **Dividends (NSE shares)** — **5%** withholding for residents.
+- **Treasury Bonds**, generally **10%** withholding on the coupon (bonds with tenor ≥ 10 yrs); shorter bonds and bills are typically **15%**.
+- **Infrastructure Bonds (IFBs)**, coupons are usually **tax-exempt** (a key reason their effective yield beats ordinary bonds).
+- **Money Market Funds / bank interest**, **15%** withholding on interest earned.
+- **Dividends (NSE shares)**, **5%** withholding for residents.
 
-Withholding tax is normally **final** for individuals, so you don't pay again at filing — but keep the certificates for your records.`,
+Withholding tax is normally **final** for individuals, so you don't pay again at filing, but keep the certificates for your records.`,
   },
   {
     id: "makiba",
     keywords: ["m-akiba", "makiba", "mobile bond"],
     answer: `**M-Akiba**
 
-M-Akiba was Kenya's mobile-phone retail bond — you could invest from as little as **KSh 3,000** straight from your phone, with interest paid to your mobile money wallet.
+M-Akiba was Kenya's mobile-phone retail bond, you could invest from as little as **KSh 3,000** straight from your phone, with interest paid to your mobile money wallet.
 
 It proved the concept of *retail* access to government debt. Today the **DhowCSD** portal is the main, fully-digital route for individuals to buy bills and bonds directly. Ask me about *DhowCSD* to see how to set that up.`,
   },
@@ -93,7 +93,7 @@ Watch-outs: choose a **SASRA-licensed, deposit-taking** SACCO, check its capital
     answer: `**Nairobi Securities Exchange (NSE)**
 
 Equities give you **capital growth + dividends**, but with more volatility than bonds.
-- **Blue-chips** (banking, telco, manufacturing) tend to pay steady dividends — useful for income.
+- **Blue-chips** (banking, telco, manufacturing) tend to pay steady dividends, useful for income.
 - You'll need a **CDS account through a licensed stockbroker** to trade.
 - Dividends attract **5% withholding** for residents.
 
@@ -105,10 +105,10 @@ A common approach: anchor your portfolio in **bonds/MMFs for stability**, then a
     answer: `**Real estate & syndicated placements**
 
 Direct property needs big capital and is illiquid. Two ways to get exposure with less:
-- **REITs** on the NSE — buy property income in share-sized units.
-- **Syndicates / co-ownership pools** — investors combine funds for land-banking or income projects, sharing returns proportionally.
+- **REITs** on the NSE, buy property income in share-sized units.
+- **Syndicates / co-ownership pools**, investors combine funds for land-banking or income projects, sharing returns proportionally.
 
-With syndicates, **due diligence is everything**: verify title deeds, the sponsor's track record, the exit timeline, and how returns are distributed. Bengula Inc structures vetted placements with documented frameworks — see the *Investment Pools* tab.`,
+With syndicates, **due diligence is everything**: verify title deeds, the sponsor's track record, the exit timeline, and how returns are distributed. Bengula Inc structures vetted placements with documented frameworks, see the *Investment Pools* tab.`,
   },
   {
     id: "allocation",
@@ -121,7 +121,7 @@ There's no one-size-fits-all, but a balanced template for steady wealth-building
 - **Growth** → NSE blue-chip dividend stocks and/or a REIT.
 - **Alternative** → a vetted syndicate once the above are funded.
 
-With **KSh {savings}/month**, a simple rule is **50% safe (MMF/T-Bills) · 30% income bonds · 20% growth** — then revisit quarterly. Book a consultation for a plan tuned to your goals.`,
+With **KSh {savings}/month**, a simple rule is **50% safe (MMF/T-Bills) · 30% income bonds · 20% growth**, then revisit quarterly. Book a consultation for a plan tuned to your goals.`,
   },
   {
     id: "compound",
@@ -131,7 +131,7 @@ With **KSh {savings}/month**, a simple rule is **50% safe (MMF/T-Bills) · 30% i
 Compounding = earning returns *on your past returns*. The longer the runway, the more dramatic it gets.
 
 - **Rule of 72**: divide 72 by your annual rate to estimate doubling time. At **15%**, money doubles in roughly **72 ÷ 15 ≈ 4.8 years**.
-- **Reinvest** coupons and MMF interest instead of spending them — that's what turns a linear saver into an exponential one.
+- **Reinvest** coupons and MMF interest instead of spending them, that's what turns a linear saver into an exponential one.
 
 Try the **Wealth Compounder** on the Home page to model your own numbers.`,
   },
@@ -140,9 +140,9 @@ Try the **Wealth Compounder** on the Home page to model your own numbers.`,
     keywords: ["budget", "save", "saving", "debt", "emergency", "spend"],
     answer: `**Budgeting & getting started**
 
-1. **Pay yourself first** — automate a transfer to savings/MMF the day you're paid.
+1. **Pay yourself first**, automate a transfer to savings/MMF the day you're paid.
 2. **50/30/20** as a baseline: 50% needs, 30% wants, 20% saving & investing.
-3. **Clear expensive debt** (overdrafts, mobile loans, credit cards) before chasing yields — few investments beat a 20%+ borrowing cost.
+3. **Clear expensive debt** (overdrafts, mobile loans, credit cards) before chasing yields, few investments beat a 20%+ borrowing cost.
 4. Build a **3–6 month emergency fund** in an MMF *before* locking money into bonds or syndicates.
 
 Small and consistent beats large and sporadic. Ask me about *allocation* once your buffer is set.`,
@@ -154,10 +154,10 @@ Small and consistent beats large and sporadic. Ask me about *allocation* once yo
 
 You can invest in Kenyan bills, bonds, MMFs and equities from abroad:
 - Open a **DhowCSD / CDS account** and link a Kenyan bank account (some banks offer **diaspora accounts** designed for this).
-- **IFBs** are popular with the diaspora — tax-free coupons and KES-denominated returns.
+- **IFBs** are popular with the diaspora, tax-free coupons and KES-denominated returns.
 - Factor in **FX risk** (KES vs your home currency) and remittance costs.
 
-Bengula Inc runs structured guidance for diaspora clients — use the **Contact** page or **book a consultation**.`,
+Bengula Inc runs structured guidance for diaspora clients, use the **Contact** page or **book a consultation**.`,
   },
   {
     id: "bengula-eligibility",
@@ -165,7 +165,7 @@ Bengula Inc runs structured guidance for diaspora clients — use the **Contact*
     answer: `**Bengula Inc syndicate eligibility**
 
 Bengula Inc structures **private co-investment placements** (land-banking, logistics, SME funding). Typically:
-- A **minimum commitment** per pool (varies by deal — see *Investment Pools*).
+- A **minimum commitment** per pool (varies by deal, see *Investment Pools*).
 - A short **due-diligence / KYC** step.
 - A defined **tenure and exit** for each placement.
 
@@ -223,7 +223,7 @@ export const COACH_FALLBACK = `I am the Bengula Inc Business & Wealth Coach. I c
 - **Pillar 2: Finance & Banking Advisory** (wise investments, DhowCSD account setup, Treasury T-Bills & Bonds, Money Market Funds, SACCOs)
 - **Founder Bio**: Bengula Jacob's B.Sc. from Maseno University, corporate banking experience, and the founding of Bengula Inc in 2014
 
-Try one of the quick chips below, or ask in those terms and I'll share what I know. For anything specific to your situation, **book a consultation** — Bengula Jacob reviews these personally.`;
+Try one of the quick chips below, or ask in those terms and I'll share what I know. For anything specific to your situation, **book a consultation**, Bengula Jacob reviews these personally.`;
 
 /**
  * Pure, offline responder. Scores each entry by keyword hits and returns the best match.

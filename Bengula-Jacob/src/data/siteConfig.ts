@@ -26,7 +26,7 @@ export const siteConfig = {
     company: "Bengula Inc",
     slogan: "Adding meaning to life",
     // One-line positioning used in the hero + meta description.
-    tagline: "We help East African businesses grow — pairing data-driven digital visibility with finance and banking advisory.",
+    tagline: "We help East African businesses grow, pairing data-driven digital visibility with finance and banking advisory.",
     // The two equal pillars the whole brand is organised around. Reused across
     // the home page, services, and about so the message stays consistent.
     pillars: [

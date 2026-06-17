@@ -56,7 +56,7 @@ export default function HomeTab() {
     {
       path: '/services',
       title: 'Finance & Banking Advisory',
-      desc: 'Match your business to the right bank products — accounts, lending, trade finance, treasury, and protection — with a banker structuring the deal.',
+      desc: 'Match your business to the right bank products, accounts, lending, trade finance, treasury, and protection, with a banker structuring the deal.',
       icon: Landmark,
       btn: 'Book Session',
     },
@@ -77,7 +77,7 @@ export default function HomeTab() {
     {
       path: '/about',
       title: 'About Bengula Inc',
-      desc: 'Meet the firm behind "Adding meaning to life" — the founder, the philosophy, and how the two pillars work together.',
+      desc: 'Meet the firm behind "Adding meaning to life", the founder, the philosophy, and how the two pillars work together.',
       icon: Building2,
       btn: 'View Profile',
     },
@@ -86,7 +86,7 @@ export default function HomeTab() {
   const priorities = [
     {
       title: 'Right Banking, Properly Structured',
-      text: 'Map your cash cycle and growth plan, then connect you to the accounts, lending, trade finance, and treasury tools that actually fit — and help you qualify for them.',
+      text: 'Map your cash cycle and growth plan, then connect you to the accounts, lending, trade finance, and treasury tools that actually fit, and help you qualify for them.',
       icon: Landmark,
     },
     {
@@ -96,7 +96,7 @@ export default function HomeTab() {
     },
     {
       title: 'A Partner on Your Side',
-      text: 'You get an advisor who speaks both finance and banking and sits on your side of the table — not a form to fill in alone.',
+      text: 'You get an advisor who speaks both finance and banking and sits on your side of the table, not a form to fill in alone.',
       icon: BadgeCheck,
     },
   ];
@@ -366,7 +366,7 @@ export default function HomeTab() {
             <span className="text-xs font-bold text-violet-300 tracking-widest uppercase font-mono">Weekly Business Notes</span>
             <h4 className="text-xl md:text-2xl font-extrabold">Subscribe to The Sovereign Ledger</h4>
             <p className="text-xs text-slate-300 leading-relaxed max-w-md mx-auto">
-              Concise, practical notes on business finance, banking products, market rates, and using data to grow — written for owners and professionals.
+              Concise, practical notes on business finance, banking products, market rates, and using data to grow, written for owners and professionals.
             </p>
           </div>
 

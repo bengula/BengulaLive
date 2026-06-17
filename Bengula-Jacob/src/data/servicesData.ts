@@ -4,8 +4,8 @@ export const servicesList: ServiceDetail[] = [
   {
     id: "banking-finance-advisory",
     title: "Banking & Business Finance Advisory",
-    description: "Match your business to the right bank products — accounts, lending, trade finance, treasury, and protection — with a banker who structures the deal.",
-    longDescription: "Most owners use a fraction of what a bank can actually do for them. As a practising Relationship Manager, I sit on your side of the table: map your cash cycle and growth plan, then connect you to the banking products that fit — and help you qualify, structure, and price them properly. You get an advisor who speaks both finance and banking, not a form to fill alone.",
+    description: "Match your business to the right bank products, accounts, lending, trade finance, treasury, and protection, with a banker who structures the deal.",
+    longDescription: "Most owners use a fraction of what a bank can actually do for them. As a practising Relationship Manager, I sit on your side of the table: map your cash cycle and growth plan, then connect you to the banking products that fit, and help you qualify, structure, and price them properly. You get an advisor who speaks both finance and banking, not a form to fill alone.",
     benefits: [
       "Business current accounts, merchant POS, payroll & cash-management setup",
       "Working-capital lending, overdrafts, asset finance & LPO / invoice trade finance",
