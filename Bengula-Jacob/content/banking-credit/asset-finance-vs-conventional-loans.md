@@ -9,10 +9,10 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/6694543/pexels-photo-6694543.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/32634336/pexels-photo-32634336.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
-![A lorry and a calculator on a desk, with financing documents](https://images.pexels.com/photos/6694543/pexels-photo-6694543.jpeg?auto=compress&cs=tinysrgb&w=1200 "When the asset secures the loan, the lender's risk falls, and so should your rate. Photo: Pexels")
+![Aerial view of vehicles arranged in a parking lot](https://images.pexels.com/photos/32634336/pexels-photo-32634336.jpeg?auto=compress&cs=tinysrgb&w=1200 "When the asset secures the loan, the lender's risk falls, and so should your rate. Photo: Pexels")
 
 If you are searching for the *cheapest asset finance interest rates in Kenya*, or weighing an *instant logbook loan* against a bank facility to buy a lorry, matatu, tractor, or piece of machinery, the question underneath all of those searches is the same one: **where is borrowed money cheapest, and why?**
 

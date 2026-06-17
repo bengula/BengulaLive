@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev", "--prefix", "Bengula-Jacob"],
       "port": 5173
+    },
+    {
+      "name": "cf",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["wrangler", "dev", "--config", "Bengula-Jacob/wrangler.jsonc", "--port", "8788"],
+      "port": 8788
     }
   ]
 }

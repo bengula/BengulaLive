@@ -1,15 +1,24 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "bengulainc",
+  "main": "worker/index.ts",
   "compatibility_date": "2026-06-04",
   "observability": {
     "enabled": true
   },
   "assets": {
     "directory": "./dist",
-    "not_found_handling": "single-page-application"
+    "not_found_handling": "single-page-application",
+    "binding": "ASSETS"
   },
   "compatibility_flags": [
     "nodejs_compat"
+  ],
+  // KV store for article like counts (created via `wrangler kv namespace create LIKES`).
+  "kv_namespaces": [
+    {
+      "binding": "LIKES",
+      "id": "cc75161e2df2432c86ac8ae666277f1d"
+    }
   ]
 }

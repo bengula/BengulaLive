@@ -3,11 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogData';
 import { categoryImage } from '../data/media';
 import { getAuthorProfile } from '../data/authors';
+import { fetchCounts, getLikedIds, toggleLike } from '../data/likes';
 import { MarkdownContent } from '../utils/markdownText';
 import Seo, { SITE_URL } from '../seo';
 import { Search, BookOpen, Clock, Calendar, ArrowLeft, Heart, Share2, Sparkles, UserCircle2 } from 'lucide-react';
@@ -19,7 +20,16 @@ export default function BlogTab() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [likes, setLikes] = useState<Record<string, number>>({});
+  const [likedIds, setLikedIds] = useState<Set<string>>(new Set());
   const [shared, setShared] = useState<Record<string, boolean>>({});
+
+  // Load this device's liked state + the global counts (client-side only).
+  useEffect(() => {
+    setLikedIds(getLikedIds());
+    fetchCounts(blogPosts.map((p) => p.id)).then((counts) => {
+      if (Object.keys(counts).length) setLikes((prev) => ({ ...counts, ...prev }));
+    });
+  }, []);
 
   const categories = useMemo(
     () => ['All', ...Array.from(new Set(blogPosts.map((post) => post.category)))],
@@ -45,10 +55,19 @@ export default function BlogTab() {
 
   const handleLike = (id: string, e: React.MouseEvent) => {
     e.stopPropagation();
-    setLikes(prev => ({
-      ...prev,
-      [id]: (prev[id] || 0) + 1
-    }));
+    const wasLiked = likedIds.has(id);
+
+    // Optimistic update; reconciled with the server's authoritative count below.
+    setLikes(prev => ({ ...prev, [id]: Math.max(0, (prev[id] || 0) + (wasLiked ? -1 : 1)) }));
+    setLikedIds(prev => {
+      const next = new Set(prev);
+      if (wasLiked) next.delete(id); else next.add(id);
+      return next;
+    });
+
+    toggleLike(id).then(({ count }) => {
+      if (count !== null) setLikes(prev => ({ ...prev, [id]: count }));
+    });
   };
 
   const handleShare = (id: string, e: React.MouseEvent) => {
@@ -205,6 +224,10 @@ export default function BlogTab() {
                   <Clock className="w-3.5 h-3.5 text-violet-800" />
                   {activePost.readTime}
                 </span>
+                <span className="flex items-center gap-1 font-semibold text-rose-600">
+                  <Heart className={`w-3.5 h-3.5 ${likedIds.has(activePost.id) ? 'fill-rose-500 text-rose-500' : 'text-rose-500'}`} />
+                  {likes[activePost.id] || 0}
+                </span>
               </div>
             </div>
           </div>
@@ -252,7 +275,7 @@ export default function BlogTab() {
                 onClick={(e) => handleLike(activePost.id, e)}
                 className="flex items-center gap-1.5 py-2 px-3 bg-white border border-slate-200 rounded-lg text-slate-600 hover:text-rose-600 hover:bg-slate-50 transition cursor-pointer shadow-xs font-bold"
               >
-                <Heart className={`w-4 h-4 ${likes[activePost.id] ? 'fill-rose-500 text-rose-500' : ''}`} />
+                <Heart className={`w-4 h-4 ${likedIds.has(activePost.id) ? 'fill-rose-500 text-rose-500' : ''}`} />
                 <span className="font-mono">{likes[activePost.id] || 0} Likes</span>
               </button>
               <button
@@ -330,6 +353,12 @@ export default function BlogTab() {
                   />
                 </div>
 
+                {/* Likes total badge (read-only; the action button is in the card footer) */}
+                <div className="absolute top-3 right-3 z-10 flex items-center gap-1 rounded-full bg-slate-900/55 backdrop-blur px-2.5 py-1 text-[11px] font-bold text-white font-mono shadow-sm">
+                  <Heart className={`w-3 h-3 ${likedIds.has(post.id) ? 'fill-rose-400 text-rose-400' : 'text-rose-300'}`} />
+                  {likes[post.id] || 0}
+                </div>
+
                 <div className="p-6 flex flex-col justify-between flex-1">
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
@@ -363,7 +392,7 @@ export default function BlogTab() {
                       onClick={(e) => handleLike(post.id, e)}
                       className="p-1 px-2 rounded hover:bg-slate-100 flex items-center gap-1 font-mono hover:text-rose-600 transition"
                     >
-                      <Heart className="w-3.5 h-3.5 text-slate-400 group-hover:text-rose-500" />
+                      <Heart className={`w-3.5 h-3.5 ${likedIds.has(post.id) ? 'fill-rose-500 text-rose-500' : 'text-slate-400 group-hover:text-rose-500'}`} />
                       <span className="font-bold text-slate-700">{likes[post.id] || 0}</span>
                     </button>
                     <button
