@@ -34,7 +34,7 @@ In the case we studied, on-farm spoilage on the connected crops fell from around
 
 | Metric | Figure | Source |
 | --- | ---: | --- |
-| Kenyan food lost or wasted each year | KSh 72 billion (~US$578m) | [WRI Africa, 2025](https://www.freshplaza.com/north-america/article/9841203/) |
+| Kenyan food lost or wasted each year | KSh 72 billion (~US\$578m) | [WRI Africa, 2025](https://www.freshplaza.com/north-america/article/9841203/) |
 | Post-harvest loss, fruits & vegetables | 30% – 50% (up to 80% in some chains) | [Frontiers, 2024](https://www.frontiersin.org/journals/horticulture/articles/10.3389/fhort.2024.1474056/full) |
 | Avocado loss: domestic vs export channel | 35% vs 15% | [Frontiers, 2024](https://www.frontiersin.org/journals/horticulture/articles/10.3389/fhort.2024.1474056/full) |
 | Grant funding for solar cold storage (2024–2034) | €23.3 million | [UNCDF / Mitigation Action Facility](https://www.uncdf.org/article/8922/catalysing-climate-resilient-agriculture-in-kenya-with-solar-powered-cold-storage) |
@@ -68,6 +68,6 @@ Cold storage is a small piece of hardware with an outsized effect: it shifts pow
 ### References
 - [Frontiers in Horticulture (2024), food loss in Kiambu County value chains](https://www.frontiersin.org/journals/horticulture/articles/10.3389/fhort.2024.1474056/full)
 - [UNCDF, solar-powered cold storage in Kenya](https://www.uncdf.org/article/8922/catalysing-climate-resilient-agriculture-in-kenya-with-solar-powered-cold-storage)
-- ["Kenya ramps up cold chain investment as post-harvest losses reach US$578 million", FreshPlaza](https://www.freshplaza.com/north-america/article/9841203/)
+- ["Kenya ramps up cold chain investment as post-harvest losses reach US\$578 million", FreshPlaza](https://www.freshplaza.com/north-america/article/9841203/)
 
 *This is an educational case study, not an offer of securities or a solicitation to invest. Figures are illustrative projections, not guarantees. Early-stage investments can lose value; any regulated raise is conducted only through appropriately licensed channels.*

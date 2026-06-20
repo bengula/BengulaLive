@@ -1,8 +1,10 @@
 import React from "react";
 import ReactMarkdown, { type Components } from "react-markdown";
 import rehypeRaw from "rehype-raw";
-import rehypeSanitize from "rehype-sanitize";
+import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 function renderEmphasis(text: string, strongClassName: string, keyPrefix: string) {
   const nodes: React.ReactNode[] = [];
@@ -264,14 +266,52 @@ const markdownComponents: Components = {
   pre: ({ children }) => <>{children}</>,
 };
 
-export function MarkdownContent({ content }: { content: string }) {
+export function MarkdownContent({
+  content,
+  components,
+}: {
+  content: string;
+  components?: Components;
+}) {
+  // Escape literal dollar signs followed by a digit (like $720 or US$578m)
+  // to prevent remark-math from incorrectly parsing them as math blocks.
+  // We match a $ that is:
+  // - Not preceded by \ or $ (to avoid double escaping or breaking double dollars $$)
+  // - Not followed by $ (to avoid breaking double dollars $$)
+  // - Followed by optional spaces and a digit (which indicates currency/numbers, not variables or LaTeX math)
+  const escapedContent = content.replace(/(?<![\$\\])\$(?![\$])(?=\s*\d)/g, "\\$");
+
   return (
     <ReactMarkdown
-      remarkPlugins={[remarkGfm]}
-      rehypePlugins={[rehypeRaw, rehypeSanitize]}
-      components={markdownComponents}
+      remarkPlugins={[remarkGfm, remarkMath]}
+      rehypePlugins={[
+        rehypeRaw,
+        [
+          rehypeSanitize,
+          {
+            ...defaultSchema,
+            attributes: {
+              ...defaultSchema.attributes,
+              code: [
+                ...(defaultSchema.attributes?.code || []),
+                ["className", /^language-./, "math-inline", "math-display"],
+              ],
+              span: [
+                ...(defaultSchema.attributes?.span || []),
+                ["className", "math", "math-inline", "math-display"],
+              ],
+              div: [
+                ...(defaultSchema.attributes?.div || []),
+                ["className", "math", "math-display"],
+              ],
+            },
+          },
+        ],
+        rehypeKatex,
+      ]}
+      components={{ ...markdownComponents, ...components }}
     >
-      {content}
+      {escapedContent}
     </ReactMarkdown>
   );
 }

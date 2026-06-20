@@ -18,7 +18,7 @@ import {
   HelpCircle,
 } from 'lucide-react';
 import { allInsights } from '../data/insights';
-import { renderInlineMarkdown } from '../utils/markdownText';
+import { renderInlineMarkdown, MarkdownContent } from '../utils/markdownText';
 
 const insightIcons: Record<string, React.ElementType> = {
   Landmark,
@@ -71,7 +71,7 @@ export default function InsightDeck() {
   const stackRotations = [0, -1.8, 1.2, -0.8, 1.5];
 
   return (
-    <div className="flex w-full max-w-[34rem] flex-col items-center gap-5">
+    <div className="flex w-full max-w-[40rem] flex-col items-center gap-5">
       <div className="deck relative w-full pb-14">
         {order.map((cardIndex, depth) => {
           const insight = allInsights[cardIndex];
@@ -139,14 +139,20 @@ export default function InsightDeck() {
                 </div>
 
                 {/* Revealed side — the insight, set like a page from an old book. */}
-                <div className="deck-face deck-face-back book-page font-charter flex flex-col gap-4 p-8 md:p-10">
+                <div className="deck-face deck-face-back book-page font-charter flex flex-col gap-4 p-5 sm:p-8 md:p-10">
                   <span className="book-page-tag">{insight.tag}</span>
-                  <h4 className="text-center text-2xl sm:text-[1.75rem] font-bold leading-snug text-[#241f14]">
+                  <h4 className="text-center text-xl sm:text-2xl md:text-[1.75rem] font-bold leading-snug text-[#241f14]">
                     {insight.title}
                   </h4>
-                  <p className="book-page-body text-[15px] sm:text-base leading-relaxed animate-fadeIn">
-                    {renderInlineMarkdown(insight.body, "font-bold text-[#241f14]")}
-                  </p>
+                  <div className="book-page-body text-sm sm:text-[15px] md:text-base leading-relaxed animate-fadeIn">
+                    <MarkdownContent
+                      content={insight.body}
+                      components={{
+                        p: ({ children }) => <p className="mb-3 last:mb-0">{children}</p>,
+                        strong: ({ children }) => <strong className="font-bold text-[#241f14]">{children}</strong>,
+                      }}
+                    />
+                  </div>
                   <span className="mt-auto flex flex-col items-center gap-1 pt-1">
                     <Icon className="h-4 w-4 text-[#9a7434]" aria-hidden="true" />
                     <span className="text-xs italic text-[#9a7434]">

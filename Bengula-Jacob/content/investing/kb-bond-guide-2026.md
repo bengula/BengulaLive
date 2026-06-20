@@ -72,7 +72,7 @@ That **KSh 21,000 a year** difference, reinvested across a 15-year tenor, is the
 
 ### Where Bonds Fit in the Bigger Plan
 
-Bonds are the long-horizon anchor, not the whole portfolio. Keep your *liquid* buffer in a [Money Market Fund](/blog/future-mmfs-kenya), then ladder bonds for locked, long-term yield. For the mechanics of auctions, competitive vs non-competitive bids, and DhowCSD, read [Sovereign Debt Explained](/blog/sovereign-debt-explained). For a real case of idle land redeployed into a bond ladder generating monthly income, see [Sleeping Asset Yield Optimization](/blog/sleeping-asset-optimization).
+Bonds are the long-horizon anchor, not the whole portfolio. Keep your *liquid* buffer in a [Money Market Fund](/blog/future-mmfs-kenya), then ladder bonds for locked, long-term yield. For the mechanics of auctions, competitive vs non-competitive bids, and DhowCSD, read [Sovereign Debt Explained](/blog/sovereign-debt-explained). If you are a Kenyan investor living overseas, check the step-by-step onboarding walkthrough in [CBK Diaspora Bond Access](/blog/cbk-diaspora-bond-access). For a real case of idle land redeployed into a bond ladder generating monthly income, see [Sleeping Asset Yield Optimization](/blog/sleeping-asset-optimization).
 
 ### References
 - [Central Bank of Kenya, Treasury Bonds](https://www.centralbank.go.ke/securities/treasury-bonds/)

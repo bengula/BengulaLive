@@ -279,7 +279,14 @@ body {
               opacity 0.6s ease,
               box-shadow 0.7s cubic-bezier(0.2, 1, 0.3, 1);
   will-change: transform, opacity, box-shadow;
-  height: 100%;
+  /* Aspect ratio: 3:2 landscape on desktop, 5:7 portrait on mobile */
+  aspect-ratio: 1.5 / 1;
+  width: 100%;
+}
+@media (max-width: 640px) {
+  .deck-card {
+    aspect-ratio: 5 / 7;
+  }
 }
 .deck-card.is-top {
   cursor: pointer;
@@ -350,7 +357,6 @@ body {
 .card-back-panel {
   flex: 1;
   position: relative;
-  min-height: 16rem;
   border-radius: 0.55rem;
   border: 1px solid rgba(247, 241, 225, 0.55);
   overflow: hidden;
@@ -453,6 +459,7 @@ body {
   width: 7.25rem;
   height: 7.25rem;
   border-radius: 50%;
+  aspect-ratio: 1 / 1;
   background:
     linear-gradient(
       135deg,
@@ -569,6 +576,24 @@ body {
   color: #3a3428;
   z-index: 3;
 }
+
+/* Make display math blocks horizontally scrollable on mobile if they exceed card width */
+.book-page-body .math-display,
+.book-page-body .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  padding: 6px 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Scale down math formula sizing slightly on small screens */
+@media (max-width: 640px) {
+  .book-page-body .katex-display {
+    font-size: 0.88em;
+  }
+}
+.book-page-body p:first-of-type::first-letter,
 .book-page-body::first-letter {
   /* Drop cap, in the specimen's warm tan. */
   float: left;

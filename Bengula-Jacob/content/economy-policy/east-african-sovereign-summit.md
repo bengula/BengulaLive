@@ -48,7 +48,7 @@ The honest caveat I stressed from the podium: "tax-free" and "government-backed"
 
 ### The Diaspora Angle
 
-A large part of the conversation was the **diaspora**. Kenyans abroad sent home a record **[KSh 640.75 billion (US$4.94bn) in 2024](https://www.the-star.co.ke/business/2025-01-20-kenyas-2024-diaspora-inflows-hit-all-time-high-of-sh637-billion)**, rising again to about **KSh 650 billion in 2025**, making remittances Kenya's single largest source of foreign exchange, ahead of tourism and traditional exports. Much of that lands in consumption or idle accounts. Simplifying digital bidding routes so overseas Kenyans can put part of that into sovereign instruments, earning a strong, tax-advantaged local yield, was seen as one of the highest-impact opportunities on the table.
+A large part of the conversation was the **diaspora**. Kenyans abroad sent home a record **[KSh 640.75 billion (US\$4.94bn) in 2024](https://www.the-star.co.ke/business/2025-01-20-kenyas-2024-diaspora-inflows-hit-all-time-high-of-sh637-billion)**, rising again to about **KSh 650 billion in 2025**, making remittances Kenya's single largest source of foreign exchange, ahead of tourism and traditional exports. Much of that lands in consumption or idle accounts. Simplifying digital bidding routes so overseas Kenyans can put part of that into sovereign instruments, earning a strong, tax-advantaged local yield, was seen as one of the highest-impact opportunities on the table.
 
 ### The Long Game: Regional Integration
 

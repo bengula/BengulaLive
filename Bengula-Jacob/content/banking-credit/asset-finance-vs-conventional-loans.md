@@ -2,7 +2,7 @@
 id: asset-finance-vs-conventional-loans
 title: "Why Asset Finance Is Cheaper Than a Conventional Loan in Kenya"
 summary: A logbook loan or an unsecured personal loan can feel faster, but the asset itself is the cheapest collateral you will ever pledge. Using Absa Bank Kenya's 2026 asset finance (ABF) programme as a worked example, here is why asset finance routinely undercuts conventional and logbook loans, and the few cases where it does not.
-category: SME Trade Finance
+category: Banking & Credit
 date: June 17, 2026
 readTime: 11 min read
 author:
@@ -134,6 +134,7 @@ The desk's default for any income-generating purchase (a matatu, a lorry, a trac
 The cheapest loan in Kenya is rarely the fastest one, and it is almost never the one advertised on a roadside banner. When you are funding a vehicle, equipment, or any productive asset, asset finance wins on rate, on tax treatment, on tenor, and on preserving the working capital that keeps a business alive. A logbook loan trades all of that away for speed: a fair bargain for a genuine emergency, a costly one for an asset that could have secured itself. Match the structure of the borrowing to the structure of the need, convert every quote to an effective annual rate before you compare, and the cheaper path usually chooses itself.
 
 ### Related Reading
+- [How Kenyan Banks Price Your Loan: The Base Rate Plus 'K' Margin](/blog/how-kenyan-banks-price-loans). Why securing a loan lowers the risk premium inside your rate, and what else moves the number.
 - [Safe for Savers, Risky for Guarantors: The Changing Calculus of SACCO Membership in Kenya](/blog/sacco-savers-guarantors). Why secured borrowing protects you in ways a guarantee never can.
 - [SME Trade Finance & Supply-Chain Optimization in Frontier Markets](/blog/sme-trade-finance). Matching the structure of the money to the structure of the deal.
 - [Sleeping Asset Yield Optimization](/blog/sleeping-asset-optimization). Keeping the deposit and the buffer working while you repay.

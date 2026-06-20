@@ -67,6 +67,7 @@ This is exactly why the falling-rate environment matters. As MMF yields drift do
 Used together, MMF for liquidity, bonds for locked long-term yield, you get a simple, powerful cash strategy that most savers never set up.
 
 ### Related Reading
+- [Fixed Deposit vs. Treasury Bills: Pricing Your Business Cash](/blog/fixed-deposit-lending-arbitrage). Comparing bank deposits, short-term sovereign debt, and cash yields.
 - [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026). The next step once your buffer is full.
 - [Sovereign Debt Explained](/blog/sovereign-debt-explained). Treasury Bills vs Bonds, and how DhowCSD works.
 - [Sleeping Asset Yield Optimization](/blog/sleeping-asset-optimization). Turning idle capital into monthly income.

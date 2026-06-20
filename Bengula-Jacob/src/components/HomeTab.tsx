@@ -19,6 +19,7 @@ import {
 import { useNavigate } from 'react-router-dom';
 import Calculators from './Calculators';
 import LoanAppraisalCalculator from './LoanAppraisalCalculator';
+import CreditCardGraceCalculator from './CreditCardGraceCalculator';
 import InsightDeck from './InsightDeck';
 import Resources from './Resources';
 import FAQ from './FAQ';
@@ -288,15 +289,15 @@ export default function HomeTab() {
         ))}
       </section>
 
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center glass-strong rounded-2xl p-6 md:p-10 reveal">
-        <div className="space-y-4 text-center lg:text-left">
+      <section className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center glass-strong rounded-2xl p-6 md:p-10 reveal">
+        <div className="space-y-4 text-center lg:text-left lg:col-span-2">
           <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest">Insights You Can Act On</span>
           <h2 className="text-2xl font-bold text-slate-900">A quick deck of money truths</h2>
           <p className="text-sm text-slate-600 leading-relaxed max-w-md mx-auto lg:mx-0">
             Five practical takes on saving, borrowing, and sovereign debt in Kenya. Tap the top card to flip it, then tap again to shuffle to the next one.
           </p>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center lg:col-span-3">
           <InsightDeck />
         </div>
       </section>
@@ -321,6 +322,17 @@ export default function HomeTab() {
           </p>
         </div>
         <Calculators />
+      </section>
+
+      <section id="credit-card-grace-calculator" className="space-y-6 reveal">
+        <div className="max-w-xl mx-auto text-center space-y-1.5">
+          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Card Cost Tool</span>
+          <h3 className="text-xl md:text-2xl font-bold text-slate-900">Credit Card Interest-Free Period Calculator</h3>
+          <p className="text-xs text-slate-500">
+            Work out how many of the advertised "up to 50 days" interest-free your next card purchase actually earns.
+          </p>
+        </div>
+        <CreditCardGraceCalculator />
       </section>
 
       <section className="space-y-4 glass rounded-2xl p-6 md:p-8 reveal">

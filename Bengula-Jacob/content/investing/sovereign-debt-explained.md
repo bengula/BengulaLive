@@ -144,3 +144,8 @@ The goal is not simply to earn interest. It is to understand how money moves thr
 - Investors should understand inflation, liquidity, and interest-rate risks.
 - **DhowCSD** has made participation significantly easier for retail investors.
 - Understanding sovereign debt helps investors better understand the wider economy.
+
+### Related Reading
+- [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026). How to structure a tax-efficient bond ladder.
+- [CBK Diaspora Bond Access: A Guide to DhowCSD for Overseas Kenyans](/blog/cbk-diaspora-bond-access). A complete guide for diaspora investors bidding via DhowCSD.
+- [Fixed Deposit vs. Treasury Bills: Pricing Your Business Cash](/blog/fixed-deposit-lending-arbitrage). An analytical comparison of short-term cash placement options.

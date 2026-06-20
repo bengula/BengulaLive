@@ -3,6 +3,7 @@ node_modules/
 build/
 dist/
 coverage/
+.vite-react-ssg-temp/
 .DS_Store
 *.log
 .env*
