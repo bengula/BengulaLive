@@ -15,7 +15,7 @@ export default function AboutTab() {
     <div id="about-tab-root" className="space-y-12 animate-fadeIn">
       <Seo
         title="About Bengula Inc | Founder & Two-Pillar Philosophy"
-        description="Meet Bengula Jacob and the firm behind Bengula Inc, how content creation and investment advisory work together to scale businesses and grow wealth."
+        description="Meet Bengula Jacob and the firm behind Bengula Inc. Discover how content creation and investment advisory work together to scale your business and grow your wealth."
         path="/about"
       />
       {/* Bio Section */}
@@ -71,10 +71,10 @@ export default function AboutTab() {
             I currently operate as a <strong>Relationship Manager at Absa Bank's Malindi branch</strong>, where I manage and deepen relationships with a portfolio of over 5,000 retail and high-profile clients, ensuring AML/KYC/CDD compliance under CBK guidelines. I hold a B.Sc. in Mathematics and Economics with IT from Maseno University (2014-2017).
           </p>
           
-          <div className="bg-slate-50 border border-slate-200/60 p-4 rounded-xl space-y-2 text-xs">
+          <div className="flex-1 min-w-0">
             <h3 className="font-bold text-violet-800 font-sans uppercase tracking-widest text-[10px]">Bengula Inc Mission & Vision</h3>
             <p className="text-slate-600 leading-relaxed font-normal">
-              Founded in 2014, <strong>Bengula Inc</strong> has been helping customers scale their businesses through data-driven content creation and digital growth strategy. We also help individuals and organizations make wise, calculated investments in sovereign debt, unit trusts, and alternative assets.
+              Founded in 2014, we help you scale your business through data-driven content creation and digital growth strategy. We also help you make wise, calculated investments in sovereign debt, unit trusts, and alternative assets.
             </p>
           </div>
 
@@ -82,12 +82,12 @@ export default function AboutTab() {
             <div className="glass-card p-4 rounded-xl space-y-1.5">
               <ShieldCheck className="w-5 h-5 text-violet-800" />
               <p className="text-sm font-bold text-slate-800">Business Scaling & Content</p>
-              <p className="text-xs text-slate-500">Helping businesses achieve organic growth and high visibility via SEO-optimized content creation, copywriting, and digital tools.</p>
+              <p className="text-xs text-slate-500">Helping you achieve organic growth and high visibility via SEO-optimized content creation, copywriting, and digital tools.</p>
             </div>
             <div className="glass-card p-4 rounded-xl space-y-1.5">
               <User className="w-5 h-5 text-violet-800" />
               <p className="text-sm font-bold text-slate-800">Wise Investment Advisory</p>
-              <p className="text-xs text-slate-500">Advising individuals and organizations on secure capital placement, bond laddering, MMF allocation, and risk management.</p>
+              <p className="text-xs text-slate-500">Advising you on secure capital placement, bond laddering, MMF allocation, and risk management.</p>
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@ export default function AboutTab() {
           </div>
         </div>
         <p className="relative text-violet-100 text-sm leading-relaxed font-normal font-sans">
-          Founded in 2014, <strong>Bengula Inc</strong> has spent over a decade helping businesses scale through premium, data-driven content creation and high-impact digital strategy. In parallel, we empower individuals and organizations to make wise investments in the Kenyan financial landscape, specializing in Treasury Bonds, bills, Money Market Funds, and structured private wealth solutions.
+          Founded in 2014, we have spent over a decade helping you scale your business through premium, data-driven content creation and high-impact digital strategy. In parallel, we empower you to make wise investments in the Kenyan financial landscape, specializing in Treasury Bonds, bills, Money Market Funds, and structured private wealth solutions.
         </p>
       </div>
 

@@ -28,6 +28,7 @@ import { siteConfig, whatsappHref } from '../data/siteConfig';
 import { keyRates } from '../data/cbkRates';
 import { openMailto } from '../utils/mailto';
 import { trackConversion } from '../utils/conversion';
+import Typewriter from './Typewriter';
 
 export default function HomeTab() {
   const navigate = useNavigate();
@@ -48,7 +49,7 @@ export default function HomeTab() {
   };
 
   const metrics = [
-    { label: 'Who We Serve', value: 'SMEs & Owners', desc: 'Businesses, professionals, and diaspora clients in East Africa' },
+    { label: 'Who We Serve', value: 'You', desc: 'SMEs, owners, professionals, and diaspora clients in East Africa' },
     { label: 'Two Pillars', value: 'Growth + Finance', desc: 'Data & digital growth and finance & banking advisory' },
     { label: 'Banking Edge', value: 'Inside Track', desc: 'Advice from a practising bank Relationship Manager' },
     { label: 'How We Work', value: 'Plain & Practical', desc: 'Clear analysis before any product or decision' },
@@ -65,7 +66,7 @@ export default function HomeTab() {
     {
       path: '/services',
       title: 'Data & Digital Growth',
-      desc: 'Turn your data and online presence into customers with analytics, SEO, and digital systems built for East African businesses.',
+      desc: 'Turn your data and online presence into customers with analytics, SEO, and digital systems built for your business.',
       icon: LineChart,
       btn: 'Grow Online',
     },
@@ -119,10 +120,10 @@ export default function HomeTab() {
 
           <div className="space-y-4">
             <h1 className="text-3xl md:text-5xl font-extrabold text-slate-950 tracking-tight leading-[1.08] font-sans">
-              Finance tools and advisory for businesses that need <span className="text-gradient">clear decisions</span>, not guesswork.
+              Finance tools and advisory for your business when you need <span className="text-gradient"><Typewriter words={['clear decisions, not guesswork.', 'right-fit banking & capital.', 'data-driven SEO growth.', 'plain financial education.']} /></span>
             </h1>
             <p className="text-sm md:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Bengula Inc helps Kenyan and East African business owners connect numbers, banking products, digital visibility, and growth strategy into one practical decision desk.
+              We help you connect your numbers, banking products, digital visibility, and growth strategy into one practical decision desk.
             </p>
           </div>
 
@@ -180,7 +181,7 @@ export default function HomeTab() {
               <p className="text-[10px] font-bold text-violet-200 uppercase tracking-widest">Adding Meaning To Life</p>
               <h2 className="text-xl font-extrabold text-white">Bengula Inc</h2>
               <p className="text-xs text-violet-100 leading-relaxed">
-                A business-growth brand pairing data, digital visibility, credit appraisal, and banking advisory.
+                Pairing data, digital visibility, credit appraisal, and banking advisory to grow your business.
               </p>
             </div>
 
@@ -251,7 +252,7 @@ export default function HomeTab() {
       <section className="space-y-6">
         <div className="text-center max-w-xl mx-auto space-y-1.5">
           <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Two Pillars, One Desk</span>
-          <h2 className="text-2xl font-bold text-slate-900">How Bengula Inc Helps Your Business</h2>
+          <h2 className="text-2xl font-bold text-slate-900">How We Help Your Business</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -324,7 +325,7 @@ export default function HomeTab() {
           <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Investment Yield Tool</span>
           <h3 className="text-xl md:text-2xl font-bold text-slate-900">Bond Yield & Wealth Calculator</h3>
           <p className="text-xs text-slate-500">
-            Help customers compare borrowing decisions with investment outcomes across treasury bonds, infrastructure bonds, and compound savings.
+            Compare your borrowing decisions with investment outcomes across treasury bonds, infrastructure bonds, and compound savings.
           </p>
         </div>
         <Calculators />

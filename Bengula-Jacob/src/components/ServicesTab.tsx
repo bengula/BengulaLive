@@ -88,7 +88,7 @@ export default function ServicesTab() {
       <div className="lg:col-span-7 space-y-6">
         <div className="space-y-1.5">
           <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest block font-extrabold font-sans">Two Pillars, One Desk</span>
-          <h1 className="text-2xl font-bold text-slate-900">How Bengula Inc Helps Your Business</h1>
+          <h1 className="text-2xl font-bold text-slate-900">How We Help Your Business</h1>
           <p className="text-slate-500 text-xs">
             Pick the challenge closest to where your business is now, then start with a complimentary fit check.
           </p>
@@ -179,7 +179,7 @@ export default function ServicesTab() {
             Book a Follow-Up Session
           </h3>
           <p className="text-xs text-slate-500 mt-1">
-            Use this form when you are ready to request a structured session. For a lighter first step, use the WhatsApp fit check.
+            Use this form when you are ready to request your structured session. For a lighter first step, use the WhatsApp fit check.
           </p>
         </div>
 

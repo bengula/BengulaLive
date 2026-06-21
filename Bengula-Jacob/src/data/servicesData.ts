@@ -65,7 +65,7 @@ export const servicesList: ServiceDetail[] = [
     id: "technology-consulting",
     title: "Technology Consulting & Digital Evolution",
     description: "FinTech strategy, AI automation adoptions, and digital workflow tools to maximize operational efficiency.",
-    longDescription: "As an expert fascinated by the intersections of computer models and finance, I help businesses integrate modern CRM pipelines, automated billing ledgers, and Gemini-powered customer context tools. Eliminate manual bottlenecks to save crucial operational capital.",
+    longDescription: "As an expert fascinated by the intersections of computer models and finance, I help you integrate modern CRM pipelines, automated billing ledgers, and Gemini-powered customer context tools. Eliminate manual bottlenecks to save crucial operational capital.",
     benefits: [
       "Audit of existing manual bottlenecks",
       "Lowcode / nocode database integrations",
