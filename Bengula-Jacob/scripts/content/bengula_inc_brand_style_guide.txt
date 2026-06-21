@@ -235,6 +235,39 @@ Long-form articles and research PDFs follow a six-part arc:
 5. Recommendations: concrete, prioritised actions with their trade-offs.
 6. Conclusion: tie back to the reader's goals; one memorable takeaway.
 
+## Website Conversion Standard
+
+Bengula web pages must behave like advisory pathways, not static brochures.
+Any page meant to attract enquiries should make the visitor's next step clear,
+low-friction, and relevant to their stage of trust.
+
+[table widths=42,128]
+Standard | Requirement
+Clarity | The first screen must state who Bengula helps, what problem is solved, and what practical result the visitor can expect.
+Friction | Mobile visitors must be able to call, WhatsApp, or send a short enquiry without searching through the page.
+Focus | Each page should have one primary conversion objective. Secondary links may exist, but they should not compete visually with the main action.
+Trust | Proof, useful education, practical examples, or clear service outcomes should appear before asking for a major commitment.
+Low-risk step | Offer a smaller doorway such as an audit, review, discovery call, checklist check, or WhatsApp diagnosis before pushing a paid engagement.
+Measurement | Track form submissions, mailto clicks, WhatsApp clicks, click-to-call actions, and primary CTA clicks where possible.
+[/table]
+
+Conversion copy should avoid vague claims such as "trusted partner in
+excellence" unless supported by specific proof. Prefer direct problem-result
+language:
+
+- Say: We help Kenyan businesses turn website traffic into qualified calls, WhatsApp enquiries, and sales conversations.
+- Avoid: We provide world-class innovative solutions for all your business needs.
+
+Every service, landing, and contact page should pass the Website Enquiry Audit:
+
+1. Can a new visitor understand the offer within 3 seconds?
+2. Is the primary action visible above the fold on desktop and mobile?
+3. Is there a fast WhatsApp or click-to-call path?
+4. Does the page ask only for the information needed to start the first conversation?
+5. Does the page offer a low-risk next step for visitors who are interested but not ready to buy?
+6. Is there enough proof or specificity near the call-to-action to justify trust?
+7. Are enquiry actions measurable in analytics or event logs?
+
 ## The Bengula Lens
 
 Every article examines its subject through the same analytical lens.

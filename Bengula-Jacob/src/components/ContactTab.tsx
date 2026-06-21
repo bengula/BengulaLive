@@ -4,10 +4,11 @@
  */
 
 import React, { useState } from 'react';
-import { MapPin, Mail, Phone, Globe, ShieldCheck, ChevronRight } from 'lucide-react';
+import { MapPin, Mail, Phone, Globe, ShieldCheck, ChevronRight, MessageCircle } from 'lucide-react';
 import { siteConfig, telHref, whatsappHref } from '../data/siteConfig';
 import Seo from '../seo';
 import { openMailto } from '../utils/mailto';
+import { trackConversion } from '../utils/conversion';
 
 export default function ContactTab() {
   const [contactName, setContactName] = useState('');
@@ -28,6 +29,7 @@ export default function ContactTab() {
       ``,
       `Sent from the Bengula Jacob website.`,
     ]);
+    trackConversion('contact_email_prepare', 'contact_form');
 
     setContactSuccess(true);
     setContactName('');
@@ -47,11 +49,21 @@ export default function ContactTab() {
       {/* Left Column: Coordinates */}
       <div className="lg:col-span-5 space-y-6">
         <div className="space-y-1.5">
-          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest block font-bold">Confidential Desk</span>
-          <h2 className="text-2xl font-bold text-slate-900">Contact Bengula Jacob</h2>
+          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest block font-bold">Start a Conversation</span>
+          <h2 className="text-2xl font-bold text-slate-900">Tell Us What You Need to Solve</h2>
           <p className="text-slate-600 text-xs">
-            Please route questions concerning corporate advisor structures, bulk treasury placements, or Bengula Inc syndications directly.
+            Share the challenge in plain language. We will help you identify the most useful next step.
           </p>
+          <a
+            href={whatsappHref(siteConfig.contact.whatsapp, 'Hi Bengula, I found your website and would like help with: ')}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackConversion('whatsapp_click', 'contact_primary')}
+            className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-3 rounded-lg shadow-md transition"
+          >
+            <MessageCircle className="w-4 h-4" />
+            Start on WhatsApp
+          </a>
         </div>
 
         {/* Address Cards */}
@@ -127,10 +139,10 @@ export default function ContactTab() {
         <div className="border-b border-slate-100 pb-4">
           <h3 className="text-lg font-semibold text-blue-900 flex items-center gap-2">
             <Mail className="w-5 h-5 text-blue-900" />
-            E-Desk Messaging Terminal
+            Send a Short Enquiry
           </h3>
           <p className="text-xs text-slate-500 mt-1">
-            Complete your transmission below for direct receipt by our portfolio administration.
+            Four fields are enough to start. Your email app will open with the message ready to send.
           </p>
         </div>
 
@@ -184,28 +196,28 @@ export default function ContactTab() {
 
             {/* Subject */}
             <div className="space-y-1">
-              <label className="text-xs text-slate-700 font-semibold">Subject Matter</label>
+              <label className="text-xs text-slate-700 font-semibold">What Do You Need Help With?</label>
               <input
                 id="input-contact-subject"
                 type="text"
                 required
                 value={contactSubject}
                 onChange={(e) => setContactSubject(e.target.value)}
-                placeholder="e.g. Diaspora Treasury Bond Sourcing Consultation"
+                placeholder="e.g. Website lead generation or business finance"
                 className="w-full bg-slate-50 text-slate-900 text-xs py-2.5 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 transition-colors text-sm font-medium"
               />
             </div>
 
             {/* Message */}
             <div className="space-y-1">
-              <label className="text-xs text-slate-700 font-semibold">Message Narrative</label>
+              <label className="text-xs text-slate-700 font-semibold">Short Message</label>
               <textarea
                 id="input-contact-body"
                 required
                 rows={5}
                 value={contactBody}
                 onChange={(e) => setContactBody(e.target.value)}
-                placeholder="Detail your objectives, assets profile, or advisory questions confidentially."
+                placeholder="Briefly describe the problem, goal, or decision you are working through."
                 className="w-full bg-slate-50 text-slate-900 text-xs py-2.5 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-blue-900 focus:bg-white focus:ring-1 focus:ring-blue-900 transition-colors text-sm"
               />
             </div>
@@ -216,7 +228,7 @@ export default function ContactTab() {
               type="submit"
               className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs py-3 rounded-xl transition flex justify-center items-center gap-2 cursor-pointer shadow-md"
             >
-              <span>Transmit confidential query</span>
+              <span>Prepare Enquiry Email</span>
               <ChevronRight className="w-4.5 h-4.5" />
             </button>
           </form>

@@ -4,12 +4,13 @@
  */
 
 import React, { useState } from 'react';
-import { Briefcase, ArrowRight, BookOpen, Layers, Shield, Sparkles, Clock, CheckCircle, Calendar, Send, Landmark } from 'lucide-react';
+import { Briefcase, ArrowRight, BookOpen, Layers, Shield, Sparkles, Clock, CheckCircle, Calendar, Send, Landmark, MessageCircle } from 'lucide-react';
 import Seo from '../seo';
 import { ServiceDetail } from '../types';
 import { servicesList } from '../data/servicesData';
-import { siteConfig } from '../data/siteConfig';
+import { siteConfig, whatsappHref } from '../data/siteConfig';
 import { openMailto } from '../utils/mailto';
+import { trackConversion } from '../utils/conversion';
 
 // Maps the iconName stored in servicesData to its lucide component.
 const serviceIcons: Record<string, React.ElementType> = {
@@ -63,6 +64,7 @@ export default function ServicesTab() {
       ``,
       `Sent from bengula.co.ke`,
     ]);
+    trackConversion('booking_email_prepare', 'services_booking_form');
 
     setBookingResult({ success: true, id: ref });
     setName('');
@@ -88,8 +90,21 @@ export default function ServicesTab() {
           <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest block font-extrabold font-sans">Two Pillars, One Desk</span>
           <h1 className="text-2xl font-bold text-slate-900">How Bengula Inc Helps Your Business</h1>
           <p className="text-slate-500 text-xs">
-            Finance & banking advisory and data & digital growth, pick the service that fits where your business is now.
+            Pick the challenge closest to where your business is now, then start with a complimentary fit check.
           </p>
+          <a
+            href={whatsappHref(
+              siteConfig.contact.whatsapp,
+              'Hi Bengula, I would like a complimentary fit check for the advisory service that suits my business.'
+            )}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackConversion('whatsapp_click', 'services_fit_check')}
+            className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-3 rounded-lg shadow-md transition"
+          >
+            <MessageCircle className="w-4 h-4" />
+            Start Free Fit Check
+          </a>
         </div>
 
         {/* Vertical Service list buttons */}
@@ -161,10 +176,10 @@ export default function ServicesTab() {
         <div className="border-b border-slate-100 pb-4">
           <h3 className="text-lg font-bold text-violet-800 flex items-center gap-2">
             <Calendar className="w-5 h-5 text-violet-800" />
-            Strategic Booking Desk
+            Book a Follow-Up Session
           </h3>
           <p className="text-xs text-slate-500 mt-1">
-            Reserve a highly confidential 1-on-1 strategy allocation slot. All discussions are securely recorded.
+            Use this form when you are ready to request a structured session. For a lighter first step, use the WhatsApp fit check.
           </p>
         </div>
 
@@ -334,7 +349,7 @@ export default function ServicesTab() {
               className="w-full py-3 px-4 rounded-xl font-bold text-sm text-white bg-violet-800 hover:bg-violet-700 transition duration-300 flex items-center justify-center gap-2 cursor-pointer shadow-md"
             >
               <Send className="w-4 h-4" />
-              <span>Secure Strategic Consultation Slot</span>
+              <span>Prepare Booking Request</span>
             </button>
           </form>
         )}
@@ -343,4 +358,3 @@ export default function ServicesTab() {
     </div>
   );
 }
-

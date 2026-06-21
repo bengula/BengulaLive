@@ -13,7 +13,7 @@ import {
   Landmark,
   Layers,
   LineChart,
-  Calculator,
+  MessageCircle,
   ShieldCheck,
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -24,9 +24,10 @@ import InsightDeck from './InsightDeck';
 import Resources from './Resources';
 import FAQ from './FAQ';
 import Seo from '../seo';
-import { siteConfig } from '../data/siteConfig';
+import { siteConfig, whatsappHref } from '../data/siteConfig';
 import { keyRates } from '../data/cbkRates';
 import { openMailto } from '../utils/mailto';
+import { trackConversion } from '../utils/conversion';
 
 export default function HomeTab() {
   const navigate = useNavigate();
@@ -126,37 +127,42 @@ export default function HomeTab() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl mx-auto lg:mx-0">
-            {([
-              { label: 'Banking & capital advisory', path: '/services' },
-              { label: 'Data & SEO growth', path: '/portfolio' },
-              { label: 'Finance education', path: '/blog' },
-            ] as { label: string; path: string }[]).map((item) => (
-              <button
-                key={item.label}
-                onClick={() => navigate(item.path)}
-                className="group sheen hover-lift glass rounded-lg px-3 py-2 text-[11px] font-bold text-slate-700 flex items-center justify-between gap-1 cursor-pointer hover:text-violet-700 text-left"
+            {[
+              'Banking & capital advisory',
+              'Data & SEO growth',
+              'Finance education',
+            ].map((label) => (
+              <div
+                key={label}
+                className="glass rounded-lg px-3 py-2 text-[11px] font-bold text-slate-700 flex items-center gap-2 text-left"
               >
-                <span>{item.label}</span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-violet-600 shrink-0 transition-colors" />
-              </button>
+                <BadgeCheck className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                <span>{label}</span>
+              </div>
             ))}
           </div>
 
           <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
             <button
               onClick={() => navigate('/services')}
-              className="sheen bg-violet-700 hover:bg-violet-800 text-white font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-2 cursor-pointer shadow-lg shadow-violet-700/30 transform hover:-translate-y-0.5 transition"
+              className="sheen glass text-slate-700 hover:text-violet-800 font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-2 cursor-pointer transition"
             >
-              <span>Book Consultation</span>
+              <span>Explore Advisory</span>
               <ChevronRight className="w-4 h-4" />
             </button>
-            <button
-              onClick={() => document.getElementById('loan-appraisal-calculator')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-              className="sheen glass text-slate-700 font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-1.5 cursor-pointer hover:text-violet-800 transition"
+            <a
+              href={whatsappHref(
+                siteConfig.contact.whatsapp,
+                'Hi Bengula, I would like a quick fit check for my business growth or finance challenge.'
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackConversion('whatsapp_click', 'home_hero_fit_check')}
+              className="sheen bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-2 transition shadow-lg shadow-emerald-700/20 transform hover:-translate-y-0.5"
             >
-              <span>Use Loan Calculator</span>
-              <Calculator className="w-4 h-4 text-violet-700" />
-            </button>
+              <MessageCircle className="w-4 h-4" />
+              <span>Get a Free Fit Check</span>
+            </a>
           </div>
         </div>
 
@@ -413,5 +419,3 @@ export default function HomeTab() {
     </div>
   );
 }
-
-

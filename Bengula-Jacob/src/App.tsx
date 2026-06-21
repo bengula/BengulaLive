@@ -6,14 +6,15 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, MessageCircle, X } from 'lucide-react';
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { Head } from 'vite-react-ssg';
 
-import { siteConfig } from './data/siteConfig';
+import { siteConfig, whatsappHref } from './data/siteConfig';
 import { activeNav } from './sections';
 import { organizationJsonLd } from './seo';
 import RateTicker from './components/RateTicker';
+import { trackConversion } from './utils/conversion';
 
 export default function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -153,6 +154,21 @@ export default function Layout() {
         </div>
       </main>
 
+      <a
+        href={whatsappHref(
+          siteConfig.contact.whatsapp,
+          'Hi Bengula, I found your website and would like a quick fit check for my business challenge.'
+        )}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => trackConversion('whatsapp_click', 'site_floating_button')}
+        aria-label="Start a WhatsApp enquiry with Bengula Inc"
+        title="Start a WhatsApp enquiry"
+        className="fixed right-4 bottom-4 md:right-6 md:bottom-6 z-50 bg-emerald-600 hover:bg-emerald-700 text-white shadow-xl shadow-emerald-900/25 rounded-full w-13 h-13 flex items-center justify-center transition-transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-emerald-200"
+      >
+        <MessageCircle className="w-6 h-6" />
+      </a>
+
       {/* Main Footer */}
       <footer className="glass-strong border-t border-white/60 py-8 text-xs text-slate-500 font-normal">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
@@ -208,4 +224,3 @@ export default function Layout() {
     </div>
   );
 }
-
