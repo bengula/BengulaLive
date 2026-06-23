@@ -6,7 +6,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { Menu, MessageCircle, X } from 'lucide-react';
+import { ChevronDown, Menu, MessageCircle, X } from 'lucide-react';
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { Head } from 'vite-react-ssg';
 
@@ -39,8 +39,17 @@ export default function Layout() {
   const isActive = (path: string) =>
     path === '/' ? pathname === '/' : pathname === path || pathname.startsWith(path + '/');
 
+  const primaryNav = activeNav.filter((item) =>
+    ['home', 'about', 'services', 'portfolio', 'blog', 'contact'].includes(item.id)
+  );
+  const exploreNav = activeNav.filter((item) =>
+    ['authors', 'investments', 'ai-coach'].includes(item.id)
+  );
+
   return (
-    <div className="relative min-h-screen text-slate-800 font-sans flex flex-col justify-between selection:bg-violet-600/15 selection:text-violet-900">
+    <div className="site-shell relative min-h-screen text-slate-800 font-sans flex flex-col justify-between selection:bg-violet-600/15 selection:text-violet-900">
+
+      <a href="#main-content" className="skip-link">Skip to main content</a>
 
       {/* Animated aurora backdrop — gives the frosted-glass surfaces light to refract. */}
       <div className="aurora-bg" aria-hidden="true">
@@ -90,25 +99,48 @@ export default function Layout() {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex space-x-1.5 glass p-1 rounded-xl animate-fadeIn">
-              {activeNav.map((item) => {
-                const Icon = item.icon;
+            <nav className="hidden lg:flex items-center space-x-1 glass p-1 rounded-xl animate-fadeIn" aria-label="Primary navigation">
+              {primaryNav.map((item) => {
                 return (
                   <Link
                     key={item.id}
                     id={`nav-btn-${item.id}`}
                     to={item.path}
-                    className={`sheen px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer ${
+                    className={`sheen px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center transition-all cursor-pointer ${
                       isActive(item.path)
                         ? 'bg-violet-700 text-white shadow-sm'
                         : 'text-slate-600 hover:text-violet-800 hover:bg-white/80'
                     }`}
                   >
-                    <Icon className="w-3.5 h-3.5" />
                     <span>{item.label}</span>
                   </Link>
                 );
               })}
+              <div className="nav-more relative">
+                <button
+                  className={`sheen px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1 transition-all ${
+                    exploreNav.some((item) => isActive(item.path))
+                      ? 'bg-violet-700 text-white shadow-sm'
+                      : 'text-slate-600 hover:text-violet-800 hover:bg-white/80'
+                  }`}
+                  aria-haspopup="true"
+                >
+                  Explore <ChevronDown className="w-3.5 h-3.5" />
+                </button>
+                <div className="nav-more-menu absolute right-0 top-full pt-2 w-60">
+                  <div className="glass-strong rounded-2xl p-2 shadow-2xl shadow-violet-950/15">
+                    {exploreNav.map((item) => {
+                      const Icon = item.icon;
+                      return (
+                        <Link key={item.id} to={item.path} className="flex items-center gap-3 rounded-xl px-3 py-3 text-xs font-bold text-slate-700 hover:bg-white/80 hover:text-violet-900 transition-colors">
+                          <span className="grid h-8 w-8 place-items-center rounded-lg bg-violet-100/80 text-violet-700"><Icon className="h-4 w-4" /></span>
+                          {item.label}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
             </nav>
 
             {/* Mobile menu trigger */}
@@ -148,7 +180,7 @@ export default function Layout() {
       </header>
 
       {/* Main Page Area — routed content */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+      <main id="main-content" className="page-shell flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-14">
         <div key={pathname} className="animate-fadeIn">
           <Outlet />
         </div>
@@ -170,9 +202,9 @@ export default function Layout() {
       </a>
 
       {/* Main Footer */}
-      <footer className="glass-strong border-t border-white/60 py-8 text-xs text-slate-500 font-normal">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+      <footer className="glass-strong border-t border-white/60 py-10 md:py-14 text-xs text-slate-500 font-normal">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+          <div className="grid grid-cols-1 md:grid-cols-[1.35fr_1fr_1fr] gap-10 text-center md:text-left">
             <div className="space-y-2">
               <div className="flex items-center gap-3 justify-center md:justify-start">
                 <img
@@ -200,12 +232,21 @@ export default function Layout() {
               )}
             </div>
 
-            <div className="flex flex-wrap gap-4 font-semibold text-slate-600">
-              {activeNav.map((s) => (
-                <Link key={s.id} to={s.path} className="hover:text-violet-800 cursor-pointer">
-                  {s.footerLabel ?? s.label}
-                </Link>
-              ))}
+            <div>
+              <p className="footer-heading">Company</p>
+              <div className="mt-4 grid gap-3 font-semibold text-slate-600">
+                {primaryNav.slice(1).map((s) => (
+                  <Link key={s.id} to={s.path} className="hover:text-violet-800 cursor-pointer">{s.footerLabel ?? s.label}</Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="footer-heading">Tools &amp; knowledge</p>
+              <div className="mt-4 grid gap-3 font-semibold text-slate-600">
+                {exploreNav.map((s) => (
+                  <Link key={s.id} to={s.path} className="hover:text-violet-800 cursor-pointer">{s.footerLabel ?? s.label}</Link>
+                ))}
+              </div>
             </div>
           </div>
 

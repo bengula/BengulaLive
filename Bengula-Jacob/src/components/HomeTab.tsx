@@ -105,25 +105,25 @@ export default function HomeTab() {
   ];
 
   return (
-    <div id="home-view" className="space-y-14 md:space-y-16">
+    <div id="home-view" className="home-view space-y-16 md:space-y-24">
       <Seo
         title="Bengula Inc | Business Growth, Data & Banking Advisory"
         description={siteConfig.brand.tagline}
         path="/"
       />
-      <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center rounded-3xl glass-strong p-6 md:p-10 animate-popIn">
-        <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
+      <section className="home-hero grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center rounded-3xl glass-strong p-6 md:p-10 lg:p-12 animate-popIn">
+        <div className="lg:col-span-7 space-y-7 text-center lg:text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-violet-50 border border-violet-100 rounded-full text-[10px] font-bold text-violet-800 uppercase tracking-widest leading-none shadow-sm">
             <ShieldCheck className="w-3.5 h-3.5 text-violet-700" />
             <span>Bengula Inc Advisory Platform</span>
           </div>
 
           <div className="space-y-4">
-            <h1 className="text-3xl md:text-5xl font-extrabold text-slate-950 tracking-tight leading-[1.08] font-sans">
-              Finance tools and advisory for your business when you need <span className="text-gradient"><Typewriter words={['clear decisions, not guesswork.', 'right-fit banking & capital.', 'data-driven SEO growth.', 'plain financial education.']} /></span>
+            <h1 className="editorial-heading text-4xl md:text-6xl font-bold text-slate-950 tracking-tight leading-[1.04]">
+              Better business decisions start with <span className="text-gradient"><Typewriter words={['clarity, not guesswork.', 'right-fit banking & capital.', 'data-driven growth.', 'financial confidence.']} /></span>
             </h1>
-            <p className="text-sm md:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              We help you connect your numbers, banking products, digital visibility, and growth strategy into one practical decision desk.
+            <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              Bengula helps East African businesses, professionals, and investors connect their numbers, banking options, digital visibility, and growth strategy into one practical decision desk.
             </p>
           </div>
 
@@ -168,7 +168,7 @@ export default function HomeTab() {
         </div>
 
         <div className="lg:col-span-5">
-          <div className="bg-gradient-to-br from-violet-950 via-violet-900 to-slate-950 border border-violet-300/30 rounded-2xl p-6 md:p-8 shadow-2xl shadow-violet-900/40 space-y-6 text-white hover-lift">
+          <div className="decision-card glass-dark rounded-2xl p-6 md:p-8 space-y-6 text-white hover-lift">
             <div className="bg-white rounded-xl p-6 flex items-center justify-center">
               <img
                 src="/images/ColoredBengulaIncLogo.png"
@@ -179,9 +179,9 @@ export default function HomeTab() {
 
             <div className="space-y-2 text-center">
               <p className="text-[10px] font-bold text-violet-200 uppercase tracking-widest">Adding Meaning To Life</p>
-              <h2 className="text-xl font-extrabold text-white">Bengula Inc</h2>
-              <p className="text-xs text-violet-100 leading-relaxed">
-                Pairing data, digital visibility, credit appraisal, and banking advisory to grow your business.
+              <h2 className="editorial-heading text-2xl font-bold text-white">From uncertainty to a clear next step.</h2>
+              <p className="text-sm text-violet-100 leading-relaxed">
+                Evidence-led analysis, plain-language guidance, and practical help putting the right solution in motion.
               </p>
             </div>
 
@@ -202,10 +202,10 @@ export default function HomeTab() {
         </div>
       </section>
 
-      <section id="quick-statistics-dashboard" className="glass-strong rounded-2xl p-6 md:p-8 reveal">
+      <section id="quick-statistics-dashboard" className="glass-strong rounded-2xl p-6 md:p-8 reveal section-frame">
         <div className="text-center max-w-xl mx-auto space-y-1 pb-6">
           <span className="text-[10px] font-bold text-violet-700 uppercase tracking-widest font-mono">Firm Snapshot</span>
-          <h3 className="text-xl font-bold text-slate-900">Bengula Inc at a Glance</h3>
+          <h2 className="editorial-heading text-2xl font-bold text-slate-900">Bengula Inc at a Glance</h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
@@ -219,7 +219,7 @@ export default function HomeTab() {
         </div>
       </section>
 
-      <section id="cbk-key-rates" className="glass-strong rounded-2xl p-6 md:p-8 reveal">
+      <section id="cbk-key-rates" className="glass-strong rounded-2xl p-6 md:p-8 reveal section-frame">
         <div className="flex flex-wrap items-end justify-between gap-2 pb-5">
           <div className="space-y-1">
             <span className="text-[10px] font-bold text-violet-700 uppercase tracking-widest font-mono">Central Bank of Kenya</span>

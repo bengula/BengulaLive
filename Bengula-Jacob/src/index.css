@@ -18,6 +18,111 @@
 /* Soft tinted canvas so the frosted surfaces have light to refract. */
 body {
   background-color: #f6f5fb;
+  color: #334155;
+  font-family: Inter, "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html { scroll-behavior: smooth; }
+
+.editorial-heading,
+.page-shell h1,
+.page-shell h2 {
+  font-family: Georgia, Charter, "Bitstream Charter", "Times New Roman", serif;
+  text-wrap: balance;
+}
+
+.page-shell p { text-wrap: pretty; }
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  transform: translateY(-180%);
+  border-radius: 0.75rem;
+  background: #2e1065;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  transition: transform 180ms ease;
+}
+.skip-link:focus { transform: translateY(0); }
+
+.nav-more-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px) scale(0.98);
+  transform-origin: top right;
+  transition: opacity 180ms ease, transform 180ms ease, visibility 180ms;
+}
+.nav-more:hover .nav-more-menu,
+.nav-more:focus-within .nav-more-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.footer-heading {
+  color: #4c1d95;
+  font-size: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.home-hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.home-hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 24rem;
+  height: 24rem;
+  right: -10rem;
+  top: -12rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.3), transparent 68%);
+  filter: blur(8px);
+  animation: float 7s ease-in-out infinite;
+}
+
+.decision-card {
+  border-color: rgba(196, 181, 253, 0.3);
+  box-shadow:
+    0 24px 60px -24px rgba(76, 29, 149, 0.78),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.section-frame {
+  position: relative;
+  overflow: hidden;
+}
+.section-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: linear-gradient(180deg, #7c3aed, #a855f7, #6366f1);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(124, 58, 237, 0.28);
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .home-hero { border-radius: 1.5rem; }
+  .page-shell { padding-top: 1.5rem; }
 }
 
 /* ── Marquee (rate ticker) ──────────────────────────────────────── */
@@ -119,6 +224,19 @@ body {
 }
 
 /* ── Hover lift (non-glass elements) ────────────────────────────── */
+.decision-card.glass-dark {
+  background-color: #3b1770;
+  background-image:
+    radial-gradient(circle at 82% 10%, rgba(124, 58, 237, 0.68), transparent 34%),
+    radial-gradient(circle at 14% 8%, rgba(91, 33, 182, 0.42), transparent 42%),
+    linear-gradient(165deg, #3b1770 0%, #4c1d95 44%, #2e1065 72%, #10072f 100%);
+  border-color: rgba(196, 181, 253, 0.28);
+  box-shadow:
+    0 24px 60px -24px rgba(59, 23, 112, 0.92),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    inset 0 -42px 80px rgba(16, 7, 47, 0.34);
+}
+
 .hover-lift {
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
               box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
