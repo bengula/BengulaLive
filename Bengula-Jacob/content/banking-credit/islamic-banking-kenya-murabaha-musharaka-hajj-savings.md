@@ -9,6 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
+coverImage: https://images.pexels.com/photos/7984728/pexels-photo-7984728.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 Islamic banking in Kenya sits at an interesting intersection: faith, commercial banking, asset finance, SME trade, family planning, and regulation. It serves Muslims who want their financial life to avoid riba, but it is not only for Muslims. A non-Muslim exporter, property buyer, transport operator, or SACCO member may still find an Islamic product attractive because it is often built around transparency, asset backing, risk sharing, and a clearer link between money and the real economy.
