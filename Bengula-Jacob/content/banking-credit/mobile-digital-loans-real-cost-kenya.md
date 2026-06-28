@@ -123,12 +123,6 @@ Avoid it when:
 4. **Is my current credit card or digital overdraft utilization above 30%?** If yes, pay down existing balances before borrowing more to avoid score penalties.
 5. **Can I use a cheaper public option?** Check if you qualify for government-subsidized programs like the Hustler Fund or SACCO emergency loans before resorting to private digital apps.
 
----
-
-### Related Reading
-- [How To Check And Fix Your CRB Listing In Kenya](/blog/how-to-fix-your-crb-listing-kenya). The credit file a defaulted app loan quietly damages.
-- [How Kenyan Banks Price Your Loan: The Base Rate Plus 'K' Margin](/blog/how-kenyan-banks-price-loans). Why a bank facility prices so far below a digital loan.
-- [Why Asset Finance Is Cheaper Than a Conventional Loan in Kenya](/blog/asset-finance-vs-conventional-loans). The right way to fund an asset instead of revolving expensive credit.
 
 ---
 

@@ -180,12 +180,6 @@ Banking in Kenya rewards the deliberate. The system is deep, well-regulated, and
 
 Most Kenyan SMEs and mid-sized enterprises pay too much for credit, lose margin to unoptimised FX spreads, and run inefficient capital structures. If you want a second set of eyes on your setup, Bengula helps businesses optimise corporate treasury workflows, structure loan documentation to secure the lowest risk-based rates, and build clean financial data architectures. To request a corporate banking and capital-optimisation review, reach the advisory desk through our [contact page](/contact), and we will come back with concrete strategies to unlock hidden capital efficiency.
 
-### Related Reading
-- [How Kenyan Banks Price Your Loan: The Base Rate Plus 'K' Margin](/blog/how-kenyan-banks-price-loans). The formula behind every rate you are quoted, and how to negotiate it.
-- [Why Asset Finance Is Cheaper Than a Conventional Loan in Kenya](/blog/asset-finance-vs-conventional-loans). The cheapest way to fund vehicles and equipment.
-- [How To Check And Fix Your CRB Listing In Kenya](/blog/how-to-fix-your-crb-listing-kenya). Cleaning the record that sets your risk margin.
-- [Mobile And Digital Loans In Kenya: The Real Cost Of Fast Money](/blog/mobile-digital-loans-real-cost-kenya). Why fast credit is the most expensive money on your balance sheet.
-
 ### References
 - [Central Bank of Kenya](https://www.centralbank.go.ke/). Bank supervision, the risk-based credit pricing framework, the Central Bank Rate (8.75%, effective 10 February 2026), and the average lending rate (14.69%, April 2026).
 - [Kenya Deposit Insurance Corporation (KDIC)](https://www.kdic.go.ke/). Deposit protection of KES 500,000 per depositor per institution.

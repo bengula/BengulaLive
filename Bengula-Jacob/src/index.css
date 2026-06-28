@@ -35,6 +35,13 @@ html { scroll-behavior: smooth; }
 
 .page-shell p { text-wrap: pretty; }
 
+.mermaid-diagram svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 .skip-link {
   position: fixed;
   left: 1rem;

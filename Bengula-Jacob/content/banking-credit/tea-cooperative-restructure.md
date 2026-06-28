@@ -70,11 +70,6 @@ The point was never a clever finance structure, it was the **farmers' payout**. 
 
 This is the **Finance & Banking Advisory** pillar in practice: get the numbers visible, get the structure right, and put the savings back into the business and the people behind it.
 
-### Related Reading
-- [SME Trade Finance in Frontier Markets](/blog/sme-trade-finance). Matching finance structure to the cash cycle.
-- [SME Packager Margin Optimization](/blog/sme-packager-optimization). Making the numbers live and bankable.
-- [SACCO Savers & Guarantors](/blog/sacco-savers-guarantors). Member-owned finance and shared risk.
-
 ### References
 - ["KTDA shake-up: Will reforms boost smallholder tea farmers' earnings?", Daily Nation](https://nation.africa/kenya/business/ktda-shake-up-will-reforms-boost-smallholder-tea-farmers-earnings--5330776)
 - ["Kenya's tea output drops 11% in 2025", Kenyan Wall Street](https://kenyanwallstreet.com/kenyas-tea-output-drops-11-in-2025-as-prices-and-key-exports-falter)

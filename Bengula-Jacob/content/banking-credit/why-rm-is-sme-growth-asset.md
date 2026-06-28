@@ -152,14 +152,6 @@ Stop going to the teller window for your growth capital. Walk past it. Sit down 
 
 That single meeting might be the most valuable hour your business spends this year.
 
-### Related Reading
-- [SME Trade Finance & Supply-Chain Optimization](/blog/sme-trade-finance). The trade-finance toolkit in detail — invoice finance, LPO finance, and letters of credit.
-- [How Kenyan Banks Price Loans](/blog/how-kenyan-banks-price-loans). Understand the base-rate-plus-margin mechanics so you can negotiate intelligently with your RM.
-- [How to Fix Your CRB Listing in Kenya](/blog/how-to-fix-your-crb-listing-kenya). Clean up your credit record before the RM pulls it.
-- [SME Packager Margin Optimization](/blog/sme-packager-optimization). Fixing unit economics before seeking finance.
-- [Hedging USD/KES: Practical Treasury Strategies](/blog/usd-shilling-hedging). A trade-finance adjacent skill your RM can help you access.
-- [The Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya). Full landscape of Kenyan banking products and how to use them.
-
 ### References
 - [Central Bank of Kenya — Bank Supervision](https://www.centralbank.go.ke/bank-supervision/). Regulatory framework for commercial banking in Kenya.
 - [Kenya Bankers Association — SME Banking](https://www.kba.co.ke/). Industry body publications on SME access to finance.

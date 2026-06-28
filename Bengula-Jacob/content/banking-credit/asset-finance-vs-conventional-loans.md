@@ -133,12 +133,6 @@ The desk's default for any income-generating purchase (a matatu, a lorry, a trac
 
 The cheapest loan in Kenya is rarely the fastest one, and it is almost never the one advertised on a roadside banner. When you are funding a vehicle, equipment, or any productive asset, asset finance wins on rate, on tax treatment, on tenor, and on preserving the working capital that keeps a business alive. A logbook loan trades all of that away for speed: a fair bargain for a genuine emergency, a costly one for an asset that could have secured itself. Match the structure of the borrowing to the structure of the need, convert every quote to an effective annual rate before you compare, and the cheaper path usually chooses itself.
 
-### Related Reading
-- [How Kenyan Banks Price Your Loan: The Base Rate Plus 'K' Margin](/blog/how-kenyan-banks-price-loans). Why securing a loan lowers the risk premium inside your rate, and what else moves the number.
-- [Safe for Savers, Risky for Guarantors: The Changing Calculus of SACCO Membership in Kenya](/blog/sacco-savers-guarantors). Why secured borrowing protects you in ways a guarantee never can.
-- [SME Trade Finance & Supply-Chain Optimization in Frontier Markets](/blog/sme-trade-finance). Matching the structure of the money to the structure of the deal.
-- [Sleeping Asset Yield Optimization](/blog/sleeping-asset-optimization). Keeping the deposit and the buffer working while you repay.
-
 ### References
 - [Central Bank of Kenya](https://www.centralbank.go.ke/). Central Bank Rate (8.75%, effective 10 February 2026) and the average commercial bank lending rate (14.69%, April 2026).
 - [Central Bank Rate decisions and the Banking Sector (CBK)](https://www.centralbank.go.ke/rates/). The benchmark off which secured and unsecured lending is priced.

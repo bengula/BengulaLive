@@ -29,21 +29,13 @@ KMRC solves this structural problem by acting as a wholesale intermediary. It ra
 
 Because the primary lenders receive this money on a long-term basis at 5%, they can afford to lend to individual homebuyers at a capped rate of **9.0% to 9.5%**, adding a 4% to 4.5% margin to cover their operating expenses, credit risk, and profit.
 
+```mermaid
+graph TD
+    A[Capital Markets & Dev Partners] -->|Long-Term Funds| B[KMRC]
+    B -->|Wholesale @ 5%| C[Banks & SACCOs PMLs]
+    C -->|Mortgage @ 9.5%| D[Home Buyer]
 ```
-[Capital Markets & Dev Partners] 
-             │
-      (Long-Term Funds)
-             ▼
-          [KMRC]
-             │
-      (Wholesale @ 5%)
-             ▼
- [Banks & SACCOs (PMLs)]
-             │
-     (Mortgage @ 9.5%)
-             ▼
-        [Home Buyer]
-```
+
 
 ---
 

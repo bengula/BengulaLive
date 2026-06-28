@@ -127,10 +127,6 @@ Used with discipline, the interest-free period is effectively a short, free loan
 
 "Up to 50 days interest-free" is real, but it is a ceiling, not a floor. The days you actually get are your billing cycle plus your grace period, measured from the moment you buy, and they only count if you pay in full and on time. Learn your two dates, time your big purchases, automate the full payment, and the card becomes a genuinely free convenience. Miss the full payment, and none of the maths matters, because the grace is gone.
 
-### Related Reading
-- [How Kenyan Banks Price Your Loan: The Base Rate Plus 'K' Margin](/blog/how-kenyan-banks-price-loans). Why the rate that kicks in when you miss the grace period is so high.
-- [Why Asset Finance Is Cheaper Than a Conventional Loan in Kenya](/blog/asset-finance-vs-conventional-loans). When a structured facility beats putting a big purchase on a card.
-
 ### References
 - [Central Bank of Kenya](https://www.centralbank.go.ke/). Banking sector conduct and the cost-of-credit environment for cards and loans.
 - [Total Cost of Credit (CBK and Kenya Bankers Association)](https://www.costofcredit.co.ke/). Compare card and loan pricing across banks before you borrow.

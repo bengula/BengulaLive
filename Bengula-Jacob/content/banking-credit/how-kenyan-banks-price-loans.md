@@ -108,12 +108,6 @@ The desk's view is that risk-based pricing is the borrower's friend, not the ene
 
 A Kenyan loan rate is not a verdict handed down from on high. It is a base rate everyone shares plus a margin built from costs and, above all, from how risky you look on paper. The base and the bank's costs are fixed, but your credit record, your collateral, and your choice of product are not. Understand the parts, clean up what you control, compare the all-in cost across lenders, and the same loan that costs your neighbour 21% can cost you far less.
 
-### Related Reading
-- [Accessing KMRC Mortgages: Single-Digit Home Loans in Kenya](/blog/kmrc-affordable-housing-mortgage). How KMRC's wholesale model bypasses bank risk pricing to deliver 9.5% home loans.
-- [Why Asset Finance Is Cheaper Than a Conventional Loan in Kenya](/blog/asset-finance-vs-conventional-loans). How securing a loan with the asset itself cuts the risk premium.
-- [Safe for Savers, Risky for Guarantors: The Changing Calculus of SACCO Membership in Kenya](/blog/sacco-savers-guarantors). How credit risk gets transferred, and priced, in member-owned lending.
-- [SME Trade Finance & Supply-Chain Optimization in Frontier Markets](/blog/sme-trade-finance). Matching the structure of borrowing to the structure of the deal.
-
 ### References
 - [Central Bank of Kenya](https://www.centralbank.go.ke/). The risk-based credit pricing framework and the Central Bank Rate (8.75%, effective 10 February 2026).
 - [Central Bank Rate and Banking Sector data (CBK)](https://www.centralbank.go.ke/rates/). The base rate off which lending margins are set.

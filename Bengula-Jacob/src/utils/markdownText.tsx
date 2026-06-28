@@ -6,6 +6,98 @@ import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
+const MERMAID_CDN_URL = "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+type MermaidApi = {
+  initialize: (config: Record<string, unknown>) => void;
+  render: (id: string, chart: string) => Promise<{ svg: string }>;
+};
+
+let mermaidPromise: Promise<MermaidApi> | null = null;
+
+function loadMermaid() {
+  mermaidPromise ??= import(/* @vite-ignore */ MERMAID_CDN_URL).then((module) => {
+    const mermaid = (module.default ?? module) as MermaidApi;
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: "strict",
+      theme: "base",
+      themeVariables: {
+        background: "#ffffff",
+        primaryColor: "#f5f3ff",
+        primaryTextColor: "#1e293b",
+        primaryBorderColor: "#7c3aed",
+        lineColor: "#64748b",
+        secondaryColor: "#ecfeff",
+        tertiaryColor: "#f8fafc",
+        fontFamily: 'Inter, "Segoe UI", Helvetica, Arial, sans-serif',
+      },
+    });
+    return mermaid;
+  });
+
+  return mermaidPromise;
+}
+
+function MermaidDiagram({ chart }: { chart: string }) {
+  const reactId = React.useId();
+  const diagramId = React.useMemo(
+    () => `mermaid-${reactId.replace(/[^a-zA-Z0-9_-]/g, "")}`,
+    [reactId]
+  );
+  const [svg, setSvg] = React.useState<string | null>(null);
+  const [error, setError] = React.useState(false);
+
+  React.useEffect(() => {
+    let cancelled = false;
+
+    setSvg(null);
+    setError(false);
+
+    loadMermaid()
+      .then((mermaid) => mermaid.render(`${diagramId}-${Date.now()}`, chart))
+      .then(({ svg }) => {
+        if (!cancelled) {
+          setSvg(svg);
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setError(true);
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [chart, diagramId]);
+
+  if (error) {
+    return (
+      <figure className="my-5 overflow-hidden rounded-xl border border-amber-200 bg-amber-50 shadow-xs">
+        <figcaption className="border-b border-amber-200 px-4 py-2 font-mono text-[10px] font-bold uppercase tracking-wider text-amber-800">
+          mermaid
+        </figcaption>
+        <pre className="overflow-x-auto p-4 text-xs leading-relaxed text-amber-950">
+          <code>{chart}</code>
+        </pre>
+      </figure>
+    );
+  }
+
+  return (
+    <figure className="mermaid-diagram my-5 overflow-x-auto rounded-xl border border-slate-200 bg-white p-4 shadow-xs">
+      {svg ? (
+        <div dangerouslySetInnerHTML={{ __html: svg }} />
+      ) : (
+        <pre className="overflow-x-auto text-xs leading-relaxed text-slate-500">
+          <code>{chart}</code>
+        </pre>
+      )}
+    </figure>
+  );
+}
+
 function renderEmphasis(text: string, strongClassName: string, keyPrefix: string) {
   const nodes: React.ReactNode[] = [];
   let cursor = 0;
@@ -243,6 +335,7 @@ const markdownComponents: Components = {
   td: ({ children }) => <td className="p-3">{children}</td>,
   code: ({ className, children }) => {
     const language = /language-(\w+)/.exec(className ?? "")?.[1];
+    const code = String(children).replace(/\n$/, "");
 
     if (!language) {
       return (
@@ -252,13 +345,17 @@ const markdownComponents: Components = {
       );
     }
 
+    if (language.toLowerCase() === "mermaid") {
+      return <MermaidDiagram chart={code} />;
+    }
+
     return (
       <figure className="my-5 overflow-hidden rounded-xl border border-slate-200 bg-slate-950 shadow-xs">
         <figcaption className="border-b border-white/10 px-4 py-2 font-mono text-[10px] font-bold uppercase tracking-wider text-slate-300">
           {language}
         </figcaption>
         <pre className="overflow-x-auto p-4 text-xs leading-relaxed text-slate-100">
-          <code>{children}</code>
+          <code>{code}</code>
         </pre>
       </figure>
     );
