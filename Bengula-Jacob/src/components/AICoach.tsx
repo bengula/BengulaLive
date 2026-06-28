@@ -107,9 +107,9 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
       // Headers
       if (trimmed.startsWith('###')) {
         return (
-          <h4 key={index} className="text-sm font-bold text-slate-900 pt-3 pb-1 border-b border-slate-200">
+          <h3 key={index} className="text-sm font-bold text-slate-900 pt-3 pb-1 border-b border-slate-200">
             {trimmed.replace('###', '').trim()}
-          </h4>
+          </h3>
         );
       }
       if (trimmed.startsWith('**') && trimmed.endsWith('**')) {
@@ -188,10 +188,10 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
 
         <div className="p-6 md:p-8 space-y-4">
         <div className="border-b border-slate-100 pb-3">
-          <h3 className="text-base font-bold text-violet-800 flex items-center gap-2">
+          <h2 className="text-base font-bold text-violet-800 flex items-center gap-2">
             <User className="w-5 h-5 text-violet-800" />
             Coaching Persona File
-          </h3>
+          </h2>
           <p className="text-[10px] text-slate-500 mt-0.5 font-medium leading-normal">
             Personalize your current financial numbers. The AI Coach adapts its sovereign models directly matching these data tiers.
           </p>
@@ -232,7 +232,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
           // Editable form
           <div className="space-y-3 text-xs">
             <div className="space-y-1">
-              <label className="text-slate-700 font-bold block">Your Preferred Name</label>
+              <label htmlFor="input-persona-name" className="text-slate-700 font-bold block">Your Preferred Name</label>
               <input
                 id="input-persona-name"
                 type="text"
@@ -243,7 +243,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
             </div>
 
             <div className="space-y-1">
-              <label className="text-slate-700 font-bold block">Planned Savings (KSh / Month)</label>
+              <label htmlFor="input-persona-savings" className="text-slate-700 font-bold block">Planned Savings (KSh / Month)</label>
               <input
                 id="input-persona-savings"
                 type="text"
@@ -254,7 +254,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
             </div>
 
             <div className="space-y-1">
-              <label className="text-slate-700 font-bold block">Investment Focus Goal</label>
+              <label htmlFor="select-persona-goal" className="text-slate-700 font-bold block">Investment Focus Goal</label>
               <select
                 id="select-persona-goal"
                 value={profile.goal}
@@ -269,7 +269,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
             </div>
 
             <div className="space-y-1">
-              <label className="text-slate-700 font-bold block">Risk Classification Tolerances</label>
+              <label htmlFor="select-persona-risk" className="text-slate-700 font-bold block">Risk Classification Tolerances</label>
               <select
                 id="select-persona-risk"
                 value={profile.riskTolerance}
@@ -375,6 +375,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
           </div>
 
           <form onSubmit={handleSendMessage} className="flex gap-2">
+            <label htmlFor="input-ai-coach-message" className="sr-only">Ask the business and wealth coach a question</label>
             <input
               id="input-ai-coach-message"
               type="text"
@@ -400,4 +401,3 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
     </div>
   );
 }
-

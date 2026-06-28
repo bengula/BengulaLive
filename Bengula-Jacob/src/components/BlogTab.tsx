@@ -240,10 +240,10 @@ export default function BlogTab() {
           {/* Related reading — internal links to keep readers (and crawlers) moving */}
           {relatedPosts.length > 0 && (
             <div className="border-t border-slate-100 pt-6 space-y-4">
-              <h3 className="text-sm font-bold text-slate-800 flex items-center gap-2">
+              <h2 className="text-sm font-bold text-slate-800 flex items-center gap-2">
                 <BookOpen className="w-4 h-4 text-violet-800" />
                 Related reading
-              </h3>
+              </h2>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {relatedPosts.map((post) => (
                   <Link
@@ -254,9 +254,9 @@ export default function BlogTab() {
                     <span className="text-[9px] bg-violet-50 text-violet-800 border border-violet-100 px-2 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono w-fit">
                       {post.category}
                     </span>
-                    <h4 className="text-xs font-bold text-slate-900 group-hover:text-violet-800 transition-colors leading-snug">
+                    <h3 className="text-xs font-bold text-slate-900 group-hover:text-violet-800 transition-colors leading-snug">
                       {post.title}
-                    </h4>
+                    </h3>
                     <span className="text-[10px] text-slate-400 font-mono flex items-center gap-1 mt-auto">
                       <Clock className="w-3 h-3 text-violet-800" />
                       {post.readTime}
@@ -308,6 +308,7 @@ export default function BlogTab() {
             {/* Search Input */}
             <div className="md:col-span-4 relative">
               <Search className="absolute left-3 top-2.5 text-slate-400 w-4.5 h-4.5" />
+              <label htmlFor="blog-search-query-input" className="sr-only">Search articles</label>
               <input
                 id="blog-search-query-input"
                 type="text"
@@ -320,6 +321,7 @@ export default function BlogTab() {
 
             {/* Quick Category Swiper */}
             <div className="md:col-span-3 relative">
+              <label htmlFor="blog-category-select-dropdown" className="sr-only">Filter articles by category</label>
               <select
                 id="blog-category-select-dropdown"
                 value={selectedCategory}
@@ -373,9 +375,9 @@ export default function BlogTab() {
 
                   <div className="space-y-2">
                     <Link to={`/blog/${post.id}`} onClick={(e) => e.stopPropagation()} className="block">
-                      <h3 className="text-base font-bold text-slate-900 group-hover:text-violet-800 transition-colors duration-200 leading-snug">
+                      <h2 className="text-base font-bold text-slate-900 group-hover:text-violet-800 transition-colors duration-200 leading-snug">
                         {post.title}
-                      </h3>
+                      </h2>
                     </Link>
                     <p className="text-xs text-slate-500 leading-relaxed font-normal">
                       {post.summary}
@@ -423,4 +425,3 @@ export default function BlogTab() {
     </div>
   );
 }
-

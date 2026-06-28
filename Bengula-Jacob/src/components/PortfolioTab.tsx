@@ -92,9 +92,9 @@ export default function PortfolioTab() {
               {/* Title & Narrative */}
               <div className="space-y-2">
                 <div className="flex justify-between items-start gap-2">
-                  <h3 className="text-base font-bold text-slate-900 group-hover:text-violet-800 transition-colors duration-200">
+                  <h2 className="text-base font-bold text-slate-900 group-hover:text-violet-800 transition-colors duration-200">
                     {item.title}
-                  </h3>
+                  </h2>
                   {item.blogId && (
                     <button
                       onClick={(e) => {
@@ -161,4 +161,3 @@ export default function PortfolioTab() {
     </div>
   );
 }
-

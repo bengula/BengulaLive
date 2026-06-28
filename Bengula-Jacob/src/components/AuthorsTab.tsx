@@ -97,12 +97,12 @@ export default function AuthorsTab() {
 
         {/* Their articles */}
         <div className="space-y-3">
-          <h3 className="text-sm font-bold text-slate-800 flex items-center gap-2 px-1">
+          <h2 className="text-sm font-bold text-slate-800 flex items-center gap-2 px-1">
             <BookOpen className="w-4 h-4 text-violet-800" />
             {articles.length > 0
               ? `${articles.length} article${articles.length > 1 ? 's' : ''} by ${activeProfile.name}`
               : `No articles yet by ${activeProfile.name}`}
-          </h3>
+          </h2>
           <div className="space-y-3">
             {articles.map((post) => (
               <Link
@@ -114,9 +114,9 @@ export default function AuthorsTab() {
                   <span className="text-[10px] bg-violet-50 text-violet-800 border border-violet-100 px-2 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
                     {post.category}
                   </span>
-                  <h4 className="text-sm font-bold text-slate-900 group-hover:text-violet-800 transition-colors leading-snug">
+                  <h3 className="text-sm font-bold text-slate-900 group-hover:text-violet-800 transition-colors leading-snug">
                     {post.title}
-                  </h4>
+                  </h3>
                   <p className="text-xs text-slate-500 font-mono flex items-center gap-1">
                     <Clock className="w-3 h-3 text-violet-800" />
                     {post.readTime} · {post.date}
@@ -161,9 +161,9 @@ export default function AuthorsTab() {
             >
               <Avatar a={profile} size="w-16 h-16" />
               <div className="space-y-1.5 min-w-0 flex-1">
-                <h3 className="text-base font-bold text-slate-900 group-hover:text-violet-800 transition-colors">
+                <h2 className="text-base font-bold text-slate-900 group-hover:text-violet-800 transition-colors">
                   {profile.name}
-                </h3>
+                </h2>
                 <p className="text-[11px] font-semibold text-violet-800">{profile.role}</p>
                 <p className="text-xs text-slate-500 leading-relaxed font-normal line-clamp-3">{profile.bio}</p>
                 <p className="text-[10px] text-slate-400 font-mono font-bold pt-1 flex items-center gap-1">
@@ -178,4 +178,3 @@ export default function AuthorsTab() {
     </div>
   );
 }
-

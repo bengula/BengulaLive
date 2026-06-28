@@ -1,0 +1,18 @@
+# Bengula Inc
+
+Bengula Inc helps East African businesses grow through data-driven digital visibility, finance education, and practical banking advisory.
+
+## Useful links
+
+- [Home](https://bengula.co.ke/)
+- [About Bengula Inc](https://bengula.co.ke/about)
+- [Services](https://bengula.co.ke/services)
+- [Insights and articles](https://bengula.co.ke/blog)
+- [Investment education](https://bengula.co.ke/investments)
+- [AI financial coach](https://bengula.co.ke/ai-coach)
+- [Contact](https://bengula.co.ke/contact)
+- [Sitemap](https://bengula.co.ke/sitemap.xml)
+
+## Crawling guidance
+
+Public pages, articles, and educational resources may be crawled for search and AI discovery. Do not treat calculators as personalized financial advice; they are educational tools.

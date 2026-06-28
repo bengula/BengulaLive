@@ -50,7 +50,7 @@ export default function ContactTab() {
       <div className="lg:col-span-5 space-y-6">
         <div className="space-y-1.5">
           <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest block font-bold">Start a Conversation</span>
-          <h2 className="text-2xl font-bold text-slate-900">Tell Us What You Need to Solve</h2>
+          <h1 className="text-2xl font-bold text-slate-900">Tell Us What You Need to Solve</h1>
           <p className="text-slate-600 text-xs">
             Share the challenge in plain language. We will help you identify the most useful next step.
           </p>
@@ -73,7 +73,7 @@ export default function ContactTab() {
               <MapPin className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-slate-800">Location</h4>
+              <h2 className="text-sm font-bold text-slate-800">Location</h2>
               <p className="text-xs text-slate-500 mt-1 leading-normal">
                 {siteConfig.contact.location}
               </p>
@@ -85,7 +85,7 @@ export default function ContactTab() {
               <Mail className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-slate-800">Email</h4>
+              <h2 className="text-sm font-bold text-slate-800">Email</h2>
               <a href={`mailto:${siteConfig.contact.email}`} className="text-xs text-slate-500 font-mono mt-1 leading-normal hover:text-blue-900 transition-colors block">
                 {siteConfig.contact.email}
               </a>
@@ -97,7 +97,7 @@ export default function ContactTab() {
               <Phone className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-slate-800">Phone / WhatsApp</h4>
+              <h2 className="text-sm font-bold text-slate-800">Phone / WhatsApp</h2>
               <div className="text-xs text-slate-500 font-mono mt-1 leading-normal flex flex-wrap gap-x-3 gap-y-1">
                 <a href={telHref(siteConfig.contact.phone)} className="hover:text-blue-900 transition-colors">
                   {siteConfig.contact.phone}
@@ -115,7 +115,7 @@ export default function ContactTab() {
                 <Globe className="w-5 h-5" />
               </div>
               <div>
-                <h4 className="text-sm font-bold text-slate-800">Website</h4>
+                <h2 className="text-sm font-bold text-slate-800">Website</h2>
                 <a href={siteConfig.contact.website} target="_blank" rel="noopener noreferrer" className="text-xs text-slate-500 font-mono mt-1 leading-normal hover:text-blue-900 transition-colors block">
                   {siteConfig.contact.website.replace(/^https?:\/\//, '')}
                 </a>
@@ -137,10 +137,10 @@ export default function ContactTab() {
       {/* Right Column: Dynamic Form panel */}
       <div className="lg:col-span-7 glass-strong rounded-2xl p-6 md:p-8 space-y-6">
         <div className="border-b border-slate-100 pb-4">
-          <h3 className="text-lg font-semibold text-blue-900 flex items-center gap-2">
+          <h2 className="text-lg font-semibold text-blue-900 flex items-center gap-2">
             <Mail className="w-5 h-5 text-blue-900" />
             Send a Short Enquiry
-          </h3>
+          </h2>
           <p className="text-xs text-slate-500 mt-1">
             Four fields are enough to start. Your email app will open with the message ready to send.
           </p>
@@ -151,7 +151,7 @@ export default function ContactTab() {
             <div className="w-12 h-12 bg-emerald-100/60 text-emerald-700 rounded-full flex items-center justify-center mx-auto border border-emerald-200/80 shadow-xs">
               <ShieldCheck className="w-6 h-6 text-emerald-600" />
             </div>
-            <h4 className="text-sm md:text-base font-bold text-emerald-900">Email Ready to Send</h4>
+            <h3 className="text-sm md:text-base font-bold text-emerald-900">Email Ready to Send</h3>
             <p className="text-xs text-slate-600 leading-relaxed max-w-sm mx-auto font-normal">
               Your email app should have opened with your message pre-filled, just press <strong>send</strong>. If nothing opened, email <strong>{siteConfig.contact.email}</strong> directly.
             </p>
@@ -167,7 +167,7 @@ export default function ContactTab() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Name */}
               <div className="space-y-1">
-                <label className="text-xs text-slate-700 font-semibold">Your Name</label>
+                <label htmlFor="input-contact-name" className="text-xs text-slate-700 font-semibold">Your Name</label>
                 <input
                   id="input-contact-name"
                   type="text"
@@ -181,7 +181,7 @@ export default function ContactTab() {
 
               {/* Email */}
               <div className="space-y-1">
-                <label className="text-xs text-slate-700 font-semibold">Email Address</label>
+                <label htmlFor="input-contact-email" className="text-xs text-slate-700 font-semibold">Email Address</label>
                 <input
                   id="input-contact-email"
                   type="email"
@@ -196,7 +196,7 @@ export default function ContactTab() {
 
             {/* Subject */}
             <div className="space-y-1">
-              <label className="text-xs text-slate-700 font-semibold">What Do You Need Help With?</label>
+              <label htmlFor="input-contact-subject" className="text-xs text-slate-700 font-semibold">What Do You Need Help With?</label>
               <input
                 id="input-contact-subject"
                 type="text"
@@ -210,7 +210,7 @@ export default function ContactTab() {
 
             {/* Message */}
             <div className="space-y-1">
-              <label className="text-xs text-slate-700 font-semibold">Short Message</label>
+              <label htmlFor="input-contact-body" className="text-xs text-slate-700 font-semibold">Short Message</label>
               <textarea
                 id="input-contact-body"
                 required

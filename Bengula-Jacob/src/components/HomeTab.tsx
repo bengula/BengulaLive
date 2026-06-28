@@ -312,7 +312,7 @@ export default function HomeTab() {
       <section id="loan-appraisal-calculator" className="space-y-6">
         <div className="max-w-xl mx-auto text-center space-y-1.5">
           <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Credit Decision Tool</span>
-          <h3 className="text-xl md:text-2xl font-bold text-slate-900">Loan Appraisal Calculator</h3>
+          <h2 className="text-xl md:text-2xl font-bold text-slate-900">Loan Appraisal Calculator</h2>
           <p className="text-xs text-slate-500">
             Estimate qualification, repayment factors, APR, and amortization before starting a formal loan discussion.
           </p>
@@ -323,7 +323,7 @@ export default function HomeTab() {
       <section className="glass-strong rounded-2xl p-6 md:p-10 space-y-8 reveal">
         <div className="max-w-xl mx-auto text-center space-y-1.5">
           <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Investment Yield Tool</span>
-          <h3 className="text-xl md:text-2xl font-bold text-slate-900">Bond Yield & Wealth Calculator</h3>
+          <h2 className="text-xl md:text-2xl font-bold text-slate-900">Bond Yield & Wealth Calculator</h2>
           <p className="text-xs text-slate-500">
             Compare your borrowing decisions with investment outcomes across treasury bonds, infrastructure bonds, and compound savings.
           </p>
@@ -334,7 +334,7 @@ export default function HomeTab() {
       <section id="credit-card-grace-calculator" className="space-y-6 reveal">
         <div className="max-w-xl mx-auto text-center space-y-1.5">
           <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Card Cost Tool</span>
-          <h3 className="text-xl md:text-2xl font-bold text-slate-900">Credit Card Interest-Free Period Calculator</h3>
+          <h2 className="text-xl md:text-2xl font-bold text-slate-900">Credit Card Interest-Free Period Calculator</h2>
           <p className="text-xs text-slate-500">
             Work out how many of the advertised "up to 50 days" interest-free your next card purchase actually earns.
           </p>
@@ -383,7 +383,7 @@ export default function HomeTab() {
         <div className="relative max-w-2xl mx-auto text-center space-y-6">
           <div className="space-y-2">
             <span className="text-xs font-bold text-violet-300 tracking-widest uppercase font-mono">Weekly Business Notes</span>
-            <h4 className="text-xl md:text-2xl font-extrabold">Subscribe to The Sovereign Ledger</h4>
+            <h2 className="text-xl md:text-2xl font-extrabold">Subscribe to The Sovereign Ledger</h2>
             <p className="text-xs text-slate-300 leading-relaxed max-w-md mx-auto">
               Concise, practical notes on business finance, banking products, market rates, and using data to grow, written for owners and professionals.
             </p>
@@ -392,14 +392,16 @@ export default function HomeTab() {
           {newsletterSuccess ? (
             <div className="bg-emerald-950/65 border border-emerald-900 p-6 rounded-xl text-center space-y-2 max-w-sm mx-auto">
               <ShieldCheck className="w-10 h-10 text-emerald-400 mx-auto" />
-              <h5 className="text-xs font-bold text-emerald-300 uppercase tracking-widest block">Almost There</h5>
+              <h3 className="text-xs font-bold text-emerald-300 uppercase tracking-widest block">Almost There</h3>
               <p className="text-[11px] text-slate-200">
                 Your email app should have opened. Press send to confirm your subscription to The Sovereign Ledger.
               </p>
             </div>
           ) : (
             <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto text-xs">
+              <label htmlFor="newsletter-email-input" className="sr-only">Email address for The Sovereign Ledger</label>
               <input
+                id="newsletter-email-input"
                 type="email"
                 required
                 placeholder="Your email address"

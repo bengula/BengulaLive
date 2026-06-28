@@ -48,7 +48,7 @@ export default function FAQ() {
           <HelpCircle className="w-3.5 h-3.5" />
           Common Questions
         </span>
-        <h3 className="text-2xl font-bold text-slate-900">Frequently Asked Questions</h3>
+        <h2 className="text-2xl font-bold text-slate-900">Frequently Asked Questions</h2>
         <p className="text-xs text-slate-500">
           Quick answers on consultations, compliance, and how the desk works.
         </p>
@@ -88,4 +88,3 @@ export default function FAQ() {
     </div>
   );
 }
-

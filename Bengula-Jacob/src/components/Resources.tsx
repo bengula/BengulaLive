@@ -54,7 +54,7 @@ export default function Resources() {
           <FileText className="w-3.5 h-3.5" />
           Free Resource Library
         </span>
-        <h3 className="text-2xl font-bold text-slate-900">Download Research & Frameworks</h3>
+        <h2 className="text-2xl font-bold text-slate-900">Download Research & Frameworks</h2>
         <p className="text-xs text-slate-500">
           Complimentary dossiers prepared by Jacob's desk: no signup required.
         </p>
@@ -78,7 +78,7 @@ export default function Resources() {
                   </span>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-slate-900 leading-snug group-hover:text-violet-800 transition-colors">{doc.title}</h4>
+                  <h3 className="text-sm font-bold text-slate-900 leading-snug group-hover:text-violet-800 transition-colors">{doc.title}</h3>
                   <p className="text-xs text-slate-500 mt-1.5 leading-relaxed">{doc.desc}</p>
                 </div>
               </div>

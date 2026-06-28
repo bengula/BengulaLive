@@ -34,7 +34,7 @@ export default function AboutTab() {
                 className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-white shadow-lg"
               />
               <div>
-                <h3 className="text-xl font-bold text-slate-900">Bengula Jacob</h3>
+                <p className="text-xl font-bold text-slate-900">Bengula Jacob</p>
                 <p className="text-sm text-violet-800 font-extrabold mt-1">Relationship Manager, Absa Bank (Malindi Branch)</p>
                 <p className="text-xs text-slate-500 font-semibold mt-0.5">Founder, Bengula Inc</p>
               </div>
@@ -72,7 +72,7 @@ export default function AboutTab() {
           </p>
           
           <div className="flex-1 min-w-0">
-            <h3 className="font-bold text-violet-800 font-sans uppercase tracking-widest text-[10px]">Bengula Inc Mission & Vision</h3>
+            <h2 className="font-bold text-violet-800 font-sans uppercase tracking-widest text-[10px]">Bengula Inc Mission & Vision</h2>
             <p className="text-slate-600 leading-relaxed font-normal">
               Founded in 2014, we help you scale your business through data-driven content creation and digital growth strategy. We also help you make wise, calculated investments in sovereign debt, unit trusts, and alternative assets.
             </p>
@@ -97,7 +97,7 @@ export default function AboutTab() {
       <div className="space-y-6">
         <div className="text-center max-w-xl mx-auto space-y-1.5">
           <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest block">Foundational Beliefs</span>
-          <h3 className="text-2xl font-bold text-slate-950">Our Core Values</h3>
+          <h2 className="text-2xl font-bold text-slate-950">Our Core Values</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
@@ -119,7 +119,7 @@ export default function AboutTab() {
             }
           ].map((val, idx) => (
             <div key={idx} className="glass-card rounded-xl p-5 space-y-2 border-t-4 border-t-violet-700">
-              <h4 className="font-bold text-slate-950 text-sm">{val.title}</h4>
+              <h3 className="font-bold text-slate-950 text-sm">{val.title}</h3>
               <p className="text-xs text-slate-500 leading-normal">{val.desc}</p>
             </div>
           ))}
@@ -142,7 +142,7 @@ export default function AboutTab() {
             <Award className="w-6 h-6 text-amber-400" />
           </div>
           <div>
-            <h3 className="text-lg font-bold text-white">About Bengula Inc</h3>
+            <h2 className="text-lg font-bold text-white">About Bengula Inc</h2>
             <p className="text-xs text-violet-200 font-medium">Founded in 2014 · Scaling Content & Wise Investments</p>
           </div>
         </div>
@@ -155,7 +155,7 @@ export default function AboutTab() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-4">
         <div className="lg:col-span-5 space-y-4">
           <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest block">Global Resonance</span>
-          <h3 className="text-2xl font-bold text-slate-950 leading-snug">Media & Recognition</h3>
+          <h2 className="text-2xl font-bold text-slate-950 leading-snug">Media & Recognition</h2>
           <p className="text-xs text-slate-500 leading-relaxed">
             Bengula's professional insights on sovereign debt coupon laddering and SME growth strategy are regularly featured across leading channels:
           </p>
@@ -205,7 +205,7 @@ export default function AboutTab() {
                   <ArrowRight className="w-3.5 h-3.5" />
                 </span>
               </div>
-              <h4 className="font-bold text-slate-900 text-sm group-hover:text-violet-800 transition-colors">{rec.title}</h4>
+              <h3 className="font-bold text-slate-900 text-sm group-hover:text-violet-800 transition-colors">{rec.title}</h3>
               <p className="text-[11px] text-slate-500 font-semibold">{rec.venue}</p>
               <p className="text-xs text-slate-500 font-light leading-relaxed pt-1">{rec.desc}</p>
             </div>
@@ -220,7 +220,7 @@ export default function AboutTab() {
             <Milestone className="w-4 h-4" />
             <span>Our Chronology</span>
           </div>
-          <h3 className="text-2xl font-bold text-slate-950">Professional Journey & Milestones</h3>
+          <h2 className="text-2xl font-bold text-slate-950">Professional Journey & Milestones</h2>
         </div>
 
         {/* Timeline Line items */}
@@ -266,7 +266,7 @@ export default function AboutTab() {
                 <span className="text-[10px] bg-violet-50 text-violet-800 border border-violet-100 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
                   {milestone.year}
                 </span>
-                <h4 className="text-base font-bold text-slate-800 pt-1">{milestone.title}</h4>
+                <h3 className="text-base font-bold text-slate-800 pt-1">{milestone.title}</h3>
                 <p className="text-xs text-slate-500 font-medium">{milestone.company}</p>
                 <p className="text-xs text-slate-500 leading-relaxed pt-1.5">{milestone.desc}</p>
               </div>
@@ -277,4 +277,3 @@ export default function AboutTab() {
     </div>
   );
 }
-

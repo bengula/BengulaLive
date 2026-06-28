@@ -141,9 +141,9 @@ export default function InsightDeck() {
                 {/* Revealed side — the insight, set like a page from an old book. */}
                 <div className="deck-face deck-face-back book-page font-charter flex flex-col gap-4 p-5 sm:p-8 md:p-10">
                   <span className="book-page-tag">{insight.tag}</span>
-                  <h4 className="text-center text-xl sm:text-2xl md:text-[1.75rem] font-bold leading-snug text-[#241f14]">
+                  <h3 className="text-center text-xl sm:text-2xl md:text-[1.75rem] font-bold leading-snug text-[#241f14]">
                     {insight.title}
-                  </h4>
+                  </h3>
                   <div className="book-page-body text-sm sm:text-[15px] md:text-base leading-relaxed animate-fadeIn">
                     <MarkdownContent
                       content={insight.body}

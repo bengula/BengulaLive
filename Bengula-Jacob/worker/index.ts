@@ -46,6 +46,24 @@ function json(data: unknown, status = 200): Response {
   });
 }
 
+async function staticAsset(request: Request, env: Env): Promise<Response> {
+  const response = await env.ASSETS.fetch(request);
+  const contentType = response.headers.get('content-type') ?? '';
+
+  if (!contentType.toLowerCase().startsWith('text/html')) {
+    return response;
+  }
+
+  const headers = new Headers(response.headers);
+  headers.set('content-type', 'text/html; charset=utf-8');
+
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
 async function readCount(env: Env, id: string): Promise<number> {
   const raw = await env.LIKES.get(KEY(id));
   const n = raw ? parseInt(raw, 10) : 0;
@@ -100,6 +118,6 @@ export default {
     }
 
     // Not an API route: serve the static site (SPA fallback included).
-    return env.ASSETS.fetch(request);
+    return staticAsset(request, env);
   },
 };

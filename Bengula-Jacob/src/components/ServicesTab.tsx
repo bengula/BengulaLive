@@ -143,7 +143,7 @@ export default function ServicesTab() {
         <div className="glass-strong rounded-2xl p-6 space-y-4">
           <div className="flex flex-wrap justify-between items-start gap-2 border-b border-slate-100 pb-4">
             <div>
-              <h3 className="text-lg font-bold text-slate-900">{activeSvc.title}</h3>
+              <h2 className="text-lg font-bold text-slate-900">{activeSvc.title}</h2>
               <p className="text-xs text-amber-700 font-extrabold mt-0.5">{activeSvc.pricing}</p>
             </div>
             <span className="text-[10px] bg-violet-50 border border-violet-100/55 text-violet-800 py-1 px-2.5 rounded-full font-bold font-mono flex items-center gap-1">
@@ -174,10 +174,10 @@ export default function ServicesTab() {
       {/* Right Column: Live Interactive Booking Scheduler Form */}
       <div className="lg:col-span-5 glass-strong rounded-2xl p-6 md:p-8 space-y-6">
         <div className="border-b border-slate-100 pb-4">
-          <h3 className="text-lg font-bold text-violet-800 flex items-center gap-2">
+          <h2 className="text-lg font-bold text-violet-800 flex items-center gap-2">
             <Calendar className="w-5 h-5 text-violet-800" />
             Book a Follow-Up Session
-          </h3>
+          </h2>
           <p className="text-xs text-slate-500 mt-1">
             Use this form when you are ready to request your structured session. For a lighter first step, use the WhatsApp fit check.
           </p>
@@ -190,7 +190,7 @@ export default function ServicesTab() {
               <CheckCircle className="w-6 h-6 text-emerald-600" />
             </div>
             <div className="space-y-1">
-              <h4 className="text-base font-bold text-emerald-950">Booking Email Ready</h4>
+              <h3 className="text-base font-bold text-emerald-950">Booking Email Ready</h3>
               <p className="text-xs text-slate-600 leading-normal">
                 Your email app should have opened with the request pre-filled, just press <strong>send</strong> and Jacob's office will confirm your slot. If nothing opened, email <strong>{siteConfig.contact.workEmail}</strong> with your reference below.
               </p>
@@ -225,7 +225,7 @@ export default function ServicesTab() {
 
             {/* Selected Service indicator */}
             <div className="space-y-2">
-              <label className="text-xs text-slate-700 font-semibold block">Service Focus Area</label>
+              <label htmlFor="select-booking-service" className="text-xs text-slate-700 font-semibold block">Service Focus Area</label>
               <select
                 id="select-booking-service"
                 value={selectedService}
@@ -271,7 +271,7 @@ export default function ServicesTab() {
 
             {/* Full Name */}
             <div className="space-y-1">
-              <label className="text-xs text-slate-700 font-semibold block">Your Name</label>
+              <label htmlFor="input-booking-name" className="text-xs text-slate-700 font-semibold block">Your Name</label>
               <input
                 id="input-booking-name"
                 type="text"
@@ -285,7 +285,7 @@ export default function ServicesTab() {
 
             {/* Business Email */}
             <div className="space-y-1">
-              <label className="text-xs text-slate-700 font-semibold block">Your Email Address</label>
+              <label htmlFor="input-booking-email" className="text-xs text-slate-700 font-semibold block">Your Email Address</label>
               <input
                 id="input-booking-email"
                 type="email"
@@ -300,7 +300,7 @@ export default function ServicesTab() {
             {/* Date and Time row */}
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-1">
-                <label className="text-xs text-slate-700 font-semibold block">Select Date</label>
+                <label htmlFor="input-booking-date" className="text-xs text-slate-700 font-semibold block">Select Date</label>
                 <input
                   id="input-booking-date"
                   type="date"
@@ -312,7 +312,7 @@ export default function ServicesTab() {
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs text-slate-700 font-semibold block">Select Slot Time</label>
+                <label htmlFor="select-booking-time" className="text-xs text-slate-700 font-semibold block">Select Slot Time</label>
                 <select
                   id="select-booking-time"
                   required
@@ -331,7 +331,7 @@ export default function ServicesTab() {
 
             {/* Strategic Notes */}
             <div className="space-y-1">
-              <label className="text-xs text-slate-700 font-semibold block">Discuss Objectives & Assets (Optional)</label>
+              <label htmlFor="input-booking-notes" className="text-xs text-slate-700 font-semibold block">Discuss Objectives & Assets (Optional)</label>
               <textarea
                 id="input-booking-notes"
                 rows={3}

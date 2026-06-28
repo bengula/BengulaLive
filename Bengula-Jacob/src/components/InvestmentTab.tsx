@@ -124,7 +124,7 @@ export default function InvestmentTab() {
         <div className="absolute inset-0 bg-gradient-to-r from-violet-950 via-violet-950/85 to-violet-950/30"></div>
         <div className="relative h-full flex flex-col justify-center px-6 md:px-10 max-w-xl">
           <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest font-mono">Alternative Placements</span>
-          <h2 className="text-xl md:text-2xl font-extrabold text-white mt-1 leading-tight">Co-Investment Syndicate Pools</h2>
+          <p className="text-xl md:text-2xl font-extrabold text-white mt-1 leading-tight">Co-Investment Syndicate Pools</p>
           <p className="text-xs text-violet-100 mt-1.5 leading-relaxed">
             Vetted real-estate, agri-logistics, and SME placements structured through Bengula Inc.
           </p>
@@ -160,9 +160,9 @@ export default function InvestmentTab() {
                     <span className="text-[10px] bg-violet-50 text-violet-800 border border-violet-100 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider font-mono">
                       {item.category}
                     </span>
-                    <h3 className="text-base font-bold text-slate-900 mt-2 flex items-center gap-1.5">
+                    <h2 className="text-base font-bold text-slate-900 mt-2 flex items-center gap-1.5">
                       <span>{item.title}</span>
-                    </h3>
+                    </h2>
                   </div>
 
                   <div className="text-right">
@@ -224,10 +224,10 @@ export default function InvestmentTab() {
         {/* Right Column: Live Yield compounding Simulator */}
         <div className="lg:col-span-5 glass-strong rounded-2xl p-6 md:p-8 space-y-6">
           <div className="border-b border-slate-100 pb-4">
-            <h3 className="text-sm md:text-base font-bold text-violet-800 flex items-center gap-2">
+            <h2 className="text-sm md:text-base font-bold text-violet-800 flex items-center gap-2">
               <TrendingUp className="w-5 h-5 text-violet-800" />
               Co-Investment Simulator
-            </h3>
+            </h2>
             <p className="text-xs text-slate-500 mt-1">
               Simulate actual annualized gains, tax outcomes, and terminal values for your selected co-investment pool.
             </p>
@@ -246,7 +246,7 @@ export default function InvestmentTab() {
           {/* Investment Amount Input slider */}
           <div className="space-y-2.5">
             <div className="flex justify-between text-xs">
-              <label className="text-slate-700 font-bold">Your Investment Allocation (KSh)</label>
+              <label htmlFor="input-investment-slider" className="text-slate-700 font-bold">Your Investment Allocation (KSh)</label>
               <span className="text-emerald-700 font-extrabold">{formatKSh(investAmount)}</span>
             </div>
             <input
@@ -260,11 +260,13 @@ export default function InvestmentTab() {
               className="w-full h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-violet-800"
             />
             <input
+              id="input-investment-amount-number"
               type="number"
               value={investAmount}
               onChange={(e) => setInvestAmount(Math.max(activePool.minimumAmount, Number(e.target.value)))}
               className="w-full bg-slate-50 text-slate-900 text-xs py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 transition-colors font-mono font-medium"
             />
+            <label htmlFor="input-investment-amount-number" className="sr-only">Your Investment Allocation (KSh)</label>
             <span className="text-[9px] text-slate-400 block leading-tight font-medium">
               *Minimum allocation required for {activePool.title} is {formatKSh(activePool.minimumAmount)}.
             </span>
@@ -319,10 +321,10 @@ export default function InvestmentTab() {
         {/* Investment Insights Column */}
         <div className="glass-strong rounded-2xl p-6 md:p-8 space-y-6">
           <div className="border-b border-slate-100 pb-3">
-            <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
+            <h2 className="text-lg font-bold text-slate-900 flex items-center gap-2">
               <FileText className="w-5 h-5 text-violet-800" />
               Investment Insights & Analysis
-            </h3>
+            </h2>
             <p className="text-xs text-slate-500 font-medium">
               Actionable guides and sector analysis formulated directly by the Bengula Inc private desk.
             </p>
@@ -335,7 +337,7 @@ export default function InvestmentTab() {
                   <span className="text-violet-800 uppercase">{insight.type}</span>
                   <span className="text-slate-400">PDF</span>
                 </div>
-                <h4 className="font-bold text-slate-950 text-xs leading-snug">{insight.title}</h4>
+                <h3 className="font-bold text-slate-950 text-xs leading-snug">{insight.title}</h3>
                 <p className="text-[10px] text-slate-500 leading-normal">{insight.desc}</p>
                 <a
                   href={insight.file}
@@ -353,10 +355,10 @@ export default function InvestmentTab() {
         {/* Investor Resources Column */}
         <div className="glass-strong rounded-2xl p-6 md:p-8 space-y-6">
           <div className="border-b border-slate-100 pb-3">
-            <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
+            <h2 className="text-lg font-bold text-slate-900 flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-600" />
               Investor Resources & Safekeeping
-            </h3>
+            </h2>
             <p className="text-xs text-slate-500 font-medium">
               SLA templates, risk management methodologies, and operational structures.
             </p>
@@ -364,21 +366,21 @@ export default function InvestmentTab() {
 
           <div className="space-y-4 text-xs font-sans">
             <div className="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-              <h4 className="font-bold text-slate-950">1. Systematic Risk Management Protocols</h4>
+              <h3 className="font-bold text-slate-950">1. Systematic Risk Management Protocols</h3>
               <p className="text-[11px] text-slate-500 leading-relaxed font-normal">
                 We perform intensive background profiling on developers and logistic operators. All holdings are co-titled inside a secure special-purpose trustee desk monitored by licensed legal advocates.
               </p>
             </div>
 
             <div className="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-              <h4 className="font-bold text-slate-950">2. Investment Allocation Governance</h4>
+              <h3 className="font-bold text-slate-950">2. Investment Allocation Governance</h3>
               <p className="text-[11px] text-slate-500 leading-relaxed font-normal">
                 We maintain complete transparency. Deposited capital proceeds directly to acquire physical assets or inventory blocks, backed by registered bills of lading and physical property certificates.
               </p>
             </div>
 
             <div className="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-              <h4 className="font-bold text-slate-950">3. Structured Liquidity Exits</h4>
+              <h3 className="font-bold text-slate-950">3. Structured Liquidity Exits</h3>
               <p className="text-[11px] text-slate-500 leading-relaxed font-normal">
                 Private joint syndicates hold secondary transfer rules, allowing on-rolling co-investors to take over your share in case of personal liquidity requirements before the tenure expires.
               </p>
@@ -394,7 +396,7 @@ export default function InvestmentTab() {
         <div className="max-w-3xl mx-auto space-y-8">
           <div className="text-center space-y-2">
             <span className="text-xs font-extrabold text-violet-400 uppercase tracking-widest block font-mono">Structured Alliance</span>
-            <h3 className="text-2xl font-extrabold text-white">Co-Investor Partnership Inquiry</h3>
+            <h2 className="text-2xl font-extrabold text-white">Co-Investor Partnership Inquiry</h2>
             <p className="text-xs text-slate-300 max-w-lg mx-auto">
               Ready to deploy capital into double-digit frontier placements? Submit your budget tier confidentially to request a private mandate pack.
             </p>
@@ -403,7 +405,7 @@ export default function InvestmentTab() {
           {formSuccess ? (
             <div className="bg-emerald-950 border border-emerald-900 p-6 rounded-xl text-center space-y-3 max-w-md mx-auto">
               <ShieldCheck className="w-10 h-10 text-emerald-400 mx-auto" />
-              <h4 className="text-base font-bold text-emerald-400">Inquiry Email Ready</h4>
+              <h3 className="text-base font-bold text-emerald-400">Inquiry Email Ready</h3>
               <p className="text-xs text-slate-300 leading-relaxed">
                 Your email app should have opened with the inquiry pre-filled, just press <strong>send</strong> and Jacob's portfolio desk will dispatch the relevant due diligence binders. If nothing opened, email <strong>{siteConfig.contact.wealthEmail}</strong> directly.
               </p>
@@ -418,12 +420,13 @@ export default function InvestmentTab() {
             <form onSubmit={handleInquirySubmit} className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs text-white">
               
               <div className="space-y-1">
-                <label className="text-slate-300 font-bold">Your Official Name</label>
+                <label htmlFor="input-partner-name" className="text-slate-300 font-bold">Your Official Name</label>
                 <div className="relative">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-500">
                     <Briefcase className="w-4 h-4" />
                   </span>
                   <input
+                    id="input-partner-name"
                     type="text"
                     required
                     placeholder="e.g. Rachel Kamau"
@@ -435,12 +438,13 @@ export default function InvestmentTab() {
               </div>
 
               <div className="space-y-1">
-                <label className="text-slate-300 font-bold">Your Email Address</label>
+                <label htmlFor="input-partner-email" className="text-slate-300 font-bold">Your Email Address</label>
                 <div className="relative">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-500">
                     <Mail className="w-4 h-4" />
                   </span>
                   <input
+                    id="input-partner-email"
                     type="email"
                     required
                     placeholder="e.g. rkamau@domain.com"
@@ -452,8 +456,9 @@ export default function InvestmentTab() {
               </div>
 
               <div className="space-y-1">
-                <label className="text-slate-300 font-bold">Expected Allocations Budget (KSh)</label>
+                <label htmlFor="select-partner-budget" className="text-slate-300 font-bold">Expected Allocations Budget (KSh)</label>
                 <select
+                  id="select-partner-budget"
                   value={partnerBudget}
                   onChange={(e) => setPartnerBudget(e.target.value)}
                   className="w-full bg-slate-800 text-white border border-slate-700 p-2.5 rounded focus:outline-none focus:border-violet-400 cursor-pointer font-semibold"
@@ -466,8 +471,9 @@ export default function InvestmentTab() {
               </div>
 
               <div className="space-y-1">
-                <label className="text-slate-300 font-bold">Venture Focus Theme</label>
+                <label htmlFor="select-partner-subject" className="text-slate-300 font-bold">Venture Focus Theme</label>
                 <select
+                  id="select-partner-subject"
                   value={partnerSubject}
                   onChange={(e) => setPartnerSubject(e.target.value)}
                   className="w-full bg-slate-800 text-white border border-slate-700 p-2.5 rounded focus:outline-none focus:border-violet-400 cursor-pointer font-semibold"
@@ -480,8 +486,9 @@ export default function InvestmentTab() {
               </div>
 
               <div className="sm:col-span-2 space-y-1">
-                <label className="text-slate-300 font-bold">Confidential Brief & Criteria (Optional)</label>
+                <label htmlFor="input-partner-message" className="text-slate-300 font-bold">Confidential Brief & Criteria (Optional)</label>
                 <textarea
+                  id="input-partner-message"
                   rows={4}
                   placeholder="Outline any key risk benchmarks, required timeline schedules, or previous placement background."
                   value={partnerMessage}
@@ -508,4 +515,3 @@ export default function InvestmentTab() {
     </div>
   );
 }
-

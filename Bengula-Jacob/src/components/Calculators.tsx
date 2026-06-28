@@ -154,7 +154,7 @@ export default function Calculators() {
             {/* Initial Investment */}
             <div className="space-y-2">
               <div className="flex justify-between text-xs font-semibold">
-                <label className="text-slate-700">Initial Principal (KSh)</label>
+                <label htmlFor="input-initial-amount" className="text-slate-700">Initial Principal (KSh)</label>
                 <span className="text-emerald-700 font-extrabold">{formatKSh(initialAmount)}</span>
               </div>
               <input
@@ -168,17 +168,19 @@ export default function Calculators() {
                 className="w-full h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-violet-800"
               />
               <input
+                id="input-initial-amount-number"
                 type="number"
                 value={initialAmount}
                 onChange={(e) => setInitialAmount(Math.max(0, Number(e.target.value)))}
                 className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 font-mono font-semibold"
               />
+              <label htmlFor="input-initial-amount-number" className="sr-only">Initial Principal (KSh)</label>
             </div>
 
             {/* Monthly Contribution */}
             <div className="space-y-2">
               <div className="flex justify-between text-xs font-semibold">
-                <label className="text-slate-700">Monthly Savings Contribution (KSh)</label>
+                <label htmlFor="input-monthly-contrib" className="text-slate-700">Monthly Savings Contribution (KSh)</label>
                 <span className="text-emerald-700 font-extrabold">{formatKSh(monthlyContribution)} / month</span>
               </div>
               <input
@@ -192,17 +194,19 @@ export default function Calculators() {
                 className="w-full h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-violet-800"
               />
               <input
+                id="input-monthly-contrib-number"
                 type="number"
                 value={monthlyContribution}
                 onChange={(e) => setMonthlyContribution(Math.max(0, Number(e.target.value)))}
                 className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 font-mono font-semibold"
               />
+              <label htmlFor="input-monthly-contrib-number" className="sr-only">Monthly Savings Contribution (KSh)</label>
             </div>
 
             {/* Rate & Tenure row */}
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
-                <label className="text-xs text-slate-700 font-bold flex items-center gap-1">
+                <label htmlFor="input-annual-rate" className="text-xs text-slate-700 font-bold flex items-center gap-1">
                   <Percent className="w-3.5 h-3.5 text-violet-800" />
                   Interest (APR %)
                 </label>
@@ -220,7 +224,7 @@ export default function Calculators() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-xs text-slate-700 font-bold flex items-center gap-1">
+                <label htmlFor="input-years" className="text-xs text-slate-700 font-bold flex items-center gap-1">
                   <Calendar className="w-3.5 h-3.5 text-violet-800" />
                   Horizon (Years)
                 </label>
@@ -440,7 +444,7 @@ export default function Calculators() {
             {/* Bond Face Value */}
             <div className="space-y-2">
               <div className="flex justify-between text-xs font-semibold">
-                <label className="text-slate-700">Bond Face Value (KSh)</label>
+                <label htmlFor="input-bond-fvalue" className="text-slate-700">Bond Face Value (KSh)</label>
                 <span className="text-emerald-700 font-extrabold">{formatKSh(bondFaceValue)}</span>
               </div>
               <input
@@ -454,18 +458,20 @@ export default function Calculators() {
                 className="w-full h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-violet-800"
               />
               <input
+                id="input-bond-fvalue-number"
                 type="number"
                 value={bondFaceValue}
                 onChange={(e) => setBondFaceValue(Math.max(50000, Number(e.target.value)))}
                 className="w-full bg-slate-50 text-slate-900 text-sm py-2 px-3 rounded-lg border border-slate-200 focus:outline-none focus:border-violet-800 focus:bg-white focus:ring-1 focus:ring-violet-800 font-mono font-semibold"
               />
+              <label htmlFor="input-bond-fvalue-number" className="sr-only">Bond Face Value (KSh)</label>
               <span className="text-[10px] text-slate-500 block leading-tight font-medium">Minimum CBK Bond bids start at KSh 50,000</span>
             </div>
 
             {/* Coupon and Tenure rows */}
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
-                <label className="text-xs text-slate-700 font-bold block">Coupon rate (% APR)</label>
+                <label htmlFor="input-bond-coupon" className="text-xs text-slate-700 font-bold block">Coupon rate (% APR)</label>
                 <input
                   id="input-bond-coupon"
                   type="number"
@@ -479,7 +485,7 @@ export default function Calculators() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-xs text-slate-700 font-bold block">Tenure (Years)</label>
+                <label htmlFor="input-bond-tenure" className="text-xs text-slate-700 font-bold block">Tenure (Years)</label>
                 <input
                   id="input-bond-tenure"
                   type="number"
