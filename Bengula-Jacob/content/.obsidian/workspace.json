@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "insights/2-apr-vs-interest-rate.md",
+                "file": "banking-credit/kmrc-affordable-housing-mortgage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2-apr-vs-interest-rate"
+              "title": "kmrc-affordable-housing-mortgage"
             }
           }
         ]
@@ -185,6 +185,7 @@
   },
   "active": "23c00d838ddff4d5",
   "lastOpenFiles": [
+    "insights/2-apr-vs-interest-rate.md",
     "insights/3-mmfs-compounding.md",
     "insights/4-cds-online.md",
     "insights/5-ladder-tenors.md",

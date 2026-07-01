@@ -39,6 +39,19 @@ function loadMermaid() {
   return mermaidPromise;
 }
 
+function normalizeMermaidChart(chart: string) {
+  return chart
+    .split("\n")
+    .map((line) => {
+      if (line.trimStart().startsWith("%%")) {
+        return line;
+      }
+
+      return line.replace(/%/g, "#37;");
+    })
+    .join("\n");
+}
+
 function MermaidDiagram({ chart }: { chart: string }) {
   const reactId = React.useId();
   const diagramId = React.useMemo(
@@ -55,7 +68,7 @@ function MermaidDiagram({ chart }: { chart: string }) {
     setError(false);
 
     loadMermaid()
-      .then((mermaid) => mermaid.render(`${diagramId}-${Date.now()}`, chart))
+      .then((mermaid) => mermaid.render(`${diagramId}-${Date.now()}`, normalizeMermaidChart(chart)))
       .then(({ svg }) => {
         if (!cancelled) {
           setSvg(svg);

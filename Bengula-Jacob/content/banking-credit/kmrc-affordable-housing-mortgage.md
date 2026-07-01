@@ -31,12 +31,21 @@ Because the primary lenders receive this money on a long-term basis at 5%, they 
 
 ```mermaid
 graph TD
-    A[Capital Markets & Dev Partners] -->|Long-Term Funds| B[KMRC]
-    B -->|Wholesale @ 5%| C[Banks & SACCOs PMLs]
-    C -->|Mortgage @ 9.5%| D[Home Buyer]
+    %% Node Definitions
+    A["Capital Markets &<br>Dev Partners"]
+    B["KMRC"]
+    C["Banks & SACCOs<br>(PMLs)"]
+    D["Home Buyer"]
+
+    %% Flow and Labels
+    A -->|Long-Term Funds| B
+    B -->|Wholesale @ 5%| C
+    C -->|Mortgage @ 9.5%| D
+
+    %% Styling
+    classDef default fill:#f9f7ff,stroke:#9b6dfa,stroke-width:1px,color:#1a1130;
+    classDef edgeLabel fill:#e6f9ff,color:#0a3a40;
 ```
-
-
 ---
 
 ### Two-Tier KMRC Mortgage Structures
