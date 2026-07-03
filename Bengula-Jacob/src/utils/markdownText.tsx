@@ -161,6 +161,140 @@ function renderEmphasis(text: string, strongClassName: string, keyPrefix: string
   return nodes;
 }
 
+function getUrl(src?: string | null) {
+  if (!src) {
+    return null;
+  }
+
+  try {
+    return new URL(src);
+  } catch {
+    return null;
+  }
+}
+
+function isSlideShareUrl(src?: string | null) {
+  return getUrl(src)?.hostname.toLowerCase().endsWith("slideshare.net") ?? false;
+}
+
+function getSlideShareEmbedUrl(src: string) {
+  const url = getUrl(src);
+  if (!url || !url.pathname.includes("/slideshow/embed_code/")) {
+    return null;
+  }
+
+  return url.toString();
+}
+
+function getYouTubeEmbedUrl(src: string) {
+  const url = getUrl(src);
+  if (!url) {
+    return null;
+  }
+
+  const hostname = url.hostname.toLowerCase();
+  let videoId: string | null = null;
+
+  if (hostname === "youtu.be" || hostname.endsWith(".youtu.be")) {
+    videoId = url.pathname.split("/").filter(Boolean)[0] ?? null;
+  } else if (hostname === "youtube.com" || hostname.endsWith(".youtube.com")) {
+    if (url.pathname === "/watch") {
+      videoId = url.searchParams.get("v");
+    } else {
+      const [, id] = url.pathname.match(/^\/(?:embed|shorts|live)\/([^/?#]+)/) ?? [];
+      videoId = id ?? null;
+    }
+  }
+
+  if (!videoId) {
+    return null;
+  }
+
+  const embedUrl = new URL(`https://www.youtube.com/embed/${videoId}`);
+  const start = url.searchParams.get("start") ?? url.searchParams.get("t");
+  if (start) {
+    embedUrl.searchParams.set("start", start.replace(/s$/, ""));
+  }
+
+  return embedUrl.toString();
+}
+
+function getMediaEmbed(src?: string | null) {
+  if (!src) {
+    return null;
+  }
+
+  if (isSlideShareUrl(src)) {
+    const slideShareEmbedUrl = getSlideShareEmbedUrl(src);
+
+    if (slideShareEmbedUrl) {
+      return {
+        provider: "SlideShare",
+        iframeSrc: slideShareEmbedUrl,
+        sourceUrl: src,
+        aspectClassName: "aspect-[17/14]",
+        allow: "fullscreen",
+      };
+    }
+  }
+
+  const youtubeEmbedUrl = getYouTubeEmbedUrl(src);
+  if (youtubeEmbedUrl) {
+    return {
+      provider: "YouTube",
+      iframeSrc: youtubeEmbedUrl,
+      sourceUrl: src,
+      aspectClassName: "aspect-video",
+      allow:
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+    };
+  }
+
+  return null;
+}
+
+function MediaEmbed({
+  src,
+  title,
+  provider,
+  aspectClassName,
+  allow,
+  sourceUrl,
+}: {
+  src: string;
+  title: string;
+  provider: string;
+  aspectClassName: string;
+  allow: string;
+  sourceUrl: string;
+}) {
+  return (
+    <figure className="my-6 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xs">
+      <div className={`${aspectClassName} w-full bg-slate-950`}>
+        <iframe
+          src={src}
+          title={title}
+          loading="lazy"
+          allow={allow}
+          allowFullScreen
+          referrerPolicy="strict-origin-when-cross-origin"
+          className="h-full w-full border-0"
+        />
+      </div>
+      <figcaption className="border-t border-slate-100 bg-slate-50 px-4 py-2 text-[11px] leading-relaxed text-slate-500">
+        {provider} embed.{" "}
+        <a
+          href={sourceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-violet-800 underline decoration-violet-800/30 underline-offset-2 hover:text-violet-700"
+        >
+          Open original
+        </a>
+      </figcaption>
+    </figure>
+  );
+}
 const TOKEN_RE =
   /(`[^`]+`)|(!?\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/[^\s)]+)(?:\s+"([^"]+)")?\))|(https?:\/\/[^\s<)]+)/g;
 
@@ -314,21 +448,38 @@ const markdownComponents: Components = {
   em: ({ children }) => <em className="italic">{children}</em>,
   del: ({ children }) => <del className="text-slate-500">{children}</del>,
   hr: () => <div className="w-full border-t border-slate-200 my-4" />,
-  img: ({ src, alt, title }) => (
-    <figure className="my-6 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xs">
-      <img
-        src={src ?? ""}
-        alt={alt ?? ""}
-        loading="lazy"
-        className="w-full max-h-[520px] object-contain bg-slate-100"
-      />
-      {title && (
-        <figcaption className="border-t border-slate-100 bg-slate-50 px-4 py-2 text-[11px] leading-relaxed text-slate-500">
-          {title}
-        </figcaption>
-      )}
-    </figure>
-  ),
+  img: ({ src, alt, title }) => {
+    const embed = getMediaEmbed(src);
+
+    if (embed) {
+      return (
+        <MediaEmbed
+          src={embed.iframeSrc}
+          title={title ?? alt ?? `${embed.provider} embed`}
+          provider={embed.provider}
+          aspectClassName={embed.aspectClassName}
+          allow={embed.allow}
+          sourceUrl={embed.sourceUrl}
+        />
+      );
+    }
+
+    return (
+      <figure className="my-6 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xs">
+        <img
+          src={src ?? ""}
+          alt={alt ?? ""}
+          loading="lazy"
+          className="w-full max-h-[520px] object-contain bg-slate-100"
+        />
+        {title && (
+          <figcaption className="border-t border-slate-100 bg-slate-50 px-4 py-2 text-[11px] leading-relaxed text-slate-500">
+            {title}
+          </figcaption>
+        )}
+      </figure>
+    );
+  },
   table: ({ children }) => (
     <div className="overflow-x-auto my-4 border border-slate-200 rounded-xl bg-slate-50 p-1 shadow-xs">
       <table className="w-full text-xs text-left text-slate-700">{children}</table>
