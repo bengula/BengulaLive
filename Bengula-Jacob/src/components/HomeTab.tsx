@@ -104,6 +104,21 @@ export default function HomeTab() {
     },
   ];
 
+  const quoteCards = [
+    {
+      quote: 'A cheaper loan is not always the better loan; the right structure must match the cash flow it is supposed to serve.',
+      label: 'Credit Discipline',
+    },
+    {
+      quote: 'Digital growth starts when a business stops guessing what customers want and starts measuring what customers actually do.',
+      label: 'Data-Led Growth',
+    },
+    {
+      quote: 'Wealth is built twice: first in behaviour, then in instruments. The product only works when the habit can carry it.',
+      label: 'Personal Finance',
+    },
+  ];
+
   return (
     <div id="home-view" className="home-view space-y-16 md:space-y-24">
       <Seo
@@ -296,12 +311,28 @@ export default function HomeTab() {
         ))}
       </section>
 
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-5 reveal">
+        {quoteCards.map((item) => (
+          <figure key={item.label} className="glass-card rounded-xl p-6 flex flex-col gap-5 border-t-4 border-t-violet-700">
+            <div className="flex items-center justify-between gap-3">
+              <span className="text-[10px] font-extrabold uppercase tracking-widest text-violet-700">
+                {item.label}
+              </span>
+              <MessageCircle className="h-4 w-4 text-violet-700" aria-hidden="true" />
+            </div>
+            <blockquote className="text-sm font-semibold leading-relaxed text-slate-800">
+              "{item.quote}"
+            </blockquote>
+          </figure>
+        ))}
+      </section>
+
       <section className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center glass-strong rounded-2xl p-6 md:p-10 reveal">
         <div className="space-y-4 text-center lg:text-left lg:col-span-2">
           <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest">Insights You Can Act On</span>
           <h2 className="text-2xl font-bold text-slate-900">A quick deck of money truths</h2>
           <p className="text-sm text-slate-600 leading-relaxed max-w-md mx-auto lg:mx-0">
-            Five practical takes on saving, borrowing, and sovereign debt in Kenya. Tap the top card to flip it, then tap again to shuffle to the next one.
+            Twelve practical takes on saving, borrowing, business cash flow, and sovereign debt in Kenya. Tap the top card to flip it, then tap again to shuffle to the next one.
           </p>
         </div>
         <div className="flex justify-center lg:col-span-3">

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "investing/pitch-deck-narrative-kenya.md",
+                "file": "banking-credit/what-is-a-cashless-economy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "pitch-deck-narrative-kenya"
+              "title": "what-is-a-cashless-economy"
             }
           }
         ]
@@ -185,8 +185,19 @@
   },
   "active": "c75749b041794a9b",
   "lastOpenFiles": [
-    "investing/best-pitch-deck-examples-startups.md",
+    "technology/ai-in-fintech-kenya.md",
+    "banking-credit/what-is-accounts-receivable.md",
+    "investing/types-of-acquisitions.md",
+    "banking-credit/types-of-acquisitions.md",
+    "banking-credit/what-is-a-cashless-economy.md",
+    "insights/12-margin-discipline.md",
+    "insights/11-platform-risk.md",
+    "insights/10-tax-drag.md",
+    "insights/9-cash-flow-before-profit.md",
+    "insights/8-crb-is-an-asset.md",
+    "insights/7-emergency-fund.md",
     "investing/pitch-deck-narrative-kenya.md",
+    "investing/best-pitch-deck-examples-startups.md",
     "facebook-original-pitch-deck.md",
     "banking-credit/kmrc-affordable-housing-mortgage.md",
     "insights/2-apr-vs-interest-rate.md",
@@ -199,17 +210,6 @@
     "banking-credit/tea-cooperative-restructure.md",
     "banking-credit/sacco-savers-guarantors.md",
     "banking-credit/mobile-digital-loans-real-cost-kenya.md",
-    "banking-credit/islamic-banking-kenya-murabaha-musharaka-hajj-savings.md",
-    "banking-credit/how-to-fix-your-crb-listing-kenya.md",
-    "banking-credit/how-kenyan-banks-price-loans.md",
-    "banking-credit/credit-card-interest-free-period.md",
-    "banking-credit/bengula_apr_breakdown_article_improved.md",
-    "banking-credit/asset-finance-vs-conventional-loans.md",
-    "technology/Stop Wasting Money on AI Detectors.md",
-    "economy-policy/east-african-sovereign-summit.md",
-    "Stop Wasting Money on AI Detectors.md",
-    "technology/bengula-inc-linkedin-company-profile.md",
-    "technology/archive-customer-avatars-buyer-persona.md",
-    "_TEMPLATE.md"
+    "banking-credit/islamic-banking-kenya-murabaha-musharaka-hajj-savings.md"
   ]
 }

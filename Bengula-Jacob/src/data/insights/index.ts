@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * Loader for Insight Cards.
+ * Updated when adding new insight Markdown files so Vite refreshes the glob.
  * Insights live as Markdown files in content/insights/*.md
  * (YAML frontmatter + Markdown body).
  */

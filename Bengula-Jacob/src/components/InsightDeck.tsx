@@ -15,6 +15,7 @@ import {
   ShieldCheck,
   TrendingUp,
   Sprout,
+  Layers,
   HelpCircle,
 } from 'lucide-react';
 import { allInsights } from '../data/insights';
@@ -27,6 +28,7 @@ const insightIcons: Record<string, React.ElementType> = {
   ShieldCheck,
   TrendingUp,
   Sprout,
+  Layers,
 };
 
 export default function InsightDeck() {
