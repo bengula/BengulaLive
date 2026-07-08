@@ -19,6 +19,7 @@ import AuthorsTab from './components/AuthorsTab';
 import InvestmentTab from './components/InvestmentTab';
 import AICoach from './components/AICoach';
 import ContactTab from './components/ContactTab';
+import NotFound from './components/NotFound';
 
 import { allArticles } from './data/articles';
 import { authorProfiles } from './data/authors';
@@ -47,6 +48,9 @@ export const routes: RouteRecord[] = [
         element: <AuthorsTab />,
         getStaticPaths: () => authorProfiles.map((a) => `/authors/${a.id}`),
       },
+      // Catch-all: the Worker serves index.html for unknown paths, so this
+      // is what actually renders a 404 experience.
+      { path: '*', element: <NotFound /> },
     ],
   },
 ];

@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { Plus, Minus, HelpCircle } from 'lucide-react';
+import { Head } from 'vite-react-ssg';
 
 interface FaqItem {
   q: string;
@@ -38,11 +39,25 @@ const faqs: FaqItem[] = [
   },
 ];
 
+// FAQPage structured data so the questions are eligible for rich results.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
+
 export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
     <div className="space-y-6">
+      <Head>
+        <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
+      </Head>
       <div className="text-center max-w-xl mx-auto space-y-1.5">
         <span className="text-xs font-semibold text-violet-800 uppercase tracking-widest flex items-center gap-1.5 justify-center">
           <HelpCircle className="w-3.5 h-3.5" />

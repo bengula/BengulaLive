@@ -158,7 +158,7 @@ Customers should check:
 
 This is where Islamic banking becomes practical rather than theoretical. A customer may like the word "Shariah-compliant" but still need to compare tariffs, access channels, minimum balances, debit-card costs, mobile banking convenience, standing orders, and forex capability.
 
-For general saving discipline, Bengula's [Monthly Income Engine](/blog/monthly-income-engine-kenya) and [You Can't Save Your Way Out of Poverty](/blog/6-saving-vs-wealth) articles are useful companions. Islamic saving still requires the same behavioural muscle: automatic contributions, realistic goals, and protection from impulse withdrawals.
+For general saving discipline, Bengula's [Monthly Income Engine](/blog/monthly-income-engine-kenya) and [The Future of MMFs in Kenya](/blog/future-mmfs-kenya) articles are useful companions. Islamic saving still requires the same behavioural muscle: automatic contributions, realistic goals, and protection from impulse withdrawals.
 
 ### Hajj and Umrah Savings: A Niche Product With Real Planning Value
 
@@ -214,7 +214,7 @@ At minimum, a customer should confirm:
 - the customer understands whether returns are guaranteed, expected, variable, or dependent on profit;
 - early settlement, default, repossession, and dispute-resolution clauses are clear.
 
-If you are comparing Islamic finance against conventional lending, do not compare only the headline "rate" or "profit margin." Compare total cost, fees, insurance or takaful, valuation charges, legal fees, security perfection, penalties, documentation requirements, flexibility, and the consequences of default. Bengula's [APR Is Not the Interest Rate](/blog/2-apr-vs-interest-rate) is a useful reminder: the price of finance is bigger than the percentage shown in the advertisement.
+If you are comparing Islamic finance against conventional lending, do not compare only the headline "rate" or "profit margin." Compare total cost, fees, insurance or takaful, valuation charges, legal fees, security perfection, penalties, documentation requirements, flexibility, and the consequences of default. Bengula's [Mobile Loan vs Bank Loan APR Breakdown](/blog/mobile-loan-vs-bank-loan-apr-breakdown) is a useful reminder: the price of finance is bigger than the percentage shown in the advertisement.
 
 ### Where Islamic Banking Can Serve Kenya Well
 
@@ -276,4 +276,4 @@ Banking, whether Islamic or conventional, should move you from confusion to a cl
 - [Islamic Financial Services Board](https://www.ifsb.org/) — prudential standards and guidance for Islamic financial services.
 - [Investopedia: Murabaha](https://www.investopedia.com/terms/m/murabaha.asp) — accessible explainer on cost-plus Islamic finance.
 - [Investopedia: Musharakah](https://www.investopedia.com/terms/m/musharakah.asp) — accessible explainer on partnership-based Islamic finance.
-- Bengula Inc: [Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya), [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans), [SME Trade Finance](/blog/sme-trade-finance), and [APR Is Not the Interest Rate](/blog/2-apr-vs-interest-rate).
+- Bengula Inc: [Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya), [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans), [SME Trade Finance](/blog/sme-trade-finance), and [Mobile Loan vs Bank Loan APR Breakdown](/blog/mobile-loan-vs-bank-loan-apr-breakdown).

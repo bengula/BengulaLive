@@ -11,7 +11,36 @@ import { getAuthorProfile } from '../data/authors';
 import { fetchCounts, getLikedIds, toggleLike } from '../data/likes';
 import { MarkdownContent } from '../utils/markdownText';
 import Seo, { SITE_URL } from '../seo';
-import { Search, BookOpen, Clock, Calendar, ArrowLeft, Heart, Share2, Sparkles, UserCircle2 } from 'lucide-react';
+import { Search, BookOpen, Clock, Calendar, ArrowLeft, Heart, Share2, SearchX, UserCircle2 } from 'lucide-react';
+
+/** Thin progress bar pinned to the top of the viewport while reading an article. */
+function ReadingProgress() {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - window.innerHeight;
+      setProgress(max > 0 ? Math.min(100, (window.scrollY / max) * 100) : 0);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, []);
+
+  return (
+    <div className="fixed top-0 left-0 right-0 z-[60] h-1 pointer-events-none" aria-hidden="true">
+      <div
+        className="h-full bg-gradient-to-r from-violet-700 via-violet-500 to-fuchsia-500 transition-[width] duration-150 ease-out"
+        style={{ width: `${progress}%` }}
+      />
+    </div>
+  );
+}
 
 export default function BlogTab() {
   const { id } = useParams();
@@ -70,15 +99,21 @@ export default function BlogTab() {
     });
   };
 
-  const handleShare = (id: string, e: React.MouseEvent) => {
+  const handleShare = (id: string, title: string, e: React.MouseEvent) => {
     e.stopPropagation();
+    const url = `${window.location.origin}/blog/${id}`;
+
+    // Native share sheet where available (mostly mobile); clipboard otherwise.
+    if (typeof navigator.share === 'function') {
+      navigator.share({ title, url }).catch(() => {});
+      return;
+    }
+
+    navigator.clipboard.writeText(url).catch(() => {});
     setShared(prev => ({ ...prev, [id]: true }));
     setTimeout(() => {
       setShared(prev => ({ ...prev, [id]: false }));
     }, 2000);
-    
-    // Copy URL to clipboard
-    navigator.clipboard.writeText(`${window.location.origin}/blog/${id}`).catch(() => {});
   };
 
   const articleImage = activePost
@@ -141,6 +176,7 @@ export default function BlogTab() {
       {currentActivePostId && activePost ? (
         // ================= EDITORIAL DETAIL ARTICLE VIEW =================
         <div id="blog-editorial-article-detail" className="max-w-3xl mx-auto space-y-6">
+          <ReadingProgress />
           <button
             onClick={() => navigate('/blog')}
             className="flex items-center gap-2 text-xs font-semibold text-violet-800 hover:text-violet-700 bg-white p-2.5 rounded-lg border border-slate-200 shadow-xs cursor-pointer transition"
@@ -154,7 +190,6 @@ export default function BlogTab() {
             <img
               src={activePost.coverImage ?? categoryImage(activePost.category, 1200)}
               alt={activePost.category}
-              loading="lazy"
               className="w-full h-full object-cover"
             />
           </div>
@@ -279,7 +314,7 @@ export default function BlogTab() {
                 <span className="font-mono">{likes[activePost.id] || 0} Likes</span>
               </button>
               <button
-                onClick={(e) => handleShare(activePost.id, e)}
+                onClick={(e) => handleShare(activePost.id, activePost.title, e)}
                 className="flex items-center gap-1.5 py-2 px-3 bg-white border border-slate-200 rounded-lg text-slate-600 hover:text-violet-800 hover:bg-slate-50 transition cursor-pointer shadow-xs font-bold"
               >
                 <Share2 className="w-4 h-4" />
@@ -315,7 +350,7 @@ export default function BlogTab() {
                 placeholder="Search bonds, stocks, coaching..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-white text-slate-800 text-xs py-2.5 pl-10 pr-3 rounded-xl border border-slate-200 focus:outline-none focus:border-violet-800 focus:ring-1 focus:ring-violet-800 text-sm font-medium"
+                className="w-full bg-white text-slate-800 py-2.5 pl-10 pr-3 rounded-xl border border-slate-200 focus:outline-none focus:border-violet-800 focus:ring-1 focus:ring-violet-800 text-sm font-medium"
               />
             </div>
 
@@ -330,12 +365,33 @@ export default function BlogTab() {
               >
                 {categories.map((cat) => (
                   <option key={cat} value={cat}>
-                    {cat === 'All' ? 'Filter by Category' : cat}
+                    {cat === 'All' ? 'All Categories' : cat}
                   </option>
                 ))}
               </select>
             </div>
           </div>
+
+          {/* Active-filter summary so readers always know what they are looking at */}
+          {(searchQuery.trim() !== '' || selectedCategory !== 'All') && filteredPosts.length > 0 && (
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-500 font-medium -mt-2">
+              <span>
+                Showing <strong className="text-slate-800">{filteredPosts.length}</strong> of {blogPosts.length} articles
+                {selectedCategory !== 'All' && (
+                  <> in <strong className="text-violet-800">{selectedCategory}</strong></>
+                )}
+                {searchQuery.trim() !== '' && (
+                  <> matching "<strong className="text-slate-800">{searchQuery.trim()}</strong>"</>
+                )}
+              </span>
+              <button
+                onClick={() => { setSearchQuery(''); setSelectedCategory('All'); }}
+                className="text-violet-800 font-bold hover:text-violet-900 underline decoration-violet-800/40 cursor-pointer"
+              >
+                Clear filters
+              </button>
+            </div>
+          )}
 
           {/* Cards List Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -392,16 +448,21 @@ export default function BlogTab() {
                   <div className="flex gap-2">
                     <button
                       onClick={(e) => handleLike(post.id, e)}
-                      className="p-1 px-2 rounded hover:bg-slate-100 flex items-center gap-1 font-mono hover:text-rose-600 transition"
+                      aria-label={likedIds.has(post.id) ? 'Unlike this article' : 'Like this article'}
+                      title={likedIds.has(post.id) ? 'Unlike' : 'Like'}
+                      className="p-1 px-2 rounded hover:bg-slate-100 flex items-center gap-1 font-mono hover:text-rose-600 transition cursor-pointer"
                     >
                       <Heart className={`w-3.5 h-3.5 ${likedIds.has(post.id) ? 'fill-rose-500 text-rose-500' : 'text-slate-400 group-hover:text-rose-500'}`} />
                       <span className="font-bold text-slate-700">{likes[post.id] || 0}</span>
                     </button>
                     <button
-                      onClick={(e) => handleShare(post.id, e)}
-                      className="p-1 px-2 rounded hover:bg-slate-100 hover:text-slate-900 transition"
+                      onClick={(e) => handleShare(post.id, post.title, e)}
+                      aria-label="Share this article"
+                      title={shared[post.id] ? 'Link copied!' : 'Share'}
+                      className="p-1 px-2 rounded hover:bg-slate-100 hover:text-slate-900 transition cursor-pointer flex items-center gap-1"
                     >
-                      <Share2 className="w-3.5 h-3.5 text-slate-400" />
+                      <Share2 className={`w-3.5 h-3.5 ${shared[post.id] ? 'text-emerald-600' : 'text-slate-400'}`} />
+                      {shared[post.id] && <span className="text-[10px] font-bold text-emerald-700">Copied!</span>}
                     </button>
                   </div>
                 </div>
@@ -412,10 +473,18 @@ export default function BlogTab() {
           </div>
 
           {filteredPosts.length === 0 && (
-            <div className="text-center py-12 text-slate-500 space-y-2">
-              <Sparkles className="w-10 h-10 text-amber-500 mx-auto opacity-70 animate-spin" style={{ animationDuration: '3s' }} />
-              <p className="text-sm font-semibold text-slate-800">No insights matches found.</p>
-              <p className="text-xs text-slate-500">Try searching for other parameters like bonds or stocks.</p>
+            <div className="text-center py-14 text-slate-500 space-y-3 glass rounded-2xl">
+              <SearchX className="w-10 h-10 text-violet-700 mx-auto opacity-70" />
+              <p className="text-sm font-semibold text-slate-800">No articles match your search.</p>
+              <p className="text-xs text-slate-500 max-w-sm mx-auto">
+                Try a broader term like "bonds", "SACCO", or "SEO", or browse everything below.
+              </p>
+              <button
+                onClick={() => { setSearchQuery(''); setSelectedCategory('All'); }}
+                className="sheen bg-violet-700 hover:bg-violet-800 text-white font-bold text-xs px-5 py-2.5 rounded-lg transition cursor-pointer shadow-md shadow-violet-900/20"
+              >
+                Show All Articles
+              </button>
             </div>
           )}
 

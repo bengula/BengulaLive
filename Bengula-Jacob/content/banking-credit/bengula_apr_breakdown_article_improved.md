@@ -195,6 +195,12 @@ The right question is: **what is the total cost of this loan, in shillings, incl
 
 Ask that before you borrow, not after.
 
+### Related Reading
+
+- [The Real Cost of a Mobile Loan vs a Bank Loan](/blog/mobile-digital-loans-real-cost-kenya) for a practical comparison of lending costs.
+- [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans) for the factors that feed into the final rate.
+- [Credit Card Interest-Free Period](/blog/credit-card-interest-free-period) for another place where headline pricing can mislead.
+
 ### References and Verification Notes
 
 - [Central Bank of Kenya: KESONIA Interest Rate Benchmark](https://www.centralbank.go.ke/kesonia/). KESONIA definition, publication approach, and transition notes for variable-rate lending.

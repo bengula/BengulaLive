@@ -70,6 +70,12 @@ The point was never a clever finance structure, it was the **farmers' payout**. 
 
 This is the **Finance & Banking Advisory** pillar in practice: get the numbers visible, get the structure right, and put the savings back into the business and the people behind it.
 
+### Related Reading
+
+- [What Is Accounts Receivable](/blog/what-is-accounts-receivable) for the cash-cycle mechanics behind the restructure.
+- [Why the Banking Relationship Manager Is the SME's Most Underrated Growth Asset](/blog/why-rm-is-sme-growth-asset) for turning better cash visibility into better finance.
+- [SME Trade Finance in Frontier Markets](/blog/sme-trade-finance) for another example of matching debt to the asset.
+
 ### References
 - ["KTDA shake-up: Will reforms boost smallholder tea farmers' earnings?", Daily Nation](https://nation.africa/kenya/business/ktda-shake-up-will-reforms-boost-smallholder-tea-farmers-earnings--5330776)
 - ["Kenya's tea output drops 11% in 2025", Kenyan Wall Street](https://kenyanwallstreet.com/kenyas-tea-output-drops-11-in-2025-as-prices-and-key-exports-falter)

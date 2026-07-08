@@ -6,7 +6,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Menu, MessageCircle, X } from 'lucide-react';
+import { ArrowUp, ChevronDown, Menu, MessageCircle, X } from 'lucide-react';
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { Head } from 'vite-react-ssg';
 
@@ -15,6 +15,33 @@ import { activeNav } from './sections';
 import { organizationJsonLd } from './seo';
 import RateTicker from './components/RateTicker';
 import { trackConversion } from './utils/conversion';
+
+/** Floating "back to top" control; appears once the page is meaningfully scrolled. */
+function BackToTopButton() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 640);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return (
+    <button
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      aria-label="Back to top"
+      title="Back to top"
+      aria-hidden={!visible}
+      tabIndex={visible ? 0 : -1}
+      className={`fixed left-4 bottom-4 md:left-6 md:bottom-6 z-50 glass-strong text-violet-800 hover:text-violet-950 rounded-full w-11 h-11 flex items-center justify-center cursor-pointer transition-all duration-300 hover:-translate-y-1 ${
+        visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3 pointer-events-none'
+      }`}
+    >
+      <ArrowUp className="w-5 h-5" />
+    </button>
+  );
+}
 
 export default function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -30,11 +57,23 @@ export default function Layout() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Scroll to top on every route change + close the mobile menu.
+  // Scroll to top on every route change + close the mobile menu. The jump is
+  // instant on purpose: the global `scroll-behavior: smooth` would otherwise
+  // animate from the old page's scroll position, making navigation feel slow.
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     setMobileMenuOpen(false);
   }, [pathname]);
+
+  // Let Escape dismiss the mobile menu.
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setMobileMenuOpen(false);
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [mobileMenuOpen]);
 
   const isActive = (path: string) =>
     path === '/' ? pathname === '/' : pathname === path || pathname.startsWith(path + '/');
@@ -148,6 +187,7 @@ export default function Layout() {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="lg:hidden p-2 rounded-lg text-slate-500 hover:text-violet-800 hover:bg-slate-100 focus:outline-none cursor-pointer"
               aria-label="Toggle navigation menu"
+              aria-expanded={mobileMenuOpen}
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -185,6 +225,8 @@ export default function Layout() {
           <Outlet />
         </div>
       </main>
+
+      <BackToTopButton />
 
       <a
         href={whatsappHref(

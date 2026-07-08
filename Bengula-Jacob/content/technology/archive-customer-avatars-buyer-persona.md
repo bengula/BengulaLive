@@ -195,6 +195,12 @@ A customer avatar gives a business focus. It helps you stop broadcasting and sta
 
 The avatar is not the customer. It is a tool for remembering the customer when you are making decisions.
 
+### Related Reading
+
+- [Why Your Website Gets Traffic but Zero Enquiries](/blog/website-traffic-zero-enquiries) for the conversion problems personas should solve.
+- [SME SEO Inbound Lead Engine](/blog/sme-seo-inbound-lead-engine) for how buyer research turns into traffic that converts.
+- [How to Connect Business Data to Digital Visibility](/blog/bengula-inc-linkedin-company-profile) for using real business data to shape content.
+
 ### Sources and Further Reading
 
 - [Original archived source](https://web.archive.org/web/20220609200138/https://bengula.co.ke/2022/06/09/a-to-z-of-customer-avators-buyer-persona-creation/)

@@ -162,6 +162,12 @@ Buying a camel in Kenya is not just a livestock purchase. It is a decision about
 
 If you want details on trading in camels in Kenya, feel free to talk to Bengula Inc.
 
+### Related Reading
+
+- [Agri-Export Supply-Chain Logistics Pool](/blog/agri-export-supply-chain) for another livestock and logistics value chain.
+- [Zindua Agri-Logistics](/blog/zindua-agri-logistics) for how cold chain and transport affect farm economics.
+- [SME Trade Finance in Frontier Markets](/blog/sme-trade-finance) for the financing structures behind commodity movement.
+
 ## References
 
 - [Original LinkedIn Pulse article by Bengula Inc](https://www.linkedin.com/pulse/cost-buying-camel-kenya-bengula-inc/)

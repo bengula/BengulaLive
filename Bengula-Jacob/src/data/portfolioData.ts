@@ -48,6 +48,7 @@ export const portfolioItemsList: PortfolioItem[] = [
       { label: "Inbound Leads", value: "12 → 90 / mo" },
       { label: "Cost / Lead", value: "-64%" }
     ],
+    blogId: "sme-seo-inbound-lead-engine",
     riskProfile: "Low"
   },
   // --- BUSINESS VENTURES ---
@@ -64,6 +65,7 @@ export const portfolioItemsList: PortfolioItem[] = [
       { label: "Gross Margin", value: "+5.2 pts" },
       { label: "Report Lag", value: "30 days → live" }
     ],
+    blogId: "retail-data-decision-dashboard",
     riskProfile: "Low"
   },
   {
@@ -112,6 +114,7 @@ export const portfolioItemsList: PortfolioItem[] = [
       { label: "Checkout Conv.", value: "1.1% → 3.4%" },
       { label: "Return Buyers", value: "31% repeat rate" }
     ],
+    blogId: "ecommerce-storefront-conversion-launch",
     riskProfile: "Low"
   },
   {

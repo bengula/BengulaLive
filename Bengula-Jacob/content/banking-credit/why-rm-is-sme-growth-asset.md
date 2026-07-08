@@ -152,6 +152,12 @@ Stop going to the teller window for your growth capital. Walk past it. Sit down 
 
 That single meeting might be the most valuable hour your business spends this year.
 
+### Related Reading
+
+- [The Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya) for the structure behind the relationship.
+- [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans) for the numbers an RM can help improve.
+- [SME SEO Inbound Lead Engine](/blog/sme-seo-inbound-lead-engine) for the content side of building a credible business story.
+
 ### References
 - [Central Bank of Kenya — Bank Supervision](https://www.centralbank.go.ke/bank-supervision/). Regulatory framework for commercial banking in Kenya.
 - [Kenya Bankers Association — SME Banking](https://www.kba.co.ke/). Industry body publications on SME access to finance.

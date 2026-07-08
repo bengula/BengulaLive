@@ -150,6 +150,12 @@ SACCOs remain among the best institutions for building savings and accumulating 
 
 The risks attached to borrowing and guaranteeing, however, have grown significantly. Rising defaults, economic pressure, more aggressive recovery action, and the widespread use of guarantees all mean that members must weigh their exposure carefully before signing any loan document. Saving through a SACCO remains a sound strategy. Borrowing and guaranteeing now demand a level of caution and due diligence that many members have historically overlooked.
 
+### Related Reading
+
+- [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans) for comparing SACCO borrowing with bank lending.
+- [How to Fix Your CRB Listing in Kenya](/blog/how-to-fix-your-crb-listing-kenya) for managing the credit side of the decision.
+- [Why the Banking Relationship Manager Is the SME's Most Underrated Growth Asset](/blog/why-rm-is-sme-growth-asset) for the lender relationship perspective.
+
 ### References
 - [SASRA Sacco Supervision Annual Report 2024](https://www.sasra.go.ke/2025/09/25/sasra-releases-the-2024-sacco-supervision-annual-report/) (released 25 September 2025). Sector assets, deposits, loan book, and NPL ratios.
 - ["KUSCCO audit reveals billions lost in mismanagement, report tabled in Parliament", Capital Business, May 2025](https://www.capitalfm.co.ke/business/2025/05/kuscco-audit-reveals-billions-lost-in-mismanagement-report-tabled-in-parliament/). The PwC forensic audit findings.
