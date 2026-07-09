@@ -109,7 +109,7 @@ BuzzFeed is an internet media company with 17.2 million YouTube subscribers and 
 
 #### 5. Pendo, $108.3 Million Raised
 
-![]([https://www.slideshare.net/slideshow/embed_code/key/gGSGIJfw579dB4)
+![](https://www.slideshare.net/slideshow/embed_code/key/gGSGIJfw579dB4)
 
 Pendo helps businesses monitor customer behaviour on websites and apps, page loads, clicks, form submissions, to improve user engagement.
 
@@ -335,7 +335,7 @@ Square enables merchants to accept mobile credit card payments via a point-of-sa
 
 After dissecting every deck, five patterns separate the ones that raised from the ones that did not:
 
-**1. Specific numbers beat projected ones.** Buffer's 800 users and $150K ARR raised half a million. Facebook's engagement metrics raised $500K before any revenue existed. Specific, evidenced numbers, even modest ones, beat inflated projections.
+**1. Specific numbers beat projected ones.** Buffer's 800 users and $150K ARR raised half a million. Facebook's engagement metrics raised $500K before any revenue existed. Specific, evidenced numbers, even modest ones, beat inflated projections. The discipline behind producing credible numbers is covered in [How to Build an Accurate Startup Budget](/blog/how-to-build-an-accurate-startup-budget).
 
 **2. Team slides are underused.** Of the 20 decks here, fewer than half have a strong team section. Intercom and Square are exceptions. At early stage, this is a critical omission.
 
@@ -369,4 +369,4 @@ The best pitch decks are not the ones with the most slides or the best design. T
 - [Pendo Series B Deck, Todd Olson](https://www.slideshare.net/ToddOlson5/pendo-series-b-investor-deck-external)
 - [I Reviewed 50 Startup Pitch Decks, Focused Chaos](https://www.focusedchaos.co/p/i-reviewed-50-startup-pitch-decks)
 - [30 Best Startup Pitch Deck Examples, Cirrus Insight](https://www.cirrusinsight.com/blog/startup-pitch-decks)
-- Bengula Inc: [How to Create a Pitch Deck Narrative](/blog/how-to-create-a-pitch-deck-narrative), [How to Structure Friends and Family Investments](/blog/how-to-structure-friends-and-family-investments), [How to Build an Accurate Startup Budget](/blog/how-to-build-an-accurate-startup-budget)
+- Bengula Inc: [How to Create a Pitch Deck Narrative](/blog/how-to-create-a-pitch-deck-narrative), [Best Backgrounds for Pitch Decks](/blog/best-backgrounds-for-pitch-decks), [How Long Does It Take to Make a Pitch Deck?](/blog/how-long-does-it-take-to-make-a-pitch-deck), [How to Structure Friends and Family Investments](/blog/how-to-structure-friends-and-family-investments), [How to Build an Accurate Startup Budget](/blog/how-to-build-an-accurate-startup-budget)

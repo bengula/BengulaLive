@@ -20,7 +20,7 @@ Kenya didn't wait for the global BaaS trend to arrive. M-Pesa built the blueprin
 
 ---
 
-## Why BaaS is Happening Now in Kenya
+## Why BaaS Is Happening Now in Kenya
 
 Kenya's banking sector is under structural pressure that makes BaaS not just attractive but necessary.
 
@@ -34,13 +34,25 @@ At the same time, traditional banks face a margin squeeze. [Commercial lending r
 
 ## How the BaaS Ecosystem Works
 
-### The core model
+### The Core Model
 
 Traditional banks provide the regulated financial infrastructure, they hold deposits on their balance sheets, maintain capital ratios, and answer to CBK. Third-party companies, fintechs, platforms, SACCOs, e-commerce operators, manage the user-facing experience. The two connect via APIs.
 
 This differs from open banking, which only grants third parties read access to banking data. BaaS goes further: it lets non-bank platforms actually originate and deliver banking products under their own brand, using a licensed bank's infrastructure underneath.
 
-### Four ways BaaS gets implemented in practice
+The stack, from the customer down to the money:
+
+```mermaid
+flowchart TD
+  A["Customer"] --> B["Branded platform: fintech, SACCO, e-commerce, agri-platform"]
+  B --> C["API and middleware layer: Cellulant, Craft Silicon, Kwara, bank API gateways"]
+  C --> D["Licensed bank: balance sheet, deposits, CBK compliance"]
+  D --> E["Payment rails: M-Pesa, PesaLink, card networks"]
+```
+
+The customer sees only the brand at the top. The regulatory weight sits two layers down, and the money moves on rails the customer never names.
+
+### Four Ways BaaS Gets Implemented in Practice
 
 **License and product sharing.** A bank shares its regulatory license and product infrastructure with aggregators, other fintechs, or non-financial companies, which then white-label and distribute the product.
 
@@ -50,7 +62,7 @@ This differs from open banking, which only grants third parties read access to b
 
 **Integrated value chains.** Banks and distributors create joint propositions by pulling in products and services from multiple providers, the most complex form, and the one that produces the most differentiated end products.
 
-### Payment infrastructure underneath it all
+### Payment Infrastructure Underneath It All
 
 Fintechs access M-Pesa, card payments, and bank transfers through APIs from payment gateway companies. **PesaLink**, operated by IPSL Kenya, provides real-time interbank transaction capabilities connecting banks and digital wallets. It's the infrastructure layer that makes instant settlement between different institutions possible, critical for any BaaS product that needs to move money across the ecosystem.
 
@@ -58,13 +70,13 @@ Fintechs access M-Pesa, card payments, and bank transfers through APIs from paym
 
 ## Key Players in Kenya's BaaS Market
 
-### Bank-led initiatives
+### Bank-Led Initiatives
 
-**Co-operative Bank** has been one of the most active in formalizing BaaS partnerships. Its deal with **Paymenta** is the clearest recent example of a tier-1 Kenyan bank signing a structured BaaS arrangement with a digital platform, providing regulatory infrastructure in exchange for distribution reach.
+**Co-operative Bank** has been one of the most active in formalising BaaS partnerships. Its deal with **Paymenta** is the clearest recent example of a tier-1 Kenyan bank signing a structured BaaS arrangement with a digital platform, providing regulatory infrastructure in exchange for distribution reach.
 
 **Absa Bank Kenya**, **NCBA**, and **KCB** have all opened API layers to fintech partners. NCBA's M-Shwari (the savings and credit product built jointly with Safaricom) is Kenya's most used BaaS product by volume, millions of Kenyans accessed formal credit for the first time through a Safaricom interface backed by NCBA's balance sheet. [Products like M-Shwari and Fuliza provided millions of Kenyans with their first access to formal credit and savings products.](https://hudumaglobal.com/blog/banking-kenya-commercial-banks-digital-banks-financial-services-2025)
 
-### Fintech aggregators and middleware providers
+### Fintech Aggregators and Middleware Providers
 
 **Cellulant** is the largest pan-African payments infrastructure company operating in Kenya. Its Tingg platform connects businesses with 154 payment options across 35 countries and supports 220 million consumers. In Kenya, Cellulant bundles telecom, utility, and banking services into unified digital payment ecosystems for merchants and financial institutions.
 
@@ -72,7 +84,7 @@ Fintechs access M-Pesa, card payments, and bank transfers through APIs from paym
 
 **Eclectics International** dominates the B2B fintech middleware space, connecting merchants and mobile networks across East Africa.
 
-### The SACCO vertical: Kwara
+### The SACCO Vertical: Kwara
 
 Kenya has over 4,000 registered SACCOs, making the cooperative banking sector one of the largest single verticals for BaaS in the country. **Kwara**, founded in 2018 by Cynthia Wandia and David Hwan, has built the defining BaaS infrastructure specifically for Kenya's credit unions.
 
@@ -82,25 +94,36 @@ Kenya has over 4,000 registered SACCOs, making the cooperative banking sector on
 
 The Kwara model is the clearest proof of concept for sector-specific BaaS in Kenya: take an underserved but massive vertical (SACCOs), provide them with digital banking rails they can't build themselves, and let the underlying bank partner hold the regulatory infrastructure.
 
+### The Players at a Glance
+
+| Player | Role in the Stack | Scale Signal |
+|---|---|---|
+| Co-operative Bank | Licensed bank opening infrastructure (Paymenta deal) | Tier-1 balance sheet |
+| NCBA + Safaricom | Bank plus distributor behind M-Shwari and Fuliza | Kenya's most used BaaS products by volume |
+| Cellulant (Tingg) | Pan-African payments aggregator | 154 payment options, 35 countries, 220M consumers |
+| Craft Silicon | Core banking software and BaaS middleware | 254+ institutions, 58 fintech projects in 2025 |
+| Eclectics International | B2B fintech middleware | East Africa merchant and telco connections |
+| Kwara | SACCO-vertical BaaS platform | 230+ credit unions, 200,000+ end clients, EUR 1B volume in 2023 |
+
 ---
 
 ## Use Cases Driving Adoption
 
-### Embedded finance in e-commerce and retail
+### Embedded Finance in E-commerce and Retail
 
-E-commerce platforms and retail apps are integrating virtual wallets and point-of-sale systems directly into their interfaces. The customer never leaves the app to complete a financial transaction. The merchant gets better conversion. The bank gets distribution without building a product.
+E-commerce platforms and retail apps are integrating virtual wallets and point-of-sale systems directly into their interfaces. The customer never leaves the app to complete a financial transaction. The merchant gets better conversion. The bank gets distribution without building a product. This is the pattern explored in depth in [How Embedded Finance Is Reimagining the Point of Payment in Kenya](/blog/embedded-finance-kenya-guide).
 
-### Digital savings and BNPL lending
+### Digital Savings and BNPL Lending
 
 Banks are partnering with fintechs to offer Buy Now, Pay Later (BNPL) services and micro-loans targeted at specific consumer segments, gig workers, smallholder farmers, students. The fintech handles onboarding and underwriting data; the bank holds the loan on its balance sheet.
 
-### SACCO digitization
+### SACCO Digitisation
 
-Kenya's SACCOs collectively hold hundreds of billions in member deposits and serve millions of Kenyans who use cooperative credit as their primary financial institution. Most were running on paper-based or outdated software systems. BaaS, specifically the Kwara model, lets SACCOs offer mobile banking, instant loan applications, digital deposits, and third-party insurance without becoming technology companies.
+Kenya's SACCOs collectively hold hundreds of billions in member deposits and serve millions of Kenyans who use cooperative credit as their primary financial institution (the member-side view of that world is covered in [Safe for Savers, Risky for Guarantors](/blog/sacco-savers-guarantors)). Most were running on paper-based or outdated software systems. BaaS, specifically the Kwara model, lets SACCOs offer mobile banking, instant loan applications, digital deposits, and third-party insurance without becoming technology companies.
 
-### Agricultural finance
+### Agricultural Finance
 
-Agri-platforms with live data on farmer income, crop cycles, and buyer relationships are using BaaS to originate working capital for smallholder farmers at the point of need. A farmer selling avocados through a platform connected to a BaaS bank partner can access a loan against their confirmed purchase order, scored on data a traditional loan officer would never see.
+Agri-platforms with live data on farmer income, crop cycles, and buyer relationships are using BaaS to originate working capital for smallholder farmers at the point of need. A farmer selling avocados through a platform connected to a BaaS bank partner can access a loan against their confirmed purchase order, scored on data a traditional loan officer would never see. (The underlying purchase-order financing mechanics are unpacked in [Agri-Export Supply-Chain Logistics Pool](/blog/agri-export-supply-chain).)
 
 ---
 
@@ -108,19 +131,26 @@ Agri-platforms with live data on farmer income, crop cycles, and buyer relations
 
 BaaS doesn't run in a vacuum. Understanding which core banking system sits beneath a BaaS offering determines its speed, flexibility, and regulatory risk. Kenya's market splits between two dominant systems serving different tiers.
 
-### Temenos T24 (Transact): The institutional anchor
+| | Temenos T24 | Oracle FLEXCUBE | Mambu |
+|---|---|---|---|
+| **Deployment** | On-premise or private cloud | On-premise, Oracle stack | SaaS, cloud-native |
+| **Implementation** | Months to years | Months to years | Days to weeks |
+| **Role in BaaS** | System of record, regulatory anchor | Regulatory anchor | Agility layer for new digital products |
+| **Kenyan footprint** | KCB, NCBA, the Central Bank itself | Mid-tier and large banks | Digital lenders, MFIs (Platcorp), banks' digital spin-offs |
+
+### Temenos T24 (Transact): The Institutional Anchor
 
 T24 is the dominant core banking system in Kenya's tier-1 commercial banks. It powers KCB, NCBA (which underpins M-Shwari), and the Central Bank of Kenya itself. It is enterprise-grade, handles hyper-complex multicurrency accounting, treasury operations, and regulatory reporting at massive scale.
 
 T24 is on-premise or private cloud. Implementation timelines run months to years. It's not built for rapid product iteration, but it's built to hold billions in regulated deposits with full CBK compliance. In a BaaS arrangement, T24 is the system of record: the ultimate anchor where the regulated balance sheet lives, even when the customer-facing product is built entirely by a fintech partner.
 
-### Mambu: The cloud-native challenger
+### Mambu: The Cloud-Native Challenger
 
-Mambu is a Software-as-a-Service, API-first cloud platform. No data centers, no multi-year implementation cycles, no proprietary middleware. It connects to external payment engines, M-Pesa, PesaLink, card networks, strictly via REST APIs and webhooks.
+Mambu is a Software-as-a-Service, API-first cloud platform. No data centres, no multi-year implementation cycles, no proprietary middleware. It connects to external payment engines, M-Pesa, PesaLink, card networks, strictly via REST APIs and webhooks.
 
 In Kenya, Mambu is used by digital-first lenders, microfinance institutions (Platcorp Group operates on it), and tier-1 banks launching standalone digital products that need to move without disturbing the T24 core. A new wallet or loan product can be configured on Mambu in days and exposed to B2B fintech partners immediately.
 
-### The dual-core strategy
+### The Dual-Core Strategy
 
 Rather than ripping out a legacy T24 core, expensive, high-risk, multi-year, several Kenyan banks run both systems simultaneously.
 
@@ -128,7 +158,7 @@ T24 manages traditional corporate clients, retail branches, and CBK regulatory r
 
 ### Oracle FLEXCUBE
 
-FLEXCUBE is the other major core banking competitor in Kenya's mid-tier and large bank segment. It is deeply integrated into the Oracle enterprise ecosystem, Oracle database, Oracle middleware, Exadata, and is particularly strong for banks managing complex corporate banking, treasury, and Islamic banking alongside retail. It handles massive transaction volumes with strong compliance automation, but like T24 it requires extensive customization and longer deployment cycles. For BaaS purposes, FLEXCUBE acts similarly to T24: a regulatory anchor, not an agility layer.
+FLEXCUBE is the other major core banking competitor in Kenya's mid-tier and large bank segment. It is deeply integrated into the Oracle enterprise ecosystem, Oracle database, Oracle middleware, Exadata, and is particularly strong for banks managing complex corporate banking, treasury, and Islamic banking alongside retail. It handles massive transaction volumes with strong compliance automation, but like T24 it requires extensive customisation and longer deployment cycles. For BaaS purposes, FLEXCUBE acts similarly to T24: a regulatory anchor, not an agility layer.
 
 ---
 
@@ -171,6 +201,13 @@ For BaaS specifically, the key regulatory questions in Kenya remain:
 Banking is becoming infrastructure, not a destination. Kenya's mobile money ecosystem already proved this a decade ago. BaaS is the next layer: regulated balance sheets and API-accessible banking products available to any platform willing to build on top of them.
 
 The institutions that win the next decade in Kenya won't necessarily be the ones with the most branches. They'll be the ones whose rails other people's products run on, and the platforms smart enough to build on those rails rather than trying to become banks themselves.
+
+### Related Reading
+
+- [How Embedded Finance Is Reimagining the Point of Payment in Kenya](/blog/embedded-finance-kenya-guide). The customer-facing half of the BaaS story.
+- [Top Fintech Trends Shaping Kenya and Africa in 2026](/blog/top-fintech-trends-2026). Where BaaS sits in the wider fintech landscape.
+- [The Role of Artificial Intelligence in Fintech](/blog/role-of-ai-in-fintech-kenya). The scoring and automation layer running on these rails.
+- [What Is a Cashless Economy?](/blog/what-is-a-cashless-economy). The behavioural shift that made all of this possible.
 
 ---
 

@@ -29,8 +29,8 @@ Photo credit: [Twilight Kenya on Pexels](https://www.pexels.com/photo/a-caravan-
 | Mature female camel | KSh 70,000 to KSh 110,000 | Valued for milk, breeding, and herd growth |
 | Mature male camel | KSh 65,000 to KSh 100,000 | Price depends heavily on size, strength, and training |
 | Camel meat | KSh 250 to KSh 450 per kg | Price varies by town, butcher, season, and supply |
-| Camel milk at producer level | From about KSh 100 per liter | Can rise after transport, chilling, pasteurization, and packaging |
-| Packaged camel milk | Around KSh 300 per liter | Retail prices vary by outlet and value addition |
+| Camel milk at producer level | From about KSh 100 per litre | Can rise after transport, chilling, pasteurisation, and packaging |
+| Packaged camel milk | Around KSh 300 per litre | Retail prices vary by outlet and value addition |
 
 These ranges should be treated as a buying guide, not a fixed market quote. Camel prices move with drought, disease pressure, transport cost, local supply, festive demand, and the bargaining power of the buyer and seller.
 
@@ -88,7 +88,7 @@ In Kenya, camel meat may retail at about **KSh 250 to KSh 450 per kg**, dependin
 
 ## Price of Camel Milk in Kenya
 
-Camel milk has long been consumed in camel-rearing regions, and it also has growing urban demand. At the producer level, camel milk can sell from about **KSh 100 per liter**. Once it is transported, chilled, pasteurized, packaged, and sold through formal retail, the price can rise to around **KSh 300 per liter**.
+Camel milk has long been consumed in camel-rearing regions, and it also has growing urban demand. At the producer level, camel milk can sell from about **KSh 100 per litre**. Once it is transported, chilled, pasteurised, packaged, and sold through formal retail, the price can rise to around **KSh 300 per litre**.
 
 [Aungshuman Das Gupta's camel milk economics article](https://www.linkedin.com/pulse/camel-milk-economics-aungshuman-das-gupta) suggests that a camel can produce about **4 to 7 liters of milk per day**. Actual yield depends on breed, feed, water, health, lactation stage, and management.
 
@@ -108,7 +108,7 @@ A serious buyer should budget for:
 - Transport and market movement costs
 - Losses from disease, theft, conflict, drought, or injury
 
-Annual operating costs may vary widely, but a working estimate of **KSh 20,000 to KSh 50,000 per camel** is a useful planning range for buyers who need to account for veterinary care, labor, water, salts, and basic animal health support.
+Annual operating costs may vary widely, but a working estimate of **KSh 20,000 to KSh 50,000 per camel** is a useful planning range for buyers who need to account for veterinary care, labour, water, salts, and basic animal health support.
 
 ## Is Camel Farming Profitable in Kenya?
 
@@ -136,23 +136,23 @@ The economics become weaker when the buyer underestimates water access, disease 
 
 ## Frequently Asked Questions
 
-### What is the cheapest price of a camel in Kenya?
+### What Is the Cheapest Price of a Camel in Kenya?
 
 The cheapest camels are usually very young calves. A calf may start at around **KSh 12,000**, but the buyer must wait years before it becomes fully productive.
 
-### How much is an adult camel in Kenya?
+### How Much Is an Adult Camel in Kenya?
 
 A mature camel may cost about **KSh 65,000 to KSh 110,000**, depending on sex, size, health, training, and region.
 
-### Is a male or female camel more expensive?
+### Is a Male or Female Camel More Expensive?
 
 Female camels can be more valuable where milk and breeding are the priority. Male camels can also be costly if they are large, trained, strong, or suitable for breeding or transport.
 
-### How much is camel milk in Kenya?
+### How Much Is Camel Milk in Kenya?
 
-Camel milk can start from about **KSh 100 per liter** at producer level and rise to around **KSh 300 per liter** after processing, packaging, transport, and retail margins.
+Camel milk can start from about **KSh 100 per litre** at producer level and rise to around **KSh 300 per litre** after processing, packaging, transport, and retail margins.
 
-### Where can I buy camels in Kenya?
+### Where Can I Buy Camels in Kenya?
 
 Camels are commonly sourced in camel-rearing regions and livestock markets in northern and northeastern Kenya. Buyers should work with trusted local contacts, experienced herders, or veterinary officers before paying.
 

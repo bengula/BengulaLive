@@ -54,7 +54,7 @@ On the co-op's numbers, that rate reduction alone saved about **KSh 4,200,000 pe
 Consolidation treats the symptom; weak cash visibility was the disease. The co-op kept hitting overdrafts because billing and reconciliation were manual and slow, so cash always looked tighter than it was.
 
 - **Automated the billing ledger** so invoices to buyers went out on time and were tracked to payment.
-- **Tightened the reconciliation cycle** from monthly guesswork to a weekly view of real cash position.
+- **Tightened the reconciliation cycle** from monthly guesswork to a weekly view of real cash position, the same visibility discipline shown in [Retail Data & Decision Dashboard](/blog/retail-data-decision-dashboard).
 - **Set a simple borrowing rule:** new facilities only against confirmed receivables, never to cover an unplanned gap.
 
 ### The Outcome That Mattered Most
@@ -69,6 +69,10 @@ The point was never a clever finance structure, it was the **farmers' payout**. 
 4. **Close the visibility gap** so you stop borrowing out of surprise.
 
 This is the **Finance & Banking Advisory** pillar in practice: get the numbers visible, get the structure right, and put the savings back into the business and the people behind it.
+
+### Bengula View
+
+Consolidation is often sold as a product; the desk treats it as a diagnosis. Before recommending it, we ask why the overdrafts accumulated, because consolidating debt without fixing the visibility gap simply resets the clock on the same failure. The co-op case worked because the borrowing rule changed alongside the balance sheet. And the blended rate matters more than any single facility's headline rate; if you cannot state your blended cost of debt today, that number, not a new loan, is the first thing to establish. [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans) shows what sits inside each rate you are blending.
 
 ### Related Reading
 

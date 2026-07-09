@@ -122,7 +122,9 @@ How much are you raising? What will you use it for? What milestones will this ca
 
 Study the canonical examples and the pattern is consistent:
 
-**Airbnb** ($4.4B raised): [Opened with a hook, described the business in the simplest possible terms. The intro is all about grabbing attention using as few words as possible.](https://piktochart.com/blog/startup-pitch-decks-what-you-can-learn/) The problem slide was visual and immediately relatable. The weakness: no "why now" slide.
+**Airbnb** ($4.4B raised): [Opened with a hook, described the business in the simplest possible terms. The intro is all about grabbing attention using as few words as possible.](https://piktochart.com/blog/startup-pitch-decks-what-you-can-learn/) The problem slide was visual and immediately relatable. The weakness: no "why now" slide. The original deck, slide by slide:
+
+![](https://www.slideshare.net/slideshow/embed_code/key/4dpBt4w6J5whJZ "Airbnb's original seed pitch deck")
 
 **Facebook** ($500K from Peter Thiel): [Built the case on solid engagement metrics, user numbers, session time, growth rate, not projected revenue.](https://piktochart.com/blog/startup-pitch-decks-what-you-can-learn/) At that stage, they had no revenue to show. They bet on the numbers they did have.
 
@@ -169,4 +171,4 @@ A pitch deck is the first version of your investor relationship. Build it like t
 - [35 Best Startup Pitch Decks, Failory](https://www.failory.com/blog/pitch-deck-examples)
 - [Stop Over-Optimising Your Pitch Deck, LinkedIn](https://www.linkedin.com/pulse/stop-over-optimizing-your-startup-pitch-deck-mark-birch--wuzne)
 - [How to Create the Best Pitch Deck, LinkedIn](https://www.linkedin.com/pulse/how-create-best-pitch-deck-your-investors-have-ever-seen-ang)
-- Bengula Inc: [How to Structure Friends and Family Investments](/blog/how-to-structure-friends-and-family-investments), [How to Build an Accurate Startup Budget](/blog/how-to-build-an-accurate-startup-budget), [Banking-as-a-Service in Kenya](/blog/banking-as-a-service-kenya-baas-guide)
+- Bengula Inc: [How to Structure Friends and Family Investments](/blog/how-to-structure-friends-and-family-investments), [How to Build an Accurate Startup Budget](/blog/how-to-build-an-accurate-startup-budget), [Best Backgrounds for Pitch Decks](/blog/best-backgrounds-for-pitch-decks), [How Long Does It Take to Make a Pitch Deck?](/blog/how-long-does-it-take-to-make-a-pitch-deck), [Banking-as-a-Service in Kenya](/blog/banking-as-a-service-kenya-baas-guide)

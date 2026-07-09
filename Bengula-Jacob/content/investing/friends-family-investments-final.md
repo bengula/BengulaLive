@@ -16,13 +16,13 @@ coverImage: https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?a
 
 Friends and family money is the first capital most Kenyan founders raise. It is also the easiest to mismanage.
 
-### Why this round matters more than people think
+### Why This Round Matters More Than People Think
 
 No term sheet. No due diligence committee. No lawyer reviewing the cap table. Just trust, and trust is exactly what gets damaged when the structure is sloppy.
 
 [Friends and family rounds typically run from a few hundred thousand to KES 2 million](https://www.openforest.co/glossary/friends-and-family-round), sized to loyalty rather than valuation. Get the structure wrong and you lose the capital and the relationship at the same time.
 
-### Pick the instrument before the amount
+### Pick the Instrument Before the Amount
 
 [Avoid informal handshake deals.](https://blog.promise.legal/startup-central/how-to-structure-a-friends-and-family-investment-agreement-a-practical-legal-checklist-for-startup-founders/) There are four main structures, choose before the first conversation about numbers.
 
@@ -36,7 +36,7 @@ No term sheet. No due diligence committee. No lawyer reviewing the cap table. Ju
 
 For most family rounds under KES 2 million, a straight loan with a written agreement beats equity. Keep ownership simple while the business is unproven.
 
-### Sweeten the terms for early risk
+### Sweeten the Terms for Early Risk
 
 Friends and family absorb the highest risk, they invest before any proof exists. If you are using a SAFE or convertible note, reward that with terms that protect their upside:
 
@@ -46,7 +46,7 @@ Friends and family absorb the highest risk, they invest before any proof exists.
 
 On a straight loan, the equivalent is a competitive interest rate and a flexible repayment schedule.
 
-### Put it in writing, always
+### Put It in Writing, Always
 
 A handshake is not a contract. At minimum, document:
 
@@ -60,7 +60,7 @@ A handshake is not a contract. At minimum, document:
 
 This isn't about distrust. It's about removing ambiguity before money makes people forget what was agreed verbally.
 
-### Legal housekeeping before and after closing
+### Legal Housekeeping Before and After Closing
 
 [Set a minimum round size before accepting the first cheque.](https://blog.promise.legal/startup-central/how-to-structure-a-friends-and-family-investment-agreement-a-practical-legal-checklist-for-startup-founders/) If you need KES 1.5 million to hit your next milestone and you close at KES 400,000, you risk burning the relationship capital without reaching a meaningful business outcome.
 
@@ -68,11 +68,11 @@ This isn't about distrust. It's about removing ambiguity before money makes peop
 
 [Complete all statutory filings, share certificates, shareholder register updates, any required notifications to the Registrar of Companies.](https://blog.promise.legal/startup-central/how-to-structure-a-friends-and-family-investment-agreement-a-practical-legal-checklist-for-startup-founders/) Skipping this creates a cap table that is legally messy. A serious problem when the next investor runs due diligence.
 
-### Separate "investor" from "family member" in conversation
+### Separate "Investor" From "Family Member" in Conversation
 
 Set a monthly or quarterly update, even three sentences, so the person funding you isn't guessing. Most family-round conflicts come from silence, not bad numbers.
 
-### The real risk isn't losing the money
+### The Real Risk Isn't Losing the Money
 
 It's losing the relationship. Treat a KES 500,000 loan from your uncle with the same documentation discipline you'd use for KES 50 million from a bank. The amount changes. The need for clarity doesn't.
 
@@ -86,4 +86,4 @@ It's losing the relationship. Treat a KES 500,000 loan from your uncle with the 
 - [How to Structure an Investment Deal with Friends and Family, Impakt Tribe](https://impakttribe.com/how-to-structure-an-investment-deal-with-friends-family/)
 - [SAFE Explained, YouTube](https://www.youtube.com/watch?v=W-sUj3-N1Js)
 - [How to Safely Raise Startup Funds from Friends and Family, UpCounsel](https://www.youtube.com/watch?v=3o5d38AsdKs&t=388)
-- Bengula Inc: [Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya), [How to Build an Accurate Startup Budget](/blog/how-to-build-an-accurate-startup-budget)
+- Bengula Inc: [How to Raise Startup Capital in Kenya](/blog/how-to-raise-startup-capital-kenya), [Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya), [How to Build an Accurate Startup Budget](/blog/how-to-build-an-accurate-startup-budget)

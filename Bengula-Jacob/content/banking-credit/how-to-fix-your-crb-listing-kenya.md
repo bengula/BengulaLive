@@ -87,7 +87,7 @@ This is not paperwork for its own sake. Your grade is repriced into every facili
 
 **Clear genuine arrears, then get the certificate.** Settlement only helps if the bureau record is updated to show it.
 
-**Then protect the record.** Pay on time, avoid stacking small digital loans, and let a clean history build.
+**Then protect the record.** Pay on time, avoid stacking small digital loans, and let a clean history build. [Mobile And Digital Loans In Kenya](/blog/mobile-digital-loans-real-cost-kenya) explains exactly how app-hopping and Fuliza-style utilisation quietly drag a score down.
 
 ### Bengula View
 

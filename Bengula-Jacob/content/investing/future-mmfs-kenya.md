@@ -1,7 +1,7 @@
 ---
 id: future-mmfs-kenya
 title: The Future of MMFs & Double-Digit Fixed Yields in Kenya
-summary: As CBK rates adjust, what is the trajectory of local Money Market Funds? We analyze compounding advantages, liquidity parameters, and rate predictions for 2026.
+summary: As CBK rates adjust, what is the trajectory of local Money Market Funds? We analyse compounding advantages, liquidity parameters, and rate predictions for 2026.
 category: Unit Trusts
 author:
   name: Bengula Jacob

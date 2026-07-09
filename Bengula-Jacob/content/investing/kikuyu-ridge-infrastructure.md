@@ -51,7 +51,7 @@ Value-add land projects are often pitched with an internal rate of return (IRR) 
 - **Are holding costs and approvals included?** County approvals, rates, and management all drag returns.
 - **Is the title genuinely clean?** A title problem can wipe out the entire return.
 
-A KSh 500,000 minimum co-ownership slice lowers the entry barrier, but a small ticket in a badly structured deal is still a bad deal.
+A KSh 500,000 minimum co-ownership slice lowers the entry barrier, but a small ticket in a badly structured deal is still a bad deal. Benchmark it: the same KSh 500,000 in a tax-free Infrastructure Bond pays a predictable coupon twice a year (see [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026)), so the land project's projected return must compensate for its extra risk and illiquidity, not merely match the sovereign rate.
 
 #### Safeguards Worth Insisting On
 1. **Title deeds held in escrow** under licensed, independent legal trustees.
@@ -62,6 +62,10 @@ A KSh 500,000 minimum co-ownership slice lowers the entry barrier, but a small t
 ### The Principle
 
 Land appreciation is a story everyone believes; **manufactured** land value is a process you can actually verify. The discipline is the same as any project: a real budget, a real timeline, clean legal title, and an honest view of what can slip. Judge the plan, not the percentage.
+
+### Bengula View
+
+Value-add land is a construction business wearing an investment jacket, so the desk underwrites it like a project, not a plot: we discount the pitched IRR for a realistic sales pace, add a contingency to the infrastructure budget, and treat the exit buyer as the biggest open question. The escrowed-title safeguard is non-negotiable; everything else is a pricing conversation. If the deal only works at the optimistic sales pace, it does not work.
 
 ### Related Reading
 - [Kikuyu Ridge Land-Banking Syndicate](/blog/kikuyu-ridge-syndicate). How a group of 14 co-investors governed a Kiambu land deal safely.

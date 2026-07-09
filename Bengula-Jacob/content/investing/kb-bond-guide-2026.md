@@ -38,7 +38,7 @@ Demand tells the story better than any sales pitch. When the Treasury reopened t
 
 ---
 
-### What are Treasury Bonds & How do They Work?
+### What Are Treasury Bonds & How Do They Work?
 
 When you buy a Treasury Bond, you are lending money to the Government of Kenya to finance public projects (like highways, power grids, or standard budgetary items). In return, the government agrees to:
 1. Pay you a fixed interest rate (the **coupon rate**) twice a year (semi-annually).
@@ -49,15 +49,25 @@ When you buy a Treasury Bond, you are lending money to the Government of Kenya t
 - **Coupon Rate:** The fixed annual interest paid semi-annually. For example, a 16% coupon on KSh 100,000 pays KSh 8,000 every six months (KSh 16,000 annually) before taxes.
 - **Withholding Tax (WHT):**
   - Standard Treasury Bonds are subject to WHT (typically **15%** for tenures under 10 years, and **10%** for tenures 10 years and above).
-  - **Infrastructure Bonds (IFBs)** are **100% Tax-Free**. This makes IFBs the holy grail for local and diaspora investors seeking maximum yields.
+  - **Infrastructure Bonds (IFBs)** are **100% Tax-Free**. This is why IFBs are the default first choice for local and diaspora investors comparing net yields.
 
 ---
 
-### Step-by-Step: How to Invest via CBK or Your Bank
+### Step-by-Step: How to Invest Through DhowCSD
 
-To purchase Government securities, you use the Central Bank's online DhowCSD system. Open an account with KRA PIN and ID, then make bids for Treasury Bills or Bonds. 
+Since June 2023 you no longer need a bank treasury desk to buy government securities. The Central Bank of Kenya's **[DhowCSD](https://dhowcsd.centralbank.go.ke/)** portal and mobile app let you do the whole cycle yourself:
 
-Instead of putting KSh 1,000,000 in a single 15-year bond, we utilize a strategy called **Bond Laddering**. Distribute KSh 200,000 in a 91-Day T-Bill, KSh 300,000 in a 5-year Treasury Bond, and KSh 500,000 in a tax-free Infrastructure Bond. This ensures liquid cash comes rolling in every single quarter!
+1. **Open a CDS account.** Register on the DhowCSD portal or app with your national ID (or passport), KRA PIN, a passport-style photo, and your bank account details. Approval typically takes a few working days. Diaspora investors follow the same flow; the fuller walkthrough is in [CBK Diaspora Bond Access](/blog/cbk-diaspora-bond-access).
+2. **Read the prospectus for the issue you want.** CBK publishes one for every auction: tenor, coupon (or "market-determined"), auction date, value date, and minimum bid. Minimum investments are modest, KSh 50,000 for bonds and KSh 100,000 for Treasury Bills, so you do not need institutional money to start. Confirm the current figures on the prospectus itself.
+3. **Choose your bid type.** A **non-competitive bid** accepts the weighted-average rate the auction produces, which is the sensible route for most individual investors. A **competitive bid** states the exact yield you want; bid too aggressively and you are simply not allocated. The mechanics are unpacked in [Sovereign Debt Explained](/blog/sovereign-debt-explained).
+4. **Fund your allocation by the payment deadline.** Once auction results are out, pay through your linked bank account within the settlement window stated in the prospectus. Miss the deadline and the allocation lapses.
+5. **Receive coupons automatically.** Interest lands in your bank account every six months, and the face value returns at maturity. No further action is needed.
+
+If you need to exit early, bonds can be sold through the **secondary market**, but at the prevailing market price, which may be above or below what you paid. That is the key risk to understand before locking long tenors (see Risk Factors below).
+
+#### Laddering: The Structure That Makes It Liquid
+
+Instead of putting KSh 1,000,000 into a single 15-year bond, split it across maturities, a strategy called **bond laddering**. For example: KSh 200,000 in a 91-day T-Bill, KSh 300,000 in a 5-year Treasury Bond, and KSh 500,000 in a tax-free Infrastructure Bond. Something is always close to maturing, so you get periodic access to cash and the chance to reinvest at prevailing rates instead of betting everything on one moment in the rate cycle. A worked monthly-income version of this structure is in [Build a Monthly Income Engine in Kenya](/blog/monthly-income-engine-kenya), and a real reallocation case (idle land into an IFB ladder) is in [Sleeping Asset Yield Optimization](/blog/sleeping-asset-optimization).
 
 #### Worked Example: The Tax-Free Edge
 
@@ -69,6 +79,20 @@ On a KSh 1,000,000 holding at a 14% coupon, the exemption is not a rounding erro
 | Infrastructure Bond (tax-free) | KSh 140,000 | KSh 0 | **KSh 140,000** |
 
 That **KSh 21,000 a year** difference, reinvested across a 15-year tenor, is the single biggest reason IFBs stay heavily oversubscribed.
+
+### Risk Factors
+
+Government backing covers the credit, not every risk. Before you lock a long tenor, weigh these honestly:
+
+- **Price risk on early exit.** If market rates rise after you buy, the resale price of your bond falls. Held to maturity you receive full face value; sold early you take the market price. Never put money you may need next year into a 15-year bond.
+- **Reinvestment risk.** When a coupon or a maturing rung arrives, prevailing rates may be lower than the ones you enjoyed. A ladder softens this; it does not remove it.
+- **Inflation risk.** A fixed 14% coupon is attractive at 6% inflation and much less so if inflation accelerates. Long tenors carry this exposure longest.
+- **Allocation risk.** Competitive bids priced too far from the market are rejected, and heavily oversubscribed IFB auctions can scale down allocations.
+- **Process risk.** Bidding through unofficial intermediaries or "agents" is where fraud happens. Use only DhowCSD or your own bank's custody desk.
+
+### Bengula View
+
+For long-horizon Kenyan savings, the desk's ranking is unchanged: a funded emergency buffer in a [Money Market Fund](/blog/future-mmfs-kenya) first, then a laddered IFB core for the tax-free yield, then everything else. The tax exemption is the edge worth queueing for; the discipline of holding to maturity is the price of that edge. We would rather see a client hold three staggered tenors they can genuinely leave alone than one large position they may be forced to sell at the wrong price.
 
 ### Where Bonds Fit in the Bigger Plan
 

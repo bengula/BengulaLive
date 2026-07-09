@@ -55,16 +55,16 @@ In comparison, a standard commercial bank personal loan prices between **16% and
 
 Many borrowers believe that as long as they eventually pay off their digital loans, their credit record remains spotless. However, CRB scoring algorithms (operated by licensed bureaus such as Metropol, TransUnion, and Creditinfo in Kenya) are complex. The frequent use of digital loans and revolving credit lines can drag down your credit score through several subtle pathways:
 
-#### 1. Inquiry Velocity (Credit-Seeking Behavior)
+#### 1. Inquiry Velocity (Credit-Seeking Behaviour)
 Every time you open a digital loan app to check your eligibility limit, or submit an application, the lender performs a "hard inquiry" or a "pull" on your credit file at the CRB. 
 * **The CRB Algorithm Interpretation:** Multiple hard inquiries within a short timeframe indicate credit desperation or financial distress. 
 * **The Score Penalty:** If you download five different digital loan apps and check your limits on all of them in a single week, your credit score will drop significantly, even if you do not take out a single loan.
 
-#### 2. High Credit Utilization Ratio (Revolving Credit)
+#### 2. High Credit Utilisation Ratio (Revolving Credit)
 Revolving credit products (such as Safaricom Fuliza overdrafts, bank digital overdrafts, or credit cards) allow you to borrow, repay, and borrow again up to a set limit.
-* **The Credit Utilization Ratio:** This measures how much of your approved credit limit you are actively using at any given time:
-  $$ \text{Utilization Ratio} = \frac{Owed Balance}{Approved Credit Limit} $$
-* **The CRB Penalty:** Scoring models penalize borrowers who maintain a credit utilization ratio above **30%**. If you have an approved digital credit limit of KSh 10,000 and consistently run a balance of KSh 9,000, your credit score is penalized for over-utilization, showing that you are heavily reliant on revolving debt to survive.
+* **The Credit Utilisation Ratio:** This measures how much of your approved credit limit you are actively using at any given time:
+  $$ \text{Utilisation Ratio} = \frac{Owed Balance}{Approved Credit Limit} $$
+* **The CRB Penalty:** Scoring models penalise borrowers who maintain a credit utilisation ratio above **30%**. If you have an approved digital credit limit of KSh 10,000 and consistently run a balance of KSh 9,000, your credit score is penalised for over-utilisation, showing that you are heavily reliant on revolving debt to survive.
 
 #### 3. Short Tenor Late Payments
 Standard bank loans have monthly cycles. Digital loans often have weekly or 14-day repayment tenors.
@@ -72,7 +72,7 @@ Standard bank loans have monthly cycles. Digital loans often have weekly or 14-d
 * **The CRB Penalty:** If you are late on a KSh 1,000 digital loan by just 3 days, it is reported to the CRB as a late payment. Because digital loans occur frequently, a pattern of being late by a few days on multiple small loans builds a track record of delinquency, severely damaging your score even if the debt is eventually cleared.
 
 #### 4. Debt Stacking (Multiple Active Loans)
-"App-hopping"—the practice of borrowing from App B to pay off App A—results in multiple active loans appearing on your credit profile at the same time. Even if you are current on all of them, the CRB profile showing five concurrent lenders flags you as a high-risk borrower. This prevents Tier-1 banks from offering you cheaper, long-term credit.
+"App-hopping", the practice of borrowing from App B to pay off App A, results in multiple active loans appearing on your credit profile at the same time. Even if you are current on all of them, the CRB profile showing five concurrent lenders flags you as a high-risk borrower. This prevents Tier-1 banks from offering you cheaper, long-term credit. If your record already carries this damage, it is fixable; [How To Check And Fix Your CRB Listing In Kenya](/blog/how-to-fix-your-crb-listing-kenya) walks through pulling the report, disputing errors, and clearing genuine arrears.
 
 ```
 [Borrow from App A] ──> [Due Date] ──> [Borrow from App B to Pay A] ──> [Two Active CRB Entries] ──> [Credit Score Drops]
@@ -120,7 +120,7 @@ Avoid it when:
 1. **Do I have a guaranteed source of cash clearing within the loan tenor to pay this back in full?** If the repayment depends on "hope," do not take the loan.
 2. **What is the compounded annual rate (EAR) of this fee?** Calculate the true annual cost to understand the price of convenience.
 3. **Will this transaction trigger a new hard inquiry at the CRB?** Avoid applying to multiple apps simultaneously to protect your credit score.
-4. **Is my current credit card or digital overdraft utilization above 30%?** If yes, pay down existing balances before borrowing more to avoid score penalties.
+4. **Is my current credit card or digital overdraft utilisation above 30%?** If yes, pay down existing balances before borrowing more to avoid score penalties.
 5. **Can I use a cheaper public option?** Check if you qualify for government-subsidized programs like the Hustler Fund or SACCO emergency loans before resorting to private digital apps.
 
 

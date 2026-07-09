@@ -57,7 +57,7 @@ Churn was minimal because the increases were targeted and justified.
 The deeper issue was that the owner could not *see* the business in time to act. Bookkeeping was manual and a month behind, so every decision was made on stale numbers.
 
 - Migrated billing and bookkeeping onto a **lightweight cloud system**.
-- Built a simple **live dashboard** showing sales, margin by SKU, and cash position.
+- Built a simple **live dashboard** showing sales, margin by SKU, and cash position, the same discipline detailed in [Retail Data & Decision Dashboard](/blog/retail-data-decision-dashboard).
 - Cut **time-to-invoice by 40%**, which pulled cash in faster and reduced reliance on the overdraft.
 
 This is where the two Bengula Inc pillars meet: the **data & digital** work made the margins *visible*, and the **finance** work made them *bankable*.
@@ -78,6 +78,10 @@ Over twelve months the turnaround compounded:
 4. **Use the freed cash to retire the most expensive debt first.**
 
 Strong sales are not the same as a strong business. Margin and visibility are what turn a busy factory into a profitable one.
+
+### Bengula View
+
+The desk sees this pattern weekly: the overdraft gets blamed, but the overdraft is a symptom. Banks price what they can see, so a business with live margin data and a clean receivables book borrows on better terms than one arriving with a shoebox of invoices; [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans) explains the mechanics. Our order of operations never changes: unit economics first, visibility second, financing third. Financing a business that loses money per unit just industrialises the loss.
 
 ### Related Reading
 - [SME Trade Finance in Frontier Markets](/blog/sme-trade-finance). Financing growth against the deal, not the overdraft.

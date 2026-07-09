@@ -42,13 +42,13 @@ That sounds technical, but the social effect is large: it lets the **middle clas
 
 ### Inflation, Tax, and Why IFBs Came Up Repeatedly
 
-A recurring theme was protecting savers from inflation. **Infrastructure Bonds (IFBs)** drew the most discussion because their coupons are **tax-free**, which lifts the effective return relative to taxed instruments. In a higher-rate environment, an IFB can hand a retail saver a genuinely attractive real (after-inflation) return, something a deposit account almost never does.
+A recurring theme was protecting savers from inflation. **Infrastructure Bonds (IFBs)** drew the most discussion because their coupons are **tax-free**, which lifts the effective return relative to taxed instruments (the full mechanics, worked examples, and laddering strategy are in [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026)). In a higher-rate environment, an IFB can hand a retail saver a genuinely attractive real (after-inflation) return, something a deposit account almost never does.
 
 The honest caveat I stressed from the podium: "tax-free" and "government-backed" describe the *income and the credit*, not the *price along the way*. If you sell a bond before maturity, its market price moves with interest rates. Held to maturity, you get your face value back; that is the discipline the instrument rewards.
 
 ### The Diaspora Angle
 
-A large part of the conversation was the **diaspora**. Kenyans abroad sent home a record **[KSh 640.75 billion (US\$4.94bn) in 2024](https://www.the-star.co.ke/business/2025-01-20-kenyas-2024-diaspora-inflows-hit-all-time-high-of-sh637-billion)**, rising again to about **KSh 650 billion in 2025**, making remittances Kenya's single largest source of foreign exchange, ahead of tourism and traditional exports. Much of that lands in consumption or idle accounts. Simplifying digital bidding routes so overseas Kenyans can put part of that into sovereign instruments, earning a strong, tax-advantaged local yield, was seen as one of the highest-impact opportunities on the table.
+A large part of the conversation was the **diaspora**. Kenyans abroad sent home a record **[KSh 640.75 billion (US\$4.94bn) in 2024](https://www.the-star.co.ke/business/2025-01-20-kenyas-2024-diaspora-inflows-hit-all-time-high-of-sh637-billion)**, rising again to about **KSh 650 billion in 2025**, making remittances Kenya's single largest source of foreign exchange, ahead of tourism and traditional exports. Much of that lands in consumption or idle accounts. Simplifying digital bidding routes so overseas Kenyans can put part of that into sovereign instruments, earning a strong, tax-advantaged local yield, was seen as one of the highest-impact opportunities on the table. The practical onboarding path already exists; [CBK Diaspora Bond Access](/blog/cbk-diaspora-bond-access) walks through it step by step.
 
 ### The Long Game: Regional Integration
 

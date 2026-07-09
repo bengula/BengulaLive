@@ -32,6 +32,14 @@ The storefront needed to be simple enough for repeat buyers and credible enough 
 
 The launch connected naturally to [Embedded Finance in Kenya](/blog/embedded-finance-kenya-guide): the point of payment is increasingly where commerce, data, and finance meet.
 
+### The Kenyan Checkout Reality
+
+A checkout designed for a Western card-first buyer fails quietly in Kenya. Three local realities shaped the build:
+
+- **Mobile money first.** The primary payment path was mobile money with an instant confirmation message, because that is how the customer already pays everyone else. Card payment existed as a secondary option, not the default. The wider shift behind this is covered in [What Is a Cashless Economy?](/blog/what-is-a-cashless-economy).
+- **Trust is earned in the first order.** First-time buyers were hesitant to prepay a shop they had never visited. Clear delivery promises, a visible phone number, and a named person answering enquiries did more for conversion than any design polish. For some delivery zones, pay-on-delivery was kept deliberately as a trust bridge, then repeat buyers moved to prepayment on their own.
+- **The conversation channel is part of the funnel.** Many orders started as chat messages, not cart checkouts. Rather than fight that behaviour, the flow embraced it: chat enquiries were answered from the same product information and routed to the same payment rails, so the business measured one funnel, not two.
+
 ### The Conversion Fix
 
 The first version worked, but analytics showed a heavy drop-off between cart and payment. The issue was not demand; it was confidence and friction. Buyers wanted clearer delivery costs, faster confirmation, and fewer surprises at checkout.
@@ -60,6 +68,22 @@ The most useful change was not just the new revenue stream. It was knowing which
 Online sales create better data. Better data improves stock planning, cash forecasting, supplier negotiation, and eventually access to working capital. If the owner can show repeat buyers, product velocity, and cash conversion, the business becomes easier to understand and easier to finance.
 
 That links this project to [Retail Data & Decision Dashboard](/blog/retail-data-decision-dashboard) and [What Is Accounts Receivable](/blog/what-is-accounts-receivable). Digital commerce is not only about selling online; it is about making the business measurable enough to manage.
+
+### Decision Framework: Are You Ready to Sell Online?
+
+Before spending on a storefront, an owner should be able to answer yes to most of these:
+
+1. **Can you fulfil reliably?** An online channel amplifies whatever your delivery discipline already is. If walk-in orders are chaotic, the website will publish that chaos.
+2. **Do you know your delivery cost per zone?** Surprise delivery fees were the single biggest drop-off cause in this project. Price them before launch, not after complaints.
+3. **Is someone answering within the hour?** Kenyan buyers verify by chatting first. An unanswered enquiry is a lost order and a quiet reputation cost.
+4. **Are pack sizes and minimums explicit?** Ambiguity forces a conversation; conversations that only clarify what a page should have said are wasted salary.
+5. **Will you read the analytics weekly?** If nobody owns the numbers, the storefront is a brochure with a payment button.
+
+A "no" is not a stop sign; it is the first project to do, in order, before the storefront.
+
+### Bengula View
+
+The desk's position is that most Kenyan SMEs do not have an e-commerce problem, they have a trust-and-friction problem with a website attached. The wins in this engagement came from unglamorous moves: delivery terms stated early, one fewer checkout step, a confirmation message that arrived instantly. Spend on those before spending on traffic. Getting found matters too, but that is a separate discipline, covered in [SME SEO & Inbound Lead Engine](/blog/sme-seo-inbound-lead-engine); sending paid traffic to an untrusted checkout only pays for other people's lessons.
 
 ### Related Reading
 

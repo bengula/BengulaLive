@@ -14,7 +14,7 @@ coverImage: https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?aut
 
 ![A customer profile document and analytics charts next to a laptop](https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=1200 "A buyer persona is not a fictional character for decoration, it is a working document that makes the business more specific. Photo: Pexels")
 
-### Why customer avatars still matter
+### Why Customer Avatars Still Matter
 
 Marketing works better when a business understands the customer and the market. A customer avatar, also called a **buyer persona** or **marketing persona**, is a practical profile of the people most likely to buy from you, recommend you, or keep returning.
 
@@ -29,7 +29,7 @@ The point is not to invent a fictional character for decoration. The point is to
 
 Without that clarity, businesses waste money speaking to everyone and persuading almost no one.
 
-### Avatar versus segment
+### Avatar Versus Segment
 
 A **segment** is a group of customers who share observable traits or behaviour: location, age range, purchase history, industry, spending level, product interest, email engagement, or stage in the buying journey.
 
@@ -42,7 +42,7 @@ A **buyer persona** turns that segment into a usable working profile. It adds go
 
 Good businesses use both. Segments help you decide **who** receives a campaign. Personas help you decide **what to say**.
 
-### Step 1: Start with evidence, not imagination
+### Step 1: Start With Evidence, Not Imagination
 
 The best personas come from research, surveys, interviews, forms, sales conversations, and behavioural data. HubSpot's persona guidance emphasises using a mix of customers, prospects, referrals, and people outside your current database who match your target audience.
 
@@ -59,7 +59,7 @@ For an SME, the evidence does not need to be complicated. Start with:
 
 The goal is to capture real language. Customers often describe their problem differently from how a business describes its product.
 
-### Step 2: Name the persona clearly
+### Step 2: Name the Persona Clearly
 
 A name makes the avatar easier to discuss across the team. It does not need to be cute. It needs to be useful.
 
@@ -73,7 +73,7 @@ Use a name that encodes the buying context:
 - **Busy Clinic Owner**
 - **Corporate HR Buyer**
 
-### Step 3: Identify goals and desired outcomes
+### Step 3: Identify Goals and Desired Outcomes
 
 The goals in this section are not your business goals. They are the customer's goals.
 
@@ -87,7 +87,7 @@ Ask:
 
 A customer buying accounting software may not care about "digital transformation." They may care about stopping invoice errors, paying tax on time, seeing cash balances clearly, and avoiding awkward supplier calls.
 
-### Step 4: Map pain points and objections
+### Step 4: Map Pain Points and Objections
 
 Pain points explain why the customer starts looking. Objections explain why they hesitate.
 
@@ -113,7 +113,7 @@ Common objections include:
 
 Your marketing should not ignore objections. It should answer them honestly.
 
-### Step 5: Find sources of information
+### Step 5: Find Sources of Information
 
 To reach a persona, identify where they already pay attention.
 
@@ -128,7 +128,7 @@ For each persona, list:
 
 This helps you choose the right channel. A B2B buyer may prefer a case study and a call. A retail buyer may respond to a simple product comparison, WhatsApp catalogue, or short video.
 
-### Step 6: Combine demographics with behaviour
+### Step 6: Combine Demographics With Behaviour
 
 Demographics are useful, but they are not enough. Age, location, income, job title, family status, and industry can help you understand context. Behaviour tells you what the customer actually does.
 
@@ -146,7 +146,7 @@ Add behavioural fields such as:
 
 Mailchimp's segmentation resources show how useful customer activity can be for campaign targeting: recent customers, repeat customers, lapsed customers, high-value customers, and potential customers can all receive different messaging.
 
-### Step 7: Write the persona card
+### Step 7: Write the Persona Card
 
 A useful customer avatar can fit on one page.
 
@@ -163,7 +163,7 @@ A useful customer avatar can fit on one page.
 | Best offer | Product, package, or service path that fits |
 | Follow-up action | What the business should do next |
 
-### Step 8: Turn the avatar into action
+### Step 8: Turn the Avatar Into Action
 
 A persona is only useful if it changes business decisions.
 
@@ -179,7 +179,7 @@ Use it to improve:
 
 Google Analytics key events can help measure whether those decisions are working. If an action matters to business success, such as a form submission, phone-click, booking, quote request, or download, it should be tracked as an important event.
 
-### Common mistakes to avoid
+### Common Mistakes to Avoid
 
 - Creating too many personas before collecting enough data.
 - Using stereotypes instead of evidence.
@@ -189,7 +189,7 @@ Google Analytics key events can help measure whether those decisions are working
 - Building content for the business owner's preferences instead of the customer's problem.
 - Copying a template without adapting it to the market.
 
-### Bottom line
+### Bottom Line
 
 A customer avatar gives a business focus. It helps you stop broadcasting and start communicating. The best personas are specific, evidence-based, and connected to action: better pages, sharper offers, cleaner targeting, stronger follow-up, and more useful measurement.
 

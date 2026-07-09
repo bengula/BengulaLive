@@ -20,6 +20,19 @@ The 2023 version of this article covered ten fintech trends that were emerging. 
 
 Here are the ten trends every Kenyan banker, fintech founder, SME owner, and investor needs to understand in 2026.
 
+| # | Trend | The 2026 Shift | Key Signal |
+|---|---|---|---|
+| 1 | Agentic AI | Chatbots become autonomous workflow agents | 52% of financial firms adopting agentic systems |
+| 2 | Embedded finance | Apps become full financial hubs | Africa market heading to $18B by 2030 |
+| 3 | Open banking | Pilots become policy | CBK refining API and consent standards |
+| 4 | Stablecoins | Cross-border transfers drop under 1% cost | KES 649.9B diaspora inflows in 2025 |
+| 5 | Super apps | M-Pesa becomes the operating system | Planned NSE equity integration |
+| 6 | BNPL and embedded credit | From consumer goods into services and B2B | Credit scored on live revenue data |
+| 7 | Blockchain trade finance | Smart contracts release payment on delivery | Agrikore live across 40 countries |
+| 8 | Fintech M&A | Consolidation accelerates | KCB's $15.4M Riverbank acquisition |
+| 9 | Digital identity | Real-time KYC against national ID | Onboarding drops from days to seconds |
+| 10 | Green fintech | ESG becomes a capital-access factor | NSE green bonds framework |
+
 ---
 
 ### 1. Agentic AI: From Chatbots to Autonomous Financial Agents

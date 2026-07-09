@@ -34,7 +34,7 @@ This is one of the most common, and most expensive, habits in Kenyan wealth: con
 
 Before moving any capital, we asked the only question that matters: *what is this money supposed to do for you?* His answer was clear, he wanted **predictable monthly income** he could rely on without selling shares or touching his salary.
 
-That goal pointed away from idle land and toward an income-producing instrument. We modelled the trade-off honestly: keeping the land preserved the *chance* of future appreciation, but it also preserved zero cash flow and ongoing holding costs.
+That goal pointed away from idle land and toward an income-producing instrument. We modelled the trade-off honestly: keeping the land preserved the *chance* of future appreciation, but it also preserved zero cash flow and ongoing holding costs. (For the general blueprint of matching instruments to a monthly-income goal, see [Build a Monthly Income Engine in Kenya](/blog/monthly-income-engine-kenya).)
 
 ### The Move: Idle Land Into an Infrastructure Bond Ladder
 
@@ -66,6 +66,10 @@ No instrument is risk-free, and good advice says so plainly:
 ### The Principle
 
 Every shilling you own should have a job. If an asset's job is income, idle land is the wrong employee for it. The exercise here was not exotic, it was simply forcing each holding to justify itself against the owner's real goal, then matching the capital to an instrument that delivers it.
+
+### Bengula View
+
+The hardest part of this engagement was not the bond maths; it was the psychology of selling land, an asset Kenyan families are taught never to release. The desk's position: sentiment is a legitimate reason to keep *one* parcel, not a portfolio of them. We would repeat this reallocation for any client whose stated goal is income, and we would refuse it for a client whose true goal is a legacy plot for their children, because the right answer always starts from the goal, not the instrument.
 
 ### Related Reading
 - [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026). How to build and ladder an IFB portfolio.

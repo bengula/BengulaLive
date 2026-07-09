@@ -48,7 +48,7 @@ All significant M&A activity in Kenya passes through two regulators:
 
 ---
 
-### The Seven Types of Acquisitions
+### The Eight Types of Acquisitions
 
 ```mermaid
 flowchart TD
@@ -71,6 +71,17 @@ flowchart TD
     style H fill:#f97316,color:#fff,stroke:none
     style I fill:#06b6d4,color:#fff,stroke:none
 ```
+
+| Type | The Target | Strategic Logic | Example |
+|---|---|---|---|
+| Horizontal | A direct competitor | Market share, cost consolidation | Access Bank buys National Bank of Kenya |
+| Vertical | A supplier or distributor | Control the value chain | KCB buys Riverbank Solutions |
+| Congeneric | Related market, different product | Cross-sell to the same customers | KCB invests in PesaPal |
+| Conglomerate | An unrelated business | Diversify revenue streams | Dangote buys a Kenyan tourism firm |
+| Market extension | Same product, new geography | Buy your way into a territory | Absa acquires Barclays Kenya |
+| Reverse takeover | A listed shell company | Go public without an IPO | NYSE via Archipelago (global) |
+| SPAC | Blank-check listed vehicle | Raise capital first, acquire later | DWAC and Truth Social (global) |
+| Acquihire | The team, not the product | Buy scarce talent | Rise acquires Hisa |
 
 ---
 
@@ -164,7 +175,7 @@ The deal became one of the most closely followed SPAC mergers globally, and not 
 
 ---
 
-### 9. Acquihire
+### 8. Acquihire
 
 An acquihire is an acquisition where the primary asset being purchased is the target company's people, not its products, technology, or market share. The acquirer wants specific talent, expertise, or founder credentials. The acquired company's product or revenue is secondary or irrelevant.
 

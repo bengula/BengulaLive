@@ -25,7 +25,7 @@ To solve this demand-side bottleneck, the government established the **Kenya Mor
 
 Historically, Kenyan banks have been hesitant to offer long-term mortgages because of an **asset-liability mismatch**. Banks raise capital primarily through short-term retail deposits (which can be withdrawn at any time), but mortgages require long-term capital (typically 15 to 25 years). If a bank funds a 20-year mortgage using 3-month deposits, they expose themselves to liquidity shocks if depositors suddenly withdraw their cash or interest rates spike. To compensate for this risk, banks charge high interest premiums on mortgages.
 
-KMRC solves this structural problem by acting as a wholesale intermediary. It raises long-term, low-cost capital from international development partners (such as the World Bank and the African Development Bank), local capital markets through corporate bonds, and the government. KMRC then lends this money to primary lenders—commercial banks and SACCOs—at a wholesale rate of **5.0%**. 
+KMRC solves this structural problem by acting as a wholesale intermediary. It raises long-term, low-cost capital from international development partners (such as the World Bank and the African Development Bank), local capital markets through corporate bonds, and the government. KMRC then lends this money to primary lenders (commercial banks and SACCOs) at a wholesale rate of **5.0%**. 
 
 Because the primary lenders receive this money on a long-term basis at 5%, they can afford to lend to individual homebuyers at a capped rate of **9.0% to 9.5%**, adding a 4% to 4.5% margin to cover their operating expenses, credit risk, and profit.
 

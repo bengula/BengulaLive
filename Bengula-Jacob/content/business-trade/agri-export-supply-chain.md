@@ -53,7 +53,7 @@ Anyone evaluating an arrangement like this, as an operator or a backer, should b
 
 - **Performance risk:** the crop fails a quality or phytosanitary check and is rejected at port.
 - **Counterparty risk:** the buyer disputes or delays payment. An LC dramatically reduces this; an unconfirmed order does not.
-- **Currency and timing risk:** revenue is in dollars, costs are in shillings, and the gap between them moves.
+- **Currency and timing risk:** revenue is in dollars, costs are in shillings, and the gap between them moves. The practical hedging tools for this exposure are covered in [Hedging USD/KES](/blog/usd-shilling-hedging).
 - **Concentration risk:** one buyer or one corridor failing can sink the whole cycle.
 
 Illustrative deals in this space target returns in the high-teens annualised over a roughly 12–18 month cycle, with rolling payouts, but **a target is not a promise**, and the figure is meaningless without understanding the security behind it.
@@ -67,6 +67,10 @@ Before money moves, insist on seeing:
 3. **Insurance and title documents** for the goods in transit.
 4. A clear **repayment waterfall**, who gets paid, in what order, from the proceeds.
 5. The **legal wrapper** and how it is regulated.
+
+### Bengula View
+
+Of the five due-diligence items, the desk weighs the **confirmed LC and the repayment waterfall** far above the headline return: they determine whether the deal is self-liquidating in practice or only on the slide. We are wary of structures where the financier ranks behind the operator's other creditors, and of exporters whose growth plan depends on an overdraft rather than deal-level finance; the difference between those two funding styles is unpacked in [SME Trade Finance in Frontier Markets](/blog/sme-trade-finance).
 
 ### Where Bengula Inc Fits
 

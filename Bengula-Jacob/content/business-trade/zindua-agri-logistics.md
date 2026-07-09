@@ -62,6 +62,10 @@ That said, "asset-backed" is not "risk-free." The honest risk list includes:
 
 The most durable agri-logistics plays are boring in the best way: real trucks, real contracts, measurable quality, prompt farmer payments. The fancy part, the temperature data, exists to turn "trust me" into evidence, which is what lets the produce command its full export price.
 
+### Bengula View
+
+The desk weighs utilisation above everything else in a fleet deal: a refrigerated truck that runs half-empty is a depreciating liability with a fuel bill. Second, we look at who carries the currency exposure, because the route earns shillings while the produce earns dollars upstream; exporters who manage that gap deliberately (see [Hedging USD/KES](/blog/usd-shilling-hedging)) make more reliable anchor clients. If those two answers are strong, the asset backing does the rest of the work.
+
 ### Related Reading
 - [Fintech Agri-Cooling Seed Syndicate](/blog/fintech-agri-cooling). Solving the *farm-gate* half of the loss with solar cold rooms.
 - [Agri-Export Supply-Chain Logistics Pool](/blog/agri-export-supply-chain). Financing the export shipment itself.

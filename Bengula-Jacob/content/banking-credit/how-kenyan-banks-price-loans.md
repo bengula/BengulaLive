@@ -64,7 +64,7 @@ The base rate itself is evolving. Alongside the CBR, the CBK has introduced **KE
 
 ### The Big Exception: Government and Scheme Loans Are Usually Fixed
 
-One important caveat: everything above describes ordinary commercial bank lending. **Most government and concessional scheme loans do not follow the base-plus-margin model at all.** Facilities such as the Hustler Fund, the youth and women enterprise funds, KMRC-backed affordable mortgages, and many MSME and agricultural schemes are typically offered at a **fixed, subsidised rate set by the scheme itself**, not at CBR or KESONIA plus a risk premium. For these, the low rate is the policy goal, not the output of a risk-based formula, so it does not move when the Central Bank Rate or KESONIA moves, and your CRB grade has far less influence on the price.
+One important caveat: everything above describes ordinary commercial bank lending. **Most government and concessional scheme loans do not follow the base-plus-margin model at all.** Facilities such as the Hustler Fund, the youth and women enterprise funds, [KMRC-backed affordable mortgages](/blog/kmrc-affordable-housing-mortgage), and many MSME and agricultural schemes are typically offered at a **fixed, subsidised rate set by the scheme itself**, not at CBR or KESONIA plus a risk premium. For these, the low rate is the policy goal, not the output of a risk-based formula, so it does not move when the Central Bank Rate or KESONIA moves, and your CRB grade has far less influence on the price.
 
 That carries two practical implications. First, a scheme loan can be markedly cheaper than the equivalent commercial facility, so if you qualify, compare its fixed rate against your bank's risk-based rate before defaulting to the standard product. Second, because the rate is set by policy rather than the market, scheme funds are usually capped, rationed, or restricted by eligibility, and the headline rate is fixed for the life of the facility rather than repriced each quarter.
 
@@ -72,7 +72,7 @@ That carries two practical implications. First, a scheme loan can be markedly ch
 
 You cannot argue down the base rate or the bank's operating costs. You can move the risk premium and your access to cheaper products.
 
-- **Clean up your CRB record.** Clear arrears, settle defaults, and let the record age. Moving from a mid grade to a top grade can be worth one to three percentage points on the same loan.
+- **Clean up your CRB record.** Clear arrears, settle defaults, and let the record age. Moving from a mid grade to a top grade can be worth one to three percentage points on the same loan. The step-by-step process is in [How To Check And Fix Your CRB Listing In Kenya](/blog/how-to-fix-your-crb-listing-kenya).
 - **Offer security.** A secured facility, or asset finance where the purchase secures itself, almost always beats an unsecured loan. See [Why Asset Finance Is Cheaper Than a Conventional Loan in Kenya](/blog/asset-finance-vs-conventional-loans).
 - **Match the product to the need.** Do not fund an asset with an unsecured loan when asset finance or a secured facility prices three to five points lower.
 - **Use your relationship and segment.** Premier, scheme, and check-off arrangements often carry a built-in discount, because they lower the bank's cost and risk.
@@ -96,7 +96,7 @@ You cannot argue down the base rate or the bank's operating costs. You can move 
 
 **Is this the right product for what I am buying?** Funding an asset with unsecured cash is the most expensive way to borrow.
 
-**What is the all-in APR, including fees, not just the interest rate?** Compare it against [costofcredit.co.ke](https://www.costofcredit.co.ke/).
+**What is the all-in APR, including fees, not just the interest rate?** Compare it against [costofcredit.co.ke](https://www.costofcredit.co.ke/). For a worked side-by-side APR calculation, see [The Real Cost of a Mobile Loan vs a Bank Loan](/blog/mobile-loan-vs-bank-loan-apr-breakdown).
 
 **Is the rate fixed or variable, and how often is it reviewed?** Under quarterly risk-based pricing, a variable rate can move with the next review.
 

@@ -13,7 +13,7 @@ author:
 
 ### The Unseen Leak in Export Margins
 
-Kenyan horticulture, tea, and coffee exporters operate in a challenging double-reality. They manage high local expenses in Kenya Shillings (KES)—including farmer payments, packaging, cold-chain transport, and local wages—while invoicing their buyers in United States Dollars (USD) or Euros (EUR).
+Kenyan horticulture, tea, and coffee exporters operate in a challenging double-reality. They manage high local expenses in Kenya Shillings (KES), including farmer payments, packaging, cold-chain transport, and local wages, while invoicing their buyers in United States Dollars (USD) or Euros (EUR).
 
 When the foreign currency arrives 60 or 90 days after shipment, the exchange rate can be very different from the rate used when pricing the harvest. A sudden appreciation of the Shilling or an unfavorable FX spread at the bank can quickly shrink or wipe out a business's net margin.
 

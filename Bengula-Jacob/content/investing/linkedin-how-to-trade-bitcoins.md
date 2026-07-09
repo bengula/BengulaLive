@@ -14,7 +14,7 @@ coverImage: https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?aut
 
 ![Physical Bitcoin, Ethereum, and Ripple tokens on a dark background](https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1200 "A market that never sleeps gives you more chances to act, and more chances to overtrade. Photo: Pexels")
 
-### Start with the uncomfortable truth
+### Start With the Uncomfortable Truth
 
 The public LinkedIn record identifies this Bengula Inc update as a Bitcoin trading explainer. The full post body is not exposed to unauthenticated public requests, so this archive expands the topic into a practical guide for readers who want to understand Bitcoin trading without mistaking excitement for a plan.
 
@@ -24,7 +24,7 @@ Before asking **how do I trade Bitcoin?**, ask a better question:
 
 > What risk am I accepting, who controls the asset, and what evidence would prove my trade idea wrong?
 
-### Trading is not the same as investing
+### Trading Is Not the Same as Investing
 
 Bitcoin investing is usually a longer-term allocation decision. Bitcoin trading is a shorter-term decision about price movement, liquidity, timing, and execution. The tools may look similar, but the behaviour required is different.
 
@@ -38,31 +38,31 @@ Bitcoin investing is usually a longer-term allocation decision. Bitcoin trading 
 
 If you cannot define the trade, you are not trading; you are reacting.
 
-### The five risks every beginner should understand
+### The Five Risks Every Beginner Should Understand
 
-#### 1. Price volatility
+#### 1. Price Volatility
 
 Bitcoin can move sharply in both directions. A move that looks like a "discount" can become a larger drawdown. A move that looks like a breakout can reverse within hours. For small investors, the first defence is position sizing: do not put money at risk that would force emotional decisions if the market moves against you.
 
-#### 2. Platform risk
+#### 2. Platform Risk
 
 The exchange is not just a place where you click buy or sell. It may also custody your assets, settle trades, manage order books, provide leverage, and handle withdrawals. If that platform fails, freezes withdrawals, suffers a cyber incident, or has weak governance, your Bitcoin price prediction may become irrelevant.
 
 This is why regulation increasingly focuses on virtual asset service providers, not only on tokens.
 
-#### 3. Custody risk
+#### 3. Custody Risk
 
 If you self-custody, you must protect private keys or seed phrases. If you use a custodian, you rely on its controls, segregation of client assets, solvency, and legal obligations. Neither option is magically safe. The right choice depends on your amount, experience, discipline, and need for access.
 
-#### 4. Fraud and manipulation risk
+#### 4. Fraud and Manipulation Risk
 
 Crypto scams often promise high returns, "guaranteed" profits, insider signals, automated trading miracles, or pressure to deposit quickly. The CFTC has warned investors to watch for fake digital-asset trading websites and unrealistic return promises. FATF also highlights red flags around suspicious virtual-asset activity, including unusual transaction patterns and attempts to obscure identity or source of funds.
 
-#### 5. Regulatory risk
+#### 5. Regulatory Risk
 
 Rules affect which platforms can serve users, how assets are marketed, how taxes may apply, and what protections customers receive. In Kenya, the Central Bank historically cautioned that virtual currencies such as Bitcoin were not legal tender. Kenya's Virtual Asset Service Providers Act, 2025 later created a formal framework for licensing and conduct of VASPs. That shift makes it even more important to know whether the provider you use is authorised and what protections actually apply.
 
-### Spot trading before leverage
+### Spot Trading Before Leverage
 
 Most beginners should understand spot trading before touching leverage.
 
@@ -70,7 +70,7 @@ Most beginners should understand spot trading before touching leverage.
 
 **Leveraged trading** lets you control a larger position with a smaller deposit. That can magnify gains, but it also magnifies losses and can liquidate your position quickly. Leverage is not a badge of sophistication; it is a risk amplifier.
 
-### A simple pre-trade checklist
+### A Simple Pre-Trade Checklist
 
 Before placing a Bitcoin trade, write down:
 
@@ -85,7 +85,7 @@ Before placing a Bitcoin trade, write down:
 
 If the answer is "I saw people making money online", step away from the screen.
 
-### What a responsible beginner workflow looks like
+### What a Responsible Beginner Workflow Looks Like
 
 1. Learn the difference between Bitcoin, stablecoins, altcoins, wallets, exchanges, and custodians.
 2. Read the regulator warnings in your country and the terms of the platform you want to use.
@@ -95,7 +95,11 @@ If the answer is "I saw people making money online", step away from the screen.
 6. Keep records of deposits, withdrawals, buys, sells, fees, and wallet transfers.
 7. Review decisions after the trade instead of rewriting the story to protect your ego.
 
-### Bottom line
+Step one deserves real time. If you want the mechanics under the hood, the ledger, keys, and why a transaction cannot simply be faked, this explainer is the clearest twenty minutes available on the subject:
+
+![But how does Bitcoin actually work?](https://www.youtube.com/watch?v=bBC-nXj3Ng4 "But how does Bitcoin actually work? A visual explainer by 3Blue1Brown")
+
+### Bottom Line
 
 Bitcoin trading is not only about charts. It is about risk control, custody, platform due diligence, regulation, psychology, and record-keeping. A beginner who learns those foundations may still lose money, but they are less likely to lose money for avoidable reasons.
 

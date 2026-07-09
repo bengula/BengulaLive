@@ -400,11 +400,26 @@ const markdownComponents: Components = {
       {children}
     </h6>
   ),
-  p: ({ children }) => (
-    <p className="text-slate-600 text-sm leading-relaxed font-normal">
-      {children}
-    </p>
-  ),
+  p: ({ node, children }) => {
+    // Markdown wraps a standalone image in a paragraph, but our img renderer
+    // emits a <figure>, which is invalid inside <p> and breaks hydration.
+    // Unwrap paragraphs whose only content is an image.
+    const meaningful = node?.children?.filter(
+      (c) => !(c.type === "text" && !c.value.trim())
+    );
+    if (
+      meaningful?.length === 1 &&
+      meaningful[0].type === "element" &&
+      meaningful[0].tagName === "img"
+    ) {
+      return <>{children}</>;
+    }
+    return (
+      <p className="text-slate-600 text-sm leading-relaxed font-normal">
+        {children}
+      </p>
+    );
+  },
   a: ({ href, children }) => (
     <a
       href={href}

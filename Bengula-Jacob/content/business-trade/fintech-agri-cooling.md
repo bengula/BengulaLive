@@ -60,6 +60,10 @@ Early-stage agri-tech is genuinely high-risk, and honest analysis treats it that
 
 Cold storage is a small piece of hardware with an outsized effect: it shifts power back toward the farmer by removing the tyranny of the clock. That is what makes the sector interesting, but interesting is not the same as safe. The right posture is curiosity backed by hard due diligence.
 
+### Bengula View
+
+Treat early-stage agri-tech as the growth sleeve of a portfolio, never its core, and size it so a total loss is survivable. The desk's rule of thumb: the boring sovereign layer (see [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026)) gets funded first, and only money that can sit illiquid for years goes into ventures. If you are investing alongside people you know, paper the deal properly from the start; [How to Structure Friends and Family Investments](/blog/how-to-structure-friends-and-family-investments) shows the structures that keep goodwill and capital separate.
+
 ### Related Reading
 - [Zindua Agri-Logistics Seed Alliance](/blog/zindua-agri-logistics). Closing the *other* half of the loss, in transit.
 - [Agri-Export Supply-Chain Logistics Pool](/blog/agri-export-supply-chain). Financing the shipment once the crop is preserved.

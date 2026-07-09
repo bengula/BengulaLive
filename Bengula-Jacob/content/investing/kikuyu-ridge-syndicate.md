@@ -24,7 +24,7 @@ This case study looks at how a group of **14 professionals** approached a Kiambu
 
 Grouping buyers solves two real problems. It gives access to **larger, better-located parcels** than any one member could buy alone, and it **spreads the cost** of doing things properly, legal searches, fencing, titling, professional management.
 
-But pooling introduces its own danger: **whose name is on the title, and who controls decisions?** A group land deal without a clean legal structure is how friendships and savings are destroyed. So the structure came first, before any money moved.
+But pooling introduces its own danger: **whose name is on the title, and who controls decisions?** A group land deal without a clean legal structure is how friendships and savings are destroyed. The same discipline applies whenever money and relationships mix; [How to Structure Friends and Family Investments](/blog/how-to-structure-friends-and-family-investments) covers the documentation that protects both. So here, the structure came first, before any money moved.
 
 ### The Governance That De-Risked It
 
@@ -61,6 +61,10 @@ A realistic investor judges a land deal on **clean title, location, a credible e
 5. **Know the liquidity reality**, assume you cannot sell quickly.
 
 Group land investing can work very well. It works because of paperwork and governance, not despite them.
+
+### Bengula View
+
+The desk's test for any land syndicate is simple: would the structure survive a dispute between two members who no longer speak? If the answer depends on goodwill, the structure is not finished. We also press investors to compare the parcel against a boring alternative; at recent yields, the same capital in a tax-free bond ladder (see [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026)) pays income every quarter while land pays nothing until exit. Land can still win, but it should win on evidence, not on inherited belief.
 
 ### Related Reading
 - [Kikuyu Ridge Infrastructure & Land Venture](/blog/kikuyu-ridge-infrastructure). The value-add process that turns raw land into titled, serviced plots.

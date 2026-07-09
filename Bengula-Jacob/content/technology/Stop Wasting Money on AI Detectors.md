@@ -55,7 +55,7 @@ That distinction matters.
 
 Many AI detector companies claim to identify AI-generated writing using proprietary technology. Yet few provide meaningful technical details about how their systems reach conclusions.
 
-Most detectors analyze characteristics such as:
+Most detectors analyse characteristics such as:
 
 - Sentence predictability
 - Writing consistency
@@ -134,7 +134,7 @@ Human writers can produce them, and modern AI systems can often avoid them. Like
 
 This is why experienced reviewers rarely rely on a single clue. Instead, they consider context, drafts, revision history, subject knowledge, and whether the author can explain the reasoning behind the work.
 
-The challenge becomes even greater when content is partially AI-assisted rather than entirely AI-generated. A student may brainstorm with AI but write the final paper themselves. A journalist may use AI to summarize research but write the analysis independently. A researcher may use AI to organize literature while remaining responsible for the conclusions.
+The challenge becomes even greater when content is partially AI-assisted rather than entirely AI-generated. A student may brainstorm with AI but write the final paper themselves. A journalist may use AI to summarise research but write the analysis independently. A researcher may use AI to organise literature while remaining responsible for the conclusions.
 
 In such cases, the question is no longer whether AI was used.
 
@@ -188,6 +188,16 @@ Rather than relying on detector scores, OpenAI recommends reviewing drafts, revi
 
 These are far more reasonable solutions.
 
+The evidence, in one table:
+
+| Test | What Happened | Source |
+|---|---|---|
+| OpenAI's own classifier (2023) | Caught only 26% of AI text, flagged 9% of human text, retired within months | OpenAI |
+| Stanford study | Essays by non-native English writers widely misflagged as AI | Stanford HAI |
+| The Bible test | Multiple detectors labelled Biblical passages AI-generated | Atheer Mahir |
+| ZeroGPT on a 2016 CNN article | Scored 100% AI-generated, six years before ChatGPT existed | Author's test |
+| The word-swap experiment | A 97% AI score became 100% human after changing a handful of words | Author's client |
+
 ## The Academic World Is Moving On
 
 When this article was originally written, many universities were experimenting with AI detection software in the hope that it would provide a reliable way to identify AI-generated work.
@@ -198,7 +208,7 @@ Universities, educators, and academic institutions increasingly recognize that A
 
 In 2025, the University of Cape Town announced that it would discontinue the use of AI detectors because of concerns about reliability and the risk of falsely accusing students.
 
-Similarly, admissions bodies and educational organizations have begun focusing on responsible AI use rather than attempting to ban AI outright. UCAS, the organization responsible for managing university admissions in the United Kingdom, now provides guidance on how students can use AI tools responsibly and ethically.
+Similarly, admissions bodies and educational organisations have begun focusing on responsible AI use rather than attempting to ban AI outright. UCAS, the organisation responsible for managing university admissions in the United Kingdom, now provides guidance on how students can use AI tools responsibly and ethically.
 
 The conversation is slowly shifting from:
 
@@ -234,7 +244,7 @@ As human knowledge expands, the problems we attempt to solve become increasingly
 
 Modern medicine, engineering, climate science, economics, genetics, mathematics, and software development involve challenges that no individual can fully process without assistance.
 
-AI is already helping researchers discover new materials, accelerate medical breakthroughs, analyze massive datasets, generate software, compose music, create art, and solve mathematical problems that would otherwise require significantly more time and resources.
+AI is already helping researchers discover new materials, accelerate medical breakthroughs, analyse massive datasets, generate software, compose music, create art, and solve mathematical problems that would otherwise require significantly more time and resources.
 
 The important question is not whether AI is being used. It already is.
 
@@ -242,7 +252,7 @@ The important question is whether the person using AI understands the work, can 
 
 A student using AI to brainstorm ideas is not fundamentally different from a student using a calculator to simplify arithmetic.
 
-A researcher using AI to organize literature is not fundamentally different from a researcher using statistical software to analyze data.
+A researcher using AI to organise literature is not fundamentally different from a researcher using statistical software to analyse data.
 
 The danger lies not in the tool itself but in using the tool without understanding the underlying concepts.
 
@@ -256,7 +266,7 @@ They would merely slow it down.
 
 Even technology companies increasingly recognize the limitations of AI detection.
 
-Rather than attempting to guess whether content was AI-generated, many organizations are exploring content provenance systems that record how digital content was created.
+Rather than attempting to guess whether content was AI-generated, many organisations are exploring content provenance systems that record how digital content was created.
 
 Industry initiatives such as the **Content Authenticity Initiative (CAI)** and the **Coalition for Content Provenance and Authenticity (C2PA)** aim to attach metadata and cryptographic signatures to images, videos, audio files, and documents.
 
@@ -315,6 +325,9 @@ It does not provide proof.
 As AI becomes more deeply integrated into society, trust will depend less on detection and more on transparency, accountability, and verification.
 
 The future belongs not to those who avoid AI, but to those who learn how to use it responsibly while remaining accountable for the results.
+
+For businesses, the practical conclusion is the same one we apply in client work: judge content by whether it is accurate, specific, and useful to the buyer, not by how it was drafted. That standard, applied consistently, is what actually builds search visibility and trust; [SME SEO & Inbound Lead Engine](/blog/sme-seo-inbound-lead-engine) shows it working in practice, and [The Role of Artificial Intelligence in Fintech](/blog/role-of-ai-in-fintech-kenya) covers the responsible-use side of the same coin in finance.
+
 ## Update (2026)
 
 This article was originally published in 2024.
@@ -324,7 +337,7 @@ At the time, the evidence already suggested that AI detectors were unreliable an
 Most notably:
 
 - Universities such as the University of Cape Town have discontinued the use of AI detectors because of concerns about reliability and false accusations.
-- Educational organizations such as UCAS have shifted toward guidance on responsible AI use rather than attempting to prohibit AI outright.
+- Educational organisations such as UCAS have shifted toward guidance on responsible AI use rather than attempting to prohibit AI outright.
 - AI has expanded far beyond text generation and is now routinely used in software development, scientific research, medicine, education, data analysis, and creative work.
 - Industry initiatives such as the Content Authenticity Initiative (CAI) and Coalition for Content Provenance and Authenticity (C2PA) have gained momentum as alternatives to statistical AI detection.
 

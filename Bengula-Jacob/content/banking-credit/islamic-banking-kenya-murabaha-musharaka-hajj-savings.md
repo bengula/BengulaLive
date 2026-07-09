@@ -61,6 +61,16 @@ For example, suppose a business wants a delivery van priced at KES 3 million. Un
 
 That sounds similar to hire purchase or asset finance, and economically it can feel similar. The Shariah difference depends on execution. The bank must not merely hand over cash and relabel interest as profit. The asset, ownership sequence, sale contract, price disclosure, and risk transfer matter.
 
+The sequence of the delivery van example looks like this:
+
+```mermaid
+flowchart LR
+  A["1. Customer identifies the van, priced KES 3M"] --> B["2. Bank buys the van from the supplier"]
+  B --> C["3. Bank takes ownership of the van"]
+  C --> D["4. Bank sells it to the customer at a disclosed KES 3.45M"]
+  D --> E["5. Customer pays 36 instalments of about KES 95,800"]
+```
+
 This is why a serious customer should ask:
 
 - What exactly is the asset being purchased?
@@ -108,7 +118,14 @@ A simple example:
 - The customer uses the property and gradually buys out the bank's share.
 - While the bank still owns a share, the customer may pay rent for the portion they do not yet own.
 
-This structure is often called diminishing musharaka when the customer's ownership increases over time and the bank's share reduces.
+This structure is often called diminishing musharaka when the customer's ownership increases over time and the bank's share reduces. On the KES 20 million property above, the journey might look like this (illustrative, not a quote):
+
+| Stage | Customer Share | Bank Share | What the Customer Pays |
+|---|---|---|---|
+| Start | 25% (KES 5M) | 75% (KES 15M) | Rent on the bank's 75% plus a buyout instalment |
+| Year 3 | 50% | 50% | Rent on the bank's 50% plus a buyout instalment |
+| Year 6 | 75% | 25% | Rent on the bank's 25% plus a buyout instalment |
+| Exit | 100% | 0% | Nothing further; full title sits with the customer |
 
 Musharaka can also support business ventures, but it requires deeper monitoring than murabaha. A true partnership means the bank must understand the business, profits, accounts, governance, and risk. That is more complex than selling an asset at a markup. It is also why, globally, murabaha tends to dominate day-to-day Islamic banking while musharaka is used more selectively.
 
@@ -117,6 +134,15 @@ For Kenyan entrepreneurs, the appeal is obvious: if a bank becomes a partner, th
 ### Murabaha vs Musharaka: Which One Fits?
 
 The easiest way to compare them is to ask: **is this a purchase or a partnership?**
+
+| | Murabaha | Musharaka |
+|---|---|---|
+| **Nature** | Cost-plus sale of an asset | Partnership with shared ownership |
+| **Bank's return** | Fixed, disclosed markup in the sale price | Variable share of profit or rent |
+| **Cost certainty** | Total cost known from day one | Depends on venture performance |
+| **Documentation** | Sale contract and payment schedule | Partnership deed, profit-sharing terms, exit mechanics |
+| **Monitoring burden** | Light: repayments only | Heavy: accounts, governance, honest profit reporting |
+| **Best suited to** | Vehicles, stock, equipment, import orders | Property, developments, long-term ventures |
 
 Murabaha works best when the customer needs a specific asset or stock item and can repay from predictable cash flow. The bank's profit is fixed in the sale price. The customer knows the total cost from the start.
 
@@ -137,6 +163,17 @@ Murabaha and musharaka are the headline terms, but Islamic banking has a wider t
 **Wakala** is agency. One party appoints another to act on its behalf, often for investment or service delivery. Some deposit and investment products use wakala-based structures.
 
 **Sukuk** are often described as Islamic bonds, but technically they are certificates representing ownership or beneficial interest in an asset, project, usufruct, or investment activity. Kenya has discussed Islamic capital-market development over the years, and sukuk remains a potentially important tool for infrastructure finance if the legal, tax, and investor frameworks align. For conventional fixed-income context, see Bengula's guide to [Kenyan Treasury Bonds](/blog/kb-bond-guide-2026) and [Sovereign Debt Explained](/blog/sovereign-debt-explained).
+
+The full toolkit at a glance:
+
+| Contract | In One Line | Typical Use in Kenya |
+|---|---|---|
+| Murabaha | Bank buys the asset, sells it to you at a disclosed markup | Vehicles, stock, equipment, trade finance |
+| Musharaka | Bank and customer co-own; profit and risk are shared | Property purchase, business ventures |
+| Mudaraba | One party funds, the other manages; profit is shared | Savings and investment accounts |
+| Ijara | Bank owns the asset and leases it to you for rent | Vehicles, equipment, property |
+| Wakala | Agency: the bank acts on your behalf for a fee | Deposit and investment products |
+| Sukuk | Certificates of ownership in an asset or project | Infrastructure finance (still emerging) |
 
 ### Islamic Savings Accounts: What Happens If There Is No Interest?
 
@@ -173,6 +210,8 @@ The best Hajj savings plans usually have five features:
 **A clear target.** The customer should know the estimated package cost. If a current Hajj package is KES 650,000 and you want a 10% buffer, your target is KES 715,000, not "some money for Hajj."
 
 **A fixed monthly contribution.** Divide the target by the number of months left. If you need KES 715,000 in 24 months, the required saving is about KES 29,800 per month before any bank profit distribution or currency movement.
+
+$$ \text{Monthly Saving} = \frac{\text{Package Cost} \times (1 + \text{Buffer})}{\text{Months to Departure}} = \frac{650{,}000 \times 1.10}{24} \approx \text{KES } 29{,}800 $$
 
 **Withdrawal discipline.** The account should make it psychologically harder to misuse the funds. Some products may restrict withdrawals, require notice, or offer bonus/profit treatment only if the goal period is respected.
 
@@ -269,11 +308,11 @@ Banking, whether Islamic or conventional, should move you from confusion to a cl
 
 ### Source Trail and Further Reading
 
-- [Central Bank of Kenya](https://www.centralbank.go.ke/) — bank supervision, licensing context, rates, and regulatory publications.
-- [Gulf African Bank](http://www.gulfafricanbank.com/) — Kenyan Shariah-compliant banking institution.
-- [First Community Bank](http://www.firstcommunitybank.co.ke/) — historically listed website for the Shariah-compliant institution now associated with the Premier Bank Kenya name.
-- [AAOIFI](https://aaoifi.com/) — international Shariah, accounting, auditing, ethics, and governance standards for Islamic financial institutions.
-- [Islamic Financial Services Board](https://www.ifsb.org/) — prudential standards and guidance for Islamic financial services.
-- [Investopedia: Murabaha](https://www.investopedia.com/terms/m/murabaha.asp) — accessible explainer on cost-plus Islamic finance.
-- [Investopedia: Musharakah](https://www.investopedia.com/terms/m/musharakah.asp) — accessible explainer on partnership-based Islamic finance.
+- [Central Bank of Kenya](https://www.centralbank.go.ke/): bank supervision, licensing context, rates, and regulatory publications.
+- [Gulf African Bank](http://www.gulfafricanbank.com/): Kenyan Shariah-compliant banking institution.
+- [First Community Bank](http://www.firstcommunitybank.co.ke/): historically listed website for the Shariah-compliant institution now associated with the Premier Bank Kenya name.
+- [AAOIFI](https://aaoifi.com/): international Shariah, accounting, auditing, ethics, and governance standards for Islamic financial institutions.
+- [Islamic Financial Services Board](https://www.ifsb.org/): prudential standards and guidance for Islamic financial services.
+- [Investopedia: Murabaha](https://www.investopedia.com/terms/m/murabaha.asp): accessible explainer on cost-plus Islamic finance.
+- [Investopedia: Musharakah](https://www.investopedia.com/terms/m/musharakah.asp): accessible explainer on partnership-based Islamic finance.
 - Bengula Inc: [Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya), [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans), [SME Trade Finance](/blog/sme-trade-finance), and [Mobile Loan vs Bank Loan APR Breakdown](/blog/mobile-loan-vs-bank-loan-apr-breakdown).

@@ -49,6 +49,14 @@ Three things are not embedded finance:
 
 ### Five Use Cases Reshaping Kenyan Commerce
 
+| Use Case | What Gets Embedded | Kenyan Examples |
+|---|---|---|
+| 1. Frictionless payments | Checkout inside the platform | Bill payments inside WhatsApp, wallet self-checkout |
+| 2. Credit and BNPL | Point-of-sale underwriting on platform data | Lipa Later, Fuliza, Hustler Fund, Pezesha |
+| 3. Loyalty and incentives | Rewards priced on transaction behaviour | Distributor wallets for retailer networks |
+| 4. Insurance | Micro-cover attached to a purchase | Apollo Agriculture, Pula, Lami, Turaco |
+| 5. Investment | Brokerage and bond access from a wallet | NSE via M-Pesa (planned), M-Akiba |
+
 #### 1. Frictionless Payments
 
 The baseline use case. A non-financial platform integrates M-Pesa, card payments, or bank transfers directly into its checkout or service flow so customers do not have to switch apps or enter separate banking credentials.
@@ -104,6 +112,17 @@ The parallel: M-Akiba, Kenya's mobile-first government bond product, already dem
 **[Churpy.](https://www.globenewswire.com/news-release/2025/11/25/3194084/28124/en/Africa-Embedded-Finance-Business-Report-2025-Expansion-Driven-by-Fintech-Investment-in-Lami-Technologies-Turaco-Payhippo-Float-and-Rising-Telco-Fintech-Competition.html)** Embedding invoice reconciliation and receivables automation into enterprise platforms, embedded finance applied to the B2B corporate finance layer rather than consumer retail.
 
 **PesaPal, DPO Group, Cellulant.** Payment gateway providers that give merchants multi-method payment access, cards, mobile money, bank transfers, through a single integration point.
+
+| Player | Layer | What They Embed |
+|---|---|---|
+| Safaricom / M-Pesa | Foundational rail | Payments, savings, credit, insurance, soon equities |
+| NCBA | Bank behind the interface | Balance sheet and licence for M-Shwari and Fuliza |
+| Lipa Later | Checkout credit | BNPL instalments inside merchant platforms |
+| Lami Technologies, Turaco | Insurance APIs | Micro-cover for gig, agritech, and logistics platforms |
+| Pezesha | SME credit | Working capital inside business management tools |
+| Apollo Agriculture | Sector-specific stack | Input finance, crop insurance, market access |
+| Churpy | B2B corporate finance | Invoice reconciliation and receivables automation |
+| PesaPal, DPO, Cellulant | Payment gateways | Multi-method merchant payments via one integration |
 
 ---
 

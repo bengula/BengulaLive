@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { MapPin, Mail, Phone, Globe, ShieldCheck, ChevronRight, MessageCircle } from 'lucide-react';
+import { MapPin, Mail, Phone, Globe, ShieldCheck, ChevronRight, MessageCircle, CalendarCheck } from 'lucide-react';
 import { siteConfig, telHref, whatsappHref } from '../data/siteConfig';
 import Seo from '../seo';
 import { openMailto } from '../utils/mailto';
@@ -233,6 +233,52 @@ export default function ContactTab() {
             </button>
           </form>
         )}
+      </div>
+
+      {/* Appointment booking (Zoho Calendar slot-booking embed) */}
+      <div className="lg:col-span-12 glass-strong rounded-2xl p-6 md:p-8 space-y-5">
+        <div className="border-b border-slate-100 pb-4">
+          <h2 className="text-lg font-semibold text-blue-900 flex items-center gap-2">
+            <CalendarCheck className="w-5 h-5 text-blue-900" />
+            Book a Consultation Slot
+          </h2>
+          <p className="text-xs text-slate-500 mt-1">
+            Prefer to skip the back-and-forth? Pick an open slot directly in the calendar below and it lands in our diary instantly.
+          </p>
+        </div>
+        <div className="relative w-full overflow-hidden rounded-xl border border-slate-200 bg-white h-[75vh] min-h-[560px]">
+          <iframe
+            src="https://calendar.zoho.com/zc/view/slot-booking/zz08011220d2b35e0df86cbc8eaaa450bf2cb93df64ec035fc23613ffbfb4c63195611a26b"
+            title="Appointment Booking"
+            frameBorder={0}
+            loading="lazy"
+            style={{
+              overflow: 'hidden',
+              height: '100%',
+              width: '100%',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+            }}
+            height="100%"
+            width="100%"
+          />
+        </div>
+        <p className="text-[11px] text-slate-400 text-center">
+          Calendar not loading?{' '}
+          <a
+            href="https://calendar.zoho.com/zc/view/slot-booking/zz08011220d2b35e0df86cbc8eaaa450bf2cb93df64ec035fc23613ffbfb4c63195611a26b"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackConversion('booking_page_open', 'contact_booking_fallback')}
+            className="font-bold text-violet-800 hover:text-violet-700 underline decoration-violet-800/40"
+          >
+            Open the booking page in a new tab
+          </a>
+          .
+        </p>
       </div>
 
     </div>

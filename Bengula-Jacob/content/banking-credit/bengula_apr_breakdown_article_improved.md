@@ -118,19 +118,19 @@ That APR is far higher than the 13% headline rate, but still lower than a mobile
 
 ### What This Means for Borrowers
 
-#### Mobile loans are short-term tools
+#### Mobile Loans Are Short-Term Tools
 
 A mobile loan is not automatically bad. It can be reasonable for a short cash-flow gap that will be cleared quickly. The danger appears when short-term credit becomes monthly working capital or household income replacement.
 
 Used for 24 to 48 hours, Fuliza may be the most convenient bridge available. Held for 30 days because repayment was not planned, it becomes expensive.
 
-#### Bank loans are cheaper only when structured correctly
+#### Bank Loans Are Cheaper Only When Structured Correctly
 
 A bank facility can be cheaper in APR terms, but the borrower must still ask for the full cost breakdown. A clean salary account, stronger credit record, collateral, or a better product choice can materially change the final quote.
 
 At first glance, 13% looks dramatically cheaper than a 7.5% mobile facility fee. Once service fees, insurance, excise duty, and repayment term are included, the APR tells a more honest story.
 
-#### The right question is about use case
+#### The Right Question Is About Use Case
 
 If you need KES 10,000 for 3 days, a mobile facility may be convenient. If you need KES 10,000 for 12 months, a structured bank loan or another planned facility is usually more appropriate.
 
