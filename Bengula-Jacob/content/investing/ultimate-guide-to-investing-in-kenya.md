@@ -132,7 +132,7 @@ Neither account costs anything to open or hold. The only ongoing costs are trans
 
 **How to buy.** Through DhowCSD, CBK's online portal and app: register with your ID and KRA PIN, fund your virtual account, and bid in the weekly auction (minimum KES 50,000 for bills, in multiples of KES 50,000). Non-competitive bids accept the weighted average rate and are the sensible default for retail investors. The full mechanics are in [Sovereign Debt Explained](/blog/sovereign-debt-explained).
 
-**The ladder.** The professional retail move is a rollover ladder: split the pot across 91, 182, and 364-day maturities so a tranche matures every quarter, then reinvest each maturity at the current rate. You get near-quarterly liquidity, average out rate movements, and stay fully invested. A dedicated Bengula walkthrough of the DhowCSD ladder is planned; until then, the structure is simple enough to run manually from the portal.
+**The ladder.** The professional retail move is a rollover ladder: split the pot across 91, 182, and 364-day maturities so a tranche matures every quarter, then reinvest each maturity at the current rate. You get near-quarterly liquidity, average out rate movements, and stay fully invested. The full construction, with the current auction numbers and the portal mechanics, is in [Advanced DhowCSD Strategies: Building a T-Bill Rollover Ladder](/blog/advanced-dhowcsd-t-bill-ladder).
 
 **Who it suits.** Capital preservers and the near-cash layer of every portfolio. Sovereign risk in shillings is the lowest credit risk available to a Kenyan investor; the real risks are reinvestment (rates falling when your bill matures, which is the current direction of travel) and inflation quietly outpacing the net yield.
 

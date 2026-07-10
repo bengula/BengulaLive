@@ -91,7 +91,7 @@ The honest planning numbers, then: MMFs around the T-bill rate, fixed deposits a
 
 ### Inside a Real Endowment: APA's Akiba Halisi
 
-Because insurers publish no performance league table, the only way to compare an endowment is to read one contract properly. [APA Life's Akiba Halisi](https://www.apainsurance.org/product_detail_life_akiba_halisi), an anticipated endowment sold on 6 to 18 year terms, is a well-documented representative example (Old Mutual's Rafiki Halisi and Britam's Akiba plans share the same anatomy). Its published benefit structure:
+Because insurers publish no performance league table, the only way to compare an endowment is to read one contract properly. (For the full treatment of the product class, from bonuses and surrender values to tax relief and policy loans, see [Endowment Plans in Kenya: The Complete Guide](/blog/endowment-plans-kenya-guide).) [APA Life's Akiba Halisi](https://www.apainsurance.org/product_detail_life_akiba_halisi), an anticipated endowment sold on 6 to 18 year terms, is a well-documented representative example (Old Mutual's Rafiki Halisi and Britam's Akiba plans share the same anatomy). Its published benefit structure:
 
 | Event | Benefit (Per the Published Product Specification) |
 |---|---|
@@ -103,6 +103,8 @@ Because insurers publish no performance league table, the only way to compare an
 | Tax relief | 15% of premiums, capped at KES 5,000 per month (KES 60,000 per year) |
 
 Read the structure and the return logic becomes visible. The **guaranteed** payouts across the whole term add up to exactly 100% of the sum assured. On most quotes, total premiums over the term come close to, and sometimes exceed, that sum assured, which means the guaranteed part of the contract roughly returns your own money. Everything above that depends on bonuses: simple (not compounded) reversionary bonuses plus a terminal bonus, all declared at the insurer's discretion, none guaranteed at signing.
+
+Two structural notes before the arithmetic. Akiba Halisi is also quoted as a **single-premium** policy through selected channels, which eliminates lapse risk and, on a real 2026 quote, cost roughly a third less in total than the same benefits paid monthly; the anonymised illustration is in [the endowment guide](/blog/endowment-plans-kenya-guide). The comparison below uses the regular-premium version, which is how most savers encounter the product.
 
 Now run the alternative on the same cash flow. An illustrative premium of KES 7,000 per month over a 12-year term totals KES 1,008,000 paid in. The same KES 7,000 swept monthly into an MMF at the net yield calculated earlier (7.51%) compounds to roughly **KES 1.63 million** over the same 12 years. Against that, the endowment's guaranteed benefits on a KES 1 million sum assured total KES 1 million, with the 15% and 25% tranches arriving earlier, worth something in time-value terms. Even crediting the terminal bonus at its full published scale, 50% of the sum assured (KES 500,000 here), the plan reaches roughly KES 1.5 million; the annual reversionary declarations decide whether it ever draws level with the MMF, and none of the bonuses are guaranteed at signing.
 
