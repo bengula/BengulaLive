@@ -68,6 +68,17 @@ flowchart LR
 
 **Bad Debt Ratio.** The percentage of AR that is never collected. Any bad debt ratio above 2-3% signals a credit policy problem; you are extending credit to customers who cannot or will not pay.
 
+$$ \text{DSO} = \frac{\text{Accounts Receivable}}{\text{Total Credit Sales}} \times \text{Days} = \frac{10{,}000{,}000}{5{,}000{,}000 \times 3} \times 90 = 60 \text{ days} $$
+
+The worked example above is the business from earlier: KES 5 million in monthly credit sales carrying KES 10 million in receivables collects, on average, in 60 days. The four metrics in one view:
+
+| Metric | Formula | Healthy Signal |
+|---|---|---|
+| Days Sales Outstanding | (AR ÷ credit sales) × days | At or below your stated payment terms |
+| AR turnover ratio | Net credit sales ÷ average AR | Higher; cash circulating, not sitting |
+| Aging report | Invoices bucketed 0-30, 31-60, 61-90, 90+ days | Nothing drifting past 60 without escalation |
+| Bad debt ratio | Uncollected AR ÷ total AR | Under 2-3% |
+
 ---
 
 ### AR Management Practices That Directly Affect Profitability
@@ -94,6 +105,12 @@ If your invoice states a 2% per month late fee and you never charge it, you have
 ### AR Financing: Unlocking Cash Without Waiting for Clients
 
 When AR is large and collection is slow, Kenyan businesses have three main financing options to unlock that trapped cash.
+
+| Option | How It Works | Cost and Limit Signals | Who Chases the Client |
+|---|---|---|---|
+| Invoice discounting | Borrow against unpaid invoices | Up to KES 50M unsecured (Absa), funds in 24-48 hours | You; the client never knows |
+| Invoice factoring | Sell invoices outright at a discount | Typically 3-7% of face value | The factor, directly |
+| AR as collateral | Pledge receivables against a working capital loan | Formal assignment of the debtor book | You, with lender recourse |
 
 **Invoice Discounting.**
 You retain control of your debtor book but borrow against your unpaid invoices. The lender advances a percentage of the invoice value and you repay when the client settles.

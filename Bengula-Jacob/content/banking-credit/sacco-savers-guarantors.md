@@ -152,6 +152,7 @@ The risks attached to borrowing and guaranteeing, however, have grown significan
 
 ### Related Reading
 
+- [Bank Account vs SACCO vs MMF](/blog/bank-vs-sacco-vs-mmf-savings) for where SACCO deposits fit in the wider savings decision.
 - [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans) for comparing SACCO borrowing with bank lending.
 - [How to Fix Your CRB Listing in Kenya](/blog/how-to-fix-your-crb-listing-kenya) for managing the credit side of the decision.
 - [Why the Banking Relationship Manager Is the SME's Most Underrated Growth Asset](/blog/why-rm-is-sme-growth-asset) for the lender relationship perspective.

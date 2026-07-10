@@ -20,6 +20,17 @@ Kenya is the world's most advanced proof of concept. [Mobile money penetration r
 
 The countries that have achieved the highest cashless adoption globally are Kenya, India, China, and Sweden. [Only 15-20% of the world's currency supply exists as physical cash](https://www.worldbank.org/en/news/press-release/2022/06/29/covid-19-drives-global-surge-in-use-of-digital-payments). The rest is created by banks as deposits and circulates electronically. The direction of travel is clear. The question for Kenyan businesses and individuals is not whether to participate in a cashless economy but how to navigate the one already around them.
 
+Kenya's cashless economy in numbers:
+
+| Indicator | Figure |
+|---|---|
+| Mobile money penetration (June 2025) | 91% |
+| Active mobile money subscriptions | 47.7 million |
+| Annual mobile money transaction value | KES 8.66 trillion |
+| Adults with formal financial access | Over 83% |
+| Diaspora remittances (2025) | KES 649.9 billion |
+| Kenyans still outside formal banking | About 21% |
+
 ---
 
 ### How Kenya Got Here
@@ -29,6 +40,15 @@ M-Pesa launched in 2007 as a Safaricom airtime transfer service. Within five yea
 The shift is now visible in transaction behaviour. [Mobile money agent cash volumes fell by KSh 430.3 billion in the first 11 months of 2025 compared to the same period in 2024](https://eastleighvoice.co.ke/business/271957/cbk-data-shows-decline-in-mobile-money-agent-cash-volumes-amid-digital-payment-shift), a direct signal that Kenyans are increasingly completing transactions digitally rather than withdrawing cash first. Everyday payments, including groceries, matatu fares, and utility bills, are shifting to mobile, cutting the need to visit agents for withdrawal.
 
 [Cash still dominates at 84% of point-of-sale preferences, with mobile money close behind at 80%.](https://www.pesapal.com/blog/bridging-the-digital-divide-making-a-cashless-society-inclusive-for-all) Kenya is not cashless. It is dual-track: cash and digital running simultaneously, with digital growing faster every year.
+
+| Payment Method | Point-of-Sale Preference (Kenya) |
+|---|---|
+| Cash | 84% |
+| Mobile money | 80% |
+| Debit cards | 22% |
+| Credit cards | 20% |
+
+Preferences sum to more than 100% because most Kenyans use several methods side by side; the dual-track economy in a single table.
 
 ---
 

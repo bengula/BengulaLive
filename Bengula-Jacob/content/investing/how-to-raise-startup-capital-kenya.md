@@ -22,6 +22,17 @@ So the practical question for a founder is not "how do I get VC money?" It is "w
 
 Capital is never just money; it is money plus terms. Every source trades cash for one of three things: **equity** (a share of what you build), **obligation** (repayment with interest), or **accountability** (reporting, milestones, and someone else's agenda). Founders who fail at fundraising usually did not fail to find money; they took the wrong kind for their stage, and the terms strangled the business the money was meant to grow. Match the source to the stage, and the stage to the evidence you can show.
 
+The whole ladder at a glance:
+
+| Rung | Typical Cheque | What You Give Up | Evidence You Need |
+|---|---|---|---|
+| 1. Revenue and bootstrapping | Deposits, pre-sales | Nothing | A customer willing to pay |
+| 2. Friends and family | KES 500K-5M | Trust, plus papered equity or a loan | A credible plan, clean paperwork |
+| 3. Grants and accelerators | KES 500K-20M; US$25K-120K | Accountability; 5-10% equity (accelerators) | A measurable impact angle or sharp pitch |
+| 4. Angels | KES 1M-15M | Equity via SAFE or convertible note | Working product, early paying customers |
+| 5. Venture capital | US$250K-2M seed; US$2M+ Series A | 15-25% equity per round | Traction plus a genuinely large market |
+| 6. Debt | Matched to the asset or order | Repayment, covenants, sometimes guarantees | Revenue, confirmed orders, or assets |
+
 ### Rung One: Revenue and Bootstrapping
 
 The cheapest capital in Kenya is a paying customer. Before external money, exhaust the sources that dilute nobody:
@@ -34,11 +45,11 @@ Bootstrapping is slow, and that is its hidden gift: it forces the unit economics
 
 ### Rung Two: Friends and Family
 
-Typically KSh 500,000 to KSh 5 million, raised on trust. This is where most Kenyan businesses actually start, and where the most relationships are destroyed. The full playbook, instruments, documentation, and the conversations that keep Christmas lunch intact, is in [How to Structure Friends and Family Investments](/blog/how-to-structure-friends-and-family-investments). The one rule worth repeating: paper it properly, because the paperwork you sign here is the first thing later investors will read.
+Typically KES 500,000 to KES 5 million, raised on trust. This is where most Kenyan businesses actually start, and where the most relationships are destroyed. The full playbook, instruments, documentation, and the conversations that keep Christmas lunch intact, is in [How to Structure Friends and Family Investments](/blog/how-to-structure-friends-and-family-investments). The one rule worth repeating: paper it properly, because the paperwork you sign here is the first thing later investors will read.
 
 ### Rung Three: Grants, Competitions, and Accelerators
 
-Non-dilutive money exists, and Kenyan founders are unusually well placed for it: development-agency programmes, foundation grants, corporate challenges, and pitch competitions regularly award between KSh 500,000 and KSh 20 million with no equity taken.
+Non-dilutive money exists, and Kenyan founders are unusually well placed for it: development-agency programmes, foundation grants, corporate challenges, and pitch competitions regularly award between KES 500,000 and KES 20 million with no equity taken.
 
 - **Grants** suit businesses with a measurable social, agricultural, or climate angle. The cost is accountability: applications, reporting, and restricted use of funds.
 - **Competitions** are marketing plus money. Even losing well can produce investor introductions.
@@ -48,7 +59,7 @@ The trap in grant funding is building a business shaped like a grant application
 
 ### Rung Four: Angel Investors
 
-Angels are individuals writing personal cheques, in Kenya commonly KSh 1 million to KSh 15 million, often organised through local angel networks and syndicates. They invest earlier than funds, decide faster, and usually bring operating experience in your sector.
+Angels are individuals writing personal cheques, in Kenya commonly KES 1 million to KES 15 million, often organised through local angel networks and syndicates. They invest earlier than funds, decide faster, and usually bring operating experience in your sector.
 
 What an angel needs to see is smaller than founders fear but sharper than most provide: a working product or service, early paying customers, a founder they believe, and numbers that reconcile. Specific, evidenced traction beats projected hockey sticks every time; the dissection in [Best Pitch Deck Examples from Startups](/blog/best-pitch-deck-examples-startups) shows that pattern across twenty real decks, and [How to Create a Pitch Deck Narrative](/blog/how-to-create-a-pitch-deck-narrative) covers how to structure yours.
 
@@ -64,7 +75,7 @@ VC is the most famous rung and the least used. Funds active in Kenya typically e
 
 If your business is a good, profitable enterprise growing 30% a year, that is a success story, and the wrong VC pitch. Forcing a lifestyle-scale business into a venture-scale narrative wastes a year of your life and, if you succeed, sells your company to a growth expectation it cannot meet.
 
-**The dilution maths deserves respect.** Raise KSh 10 million at a KSh 40 million pre-money valuation and you have sold 20% of the company. Do that three more times on the way up and the founding team can pass below 50% before Series B. Dilution is not evil, a smaller share of something large beats all of something small, but model it before you sign, not after.
+**The dilution maths deserves respect.** Raise KES 10 million at a KES 40 million pre-money valuation and you have sold 20% of the company. Do that three more times on the way up and the founding team can pass below 50% before Series B. Dilution is not evil, a smaller share of something large beats all of something small, but model it before you sign, not after.
 
 ### Rung Six: Debt, the Rung Founders Forget
 

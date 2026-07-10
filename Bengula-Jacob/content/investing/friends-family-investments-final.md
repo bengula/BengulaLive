@@ -86,4 +86,4 @@ It's losing the relationship. Treat a KES 500,000 loan from your uncle with the 
 - [How to Structure an Investment Deal with Friends and Family, Impakt Tribe](https://impakttribe.com/how-to-structure-an-investment-deal-with-friends-family/)
 - [SAFE Explained, YouTube](https://www.youtube.com/watch?v=W-sUj3-N1Js)
 - [How to Safely Raise Startup Funds from Friends and Family, UpCounsel](https://www.youtube.com/watch?v=3o5d38AsdKs&t=388)
-- Bengula Inc: [How to Raise Startup Capital in Kenya](/blog/how-to-raise-startup-capital-kenya), [Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya), [How to Build an Accurate Startup Budget](/blog/how-to-build-an-accurate-startup-budget)
+- Bengula Inc: [How to Raise Startup Capital in Kenya](/blog/how-to-raise-startup-capital-kenya), [The Complete Chama Guide](/blog/complete-chama-guide-kenya), [Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya), [How to Build an Accurate Startup Budget](/blog/how-to-build-an-accurate-startup-budget)

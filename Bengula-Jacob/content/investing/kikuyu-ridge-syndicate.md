@@ -67,6 +67,7 @@ Group land investing can work very well. It works because of paperwork and gover
 The desk's test for any land syndicate is simple: would the structure survive a dispute between two members who no longer speak? If the answer depends on goodwill, the structure is not finished. We also press investors to compare the parcel against a boring alternative; at recent yields, the same capital in a tax-free bond ladder (see [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026)) pays income every quarter while land pays nothing until exit. Land can still win, but it should win on evidence, not on inherited belief.
 
 ### Related Reading
+- [The Complete Chama Guide](/blog/complete-chama-guide-kenya). Structuring, banking, and investing group money, including the legal ladder to an LLP.
 - [Kikuyu Ridge Infrastructure & Land Venture](/blog/kikuyu-ridge-infrastructure). The value-add process that turns raw land into titled, serviced plots.
 - [SACCO Savers & Guarantors](/blog/sacco-savers-guarantors). Pooling and guarantor risk in member-owned structures.
 - [Sleeping Asset Yield Optimization](/blog/sleeping-asset-optimization). The income trade-off when capital sits in land.

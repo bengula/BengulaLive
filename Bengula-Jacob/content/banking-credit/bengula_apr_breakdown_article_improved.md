@@ -1,10 +1,10 @@
 ---
 id: mobile-loan-vs-bank-loan-apr-breakdown
-title: "The Real Cost of a Mobile Loan vs a Bank Loan: A Side-by-Side APR Breakdown"
-summary: A practical Kenyan borrower guide showing why headline interest rates are misleading, how APR reveals the true cost of credit, and how mobile loans compare with bank loans once fees, taxes, insurance, and loan term are included.
+title: "Understanding Interest Rates in Kenya: APR, Flat vs Reducing Balance, and the Real Cost of Credit"
+summary: The complete Kenyan borrower guide to interest rates. Why headline rates mislead, how flat and reducing balance loans differ on the same quoted number, what the effective rate and APR actually measure, how mobile loans compare with bank loans once every fee is included, and the legal ceiling the Duplum Rule puts on what a defaulted loan can cost.
 category: Banking & Credit
-date: June 24, 2026
-readTime: 10 min read
+date: July 10, 2026
+readTime: 14 min read
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
@@ -43,6 +43,37 @@ $$
 $$
 
 For short-term mobile loans, we annualise from 30 days. For a 12-month bank loan, we annualise from 365 days. That is the only fair way to compare products built for different repayment periods.
+
+### Flat Rate vs Reducing Balance: The Same Number, Two Different Loans
+
+Before any fee is added, the single largest source of borrower confusion in Kenya is that "13%" can describe two loans with very different costs, depending on the calculation method.
+
+**Reducing balance** charges interest only on what you still owe. As instalments repay principal, the interest portion shrinks every month. This is how regulated bank term loans are normally structured.
+
+**Flat rate** charges interest on the *original* principal for the whole term, ignoring the fact that you are repaying it. This method survives in hire purchase, some asset finance, chama and informal lending, and quietly inside some digital products.
+
+The same KES 100,000 over 12 months at a quoted 13%, side by side:
+
+| | Flat 13% | Reducing Balance 13% |
+|---|---|---|
+| Monthly instalment | KES 9,417 | KES 8,932 |
+| Interest, month 1 | KES 1,083 | KES 1,083 |
+| Interest, month 6 | KES 1,083 (unchanged) | KES 649 |
+| Interest, month 12 | KES 1,083 (unchanged) | KES 96 |
+| **Total interest paid** | **KES 13,000** | **KES 7,187** |
+| True reducing-balance equivalent | **~23.3%** | 13% |
+
+The first months look almost identical, which is exactly why the trick works. But the flat loan keeps charging you for money you have already returned: by month 12 you owe one instalment, yet you are still paying interest on the full KES 100,000. On this example, the flat method costs **81% more interest for the same quoted rate**.
+
+The rule of thumb: a flat rate is roughly equivalent to a reducing-balance rate of about 1.8 times the quoted number. Whenever a lender quotes a rate, the first question is always: **"flat or reducing balance?"** If the answer is flat, mentally double the number before comparing.
+
+### The Effective Interest Rate: What Compounding Adds
+
+One more layer sits between the quoted annual rate and reality: compounding frequency. A "13% per annum" loan charged monthly is really thirteen-twelfths of a percent every month, and monthly charging compounds:
+
+$$ \text{EIR} = \left(1 + \frac{r}{12}\right)^{12} - 1 = \left(1 + \frac{0.13}{12}\right)^{12} - 1 = 13.80\% $$
+
+The gap looks small at 13% but grows with the rate, which is why it matters most on exactly the expensive products where lenders prefer monthly or daily quotation. A "1% per day" facility is not 365%; compounded, it is far worse. Any rate quoted per month or per day should be converted to an effective annual figure before it is compared with anything.
 
 ### The Scenario
 
@@ -152,6 +183,27 @@ $$
 
 KESONIA is published by the Central Bank of Kenya every business day and reflects overnight interbank lending activity in Kenya shillings.
 
+### The Fine Print: Penalties, Insurance, and the Charges Around the Rate
+
+Beyond the rate and its calculation method, four categories of cost live in the offer letter's smaller text:
+
+- **Late payment penalties.** Commonly quoted as a monthly percentage on arrears. Ask for the figure, and ask whether it is charged on the missed instalment or the whole balance; the difference is enormous.
+- **Credit-life insurance.** Mandatory on most bank term loans; it repays the loan if the borrower dies or is disabled. Legitimate, but priced into your cost, and sometimes negotiable if you already hold cover you can assign.
+- **Processing, negotiation, and appraisal fees.** Typically 1-3% upfront, plus 20% excise duty on those fees. Because they are deducted or charged at day one, they hit short loans hardest in APR terms.
+- **Early settlement terms.** Some facilities charge a fee for repaying early; others recalculate in your favour. Ask before signing, not before settling.
+
+### The Duplum Rule: The Legal Ceiling on a Bad Loan
+
+Kenyan law places one hard limit on what a defaulted loan can cost. Under the **in duplum rule** in Section 44A of the Banking Act, once a loan becomes non-performing, the lender's recoverable amount is capped at: the outstanding principal, plus interest **not exceeding that outstanding principal**, plus recovery expenses. Interest stops accumulating once it equals the principal owed.
+
+In practice: if you defaulted owing KES 80,000 of principal, a regulated bank cannot let interest balloon past a further KES 80,000, no matter how many years the recovery takes. Three cautions keep the rule honest:
+
+1. It applies to institutions regulated under the Banking Act; the wider digital and informal lending world has historically sat outside it, which is one more reason unregulated credit is dangerous.
+2. It caps *interest*, not the legitimate recovery costs added on top.
+3. It is a shield in a dispute, not a plan. A borrower relying on in duplum has already lost the CRB listing, the guarantors' goodwill, and the asset; the rule limits the wreckage, it does not prevent it.
+
+If a statement on a defaulted regulated loan shows interest larger than the principal outstanding at default, query it in writing and escalate to the bank's complaints process and CBK if needed.
+
 ### What the Framework Does Not Solve
 
 The TCC framework is strongest for regulated bank products. Mobile-loan and digital-credit products may not present their cost in the same APR format. That is why consumers still need to translate fees, daily charges, and term length into annualised cost before comparing options.
@@ -204,6 +256,7 @@ Ask that before you borrow, not after.
 ### References and Verification Notes
 
 - [Central Bank of Kenya: KESONIA Interest Rate Benchmark](https://www.centralbank.go.ke/kesonia/). KESONIA definition, publication approach, and transition notes for variable-rate lending.
+- [The Banking Act, Cap 488, Kenya Law](https://new.kenyalaw.org/akn/ke/act/1989/9/eng@2024-12-27): Section 44A, the in duplum interest cap on non-performing loans.
 - [Total Cost of Credit portal](https://www.costofcredit.co.ke/). Public borrower calculator for comparing estimated bank loan costs.
 - Safaricom and banking product pages. Tariff and product-term references for Fuliza, M-Shwari, and related mobile credit products should be checked again before publication because fees can change.
 

@@ -60,6 +60,16 @@ flowchart TD
     style H fill:#ec4899,color:#fff,stroke:none
 ```
 
+| Use Case | What AI Does | Kenya Signal |
+|---|---|---|
+| Fraud detection | Real-time risk scoring on live transactions | SIM swap and push-payment scams at mobile money scale |
+| Credit scoring | Underwrites on behavioural and mobile money data | M-Shwari, Fuliza, Branch; $330B untapped African credit demand |
+| Chatbots | 24/7 triage and first-line resolution | Equity and KCB assistants on WhatsApp and USSD |
+| Algorithmic trading | Automated execution and robo-advisory | Emerging on the NSE ahead of M-Pesa equity access |
+| Compliance and AML | KYC in seconds, monitoring at scale | Lower false positives under CBK reporting rules |
+| Process automation | RPA bridging legacy systems | 20-40% operating cost reduction (Deloitte 2025) |
+| AIOps | Predicts and remediates IT incidents | Outages are direct revenue loss at mobile money volume |
+
 ---
 
 #### 1. Fraud Detection and Prevention

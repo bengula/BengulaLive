@@ -57,6 +57,18 @@ The content plan was built around buying moments:
 
 This is where customer research mattered. The same discipline in [Customer Avatars & Buyer Personas](/blog/archive-customer-avatars-buyer-persona) applied here: write for the buyer's decision, not for the company's internal org chart.
 
+### The Local Search Layer: The Cheapest Traffic in Kenya
+
+For most Kenyan SMEs, the highest-intent searcher is not typing an industry term; they are typing a place: "accountant Westlands", "cold room installation Mombasa road", "cereals wholesaler Nakuru". Local search is where buying intent and low competition overlap, and it costs nothing but discipline:
+
+- **A complete Google Business Profile** is the single highest-return asset in Kenyan digital marketing. Exact category, service list, photos of real work, opening hours, and a WhatsApp-reachable phone number. An SME with a complete profile and thirty genuine reviews outranks a competitor's expensive website inside the map results, which sit above the ordinary listings.
+- **Reviews are the local currency.** Ask every satisfied client, the week the work finishes, with a direct link. Reply to all of them, including the bad ones; buyers read the replies as a preview of your service recovery.
+- **Consistency across the web.** The same business name, address, and phone number everywhere the business appears; mismatches quietly erode map ranking.
+- **Write the way Kenyan buyers search.** Location-qualified service pages ("tax filing services in Kisumu") and the natural English-Swahili mix of real queries beat polished corporate phrasing that nobody types.
+- **Close the loop at the conversation.** Kenyan local search converts through a phone call or a WhatsApp message, not a web form. Every local page and profile should open a conversation in one tap; the storefront rebuild in [E-commerce Storefront & Conversion Launch](/blog/ecommerce-storefront-conversion-launch) made the same point at checkout, where conversion jumped from 1.1% to 3.4% once the path matched how customers actually behave.
+
+In this engagement, the local layer produced the fastest wins: map-pack visibility for the core services arrived within weeks, long before the content engine's rankings compounded. For a single-location SME with no budget, it is the correct first project, before the website, before the content plan, before anything paid.
+
 ### What We Deliberately Did Not Do
 
 The discipline of refusing certain tactics protected the result as much as the tactics we used:
