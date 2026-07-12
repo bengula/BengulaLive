@@ -24,7 +24,7 @@ OUT_DIR = ROOT / "public" / "documents"
 INTERNAL_OUT_DIR = ROOT / "internal-docs"
 
 BLOCK_BUILDERS = {
-    "heading": lambda b: [c.para(b[1], "H2B")],
+    "heading": lambda b: c.heading(b[2], b[1]),
     "para": lambda b: [c.para(b[1])],
     "note": lambda b: [c.note(b[2], b[1])],
     "bullets": lambda b: [c.bullets(b[1])],

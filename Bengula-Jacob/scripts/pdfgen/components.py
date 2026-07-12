@@ -9,6 +9,7 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
 from reportlab.platypus import (
     Flowable,
+    HRFlowable,
     KeepTogether,
     ListFlowable,
     ListItem,
@@ -141,6 +142,20 @@ class CoverBlock(Flowable):
 
 def para(text, style="BodyB"):
     return Paragraph(text, S[style])
+
+
+def heading(text, level=2):
+    """Document heading. Level 1 (# ) carries a violet rule; 2 (## ) and
+    3 (### ) are plain paragraphs at descending weights."""
+    if level == 1:
+        return [
+            para(text, "H1B"),
+            HRFlowable(width="100%", thickness=1.1, color=brand.PRIMARY,
+                       spaceBefore=1, spaceAfter=8, lineCap="round"),
+        ]
+    if level == 3:
+        return [para(text, "H3Head")]
+    return [para(text, "H2B")]
 
 
 def bullets(items):

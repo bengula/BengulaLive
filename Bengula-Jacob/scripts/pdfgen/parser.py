@@ -10,7 +10,9 @@ Content format (line oriented):
     :sources: key1, key2              keys into pdfgen.sources.SOURCES
     :date: 9 June 2026                optional; defaults to today
 
-    ## Section Heading
+    # Section Heading            three heading levels are supported:
+    ## Sub-Section Heading       #  -> H1 (largest, with a violet rule)
+    ### Minor Heading            ## -> H2, ### -> H3
     Plain paragraph. Consecutive lines are joined into one paragraph;
     blank lines separate paragraphs.
 
@@ -48,6 +50,7 @@ from xml.sax.saxutils import escape
 
 META_RE = re.compile(r"^:(\w+):\s*(.*)$")
 ORDERED_RE = re.compile(r"^\d+[.)]\s+(.*)$")
+HEADING_RE = re.compile(r"^(#{1,3})\s+(.*)$")
 BLOCK_OPEN_RE = re.compile(r"^\[(table|cards|palette)([^\]]*)\]$")
 
 
@@ -85,8 +88,10 @@ def parse_file(path):
                 spec[key] = value
             continue
 
-        if line.startswith("## "):
-            body.append(("heading", escape(line[3:].strip())))
+        hm = HEADING_RE.match(line)
+        if hm:
+            level = len(hm.group(1))
+            body.append(("heading", level, escape(hm.group(2).strip())))
             continue
 
         if line in ("@landscape", "@portrait"):
@@ -146,7 +151,7 @@ def parse_file(path):
         parts = [line]
         while i < n:
             nxt = lines[i].strip()
-            if not nxt or nxt.startswith(("## ", "- ", ">", "[", ":", "//", "@")) or ORDERED_RE.match(nxt):
+            if not nxt or nxt.startswith(("#", "- ", ">", "[", ":", "//", "@")) or ORDERED_RE.match(nxt):
                 break
             parts.append(nxt)
             i += 1

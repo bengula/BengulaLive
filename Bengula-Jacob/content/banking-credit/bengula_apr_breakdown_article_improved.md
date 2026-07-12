@@ -249,6 +249,7 @@ Ask that before you borrow, not after.
 
 ### Related Reading
 
+- [The Complete Guide to Borrowing Money in Kenya](/blog/borrowing-money-in-kenya-guide). The full borrower's map this pricing guide plugs into.
 - [The Real Cost of a Mobile Loan vs a Bank Loan](/blog/mobile-digital-loans-real-cost-kenya) for a practical comparison of lending costs.
 - [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans) for the factors that feed into the final rate.
 - [Credit Card Interest-Free Period](/blog/credit-card-interest-free-period) for another place where headline pricing can mislead.

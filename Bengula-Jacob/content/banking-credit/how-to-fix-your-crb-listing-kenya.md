@@ -97,6 +97,7 @@ The desk treats a credit report the way it treats a bank statement: something yo
 
 A CRB listing is information, and information can be checked and corrected. Pull your report, read it closely, dispute what is wrong, clear what is genuinely owed, and then keep the record clean. Do that and you are not just avoiding rejection; you are steadily lowering the price of every loan you will ever take, because the grade on that report is the lever you hold over your own cost of credit.
 ### References
+- Bengula Inc: [The Complete Guide to Borrowing Money in Kenya](/blog/borrowing-money-in-kenya-guide) and [Your Credit Score in Kenya](/blog/credit-score-kenya-guide), the full system this repair process sits inside.
 - [Central Bank of Kenya](https://www.centralbank.go.ke/). The Credit Reference Bureau framework and supervision of the licensed bureaus.
 - [Total Cost of Credit (CBK and Kenya Bankers Association)](https://www.costofcredit.co.ke/). Compare published loan pricing across banks.
 - [TransUnion Kenya](https://www.transunion.co.ke/), [Metropol](https://www.metropol.co.ke/), and [Creditinfo Kenya](https://www.creditinfo.co.ke/). The three licensed bureaus where you can request your report.

@@ -1,61 +1,91 @@
 :file: bengula_inc_brand_style_guide.pdf
 :title: Bengula Inc Brand & Editorial Style Guide
-:subtitle: A practical visual, verbal, and editorial system for research PDFs, articles, social posts, pitch decks, proposals, and client-facing marketing material.
-:summary: The Bengula Inc brand should feel sharp, trustworthy, financially literate, and human: advisory enough for boardrooms, warm enough for entrepreneurs, and visually consistent across web, PDF, slide, and social formats. Every piece of content should reduce uncertainty for the reader while making evidence, assumptions, and expert judgment clear.
+:subtitle: The single source of truth for how Bengula Inc looks, sounds, and publishes across web, PDF, slides, social, email, and client-facing material.
+:summary: Bengula Inc content should feel sharp, trustworthy, financially literate, and human: advisory enough for boardrooms, warm enough for entrepreneurs, and visually consistent across every format. Every asset should reduce uncertainty for the reader while making evidence, assumptions, and expert judgment clear.
 :tag: Brand Guide
 :pillars: Visual system, Verbal & editorial, Cross-format consistency
 :sources:
-:sourcenote: This internal brand guide is derived from the current Bengula Inc website, logo assets, resource-library styling, stated brand positioning, the Bengula Editorial Style Guide v1.0, and common editorial standards used in advisory, financial education, and research publishing.
+:sourcenote: Derived from the live bengula.co.ke site, logo assets, resource-library styling, the Bengula Editorial Style Guide v1.0, and the June 2026 brand guide PDF. Internal team reference, version 2.2, prepared 11 July 2026.
 :internal: true
-:date: 13 June 2026
+:date: 11 July 2026
 
-## Brand Position
+This guide is the single source of truth for how Bengula Inc looks, sounds, and publishes across web, PDF, slides, social, email, and client-facing marketing material.
 
-Bengula Inc is a decision-intelligence and advisory platform focused on
-finance, technology, business growth, trade, and economic systems in East
-Africa. It helps businesses, investors, and professionals make better
-decisions by combining finance, technology, and strategic analysis into
-practical guidance. The brand voice should make complex money, trade, and
-growth decisions feel understandable without making them feel simplistic.
+> info: When in doubt, this document wins.
 
-The Bengula Research Desk explains the systems, incentives, and risks
-behind business, finance, technology, and economic change so readers can
-act with greater confidence.
+# 1. Brand Foundation
 
-[table widths=42,128]
-Element | Guidance
-Core promise | Practical clarity for business growth, capital access, and investment decisions.
-Tone | Clear, composed, precise, optimistic, and evidence-led. A trusted analyst, not a salesperson.
-Avoid | Guaranteed-return language, hype, secrets, sensationalism, excessive luxury cues, jargon without explanation, and overly casual finance claims.
-Signature line | Adding meaning to life.
-Audience | Kenyan and East African SMEs, founders, professionals, investors, cooperatives, diaspora clients, and decision makers seeking evidence-led guidance.
-[/table]
+## 1.1 Who We Are
 
-## Editorial North Star
+Bengula Inc is a decision-intelligence and advisory platform focused on finance, technology, business growth, trade, and economic systems in East Africa. Founded in 2014 and headquartered in Malindi and Nairobi, Kenya, the firm pairs two pillars under one desk:
 
-Every piece of content should reduce uncertainty for the reader. Readers
-should leave knowing what matters, what risks exist, and what actions are
-available. Content that informs without helping the reader decide is not
-finished.
+[cards]
+Pillar 1: Finance & Banking Advisory :: Matching businesses and individuals to the right banking products (accounts, lending, trade finance, treasury, protection), credit appraisal, sovereign debt, MMFs, and structured wealth, with a practising bank Relationship Manager structuring the deal.
+Pillar 2: Data & Digital Growth :: Analytics, SEO, content creation, and digital systems that turn data and online presence into customers for East African businesses.
+[/cards]
 
-> positive: The test of any Bengula asset is simple: did it move the
-> reader from information to a clearer decision?
+## 1.2 Mission
 
-## Voice & Tone Mix
+Help businesses, investors, and professionals make better decisions by combining finance, technology, and strategic analysis into practical guidance.
 
-Bengula writing blends five registers in deliberate proportion. The mix
-keeps analysis at the centre and promotion at the margin.
+## 1.3 Signature Line
 
-[table widths=36,24,110]
-Register | Weight | What it sounds like
+"Adding meaning to life." Use as a tagline beneath the logo or as a closing line. Never alter, translate, or punctuate it differently.
+
+## 1.4 Brand Descriptor (Boilerplate)
+
+"We help East African businesses grow, pairing data-driven digital visibility with finance and banking advisory." Use this sentence verbatim in footers, social bios, press boilerplates, and meta descriptions unless a channel requires a shorter form.
+
+## 1.5 Audience
+
+Kenyan and East African SMEs, founders, professionals, investors, cooperatives, diaspora clients, and decision makers seeking evidence-led guidance. Assume an intelligent reader who is not a finance specialist.
+
+## 1.6 Core Values
+
+[cards]
+Integrity First :: Absolute compliance and ethical clarity; preserve clear boundaries between regulated banking and independent holdings.
+Financial Literacy :: True wealth starts with education; clarify complex yield mechanics into easy, actionable rules.
+Continuous Innovation :: Embrace automation, AI-driven matching, and modern portals such as DhowCSD.
+Sustainable Wealth :: Reliable long-term cash flows over speculative get-rich-quick vectors.
+[/cards]
+
+## 1.7 Brand Personality
+
+Sharp, trustworthy, financially literate, and human. Advisory enough for boardrooms, warm enough for entrepreneurs. A trusted analyst, not a salesperson. Every asset should reduce uncertainty for the reader.
+
+# 2. Brand Architecture & Named Assets
+
+Use these names consistently and capitalise them exactly as shown:
+
+- Bengula Inc: the firm. Never "Bengula Incorporated", "BI", or "Bengula" alone in formal first references. "Bengula" alone is acceptable on second reference.
+- Bengula Research Desk: the publishing arm for research PDFs, dossiers, and long-form analysis. Bylined "Jacob's desk" is acceptable in informal contexts.
+- The Sovereign Ledger: the weekly business-notes newsletter. Always italicised on web where possible; always with "The" capitalised.
+- AI Wealth Coach: the on-site educational chat tool.
+- Investment Pools: the syndicate and placement section of the site.
+- Loan Appraisal Calculator, Bond Yield & Wealth Calculator: on-site decision tools. Title Case, no hyphens.
+
+Founder reference: "Bengula Jacob, Founder of Bengula Inc and Relationship Manager at Absa Bank (Malindi Branch)." On second reference, "Jacob." Always keep the banking role and the firm clearly distinguished (see Section 8, Compliance).
+
+# 3. Voice & Tone
+
+## 3.1 Editorial North Star
+
+Every piece of content should reduce uncertainty for the reader. Readers should leave knowing what matters, what risks exist, and what actions are available. Content that informs without helping the reader decide is not finished. The test of any asset: did it move the reader from information to a clearer decision?
+
+## 3.2 The Register Mix
+
+Bengula writing blends five registers in deliberate proportion. Analysis stays at the centre; promotion stays at the margin.
+
+[table widths=32,18,120]
+Register | Share | Role
 Analytical | 35% | Explains causes, mechanisms, incentives, and trade-offs with evidence.
 Practical | 30% | Converts analysis into steps, checklists, thresholds, and next actions.
-Educational | 20% | Defines terms plainly and builds the reader's mental model.
+Educational | 20% | Defines terms plainly; builds the reader's mental model.
 Strategic | 10% | Connects today's facts to long-term positioning and second-order effects.
 Promotional | 5% | Points to Bengula services only where they genuinely fit the reader's need.
 [/table]
 
-## Editorial Principles
+## 3.3 Editorial Principles
 
 - Clarity over complexity: simplify the language, never the thinking.
 - Evidence over opinion: claims carry data, sources, or worked numbers.
@@ -65,38 +95,111 @@ Promotional | 5% | Points to Bengula services only where they genuinely fit the 
 - Transparency over false certainty: separate facts, estimates, assumptions, and judgment.
 - Reader usefulness over completeness: include what helps a decision, and point to what remains unknown.
 
-## Editorial Standards
+## 3.4 Vocabulary
 
-Bengula content should meet the standard of professional financial education
-and advisory publishing. It should be accurate, fair, current, useful, and
-clear about its limits. Writers may have a point of view, but the point of
-view must be earned by evidence, domain experience, or a stated analytical
-framework.
-
-[table widths=38,132]
-Standard | Requirement
-Accuracy | Verify names, dates, figures, regulations, rates, formulas, and definitions before publication.
-Attribution | Credit original sources for data, quotations, charts, claims, and specialist insights.
-Independence | Do not let a commercial interest, client relationship, or desired conclusion distort the analysis.
-Fairness | Represent material risks, counterarguments, and alternative interpretations, especially on investment or policy topics.
-Freshness | Date-sensitive content must state the effective date or "as at" date of the information.
-Usefulness | End with implications, decision criteria, or practical next steps for the target reader.
+[table widths=26,144]
+Direction | Words
+Use | Evidence, capital, growth, liquidity, resilience, incentives, infrastructure, systems, execution, risk, opportunity, strategy, yield, structure, qualify, ladder, compounding.
+Avoid | Hype, secrets, guaranteed returns, get-rich language, sensationalism, fear-bait, urgency theatrics, excessive luxury cues, and jargon without explanation.
 [/table]
 
-> info: Bengula can be opinionated, but it should never be casual with
-> accuracy. A confident voice is strongest when the evidence trail is visible.
+- Say: "Target return depends on execution, liquidity, and documented risk controls."
+- Say: "We help clients understand the evidence, risks, and next steps before capital moves."
+- Never: "Guaranteed 15% returns." Never: "The secret banks don't want you to know." Never: "Act now before it's too late."
 
-## Evidence And Sourcing
+## 3.5 Tone By Context
 
-Use primary sources wherever possible: regulator notices, official statistics,
-audited financial statements, product documents, prospectuses, exchange
-filings, government publications, court or policy documents, and direct
-interviews. Secondary sources can support context, but they should not carry a
-major conclusion unless the primary source is unavailable.
+- Research PDFs and dossiers: composed, precise, advisory.
+- Blog and education: warm, plain-spoken, example-led.
+- Social posts: punchy but factual; one idea per post; no clickbait.
+- Newsletter: concise, practical, conversational-professional.
+- Client proposals: confident, specific, scoped, risk-honest.
 
-[table widths=38,132]
+# 4. Editorial Standards
+
+## 4.1 Article Structure (The Six-Part Arc)
+
+Long-form articles and research PDFs follow this sequence:
+
+1. Hook: a sharp opening fact, tension, or question.
+2. Context: what the reader needs to know to follow the analysis.
+3. Analysis: the mechanism, its causes, incentives, and evidence.
+4. Implications: what this means for the reader's money, business, or strategy.
+5. Recommendations: concrete, prioritised actions with their trade-offs.
+6. Conclusion: tie back to the reader's goals; one memorable takeaway.
+
+## 4.2 The Bengula Lens
+
+Before publishing, confirm the piece has addressed all five angles:
+
+[cards]
+Incentives :: Who gains, who pays, and what behaviour does the structure reward?
+Constraints :: What limits the actors: capital, regulation, liquidity, infrastructure, execution capacity?
+Risks :: What can go wrong, how likely is it, and who carries the loss?
+Opportunities :: Where does the change create openings for readers positioned to act?
+Trade-offs :: What does each course of action cost, and what is given up by choosing it?
+[/cards]
+
+## 4.3 Signature Sections
+
+Recurring, named sections make Bengula content recognisable and scannable. Use them consistently across articles, PDFs, and decks:
+
+[cards]
+Key Insight :: The single non-obvious conclusion, stated early and plainly.
+Risk Factors :: An honest list of what can go wrong, with severity and likelihood where possible.
+Decision Framework :: A short checklist or table the reader can apply to their own situation.
+Confidence Note :: A short statement on whether the evidence is documented, estimated, judgment-led, or unresolved.
+Bengula View :: The desk's position: what we would weigh most heavily, and why.
+[/cards]
+
+## 4.4 The Publication Test
+
+Before any asset ships, it must pass seven questions. If any answer is no, the piece goes back for another pass:
+
+1. Does it reveal something non-obvious?
+2. Does it explain causes rather than symptoms?
+3. Does it help readers make better decisions?
+4. Does it connect information to action?
+5. Are facts, figures, dates, and claims sourced or clearly labelled as assumptions?
+6. Are risks, limitations, and conflicts fairly represented?
+7. Would a domain expert be comfortable standing behind the practical guidance?
+
+> risk: Content that fails the test but ships anyway erodes the advisory positioning the brand depends on. When in doubt, cut the piece, not the standard.
+
+## 4.5 House Style: Mechanics
+
+- Spelling: British and Kenyan English (organise, centre, programme), except in proper names and code.
+- Currency: "KES 1,500,000" in tables, data, and formal documents; "KSh 1.5M" acceptable in headlines and social. Never "Kshs" or "/-". Always thousands separators.
+- Percentages: numerals with the % sign (8.75%, not "8.75 percent") in data contexts. Spell out "percent" only in flowing prose where a single figure appears.
+- Numbers: spell out one to nine in prose; numerals for 10 and above, and always numerals with units, money, rates, and dates.
+- Dates: 11 June 2026 (day month year). In tables, DD/MM/YYYY.
+- Rates and data: always state the as-of date and source (for example, "CBK, 9 June 2026"). Never publish a rate without a date.
+- Abbreviations: define on first use, "Central Bank of Kenya (CBK)", then use the abbreviation. Common exceptions that need no definition: CBK, SME, SEO, APR, MMF, T-bill.
+- Headlines: Title Case for article titles and all section headings, matching the live site. Named products and section labels (Key Insight, Bengula View) are also Title Case.
+- Heading hierarchy: support one H1 (#) per asset for the primary title. H1 states the subject or decision the asset covers; it must be specific, readable out of context, and free of generic labels such as "Introduction" or "Overview." Use H2 (##) for major sections that advance the argument or reader journey. H2s must be descriptive, parallel where practical, and should not skip directly from H1 to H3. Use H3 (###) only to subdivide an H2 where the added hierarchy helps scanning; do not use headings merely to style ordinary paragraphs.
+- Heading format: H1 and H2 use the headline typeface (Georgia or Charter), Slate Ink on light surfaces, and Title Case. In source files, leave one blank line before and after every heading. The document title held in the :title: field may supply the rendered H1 in generated documents; do not repeat it as a second visible H1.
+- Punctuation: avoid em dashes in CVs and client-facing letters where house preference applies; in editorial work use them sparingly. One space after full stops. Oxford comma: yes.
+- Lists: use tables only for true comparisons, checklists, or data. Use prose for explanation.
+- Links: descriptive anchor text ("download the dossier"), never "click here".
+
+## 4.6 Evidence & Sourcing
+
+- Every factual claim carries a source, a worked number, or both.
+- Prefer primary sources: CBK, CMA, NSE, KNBS, Treasury, bank tariff guides, gazette notices.
+- Quote rates from the official figure and date them.
+- Worked examples use realistic Kenyan figures (salaries, loan sizes, MMF yields) and show the arithmetic.
+- Distinguish clearly between fact, estimate, and the desk's view (label the latter "Bengula View").
+- Prefer source names or links that allow an editor or reader to retrace the claim.
+- Avoid anonymous sourcing unless the information is important, credible, and cannot reasonably be obtained another way.
+- Do not cite a source for a claim it does not actually support.
+- When sources conflict, state the conflict and explain which source carries more weight.
+- For charts and tables, include the source, period covered, unit of measurement, and calculation method.
+
+Evidence types are handled as follows:
+
+[table widths=42,128]
 Evidence type | Editorial treatment
-Official data | Treat as preferred evidence, but check date, coverage, methodology, and revision history.
+Official data | Preferred evidence; check date, coverage, methodology, and revision history.
 Company or product material | Use for stated terms and positioning; verify performance, risk, and market claims independently where possible.
 News reporting | Use for chronology and reported statements; avoid building technical conclusions on a single article.
 Interviews and expert input | Identify the expertise, role, and perspective of the source. Record what is fact, interpretation, and recommendation.
@@ -104,31 +207,19 @@ Market observations | Label as observation or field intelligence unless supporte
 Estimates and models | Show the assumptions, formula, range, and sensitivity where the result affects a reader decision.
 [/table]
 
-- Prefer links or source names that allow a reader or editor to retrace the claim.
-- Avoid anonymous sourcing unless the information is important, credible, and cannot reasonably be obtained another way.
-- Do not cite a source for a claim it does not actually support.
-- When sources conflict, state the conflict and explain which source carries more weight.
-- For charts and tables, include the source, period covered, unit of measurement, and calculation method.
+## 4.7 Scarce Data & Expert Judgment
 
-## Scarce Data And Expert Judgment
+Some East African business, credit, trade, agriculture, private-market, and SME topics will not have complete public datasets. Bengula should still serve readers in those areas, provided the article is transparent about the evidence level and gives domain experts room to add informed interpretation.
 
-Some East African business, credit, trade, agriculture, private-market, and
-SME topics will not have complete public datasets. Bengula should still serve
-readers in those areas, provided the article is transparent about the evidence
-level and gives domain experts room to add informed interpretation.
-
-[table widths=36,44,90]
+[table widths=30,40,100]
 Confidence level | Label | How to write it
-High | Documented | Multiple reliable sources or one authoritative primary source support the claim.
-Medium | Supported estimate | Partial data, comparable benchmarks, or a model support the conclusion; assumptions are stated.
+High | Documented | Multiple reliable sources or one authoritative primary source supports the claim.
+Medium | Supported estimate | Partial data, comparable benchmarks, or a model supports the conclusion; assumptions are stated.
 Low | Expert judgment | Public data is limited; the view is based on domain experience, interviews, field observation, or professional reasoning.
 Unknown | Open question | The evidence is insufficient; explain what data would change the view.
 [/table]
 
-Domain expert editors may add their touch through context, judgment, and
-practical interpretation when little data is available. Their additions should
-make the piece more useful without pretending that expert judgment is the same
-as measured fact.
+Domain expert editors may add context, judgment, and practical interpretation when little data is available. Their additions should make the piece more useful without pretending that expert judgment is the same as measured fact.
 
 - Use phrases such as "based on available data", "our working assumption", "field interviews suggest", "a reasonable range is", or "in our view".
 - Provide ranges instead of precise numbers when precision would be misleading.
@@ -136,35 +227,15 @@ as measured fact.
 - Explain why the expert view is reasonable: experience, mechanism, benchmark, incentive structure, or observed market behaviour.
 - Preserve dissent where it matters. A strong expert note can say, "A credit analyst may weigh this differently because..."
 
-> positive: Scarce data is not a reason to publish vague content. It is a
-> reason to publish careful content: clear assumptions, practical judgment,
-> and honest confidence levels.
+> positive: Scarce data is not a reason to publish vague content. It is a reason to publish careful content: clear assumptions, practical judgment, and honest confidence levels.
 
-## Subject Matter Editors
+## 4.8 Subject-Matter Editors & Review
 
-Domain expert editors are responsible for adding nuance that a general writer
-may miss: local market practice, product mechanics, execution constraints,
-regulatory context, behavioural realities, and the questions a serious reader
-would ask before acting.
+Domain expert editors are responsible for adding nuance that a general writer may miss: local market practice, product mechanics, execution constraints, regulatory context, behavioural realities, and the questions a serious reader would ask before acting.
 
-[cards]
-Add Context :: Explain the local or sector-specific detail that changes the reader's interpretation.
-Stress Test Claims :: Challenge assumptions, optimistic scenarios, and hidden execution risks.
-Improve Practicality :: Replace abstract advice with thresholds, documents to check, questions to ask, or actions to sequence.
-Mark Confidence :: Label where the piece is documented, estimated, judgment-led, or unresolved.
-Protect The Reader :: Flag suitability, liquidity, leverage, tax, legal, regulatory, and operational risks.
-[/cards]
+Expert edits should improve the substance of the piece, not only the byline: better examples, caveats, decision criteria, assumptions, and risk language.
 
-Expert edits should be visible in the substance of the piece, not only in the
-byline. A strong expert pass usually improves examples, caveats, decision
-criteria, and risk language.
-
-## Fact Checking And Review
-
-Every substantial article, PDF, proposal, or public advisory asset should pass
-through a light but explicit review workflow before publication.
-
-[table widths=36,134]
+[table widths=38,132]
 Review step | What to check
 Editorial edit | Structure, clarity, tone, headline accuracy, reader usefulness, and unnecessary repetition.
 Fact check | Names, numbers, dates, claims, calculations, links, quotes, captions, charts, and source alignment.
@@ -178,13 +249,11 @@ Final proof | Grammar, formatting, metadata, image rights, mobile readability, P
 - Update or retire evergreen articles when regulations, rates, product terms, or market conditions materially change.
 - Correct errors promptly and, for material changes, note the correction or update date.
 
-## Financial And Compliance Language
+## 4.9 Financial & Compliance Wording
 
-Bengula content may educate, analyse, and explain options, but it should avoid
-language that sounds like a guaranteed outcome or personalised regulated advice
-unless the proper advisory process has occurred.
+Bengula content may educate, analyse, and explain options, but it should avoid language that sounds like a guaranteed outcome or personalised regulated advice unless the proper advisory process has occurred.
 
-[table widths=52,118]
+[table widths=60,110]
 Avoid | Use instead
 This investment will earn... | The target return depends on...
 Risk-free opportunity | Lower-risk instrument, subject to issuer, liquidity, market, and operational risks.
@@ -199,136 +268,9 @@ Secret strategy | A documented approach, framework, or market observation.
 - Distinguish education from recommendations, and recommendations from personalised advice.
 - For tax, legal, or regulated investment matters, encourage readers to consult qualified professionals where appropriate.
 
-## Writing Mechanics
+# 5. Visual Identity: Color System
 
-Use clear modern business English. Follow a practical house style based on
-common newsroom and professional-services standards: plain language, consistent
-terms, active voice where natural, precise attribution, and reader-first
-structure.
-
-[table widths=44,126]
-Element | House style
-Headlines | Specific, plain, and useful. Avoid clickbait, excessive punctuation, and unsupported superlatives.
-Lead paragraph | State the tension, decision, or insight within the first 80 words.
-Paragraphs | Keep most paragraphs to 2-4 sentences. Use shorter paragraphs for web reading.
-Numbers | Use numerals for figures, percentages, years, rates, currency amounts, and comparisons.
-Currency | Use the clearest local format for the audience: KES, USD, EUR, or written shillings where context requires.
-Acronyms | Spell out on first use unless the acronym is universally understood by the target audience.
-Quotes | Quote only when wording matters. Otherwise paraphrase and attribute.
-Images | Use images, charts, and diagrams to clarify the subject, not as generic decoration.
-[/table]
-
-- Prefer "because" to vague causal language such as "due to the fact that".
-- Prefer concrete verbs: "raises", "reduces", "delays", "prices", "funds", "limits", "transfers".
-- Define technical terms once, then use them consistently.
-- Cut throat-clearing phrases such as "it is important to note that" unless they add meaning.
-- Avoid loaded adjectives unless the evidence supports them.
-
-## Article Structure
-
-Long-form articles and research PDFs follow a six-part arc:
-
-1. Hook: a sharp opening fact, tension, or question that earns attention.
-2. Context: what the reader needs to know to follow the analysis.
-3. Analysis: the mechanism — causes, incentives, and evidence.
-4. Implications: what this means for the reader's money, business, or strategy.
-5. Recommendations: concrete, prioritised actions with their trade-offs.
-6. Conclusion: tie back to the reader's goals; one memorable takeaway.
-
-## Website Conversion Standard
-
-Bengula web pages must behave like advisory pathways, not static brochures.
-Any page meant to attract enquiries should make the visitor's next step clear,
-low-friction, and relevant to their stage of trust.
-
-[table widths=42,128]
-Standard | Requirement
-Clarity | The first screen must state who Bengula helps, what problem is solved, and what practical result the visitor can expect.
-Friction | Mobile visitors must be able to call, WhatsApp, or send a short enquiry without searching through the page.
-Focus | Each page should have one primary conversion objective. Secondary links may exist, but they should not compete visually with the main action.
-Trust | Proof, useful education, practical examples, or clear service outcomes should appear before asking for a major commitment.
-Low-risk step | Offer a smaller doorway such as an audit, review, discovery call, checklist check, or WhatsApp diagnosis before pushing a paid engagement.
-Measurement | Track form submissions, mailto clicks, WhatsApp clicks, click-to-call actions, and primary CTA clicks where possible.
-[/table]
-
-Conversion copy should avoid vague claims such as "trusted partner in
-excellence" unless supported by specific proof. Prefer direct problem-result
-language:
-
-- Say: We help Kenyan businesses turn website traffic into qualified calls, WhatsApp enquiries, and sales conversations.
-- Avoid: We provide world-class innovative solutions for all your business needs.
-
-Every service, landing, and contact page should pass the Website Enquiry Audit:
-
-1. Can a new visitor understand the offer within 3 seconds?
-2. Is the primary action visible above the fold on desktop and mobile?
-3. Is there a fast WhatsApp or click-to-call path?
-4. Does the page ask only for the information needed to start the first conversation?
-5. Does the page offer a low-risk next step for visitors who are interested but not ready to buy?
-6. Is there enough proof or specificity near the call-to-action to justify trust?
-7. Are enquiry actions measurable in analytics or event logs?
-
-## The Bengula Lens
-
-Every article examines its subject through the same analytical lens.
-Before publishing, check that the piece has addressed each angle.
-
-[cards]
-Incentives :: Who gains, who pays, and what behaviour does the structure reward?
-Constraints :: What limits the actors involved — capital, regulation, liquidity, infrastructure, execution capacity?
-Risks :: What can go wrong, how likely is it, and who carries the loss when it does?
-Opportunities :: Where does the change create openings for readers positioned to act?
-Trade-offs :: What does each course of action cost, and what is given up by choosing it?
-[/cards]
-
-## Signature Sections
-
-Recurring, named sections make Bengula content recognisable and easy to
-scan. Use them consistently across articles, PDFs, and decks.
-
-[cards]
-Key Insight :: The single non-obvious conclusion of the piece, stated early and plainly.
-Risk Factors :: An honest list of what can go wrong, with severity and likelihood where possible.
-Decision Framework :: A short checklist or table the reader can apply to their own situation.
-Confidence Note :: A short statement on whether the evidence is documented, estimated, judgment-led, or unresolved.
-Bengula View :: The desk's position — what we would weigh most heavily, and why.
-[/cards]
-
-## Brand Vocabulary
-
-[table widths=30,140]
-Direction | Words
-Use | Evidence, capital, growth, liquidity, resilience, incentives, infrastructure, systems, execution, risk, opportunity, strategy.
-Avoid | Hype, secrets, guaranteed returns, get-rich language, sensationalism, fear-bait, and urgency theatrics.
-[/table]
-
-- Say: Target return depends on execution, liquidity, and documented risk controls.
-- Say: We help clients understand the evidence, risks, and next steps before capital moves.
-
-## The Publication Test
-
-Before any asset ships, it must pass seven questions. If the answer to any
-is no, the piece goes back for another pass.
-
-1. Does it reveal something non-obvious?
-2. Does it explain causes rather than symptoms?
-3. Does it help readers make better decisions?
-4. Does it connect information to action?
-5. Are facts, figures, dates, and claims sourced or clearly labelled as assumptions?
-6. Are risks, limitations, and conflicts fairly represented?
-7. Would a domain expert be comfortable standing behind the practical guidance?
-
-> risk: Content that fails the test but ships anyway erodes the advisory
-> positioning the brand depends on. When in doubt, cut the piece, not the
-> standard.
-
-## Color System
-
-The palette is drawn directly from the bengula.co.ke interface: violet
-carries authority and brand recognition, slate carries text and structure,
-emerald marks growth and positive signals, and amber marks caution or
-premium emphasis. Web work uses the matching Tailwind utilities noted
-below; print and slide work uses the hex values.
+The palette is drawn directly from the bengula.co.ke interface. Violet carries authority and brand recognition; slate carries text and structure; emerald marks growth and positive signals; amber marks caution or premium emphasis. Web work uses the Tailwind utilities noted; print and slide work uses the hex values.
 
 [palette]
 Bengula Violet | #5B21B6 | Primary brand color (violet-800): headings, buttons, links, icon chips, PDF rules.
@@ -347,39 +289,136 @@ Canvas | #F6F5FB | Page and app background tint behind glass surfaces.
 Violet Wash | #F5F3FF | Chips, zebra rows, and soft brand-tinted fills (violet-50).
 [/palette]
 
-> info: Hierarchy rule: violet is the authority color and should anchor
-> every asset; emerald and amber are semantic accents, never decoration.
-> Keep backgrounds light for documents and reserve dark violet gradients
-> for covers, heroes, and closing slides.
+> info: Hierarchy rule: violet is the authority color and anchors every asset. Emerald and amber are semantic accents: meaning, never decoration. Keep backgrounds light for documents; reserve dark violet gradients for covers, heroes, and closing slides.
 
-## Signature Effects
+Accessibility: body text must meet WCAG AA contrast (4.5:1) against its background. Slate Body on Canvas and white passes; never set body copy in Orchid, Indigo Pulse, or any tint lighter than Slate Mist. Do not encode meaning by color alone: pair emerald and amber signals with an icon or label.
 
-The website pairs the palette with a liquid-glass aesthetic: frosted white
-cards over a softly tinted canvas, an aurora backdrop of blurred violet,
-orchid, and sky gradients, and a panning violet-to-indigo gradient on
-headline text. In static formats, echo this with light backgrounds, soft
-violet shadows, rounded corners, and a single dark-violet cover moment.
+# 6. Visual Identity: Effects, Typography, Layout
 
-- Glass cards: white at roughly 62 percent opacity with a hairline border and a soft violet shadow.
-- Gradient text: Electric Violet to Orchid to Indigo Pulse, reserved for one headline per asset.
-- Dark panels: Deep Violet with light violet text, used sparingly for contrast moments.
+## 6.1 Signature Effects (The Liquid-Glass Aesthetic)
 
-## Typography
+The website pairs the palette with frosted white cards over a softly tinted canvas, an aurora backdrop of blurred violet, orchid, and sky gradients, and a panning violet-to-indigo gradient on headline text. In static formats, echo this with light backgrounds, soft violet shadows, rounded corners, and a single dark-violet cover moment.
 
-[table widths=36,50,84]
-Role | Recommended font | Usage
-Headlines | Georgia or Charter | Editorial, credible, advisory. Use for PDF covers, article titles, and major section headings.
-Body/UI | Helvetica Neue, Inter, or Segoe UI | Clean, highly readable, modern. Use for web, decks, tables, captions, and body copy.
-Numbers/data | JetBrains Mono or Aptos Mono | Use sparingly for rates, tickers, tags, IDs, and compact dashboards.
-Fallback | Helvetica | Use where platform compatibility matters more than character.
+- Glass cards: white at roughly 62% opacity, hairline border (Slate Hairline), soft violet shadow.
+- Gradient text: Electric Violet to Orchid to Indigo Pulse. Reserve for one headline per asset.
+- Dark panels: Deep Violet with light violet text; use sparingly for contrast moments.
+
+## 6.2 Typography
+
+[table widths=30,52,88]
+Role | Font | Usage
+Headlines | Georgia or Charter | Editorial, credible, advisory. PDF covers, article titles, major section headings.
+Body / UI | Helvetica Neue, Inter, Segoe UI | Clean, readable, modern. Web, decks, tables, captions, body copy.
+Numbers and data | JetBrains Mono or Aptos Mono | Sparingly: rates, tickers, tags, IDs, compact dashboards.
+Fallback | Helvetica | Where platform compatibility matters more than character.
 [/table]
 
-- Do not use more than two font families in one asset unless data tables need a mono style.
-- Headlines should be confident and plain, not slogan-heavy.
-- Tables should use smaller type only when spacing remains comfortable.
+### Rules
 
-## Layout Rules
+- No more than two font families per asset, unless data tables need a mono style (then three maximum).
+- Headlines confident and plain, not slogan-heavy.
+- Tables may use smaller type only when spacing remains comfortable.
+- Minimum body size: 10.5pt print, 16px web.
 
-- Use generous white space and a strong typographic hierarchy before adding decoration.
-- Use tables only for true comparisons, checklists, or data. Use prose for explanation.
-- Advisory-grade presentation: every marketing PDF includes a cover, executive summary, practical framework, source list, and compliance note.
+## 6.3 Logo Usage
+
+- Primary mark: ColoredBengulaIncLogo on white or Canvas backgrounds.
+- Reversed or footer mark: GrayBengulaIncLogo on dark surfaces.
+- Clear space: keep a margin of at least the height of the "B" wordmark on all sides. Never stretch, recolor, rotate, add effects, or place the colored logo on busy imagery or dark violet panels.
+- Lockup: logo above or left of "BENGULA INC / Strategic Finance & Advisory" descriptor where the lockup is used.
+
+## 6.4 Layout Rules
+
+- Generous white space and strong typographic hierarchy before any decoration.
+- One idea per slide or section; one gradient headline per asset; one dark cover moment per document.
+- Advisory-grade presentation: every marketing PDF includes a cover, an executive summary (the "Desk Summary"), a practical framework, a source list, and a compliance note.
+- Imagery: real, contextual East African business settings preferred over generic stock; never luxury-flex imagery (supercars, cash stacks, champagne).
+- Approved stock sources: Pexels and Unsplash (both free for commercial use, no attribution required). Site articles must embed the direct CDN URL, never the photo page URL: images.pexels.com/photos/id/pexels-photo-id.jpeg for Pexels, images.unsplash.com/photo-id for Unsplash. Page URLs such as pexels.com/photo/... and unsplash.com/photos/... render as broken images on the site.
+
+# 7. Channel Guidelines
+
+## 7.1 Website (bengula.co.ke)
+
+- Hero promise pattern: outcome first, mechanism second ("Finance tools and advisory for businesses that need clear decisions, not guesswork").
+- Live data (CBK rates ticker, calculators) must show source and as-of date.
+- Calculators always carry their educational disclaimer adjacent to outputs.
+- Pages meant to attract enquiries must behave like advisory pathways, not static brochures.
+- The first screen must state who Bengula helps, what problem is solved, and what practical result the visitor can expect.
+- Mobile visitors must be able to call, WhatsApp, or send a short enquiry without searching through the page.
+- Each page should have one primary conversion objective. Secondary links may exist, but they should not compete visually with the main action.
+- Proof, useful education, practical examples, or clear service outcomes should appear before asking for a major commitment.
+- Offer a smaller doorway such as an audit, review, discovery call, checklist check, or WhatsApp diagnosis before pushing a paid engagement.
+- Track form submissions, mailto clicks, WhatsApp clicks, click-to-call actions, and primary CTA clicks where possible.
+
+### Website Enquiry Audit
+
+1. Can a new visitor understand the offer within 3 seconds?
+2. Is the primary action visible above the fold on desktop and mobile?
+3. Is there a fast WhatsApp or click-to-call path?
+4. Does the page ask only for the information needed to start the first conversation?
+5. Does the page offer a low-risk next step for visitors who are interested but not ready to buy?
+6. Is there enough proof or specificity near the call-to-action to justify trust?
+7. Are enquiry actions measurable in analytics or event logs?
+
+## 7.2 Research PDFs & Dossiers
+
+- Byline: "Bengula Inc Research Desk" with page footer and page numbers.
+- Required spine: Cover, then Desk Summary, then Body (the six-part arc), then Decision Framework, Risk Factors, Bengula View, Sources, and a Compliance note.
+- File naming: lowercase_snake_case, descriptive, with year where relevant (for example, annual_east_africa_fiscal_macro_trends_analysis_2026.pdf).
+
+## 7.3 The Sovereign Ledger (Newsletter)
+
+- Weekly. Concise, practical notes on business finance, banking products, market rates, and using data to grow.
+- Structure: one lead insight, two or three short notes, one rate or data snapshot, one action prompt. Target 400 to 700 words.
+
+## 7.4 Social (LinkedIn, X, Instagram)
+
+- One idea per post. Lead with the non-obvious fact or number.
+- No engagement-bait, no urgency theatrics, no unlabelled promotion.
+- Numbers and rates always dated. Carousel and graphic posts use the color system and the body/UI typeface.
+
+## 7.5 Decks & Proposals
+
+- Dark violet cover and closing slide; light content slides.
+- Every proposal states scope, deliverables, assumptions, exclusions, fees, and the compliance boundary.
+
+# 8. Compliance & Disclaimer Language
+
+## 8.1 The Boundary
+
+Bengula Inc is a private holding and advisory or education platform. It is not a bank and does not give regulated, licensed investment advice. Any regulated banking product is opened and finalised directly with the licensed bank or provider that issues it. Content must always preserve the boundary between Bengula Inc's independent education and advisory work and the founder's formal employment as a bank Relationship Manager.
+
+## 8.2 Standard Disclaimer
+
+Use verbatim on calculators, dossiers, and tools:
+
+> info: The analytical calculators, projections, and educational tools provided are built exclusively for academic, informational, and general financial literacy education. They do not constitute formal, binding regulated financial, legal, or licensed brokerage counsel. Any regulated banking product is opened and finalised directly with the licensed bank or provider that issues it.
+
+## 8.3 Short-Form Disclaimer
+
+Use on social posts and newsletter footers:
+
+> info: General market education, not individualized financial, tax, legal, or investment advice. Verify live rates, licensing, and suitability before acting.
+
+## 8.4 Hard Rules
+
+- Never promise, guarantee, or imply assured returns.
+- Never publish a rate, yield, or price without a source and date.
+- Never present Investment Pools or placements without risk factors.
+- Never imply Absa Bank, or any employer, endorses Bengula Inc content.
+- Client information is confidential; no client-identifying details in published work without written consent.
+
+# 9. Governance
+
+- This guide is versioned. Material changes increment the version number and are logged below.
+- The Research Desk owns editorial sign-off; the founder owns brand and compliance sign-off.
+- Any asset failing the Publication Test (Section 4.4) or the compliance rules (Section 8.4) does not ship, regardless of deadline.
+- Review cycle: this guide is reviewed every six months or whenever the site design system changes.
+
+## Change Log
+
+- v2.3, 12 Jul 2026: added H1, H2, and H3 hierarchy, usage, and Markdown-formatting rules.
+- v2.2, 11 Jul 2026: folded missing PDF material back into the master, covering scarce-data confidence labels, evidence handling, expert review, the fact-check workflow, financial and compliance wording, and website conversion standards.
+- v2.1, 12 Jun 2026: headline rule changed from sentence case to Title Case for article titles and headings (founder decision, matching live-site convention).
+- v2.0, 11 Jun 2026: restructured to industry-standard format; added brand architecture, house-style mechanics, accessibility rules, logo usage, channel guidelines, compliance section, and governance.
+- v1.0, Jun 2026: initial brand and editorial guide (PDF).

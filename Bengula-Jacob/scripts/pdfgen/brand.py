@@ -81,7 +81,11 @@ CONTENT_WIDTH = 170 * mm
 def build_styles():
     base = getSampleStyleSheet()
     base.add(ParagraphStyle("DocTitle", fontName=SERIF_BOLD, fontSize=24, leading=28, textColor=PRIMARY, spaceAfter=9))
+    # Document heading scale: H1B (# ) > H2B (## ) > H3Head (### ). H3B stays
+    # reserved for component-internal titles (cards) and is intentionally small.
+    base.add(ParagraphStyle("H1B", fontName=SERIF_BOLD, fontSize=21, leading=25, textColor=PRIMARY, spaceBefore=17, spaceAfter=3))
     base.add(ParagraphStyle("H2B", fontName=SERIF_BOLD, fontSize=17, leading=20, textColor=PRIMARY, spaceBefore=10, spaceAfter=7))
+    base.add(ParagraphStyle("H3Head", fontName=SANS_BOLD, fontSize=11.5, leading=14, textColor=INK, spaceBefore=9, spaceAfter=3))
     base.add(ParagraphStyle("H3B", fontName=SANS_BOLD, fontSize=9.5, leading=12, textColor=INK, spaceBefore=7, spaceAfter=4))
     base.add(ParagraphStyle("BodyB", fontName=SANS, fontSize=9.7, leading=14, textColor=BODY_TEXT, spaceAfter=6))
     base.add(ParagraphStyle("SmallB", fontName=SANS, fontSize=8.1, leading=11, textColor=MUTED, spaceAfter=4))

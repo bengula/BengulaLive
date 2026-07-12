@@ -189,4 +189,4 @@ Bad debt is not a collection problem. It is a credit extension problem. Fix it u
 - [Absa Supply Chain Finance Brochure](https://cib.absa.africa/wp-content/uploads/2023/10/95739_Supply_Chain_Finance_Brochure.pdf)
 - [Absa and Unilever KES 4 Billion SME Financing Programme, The Star](https://www.the-star.co.ke/business/2026-07-04-absa-bank-unilever-roll-out-sh4bn-sme-financing-programme)
 - [UNCTAD World Supply Chain Finance Report 2025](https://unctad.org/system/files/official-document/aldc2025d3_en.pdf)
-- Bengula Inc: [Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya), [How to Build an Accurate Startup Budget](/blog/how-to-build-an-accurate-startup-budget), [How Embedded Finance Is Reimagining the Point of Payment in Kenya](/blog/embedded-finance-kenya-guide)
+- Bengula Inc: [The Complete SME Finance Handbook for Kenya](/blog/sme-finance-handbook-kenya), [Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya), [How to Build an Accurate Startup Budget](/blog/how-to-build-an-accurate-startup-budget), [How Embedded Finance Is Reimagining the Point of Payment in Kenya](/blog/embedded-finance-kenya-guide)

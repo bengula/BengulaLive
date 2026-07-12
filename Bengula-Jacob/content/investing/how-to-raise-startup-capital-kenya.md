@@ -114,6 +114,7 @@ The desk's view is that Kenyan founders over-index on the most photographed rung
 
 ### Related Reading
 
+- [The Complete SME Finance Handbook for Kenya](/blog/sme-finance-handbook-kenya). The debt side of the ladder, facility by facility.
 - [How to Structure Friends and Family Investments](/blog/how-to-structure-friends-and-family-investments). The first external cheque, done properly.
 - [How to Build an Accurate Startup Budget](/blog/how-to-build-an-accurate-startup-budget). The numbers every funder will test.
 - [Best Pitch Deck Examples from Startups](/blog/best-pitch-deck-examples-startups). What twenty real decks did right.

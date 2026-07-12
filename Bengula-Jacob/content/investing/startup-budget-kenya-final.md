@@ -111,4 +111,4 @@ A good startup budget is not a document you submit to a bank. It is a habit, one
 ### Sources and Further Reading
 
 - [Small Business Budget Statistics, Small Biz Trends](https://smallbiztrends.com/2018/11/small-business-budget-statistics.html)
-- Bengula Inc: [How to Structure Friends and Family Investments](/blog/how-to-structure-friends-and-family-investments), [Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya), [Banking-as-a-Service in Kenya](/blog/banking-as-a-service-kenya-baas-guide)
+- Bengula Inc: [The Complete SME Finance Handbook for Kenya](/blog/sme-finance-handbook-kenya), [How to Structure Friends and Family Investments](/blog/how-to-structure-friends-and-family-investments), [Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya), [Banking-as-a-Service in Kenya](/blog/banking-as-a-service-kenya-baas-guide)
