@@ -68,7 +68,20 @@ function MermaidDiagram({ chart }: { chart: string }) {
     setError(false);
 
     loadMermaid()
-      .then((mermaid) => mermaid.render(`${diagramId}-${Date.now()}`, normalizeMermaidChart(chart)))
+      .then(async (mermaid) => {
+        // Mermaid sizes each label to the text width it measures at render time.
+        // If fonts are still loading, the paint is slightly wider than the measure
+        // and the last glyph gets clipped (worst in diamonds / edge-label chips).
+        // Waiting for fonts to settle makes the measurement match the paint.
+        if (typeof document !== "undefined" && document.fonts?.ready) {
+          try {
+            await document.fonts.ready;
+          } catch {
+            /* fonts API unavailable; render anyway */
+          }
+        }
+        return mermaid.render(`${diagramId}-${Date.now()}`, normalizeMermaidChart(chart));
+      })
       .then(({ svg }) => {
         if (!cancelled) {
           setSvg(svg);

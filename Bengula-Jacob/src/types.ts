@@ -25,6 +25,12 @@ export interface BlogPost {
   date: string;
   readTime: string;
   featured?: boolean;
+  // Optional SEO overrides. When set, these tune the <title> and meta
+  // description independently of the on-page title/summary. Keep metaTitle
+  // (incl. any brand suffix) around 60 chars and metaDescription 150-160 so
+  // search engines don't truncate them.
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export interface PortfolioItem {

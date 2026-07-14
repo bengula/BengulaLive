@@ -321,7 +321,7 @@ The sector map helps too: the NSE is roughly banks (the deepest, most liquid seg
 
 **Property two: the lock.** Pension money has access rules, portions locked to retirement age or restricted on job changes, and payouts structured as lump sums, annuities, or income drawdown. The lock is the point: it is the one wrapper your own worst month cannot raid. The same feature makes it wrong for any money with a pre-retirement date.
 
-**The honest caveats.** Scheme fees vary widely and compound against you exactly as returns compound for you; ask for the total expense figure in writing. Guaranteed funds trade upside for a floor; segregated funds do the opposite. And NSSF's rising tier contributions are a floor, not a plan. A dedicated Bengula guide to retirement planning (NSSF tiers, personal pensions, and drawdown mechanics) is planned; until then, the rule of thumb: capture the full tax-deductible cap before adding to taxable long-term investments, unless liquidity needs forbid it.
+**The honest caveats.** Scheme fees vary widely and compound against you exactly as returns compound for you; ask for the total expense figure in writing. Guaranteed funds trade upside for a floor; segregated funds do the opposite. And NSSF's rising tier contributions are a floor, not a plan. The full treatment, the February 2026 NSSF tiers, personal pension plans, the tax relief, and how to turn the pot into income, is in [Retirement Planning in Kenya](/blog/retirement-planning-kenya-guide); the rule of thumb meanwhile: capture the full tax-deductible cap before adding to taxable long-term investments, unless liquidity needs forbid it.
 
 **Who it suits.** Every profile, for the retirement pot specifically, in proportion to how much of the tax cap you can use.
 

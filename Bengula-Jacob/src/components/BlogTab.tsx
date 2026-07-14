@@ -158,8 +158,8 @@ export default function BlogTab() {
 
       {activePost ? (
         <Seo
-          title={`${activePost.title} | Bengula Inc`}
-          description={activePost.summary}
+          title={activePost.metaTitle ?? `${activePost.title} | Bengula Inc`}
+          description={activePost.metaDescription ?? activePost.summary}
           path={`/blog/${activePost.id}`}
           image={articleImage}
           type="article"
