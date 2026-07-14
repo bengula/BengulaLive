@@ -77,9 +77,9 @@ Two rules apply across all three profiles:
 
 ```mermaid
 flowchart TD
-  A["Foundation: float + emergency fund in an MMF"] --> B["Income floor: T-bills, bonds, SACCO deposits"]
-  B --> C["Growth engine: NSE equities, REITs, land, foreign ETFs"]
-  C --> D["Satellite: gold, crypto; kept to 5-10% of the portfolio"]
+  A["Foundation:<br>float + emergency fund in an MMF"] --> B["Income floor:<br>T-bills, bonds, SACCO deposits"]
+  B --> C["Growth engine:<br>NSE equities, REITs, land, foreign ETFs"]
+  C --> D["Satellite: gold, crypto,<br>kept to 5-10% of the portfolio"]
 ```
 
 ---

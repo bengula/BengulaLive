@@ -38,13 +38,13 @@ This gap between recognition and collection is where cash flow problems originat
 ### The AR Lifecycle
 
 ```mermaid
-flowchart LR
-    A["📦 Goods/Service\nDelivered"] --> B["🧾 Invoice\nIssued"]
-    B --> C["📋 AR Recorded\non Balance Sheet"]
-    C --> D["⏳ Payment\nPeriod"]
-    D --> E["✅ Payment\nReceived"]
-    E --> F["📉 AR Cleared,\nCash Increases"]
-    D --> G["⚠️ Overdue\nFollow-up Required"]
+flowchart TD
+    A["📦 Goods/Service<br>Delivered"] --> B["🧾 Invoice<br>Issued"]
+    B --> C["📋 AR Recorded<br>on Balance Sheet"]
+    C --> D["⏳ Payment<br>Period"]
+    D --> E["✅ Payment<br>Received"]
+    E --> F["📉 AR Cleared,<br>Cash Increases"]
+    D --> G["⚠️ Overdue<br>Follow-up Required"]
     G --> E
 
     style A fill:#3b82f6,color:#fff,stroke:none

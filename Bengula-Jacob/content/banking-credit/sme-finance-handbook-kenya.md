@@ -132,11 +132,11 @@ The most Kenyan of financing problems: you win an order bigger than your balance
 **PO/LPO finance** funds the fulfilment against the strength of the order and, crucially, the creditworthiness of the *buyer*:
 
 ```mermaid
-flowchart LR
-  A["1. Buyer issues LPO to the SME"] --> B["2. Lender verifies the LPO with the buyer"]
-  B --> C["3. Lender pays the supplier or funds fulfilment (typically 60-80% of order cost)"]
-  C --> D["4. SME delivers; buyer confirms acceptance"]
-  D --> E["5. Buyer pays into a controlled account; lender takes principal + fee, SME keeps the margin"]
+flowchart TD
+  A["1. Buyer issues LPO<br>to the SME"] --> B["2. Lender verifies the LPO<br>with the buyer"]
+  B --> C["3. Lender pays the supplier or funds fulfilment<br>(typically 60-80% of order cost)"]
+  C --> D["4. SME delivers;<br>buyer confirms acceptance"]
+  D --> E["5. Buyer pays into a controlled account;<br>lender takes principal + fee, SME keeps the margin"]
 ```
 
 **What lenders need to see:** a genuine, verifiable LPO from a pre-approved buyer (blue-chip corporates, government entities); evidence you have fulfilled similar orders; supplier quotations showing the fulfilment cost; and margins that survive the financing fee, typically a facility fee plus interest for the 30-120 day fulfilment window. Government LPOs qualify widely (the buyer's credit is sovereign) but bring the payment-cycle problem: structure the facility tenor for the government's actual paying speed, not the contract's promise, and plan the exit through invoice discounting once delivery converts the LPO into a receivable.

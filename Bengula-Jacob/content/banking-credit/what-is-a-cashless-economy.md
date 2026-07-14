@@ -55,12 +55,12 @@ Preferences sum to more than 100% because most Kenyans use several methods side 
 ### The Five Instruments of a Cashless Economy
 
 ```mermaid
-flowchart LR
-    A["💳 Plastic Money\nCards"] --> F["🏦 Cashless\nEconomy"]
-    B["📱 Mobile Wallets\nM-Pesa, Airtel"] --> F
-    C["🌐 Internet Banking\nRTGS, PesaLink"] --> F
-    D["₿ Cryptocurrencies\nBitcoin, stablecoins"] --> F
-    E["🔗 Embedded Finance\nBNPL, wallets in apps"] --> F
+flowchart TD
+    A["💳 Plastic Money<br>Cards"] --> F["🏦 Cashless<br>Economy"]
+    B["📱 Mobile Wallets<br>M-Pesa, Airtel"] --> F
+    C["🌐 Internet Banking<br>RTGS, PesaLink"] --> F
+    D["₿ Cryptocurrencies<br>Bitcoin, stablecoins"] --> F
+    E["🔗 Embedded Finance<br>BNPL, wallets in apps"] --> F
 
     style F fill:#5B21B6,color:#fff,stroke:none
     style A fill:#3b82f6,color:#fff,stroke:none

@@ -52,14 +52,14 @@ All significant M&A activity in Kenya passes through two regulators:
 
 ```mermaid
 flowchart TD
-    A["Acquisitions"] --> B["Horizontal\nSame industry, same stage"]
-    A --> C["Vertical\nSupply chain integration"]
-    A --> D["Congeneric\nRelated market, different product"]
-    A --> E["Conglomerate\nUnrelated industries"]
-    A --> F["Market Extension\nSame product, new geography"]
-    A --> G["Reverse Takeover\nPrivate goes public via shell"]
-    A --> H["SPAC\nBlank-check IPO then acquire"]
-    A --> I["Acquihire\nBuying for talent"]
+    A["Acquisitions"] --> B["Horizontal<br>Same industry, same stage"]
+    A --> C["Vertical<br>Supply chain integration"]
+    A --> D["Congeneric<br>Related market, different product"]
+    A --> E["Conglomerate<br>Unrelated industries"]
+    A --> F["Market Extension<br>Same product, new geography"]
+    A --> G["Reverse Takeover<br>Private goes public via shell"]
+    A --> H["SPAC<br>Blank-check IPO then acquire"]
+    A --> I["Acquihire<br>Buying for talent"]
 
     style A fill:#5B21B6,color:#fff,stroke:none
     style B fill:#3b82f6,color:#fff,stroke:none

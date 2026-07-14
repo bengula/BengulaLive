@@ -29,13 +29,13 @@ The decks that raised money, Airbnb's $4.4 billion, Facebook's $500,000 from Pet
 The narrative structure follows a simple arc:
 
 ```mermaid
-flowchart LR
-    A["🔥 Problem\n(urgent)"] --> B["🧱 Why Unsolved\nBarriers so far"]
-    B --> C["🪟 The Window\nWhat just changed"]
-    C --> D["🛠️ What We Built\nThe solution"]
-    D --> E["📊 Proof\nIt works"]
-    E --> F["📈 Scale\nHow we grow"]
-    F --> G["🤝 The Ask\nWhat we need"]
+flowchart TD
+    A["🔥 Problem<br>(urgent)"] --> B["🧱 Why Unsolved<br>Barriers so far"]
+    B --> C["🪟 The Window<br>What just changed"]
+    C --> D["🛠️ What We Built<br>The solution"]
+    D --> E["📊 Proof<br>It works"]
+    E --> F["📈 Scale<br>How we grow"]
+    F --> G["🤝 The Ask<br>What we need"]
 
     style A fill:#ef4444,color:#fff,stroke:none
     style B fill:#f97316,color:#fff,stroke:none

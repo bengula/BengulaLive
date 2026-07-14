@@ -44,10 +44,10 @@ The stack, from the customer down to the money:
 
 ```mermaid
 flowchart TD
-  A["Customer"] --> B["Branded platform: fintech, SACCO, e-commerce, agri-platform"]
-  B --> C["API and middleware layer: Cellulant, Craft Silicon, Kwara, bank API gateways"]
-  C --> D["Licensed bank: balance sheet, deposits, CBK compliance"]
-  D --> E["Payment rails: M-Pesa, PesaLink, card networks"]
+  A["Customer"] --> B["Branded platform:<br>fintech, SACCO, e-commerce, agri-platform"]
+  B --> C["API and middleware layer:<br>Cellulant, Craft Silicon, Kwara, bank API gateways"]
+  C --> D["Licensed bank:<br>balance sheet, deposits, CBK compliance"]
+  D --> E["Payment rails:<br>M-Pesa, PesaLink, card networks"]
 ```
 
 The customer sees only the brand at the top. The regulatory weight sits two layers down, and the money moves on rails the customer never names.

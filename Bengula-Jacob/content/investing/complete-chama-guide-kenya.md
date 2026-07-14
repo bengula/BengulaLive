@@ -44,10 +44,10 @@ The commonest chama mistake is species confusion: a merry-go-round that starts "
 A chama can hold any of five legal forms. Each step up the ladder costs more effort and buys more protection.
 
 ```mermaid
-flowchart LR
-  A["1. Unregistered group: pure trust"] --> B["2. Registered self-help group or society"]
+flowchart TD
+  A["1. Unregistered group:<br>pure trust"] --> B["2. Registered self-help<br>group or society"]
   B --> C["3. Partnership"]
-  C --> D["4. Limited Liability Partnership (LLP)"]
+  C --> D["4. Limited Liability<br>Partnership (LLP)"]
   D --> E["5. Limited company"]
 ```
 

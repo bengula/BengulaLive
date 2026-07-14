@@ -64,11 +64,11 @@ That sounds similar to hire purchase or asset finance, and economically it can f
 The sequence of the delivery van example looks like this:
 
 ```mermaid
-flowchart LR
-  A["1. Customer identifies the van, priced KES 3M"] --> B["2. Bank buys the van from the supplier"]
-  B --> C["3. Bank takes ownership of the van"]
-  C --> D["4. Bank sells it to the customer at a disclosed KES 3.45M"]
-  D --> E["5. Customer pays 36 instalments of about KES 95,800"]
+flowchart TD
+  A["1. Customer identifies the van,<br>priced KES 3M"] --> B["2. Bank buys the van<br>from the supplier"]
+  B --> C["3. Bank takes ownership<br>of the van"]
+  C --> D["4. Bank sells it to customer<br>at a disclosed KES 3.45M"]
+  D --> E["5. Customer pays 36 instalments<br>of about KES 95,800"]
 ```
 
 This is why a serious customer should ask:

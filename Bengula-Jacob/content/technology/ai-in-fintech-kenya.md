@@ -44,11 +44,11 @@ AI in fintech is an umbrella term covering several distinct technologies:
 flowchart TD
     A["🤖 AI in Fintech"] --> B["🔍 Fraud Detection"]
     A --> C["📊 Credit Scoring"]
-    A --> D["🤝 Customer Service\n& Chatbots"]
-    A --> E["📈 Algorithmic\nTrading"]
-    A --> F["📋 Regulatory\nCompliance"]
-    A --> G["⚙️ Process\nAutomation"]
-    A --> H["🛡️ AIOps & IT\nOperations"]
+    A --> D["🤝 Customer Service<br>& Chatbots"]
+    A --> E["📈 Algorithmic<br>Trading"]
+    A --> F["📋 Regulatory<br>Compliance"]
+    A --> G["⚙️ Process<br>Automation"]
+    A --> H["🛡️ AIOps & IT<br>Operations"]
 
     style A fill:#5B21B6,color:#fff,stroke:none
     style B fill:#ef4444,color:#fff,stroke:none

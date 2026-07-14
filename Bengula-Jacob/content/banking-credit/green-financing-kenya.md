@@ -58,11 +58,11 @@ Each of these risks has a financing corollary. Climate-resilient irrigation redu
 
 ```mermaid
 flowchart TD
-    A["🏦 Kenya Green Finance Framework"] --> B["📋 Kenya Green Finance\nTaxonomy (KGFT)\nApril 2025"]
-    A --> C["📊 Climate Risk Disclosure\nFramework (CRDF)\nApril 2025"]
-    A --> D["🏛️ NSE Green Bond\nSegment\nEast & Central Africa First"]
-    A --> E["📜 CMA Policy\nGuidance Note\nGreen Bond Issuance"]
-    A --> F["🌱 Kenya Green Bond\nProgramme (KGBP)\nLaunched 2017"]
+    A["🏦 Kenya Green Finance Framework"] --> B["📋 Kenya Green Finance<br>Taxonomy (KGFT)<br>April 2025"]
+    A --> C["📊 Climate Risk Disclosure<br>Framework (CRDF)<br>April 2025"]
+    A --> D["🏛️ NSE Green Bond<br>Segment<br>East & Central Africa First"]
+    A --> E["📜 CMA Policy<br>Guidance Note<br>Green Bond Issuance"]
+    A --> F["🌱 Kenya Green Bond<br>Programme (KGBP)<br>Launched 2017"]
 
     style A fill:#16a34a,color:#fff,stroke:none
     style B fill:#15803d,color:#fff,stroke:none

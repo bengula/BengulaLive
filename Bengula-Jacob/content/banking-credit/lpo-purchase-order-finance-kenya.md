@@ -23,11 +23,11 @@ Purchase order finance exists for exactly this wall. It is the facility that len
 ### How the Facility Actually Works
 
 ```mermaid
-flowchart LR
-  A["1. Buyer issues LPO to the SME"] --> B["2. Lender verifies the LPO directly with the buyer"]
-  B --> C["3. Lender funds fulfilment, typically 60-80% of order cost, often paying suppliers directly"]
-  C --> D["4. SME delivers; buyer signs acceptance"]
-  D --> E["5. Buyer pays into a controlled account; lender recovers principal plus fee, SME keeps the margin"]
+flowchart TD
+  A["1. Buyer issues LPO<br>to the SME"] --> B["2. Lender verifies the LPO<br>directly with the buyer"]
+  B --> C["3. Lender funds fulfilment<br>(typically 60-80% of order cost,<br>often paying suppliers directly)"]
+  C --> D["4. SME delivers;<br>buyer signs acceptance"]
+  D --> E["5. Buyer pays into a controlled account;<br>lender recovers principal plus fee,<br>SME keeps the margin"]
 ```
 
 The details that matter inside each step:

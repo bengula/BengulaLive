@@ -47,7 +47,18 @@ function normalizeMermaidChart(chart: string) {
         return line;
       }
 
-      return line.replace(/%/g, "#37;");
+      // 1. Replace % with #37;
+      let processed = line.replace(/%/g, "#37;");
+
+      // 2. Escape semicolons and replace \n inside double quoted strings
+      processed = processed.replace(/"([^"]*)"/g, (match, p1) => {
+        const cleanedContent = p1
+          .replace(/;/g, "#59;")
+          .replace(/\\n/g, "<br>");
+        return `"${cleanedContent}"`;
+      });
+
+      return processed;
     })
     .join("\n");
 }
@@ -60,6 +71,16 @@ function MermaidDiagram({ chart }: { chart: string }) {
   );
   const [svg, setSvg] = React.useState<string | null>(null);
   const [error, setError] = React.useState(false);
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    if (typeof window === "undefined") return;
+    const media = window.matchMedia("(max-width: 640px)");
+    setIsMobile(media.matches);
+    const listener = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    media.addEventListener("change", listener);
+    return () => media.removeEventListener("change", listener);
+  }, []);
 
   React.useEffect(() => {
     let cancelled = false;
@@ -80,7 +101,15 @@ function MermaidDiagram({ chart }: { chart: string }) {
             /* fonts API unavailable; render anyway */
           }
         }
-        return mermaid.render(`${diagramId}-${Date.now()}`, normalizeMermaidChart(chart));
+
+        let processedChart = chart;
+        if (isMobile) {
+          processedChart = processedChart
+            .replace(/\bflowchart LR\b/g, "flowchart TD")
+            .replace(/\bgraph LR\b/g, "graph TD");
+        }
+
+        return mermaid.render(`${diagramId}-${Date.now()}`, normalizeMermaidChart(processedChart));
       })
       .then(({ svg }) => {
         if (!cancelled) {
@@ -96,7 +125,7 @@ function MermaidDiagram({ chart }: { chart: string }) {
     return () => {
       cancelled = true;
     };
-  }, [chart, diagramId]);
+  }, [chart, diagramId, isMobile]);
 
   if (error) {
     return (
