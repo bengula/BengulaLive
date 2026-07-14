@@ -81,6 +81,26 @@ export const siteConfig = {
     { label: "Meru Agri Co-op",   href: "" }, // no public site — add if one exists
   ] as PartnerLink[],
 
+  // Bengula Store (merch) settings. Checkout runs client-side because the site
+  // is a static build, so only the PUBLIC (publishable) Paystack key lives here.
+  //
+  //   • paystackPublicKey: paste your live/test PUBLIC key (starts "pk_live_" /
+  //     "pk_test_") to turn on card + M-Pesa payment. Leave "" and the store
+  //     falls back to WhatsApp ordering, which works with no setup.
+  //     NEVER put a secret key (sk_...) here — it would ship to every browser.
+  //   • deliveryFeeKsh: flat fee added at checkout. Set 0 to fold it into prices
+  //     or to quote delivery per-order on WhatsApp.
+  //   • freeDeliveryThresholdKsh: order subtotal at/above which delivery is free
+  //     (null to disable).
+  commerce: {
+    paystackPublicKey: "", // e.g. "pk_live_xxx" — see note above
+    currency: "KES" as const,
+    deliveryFeeKsh: 300,
+    freeDeliveryThresholdKsh: 5000 as number | null,
+    deliveryNote:
+      "Nairobi delivery in 1-3 days; upcountry via courier (G4S/Wells Fargo), confirmed on WhatsApp.",
+  },
+
   // Add only the socials you actually use; leave the array empty to hide the bar.
   socials: [
     { label: "LinkedIn",  href: "https://www.linkedin.com/in/bengula/", handle: "bengula" },

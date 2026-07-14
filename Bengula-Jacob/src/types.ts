@@ -5,7 +5,7 @@
 
 import type { PortfolioCategory, RiskProfile } from './data/portfolioTags';
 
-export type TabId = 'home' | 'about' | 'services' | 'portfolio' | 'blog' | 'authors' | 'investments' | 'ai-coach' | 'contact';
+export type TabId = 'home' | 'about' | 'services' | 'portfolio' | 'blog' | 'authors' | 'investments' | 'ai-coach' | 'contact' | 'shop';
 
 export interface Author {
   name: string;
@@ -62,6 +62,25 @@ export interface InvestmentOpportunity {
   description: string;
   keyBenefits: string[];
   blogId?: string;
+}
+
+export interface Product {
+  id: string;
+  name: string;
+  /** Short one-line pitch shown on the product card. */
+  tagline: string;
+  /** Longer copy shown in the product detail / cart context. */
+  description: string;
+  priceKsh: number;
+  category: 'Apparel' | 'Drinkware' | 'Stationery' | 'Accessories';
+  /** Product photo — Pexels/Unsplash CDN URL or a /images/... path. Falls back to a branded tile if it fails to load. */
+  image?: string;
+  /** Optional variant options, e.g. sizes for apparel. First entry is the default. */
+  variants?: { label: string; options: string[] };
+  /** Small marketing flag, e.g. "Bestseller", "New", "Limited". */
+  badge?: string;
+  /** Set false to hide a product without deleting it. */
+  inStock?: boolean;
 }
 
 export interface ChatMessage {

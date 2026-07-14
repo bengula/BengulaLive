@@ -15,7 +15,7 @@
 
 import type { LucideIcon } from 'lucide-react';
 import {
-  Building, User, Layers, Briefcase, BookOpen, Users, Compass, MessageSquare, Phone,
+  Building, User, Layers, Briefcase, BookOpen, Users, Compass, MessageSquare, Phone, ShoppingBag,
 } from 'lucide-react';
 
 import { TabId } from './types';
@@ -42,6 +42,7 @@ export const navItems: NavItem[] = [
   { id: 'authors', path: '/authors', label: 'Authors', icon: Users },
   { id: 'investments', path: '/investments', label: 'Investment Pools', footerLabel: 'Pools', icon: Compass },
   { id: 'ai-coach', path: '/ai-coach', label: 'AI Wealth Coach', footerLabel: 'Coach', icon: MessageSquare },
+  { id: 'shop', path: '/shop', label: 'Store', footerLabel: 'Store', icon: ShoppingBag },
   { id: 'contact', path: '/contact', label: 'Contact', icon: Phone },
 ];
 

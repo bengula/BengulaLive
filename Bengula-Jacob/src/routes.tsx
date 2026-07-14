@@ -17,6 +17,7 @@ import PortfolioTab from './components/PortfolioTab';
 import BlogTab from './components/BlogTab';
 import AuthorsTab from './components/AuthorsTab';
 import InvestmentTab from './components/InvestmentTab';
+import ShopTab from './components/ShopTab';
 import AICoach from './components/AICoach';
 import ContactTab from './components/ContactTab';
 import NotFound from './components/NotFound';
@@ -34,6 +35,7 @@ export const routes: RouteRecord[] = [
       { path: 'services', element: <ServicesTab /> },
       { path: 'portfolio', element: <PortfolioTab /> },
       { path: 'investments', element: <InvestmentTab /> },
+      { path: 'shop', element: <ShopTab /> },
       { path: 'ai-coach', element: <AICoach /> },
       { path: 'contact', element: <ContactTab /> },
       { path: 'blog', element: <BlogTab /> },
