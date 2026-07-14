@@ -1,0 +1,38 @@
+name: IndexNow submit
+
+# Pings the IndexNow endpoint (Bing, Yandex, Seznam, ...) with the article URLs
+# that changed in a push to main, so new and edited posts get crawled fast.
+# The Cloudflare build runs in parallel; the script waits for each page to be
+# live (its prerendered canonical marker) before submitting. Ownership is proved
+# by the key file at public/68a7e10a854049a6863d70c87209620d.txt, so no secrets.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Bengula-Jacob/content/**/*.md"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # need history to diff the push range
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Submit changed articles to IndexNow
+        env:
+          BASE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+        run: node Bengula-Jacob/scripts/indexnow-submit.mjs
