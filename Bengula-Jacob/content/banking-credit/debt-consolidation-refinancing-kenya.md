@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/15049146/pexels-photo-15049146.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 The typical Kenyan debt crisis does not look like one big loan gone wrong. It looks like an ecosystem: a salary loan from three years ago, a credit card that stopped clearing monthly, two or three mobile apps rotating at limits, a SACCO facility, and a soft debt to a relative, each with its own date, its own price, and its own threat. No single debt is unmanageable; the *collection* of them is, because the expensive ones compound fastest and the salary services interest before it ever touches principal.

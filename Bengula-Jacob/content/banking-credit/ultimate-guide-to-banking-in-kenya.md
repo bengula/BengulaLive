@@ -9,10 +9,10 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/442574/pexels-photo-442574.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Nairobi_Skyline_Savannah_Kenya_May19_R1600687.jpg/1280px-Nairobi_Skyline_Savannah_Kenya_May19_R1600687.jpg
 ---
 
-![A clean professional desk with a laptop, notebook, phone, and glasses](https://images.pexels.com/photos/442574/pexels-photo-442574.jpeg?auto=compress&cs=tinysrgb&w=1200 "Choosing a banking partner is a capital-efficiency decision, not a place to park cash. Photo: Pexels")
+![The Nairobi skyline rising beyond the plains of Nairobi National Park](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Nairobi_Skyline_Savannah_Kenya_May19_R1600687.jpg/1280px-Nairobi_Skyline_Savannah_Kenya_May19_R1600687.jpg "Kenya has East Africa's most advanced banking sector. Choosing a partner within it is a capital-efficiency decision. Photo: Timothy A. Gonsalves, CC BY-SA 4.0, via Wikimedia Commons")
 
 Banking is the fuel of commercial scale. For Kenyan business owners, corporate executives, and institutional investors, choosing a banking partner is not about finding a safe place to store cash. It is about capital efficiency, credit access, and transaction velocity. Get the structure right and your money works harder, your payments clear faster, and your borrowing costs less. Get it wrong and your business quietly leaks margin to hidden fees, slow clearing, idle balances, and overpriced credit.
 

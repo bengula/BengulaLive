@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/6694543/pexels-photo-6694543.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 Run a thought experiment on a typical successful Kenyan professional: the salary is Kenyan, the SACCO is Kenyan, the plot is Kenyan, the NSE shares are Kenyan, the T-bills are obligations of the Kenyan government, and the business clients are Kenyan. Every layer of that financial life is a bet on the same economy, the same currency, and the same political cycle. Diversification within Kenya is diversification of instruments, not of risk.

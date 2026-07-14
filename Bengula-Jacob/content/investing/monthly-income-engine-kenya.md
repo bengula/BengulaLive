@@ -9,10 +9,10 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
-![A notebook, calculator, coins, and Kenyan-style money planning materials on a desk](https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1200 "An income engine is built in layers: liquid cash first, predictable fixed income next, then growth assets. Photo: Pexels")
+![Hands counting cash beside a card terminal](https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=1200 "An income engine is built to pay you on a schedule. Photo: Pexels")
 
 ### The Quiet Difference Between Saving and Building Income
 

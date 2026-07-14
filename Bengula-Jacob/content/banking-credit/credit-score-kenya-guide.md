@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/6693661/pexels-photo-6693661.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 Somewhere in Nairobi, three companies each hold a file on you. Every bank loan you have taken, every SACCO facility, every licensed digital loan, how you repaid them, and how you are repaying the ones still running. When you apply for credit anywhere regulated, the lender reads that file before reading your application, and under Kenya's risk-based pricing it does something more consequential than approve or decline: **it prices you**.

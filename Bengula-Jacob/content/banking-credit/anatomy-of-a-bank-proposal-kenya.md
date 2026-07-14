@@ -9,10 +9,10 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.unsplash.com/photo-1758519289366-b90c073df4a7?auto=format&fit=crop&w=1600&q=80
 ---
 
-![Two people reviewing figures across a table](https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1200 "A facility is approved on the strength of the story your numbers tell, not the size of the number you ask for. Photo: Pexels")
+![A business owner and a banker in discussion over coffee](https://images.unsplash.com/photo-1758519289366-b90c073df4a7?auto=format&fit=crop&w=1200&q=80 "A facility is approved on the strength of the story your numbers tell, not the size of the number you ask for. Photo: Unsplash")
 
 Two proposals land on a relationship manager's desk in the same week. Both are established businesses asking for a KES 10,000,000 facility. Both have real revenue, real customers, and a genuine need. One is approved inside two weeks; the other bounces back with questions, then stalls, then quietly dies in the pipeline. The difference is almost never the business. It is the proposal.
 

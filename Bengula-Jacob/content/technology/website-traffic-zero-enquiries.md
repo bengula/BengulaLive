@@ -173,6 +173,8 @@ At Bengula Inc, we build data and digital-growth systems that connect traffic, m
 
 Start with the basics: a sharper headline, a visible WhatsApp path, a shorter form, one primary call-to-action, and a low-risk audit offer. Those changes are usually faster and cheaper than another month of ads, and they often reveal whether the traffic you already have is more valuable than you thought.
 
+If you would like an outside read on where your own site is leaking enquiries, that is exactly what our free website conversion audit is for. Start the conversation on our [contact page](/contact), and we will point to the highest-impact fixes first.
+
 ### Related Reading
 - [How to Connect Business Data to Digital Visibility and Actually Grow](/blog/bengula-inc-linkedin-company-profile). Using real business numbers to drive what you publish, who you target, and how you convert.
 - [A to Z of Customer Avatars: Buyer Persona Creation](/blog/archive-customer-avatars-buyer-persona). Defining who the page is speaking to before writing the offer.

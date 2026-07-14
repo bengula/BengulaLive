@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/6693661/pexels-photo-6693661.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 Ask ten Kenyans where savings should sit and you will get four confident, contradictory answers. The bank saver points to safety. The SACCO member points to dividends and the loan multiplier. The MMF convert points to yield and asks why anyone still accepts 3% from a savings account. And the insurance agent points to an endowment plan that saves, protects, and pays out on your child's university admission day.

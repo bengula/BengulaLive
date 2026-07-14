@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/6693661/pexels-photo-6693661.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/6801647/pexels-photo-6801647.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 DhowCSD solved the access problem: any Kenyan with an ID, a KRA PIN, and KES 50,000 can now lend to the government directly, from a phone, with no broker and no fees. What the portal does not hand you is a system. Most retail investors buy one bill, wait, receive the maturity, let it idle in a bank account for three weeks, and repeat, leaking yield at every joint.

@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 Every growing Kenyan trading business eventually meets the same wall: a Local Purchase Order it cannot afford to fulfil. A supermarket chain, a county government, a large contractor issues an order for KES 4 million of goods; the suppliers want KES 3 million before anything ships; the business has KES 600,000. Declining the order caps growth at the speed of your own cash. Accepting it without funding is how delivery failures and blacklistings happen.

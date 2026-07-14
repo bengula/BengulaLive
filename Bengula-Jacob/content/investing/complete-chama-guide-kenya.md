@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 Successive FinAccess household surveys have found that roughly a third of Kenyan adults use some form of group finance: a merry-go-round at work, a table-banking circle at church, an investment club buying land. Chamas move more household money than the stock exchange touches, and they do it largely on trust, a WhatsApp group, and a treasurer's notebook.

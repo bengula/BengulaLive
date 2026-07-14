@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/6476260/pexels-photo-6476260.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 Ask a Kenyan business owner what their company is worth and you usually get one of two answers: a number built from emotion (years of sweat, priced), or a shrug. Both are expensive. The owner who cannot value their business negotiates every investment, exit, buyout, and estate conversation against people who can, and the discount for that ignorance routinely dwarfs anything ever lost to interest rates.

@@ -10,10 +10,10 @@ author:
 date: June 21, 2026
 readTime: 10 min read
 featured: true
-coverImage: https://images.pexels.com/photos/7681091/pexels-photo-7681091.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
-![Business meeting between a banker and entrepreneur](https://images.pexels.com/photos/7681091/pexels-photo-7681091.jpeg?auto=compress&cs=tinysrgb&w=1200 "The most valuable conversation in banking is the one most SMEs never have. Photo: Pexels")
+![A confident relationship manager with a team behind her](https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1200 "A good relationship manager is an asset on your side of the desk. Photo: Pexels")
 
 ### The Person Behind the Counter Is Not Your Relationship Manager
 

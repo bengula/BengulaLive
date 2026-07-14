@@ -9,10 +9,10 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/32634336/pexels-photo-32634336.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/A_colorful_matatu_in_Nairobi%2C_Kenya%2C_during_rush_hour.jpg/1280px-A_colorful_matatu_in_Nairobi%2C_Kenya%2C_during_rush_hour.jpg
 ---
 
-![Aerial view of vehicles arranged in a parking lot](https://images.pexels.com/photos/32634336/pexels-photo-32634336.jpeg?auto=compress&cs=tinysrgb&w=1200 "When the asset secures the loan, the lender's risk falls, and so should your rate. Photo: Pexels")
+![A brightly painted matatu on a Nairobi street](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/A_colorful_matatu_in_Nairobi%2C_Kenya%2C_during_rush_hour.jpg/1280px-A_colorful_matatu_in_Nairobi%2C_Kenya%2C_during_rush_hour.jpg "A matatu is a classic asset-finance purchase: the vehicle earns the income that repays the loan that bought it. Photo: AEira-WMF, CC BY 4.0, via Wikimedia Commons")
 
 If you are searching for the *cheapest asset finance interest rates in Kenya*, or weighing an *instant logbook loan* against a bank facility to buy a lorry, matatu, tractor, or piece of machinery, the question underneath all of those searches is the same one: **where is borrowed money cheapest, and why?**
 

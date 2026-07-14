@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 Every Kenyan investor knows the real estate dilemma. Property is the asset class the culture trusts most, and the one whose entry ticket, a plot, a deposit, a building, consumes an entire portfolio in one indivisible, illiquid bite. The Real Estate Investment Trust exists to dissolve exactly that dilemma: a regulated vehicle that owns property at scale and sells you a slice of the income in units you can buy small and, in principle, sell without finding a buyer for a building.

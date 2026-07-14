@@ -9,10 +9,10 @@ author:
   avatar: /images/jacob.jpg
 date: February 12, 2026
 readTime: 7 min read
-coverImage: https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
-![Team reviewing a digital growth dashboard](https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200 "Search visibility only matters when it turns into qualified enquiries. Photo: Pexels")
+![An analytics dashboard printout beside a phone](https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&cs=tinysrgb&w=1200 "Inbound is an engine: content in, measured enquiries out. Photo: Pexels")
 
 ### The Problem: A Good Business Nobody Could Find
 

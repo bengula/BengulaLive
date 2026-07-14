@@ -9,10 +9,10 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/6801644/pexels-photo-6801644.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/6693655/pexels-photo-6693655.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
-![A notebook, calculator and financial figures on a desk](https://images.pexels.com/photos/6801644/pexels-photo-6801644.jpeg?auto=compress&cs=tinysrgb&w=1200 "A ratio is just one number divided by another, but the right division turns a page of accounts into a diagnosis. Photo: Pexels")
+![A laptop, calculator, and financial papers on a desk](https://images.pexels.com/photos/6693655/pexels-photo-6693655.jpeg?auto=compress&cs=tinysrgb&w=1200 "Seven ratios turn a set of accounts into a diagnosis. Photo: Pexels")
 
 Most Kenyan business owners can tell you their turnover to the shilling. Far fewer can tell you their net margin, and fewer still know whether their business could pay its bills if next month's sales arrived late. This is not a failing of intelligence; it is a failing of tools. The accounts hold every answer, but a raw statement is a wall of numbers. Ratios are the reading glasses. Each one takes two figures you already have and divides them into a single number that means something.
 
