@@ -22,6 +22,7 @@ function loadMermaid() {
       startOnLoad: false,
       securityLevel: "strict",
       theme: "base",
+      htmlLabels: false,
       themeVariables: {
         background: "#ffffff",
         primaryColor: "#f5f3ff",
@@ -50,11 +51,11 @@ function normalizeMermaidChart(chart: string) {
       // 1. Replace % with #37;
       let processed = line.replace(/%/g, "#37;");
 
-      // 2. Escape semicolons and replace \n inside double quoted strings
+      // 2. Convert <br> to \n inside double quoted strings
       processed = processed.replace(/"([^"]*)"/g, (match, p1) => {
         const cleanedContent = p1
-          .replace(/;/g, "#59;")
-          .replace(/\\n/g, "<br>");
+          .replace(/#37;/g, "%")
+          .replace(/<br\s*\/?>/gi, "\\n");
         return `"${cleanedContent}"`;
       });
 

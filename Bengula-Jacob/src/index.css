@@ -42,10 +42,11 @@ html { scroll-behavior: smooth; }
   margin: 0 auto;
 }
 
-/* Safety net: if Mermaid's measured label box lands a pixel short of the painted
-   text, let the glyph spill rather than clip (worst in diamonds and edge chips). */
 .mermaid-diagram svg foreignObject {
   overflow: visible;
+}
+.mermaid-diagram svg foreignObject * {
+  white-space: nowrap !important;
 }
 .mermaid-diagram svg .edgeLabel .label {
   overflow: visible;
