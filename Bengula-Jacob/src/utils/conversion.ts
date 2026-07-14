@@ -2,10 +2,7 @@ export type ConversionAction =
   | 'whatsapp_click'
   | 'contact_email_prepare'
   | 'booking_email_prepare'
-  | 'booking_page_open'
-  | 'shop_add_to_cart'
-  | 'shop_checkout_paystack'
-  | 'shop_checkout_whatsapp';
+  | 'booking_page_open';
 
 export function trackConversion(action: ConversionAction, location: string) {
   if (typeof window === 'undefined') return;

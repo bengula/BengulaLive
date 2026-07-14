@@ -79,7 +79,7 @@ export default function Layout() {
     path === '/' ? pathname === '/' : pathname === path || pathname.startsWith(path + '/');
 
   const primaryNav = activeNav.filter((item) =>
-    ['home', 'about', 'services', 'portfolio', 'blog', 'shop', 'contact'].includes(item.id)
+    ['home', 'about', 'services', 'portfolio', 'blog', 'contact'].includes(item.id)
   );
   const exploreNav = activeNav.filter((item) =>
     ['authors', 'investments', 'ai-coach'].includes(item.id)
