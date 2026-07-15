@@ -412,6 +412,92 @@ export function renderInlineMarkdown(text: string, strongClassName = "text-slate
   return nodes;
 }
 
+function getTextContent(node: React.ReactNode): string {
+  if (!node) return "";
+  if (typeof node === "string" || typeof node === "number") {
+    return String(node);
+  }
+  if (Array.isArray(node)) {
+    return node.map(getTextContent).join("");
+  }
+  if (React.isValidElement(node)) {
+    if (node.type === "input") return "";
+    const element = node as React.ReactElement<any>;
+    return getTextContent(element.props.children);
+  }
+  return "";
+}
+
+function TaskListItem({ children }: { children: React.ReactNode }) {
+  const [checked, setChecked] = React.useState(false);
+  const [mounted, setMounted] = React.useState(false);
+
+  const labelText = React.useMemo(() => {
+    return getTextContent(children).trim();
+  }, [children]);
+
+  const storageKey = React.useMemo(() => {
+    if (typeof window === "undefined" || !labelText) return "";
+    return `checklist-${window.location.pathname}-${labelText.replace(/[^a-zA-Z0-9]/g, "-").toLowerCase()}`;
+  }, [labelText]);
+
+  React.useEffect(() => {
+    setMounted(true);
+    if (storageKey) {
+      const saved = localStorage.getItem(storageKey);
+      if (saved !== null) {
+        setChecked(saved === "true");
+      }
+    }
+  }, [storageKey]);
+
+  const handleToggle = () => {
+    const newVal = !checked;
+    setChecked(newVal);
+    if (storageKey) {
+      localStorage.setItem(storageKey, String(newVal));
+    }
+  };
+
+  const remainingChildren = React.useMemo(() => {
+    return React.Children.map(children, (child) => {
+      if (React.isValidElement(child) && (child.type === "input" || (child.props as any).type === "checkbox")) {
+        return null;
+      }
+      return child;
+    });
+  }, [children]);
+
+  return (
+    <li className="flex items-start gap-3 my-2.5 list-none select-none">
+      <button
+        onClick={handleToggle}
+        type="button"
+        aria-label="Toggle item"
+        className={`flex-shrink-0 w-5 h-5 mt-0.5 rounded-md border flex items-center justify-center transition-all duration-200 cursor-pointer ${
+          mounted && checked
+            ? "bg-violet-600 border-violet-600 text-white shadow-xs"
+            : "border-slate-300 bg-white hover:border-violet-400"
+        }`}
+      >
+        {mounted && checked && (
+          <svg className="w-3.5 h-3.5 stroke-[3px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        )}
+      </button>
+      <span
+        onClick={handleToggle}
+        className={`cursor-pointer transition-all duration-200 text-slate-700 leading-relaxed ${
+          mounted && checked ? "line-through text-slate-400" : ""
+        }`}
+      >
+        {remainingChildren}
+      </span>
+    </li>
+  );
+}
+
 const markdownComponents: Components = {
   h1: ({ children }) => (
     <h1 className="text-2xl md:text-3xl font-extrabold text-slate-950 pt-8 pb-2 leading-tight">
@@ -483,11 +569,16 @@ const markdownComponents: Components = {
       {children}
     </ol>
   ),
-  li: ({ children, className }) => (
-    <li className={className?.includes("task-list-item") ? "list-none pl-0" : undefined}>
-      {children}
-    </li>
-  ),
+  li: ({ children, className }) => {
+    if (className?.includes("task-list-item")) {
+      return <TaskListItem>{children}</TaskListItem>;
+    }
+    return (
+      <li className={className}>
+        {children}
+      </li>
+    );
+  },
   input: (props) => (
     <input
       {...props}
