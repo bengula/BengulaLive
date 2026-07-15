@@ -169,6 +169,7 @@ If you plan to apply for a KMRC mortgage, follow this sequence:
 * **Transaction Closing Costs:** Apart from the 10% deposit, be prepared to pay for stamp duty (4% for urban areas), legal fees, bank facility fees, and building valuation, which can total **6% to 8%** of the property value.
 
 ### Related Reading
+- [Mortgage Decision Framework for Kenya: Beyond KMRC](/blog/mortgage-decision-framework-kenya). Rent vs buy, AHM vs MRM vs standard lanes, closing-cost cash, and fixed vs variable - use this before you apply.
 - [How Kenyan Banks Price Your Loan: The Base Rate Plus 'K' Margin](/blog/how-kenyan-banks-price-loans). Learn how banks price standard credit and why KMRC's 9.5% fixed rate is a significant discount.
 - [Safe for Savers, Risky for Guarantors: The Changing Calculus of SACCO Membership in Kenya](/blog/sacco-savers-guarantors). Understand how to leverage SACCO membership to access home financing.
 - [Why Asset Finance Is Cheaper Than a Conventional Loan in Kenya](/blog/asset-finance-vs-conventional-loans). Read how secured structures reduce risk premiums across credit products.

@@ -12,7 +12,7 @@
   <xsl:template match="/">
     <html lang="en">
       <head>
-        <title>Sitemap — Bengula Inc</title>
+        <title>Sitemap - Bengula Inc</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <style>
           :root { color-scheme: light; }
@@ -70,7 +70,7 @@
           <div class="kicker">Bengula Inc</div>
           <h1>XML Sitemap</h1>
           <p class="sub">
-            <xsl:value-of select="count(s:urlset/s:url)"/> URLs — this page is a
+            <xsl:value-of select="count(s:urlset/s:url)"/> URLs - this page is a
             readable view of the machine sitemap that search engines crawl.
           </p>
           <table>
@@ -87,7 +87,7 @@
               </tr>
             </xsl:for-each>
           </table>
-          <p class="foot">Generated automatically at build time — bengula.co.ke</p>
+          <p class="foot">Generated automatically at build time - bengula.co.ke</p>
         </div>
       </body>
     </html>

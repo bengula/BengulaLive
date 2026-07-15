@@ -5,6 +5,8 @@ import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import yaml from "js-yaml";
+import * as Icons from "lucide-react";
 
 const MERMAID_CDN_URL = "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
@@ -498,6 +500,148 @@ function TaskListItem({ children }: { children: React.ReactNode }) {
   );
 }
 
+function DynamicIcon({ name, className }: { name?: string; className?: string }) {
+  if (!name) return null;
+
+  const allIcons = Icons as Record<string, any>;
+  
+  // 1. Try exact match
+  let IconComponent = allIcons[name];
+
+  // 2. Try kebab-case to PascalCase (e.g. "credit-card" to "CreditCard")
+  if (!IconComponent && name.includes("-")) {
+    const pascalName = name
+      .split("-")
+      .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+      .join("");
+    IconComponent = allIcons[pascalName];
+  }
+
+  // 3. Try case-insensitive match
+  if (!IconComponent) {
+    const lowercaseName = name.toLowerCase();
+    const foundKey = Object.keys(allIcons).find(
+      (key) => key.toLowerCase() === lowercaseName
+    );
+    if (foundKey) {
+      IconComponent = allIcons[foundKey];
+    }
+  }
+
+  if (!IconComponent) {
+    IconComponent = allIcons.HelpCircle || allIcons.HelpCircleIcon;
+  }
+
+  return <IconComponent className={className} />;
+}
+
+interface CardData {
+  icon?: string;
+  title?: string;
+  desc?: string;
+  description?: string;
+  text?: string;
+  linkText?: string;
+  btn?: string;
+  buttonText?: string;
+  linkUrl?: string;
+  path?: string;
+  href?: string;
+  type?: string;
+  color?: string;
+}
+
+const colorStyles = {
+  violet: {
+    iconContainer: "bg-violet-50 text-violet-800 border border-violet-100 group-hover:bg-violet-700 group-hover:text-white",
+    title: "text-violet-800",
+    link: "text-violet-800 hover:text-violet-900"
+  },
+  amber: {
+    iconContainer: "bg-amber-50 text-amber-700 border border-amber-100 group-hover:bg-amber-700 group-hover:text-white",
+    title: "text-slate-950",
+    link: "text-amber-700 hover:text-amber-800"
+  },
+  emerald: {
+    iconContainer: "bg-emerald-50 text-emerald-800 border border-emerald-100 group-hover:bg-emerald-700 group-hover:text-white",
+    title: "text-slate-950",
+    link: "text-emerald-800 hover:text-emerald-900"
+  }
+};
+
+function MarkdownCards({ cards }: { cards: CardData[] }) {
+  const getGridClass = (count: number) => {
+    if (count === 1) return "grid-cols-1 max-w-md mx-auto";
+    if (count === 2) return "grid-cols-1 md:grid-cols-2";
+    if (count === 3) return "grid-cols-1 md:grid-cols-3";
+    return "grid-cols-1 md:grid-cols-2 lg:grid-cols-4";
+  };
+
+  return (
+    <div className={`grid ${getGridClass(cards.length)} gap-5 my-6`}>
+      {cards.map((card, idx) => {
+        const iconName = card.icon;
+        const title = card.title;
+        const desc = card.desc || card.description || card.text;
+        const linkText = card.linkText || card.btn || card.buttonText;
+        const linkUrl = card.linkUrl || card.path || card.href;
+        
+        const theme = (card.type || card.color || "violet").toLowerCase();
+        const style = colorStyles[theme as keyof typeof colorStyles] || colorStyles.violet;
+
+        const cardContent = (
+          <>
+            <div className="space-y-4">
+              {iconName && (
+                <div className={`p-2.5 rounded-lg w-fit transition duration-300 ${style.iconContainer}`}>
+                  <DynamicIcon name={iconName} className="w-5 h-5" />
+                </div>
+              )}
+              <div>
+                <h3 className={`text-base font-bold ${style.title}`}>{title}</h3>
+                {desc && (
+                  <p className="text-xs text-slate-500 mt-1.5 leading-normal font-normal">
+                    {desc}
+                  </p>
+                )}
+              </div>
+            </div>
+            {linkText && linkUrl && (
+              <div className={`text-xs font-bold flex items-center gap-1 pt-6 transition duration-300 ${style.link}`}>
+                <span>{linkText}</span>
+                <Icons.ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+              </div>
+            )}
+          </>
+        );
+
+        if (linkUrl) {
+          return (
+            <a
+              key={idx}
+              href={linkUrl}
+              target={linkUrl.startsWith("http") ? "_blank" : undefined}
+              rel={linkUrl.startsWith("http") ? "noopener noreferrer" : undefined}
+              className="glass-card rounded-xl p-6 flex flex-col justify-between group no-underline text-inherit hover:no-underline cursor-pointer"
+            >
+              {cardContent}
+            </a>
+          );
+        }
+
+        return (
+          <div
+            key={idx}
+            className="glass-card rounded-xl p-6 flex flex-col justify-between group"
+          >
+            {cardContent}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 const markdownComponents: Components = {
   h1: ({ children }) => (
     <h1 className="text-2xl md:text-3xl font-extrabold text-slate-950 pt-8 pb-2 leading-tight">
@@ -660,6 +804,22 @@ const markdownComponents: Components = {
 
     if (language.toLowerCase() === "mermaid") {
       return <MermaidDiagram chart={code} />;
+    }
+
+    if (language.toLowerCase() === "card" || language.toLowerCase() === "cards") {
+      try {
+        const parsed = yaml.load(code);
+        const cards = Array.isArray(parsed) ? parsed : [parsed];
+        return <MarkdownCards cards={cards} />;
+      } catch (err) {
+        console.error("Failed to parse card markdown block:", err);
+        return (
+          <div className="bg-red-50 text-red-800 p-4 rounded-xl border border-red-200 my-4 text-xs font-mono">
+            <strong>Error parsing card block:</strong>
+            <pre className="mt-2 whitespace-pre-wrap">{String(err)}</pre>
+          </div>
+        );
+      }
     }
 
     return (

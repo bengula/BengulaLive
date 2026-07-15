@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "investing/ultimate-guide-to-personal-finance-kenya.md",
+                "file": "banking-credit/credit-card-interest-free-period.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ultimate-guide-to-personal-finance-kenya"
+              "title": "credit-card-interest-free-period"
             }
           },
           {
@@ -199,8 +199,16 @@
   },
   "active": "c75749b041794a9b",
   "lastOpenFiles": [
-    "blog/why-rm-is-sme-growth-asset.md",
+    "business-trade/agpo-tender-cash-flow-kenya.md",
+    "investing/unit-trusts-beyond-mmfs-kenya.md",
+    "banking-credit/mortgage-decision-framework-kenya.md",
+    "economy-policy/cbr-cycle-portfolio-positioning-kenya.md",
+    "investing/nssf-tier-ii-vs-private-pension-kenya.md",
+    "banking-credit/bank-guarantees-kenya-sme-guide.md",
+    "banking-credit/working-capital-cycle-kenya-smes.md",
+    "investing/insurance-stack-kenya-life-stages.md",
     "investing/ultimate-guide-to-personal-finance-kenya.md",
+    "blog/why-rm-is-sme-growth-asset.md",
     "blog",
     "investing/ultimate-guide-to-investing-in-kenya.md",
     "investing/startup-budget-kenya-final.md",
@@ -225,14 +233,6 @@
     "banking-credit/types-of-acquisitions.md",
     "insights/12-margin-discipline.md",
     "insights/11-platform-risk.md",
-    "insights/10-tax-drag.md",
-    "insights/9-cash-flow-before-profit.md",
-    "insights/8-crb-is-an-asset.md",
-    "insights/7-emergency-fund.md",
-    "investing/pitch-deck-narrative-kenya.md",
-    "investing/best-pitch-deck-examples-startups.md",
-    "facebook-original-pitch-deck.md",
-    "banking-credit/kmrc-affordable-housing-mortgage.md",
-    "insights/2-apr-vs-interest-rate.md"
+    "insights/10-tax-drag.md"
   ]
 }

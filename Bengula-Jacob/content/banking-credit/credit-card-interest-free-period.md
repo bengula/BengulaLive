@@ -55,6 +55,26 @@ Same card, same statement, same due date, but Purchase A enjoys more than double
 
 Rather than count days on a calendar, use the [Credit Card Interest-Free Period Calculator](/#credit-card-grace-calculator) on our home page. Enter your purchase date, your statement closing day, and your grace period, and it returns the exact interest-free days for that purchase, the payment due date, and where the purchase sits between your card's minimum and maximum grace.
 
+```cards
+- icon: Landmark
+  title: Simple & Practical
+  desc: Our proven financial principles and methodologies have driven remarkable transformations for numerous clients. We are committed to providing straightforward, efficient, and effective financial planning.
+  linkText: Explore Services
+  linkUrl: /services
+- icon: CreditCard
+  title: Accessible
+  desc: Accessibility is a top priority for Bengula because we are dedicated to breaking down barriers to knowledge and resources.
+  linkText: Try Calculator
+  linkUrl: /#credit-card-grace-calculator
+  type: amber
+- icon: ShieldCheck
+  title: Personal
+  desc: Personalization is paramount because we recognize that every individual and business is unique, with distinct goals, challenges, and aspirations.
+  linkText: Book Session
+  linkUrl: /contact
+  type: emerald
+```
+
 ### The Condition You Cannot Ignore
 
 The interest-free period is a reward for paying in full, and it is fragile.
