@@ -175,7 +175,7 @@ export default function BlogTab() {
 
       {currentActivePostId && activePost ? (
         // ================= EDITORIAL DETAIL ARTICLE VIEW =================
-        <div id="blog-editorial-article-detail" className="max-w-3xl mx-auto space-y-6">
+        <div id="blog-editorial-article-detail" className="w-full space-y-6">
           <ReadingProgress />
           <button
             onClick={() => navigate('/blog')}
