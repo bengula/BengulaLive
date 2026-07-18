@@ -7,6 +7,7 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import yaml from "js-yaml";
 import * as Icons from "lucide-react";
+import FinancialInclusionScore from "../components/FinancialInclusionScore";
 
 const MERMAID_CDN_URL = "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
@@ -693,9 +694,10 @@ const markdownComponents: Components = {
       </p>
     );
   },
-  a: ({ href, children }) => (
+  a: ({ href, children, id }) => (
     <a
       href={href}
+      id={id}
       target={href?.startsWith("http") ? "_blank" : undefined}
       rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
       className="text-violet-800 underline decoration-violet-800/30 underline-offset-2 hover:text-violet-700 break-words"
@@ -822,6 +824,11 @@ const markdownComponents: Components = {
       }
     }
 
+    // Embed interactive tools: ```inclusion
+    if (language.toLowerCase() === "inclusion") {
+      return <FinancialInclusionScore />;
+    }
+
     return (
       <figure className="my-5 overflow-hidden rounded-xl border border-slate-200 bg-slate-950 shadow-xs">
         <figcaption className="border-b border-white/10 px-4 py-2 font-mono text-[10px] font-bold uppercase tracking-wider text-slate-300">
@@ -860,8 +867,13 @@ export function MarkdownContent({
           rehypeSanitize,
           {
             ...defaultSchema,
+            // Keep in-page jump anchors (`<a id="...">`) addressable: the default
+            // schema drops `id` on anchors, and its clobber rule would otherwise
+            // rewrite it to `user-content-*`, breaking `#anchor` links.
+            clobber: [],
             attributes: {
               ...defaultSchema.attributes,
+              a: [...(defaultSchema.attributes?.a || []), "id"],
               code: [
                 ...(defaultSchema.attributes?.code || []),
                 ["className", /^language-./, "math-inline", "math-display"],

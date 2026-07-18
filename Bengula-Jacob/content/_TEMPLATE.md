@@ -102,4 +102,18 @@ Prefer content-relevant cards (choices, next steps, internal links) over generic
 
 ---
 
+### Interactive embeds
+
+Some articles mount React tools via a fenced language tag (body can be empty):
+
+````markdown
+```inclusion
+```
+````
+
+Supported today:
+- `inclusion` — Financial Inclusion Score calculator (self-check, 0–100)
+
+---
+
 Close with a strong concluding paragraph that ties the article back to the reader's goals.
