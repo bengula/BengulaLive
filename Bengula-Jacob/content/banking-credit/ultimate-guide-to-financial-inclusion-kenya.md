@@ -53,8 +53,8 @@ This guide combines the whole stack into one operating manual: the policy story 
 2. **Access is no longer the metric.** 84.8% formal access, but only 18.3% financially healthy. The NFIS 2025-2028 measures resilience, insurance, investing, and retirement readiness instead.
 3. **Access is not affordability.** Digital credit can land in two minutes and cost triple-digit [effective annual rates](/blog/mobile-digital-loans-real-cost-kenya). Always convert fees using [APR discipline](/blog/mobile-loan-vs-bank-loan-apr-breakdown).
 4. **Geography still matters.** Nairobi and major urban counties sit deeper in formal finance than many ASAL counties. Design products and habits for where you actually live.
-5. **SACCOs remain a savings-and-credit powerhouse.** 3.3 million adult members and over KSh 1.21 trillion in regulated assets, and a guarantor risk machine if you sign casually ([SACCO guide](/blog/sacco-savers-guarantors)).
-6. **Insurance and pensions are the most under-built pillars.** Penetration remains low against GDP; pension assets reached roughly **KSh 2.81 trillion** by end-2025, but informal-sector coverage lags badly.
+5. **SACCOs remain a savings-and-credit powerhouse.** 3.3 million adult members and over KES 1.21 trillion in regulated assets, and a guarantor risk machine if you sign casually ([SACCO guide](/blog/sacco-savers-guarantors)).
+6. **Insurance and pensions are the most under-built pillars.** Penetration remains low against GDP; pension assets reached roughly **KES 2.81 trillion** by end-2025, but informal-sector coverage lags badly.
 7. **CRB is the passport.** Banks, SACCOs, MFBs, and licensed DCPs feed one pricing system ([score](/blog/credit-score-kenya-guide), [fix](/blog/how-to-fix-your-crb-listing-kenya)).
 8. **Literacy is the binding constraint.** Roughly 42% of adults are considered highly financially literate. Access without literacy converts into fraud exposure and bad debt, not resilience.
 9. **Depth beats novelty.** An [emergency fund](/blog/bank-vs-sacco-vs-mmf-savings), clean CRB, and one cheap long facility beat five maxed apps.
@@ -331,11 +331,11 @@ The scale is systemic:
 - SACCOs served **3.3 million adult members** in 2024, up from 2.6 million in 2021.
 - SACCO members recorded a **74.9% monthly financial service usage rate**, well above banks at **58.7%**.
 - **178 Deposit-Taking (DT) SACCOs** and **177 Non-Withdrawable Deposit-Taking (NWDT) SACCOs** were licensed or authorised for the 2025 cycle.
-- Regulated SACCO assets exceeded **KSh 1.21 trillion** by the end of 2025, with DT SACCOs accounting for roughly **KSh 1.07 trillion**.
+- Regulated SACCO assets exceeded **KES 1.21 trillion** by the end of 2025, with DT SACCOs accounting for roughly **KES 1.07 trillion**.
 
 That makes SACCOs one of Kenya's largest mobilisers of domestic savings outside commercial banking.
 
-**Savers** get discipline, competitive loan pricing, and dividends. **Guarantors** can inherit default. Governance weakness, fraud, internal control failures, and cyber risk are the sector's live problems, so post-governance-shock (the KUSCCO-era lessons), prefer transparent, well-licensed societies and verify SASRA licensing before depositing. Full treatment: [Safe for Savers, Risky for Guarantors](/blog/sacco-savers-guarantors). Home finance channel: [KMRC](/blog/kmrc-affordable-housing-mortgage) and the [mortgage framework](/blog/mortgage-decision-framework-kenya).
+**Savers** get discipline, competitive loan pricing, and dividends. **Guarantors** can inherit default. Governance weakness, fraud, internal control failures, and cyber risk are the sector's live problems, so post-governance-shock (the KUSCCO-era lessons), prefer transparent, well-licensed societies and verify SASRA licensing before depositing. Full treatment: [Safe for Savers, Risky for Guarantors](/blog/sacco-savers-guarantors), with the membership mechanics (shares vs deposits, dividends, nominees, exit, and the deposit guarantee question) in [The Ultimate Guide to SACCO Membership](/blog/ultimate-guide-to-sacco-membership-kenya). Home finance channel: [KMRC](/blog/kmrc-affordable-housing-mortgage) and the [mortgage framework](/blog/mortgage-decision-framework-kenya).
 
 ### 7.3 Mobile And Digital Credit
 
@@ -407,7 +407,7 @@ Retirement is the inclusion pillar with the longest time horizon and the least u
 | **Occupational schemes** | Employer-established defined-contribution, defined-benefit, or umbrella schemes |
 | **Individual Retirement Benefit Schemes** | Voluntary, for the self-employed, freelancers, and anyone without an employer scheme |
 
-Kenya's total pension assets under management reached roughly **KSh 2.81 trillion** by the end of 2025, regulated by the **Retirement Benefits Authority (RBA)**. That capital does not only secure individual retirements; it finances government securities, infrastructure, and equities, making pension inclusion a driver of national capital formation as much as personal security.
+Kenya's total pension assets under management reached roughly **KES 2.81 trillion** by the end of 2025, regulated by the **Retirement Benefits Authority (RBA)**. That capital does not only secure individual retirements; it finances government securities, infrastructure, and equities, making pension inclusion a driver of national capital formation as much as personal security.
 
 The structural gap is the informal economy: farmers, boda boda operators, traders, artisans, domestic workers, and gig workers with irregular income, for whom a fixed monthly contribution model does not fit. Flexible, mobile-linked contribution products are the strategy's answer, and digital onboarding, mobile contributions, and performance tracking are lowering the friction.
 
@@ -428,7 +428,7 @@ Saving protects money against loss. Investing is the only pillar that protects i
 | **Collective Investment Schemes (CIS)** | Pooled and professionally managed, ranging from money market to equity and multi-asset funds |
 | **REITs** | Property exposure without direct ownership |
 
-CIS assets under management passed **KSh 600 billion** in 2025, regulated by the **Capital Markets Authority (CMA)**, with MMFs acting as the default first product for a new investor. The CMA has approved a widening range of money market, balanced, fixed income, equity, and multi-asset funds, so the constraint is no longer product availability.
+CIS assets under management passed **KES 600 billion** in 2025, regulated by the **Capital Markets Authority (CMA)**, with MMFs acting as the default first product for a new investor. The CMA has approved a widening range of money market, balanced, fixed income, equity, and multi-asset funds, so the constraint is no longer product availability.
 
 The barriers that keep participation below its potential are familiar: limited literacy on risk, return, and compounding; the belief that all investing equals speculation; short-term pressure crowding out long-term thinking; and, increasingly, social-media exposure to unlicensed schemes promising unrealistic returns. Before committing capital anywhere, verify the provider is licensed by the CMA, RBA, IRA, SASRA, or CBK, depending on the product.
 
@@ -667,7 +667,7 @@ The NFIS bets on four mechanisms to convert access into health by 2028.
   title: Green finance
   desc: One of the NFIS's strategic pillars, building inclusive markets for climate adaptation, renewable energy, and climate-resilient agricultural insurance.
   linkText: Green financing in Kenya
-  linkUrl: /blog/green-financing-kenya
+  linkUrl: /blog/green-financing-kenya-guide
 ```
 
 None of these replace the fundamentals. Rural inclusion still depends on connectivity, agency banking reach, and SACCO modernisation. Fintech's role is shifting from disruption to partnership, working alongside banks, insurers, and SACCOs rather than against them.
@@ -687,6 +687,7 @@ And the measurement itself is changing. Historically inclusion was counted in ba
 | MMF deep dive | [Future of MMFs](/blog/future-mmfs-kenya) |
 | Unit trusts beyond MMFs | [Unit trusts guide](/blog/unit-trusts-beyond-mmfs-kenya) |
 | SACCO save and guarantee | [Savers and Guarantors](/blog/sacco-savers-guarantors) |
+| SACCO membership mechanics | [Ultimate Guide to SACCO Membership](/blog/ultimate-guide-to-sacco-membership-kenya) |
 | Digital loan cost | [Mobile and Digital Loans](/blog/mobile-digital-loans-real-cost-kenya) |
 | APR and real cost of credit | [Interest rates and APR](/blog/mobile-loan-vs-bank-loan-apr-breakdown) |
 | Debt management | [Debt consolidation](/blog/debt-consolidation-refinancing-kenya), [Borrowing map](/blog/borrowing-money-in-kenya-guide) |
@@ -702,7 +703,7 @@ And the measurement itself is changing. Historically inclusion was counted in ba
 | Home finance | [KMRC](/blog/kmrc-affordable-housing-mortgage), [Mortgage framework](/blog/mortgage-decision-framework-kenya) |
 | Protection | [Insurance stack](/blog/insurance-stack-kenya-life-stages) |
 | Retirement | [Retirement](/blog/retirement-planning-kenya-guide), [NSSF vs IPP](/blog/nssf-tier-ii-vs-private-pension-kenya) |
-| Green and climate finance | [Green Financing in Kenya](/blog/green-financing-kenya) |
+| Green and climate finance | [Green Financing in Kenya](/blog/green-financing-kenya-guide) |
 | Policy rates | [CBR cycle playbook](/blog/cbr-cycle-portfolio-positioning-kenya) |
 
 ---

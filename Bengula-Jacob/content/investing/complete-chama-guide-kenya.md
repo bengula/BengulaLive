@@ -16,7 +16,7 @@ Successive FinAccess household surveys have found that roughly a third of Kenyan
 
 That informality is the chama's genius and its weakness. It costs nothing to start and requires no lawyer, which is why chamas exist everywhere. It also means that when the pot grows past a few hundred thousand shillings, the structure that was charming at KES 5,000 a month becomes dangerous: no legal identity, no enforceable rules, one signature between the savings and a disappearing treasurer.
 
-This guide covers the full arc: what kind of chama you are actually running, when and how to formalise it, how to bank it, and how to invest a growing pot without breaking the group.
+This guide covers the full arc: what kind of chama you are actually running, when and how to formalise it, how to bank it, and how to invest a growing pot without breaking the group. When the pot graduates into land-banking, continue with [Chama Syndication 2.0: LLPs and land frameworks](/blog/chama-llp-land-banking-kenya).
 
 > **Key Insight:** A chama does not fail because members are dishonest. It fails because the rules were never written down, so the first serious disagreement has nothing to appeal to. Structure is not bureaucracy; it is the thing that lets friends stay friends after money gets involved.
 

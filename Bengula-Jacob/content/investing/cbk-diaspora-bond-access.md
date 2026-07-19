@@ -15,7 +15,7 @@ author:
 
 Kenyans abroad sent home a record **US$4.94 billion in 2024**, making diaspora remittances the country's single largest source of foreign exchange. However, a significant portion of these inflows lands in daily consumption or sits in idle, low-interest checking accounts. 
 
-For the diaspora investor, the challenge has rarely been the willingness to invest, but the **friction of access**. Traditionally, buying a government bond meant appointing a local agent, power of attorney, and physical paperwork. The launch of the Central Bank of Kenya's **DhowCSD portal** has changed this dynamic, placing direct bond trading in the palm of your hand.
+For the diaspora investor, the challenge has rarely been the willingness to invest, but the **friction of access**. Traditionally, buying a government bond meant appointing a local agent, power of attorney, and physical paperwork. The launch of the Central Bank of Kenya's **DhowCSD portal** has changed this dynamic, placing direct bond trading in the palm of your hand. Land remains a different, higher-process risk; that playbook is in [Buying Land From the Diaspora](/blog/diaspora-land-purchase-kenya).
 
 > **Key Insight:** Direct investment in high-yielding Kenyan sovereign debt is now fully digital. By bypassing local brokers and middle-men, diaspora investors can secure tax-advantaged local yields while maintaining direct control of their portfolio.
 
@@ -62,8 +62,8 @@ Once your CSD account is active, you can bid on active Treasury Bill (T-Bill) or
 
 #### Competitive vs. Non-Competitive Bids
 When placing a bid, you must choose your bidding type:
-* **Non-Competitive Bids:** You agree to accept the weighted average yield determined by the market during the auction. This is the recommended route for retail and diaspora investors. The minimum amount is **KSh 50,000** for T-bills and T-bonds.
-* **Competitive Bids:** You specify the exact yield (interest rate) you are willing to accept. If the market average settles lower than your bid, your application will be rejected. This is typically used by institutional investors (pension funds, commercial banks) placing bids of **KSh 2 million or more**.
+* **Non-Competitive Bids:** You agree to accept the weighted average yield determined by the market during the auction. This is the recommended route for retail and diaspora investors. The minimum amount is **KES 50,000** for T-bills and T-bonds.
+* **Competitive Bids:** You specify the exact yield (interest rate) you are willing to accept. If the market average settles lower than your bid, your application will be rejected. This is typically used by institutional investors (pension funds, commercial banks) placing bids of **KES 2 million or more**.
 
 ---
 

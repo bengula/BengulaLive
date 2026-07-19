@@ -22,7 +22,7 @@ You do not need an accounting qualification to use them. You need seven ratios, 
 
 ### Mama Chai Foods Ltd: One Set of Accounts
 
-Every example below uses this one company, a small food processor, so the ratios tie together. Here is its year in figures:
+Every example below uses this one company, a small food processor, so the ratios tie together. If you want to see where these figures come from, [How to Read Financial Statements](/blog/how-to-read-financial-statements-kenya) walks Mama Chai's full income statement, balance sheet, and cash flow statement line by line before the ratios start. Here is its year in figures:
 
 | Line | Amount (KES) |
 |---|---|

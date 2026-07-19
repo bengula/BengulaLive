@@ -18,7 +18,7 @@ coverImage: https://images.pexels.com/photos/8112172/pexels-photo-8112172.jpeg?a
 
 ![Two people shaking hands across an office desk](https://images.pexels.com/photos/8112172/pexels-photo-8112172.jpeg?auto=compress&cs=tinysrgb&w=1200 "A guarantorship is a handshake with legal weight: if the borrower defaults, the debt becomes yours. Photo: Pexels")
 
-For decades, Savings and Credit Cooperative Organisations (SACCOs) have been one of Kenya's great financial success stories. They have helped millions of Kenyans save, access affordable credit, build homes, educate their children, and start businesses. The scale is now systemic: SACCOs regulated by the Sacco Societies Regulatory Authority (SASRA) held [KES 1.07 trillion in assets and KES 749 billion in member deposits as at December 2024](https://www.sasra.go.ke/2025/09/25/sasra-releases-the-2024-sacco-supervision-annual-report/), spread across 357 regulated societies. For the disciplined saver, they remain among the most effective wealth-building vehicles available, offering dividends, member ownership, and a savings culture that few traditional products can match.
+For decades, Savings and Credit Cooperative Organisations (SACCOs) have been one of Kenya's great financial success stories. They have helped millions of Kenyans save, access affordable credit, build homes, educate their children, and start businesses. The scale is now systemic: SACCOs regulated by the Sacco Societies Regulatory Authority (SASRA) held [KES 1.07 trillion in assets and KES 749 billion in member deposits as at December 2024](https://www.sasra.go.ke/sacco-supervision-reports/), spread across 357 regulated societies. For the disciplined saver, they remain among the most effective wealth-building vehicles available, offering dividends, member ownership, and a savings culture that few traditional products can match.
 
 Yet a troubling trend has taken hold in recent years. While SACCOs continue to reward savers, they are becoming markedly riskier for borrowers, and especially for guarantors. The collapse of the sector's own umbrella body, the Kenya Union of Savings and Credit Co-operatives (KUSCCO), with an estimated [KES 13.3 billion in member funds lost](https://www.capitalfm.co.ke/business/2025/05/kuscco-audit-reveals-billions-lost-in-mismanagement-report-tabled-in-parliament/), has pushed the sector's weaknesses into the open and triggered the most ambitious regulatory overhaul in a generation. Meanwhile, a growing number of members are discovering that the same system that makes credit so accessible can expose them to serious financial and legal consequences when a loan goes wrong.
 
@@ -152,13 +152,14 @@ The risks attached to borrowing and guaranteeing, however, have grown significan
 
 ### Related Reading
 
+- [The Ultimate Guide to SACCO Membership in Kenya](/blog/ultimate-guide-to-sacco-membership-kenya) for the membership mechanics beyond lending: shares vs deposits, dividends, nominees, voting, exit, and the deposit guarantee question.
 - [Bank Account vs SACCO vs MMF](/blog/bank-vs-sacco-vs-mmf-savings) for where SACCO deposits fit in the wider savings decision.
 - [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans) for comparing SACCO borrowing with bank lending.
 - [How to Fix Your CRB Listing in Kenya](/blog/how-to-fix-your-crb-listing-kenya) for managing the credit side of the decision.
 - [Why the Banking Relationship Manager Is the SME's Most Underrated Growth Asset](/blog/why-rm-is-sme-growth-asset) for the lender relationship perspective.
 
 ### References
-- [SASRA Sacco Supervision Annual Report 2024](https://www.sasra.go.ke/2025/09/25/sasra-releases-the-2024-sacco-supervision-annual-report/) (released 25 September 2025). Sector assets, deposits, loan book, and NPL ratios.
+- [SASRA Sacco Supervision Annual Reports](https://www.sasra.go.ke/sacco-supervision-reports/). The 2024 report carries the sector assets, deposits, loan book, and NPL ratios cited here.
 - ["KUSCCO audit reveals billions lost in mismanagement, report tabled in Parliament", Capital Business, May 2025](https://www.capitalfm.co.ke/business/2025/05/kuscco-audit-reveals-billions-lost-in-mismanagement-report-tabled-in-parliament/). The PwC forensic audit findings.
 - ["Sacco provisions for Kuscco scandal losses hit Sh1.8 billion… and rising", Daily Nation](https://nation.africa/kenya/business/companies/sacco-provisions-for-kuscco-scandal-losses-hit-sh1-8-billion-4946980). How the loss reached member SACCOs.
 - ["Kenya, Uganda in race to change Sacco rules as losses hit members", The EastAfrican](https://www.theeastafrican.co.ke/tea/business-tech/kenya-uganda-in-race-to-change-sacco-rules-losses-hit-members-5372036). The Committee of Experts' proposals, including the 10-to-100 minimum membership change.

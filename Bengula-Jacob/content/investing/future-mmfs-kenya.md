@@ -22,7 +22,7 @@ The mistake most people make is leaving that buffer in a standard savings accoun
 
 ### Why Money Market Funds Fit This Job So Well
 
-A **Money Market Fund (MMF)** is a regulated collective-investment scheme that pools members' money and lends it short-term to high-quality borrowers, Treasury Bills, fixed deposits, and top-tier corporate paper. You get a share of that interest while keeping near-instant access to your cash.
+A **Money Market Fund (MMF)** is a regulated collective-investment scheme that pools members' money and lends it short-term to high-quality borrowers, Treasury Bills, fixed deposits, and top-tier corporate paper. You get a share of that interest while keeping near-instant access to your cash. Before you chase a leaderboard yield, run the holdings through [The MMF Stress Test](/blog/mmf-stress-test-kenya).
 
 In Kenya, MMF yields have moved with the Central Bank's rate cycle: when the CBK raises rates, the short-term instruments the fund holds reprice upward, and your yield follows, usually within weeks. The flip side is now playing out. After [ten consecutive rate cuts since August 2024](https://www.businessdailyafrica.com/), the [Central Bank of Kenya](https://www.centralbank.go.ke/) held its benchmark rate at **8.75%** in April 2026, and average MMF yields have eased from the mid-teens toward **9% to 12% gross** in the first half of 2026. The strongest funds, Cytonn, Nabo Africa, and Etica among them, were still posting effective annual rates around **12%**.
 
@@ -30,18 +30,18 @@ In Kenya, MMF yields have moved with the Central Bank's rate cycle: when the CBK
 
 | Indicator | Figure | Source |
 | --- | ---: | --- |
-| Total CIS assets under management (Sep 2025) | KSh 679.6 billion | [CMA / Cytonn](https://www.cytonn.com/uploads/downloads/q32025-utf-performance-note-compiled-vff.pdf) |
+| Total CIS assets under management (Sep 2025) | KES 679.6 billion | [CMA / Cytonn](https://www.cytonn.com/uploads/downloads/q32025-utf-performance-note-compiled-vff.pdf) |
 | Year-on-year growth in CIS AUM | +114.8% | [Cytonn Q3'2025 note](https://www.cytonn.com/uploads/downloads/q32025-utf-performance-note-compiled-vff.pdf) |
-| MMF share of all collective-scheme assets | 58.9% (~KSh 400bn) | [Capital FM](https://www.capitalfm.co.ke/business/2025/12/special-funds-surge-as-cis-assets-hit-sh680bn/) |
+| MMF share of all collective-scheme assets | 58.9% (~KES 400bn) | [Capital FM](https://www.capitalfm.co.ke/business/2025/12/special-funds-surge-as-cis-assets-hit-sh680bn/) |
 | CBK benchmark rate (Apr 2026) | 8.75% | [CBK](https://www.centralbank.go.ke/) |
 | Typical MMF net yield after 15% WHT | ~8% to 10% | Author estimate |
 
-The headline is the scale of adoption: Kenyans now hold roughly **KSh 400 billion** in money market funds alone, up from a fund category that barely registered a decade ago. That is real money voting for liquidity plus yield over a dormant savings account.
+The headline is the scale of adoption: Kenyans now hold roughly **KES 400 billion** in money market funds alone, up from a fund category that barely registered a decade ago. That is real money voting for liquidity plus yield over a dormant savings account.
 
 #### What Makes an MMF Different From a Bank Account
 - **Daily compounding, monthly payout:** Interest accrues every day and is typically credited monthly, so your buffer is always working.
 - **Real liquidity:** Most funds return your money to M-PESA or your bank within 24 to 48 hours of a withdrawal request.
-- **Low entry point:** Many funds start from as little as KSh 1,000, so it is accessible long before you have "investor" money.
+- **Low entry point:** Many funds start from as little as KES 1,000, so it is accessible long before you have "investor" money.
 - **Withholding tax:** A 15% withholding tax applies to the interest, and it is usually deducted at source.
 
 ### Reading the Headline Rate Correctly

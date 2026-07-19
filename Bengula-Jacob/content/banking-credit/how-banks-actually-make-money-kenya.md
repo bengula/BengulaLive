@@ -20,7 +20,7 @@ It matters because a bank is not a neutral vault where your money waits. It is a
 
 ### Key Insight
 
-A bank makes money in four ways at once: the interest spread between what it pays for deposits and what it charges for loans, the fees and commissions on everyday transactions, the margin on foreign exchange, and the income from trade finance and payments. You are the source of all four. That is not a reason for resentment; it is a source of leverage, because a customer who understands the model can move deposits to where they earn, cut fee leakage, demand better FX pricing, and negotiate as a valued relationship rather than a passive balance.
+A bank makes money in four ways at once: the interest spread between what it pays for deposits and what it charges for loans, the fees and commissions on everyday transactions, the margin on foreign exchange, and the income from trade finance and payments. You are the source of all four. That is not a reason for resentment; it is a source of leverage, because a customer who understands the model can move deposits to where they earn, cut fee leakage, demand better FX pricing, and negotiate as a valued relationship rather than a passive balance. For the SME negotiation playbook on tariffs and spreads, continue with [The Hidden Leak: Fees and FX Spreads](/blog/sme-transaction-fees-fx-spreads-kenya).
 
 ### The Core Engine: The Interest Spread
 
