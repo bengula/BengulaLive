@@ -173,6 +173,8 @@ Once you know *where* cash is stuck, product choice becomes logical.
 
 > **Key Insight:** The wrong product is often more expensive than a slightly higher rate on the right product. An overdraft used as a five-year machine loan, or an LPO facility used to fund perpetual dead stock, will show up as chronic limit stress and awkward annual reviews.
 
+The most common version of this mistake is the overdraft that stops returning to zero and becomes permanent debt at a flexibility price. [The Overdraft That Never Clears](/blog/overdraft-that-never-clears-kenya) covers the daily-utilisation pricing, the clean-down covenant, the statement pattern a lender reads as hardcore, and the arithmetic of terming it out.
+
 For how banks price risk and facilities more broadly, see [how Kenyan banks price loans](/blog/how-kenyan-banks-price-loans) and the [SME finance handbook](/blog/sme-finance-handbook-kenya). For comparing asset finance to conventional borrowing, use [asset finance vs conventional loans](/blog/asset-finance-vs-conventional-loans).
 
 ```mermaid

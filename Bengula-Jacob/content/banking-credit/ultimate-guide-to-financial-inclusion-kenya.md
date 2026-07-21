@@ -69,7 +69,7 @@ This guide combines the whole stack into one operating manual: the policy story 
 | 1 | What inclusion means (access to welfare) |
 | 2 | The journey: 1900s post office to 2026 |
 | 3 | Access vs financial health, and the NFIS scorecard |
-| 4 | County-by-county inclusion map (patterns) |
+| 4 | County-by-county inclusion map, and regional hubs |
 | 5 | Product comparison: banks, SACCOs, MMFs, wallets, platforms |
 | 6 | Interactive Financial Inclusion Score |
 | 7 | The credit stack: MFBs, SACCOs, digital credit, CRB, embedded finance |
@@ -212,6 +212,16 @@ Kenya is not one inclusion market. **Nairobi and satellite urban counties** sit 
 | **D, ASAL / sparse formal** | Distance, thin branches, climate income volatility | **Turkana**, **Marsabit**, **Wajir**, **Mandera**, **Garissa**, **Isiolo**, **Samburu**, **Tana River**, **Lamu** (mixed), parts of **Narok** and **Kajiado** pastoral zones | Mobile money + carefully chosen MFI/SACCO outreach; insurance and buffer matter more |
 
 The NFIS sets **county-level targets** precisely because national averages hide these gaps. A salaried Nairobi worker with three banking relationships and a woman running a market stall in a remote county are both counted inside the same 84.8%.
+
+<a id="regional-hubs"></a>
+
+### Regional Hubs: How Band B Towns Serve A Band C And D Hinterland
+
+The bands above describe where people live, but not where they bank. In practice, Band C and Band D counties are frequently served from a Band B town next door, which is why inclusion is better understood as a map of catchments than a map of borders.
+
+**Malindi** is the clearest example on the northern coast. It anchors financial services for **Tana River**, **Lamu**, and parts of **Garissa**, counties with real economic activity and thin formal financial infrastructure of their own. Its advantage is proximity rather than scale: it will not displace Mombasa, but it is considerably closer than Mombasa to the households and businesses that need a formal relationship. The same dynamic repeats elsewhere, with Kisumu, Eldoret, Meru, Nakuru, and Garissa town each serving well beyond their own county lines.
+
+The practical lesson for a household or SME in a Band C or D county: your realistic banking options are usually defined by the nearest Band A or B town, and the digital rails that reach you from it, rather than by what exists inside your own county. Full treatment in [Malindi as a Financial Hub Serving Neighbouring Counties](/blog/malindi-financial-hub-kenya).
 
 ### Reading The Map As A Household Or SME
 
@@ -688,6 +698,7 @@ And the measurement itself is changing. Historically inclusion was counted in ba
 | Unit trusts beyond MMFs | [Unit trusts guide](/blog/unit-trusts-beyond-mmfs-kenya) |
 | SACCO save and guarantee | [Savers and Guarantors](/blog/sacco-savers-guarantors) |
 | SACCO membership mechanics | [Ultimate Guide to SACCO Membership](/blog/ultimate-guide-to-sacco-membership-kenya) |
+| Regional hubs and county catchments | [Malindi as a Financial Hub](/blog/malindi-financial-hub-kenya) |
 | Digital loan cost | [Mobile and Digital Loans](/blog/mobile-digital-loans-real-cost-kenya) |
 | APR and real cost of credit | [Interest rates and APR](/blog/mobile-loan-vs-bank-loan-apr-breakdown) |
 | Debt management | [Debt consolidation](/blog/debt-consolidation-refinancing-kenya), [Borrowing map](/blog/borrowing-money-in-kenya-guide) |

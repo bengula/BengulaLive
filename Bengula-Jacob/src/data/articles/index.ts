@@ -49,4 +49,4 @@ export const allArticles: BlogPost[] = Object.entries(rawFiles)
   .map(([path, text]) => parseArticle(path, text))
   .sort((a, b) => Date.parse(b.date) - Date.parse(a.date)); // newest first
 
-// Touched to invalidate Vite glob cache for new articles.
+// Touched to invalidate Vite glob cache for new articles. (AI-detectors rename)
