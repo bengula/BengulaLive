@@ -16,7 +16,7 @@ Most Kenyans meet insurance the wrong way around: a broker pushes a bundled endo
 
 Insurance is not the opposite of investing. It is what keeps your investment plan alive when life is unfair. A strong [personal finance system](/blog/ultimate-guide-to-personal-finance-kenya) still fails if one hospital stay forces a SACCO withdrawal, a CRB-damaging loan, or the sale of a long-term bond position at the worst moment.
 
-> **Key Insight:** Buy protection in **priority order**, not product popularity. Cash buffer first, then medical, then income protection for dependants, then assets and business continuity. Investment-linked policies and “savings with cover” come only after the basics are solid - or they compete with better tools like [MMFs](/blog/bank-vs-sacco-vs-mmf-savings), [bonds](/blog/kb-bond-guide-2026), and [pensions](/blog/retirement-planning-kenya-guide).
+> **Key Insight:** Buy protection in **priority order**, not product popularity. Cash buffer first, then medical, then income protection for dependants, then assets and business continuity. Investment-linked policies and â€œsavings with coverâ€ come only after the basics are solid - or they compete with better tools like [MMFs](/blog/bank-vs-sacco-vs-mmf-savings), [bonds](/blog/kb-bond-guide-2026), and [pensions](/blog/retirement-planning-kenya-guide).
 
 ```cards
 - icon: Shield
@@ -42,7 +42,7 @@ Insurance is not the opposite of investing. It is what keeps your investment pla
 
 ### The Stack Principle (Protect, Then Grow)
 
-Think in layers. Skipping a lower layer is how “well invested” households still go broke after one shock.
+Think in layers. Skipping a lower layer is how â€œwell investedâ€ households still go broke after one shock.
 
 ```mermaid
 flowchart TD
@@ -60,7 +60,7 @@ flowchart TD
   style L5 fill:#64748b,color:#fff,stroke:none
 ```
 
-**Layer 0 is not insurance, but it is mandatory.** Without 3–6 months of essential expenses in a liquid vehicle, every premium competes with survival cash and every claim delay becomes a crisis. Build this before sophisticated cover. Place the buffer with the product logic in [bank vs SACCO vs MMF](/blog/bank-vs-sacco-vs-mmf-savings) and the full household system in the [personal finance guide](/blog/ultimate-guide-to-personal-finance-kenya).
+**Layer 0 is not insurance, but it is mandatory.** Without 3â€“6 months of essential expenses in a liquid vehicle, every premium competes with survival cash and every claim delay becomes a crisis. Build this before sophisticated cover. Place the buffer with the product logic in [bank vs SACCO vs MMF](/blog/bank-vs-sacco-vs-mmf-savings) and the full household system in the [personal finance guide](/blog/ultimate-guide-to-personal-finance-kenya).
 
 ---
 
@@ -76,7 +76,7 @@ Health shocks are the most common wealth destroyer for Kenyan households: outpat
 
 **Budget rule of thumb:** if premiums force you to raid the emergency fund every other month, the policy is mis-sized. Reduce hospital class or outpatient benefits before you cancel inpatient protection entirely.
 
-Medical cover is also a business issue for employers and owner-managers: staff productivity and loyalty often track benefits more than slogans. Price it as part of total reward, not only as a “nice to have.”
+Medical cover is also a business issue for employers and owner-managers: staff productivity and loyalty often track benefits more than slogans. Price it as part of total reward, not only as a â€œnice to have.â€
 
 ---
 
@@ -140,7 +140,7 @@ For long-horizon education and hybrid products, compare carefully against [endow
 
 ### Layer 4: Business and Owner-Manager Cover
 
-If the business is the household’s engine, personal cover alone is incomplete.
+If the business is the householdâ€™s engine, personal cover alone is incomplete.
 
 | Need | Typical tool | Why it matters |
 |---|---|---|
@@ -191,7 +191,7 @@ Working-capital stress and insurance gaps often arrive together: after a shock, 
 ```cards
 - icon: Sprout
   title: Starter
-  desc: Liquidity and health first. Do not buy complex policies to feel “adult” while the emergency fund is empty.
+  desc: Liquidity and health first. Do not buy complex policies to feel â€œadultâ€ while the emergency fund is empty.
   linkText: Bank vs SACCO vs MMF
   linkUrl: /blog/bank-vs-sacco-vs-mmf-savings
 - icon: Users
@@ -215,7 +215,7 @@ Working-capital stress and insurance gaps often arrive together: after a shock, 
 There is no universal percentage, but a useful stress test is:
 
 $$
-\text{Total essential premiums} \leq 5\%\text{–}10\% \text{ of take-home pay}
+\text{Total essential premiums} \leq 5\%\text{â€“}10\% \text{ of take-home pay}
 $$
 
 If you are above that range:
@@ -230,7 +230,7 @@ Paying 15% of income into poorly understood policies while carrying [expensive s
 
 ### Common Kenyan Mistakes
 
-1. **Buying endowment “savings” with no emergency fund or medical top-up.**  
+1. **Buying endowment â€œsavingsâ€ with no emergency fund or medical top-up.**  
 2. **Assuming company medical covers the whole family forever** - resignations and job changes end it.  
 3. **Ignoring beneficiaries and wills** so proceeds fight succession drama.  
 4. **Duplicate cover** (multiple thin outpatient policies) while inpatient limits are tiny.  

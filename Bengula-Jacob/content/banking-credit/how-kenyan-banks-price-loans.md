@@ -51,10 +51,10 @@ Here is roughly how those forces stack up across product families. The figures a
 
 | Loan type | Security | Indicative rate range | What drives the spread |
 | --- | --- | --- | --- |
-| Mortgage | The property | ~13.6–15.1% | Strong, registrable security; lowest premiums |
-| Asset finance (ABF) | The financed vehicle/asset | ~15.4–16.9% | Self-securing asset; low premium |
-| Other secured loans | Pledged asset / deposit | ~15.5–17% | Secured, but less liquid than property |
-| Unsecured personal loans | None (payslip / cash flow) | ~16.5–21% | No asset to recover; highest premium |
+| Mortgage | The property | ~13.6â€“15.1% | Strong, registrable security; lowest premiums |
+| Asset finance (ABF) | The financed vehicle/asset | ~15.4â€“16.9% | Self-securing asset; low premium |
+| Other secured loans | Pledged asset / deposit | ~15.5â€“17% | Secured, but less liquid than property |
+| Unsecured personal loans | None (payslip / cash flow) | ~16.5â€“21% | No asset to recover; highest premium |
 
 The shape is the consistent message: **the more (and better) the security, the lower the margin**, and within each band, **the cleaner your credit record, the closer you sit to the bottom of the range**.
 

@@ -36,6 +36,44 @@ export default function AuthorsTab() {
   const navigate = useNavigate();
   const activeProfile = useMemo(() => (id ? getAuthorById(id) : undefined), [id]);
 
+  // Unknown /authors/:id — do not silently show the full author list.
+  if (id && !activeProfile) {
+    return (
+      <div id="author-not-found" className="max-w-2xl mx-auto text-center py-10 md:py-16 space-y-8 animate-fadeIn">
+        <Seo
+          title="Author Not Found | Bengula Inc"
+          description="This author profile does not exist. Meet the contributors behind the Bengula Inc Financial Education Hub."
+          path={`/authors/${id}`}
+        />
+        <div className="space-y-3">
+          <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest">Error 404</span>
+          <h1 className="editorial-heading text-3xl md:text-4xl font-bold text-slate-950 tracking-tight">
+            Author Not Found
+          </h1>
+          <p className="text-sm text-slate-600 leading-relaxed max-w-md mx-auto">
+            We could not find an author profile at <span className="font-mono text-slate-800">/authors/{id}</span>.
+          </p>
+        </div>
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <Link
+            to="/authors"
+            className="sheen inline-flex items-center gap-2 bg-violet-700 hover:bg-violet-800 text-white text-xs font-bold px-5 py-3 rounded-lg shadow-md transition"
+          >
+            <Users className="w-4 h-4" />
+            View all authors
+          </Link>
+          <Link
+            to="/blog"
+            className="inline-flex items-center gap-2 bg-white border border-slate-200 text-slate-700 hover:text-violet-800 text-xs font-bold px-5 py-3 rounded-lg shadow-xs transition"
+          >
+            <BookOpen className="w-4 h-4" />
+            Browse articles
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
   // ================= AUTHOR DETAIL VIEW =================
   if (activeProfile) {
     const articles = articlesFor(activeProfile);
@@ -51,7 +89,8 @@ export default function AuthorsTab() {
     return (
       <div id="author-detail" className="max-w-3xl mx-auto space-y-6 animate-fadeIn">
         <Seo
-          title={`${activeProfile.name} | ${activeProfile.role}, Bengula Inc`}
+          // Roles already name Bengula Inc where relevant — don't append it twice.
+          title={`${activeProfile.name} | ${activeProfile.role}`}
           description={activeProfile.bio}
           path={`/authors/${activeProfile.id}`}
           image={activeProfile.avatar}

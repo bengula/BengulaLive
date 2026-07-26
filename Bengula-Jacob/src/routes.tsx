@@ -19,6 +19,9 @@ import AuthorsTab from './components/AuthorsTab';
 import InvestmentTab from './components/InvestmentTab';
 import AICoach from './components/AICoach';
 import ContactTab from './components/ContactTab';
+import ToolsPage from './components/ToolsPage';
+import FaqPage from './components/FaqPage';
+import LegalPage from './components/LegalPage';
 import NotFound from './components/NotFound';
 
 import { allArticles } from './data/articles';
@@ -32,6 +35,11 @@ export const routes: RouteRecord[] = [
       { index: true, element: <HomeTab /> },
       { path: 'about', element: <AboutTab /> },
       { path: 'services', element: <ServicesTab /> },
+      { path: 'tools', element: <ToolsPage /> },
+      { path: 'faq', element: <FaqPage /> },
+      { path: 'disclaimer', element: <LegalPage kind="disclaimer" /> },
+      { path: 'privacy', element: <LegalPage kind="privacy" /> },
+      { path: 'terms', element: <LegalPage kind="terms" /> },
       { path: 'portfolio', element: <PortfolioTab /> },
       { path: 'investments', element: <InvestmentTab /> },
       { path: 'ai-coach', element: <AICoach /> },
@@ -54,4 +62,3 @@ export const routes: RouteRecord[] = [
     ],
   },
 ];
-

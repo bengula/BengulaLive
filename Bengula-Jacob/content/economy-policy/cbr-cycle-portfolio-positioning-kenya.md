@@ -12,11 +12,11 @@ author:
 coverImage: https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
-The Central Bank Rate (CBR) is not a trivia number for economists. It is the **reference cost of money** in Kenya’s formal system. When the Monetary Policy Committee (MPC) cuts, holds, or hikes, the effects show up in auction yields, bank loan negotiations, overdraft pricing, fixed-deposit offers, and - with a lag - Money Market Fund distributions.
+The Central Bank Rate (CBR) is not a trivia number for economists. It is the **reference cost of money** in Kenyaâ€™s formal system. When the Monetary Policy Committee (MPC) cuts, holds, or hikes, the effects show up in auction yields, bank loan negotiations, overdraft pricing, fixed-deposit offers, and - with a lag - Money Market Fund distributions.
 
 You do not need to predict the next vote. You need a **positioning playbook**: what to emphasise when rates are high and sticky, what to lock when they are falling, and what to avoid when cheap credit tempts bad projects. This article is that playbook, written for households and SME owners who already use tools like [Treasury bonds](/blog/kb-bond-guide-2026), [T-bill ladders](/blog/advanced-dhowcsd-t-bill-ladder), and bank facilities.
 
-> **Key Insight:** The CBR sets the **direction of travel** for the price of money; your job is to match **duration, debt, and liquidity** to that direction. In a cutting cycle, long fixed-rate assets gain appeal and floating-rate debt gets lighter over time. In a hiking or “higher for longer” hold, cash and short tenors pay you to wait, and new long fixed-rate borrowing is a decision you make with eyes open.
+> **Key Insight:** The CBR sets the **direction of travel** for the price of money; your job is to match **duration, debt, and liquidity** to that direction. In a cutting cycle, long fixed-rate assets gain appeal and floating-rate debt gets lighter over time. In a hiking or â€œhigher for longerâ€ hold, cash and short tenors pay you to wait, and new long fixed-rate borrowing is a decision you make with eyes open.
 
 ```cards
 - icon: Landmark
@@ -42,7 +42,7 @@ You do not need to predict the next vote. You need a **positioning playbook**: w
 
 ### What the CBR Is (and Is Not)
 
-The **Central Bank Rate** is the CBK’s policy rate - the stance signal from the MPC. It influences:
+The **Central Bank Rate** is the CBKâ€™s policy rate - the stance signal from the MPC. It influences:
 
 - Interbank and short-term money-market conditions  
 - The environment in which **Treasury bill and bond** auctions clear  
@@ -107,7 +107,7 @@ flowchart TD
 
 **2. When policy is easing:**  
 - Reinvest maturing T-bills with a plan: some stay short for cash needs; some roll into longer [bonds/IFBs](/blog/kb-bond-guide-2026) if the locked yield still beats your inflation assumption after tax.  
-- Do not dump a well-bought long bond only because headlines say “rates are falling” - price already moves in anticipation; transaction costs and reinvestment risk matter.  
+- Do not dump a well-bought long bond only because headlines say â€œrates are fallingâ€ - price already moves in anticipation; transaction costs and reinvestment risk matter.  
 - Review expensive consumer debt before chasing an extra 1% on savings.
 
 **3. When policy is tight or on hold at high levels:**  
@@ -149,7 +149,7 @@ Bank credit does not reprice the morning after an MPC statement. Spreads, collat
 
 **Term and asset finance**  
 - Fixed-rate asset loans taken at peak rates can look painful later if the cycle eases - but early settlement rules and penalties decide whether refinancing is real.  
-- Never fund multi-year machines on perpetual overdraft “because CBR might fall.” Match tenor to asset life ([asset finance vs conventional loans](/blog/asset-finance-vs-conventional-loans)).
+- Never fund multi-year machines on perpetual overdraft â€œbecause CBR might fall.â€ Match tenor to asset life ([asset finance vs conventional loans](/blog/asset-finance-vs-conventional-loans)).
 
 **Trade and guarantees**  
 - Facility fees and cash collateral opportunity cost rise in tight liquidity regimes. Price [guarantees and trade instruments](/blog/bank-guarantees-kenya-sme-guide) into contract margins before you bid.
@@ -160,7 +160,7 @@ $$
 \text{Project needs margin thick enough that } \text{ROI} \gg \text{all-in borrowing cost} + \text{risk buffer}
 $$
 
-If the deal only works at last year’s cheaper debt, it is not a good deal - it is a rate bet.
+If the deal only works at last yearâ€™s cheaper debt, it is not a good deal - it is a rate bet.
 
 ---
 
@@ -172,7 +172,7 @@ If the deal only works at last year’s cheaper debt, it is not a good deal - it
 | **Long Treasuries / IFBs** | Attractive to **lock** if yield still adequate | Be selective on entry price | Mark-to-market pain if yields spike after you buy |
 | **MMFs** | Yields lag downward | Competitive parking | Platform and fund risk; not a bond substitute for long goals |
 | **Fixed deposits** | Shop less urgently | Negotiate; compare net of tax to bills/MMF | Breakage costs; bank concentration vs KDIC limits |
-| **Equities / credit risk assets** | Can re-rate if growth improves | Demand higher risk premium | Do not “reach for yield” in junk credit |
+| **Equities / credit risk assets** | Can re-rate if growth improves | Demand higher risk premium | Do not â€œreach for yieldâ€ in junk credit |
 
 Sovereign issuance and fiscal news move the same curve the CBR influences - context in [sovereign debt explained](/blog/sovereign-debt-explained) and regional framing in [East African sovereign themes](/blog/east-african-sovereign-summit).
 
@@ -205,7 +205,7 @@ flowchart LR
 | **Week after** | Note T-bill auction results vs your ladder maturities |
 | **Monthly** | Recompute real yield on your main savings sleeve |
 | **Quarterly** | Review floating facilities utilisation and pricing with your RM |
-| **Any large decision** | Write the thesis: “I am extending duration / refinancing / delaying leverage because…” |
+| **Any large decision** | Write the thesis: â€œI am extending duration / refinancing / delaying leverage becauseâ€¦â€ |
 
 If you cannot write the thesis in one sentence, you are reacting, not positioning.
 
@@ -214,7 +214,7 @@ If you cannot write the thesis in one sentence, you are reacting, not positionin
 ### What Not to Do
 
 1. **Rotate 100% of long-term money into cash** on every hike rumour - abandoning a plan is how investors buy high and sell low.  
-2. **Max floating credit** because “rates will be cut soon” - that is speculation with payroll risk.  
+2. **Max floating credit** because â€œrates will be cut soonâ€ - that is speculation with payroll risk.  
 3. **Ignore tax and fees** when comparing FD, MMF, and bond yields.  
 4. **Confuse CBR cuts with instant cheaper SME loans** - conduct and risk tier still price the facility.  
 5. **Use mobile or card debt as a macro hedge** - see [digital loan costs](/blog/mobile-digital-loans-real-cost-kenya); the APR rarely cares about the MPC communique.

@@ -48,7 +48,7 @@ The headline is the scale of adoption: Kenyans now hold roughly **KES 400 billio
 
 Fund marketing always quotes the **gross** rate. What lands in your pocket is the net rate after the 15% withholding tax. If a fund advertises 14% per annum gross:
 
-> **Net yield = 14% × (1 − 0.15) = 11.9% net per annum**
+> **Net yield = 14% Ã— (1 âˆ’ 0.15) = 11.9% net per annum**
 
 That ~11.9% net still comfortably beats a savings account and, in most periods, beats inflation, which is exactly what you want from a *buffer*.
 
@@ -71,6 +71,7 @@ Used together, MMF for liquidity, bonds for locked long-term yield, you get a si
 - [Bank Account vs SACCO vs MMF](/blog/bank-vs-sacco-vs-mmf-savings). The decision framework for which savings home does which job.
 - [Fixed Deposit vs. Treasury Bills: Pricing Your Business Cash](/blog/fixed-deposit-lending-arbitrage). Comparing bank deposits, short-term sovereign debt, and cash yields.
 - [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026). The next step once your buffer is full.
+- [Dividend Income on the NSE](/blog/dividend-income-nse-kenya). The growth-and-income equity sleeve that sits above MMFs and bonds on the risk ladder.
 - [Sovereign Debt Explained](/blog/sovereign-debt-explained). Treasury Bills vs Bonds, and how DhowCSD works.
 - [Sleeping Asset Yield Optimization](/blog/sleeping-asset-optimization). Turning idle capital into monthly income.
 

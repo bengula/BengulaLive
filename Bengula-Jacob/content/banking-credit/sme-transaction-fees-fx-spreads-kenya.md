@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://loremflickr.com/1600/900/currency,calculator?lock=2002
 ---
 
 ![Business owner reviewing bank statements and currency figures](https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1200 "The expensive line items are often not interest; they are tariffs and FX spreads repeated daily. Photo: Pexels")

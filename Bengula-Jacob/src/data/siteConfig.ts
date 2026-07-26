@@ -55,27 +55,15 @@ export const siteConfig = {
     website: "https://bengula.co.ke",     // public site URL — leave "" to hide
   },
 
-  // Ticker: Kenyan market rates. FX (USD/KES etc.) is fetched live in the
-  // browser; these local-market figures have no free live API, so edit them
-  // here and update `asOf` when you refresh them.
-  marketRates: {
-    asOf: "June 2026",
-    items: [
-      { label: "MMF Average Yield", value: "~14.5% APR" },
-      { label: "CBK T-Bills (91-Day)", value: "15.82%" },
-      { label: "CBK T-Bills (182-Day)", value: "16.35%" },
-      { label: "Sovereign IFB 17Yr (Tax-Free)", value: "16.85% coupon", tone: "amber" as const },
-      { label: "Tier-1 Bank Dividend Yield", value: "~11.5%" },
-      { label: "NSE Blue-chips", value: "Accumulation Stage" },
-    ] as { label: string; value: string; tone?: "amber" }[],
-  },
-
   // "Professional Ecosystem" logos on the home page. Each links out to the
   // partner's official site (opens in a new tab). Leave href "" to show the
   // name as plain text (e.g. a private co-op with no public website).
+  // Market rates shown in the site ticker come from data/forex.csv + data/key-rates.csv
+  // (see src/data/cbkRates.ts), not from this file.
   // ⚠️ Verify each URL before going live.
   partners: [
-    { label: "CBK DhowCSD Portal", href: "https://www.dhowcsd.go.ke" },
+    // Official CBK DhowCSD investor portal (not www.dhowcsd.go.ke — that host does not resolve).
+    { label: "CBK DhowCSD Portal", href: "https://dhowcsd.centralbank.go.ke/" },
     { label: "Nairobi Securities Exchange", href: "https://www.nse.co.ke" },
     { label: "Capital Markets Authority", href: "https://www.cma.or.ke" },
     { label: "Meru Agri Co-op",   href: "" }, // no public site — add if one exists

@@ -24,7 +24,7 @@ The Zindua Agri-Logistics case looked at closing that gap with **active cold-cha
 
 The thesis was simple: keep the crop at the right temperature from farm to port, and prove it.
 
-- **Insulated, refrigerated vehicles** sized for the Meru–Mombasa run rather than heavy long-haul trucks.
+- **Insulated, refrigerated vehicles** sized for the Meruâ€“Mombasa run rather than heavy long-haul trucks.
 - **Smart temperature trackers** logging the cold chain end to end, so the exporter can *demonstrate* quality to the buyer, not just claim it.
 - **Automated payment nodes** connecting farming groups so growers are paid promptly and transparently for what they deliver.
 
@@ -35,7 +35,7 @@ On the connected routes, transit wastage fell from roughly **40% to under 5%**, 
 | Metric | Figure | Source |
 | --- | ---: | --- |
 | Avocado loss, domestic chain vs export chain | 35% vs 15% | [Frontiers, 2024](https://www.frontiersin.org/journals/horticulture/articles/10.3389/fhort.2024.1474056/full) |
-| Mango post-harvest loss range | 17% – 56% | [Frontiers, 2024](https://www.frontiersin.org/journals/horticulture/articles/10.3389/fhort.2024.1474056/full) |
+| Mango post-harvest loss range | 17% â€“ 56% | [Frontiers, 2024](https://www.frontiersin.org/journals/horticulture/articles/10.3389/fhort.2024.1474056/full) |
 | Annual Kenyan food loss & waste | KSh 72 billion | [WRI Africa, 2025](https://www.freshplaza.com/north-america/article/9841203/) |
 | Kenya avocado exports, 2024/25 season | ~110,000 MT, >KSh 25 billion | [Floriculture / USDA FAS](https://floriculture.co.ke/kenya-tightens-avocado-exports-as-macadamia-farmers-eye-new-markets/) |
 

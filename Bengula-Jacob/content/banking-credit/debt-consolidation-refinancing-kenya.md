@@ -86,7 +86,7 @@ Total the true switching costs, new facility fees plus excise, any early-settlem
 
 ### The Traps, Named
 
-- **Securing the unsecured.** Consolidating app debts and card balances into a title- or logbook-secured loan buys a better rate by pledging an asset against debts that previously threatened only your file. Sometimes rational; never accidental. Understand that the trade is *rate for collateral*.
+- **Securing the unsecured.** Consolidating app debts and card balances into a title- or logbook-secured loan buys a better rate by pledging an asset against debts that previously threatened only your file. Sometimes rational; never accidental. Understand that the trade is *rate for collateral*, and that on the logbook route the collateral can be taken [without a court order and sold on five working days notice](/blog/logbook-loans-kenya).
 - **The freed-limit relapse.** Consolidation clears the card and the apps, and their limits sit newly empty. Within a year, the undisciplined borrower carries the old zoo *plus* the consolidation loan. Close the cards you cannot manage, delete the apps, and treat the freed limits as decommissioned, not available.
 - **Consolidating the unconsolidatable.** Soft family debts and chama obligations rarely belong inside a bank facility; formalising them can damage the relationships it was meant to protect. Schedule them honestly instead ([the friends-and-family disciplines](/blog/how-to-structure-friends-and-family-investments) apply in reverse).
 - **The fee-eaten refinance**: switching for a headline rate while fees, excise, and a restarted tenor quietly consume the saving. The break-even line exists for exactly this.

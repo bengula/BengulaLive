@@ -42,7 +42,7 @@ Well-located plots near developing bypasses in this corridor have historically a
 | Long-run (since 2007) | ~13.2x cumulative |
 | 2024 | 10.6% |
 | 2025 | 6.2% |
-| Kiambu (2025) | −1.5% (annual) |
+| Kiambu (2025) | âˆ’1.5% (annual) |
 
 The lesson in the numbers:
 

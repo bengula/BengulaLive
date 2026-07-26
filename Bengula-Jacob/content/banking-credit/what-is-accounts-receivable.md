@@ -39,12 +39,12 @@ This gap between recognition and collection is where cash flow problems originat
 
 ```mermaid
 flowchart TD
-    A["📦 Goods/Service<br>Delivered"] --> B["🧾 Invoice<br>Issued"]
-    B --> C["📋 AR Recorded<br>on Balance Sheet"]
-    C --> D["⏳ Payment<br>Period"]
-    D --> E["✅ Payment<br>Received"]
-    E --> F["📉 AR Cleared,<br>Cash Increases"]
-    D --> G["⚠️ Overdue<br>Follow-up Required"]
+    A["ðŸ“¦ Goods/Service<br>Delivered"] --> B["ðŸ§¾ Invoice<br>Issued"]
+    B --> C["ðŸ“‹ AR Recorded<br>on Balance Sheet"]
+    C --> D["â³ Payment<br>Period"]
+    D --> E["âœ… Payment<br>Received"]
+    E --> F["ðŸ“‰ AR Cleared,<br>Cash Increases"]
+    D --> G["âš ï¸ Overdue<br>Follow-up Required"]
     G --> E
 
     style A fill:#3b82f6,color:#fff,stroke:none
@@ -74,10 +74,10 @@ The worked example above is the business from earlier: KES 5 million in monthly 
 
 | Metric | Formula | Healthy Signal |
 |---|---|---|
-| Days Sales Outstanding | (AR ÷ credit sales) × days | At or below your stated payment terms |
-| AR turnover ratio | Net credit sales ÷ average AR | Higher; cash circulating, not sitting |
+| Days Sales Outstanding | (AR Ã· credit sales) Ã— days | At or below your stated payment terms |
+| AR turnover ratio | Net credit sales Ã· average AR | Higher; cash circulating, not sitting |
 | Aging report | Invoices bucketed 0-30, 31-60, 61-90, 90+ days | Nothing drifting past 60 without escalation |
-| Bad debt ratio | Uncollected AR ÷ total AR | Under 2-3% |
+| Bad debt ratio | Uncollected AR Ã· total AR | Under 2-3% |
 
 ---
 

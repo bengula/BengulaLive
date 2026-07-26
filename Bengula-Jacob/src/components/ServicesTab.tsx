@@ -79,7 +79,7 @@ export default function ServicesTab() {
   return (
     <div id="services-tab-root" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-fadeIn">
       <Seo
-        title="Services | Banking, Finance & Digital Growth Advisory, Bengula Inc"
+        title="Services | Banking, Finance & Digital Growth Advisory | Bengula Inc"
         description="Book Bengula Inc advisory: banking & business finance, investment & treasury, business consulting, technology & digital growth, and corporate training across East Africa."
         path="/services"
       />

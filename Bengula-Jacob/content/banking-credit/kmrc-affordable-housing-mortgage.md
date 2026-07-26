@@ -1,4 +1,5 @@
 ---
+coverImage: https://loremflickr.com/1600/900/home,mortgage?lock=2012
 id: kmrc-affordable-housing-mortgage
 title: "Accessing KMRC Mortgages: Single-Digit Home Loans in Kenya"
 summary: A practical, in-depth guide on how to qualify for a Kenya Mortgage Refinance Company (KMRC) backed loan, participating banks and SACCOs, and its role in affordable housing.
@@ -10,6 +11,7 @@ author:
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
 ---
+coverImage: https://loremflickr.com/1600/900/home,mortgage?lock=2012
 
 ### Bypassing the High Cost of Home Ownership
 
@@ -20,6 +22,7 @@ To solve this demand-side bottleneck, the government established the **Kenya Mor
 > **Key Insight:** KMRC does not lend directly to the public. Instead, it operates through participating banks and SACCOs, enabling them to extend long-term, fixed-rate mortgages to Kenyans earning KSh 150,000 or less.
 
 ---
+coverImage: https://loremflickr.com/1600/900/home,mortgage?lock=2012
 
 ### How the Wholesale Model Works and the Asset-Liability Mismatch
 
@@ -47,6 +50,7 @@ graph TD
     classDef edgeLabel fill:#e6f9ff,color:#0a3a40;
 ```
 ---
+coverImage: https://loremflickr.com/1600/900/home,mortgage?lock=2012
 
 ### Two-Tier KMRC Mortgage Structures
 
@@ -63,9 +67,10 @@ This tier targets low-to-middle-income earners and features the lowest, most sub
 For borrowers who exceed the income or property value thresholds of the affordable tier, KMRC provides refinancing to banks at slightly higher rates. This allows banks to offer mortgages that are still cheaper than standard commercial rates.
 * **Borrower Income Limit:** No strict upper limit on income.
 * **Maximum Loan Amount:** Varies by bank, but can extend up to **KSh 15 million**.
-* **Interest Rate:** Typically ranges between **10.5% and 11.5%** fixed, providing a significant discount compared to the 16%–18% standard market rate.
+* **Interest Rate:** Typically ranges between **10.5% and 11.5%** fixed, providing a significant discount compared to the 16%â€“18% standard market rate.
 
 ---
+coverImage: https://loremflickr.com/1600/900/home,mortgage?lock=2012
 
 ### Qualifying Criteria for Borrowers
 
@@ -76,11 +81,12 @@ To qualify for a KMRC-backed mortgage, you must meet the national underwriting s
 | **Borrower Monthly Income** | Gross income of **KSh 150,000 or less** (individual or combined) | No limit |
 | **Maximum Loan Amount** | Up to **KSh 10.5 million** (Metropolitan) / **KSh 8 million** (Rest of Kenya) | Up to **KSh 15 million** |
 | **Target Property Use** | Must be owner-occupied (no rental or speculative investment) | Owner-occupied or residential investment |
-| **Mortgage Interest Rate** | Single-digit fixed rate (typically **9.0% – 9.5%**) | Fixed rate (typically **10.5% – 11.5%**) |
+| **Mortgage Interest Rate** | Single-digit fixed rate (typically **9.0% â€“ 9.5%**) | Fixed rate (typically **10.5% â€“ 11.5%**) |
 | **Maximum Repayment Period** | Up to **25 years** (subject to retirement age limits) | Up to **20 years** |
 | **Equity/Deposit Requirement** | Minimum **10% down payment** (90% LTV ratio) | Minimum **10% to 20% down payment** |
 
 ---
+coverImage: https://loremflickr.com/1600/900/home,mortgage?lock=2012
 
 ### Worked Economics: 16% Bank Rate vs. 9.5% KMRC Rate
 
@@ -113,6 +119,7 @@ To see the massive financial impact of KMRC refinancing, let us compare a home b
 > **Net Savings:** By securing a KMRC-backed loan, the monthly obligation falls by **KSh 23,450**, and the buyer saves **KSh 5,628,000** in total interest over the life of the loan. This is the difference between a viable purchase and financial distress.
 
 ---
+coverImage: https://loremflickr.com/1600/900/home,mortgage?lock=2012
 
 ### Step-by-Step Documentation Checklist
 
@@ -139,6 +146,7 @@ When applying for a KMRC mortgage through a partner bank or SACCO, you must comp
 * Spousal consent form (where applicable).
 
 ---
+coverImage: https://loremflickr.com/1600/900/home,mortgage?lock=2012
 
 ### Where to Apply: Participating Institutions
 
@@ -151,6 +159,7 @@ You must submit your mortgage application directly to one of KMRC's partner inst
 *Note: SACCOs are often highly competitive because their internal processing times and structural requirements can be more flexible for self-employed or non-traditional earners. Furthermore, SACCOs typically offer KMRC loans at a lower rate of **9.0%** compared to commercial banks' **9.5%**.*
 
 ---
+coverImage: https://loremflickr.com/1600/900/home,mortgage?lock=2012
 
 ### Decision Framework: Your Roadmap to Application
 
@@ -162,6 +171,7 @@ If you plan to apply for a KMRC mortgage, follow this sequence:
 4. **Compare PML terms.** Rates range between 9% and 9.5%. Check the additional costs (valuation, legal fees, and mortgage protection insurance) across 2-3 participating banks or your SACCO before signing.
 
 ---
+coverImage: https://loremflickr.com/1600/900/home,mortgage?lock=2012
 
 ### Risk Factors & Suitability
 
@@ -175,6 +185,7 @@ If you plan to apply for a KMRC mortgage, follow this sequence:
 - [Why Asset Finance Is Cheaper Than a Conventional Loan in Kenya](/blog/asset-finance-vs-conventional-loans). Read how secured structures reduce risk premiums across credit products.
 
 ---
+coverImage: https://loremflickr.com/1600/900/home,mortgage?lock=2012
 
 ### Confidence Note & Compliance
 

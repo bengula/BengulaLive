@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://loremflickr.com/1600/900/tax,documents?lock=2003
 ---
 
 ![Receipts, a calculator, and business paperwork on a desk](https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&w=1200 "The invoice trail KRA demands is the same evidence a credit committee wants to see. Photo: Pexels")

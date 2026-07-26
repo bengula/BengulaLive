@@ -154,7 +154,7 @@ Based on your target goal of **\"${profile.goal}\"** and monthly saving block of
   return (
     <div id="ai-coach-root" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-fadeIn">
       <Seo
-        title="Bengula Inc Business & Wealth Coach | Bengula Inc"
+        title="Business & Wealth Coach | Bengula Inc"
         description="Ask Bengula Inc's Business & Wealth Coach practical questions on content creation, scaling businesses, treasury bonds, MMFs, and personal wealth building."
         path="/ai-coach"
       />

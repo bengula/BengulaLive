@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 ![A bank statement and calculator on a desk](https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=1200 "The overdraft tells its story in the statement, not the loan agreement. Photo: Pexels")
@@ -114,13 +114,13 @@ Consider an SME with a KES 2,000,000 overdraft limit. All figures illustrative.
 
 **Scenario A, the product used correctly.** The balance fluctuates with the trading cycle, averaging KES 600,000 drawn across the year, at an overdraft rate of 18%.
 
-- Interest: KES 600,000 × 18% = **KES 108,000 a year**
+- Interest: KES 600,000 Ã— 18% = **KES 108,000 a year**
 - Plus arrangement fee on the limit at 1.5%: KES 30,000
 - **Total: KES 138,000**, for a facility that absorbs every timing mismatch the business meets
 
 **Scenario B, the trap.** The same business, same limit, but the balance sits at KES 1,900,000 permanently.
 
-- Interest: KES 1,900,000 × 18% = **KES 342,000 a year**
+- Interest: KES 1,900,000 Ã— 18% = **KES 342,000 a year**
 - Plus the same KES 30,000 fee
 - **Total: KES 372,000 a year, and the principal never reduces**
 
@@ -218,6 +218,7 @@ The distinction is not visible in the facility letter or the monthly charge. It 
 
 - [The Complete Guide to Borrowing Money in Kenya](/blog/borrowing-money-in-kenya-guide) for where the overdraft sits among the alternatives.
 - [The Working Capital Cycle](/blog/working-capital-cycle-kenya-smes) for diagnosing whether the gap is timing or structural.
+- [The 13-Week Cash Forecast](/blog/13-week-cash-forecast-kenya-sme) for the forward sheet that spots the never-clearing pattern early and sizes a right-shaped facility.
 - [What Accounts Receivable Really Costs You](/blog/what-is-accounts-receivable) for the receivables-linked alternative.
 - [LPO and Purchase Order Finance](/blog/lpo-purchase-order-finance-kenya) for order-backed funding.
 - [Debt Consolidation and Refinancing in Kenya](/blog/debt-consolidation-refinancing-kenya) for the restructure mechanics.

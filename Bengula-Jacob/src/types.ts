@@ -5,7 +5,7 @@
 
 import type { PortfolioCategory, RiskProfile } from './data/portfolioTags';
 
-export type TabId = 'home' | 'about' | 'services' | 'portfolio' | 'blog' | 'authors' | 'investments' | 'ai-coach' | 'contact';
+export type TabId = 'home' | 'about' | 'services' | 'portfolio' | 'blog' | 'authors' | 'investments' | 'ai-coach' | 'contact' | 'tools' | 'faq';
 
 export interface Author {
   name: string;

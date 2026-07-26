@@ -1,4 +1,5 @@
 ---
+coverImage: https://loremflickr.com/1600/900/bond,finance?lock=2018
 id: cbk-diaspora-bond-access
 title: "CBK Diaspora Bond Access: A Guide to DhowCSD for Overseas Kenyans"
 summary: A practical, in-depth walkthrough for Kenyan diaspora investors seeking to open a DhowCSD account, buy treasury bonds, and manage remittance routes.
@@ -10,6 +11,7 @@ author:
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
 ---
+coverImage: https://loremflickr.com/1600/900/bond,finance?lock=2018
 
 ### Remittances Beyond Consumption: Putting Capital to Work
 
@@ -20,14 +22,16 @@ For the diaspora investor, the challenge has rarely been the willingness to inve
 > **Key Insight:** Direct investment in high-yielding Kenyan sovereign debt is now fully digital. By bypassing local brokers and middle-men, diaspora investors can secure tax-advantaged local yields while maintaining direct control of their portfolio.
 
 ---
+coverImage: https://loremflickr.com/1600/900/bond,finance?lock=2018
 
 ### Understanding the DhowCSD Digital Infrastructure
 
 Before the launch of DhowCSD in late 2023, the process of investing in government securities for non-residents was highly manual. An investor had to download a paper application form, sign it, mail or deliver it physically to the Central Bank of Kenya (CBK) in Nairobi, and wait weeks for a Central Securities Depository (CSD) account number to be generated. The process required a local commercial bank account and a physical signature verification check.
 
-DhowCSD is the CBK's fully digitized registry and trading portal. It serves as both a primary auction platform (where you place new bids) and a secondary market clearinghouse (where you can sell bonds to other investors before maturity). The platform runs on a central ledger system that integrates with the Central Bank’s real-time gross settlement (RTGS) network, allowing for instant allocations and direct digital settlement.
+DhowCSD is the CBK's fully digitized registry and trading portal. It serves as both a primary auction platform (where you place new bids) and a secondary market clearinghouse (where you can sell bonds to other investors before maturity). The platform runs on a central ledger system that integrates with the Central Bankâ€™s real-time gross settlement (RTGS) network, allowing for instant allocations and direct digital settlement.
 
 ---
+coverImage: https://loremflickr.com/1600/900/bond,finance?lock=2018
 
 ### Step-by-Step DhowCSD Onboarding for Diaspora Investors
 
@@ -51,13 +55,14 @@ Before starting the application, ensure you have scanned copies of the following
 * Submit the application. CBK typical turnaround time for review and activation is **2 to 5 business days**. Once approved, you will receive your CSD account number via email.
 
 ---
+coverImage: https://loremflickr.com/1600/900/bond,finance?lock=2018
 
 ### How to Buy: The Bidding Process Explained
 
 Once your CSD account is active, you can bid on active Treasury Bill (T-Bill) or Treasury Bond (T-Bond) auctions.
 
 ```
-[Auction Announced] ──> [Place Bid via DhowCSD] ──> [Auction Closes (Thursday)] ──> [Receive Payment Allocation Advice] ──> [Wire Funds to CBK]
+[Auction Announced] â”€â”€> [Place Bid via DhowCSD] â”€â”€> [Auction Closes (Thursday)] â”€â”€> [Receive Payment Allocation Advice] â”€â”€> [Wire Funds to CBK]
 ```
 
 #### Competitive vs. Non-Competitive Bids
@@ -66,6 +71,7 @@ When placing a bid, you must choose your bidding type:
 * **Competitive Bids:** You specify the exact yield (interest rate) you are willing to accept. If the market average settles lower than your bid, your application will be rejected. This is typically used by institutional investors (pension funds, commercial banks) placing bids of **KES 2 million or more**.
 
 ---
+coverImage: https://loremflickr.com/1600/900/bond,finance?lock=2018
 
 ### Managing the Remittance and Currency Flow
 
@@ -74,20 +80,21 @@ One of the largest hurdles for diaspora investors is the friction of moving fund
 When bidding for a bond, you must ensure that funds are credited to the CBK collection accounts before the payment deadline (typically Monday at 2:00 PM KES time following the Thursday auction).
 
 ```
-[Foreign Bank Account] ──(SWIFT USD Transfer)──> [Correspondent Bank] ──> [CBK Settlement Account]
+[Foreign Bank Account] â”€â”€(SWIFT USD Transfer)â”€â”€> [Correspondent Bank] â”€â”€> [CBK Settlement Account]
 ```
 
 #### Remittance Routes Compared
 
 | Route | Execution Speed | Cost Structure | Best Suited For |
 | --- | --- | --- | --- |
-| **SWIFT Transfer** | 2–3 Business Days | High flat fee ($30–$50) + FX bank spread | Large investments (>$10,000) |
-| **Diaspora Banking Desk** | 1–2 Business Days | Moderate | Medium placements via local banks |
+| **SWIFT Transfer** | 2â€“3 Business Days | High flat fee ($30â€“$50) + FX bank spread | Large investments (>$10,000) |
+| **Diaspora Banking Desk** | 1â€“2 Business Days | Moderate | Medium placements via local banks |
 | **Digital Money Transfer** (e.g., Sendwave, Wise, WorldRemit) | Near-Instant | Low flat fee + high FX markup | Small bids or retail monthly buy-ins |
 
 > **FX Cost Tip:** If you use a foreign currency SWIFT transfer directly to the CBK, the CBK will convert your foreign currency to KES using their official daily rate. This rate is often far more favorable than the exchange rates offered by retail commercial banks.
 
 ---
+coverImage: https://loremflickr.com/1600/900/bond,finance?lock=2018
 
 ### Risk Factors to Monitor
 
@@ -98,6 +105,7 @@ When bidding for a bond, you must ensure that funds are credited to the CBK coll
 * **Withholding Taxes:** Interest earned on Treasury Bills is subject to a 15% final withholding tax. Standard Treasury Bonds are subject to 15% (for tenors under 10 years) or 10% (for tenors 10 years and above). Infrastructure Bonds (IFBs) are completely **tax-free**, which is why they are highly sought after by diaspora investors.
 
 ---
+coverImage: https://loremflickr.com/1600/900/bond,finance?lock=2018
 
 ### Decision Framework
 
@@ -113,6 +121,7 @@ Use this framework to align your bond choice with your financial timeline:
 - [Hedging USD/KES: Practical Treasury Strategies for Kenyan Exporters](/blog/usd-shilling-hedging). Understand foreign exchange risks and how to manage shilling volatility.
 
 ---
+coverImage: https://loremflickr.com/1600/900/bond,finance?lock=2018
 
 ### Confidence Note & Compliance
 

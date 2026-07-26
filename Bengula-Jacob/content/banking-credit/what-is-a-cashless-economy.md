@@ -56,11 +56,11 @@ Preferences sum to more than 100% because most Kenyans use several methods side 
 
 ```mermaid
 flowchart TD
-    A["💳 Plastic Money<br>Cards"] --> F["🏦 Cashless<br>Economy"]
-    B["📱 Mobile Wallets<br>M-Pesa, Airtel"] --> F
-    C["🌐 Internet Banking<br>RTGS, PesaLink"] --> F
-    D["₿ Cryptocurrencies<br>Bitcoin, stablecoins"] --> F
-    E["🔗 Embedded Finance<br>BNPL, wallets in apps"] --> F
+    A["ðŸ’³ Plastic Money<br>Cards"] --> F["ðŸ¦ Cashless<br>Economy"]
+    B["ðŸ“± Mobile Wallets<br>M-Pesa, Airtel"] --> F
+    C["ðŸŒ Internet Banking<br>RTGS, PesaLink"] --> F
+    D["â‚¿ Cryptocurrencies<br>Bitcoin, stablecoins"] --> F
+    E["ðŸ”— Embedded Finance<br>BNPL, wallets in apps"] --> F
 
     style F fill:#5B21B6,color:#fff,stroke:none
     style A fill:#3b82f6,color:#fff,stroke:none

@@ -79,10 +79,10 @@ export default function Layout() {
     path === '/' ? pathname === '/' : pathname === path || pathname.startsWith(path + '/');
 
   const primaryNav = activeNav.filter((item) =>
-    ['home', 'about', 'services', 'portfolio', 'blog', 'contact'].includes(item.id)
+    ['home', 'services', 'tools', 'portfolio', 'blog', 'contact'].includes(item.id)
   );
   const exploreNav = activeNav.filter((item) =>
-    ['authors', 'investments', 'ai-coach'].includes(item.id)
+    ['about', 'investments', 'ai-coach', 'authors', 'faq'].includes(item.id)
   );
 
   return (
@@ -298,6 +298,12 @@ export default function Layout() {
             </p>
             <p>
               Disclaimer: The analytical calculators, projections, and educational tools provided on this site are built exclusively for academic, informational, and general financial literacy education. They do not constitute formal, binding regulated financial, legal, or licensed brokerage counsel. Any regulated banking product is opened and finalised directly with the licensed bank or provider that issues it.
+            </p>
+            <p className="space-x-3">
+              <Link to="/disclaimer" className="hover:text-violet-800">Disclaimer</Link>
+              <Link to="/privacy" className="hover:text-violet-800">Privacy</Link>
+              <Link to="/terms" className="hover:text-violet-800">Terms</Link>
+              <Link to="/faq" className="hover:text-violet-800">FAQ</Link>
             </p>
           </div>
         </div>

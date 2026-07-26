@@ -17,12 +17,7 @@ import {
   ShieldCheck,
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import Calculators from './Calculators';
-import LoanAppraisalCalculator from './LoanAppraisalCalculator';
-import CreditCardGraceCalculator from './CreditCardGraceCalculator';
 import InsightDeck from './InsightDeck';
-import Resources from './Resources';
-import FAQ from './FAQ';
 import Seo from '../seo';
 import { siteConfig, whatsappHref } from '../data/siteConfig';
 import { keyRates } from '../data/cbkRates';
@@ -340,37 +335,11 @@ export default function HomeTab() {
         </div>
       </section>
 
-      <section id="loan-appraisal-calculator" className="space-y-6">
-        <div className="max-w-xl mx-auto text-center space-y-1.5">
-          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Credit Decision Tool</span>
-          <h2 className="text-xl md:text-2xl font-bold text-slate-900">Loan Appraisal Calculator</h2>
-          <p className="text-xs text-slate-500">
-            Estimate qualification, repayment factors, APR, and amortization before starting a formal loan discussion.
-          </p>
-        </div>
-        <LoanAppraisalCalculator />
-      </section>
-
-      <section className="glass-strong rounded-2xl p-6 md:p-10 space-y-8 reveal">
-        <div className="max-w-xl mx-auto text-center space-y-1.5">
-          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Investment Yield Tool</span>
-          <h2 className="text-xl md:text-2xl font-bold text-slate-900">Bond Yield & Wealth Calculator</h2>
-          <p className="text-xs text-slate-500">
-            Compare your borrowing decisions with investment outcomes across treasury bonds, infrastructure bonds, and compound savings.
-          </p>
-        </div>
-        <Calculators />
-      </section>
-
-      <section id="credit-card-grace-calculator" className="space-y-6 reveal">
-        <div className="max-w-xl mx-auto text-center space-y-1.5">
-          <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Card Cost Tool</span>
-          <h2 className="text-xl md:text-2xl font-bold text-slate-900">Credit Card Interest-Free Period Calculator</h2>
-          <p className="text-xs text-slate-500">
-            Work out how many of the advertised "up to 50 days" interest-free your next card purchase actually earns.
-          </p>
-        </div>
-        <CreditCardGraceCalculator />
+      <section className="glass-strong rounded-2xl p-7 md:p-10 text-center space-y-4 reveal">
+        <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Practical tools</span>
+        <h2 className="text-2xl font-bold text-slate-900">Check the numbers before the conversation</h2>
+        <p className="text-sm text-slate-600 max-w-xl mx-auto">Explore loan affordability, bond and savings scenarios, and card grace periods. These educational calculators do not replace advice from a licensed provider.</p>
+        <button onClick={() => navigate('/tools')} className="btn-primary mx-auto">Explore tools <ChevronRight className="w-4 h-4" /></button>
       </section>
 
       <section className="space-y-4 glass rounded-2xl p-6 md:p-8 reveal">
@@ -404,9 +373,12 @@ export default function HomeTab() {
         </div>
       </section>
 
-      <Resources />
-
-      <FAQ />
+      <section className="glass rounded-2xl p-7 md:p-10 text-center space-y-4 reveal">
+        <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Need a quick answer?</span>
+        <h2 className="text-2xl font-bold text-slate-900">Frequently asked questions</h2>
+        <p className="text-sm text-slate-600 max-w-xl mx-auto">Understand how Bengula works, what we do, and how enquiries are handled.</p>
+        <button onClick={() => navigate('/faq')} className="btn-secondary mx-auto">Read the FAQ <ChevronRight className="w-4 h-4" /></button>
+      </section>
 
       <section id="newsletter-signup-section" className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-10 text-white relative overflow-hidden shadow-md reveal">
         <div className="pointer-events-none absolute -top-16 -left-10 w-72 h-72 rounded-full bg-violet-600/30 blur-3xl animate-float" aria-hidden="true"></div>

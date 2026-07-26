@@ -153,6 +153,45 @@ export default function BlogTab() {
       ].slice(0, 3)
     : [];
 
+  // Unknown /blog/:id — show a dedicated not-found panel instead of silently
+  // falling back to the full listing (which looked like a soft 200 success).
+  if (currentActivePostId && !activePost) {
+    return (
+      <div id="blog-article-not-found" className="max-w-2xl mx-auto text-center py-10 md:py-16 space-y-8 animate-fadeIn">
+        <Seo
+          title="Article Not Found | Bengula Inc"
+          description="This article does not exist or may have been moved. Browse the Bengula Inc research library for practical finance and growth notes."
+          path={`/blog/${currentActivePostId}`}
+        />
+        <div className="space-y-3">
+          <span className="text-xs font-extrabold text-violet-700 uppercase tracking-widest">Error 404</span>
+          <h1 className="editorial-heading text-3xl md:text-4xl font-bold text-slate-950 tracking-tight">
+            Article Not Found
+          </h1>
+          <p className="text-sm text-slate-600 leading-relaxed max-w-md mx-auto">
+            We could not find an article at <span className="font-mono text-slate-800">/blog/{currentActivePostId}</span>.
+            It may have been renamed or removed.
+          </p>
+        </div>
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <Link
+            to="/blog"
+            className="sheen inline-flex items-center gap-2 bg-violet-700 hover:bg-violet-800 text-white text-xs font-bold px-5 py-3 rounded-lg shadow-md transition"
+          >
+            <BookOpen className="w-4 h-4" />
+            Browse the research library
+          </Link>
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 bg-white border border-slate-200 text-slate-700 hover:text-violet-800 text-xs font-bold px-5 py-3 rounded-lg shadow-xs transition"
+          >
+            Back to home
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div id="blog-tab-root" className="space-y-8 animate-fadeIn">
 

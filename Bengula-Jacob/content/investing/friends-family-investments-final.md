@@ -28,7 +28,7 @@ No term sheet. No due diligence committee. No lawyer reviewing the cap table. Ju
 
 **Equity.** Gives investors ownership. Use only if you're prepared to dilute early and explain valuation to someone who has never seen a cap table. [Priced equity requires setting a company valuation immediately, which is risky before the business has real traction.](https://www.openforest.co/glossary/friends-and-family-round)
 
-**Convertible note.** [Debt that converts to equity at a future round, usually at a discount of 10–20% plus a valuation cap.](https://impakttribe.com/how-to-structure-an-investment-deal-with-friends-family/) Best for founders who don't want to set a valuation yet but whose investor wants some downside protection if the next round never materialises.
+**Convertible note.** [Debt that converts to equity at a future round, usually at a discount of 10â€“20% plus a valuation cap.](https://impakttribe.com/how-to-structure-an-investment-deal-with-friends-family/) Best for founders who don't want to set a valuation yet but whose investor wants some downside protection if the next round never materialises.
 
 **SAFE (Simple Agreement for Future Equity).** [The most common early-stage vehicle globally, a simple contract that converts into shares at a future priced round, with no interest and no maturity date.](https://www.youtube.com/watch?v=W-sUj3-N1Js) Common in the US, rare in Kenya, but workable if your next round will be priced by outside investors.
 
@@ -40,7 +40,7 @@ For most family rounds under KES 2 million, a straight loan with a written agree
 
 Friends and family absorb the highest risk, they invest before any proof exists. If you are using a SAFE or convertible note, reward that with terms that protect their upside:
 
-- **Discount rate of 15–25%** on your next funding round valuation, [they convert at a lower price than later investors](https://www.youtube.com/watch?v=W-sUj3-N1Js) to compensate for backing you earliest.
+- **Discount rate of 15â€“25%** on your next funding round valuation, [they convert at a lower price than later investors](https://www.youtube.com/watch?v=W-sUj3-N1Js) to compensate for backing you earliest.
 - **Valuation cap**, a ceiling on the company valuation at which their investment converts, so they benefit if the business grows faster than expected.
 - **[Most Favoured Nation (MFN) clause](https://www.openforest.co/glossary/friends-and-family-round)**, if you offer better terms to any subsequent early investor, your friends and family automatically receive the same improvement.
 

@@ -9,7 +9,7 @@ author:
   avatar: /images/jacob.jpg
 date: March 11, 2026
 readTime: 9 min read
-coverImage: https://images.pexels.com/photos/6694543/pexels-photo-6694543.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://loremflickr.com/1600/900/shipping,container?lock=2006
 ---
 
 ![Banknotes and a calculator on a table](https://images.pexels.com/photos/6694543/pexels-photo-6694543.jpeg?auto=compress&cs=tinysrgb&w=1200 "Trade finance matches the structure of the money to the structure of the deal. Photo: Pexels")
@@ -22,22 +22,22 @@ An exporter pays the farmer, the packhouse, the cold-truck, and the freight forw
 
 #### The Real Cost of Filling That Gap the Wrong Way
 
-Most SMEs plug the hole with an overdraft or a quick digital loan. In Kenya those facilities can effectively cost **18% to 24% per year** once fees and short tenors are annualised. On a horticulture gross margin that is often 12–20%, that is the difference between growth and slowly going backwards.
+Most SMEs plug the hole with an overdraft or a quick digital loan. In Kenya those facilities can effectively cost **18% to 24% per year** once fees and short tenors are annualised. On a horticulture gross margin that is often 12â€“20%, that is the difference between growth and slowly going backwards.
 
-This is not a Kenya-only quirk, it is a continent-sized funding gap. The [African Development Bank](https://www.afdb.org/) puts Africa's unmet demand for trade finance at **US\$74–92 billion in 2024**, and SMEs bear the brunt: banks approve just **63% of SME trade-finance applications** versus **80% overall**, usually citing weak creditworthiness and insufficient collateral. The fix is rarely "borrow more", it is "borrow *smarter*", against the deal rather than the balance sheet.
+This is not a Kenya-only quirk, it is a continent-sized funding gap. The [African Development Bank](https://www.afdb.org/) puts Africa's unmet demand for trade finance at **US\$74â€“92 billion in 2024**, and SMEs bear the brunt: banks approve just **63% of SME trade-finance applications** versus **80% overall**, usually citing weak creditworthiness and insufficient collateral. The fix is rarely "borrow more", it is "borrow *smarter*", against the deal rather than the balance sheet.
 
 #### The Cost of the Wrong Tool
 
 | Financing route | Effective annual cost | Secured against |
 | --- | ---: | --- |
-| Overdraft / digital loan | 18% – 24% | Your general account |
+| Overdraft / digital loan | 18% â€“ 24% | Your general account |
 | Invoice / receivables finance | Lower, deal-linked | The confirmed export invoice |
 | LPO / purchase-order finance | Lower, deal-linked | The signed offtake order |
 | Letter of credit (LC) line | Lowest, bank-guaranteed | The buyer's bank guarantee |
 
 A simple way to see it: if you borrow KSh 1,000,000 for a 60-day shipment cycle at an effective 24% APR, the finance cost is roughly:
 
-> **KSh 1,000,000 × 24% × (60 ÷ 365) ≈ KSh 39,450 per cycle**
+> **KSh 1,000,000 Ã— 24% Ã— (60 Ã· 365) â‰ˆ KSh 39,450 per cycle**
 
 Run six cycles a year and you have handed the lender close to a quarter of a million shillings, money that should have funded the next container.
 
@@ -69,6 +69,8 @@ This is exactly the kind of problem the **Finance & Banking Advisory** pillar ex
 ### Related Reading
 - [Hedging USD/KES: Practical Treasury Strategies for Kenyan Exporters](/blog/usd-shilling-hedging). Managing foreign exchange risk and matching cash flows in export trade.
 - [Agri-Export Supply-Chain Logistics Pool](/blog/agri-export-supply-chain). Purchase-order financing in action.
+- [Seasonal Working Capital for Agribusiness](/blog/seasonal-agri-working-capital-kenya). The domestic seasonal loop, and why a term loan mis-matches the crop cycle.
+- [Contractor Cash Flow Stack](/blog/contractor-cash-flow-stack-kenya). Guarantees, mobilisation, progress claims, and retention as one funded sequence.
 - [Tea Cooperative Strategic Restructure](/blog/tea-cooperative-restructure). Consolidating expensive overdrafts into one asset-backed facility.
 - [SME Packager Margin Optimization](/blog/sme-packager-optimization). Fixing the unit economics behind the cash squeeze.
 

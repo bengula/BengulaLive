@@ -366,12 +366,12 @@ Common objectives include:
 
 | Goal | Typical Policy Term |
 |--------|--------------------|
-| Child's secondary education | 8–12 years |
-| University education | 12–18 years |
-| Buying land | 5–15 years |
-| Building a home | 10–20 years |
-| Business startup capital | 5–15 years |
-| Retirement supplement | 15–25 years |
+| Child's secondary education | 8â€“12 years |
+| University education | 12â€“18 years |
+| Buying land | 5â€“15 years |
+| Building a home | 10â€“20 years |
+| Business startup capital | 5â€“15 years |
+| Retirement supplement | 15â€“25 years |
 
 Having a clearly defined objective often makes it easier for policyholders to remain committed throughout the policy term.
 
@@ -1219,7 +1219,7 @@ A reputable insurer should answer these questions clearly and provide supporting
 
 ### APA Akiba Halisi Case Study: How One of Kenya's Leading Endowment Plans Works
 
-> **Product Reviewed:** APA Life Assurance – Akiba Halisi Plan
+> **Product Reviewed:** APA Life Assurance â€“ Akiba Halisi Plan
 >
 > **Product Category:** Participating Endowment Plan
 >
@@ -1275,7 +1275,7 @@ This makes it suitable for people who want both financial discipline and family 
 | Bonus Participation | Yes (subject to declarations) |
 | Premium Frequency | Monthly, Quarterly, Semi-Annual, Annual, or a Single Premium (single-premium quotes issued through selected channels, including bancassurance) |
 | Payment Channels | Bank, Direct Debit, M-Pesa, Salary Check-off and other approved methods |
-| Entry Age | Generally 18–65 years |
+| Entry Age | Generally 18â€“65 years |
 | Maximum Maturity Age | Generally 70 years |
 | Policy Term | 6, 9, 12, 15 or 18 years |
 | Policy Loan | Available subject to policy terms and accumulated value |
@@ -1697,7 +1697,7 @@ Annual premium:
 
 Tax relief:
 
-15% × 96,000
+15% Ã— 96,000
 
 = **KES 14,400 per year**
 
@@ -2533,7 +2533,7 @@ They are designed to discourage frequent withdrawals.
 
 #### Winner
 
-🏆 **Money Market Fund**
+ðŸ† **Money Market Fund**
 
 ---
 
@@ -2575,7 +2575,7 @@ If both unexpectedly die, the MMF investor's family generally receives only the 
 
 #### Winner
 
-🏆 **Endowment Plan**
+ðŸ† **Endowment Plan**
 
 ---
 
@@ -2684,7 +2684,7 @@ Investor B usually accumulates more wealth over time.
 
 #### Winner
 
-🏆 **Endowment Plan**
+ðŸ† **Endowment Plan**
 
 ---
 
@@ -2716,7 +2716,7 @@ This is precisely why financial planners recommend maintaining a separate emerge
 
 #### Winner
 
-🏆 **Money Market Fund**
+ðŸ† **Money Market Fund**
 
 ---
 
@@ -2742,7 +2742,7 @@ Always consult current tax guidance before investing.
 
 #### Winner
 
-🏆 **Endowment Plan**
+ðŸ† **Endowment Plan**
 
 (for qualifying taxpayers)
 
@@ -2803,7 +2803,7 @@ The additional complexity reflects the insurance component.
 
 #### Winner
 
-🏆 **Money Market Fund**
+ðŸ† **Money Market Fund**
 
 ---
 
@@ -2886,14 +2886,14 @@ Each product protects a different aspect of your financial life.
 
 | Category | Winner |
 |----------|--------|
-| Liquidity | 🏆 MMF |
-| Emergency Savings | 🏆 MMF |
-| Investment Flexibility | 🏆 MMF |
-| Family Protection | 🏆 Endowment |
-| Financial Discipline | 🏆 Endowment |
-| Tax Relief | 🏆 Endowment* |
-| Long-Term Goal Planning | 🏆 Endowment |
-| Short-Term Cash Management | 🏆 MMF |
+| Liquidity | ðŸ† MMF |
+| Emergency Savings | ðŸ† MMF |
+| Investment Flexibility | ðŸ† MMF |
+| Family Protection | ðŸ† Endowment |
+| Financial Discipline | ðŸ† Endowment |
+| Tax Relief | ðŸ† Endowment* |
+| Long-Term Goal Planning | ðŸ† Endowment |
+| Short-Term Cash Management | ðŸ† MMF |
 
 \*For qualifying policies and taxpayers under current Kenyan tax law.
 
@@ -2989,7 +2989,7 @@ Treasury Bonds are commonly used for:
 |----------|----------------|----------------|----------------|
 | Issuer | Insurance Company | Government of Kenya | Government of Kenya |
 | Life Insurance | Yes | No | No |
-| Investment Term | 5–20+ years | Up to 364 days | 2–30 years |
+| Investment Term | 5â€“20+ years | Up to 364 days | 2â€“30 years |
 | Liquidity | Low | Moderate | Moderate |
 | Regular Income | Usually No | No | Coupon Payments |
 | Death Benefit | Yes | Investment Value Only | Investment Value Only |
@@ -3026,7 +3026,7 @@ Your protection depends on:
 
 #### Winner
 
-🏆 **Treasury Bills and Treasury Bonds**
+ðŸ† **Treasury Bills and Treasury Bonds**
 
 When considering investment credit risk alone, government securities generally have the advantage.
 
@@ -3099,7 +3099,7 @@ The main benefit is received at maturity or, in the event of death, by the benef
 
 #### Winner
 
-🏆 **Treasury Bonds**
+ðŸ† **Treasury Bonds**
 
 ---
 
@@ -3127,7 +3127,7 @@ Early surrender may result in penalties and reduced benefits.
 
 #### Winner
 
-🏆 **Treasury Bills**
+ðŸ† **Treasury Bills**
 
 ---
 
@@ -3165,7 +3165,7 @@ If they die during the policy term, the beneficiaries receive the applicable dea
 
 #### Winner
 
-🏆 **Endowment Plan**
+ðŸ† **Endowment Plan**
 
 ---
 
@@ -3181,7 +3181,7 @@ For people who struggle to save consistently, this discipline can be a valuable 
 
 #### Winner
 
-🏆 **Endowment Plan**
+ðŸ† **Endowment Plan**
 
 ---
 
@@ -3323,14 +3323,14 @@ Diversification helps reduce dependence on any single financial product.
 
 | Category | Winner |
 |----------|--------|
-| Capital Safety | 🏆 Treasury Bills/Bonds |
-| Regular Income | 🏆 Treasury Bonds |
-| Liquidity | 🏆 Treasury Bills |
-| Long-Term Savings Discipline | 🏆 Endowment Plan |
-| Family Protection | 🏆 Endowment Plan |
-| Tax Relief (Qualifying Policies) | 🏆 Endowment Plan* |
-| Education Planning | 🏆 Endowment Plan |
-| Short-Term Cash Management | 🏆 Treasury Bills |
+| Capital Safety | ðŸ† Treasury Bills/Bonds |
+| Regular Income | ðŸ† Treasury Bonds |
+| Liquidity | ðŸ† Treasury Bills |
+| Long-Term Savings Discipline | ðŸ† Endowment Plan |
+| Family Protection | ðŸ† Endowment Plan |
+| Tax Relief (Qualifying Policies) | ðŸ† Endowment Plan* |
+| Education Planning | ðŸ† Endowment Plan |
+| Short-Term Cash Management | ðŸ† Treasury Bills |
 
 \*Subject to current Kenyan tax legislation and eligibility.
 
@@ -3770,10 +3770,10 @@ For example:
 
 | Goal | Suggested Policy Term |
 |------|-----------------------|
-| Child entering secondary school | 5–8 years |
-| University education | 10–18 years |
-| Retirement | 15–25 years |
-| Home construction | 10–15 years |
+| Child entering secondary school | 5â€“8 years |
+| University education | 10â€“18 years |
+| Retirement | 15â€“25 years |
+| Home construction | 10â€“15 years |
 
 ---
 
@@ -4119,7 +4119,7 @@ Based on everything we've covered, an endowment plan may be a good fit if you:
 
 #### Example Profiles
 
-##### 👨‍👩‍👧 Young Family
+##### ðŸ‘¨â€ðŸ‘©â€ðŸ‘§ Young Family
 
 A couple with two young children wants to ensure university fees will be available in 15 years.
 
@@ -4132,7 +4132,7 @@ An endowment plan can provide:
 
 ---
 
-##### 👩 Salaried Professional
+##### ðŸ‘© Salaried Professional
 
 An employee receives a regular monthly salary and wants a forced savings mechanism.
 
@@ -4140,7 +4140,7 @@ Automatic premium deductions can make consistent saving easier.
 
 ---
 
-##### 👴 Retirement Planner
+##### ðŸ‘´ Retirement Planner
 
 Someone approaching retirement may use an endowment plan alongside pension savings to create an additional lump sum for future needs.
 

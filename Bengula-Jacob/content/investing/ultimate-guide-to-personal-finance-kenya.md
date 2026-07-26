@@ -17,7 +17,7 @@ Personal finance is often presented as a collection of financial products: [open
 
 Every Kenyan household operates under the same basic constraints. Income is finite, expenses are unavoidable, and unexpected events such as illness, unemployment, business disruptions, or inflation can quickly derail even the best financial plans. The objective of personal finance is therefore not simply to accumulate wealth, but to build resilience while steadily improving long-term financial security.
 
-The economic environment makes disciplined financial planning more important than ever. The [Central Bank of Kenya (CBK)](https://www.centralbank.go.ke/) held the Central Bank Rate (CBR) at **8.75%** at its June 9, 2026 Monetary Policy Committee meeting - its second consecutive hold after ten straight cuts totalling 425 basis points since August 2024 - reflecting a cautious stance amid global oil-price and geopolitical uncertainty. At the same time, annual inflation eased to **6.4%** in June 2026 from 6.7% in May, remaining within the CBK's 2.5%–7.5% target band but still well above yields on idle cash. This means money left sitting in a low-interest current account continues to lose purchasing power over time, even while nominally "safe."
+The economic environment makes disciplined financial planning more important than ever. The [Central Bank of Kenya (CBK)](https://www.centralbank.go.ke/) held the Central Bank Rate (CBR) at **8.75%** at its June 9, 2026 Monetary Policy Committee meeting - its second consecutive hold after ten straight cuts totalling 425 basis points since August 2024 - reflecting a cautious stance amid global oil-price and geopolitical uncertainty. At the same time, annual inflation eased to **6.4%** in June 2026 from 6.7% in May, remaining within the CBK's 2.5%â€“7.5% target band but still well above yields on idle cash. This means money left sitting in a low-interest current account continues to lose purchasing power over time, even while nominally "safe."
 
 This has practical implications.
 
@@ -211,9 +211,9 @@ Every investment sits somewhere within this triangle:
 ```mermaid
 flowchart TD
     %% Outer boundary coordinates mapped visually
-    A(( HIGHER RETURNS <br> ▲ )) 
-    B(( SAFETY & LIQUIDITY <br> ◀ ))
-    C(( HIGHER RISK <br> ▶ ))
+    A(( HIGHER RETURNS <br> â–² )) 
+    B(( SAFETY & LIQUIDITY <br> â—€ ))
+    C(( HIGHER RISK <br> â–¶ ))
 
     %% Triangle Perimeters
     A --- B
@@ -290,15 +290,15 @@ These mistakes are often more costly than selecting an average-performing invest
 
 Before investing a single shilling, ask yourself:
 
-✅ What is this money for?
+âœ… What is this money for?
 
-✅ When will I need it?
+âœ… When will I need it?
 
-✅ Can I tolerate temporary losses?
+âœ… Can I tolerate temporary losses?
 
-✅ How quickly might I need access to the money?
+âœ… How quickly might I need access to the money?
 
-✅ Does this investment match my objective, or am I chasing recent performance?
+âœ… Does this investment match my objective, or am I chasing recent performance?
 
 If you cannot confidently answer these questions, the investment decision should wait.
 
@@ -457,15 +457,15 @@ This allows your savings rate to improve alongside your income.
 
 Before paying for a course, certification, or degree, ask:
 
-✅ Will it increase my earning potential?
+âœ… Will it increase my earning potential?
 
-✅ Is there clear market demand for these skills?
+âœ… Is there clear market demand for these skills?
 
-✅ Can I recover the cost through higher future income?
+âœ… Can I recover the cost through higher future income?
 
-✅ Will the qualification remain relevant over the next decade?
+âœ… Will the qualification remain relevant over the next decade?
 
-✅ Does it improve my career resilience if my current industry changes?
+âœ… Does it improve my career resilience if my current industry changes?
 
 If most answers are "yes," the investment may generate returns that exceed many traditional financial products.
 
@@ -637,15 +637,15 @@ These pillars work together. Weakness in one area increases pressure on the othe
 
 At the end of every month, ask:
 
-✅ Did my spending reflect my priorities?
+âœ… Did my spending reflect my priorities?
 
-✅ Did I increase my net worth?
+âœ… Did I increase my net worth?
 
-✅ Did I save before spending?
+âœ… Did I save before spending?
 
-✅ Did any unnecessary subscriptions or recurring costs emerge?
+âœ… Did any unnecessary subscriptions or recurring costs emerge?
 
-✅ Would I be financially secure if my income stopped for three months?
+âœ… Would I be financially secure if my income stopped for three months?
 
 If the answer to the final question is "no," your next financial goal should not necessarily be investing. It should be strengthening your financial resilience.
 
@@ -716,17 +716,17 @@ A genuine emergency is:
 
 Examples include:
 
-✅ Medical emergencies
+âœ… Medical emergencies
 
-✅ Sudden unemployment
+âœ… Sudden unemployment
 
-✅ Major business disruption
+âœ… Major business disruption
 
-✅ Essential home repairs
+âœ… Essential home repairs
 
-✅ Emergency travel for close family
+âœ… Emergency travel for close family
 
-✅ Critical vehicle repairs needed to continue earning income
+âœ… Critical vehicle repairs needed to continue earning income
 
 ---
 
@@ -817,9 +817,9 @@ An empty emergency fund leaves you completely exposed to financial disaster. Try
 
 |Milestone|Target Amount|Strategic Purpose|Local Tool to Use|
 |---|---|---|---|
-|**Stage 1: The Shield**|**KSh 10,000 – 20,000**|Absorbs minor shocks like a cracked phone screen or sudden clinic visit.|**M-Shwari Lock Savings** (keeps cash out of your main M-Pesa wallet).|
+|**Stage 1: The Shield**|**KSh 10,000 â€“ 20,000**|Absorbs minor shocks like a cracked phone screen or sudden clinic visit.|**M-Shwari Lock Savings** (keeps cash out of your main M-Pesa wallet).|
 |**Stage 2: The Bridge**|**1 Month of Essentials**|Prevents panic and expensive digital app loans if cash flow stalls.|**KCBOmni** or **NCBA Loop** (separate digital pots earning interest).|
-|**Stage 3: The Fortress**|**3 – 6 Months of Living**|Delivers true freedom to switch jobs, invest, or handle major transitions.|**High-Yield Money Market Funds (MMFs)** (e.g., CIC, Sanlam, or ICEA).|
+|**Stage 3: The Fortress**|**3 â€“ 6 Months of Living**|Delivers true freedom to switch jobs, invest, or handle major transitions.|**High-Yield Money Market Funds (MMFs)** (e.g., CIC, Sanlam, or ICEA).|
 
 ---
 
@@ -837,13 +837,13 @@ Moving money automatically guarantees progress. It removes emotion from saving a
 
 Avoid these common errors:
 
-❌ Investing emergency savings in illiquid assets such as land.
+âŒ Investing emergency savings in illiquid assets such as land.
 
-❌ Chasing the highest advertised returns at the expense of accessibility.
+âŒ Chasing the highest advertised returns at the expense of accessibility.
 
-❌ Using emergency savings to finance discretionary purchases.
+âŒ Using emergency savings to finance discretionary purchases.
 
-❌ Failing to replenish the fund after it has been used.
+âŒ Failing to replenish the fund after it has been used.
 
 The emergency fund is a revolving safety net. Whenever it is drawn down for a genuine emergency, rebuilding it should become the next financial priority.
 
@@ -853,13 +853,13 @@ The emergency fund is a revolving safety net. Whenever it is drawn down for a ge
 
 Before considering higher-risk investments, ask yourself:
 
-✅ Could I cover three months of essential expenses if my income stopped tomorrow?
+âœ… Could I cover three months of essential expenses if my income stopped tomorrow?
 
-✅ Would I need to borrow at high interest to handle a medical emergency?
+âœ… Would I need to borrow at high interest to handle a medical emergency?
 
-✅ Can I access my emergency savings within one business day?
+âœ… Can I access my emergency savings within one business day?
 
-✅ Is my emergency fund separated from money allocated for investments or planned purchases?
+âœ… Is my emergency fund separated from money allocated for investments or planned purchases?
 
 If the answer to any of these questions is **no**, strengthening your emergency fund is likely to provide a greater improvement to your financial security than seeking higher investment returns.
 
@@ -1074,17 +1074,17 @@ Price should never be the only consideration.
 
 Evaluate:
 
-✅ Financial strength
+âœ… Financial strength
 
-✅ Claims settlement reputation
+âœ… Claims settlement reputation
 
-✅ Coverage limits
+âœ… Coverage limits
 
-✅ Exclusions
+âœ… Exclusions
 
-✅ Customer service
+âœ… Customer service
 
-✅ Regulatory status
+âœ… Regulatory status
 
 The Insurance Regulatory Authority maintains a public register of licensed insurers and publishes consumer information to help policyholders make informed decisions.
 
@@ -1094,17 +1094,17 @@ The Insurance Regulatory Authority maintains a public register of licensed insur
 
 Avoid these frequent errors:
 
-❌ Buying insurance solely because it is cheapest.
+âŒ Buying insurance solely because it is cheapest.
 
-❌ Failing to understand policy exclusions.
+âŒ Failing to understand policy exclusions.
 
-❌ Underinsuring valuable assets.
+âŒ Underinsuring valuable assets.
 
-❌ Allowing policies to lapse unintentionally.
+âŒ Allowing policies to lapse unintentionally.
 
-❌ Assuming employer-provided insurance is sufficient for all circumstances.
+âŒ Assuming employer-provided insurance is sufficient for all circumstances.
 
-❌ Treating insurance as an investment rather than risk protection.
+âŒ Treating insurance as an investment rather than risk protection.
 
 ---
 
@@ -1112,15 +1112,15 @@ Avoid these frequent errors:
 
 Before purchasing any policy, ask:
 
-✅ What financial risk am I transferring?
+âœ… What financial risk am I transferring?
 
-✅ Could I comfortably absorb this loss without insurance?
+âœ… Could I comfortably absorb this loss without insurance?
 
-✅ Do I understand what is covered and what is excluded?
+âœ… Do I understand what is covered and what is excluded?
 
-✅ Is the insurer licensed and regulated?
+âœ… Is the insurer licensed and regulated?
 
-✅ Does the premium fit comfortably within my long-term financial plan?
+âœ… Does the premium fit comfortably within my long-term financial plan?
 
 If the answers are clear, insurance becomes a strategic tool rather than an emotional purchase.
 
@@ -1360,17 +1360,17 @@ Financial independence.
 
 Avoid these common pitfalls:
 
-❌ Assuming NSSF alone will fund retirement.
+âŒ Assuming NSSF alone will fund retirement.
 
-❌ Starting to save only a few years before retirement.
+âŒ Starting to save only a few years before retirement.
 
-❌ Frequently withdrawing long-term retirement savings.
+âŒ Frequently withdrawing long-term retirement savings.
 
-❌ Ignoring inflation when estimating future expenses.
+âŒ Ignoring inflation when estimating future expenses.
 
-❌ Failing to review beneficiary nominations.
+âŒ Failing to review beneficiary nominations.
 
-❌ Concentrating retirement wealth in a single asset class.
+âŒ Concentrating retirement wealth in a single asset class.
 
 ---
 
@@ -1378,15 +1378,15 @@ Avoid these common pitfalls:
 
 Before making retirement decisions, ask yourself:
 
-✅ If I stopped working today, where would my income come from?
+âœ… If I stopped working today, where would my income come from?
 
-✅ Am I relying on one retirement asset or several?
+âœ… Am I relying on one retirement asset or several?
 
-✅ Are my retirement savings keeping pace with inflation?
+âœ… Are my retirement savings keeping pace with inflation?
 
-✅ Have I increased retirement contributions as my income has grown?
+âœ… Have I increased retirement contributions as my income has grown?
 
-✅ Have I nominated beneficiaries and reviewed them recently?
+âœ… Have I nominated beneficiaries and reviewed them recently?
 
 ---
 
@@ -1568,15 +1568,15 @@ In Kenya, executors or administrators generally obtain authority through probate
 
 Avoid these common errors:
 
-❌ Assuming a will is only necessary for wealthy individuals.
+âŒ Assuming a will is only necessary for wealthy individuals.
 
-❌ Failing to review beneficiary nominations after major life events.
+âŒ Failing to review beneficiary nominations after major life events.
 
-❌ Leaving no instructions for digital assets.
+âŒ Leaving no instructions for digital assets.
 
-❌ Ignoring business succession planning.
+âŒ Ignoring business succession planning.
 
-❌ Assuming family members can automatically access bank accounts or transfer property without following legal procedures.
+âŒ Assuming family members can automatically access bank accounts or transfer property without following legal procedures.
 
 ---
 
@@ -1584,15 +1584,15 @@ Avoid these common errors:
 
 Review your estate plan by asking:
 
-✅ Do I have a valid and up-to-date will?
+âœ… Do I have a valid and up-to-date will?
 
-✅ Have I nominated beneficiaries where appropriate?
+âœ… Have I nominated beneficiaries where appropriate?
 
-✅ Would my family know where important documents are kept?
+âœ… Would my family know where important documents are kept?
 
-✅ Does my business have a succession plan?
+âœ… Does my business have a succession plan?
 
-✅ Have I considered how digital assets should be managed?
+âœ… Have I considered how digital assets should be managed?
 
 If you answer "no" to several of these questions, estate planning deserves attention before expanding your investment portfolio.
 
@@ -1656,13 +1656,13 @@ Common examples include:
 
 |Tax|Typical Application|Current Rate (2026)|
 |---|---|---|
-|PAYE|Employment income|Progressive, 10%–35% (see bands below)|
+|PAYE|Employment income|Progressive, 10%â€“35% (see bands below)|
 |Income Tax|Business and professional income|Progressive for individuals; 30% flat for resident companies|
-|Withholding Tax|Certain payments including professional services and investment income in specified cases|Varies by payment type, typically 5%–20%|
+|Withholding Tax|Certain payments including professional services and investment income in specified cases|Varies by payment type, typically 5%â€“20%|
 |Capital Gains Tax (CGT)|Disposal of qualifying property such as land, buildings, and unquoted shares|**15%** of the net gain (final tax)|
 |VAT|Purchases of taxable goods and services|**16%** standard rate|
 |Excise Duty|Selected products and services|Varies by product|
-|Turnover Tax (TOT)|Small business gross sales between KES 1M–25M/year|**3%** of gross turnover|
+|Turnover Tax (TOT)|Small business gross sales between KES 1Mâ€“25M/year|**3%** of gross turnover|
 
 Understanding which taxes apply to your income sources is an important part of financial planning. Rates and thresholds change with each Finance Act, so always confirm the current figures on the [KRA website](https://www.kra.go.ke/) or via [iTax](https://itax.kra.go.ke/) before filing.
 
@@ -1679,9 +1679,9 @@ As of 2026, Kenya applies **five progressive PAYE bands** to monthly taxable pay
 | Monthly Taxable Pay (KES) | Rate |
 |---|---|
 | First 24,000 | 10% |
-| Next 8,333 (24,001 – 32,333) | 25% |
-| Next 467,667 (32,334 – 500,000) | 30% |
-| Next 300,000 (500,001 – 800,000) | 32.5% |
+| Next 8,333 (24,001 â€“ 32,333) | 25% |
+| Next 467,667 (32,334 â€“ 500,000) | 30% |
+| Next 300,000 (500,001 â€“ 800,000) | 32.5% |
 | Above 800,000 | 35% |
 
 Every resident employee also receives a **personal relief of KES 2,400 per month (KES 28,800 per year)**, deducted directly from the tax computed above.
@@ -1789,17 +1789,17 @@ Good records reduce errors, simplify return preparation, and support claims wher
 
 Avoid these common errors:
 
-❌ Waiting until the filing deadline to organize records.
+âŒ Waiting until the filing deadline to organize records.
 
-❌ Assuming PAYE eliminates all filing obligations.
+âŒ Assuming PAYE eliminates all filing obligations.
 
-❌ Ignoring allowable deductions and reliefs.
+âŒ Ignoring allowable deductions and reliefs.
 
-❌ Mixing personal and business finances.
+âŒ Mixing personal and business finances.
 
-❌ Failing to keep supporting documentation.
+âŒ Failing to keep supporting documentation.
 
-❌ Making investment decisions based solely on tax considerations.
+âŒ Making investment decisions based solely on tax considerations.
 
 ---
 
@@ -1807,15 +1807,15 @@ Avoid these common errors:
 
 Before making a major financial decision, ask:
 
-✅ Have I considered the after-tax return?
+âœ… Have I considered the after-tax return?
 
-✅ Am I taking advantage of legitimate tax reliefs?
+âœ… Am I taking advantage of legitimate tax reliefs?
 
-✅ Do I understand my filing obligations?
+âœ… Do I understand my filing obligations?
 
-✅ Are my financial records complete and organized?
+âœ… Are my financial records complete and organized?
 
-✅ Is this decision improving my long-term financial position, not just reducing taxes today?
+âœ… Is this decision improving my long-term financial position, not just reducing taxes today?
 
 If the answer to any of these questions is "no," review the tax implications before proceeding.
 
@@ -1986,17 +1986,17 @@ Long-term investing should therefore aim to preserve and increase **real wealth*
 
 Avoid these common pitfalls:
 
-❌ Chasing the highest advertised returns.
+âŒ Chasing the highest advertised returns.
 
-❌ Investing emergency funds in volatile assets.
+âŒ Investing emergency funds in volatile assets.
 
-❌ Concentrating all investments in one company or one asset class.
+âŒ Concentrating all investments in one company or one asset class.
 
-❌ Buying investments you do not understand.
+âŒ Buying investments you do not understand.
 
-❌ Reacting emotionally during market downturns.
+âŒ Reacting emotionally during market downturns.
 
-❌ Ignoring fees, taxes, and inflation.
+âŒ Ignoring fees, taxes, and inflation.
 
 ---
 
@@ -2004,15 +2004,15 @@ Avoid these common pitfalls:
 
 Before making any investment, ask:
 
-✅ What financial goal does this investment support?
+âœ… What financial goal does this investment support?
 
-✅ What is my investment horizon?
+âœ… What is my investment horizon?
 
-✅ How much volatility can I tolerate?
+âœ… How much volatility can I tolerate?
 
-✅ Does this investment improve my portfolio's diversification?
+âœ… Does this investment improve my portfolio's diversification?
 
-✅ What are the risks, costs, taxes, and liquidity constraints?
+âœ… What are the risks, costs, taxes, and liquidity constraints?
 
 If you cannot answer these questions confidently, spend more time understanding the investment before committing your money.
 
@@ -2205,17 +2205,17 @@ These usually indicate cash-flow problems rather than a shortage of available cr
 
 Avoid these common errors:
 
-❌ Borrowing because you qualify rather than because you need to.
+âŒ Borrowing because you qualify rather than because you need to.
 
-❌ Comparing loans using interest rates alone.
+âŒ Comparing loans using interest rates alone.
 
-❌ Ignoring fees and repayment conditions.
+âŒ Ignoring fees and repayment conditions.
 
-❌ Financing depreciating lifestyle purchases.
+âŒ Financing depreciating lifestyle purchases.
 
-❌ Borrowing without an emergency fund.
+âŒ Borrowing without an emergency fund.
 
-❌ Assuming refinancing automatically reduces borrowing costs.
+âŒ Assuming refinancing automatically reduces borrowing costs.
 
 ---
 
@@ -2223,15 +2223,15 @@ Avoid these common errors:
 
 Before signing any loan agreement, ask yourself:
 
-✅ Why am I borrowing?
+âœ… Why am I borrowing?
 
-✅ Will this loan increase my future earning capacity or financial position?
+âœ… Will this loan increase my future earning capacity or financial position?
 
-✅ Can I comfortably repay the loan if my income falls temporarily?
+âœ… Can I comfortably repay the loan if my income falls temporarily?
 
-✅ Have I calculated the **total cost**, not just the advertised interest rate?
+âœ… Have I calculated the **total cost**, not just the advertised interest rate?
 
-✅ Would postponing the purchase leave me financially better off?
+âœ… Would postponing the purchase leave me financially better off?
 
 If you cannot answer these questions confidently, delay the borrowing decision until you can.
 
@@ -2353,7 +2353,7 @@ A better measure is **net worth**.
 
 Net worth is calculated as:
 
-> **Assets − Liabilities = Net Worth**
+> **Assets âˆ’ Liabilities = Net Worth**
 
 Assets include:
 
@@ -2397,21 +2397,21 @@ Each stage supports the next.
 ```
               Legacy
         Estate Planning
-──────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        Financial Freedom
     Passive Investment Income
-──────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
      Long-Term Investments
- Retirement • Bonds • Shares
-──────────────────────────
+ Retirement â€¢ Bonds â€¢ Shares
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       Emergency Savings
-──────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       Insurance Protection
-──────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
  Positive Cash Flow & Budget
-──────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       Human Capital
- Skills • Income • Career
+ Skills â€¢ Income â€¢ Career
 ```
 
 Notice that **income sits at the foundation**.
@@ -2480,35 +2480,35 @@ At the end of each year, ask yourself:
 
 ### Income
 
-✅ Has my earning capacity improved?
+âœ… Has my earning capacity improved?
 
 ### Budget
 
-✅ Did I maintain positive cash flow?
+âœ… Did I maintain positive cash flow?
 
 ### Emergency Fund
 
-✅ Could I survive six months without employment income?
+âœ… Could I survive six months without employment income?
 
 ### Insurance
 
-✅ Is my coverage still appropriate?
+âœ… Is my coverage still appropriate?
 
 ### Investments
 
-✅ Am I diversified?
+âœ… Am I diversified?
 
 ### Retirement
 
-✅ Did I increase my pension contributions?
+âœ… Did I increase my pension contributions?
 
 ### Debt
 
-✅ Is my debt supporting wealth creation rather than consumption?
+âœ… Is my debt supporting wealth creation rather than consumption?
 
 ### Estate Planning
 
-✅ Are my will and beneficiary nominations current?
+âœ… Are my will and beneficiary nominations current?
 
 These questions provide a practical framework for keeping your financial plan aligned with your changing circumstances.
 
@@ -2516,7 +2516,7 @@ These questions provide a practical framework for keeping your financial plan al
 
 # Looking Ahead
 
-Kenya's financial landscape continues to evolve. The Capital Markets Authority has expanded the range of regulated collective investment schemes, while the Nairobi Securities Exchange's 2025–2029 strategy seeks to broaden retail participation, increase the number of listed investment products such as ETFs and REITs, and improve access through technology. These developments create more opportunities for investors, but they also make financial literacy and disciplined decision-making increasingly important.
+Kenya's financial landscape continues to evolve. The Capital Markets Authority has expanded the range of regulated collective investment schemes, while the Nairobi Securities Exchange's 2025â€“2029 strategy seeks to broaden retail participation, increase the number of listed investment products such as ETFs and REITs, and improve access through technology. These developments create more opportunities for investors, but they also make financial literacy and disciplined decision-making increasingly important.
 
 ---
 
@@ -2575,26 +2575,26 @@ Throughout this guide, we have followed a deliberate sequence.
 
 ```
 Increase Your Human Capital
-            │
-            ▼
+            â”‚
+            â–¼
 Generate Sustainable Income
-            │
-            ▼
+            â”‚
+            â–¼
 Build Positive Cash Flow
-            │
-            ▼
+            â”‚
+            â–¼
 Create an Emergency Fund
-            │
-            ▼
+            â”‚
+            â–¼
 Protect Against Major Risks
-            │
-            ▼
+            â”‚
+            â–¼
 Invest for Long-Term Growth
-            │
-            ▼
+            â”‚
+            â–¼
 Plan for Retirement
-            │
-            ▼
+            â”‚
+            â–¼
 Transfer Wealth Efficiently
 ```
 
@@ -2724,71 +2724,71 @@ At least once every year, conduct a complete financial review.
 
 ### Human Capital
 
-☐ Have my skills and earning capacity improved?
+â˜ Have my skills and earning capacity improved?
 
-☐ Have I invested in learning this year?
+â˜ Have I invested in learning this year?
 
 ---
 
 ### Income
 
-☐ Has my income increased?
+â˜ Has my income increased?
 
-☐ Have I diversified my income sources?
+â˜ Have I diversified my income sources?
 
 ---
 
 ### Budget
 
-☐ Am I consistently generating positive cash flow?
+â˜ Am I consistently generating positive cash flow?
 
-☐ Have I eliminated unnecessary recurring expenses?
+â˜ Have I eliminated unnecessary recurring expenses?
 
 ---
 
 ### Emergency Fund
 
-☐ Do I still have at least three to six months of essential expenses readily available?
+â˜ Do I still have at least three to six months of essential expenses readily available?
 
 ---
 
 ### Insurance
 
-☐ Does my insurance still reflect my current circumstances?
+â˜ Does my insurance still reflect my current circumstances?
 
 ---
 
 ### Investments
 
-☐ Is my portfolio diversified?
+â˜ Is my portfolio diversified?
 
-☐ Have I reviewed fees, taxes, and asset allocation?
+â˜ Have I reviewed fees, taxes, and asset allocation?
 
 ---
 
 ### Debt
 
-☐ Is every outstanding loan helping improve my long-term financial position?
+â˜ Is every outstanding loan helping improve my long-term financial position?
 
 ---
 
 ### Retirement
 
-☐ Have I increased retirement contributions this year?
+â˜ Have I increased retirement contributions this year?
 
 ---
 
 ### Estate Planning
 
-☐ Is my will current?
+â˜ Is my will current?
 
-☐ Are beneficiary nominations still accurate?
+â˜ Are beneficiary nominations still accurate?
 
 ---
 
 ### Personal Goals
 
-☐ Does my financial plan still reflect the life I want to build?
+â˜ Does my financial plan still reflect the life I want to build?
 
 ---
 

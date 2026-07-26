@@ -30,12 +30,12 @@ The narrative structure follows a simple arc:
 
 ```mermaid
 flowchart TD
-    A["🔥 Problem<br>(urgent)"] --> B["🧱 Why Unsolved<br>Barriers so far"]
-    B --> C["🪟 The Window<br>What just changed"]
-    C --> D["🛠️ What We Built<br>The solution"]
-    D --> E["📊 Proof<br>It works"]
-    E --> F["📈 Scale<br>How we grow"]
-    F --> G["🤝 The Ask<br>What we need"]
+    A["ðŸ”¥ Problem<br>(urgent)"] --> B["ðŸ§± Why Unsolved<br>Barriers so far"]
+    B --> C["ðŸªŸ The Window<br>What just changed"]
+    C --> D["ðŸ› ï¸ What We Built<br>The solution"]
+    D --> E["ðŸ“Š Proof<br>It works"]
+    E --> F["ðŸ“ˆ Scale<br>How we grow"]
+    F --> G["ðŸ¤ The Ask<br>What we need"]
 
     style A fill:#ef4444,color:#fff,stroke:none
     style B fill:#f97316,color:#fff,stroke:none
@@ -108,7 +108,7 @@ Investors back people before products, especially at early stage. [Include indiv
 
 #### Slide 11: Financials
 
-Show your burn rate and your 18–24 month projection. Keep it simple, one clear chart. [For pre-seed and seed stage, multi-year financial projections are largely fiction and experienced investors know it.](https://www.linkedin.com/pulse/stop-over-optimizing-your-startup-pitch-deck-mark-birch--wuzne) What they want to see is that you understand your unit economics and have a credible path to the next milestone.
+Show your burn rate and your 18â€“24 month projection. Keep it simple, one clear chart. [For pre-seed and seed stage, multi-year financial projections are largely fiction and experienced investors know it.](https://www.linkedin.com/pulse/stop-over-optimizing-your-startup-pitch-deck-mark-birch--wuzne) What they want to see is that you understand your unit economics and have a credible path to the next milestone.
 
 #### Slide 12: The Ask
 

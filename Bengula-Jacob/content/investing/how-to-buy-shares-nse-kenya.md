@@ -62,9 +62,9 @@ Read the round-trip line twice. A trader who buys and sells monthly gives away o
 
 Four published numbers turn a ticker symbol into a decision:
 
-- **Dividend yield** (dividend per share ÷ price): your payment for waiting. Compare it to the 91-day T-bill (8.835% as at 2 July 2026); a mature company yielding far below it needs a credible growth story.
-- **Price-to-earnings** (price ÷ earnings per share): what you pay per shilling of profit; meaningful against the company's own history and its sector peers, not in isolation.
-- **Price-to-book** (price ÷ net assets per share): the bank-stock lens; a persistent discount to book is either an opportunity or a warning, and the annual report usually tells you which.
+- **Dividend yield** (dividend per share Ã· price): your payment for waiting. Compare it to the 91-day T-bill (8.835% as at 2 July 2026); a mature company yielding far below it needs a credible growth story.
+- **Price-to-earnings** (price Ã· earnings per share): what you pay per shilling of profit; meaningful against the company's own history and its sector peers, not in isolation.
+- **Price-to-book** (price Ã· net assets per share): the bank-stock lens; a persistent discount to book is either an opportunity or a warning, and the annual report usually tells you which.
 - **Turnover**: whether the counter actually trades. If days pass with no volume, your exit will cost you the spread; size positions accordingly.
 
 Then read one thing that is not a number: the latest annual report's first twenty pages. A retail investor who reads the chairman's statement, the dividend history, and the segment results is better informed than most of the market's noise.
@@ -116,6 +116,6 @@ The desk's equity thesis for Kenya is patience arbitrage. The structural changes
 - [Nairobi Securities Exchange](https://www.nse.co.ke/): listings, indices, trading rules.
 - [Capital Markets Authority](https://www.cma.or.ke/): the licensed broker register.
 - [The NSE Explained, Huduma Global](https://hudumaglobal.com/blog/nairobi-securities-exchange-explained-how-nse-works-indices-start-trading): 2025 performance and market structure.
-- Bengula Inc: [The Ultimate Guide to Investing in Kenya](/blog/ultimate-guide-to-investing-in-kenya), [REITs in Kenya](/blog/reits-in-kenya-guide), [Monthly Income Engine](/blog/monthly-income-engine-kenya), [Sovereign Debt Explained](/blog/sovereign-debt-explained), [Bank Account vs SACCO vs MMF vs Insurance](/blog/bank-vs-sacco-vs-mmf-savings)
+- Bengula Inc: [The Ultimate Guide to Investing in Kenya](/blog/ultimate-guide-to-investing-in-kenya), [REITs in Kenya](/blog/reits-in-kenya-guide), [Monthly Income Engine](/blog/monthly-income-engine-kenya), [Dividend Income on the NSE](/blog/dividend-income-nse-kenya), [Sovereign Debt Explained](/blog/sovereign-debt-explained), [Bank Account vs SACCO vs MMF vs Insurance](/blog/bank-vs-sacco-vs-mmf-savings)
 
 *General financial education, not investment advice. Index figures are for 2025 and rates as at 2 July 2026; markets move. Verify brokers on the CMA register and confirm all costs in writing before trading.*

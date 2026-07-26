@@ -4,9 +4,9 @@ title: How Much Does a Camel Cost in Kenya?
 summary: Camel prices in Kenya can range from about KSh 12,000 for young calves to over KSh 100,000 for mature animals, depending on age, breed, training, region, and intended use.
 category: Agri-Logistics
 author:
-  name: Bengula Inc
-  role: Adding meaning to life
-  avatar: /images/ColoredBengulaIncLogo.png
+  name: Bengula Jacob
+  role: Relationship Manager & Founder of Bengula Inc.
+  avatar: /images/jacob.jpg
 date: Apr 23, 2023
 readTime: 8 min read
 coverImage: https://images.pexels.com/photos/13365866/pexels-photo-13365866.jpeg?auto=compress&cs=tinysrgb&w=1600

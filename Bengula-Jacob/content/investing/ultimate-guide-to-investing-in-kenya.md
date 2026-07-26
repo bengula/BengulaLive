@@ -10,7 +10,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 Kenya has quietly become one of the most interesting places in the world to be a retail investor. In 2025 the Nairobi Securities Exchange was among the best-performing stock markets globally, with the NSE 20 index up 56.13% and the NSE 25 up 49.78%. Money market funds crossed from niche product to household word. The minimum NSE trade dropped from 100 shares to a single share. DhowCSD put Treasury bills and bonds a phone registration away from anyone with an ID and KES 50,000. Platforms now route Kenyan shillings into global ETFs from KES 5,000.
@@ -195,9 +195,9 @@ Brokerage commissions run around 1.5-1.85% per trade on small tickets (negotiabl
 
 **Reading a counter before you buy.** Four numbers turn a ticker into a decision, all published in the dailies and the broker apps:
 
-- **Dividend yield** (dividend per share ÷ price): the income you are paid to wait. Compare it to the T-bill rate; a mature company yielding far below it needs a growth story to justify itself.
-- **Price-to-earnings ratio** (price ÷ earnings per share): what you pay for each shilling of profit. Useful mainly against the same company's history and its sector peers, not as an absolute.
-- **Price-to-book** (price ÷ net assets per share): the classic bank-stock lens; sustained discounts to book ask "why?", and sometimes the answer is opportunity while sometimes it is rot.
+- **Dividend yield** (dividend per share Ã· price): the income you are paid to wait. Compare it to the T-bill rate; a mature company yielding far below it needs a growth story to justify itself.
+- **Price-to-earnings ratio** (price Ã· earnings per share): what you pay for each shilling of profit. Useful mainly against the same company's history and its sector peers, not as an absolute.
+- **Price-to-book** (price Ã· net assets per share): the classic bank-stock lens; sustained discounts to book ask "why?", and sometimes the answer is opportunity while sometimes it is rot.
 - **Free float and turnover**: how much of the company actually trades. A thin counter can be impossible to exit at the printed price; check that days pass with real volume before committing meaningful money.
 
 The sector map helps too: the NSE is roughly banks (the deepest, most liquid segment), Safaricom (a quarter of the market by itself), consumer and manufacturing (EABL, BAT, the millers), insurance, energy and utilities (KenGen, Kenya Power), and a long agricultural tail (the tea and sisal counters). An index-like Kenyan portfolio is, in practice, banks plus Safaricom plus a diversifier or two; know that before believing you are diversified.
@@ -586,4 +586,3 @@ Our view is unfashionable and consistent. The foundations first, always. Governm
 - Bengula Inc deep dives: [How to Evaluate Any Investment Opportunity](/blog/evaluate-investment-opportunity-kenya), [The MMF Stress Test](/blog/mmf-stress-test-kenya), [The Future of MMFs in Kenya](/blog/future-mmfs-kenya), [Sovereign Debt Explained](/blog/sovereign-debt-explained), [Kenyan Treasury Bonds Guide](/blog/kb-bond-guide-2026), [Monthly Income Engine](/blog/monthly-income-engine-kenya), [CBK Diaspora Bond Access](/blog/cbk-diaspora-bond-access), [Buying Land From the Diaspora](/blog/diaspora-land-purchase-kenya), [Bank Account vs SACCO vs MMF vs Insurance](/blog/bank-vs-sacco-vs-mmf-savings), [Safe for Savers, Risky for Guarantors](/blog/sacco-savers-guarantors), [The Complete Chama Guide](/blog/complete-chama-guide-kenya), [Chama LLP Land-Banking](/blog/chama-llp-land-banking-kenya), [Kikuyu Ridge Syndicate](/blog/kikuyu-ridge-syndicate), [Kikuyu Ridge Infrastructure](/blog/kikuyu-ridge-infrastructure), [Sleeping Asset Optimization](/blog/sleeping-asset-optimization), [Green Financing in Kenya](/blog/green-financing-kenya-guide), [How to Trade Bitcoins](/blog/linkedin-how-to-trade-bitcoins), [MiCA Regulation Overview](/blog/linkedin-mica-regulation-overview), [Fixed Deposit Lending Arbitrage](/blog/fixed-deposit-lending-arbitrage).
 
 *General financial education, not individualised investment, tax, or legal advice. All rates, yields, and index figures are dated in the text and will change; verify current figures, confirm licensing with the CMA, CBK, SASRA, or IRA as relevant, and consider professional advice for significant decisions. Past performance, including the NSE's 2025 rally, is not a promise of future returns.*
-

@@ -65,10 +65,10 @@ You do not need a dashboard or a CRM on day one. A clean spreadsheet updated wee
 
 Raw numbers become useful when they answer operational questions:
 
-- *"Which service line should I promote first online?"* → The one with the highest margin and most repeat business.
-- *"What content should I publish?"* → Content that answers the questions your best customer segment is already asking.
-- *"Where should I spend ad budget?"* → On the channels and geographies that produce qualified leads, not just clicks.
-- *"What should my homepage headline say?"* → It should name the audience, problem, and result that your data says matter most.
+- *"Which service line should I promote first online?"* â†’ The one with the highest margin and most repeat business.
+- *"What content should I publish?"* â†’ Content that answers the questions your best customer segment is already asking.
+- *"Where should I spend ad budget?"* â†’ On the channels and geographies that produce qualified leads, not just clicks.
+- *"What should my homepage headline say?"* â†’ It should name the audience, problem, and result that your data says matter most.
 
 This analysis does not require a data scientist. It requires an honest look at where money is made and where it is lost.
 

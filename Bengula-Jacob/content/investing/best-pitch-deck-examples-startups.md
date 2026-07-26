@@ -159,7 +159,7 @@ LinkedIn's Series B deck explained the internet's evolution, Web 1.0 vs Web 2.0,
 
 **What was missing.** No team slide.
 
-**The lesson.** Use an analogy that places your product in a context investors already trust. "We are the Google of X" is clichéd. A layered analogy that walks through a market's evolution is not.
+**The lesson.** Use an analogy that places your product in a context investors already trust. "We are the Google of X" is clichÃ©d. A layered analogy that walks through a market's evolution is not.
 
 ---
 
@@ -167,7 +167,7 @@ LinkedIn's Series B deck explained the internet's evolution, Web 1.0 vs Web 2.0,
 
 ![](https://www.slideshare.net/slideshow/embed_code/key/LIprzROHmzZxjK)
 
-TransferWise (now Wise) is a peer-to-peer international money transfer service operating in all but seven countries globally. Their seed round turned €56K in VC investment into a $3.5B company.
+TransferWise (now Wise) is a peer-to-peer international money transfer service operating in all but seven countries globally. Their seed round turned â‚¬56K in VC investment into a $3.5B company.
 
 **What they did right.** Clear slide labels, investors always knew what information each slide was conveying. Bright yellow transitions are visually distinctive and easy to follow. Good balance between words and visuals. An appendix would have made it stronger.
 
