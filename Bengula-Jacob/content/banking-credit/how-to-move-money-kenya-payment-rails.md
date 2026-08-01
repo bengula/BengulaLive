@@ -28,7 +28,7 @@ This guide sets the five main rails side by side, M-Pesa, PesaLink, EFT, RTGS, a
   desc: "Everyday payments up to the wallet limit go on M-Pesa: instant, 24/7, and the one rail with a real reversal path if you send to the wrong number."
 - icon: Zap
   title: Mid-size and urgent
-  desc: PesaLink moves money bank-to-bank in seconds, at higher limits than M-Pesa and lower cost than RTGS. The right rail for most urgent business payments.
+  desc: PesaLink moves money bank-to-bank in seconds, at higher limits than M-Pesa and, for larger sends, a lower and flat cost. The right rail for most urgent business payments.
 - icon: ShieldAlert
   title: Big-ticket is final
   desc: RTGS settles large payments same-day and is effectively irreversible once sent. Confirm the account twice; there is no reversal to rely on.
@@ -45,7 +45,7 @@ Before the comparison, a one-line picture of what each rail actually is, because
 
 **M-Pesa (and mobile money generally).** The mobile wallet almost everyone has. It moves value between phone numbers instantly, any hour, and includes Send Money, Pay Bill (a biller number plus an account reference), and Buy Goods / Lipa na M-Pesa Till (a till number). It now interoperates with other mobile-money networks and with banks, so a wallet is no longer a walled garden. Its defining traits are instant settlement, universal reach, and modest limits.
 
-**PesaLink.** A bank-to-bank instant transfer service run by Integrated Payment Services Limited (IPSL), which is owned by the Kenya Bankers Association. It moves money directly from your bank account to another person's bank account across member banks, in seconds, at any time, without going through a card network or a mobile wallet. Think of it as M-Pesa's speed with a bank account's higher limits.
+**PesaLink.** A bank-to-bank instant transfer service run by Integrated Payment Services Limited (IPSL), which is owned by the Kenya Bankers Association. It moves money directly from your bank account to another person's bank account across member banks, in seconds, at any time, without going through a card network or a mobile wallet. Think of it as M-Pesa's speed with a bank account's higher limits, and, for anything but the smallest sends, a lower cost.
 
 **EFT (Electronic Funds Transfer).** The workhorse of routine bank payments, processed in batches through the Automated Clearing House. It is cheap and reliable, but it clears on a cycle rather than instantly, so the money typically arrives the same or the next business day, not immediately. This is the rail built for payroll and bulk supplier runs, where cost matters more than speed.
 
@@ -64,7 +64,7 @@ Set the five rails against the things that actually change your decision. Treat 
 | Rail | Best for | Speed | Cost shape | Typical limit | Reversibility |
 |---|---|---|---|---|---|
 | **M-Pesa** | Small, everyday, instant | Instant, 24/7 | Tiered; small sends cheap, larger sends and withdrawals cost more | Up to ~KES 250,000 per transaction, ~KES 500,000 a day | Best of the rails: reversal possible if the recipient has not withdrawn |
-| **PesaLink** | Mid-size, urgent, bank-to-bank | Instant, 24/7 | Tiered; moderate, usually below RTGS | Up to ~KES 999,999 per transaction (bank-set daily caps) | Hard once credited; recovery via the banks |
+| **PesaLink** | Mid-size, urgent, bank-to-bank | Instant, 24/7 | Cheaper than M-Pesa; often free under ~KES 1,000, then a flat ~KES 20 above that (bank-set) | Up to ~KES 999,999 per transaction (bank-set daily caps) | Hard once credited; recovery via the banks |
 | **EFT** | Bulk, routine, non-urgent | Same or next business day | Cheapest bank rail; low flat fee | Under KES 1,000,000 (larger goes RTGS) | Hard; limited recall within the clearing cycle |
 | **RTGS (KEPSS)** | Big-ticket, same-day | Same-day, within CBK hours | Higher fixed fee (hundreds of shillings) | KES 1,000,000 and above (no practical upper limit) | Effectively irrevocable once settled |
 | **TT / SWIFT** | International | 1 to 3+ business days | Fee plus FX spread plus correspondent charges | Bank and regulatory limits | Very hard; recall request only, not guaranteed |
@@ -73,7 +73,7 @@ Read the table and the pattern is clear: **as the amount rises, you move down th
 
 Two practical cost points the table cannot fully show:
 
-- **M-Pesa's cost is not linear.** Small sends are cheap or free, but larger transfers and, especially, cash withdrawals carry a tariff that can make M-Pesa an expensive way to move a big sum, even before you hit the limit. For anything substantial between bank-account holders, PesaLink is usually both cheaper and cleaner.
+- **M-Pesa's cost climbs with the amount; PesaLink's does not.** M-Pesa's small sends are cheap or free, but larger transfers and, especially, cash withdrawals carry a tariff that rises with the sum, which can make M-Pesa an expensive way to move a big amount even before you hit the limit. PesaLink is the opposite shape: many banks send it free under about KES 1,000 and then charge a flat fee of roughly KES 20 all the way up to its ~KES 1,000,000 ceiling (each bank sets its own tariff). Because that fee is flat rather than tiered, PesaLink is usually both cheaper and cleaner than M-Pesa for anything but the smallest bank-to-bank sends, and the gap widens as the amount grows.
 - **The TT fee is the small part.** On an international payment, the quoted transfer fee is rarely the real cost. The margin inside the exchange rate, and any correspondent-bank deductions, usually dwarf it. Always ask for the all-in rate and compare it to the interbank rate.
 
 ---
