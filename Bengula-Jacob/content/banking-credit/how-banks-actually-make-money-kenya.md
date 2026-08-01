@@ -127,6 +127,7 @@ A Kenyan bank is not a place where money sleeps. It is a machine that earns from
 - [The Ultimate Guide To Banking In Kenya (2026 Enterprise Edition)](/blog/ultimate-guide-to-banking-in-kenya). Structuring accounts, fees, and credit to keep more of the margin.
 - [Fixed Deposit and Lending Arbitrage](/blog/fixed-deposit-lending-arbitrage). How a saver captures part of the spread instead of surrendering it.
 - [The USD and the Shilling: Hedging Import Margins](/blog/usd-shilling-hedging). Managing the currency exposure the FX engine feeds on.
+- [How to Move Money in Kenya: M-Pesa, PesaLink, EFT, RTGS, and TT Compared](/blog/how-to-move-money-kenya-payment-rails). Which rail carries each payment, and what the bank earns on it.
 
 ### References
 - [Central Bank of Kenya](https://www.centralbank.go.ke/). Banking sector data and the average lending (14.69%), deposit (6.88%), and savings (3.31%) rates for April 2026.

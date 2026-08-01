@@ -74,8 +74,12 @@ Standard bank loans have monthly cycles. Digital loans often have weekly or 14-d
 #### 4. Debt Stacking (Multiple Active Loans)
 "App-hopping", the practice of borrowing from App B to pay off App A, results in multiple active loans appearing on your credit profile at the same time. Even if you are current on all of them, the CRB profile showing five concurrent lenders flags you as a high-risk borrower. This prevents Tier-1 banks from offering you cheaper, long-term credit. If your record already carries this damage, it is fixable; [How To Check And Fix Your CRB Listing In Kenya](/blog/how-to-fix-your-crb-listing-kenya) walks through pulling the report, disputing errors, and clearing genuine arrears.
 
-```
-[Borrow from App A] â”€â”€> [Due Date] â”€â”€> [Borrow from App B to Pay A] â”€â”€> [Two Active CRB Entries] â”€â”€> [Credit Score Drops]
+```mermaid
+flowchart LR
+  A["Borrow from App A"] --> B["Due Date"]
+  B --> C["Borrow from App B to Pay A"]
+  C --> D["Two Active CRB Entries"]
+  D --> E["Credit Score Drops"]
 ```
 
 ---

@@ -25,14 +25,14 @@ Historically, retail investors in Kenya parked savings in commercial bank accoun
 
 Demand tells the story better than any sales pitch. When the Treasury reopened two Infrastructure Bonds in August 2025 targeting KSh 50 billion, investors bid **over KSh 207 billion**, a roughly **415% oversubscription**. Retail investors, Saccos, and self-help groups now hold close to **KSh 888.5 billion** of government debt, and IFB holders have collectively saved an estimated [KSh 30 billion in taxes](https://www.businessdailyafrica.com/bd/markets/capital-markets/investors-save-sh30bn-in-taxes-from-infrastructure-bonds-5196814) thanks to the tax exemption.
 
-#### Current Indicative IFB Yields (2025â€“2026)
+#### Current Indicative IFB Yields (2025–2026)
 
 | Tenor | Indicative yield range | Withholding tax |
 | --- | ---: | --- |
-| 7-year IFB | 13.5% â€“ 14.5% | Tax-free |
-| 10-year IFB | 14.0% â€“ 15.0% | Tax-free |
-| 12-year IFB | 14.5% â€“ 15.5% | Tax-free |
-| 15-year IFB | 15.0% â€“ 16.0% | Tax-free |
+| 7-year IFB | 13.5% – 14.5% | Tax-free |
+| 10-year IFB | 14.0% – 15.0% | Tax-free |
+| 12-year IFB | 14.5% – 15.5% | Tax-free |
+| 15-year IFB | 15.0% – 16.0% | Tax-free |
 
 *Yields are indicative of recent auctions and move with each issue, always check the prospectus on [DhowCSD](https://dhowcsd.centralbank.go.ke/) before bidding.*
 
@@ -75,7 +75,7 @@ On a KSh 1,000,000 holding at a 14% coupon, the exemption is not a rounding erro
 
 | Instrument | Gross annual coupon | Withholding tax | Net received |
 | --- | ---: | ---: | ---: |
-| Standard Treasury Bond (15% WHT) | KSh 140,000 | âˆ’KSh 21,000 | **KSh 119,000** |
+| Standard Treasury Bond (15% WHT) | KSh 140,000 | −KSh 21,000 | **KSh 119,000** |
 | Infrastructure Bond (tax-free) | KSh 140,000 | KSh 0 | **KSh 140,000** |
 
 That **KSh 21,000 a year** difference, reinvested across a 15-year tenor, is the single biggest reason IFBs stay heavily oversubscribed.

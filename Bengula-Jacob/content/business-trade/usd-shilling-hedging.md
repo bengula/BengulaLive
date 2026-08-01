@@ -11,7 +11,6 @@ author:
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
 ---
-coverImage: https://loremflickr.com/1600/900/currency,exchange?lock=2017
 
 ### The Unseen Leak in Export Margins
 
@@ -22,7 +21,6 @@ When the foreign currency arrives 60 or 90 days after shipment, the exchange rat
 > **Key Insight:** Currency volatility is a core operational risk, not a treasury side-note. Managing foreign exchange is not about speculating on currency movements; it is about locking in profit margins before the crop even ships.
 
 ---
-coverImage: https://loremflickr.com/1600/900/currency,exchange?lock=2017
 
 ### Macroeconomic Drivers of USD/KES Volatility
 
@@ -36,7 +34,6 @@ To manage currency risk, exporters must understand what drives the USD/KES curre
 Because these factors are highly dynamic, expecting spot FX rates to remain stable over a 90-day export cycle is an expensive gamble.
 
 ---
-coverImage: https://loremflickr.com/1600/900/currency,exchange?lock=2017
 
 ### Three Practical Treasury Hedging Strategies
 
@@ -76,7 +73,6 @@ This strategy relies on adjusting the timing of your currency conversions based 
 * **Lagging (Delaying):** If you expect the Shilling to weaken, hold your USD in a multi-currency account. Delay converting the funds to KES until your KES-denominated bills (such as local wages or electricity) are due.
 
 ---
-coverImage: https://loremflickr.com/1600/900/currency,exchange?lock=2017
 
 ### Hedging vs. Spot FX Comparison
 
@@ -89,7 +85,6 @@ coverImage: https://loremflickr.com/1600/900/currency,exchange?lock=2017
 | **Collateral/Limits** | May require a bank credit line | None required |
 
 ---
-coverImage: https://loremflickr.com/1600/900/currency,exchange?lock=2017
 
 ### Building an SME Corporate FX Risk Policy
 
@@ -110,7 +105,6 @@ To prevent emotional, speculative decision-making in the treasury department, ex
 - [CBK Diaspora Bond Access: A Guide to DhowCSD for Overseas Kenyans](/blog/cbk-diaspora-bond-access). Read about remittance routing and transaction FX spreads for moving foreign currency to Kenya.
 
 ---
-coverImage: https://loremflickr.com/1600/900/currency,exchange?lock=2017
 
 ### Confidence Note & Compliance
 

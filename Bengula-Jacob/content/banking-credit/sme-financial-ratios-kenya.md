@@ -121,14 +121,14 @@ Here is all seven ratios in one place, with Mama Chai's readings and a rough sen
 
 | Ratio | Formula | Mama Chai | Rough Healthy Guide |
 |---|---|---|---|
-| Gross margin | (Revenue âˆ’ COGS) / Revenue | 35% | As high and stable as your sector allows |
+| Gross margin | (Revenue − COGS) / Revenue | 35% | As high and stable as your sector allows |
 | Net margin | Net profit / Revenue | 10% | Positive and trending up; sector-dependent |
 | Current ratio | Current assets / Current liabilities | 1.5 | ~1.2 to 2.0 |
-| Quick ratio | (Current assets âˆ’ Inventory) / Current liabilities | 1.0 | ~1.0 or above |
+| Quick ratio | (Current assets − Inventory) / Current liabilities | 1.0 | ~1.0 or above |
 | Debt-to-equity | Total liabilities / Equity | 0.67 | Lower is safer; compare to sector norms |
 | Return on assets | Net profit / Total assets | 15% | Higher and stable; beat your cost of capital |
 | Return on equity | Net profit / Equity | 25% | Should beat your safe passive alternatives |
-| Cash conversion cycle | DIO + DSO âˆ’ DPO | 35 days | As low as your trade terms allow |
+| Cash conversion cycle | DIO + DSO − DPO | 35 days | As low as your trade terms allow |
 
 The "healthy guide" column is deliberately loose. Benchmarks are sector-specific and the honest comparison is almost always against your own history, not a textbook number. A ratio's job is to raise the right question, not to hand down a verdict.
 

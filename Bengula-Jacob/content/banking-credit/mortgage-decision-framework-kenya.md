@@ -12,7 +12,7 @@ author:
 coverImage: https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
-Home finance in Kenya is not one product. It is a **stack of doors**, and most buyers only try the first one they hear about. The most important door for middle-income owner-occupiers is the **Kenya Mortgage Refinance Company (KMRC)** path - fixed rates around **9.0%â€“9.5%** on the affordable tier versus **15%â€“18%** on many standard bank books. The full mechanics, income caps, loan ceilings, and worked KES 5 million comparison live in [Accessing KMRC Mortgages](/blog/kmrc-affordable-housing-mortgage).
+Home finance in Kenya is not one product. It is a **stack of doors**, and most buyers only try the first one they hear about. The most important door for middle-income owner-occupiers is the **Kenya Mortgage Refinance Company (KMRC)** path - fixed rates around **9.0%–9.5%** on the affordable tier versus **15%–18%** on many standard bank books. The full mechanics, income caps, loan ceilings, and worked KES 5 million comparison live in [Accessing KMRC Mortgages](/blog/kmrc-affordable-housing-mortgage).
 
 This article sits **one level above** that guide. It answers the decision sequence an RM would walk with a client: **Should you buy now? If yes, which mortgage lane? What does the house cost after stamp duty and insurance? What breaks the deal even when the rate looks perfect?**
 
@@ -45,17 +45,17 @@ This article sits **one level above** that guide. It answers the decision sequen
 ```mermaid
 flowchart TD
   A["Need a home you will live in<br/>for 5+ years?"] -->|No| Rent["Rent / invest elsewhere<br/>REITs, bonds, land DD"]
-  A -->|Yes| B["Can you fund deposit +<br/>~6â€“8% closing costs<br/>without raiding emergencies?"]
+  A -->|Yes| B["Can you fund deposit +<br/>~6–8% closing costs<br/>without raiding emergencies?"]
   B -->|No| Wait["Wait: build deposit,<br/>clear expensive debt"]
-  B -->|Yes| C{"Gross income â‰¤ KES 150k<br/>and loan within AHM caps?"}
-  C -->|Yes| AHM["Pursue Affordable Housing<br/>Mortgage via KMRC PML<br/>9.0â€“9.5% fixed path"]
+  B -->|Yes| C{"Gross income ≤ KES 150k<br/>and loan within AHM caps?"}
+  C -->|Yes| AHM["Pursue Affordable Housing<br/>Mortgage via KMRC PML<br/>9.0–9.5% fixed path"]
   C -->|No| D{"Loan within MRM envelope<br/>~up to KES 15m?"}
-  D -->|Yes| MRM["Pursue KMRC Market-Rate<br/>~10.5â€“11.5% fixed path"]
+  D -->|Yes| MRM["Pursue KMRC Market-Rate<br/>~10.5–11.5% fixed path"]
   D -->|No| Std["Standard bank / other<br/>mortgage: price fixed vs variable,<br/>stress-test at higher rate"]
   AHM --> Prop["Property: clean title,<br/>owner-occupied, bankable valuation"]
   MRM --> Prop
   Std --> Prop
-  Prop --> Close["Compare 2â€“3 PMLs:<br/>fees, MPI, processing, tenor"]
+  Prop --> Close["Compare 2–3 PMLs:<br/>fees, MPI, processing, tenor"]
 
   style A fill:#0f172a,color:#fff,stroke:none
   style AHM fill:#22c55e,color:#fff,stroke:none
@@ -69,14 +69,14 @@ flowchart TD
 
 ### Step 1: Rent vs Buy (Before Any Application)
 
-Buying is not automatically â€œbuilding wealth.â€ It is a **levered, illiquid, concentrated** bet on one property plus your ability to service debt through job or business shocks.
+Buying is not automatically “building wealth.” It is a **levered, illiquid, concentrated** bet on one property plus your ability to service debt through job or business shocks.
 
 **Buying tends to win when:**
 
 - You will **occupy** the home for a long horizon (roughly five-plus years), so transaction costs amortise  
 - The instalment is **sustainable** after school fees, transport, and a live [emergency fund](/blog/ultimate-guide-to-personal-finance-kenya)  
 - You have access to **below-market fixed** funding (especially KMRC) relative to local rents  
-- Title, location, and resale liquidity are defensible - not only â€œcheapâ€
+- Title, location, and resale liquidity are defensible - not only “cheap”
 
 **Renting (or waiting) tends to win when:**
 
@@ -95,9 +95,9 @@ Recap of the three practical lanes (detail and participating lenders in the [KMR
 
 | Lane | Who it fits | Rate shape (indicative) | Hard limits to respect |
 |---|---|---|---|
-| **KMRC Affordable (AHM)** | Gross income **â‰¤ KES 150,000** (individual or combined, as applied), owner-occupier | **~9.0% SACCO / ~9.5% bank**, fixed | Loan caps **~KES 10.5m** metro / **~KES 8m** rest of Kenya; min **~10%** deposit |
-| **KMRC Market-Rate (MRM)** | Over AHM income or property box, still within MRM envelopes | **~10.5%â€“11.5%** fixed, still below many â€œstreetâ€ mortgages | Often up to **~KES 15m**; deposit **~10%â€“20%** |
-| **Standard commercial mortgage** | Above MRM size, non-eligible property, or lender not using KMRC for your case | Often **~15%â€“18%**, frequently **variable** / risk-priced | Bank LTV, income tests, valuation, and [risk-based pricing](/blog/how-kenyan-banks-price-loans) |
+| **KMRC Affordable (AHM)** | Gross income **≤ KES 150,000** (individual or combined, as applied), owner-occupier | **~9.0% SACCO / ~9.5% bank**, fixed | Loan caps **~KES 10.5m** metro / **~KES 8m** rest of Kenya; min **~10%** deposit |
+| **KMRC Market-Rate (MRM)** | Over AHM income or property box, still within MRM envelopes | **~10.5%–11.5%** fixed, still below many “street” mortgages | Often up to **~KES 15m**; deposit **~10%–20%** |
+| **Standard commercial mortgage** | Above MRM size, non-eligible property, or lender not using KMRC for your case | Often **~15%–18%**, frequently **variable** / risk-priced | Bank LTV, income tests, valuation, and [risk-based pricing](/blog/how-kenyan-banks-price-loans) |
 
 **KMRC does not lend to you directly.** You apply to a **Primary Mortgage Lender (PML)** - banks and SACCOs on the partner list. SACCOs can be sharper on the AHM rate (**9.0%** vs **9.5%**) and sometimes more flexible on non-traditional income, at the cost of membership mechanics ([SACCO realities](/blog/sacco-savers-guarantors)).
 
@@ -156,7 +156,7 @@ If you only qualify at the high rate, recompute whether the **same house** still
 
 ### Step 4: Cash at the Door (Deposit Is Not Enough)
 
-Most AHM structures assume about **10% equity**. Closing costs often add another **~6%â€“8%** of property value in the KMRC guideâ€™s framing, including:
+Most AHM structures assume about **10% equity**. Closing costs often add another **~6%–8%** of property value in the KMRC guide’s framing, including:
 
 | Cost | Why it bites |
 |---|---|
@@ -166,13 +166,13 @@ Most AHM structures assume about **10% equity**. Closing costs often add another
 | **Facility / arrangement fees** | Bank schedule |
 | **Mortgage protection / life & fire** | Often required; protects lender and (if structured well) your dependants - see [insurance stack](/blog/insurance-stack-kenya-life-stages) |
 
-**Cash needed â‰ˆ deposit + closing stack + moving buffer.** If that stack empties your emergency fund, you are one repair bill away from high-cost debt - the wrong way to â€œown.â€
+**Cash needed ≈ deposit + closing stack + moving buffer.** If that stack empties your emergency fund, you are one repair bill away from high-cost debt - the wrong way to “own.”
 
 Some products advertise very high LTV or fee financing; treat those as **exceptions to model line by line**, not as a plan to buy with zero cash.
 
 ---
 
-### Step 5: Fixed vs Variable (and Why KMRCâ€™s Fixed Matters)
+### Step 5: Fixed vs Variable (and Why KMRC’s Fixed Matters)
 
 | Feature | Fixed (e.g. KMRC AHM/MRM path) | Variable / risk-priced commercial |
 |---|---|---|
@@ -181,7 +181,7 @@ Some products advertise very high LTV or fee financing; treat those as **excepti
 | Link to [CBR cycle](/blog/cbr-cycle-portfolio-positioning-kenya) | Less day-to-day noise | Instalment can rise when policy is tight |
 | Early settlement | Check penalties and lock-ins | Also check; not always free |
 
-KMRCâ€™s structural point - wholesale long-term funds fixing the bankâ€™s **asset-liability mismatch** - is why participating PMLs can offer **long fixed** retail rates that ordinary deposit-funded books struggle to match. That story is in the [KMRC wholesale model section](/blog/kmrc-affordable-housing-mortgage); use it when a branch tries to push you to a dearer variable product â€œbecause it is simpler.â€
+KMRC’s structural point - wholesale long-term funds fixing the bank’s **asset-liability mismatch** - is why participating PMLs can offer **long fixed** retail rates that ordinary deposit-funded books struggle to match. That story is in the [KMRC wholesale model section](/blog/kmrc-affordable-housing-mortgage); use it when a branch tries to push you to a dearer variable product “because it is simpler.”
 
 ---
 
@@ -214,7 +214,7 @@ A beautiful unit on defective title is not a mortgage candidate. Fix legal issue
   type: amber
 - icon: Shield
   title: Protection layer
-  desc: Life and fire covers are not optional extras on most books; size family cover beyond the bankâ€™s minimum.
+  desc: Life and fire covers are not optional extras on most books; size family cover beyond the bank’s minimum.
   linkText: Insurance by life stage
   linkUrl: /blog/insurance-stack-kenya-life-stages
   type: emerald
@@ -258,7 +258,7 @@ If you take variable pricing, write down the instalment at **+200 to +300 bps** 
 5. **Ignoring existing check-off loans** that consume the one-third ratio  
 6. **Developer pressure** to pay before bank valuation and legal clearance  
 7. **Empty emergency fund** the week after keys  
-8. **No beneficiary / life cover thinking** beyond the bankâ€™s credit life minimum  
+8. **No beneficiary / life cover thinking** beyond the bank’s credit life minimum  
 
 ---
 
@@ -266,15 +266,15 @@ If you take variable pricing, write down the instalment at **+200 to +300 bps** 
 
 | Phase | Actions |
 |---|---|
-| **Days 1â€“30** | Pull CRB; clear junk digital debt; list gross income and existing deductions; read [KMRC eligibility](/blog/kmrc-affordable-housing-mortgage) |
-| **Days 31â€“60** | Target deposit + closing cash in [MMF/liquid sleeve](/blog/bank-vs-sacco-vs-mmf-savings); shortlist estates with clean titles |
-| **Days 61â€“90** | Pre-discuss with 2 PMLs; assemble salaried or business pack; only then sign a sale agreement with financing conditions |
+| **Days 1–30** | Pull CRB; clear junk digital debt; list gross income and existing deductions; read [KMRC eligibility](/blog/kmrc-affordable-housing-mortgage) |
+| **Days 31–60** | Target deposit + closing cash in [MMF/liquid sleeve](/blog/bank-vs-sacco-vs-mmf-savings); shortlist estates with clean titles |
+| **Days 61–90** | Pre-discuss with 2 PMLs; assemble salaried or business pack; only then sign a sale agreement with financing conditions |
 
 ---
 
 ### Closing
 
-KMRC changed the **economics** of formal home loans for Kenyans who fit its boxes - especially the affordable tierâ€™s single-digit fixed rates versus double-digit open-market mortgages. Your job is not to memorise every partner logo. It is to run a clean sequence: **horizon and cash â†’ lane (AHM / MRM / standard) â†’ affordability stress â†’ total completion cost â†’ bankable property â†’ PML bake-off.**
+KMRC changed the **economics** of formal home loans for Kenyans who fit its boxes - especially the affordable tier’s single-digit fixed rates versus double-digit open-market mortgages. Your job is not to memorise every partner logo. It is to run a clean sequence: **horizon and cash → lane (AHM / MRM / standard) → affordability stress → total completion cost → bankable property → PML bake-off.**
 
 For rates, caps, documentation, and the KES 5 million interest comparison, use [Accessing KMRC Mortgages](/blog/kmrc-affordable-housing-mortgage) as the operational manual. For pricing logic on non-KMRC credit, use [how banks price loans](/blog/how-kenyan-banks-price-loans). When you want a second pair of eyes on lane choice, cash-at-door maths, or pack quality, explore [services](/services) or [book a session](/contact).
 

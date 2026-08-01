@@ -103,7 +103,7 @@ Run it on a typical facility. KES 500,000 over 12 months at 3% per month flat:
 | Line | Figure |
 |---|---|
 | Principal received | KES 500,000 |
-| Interest charged (3% Ã— 12 months, flat) | KES 180,000 |
+| Interest charged (3% × 12 months, flat) | KES 180,000 |
 | Total repaid | KES 680,000 |
 | Monthly instalment | KES 56,667 |
 | What the borrower assumes the rate is | 36% a year |

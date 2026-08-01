@@ -195,9 +195,9 @@ Brokerage commissions run around 1.5-1.85% per trade on small tickets (negotiabl
 
 **Reading a counter before you buy.** Four numbers turn a ticker into a decision, all published in the dailies and the broker apps:
 
-- **Dividend yield** (dividend per share Ã· price): the income you are paid to wait. Compare it to the T-bill rate; a mature company yielding far below it needs a growth story to justify itself.
-- **Price-to-earnings ratio** (price Ã· earnings per share): what you pay for each shilling of profit. Useful mainly against the same company's history and its sector peers, not as an absolute.
-- **Price-to-book** (price Ã· net assets per share): the classic bank-stock lens; sustained discounts to book ask "why?", and sometimes the answer is opportunity while sometimes it is rot.
+- **Dividend yield** (dividend per share ÷ price): the income you are paid to wait. Compare it to the T-bill rate; a mature company yielding far below it needs a growth story to justify itself.
+- **Price-to-earnings ratio** (price ÷ earnings per share): what you pay for each shilling of profit. Useful mainly against the same company's history and its sector peers, not as an absolute.
+- **Price-to-book** (price ÷ net assets per share): the classic bank-stock lens; sustained discounts to book ask "why?", and sometimes the answer is opportunity while sometimes it is rot.
 - **Free float and turnover**: how much of the company actually trades. A thin counter can be impossible to exit at the printed price; check that days pass with real volume before committing meaningful money.
 
 The sector map helps too: the NSE is roughly banks (the deepest, most liquid segment), Safaricom (a quarter of the market by itself), consumer and manufacturing (EABL, BAT, the millers), insurance, energy and utilities (KenGen, Kenya Power), and a long agricultural tail (the tea and sisal counters). An index-like Kenyan portfolio is, in practice, banks plus Safaricom plus a diversifier or two; know that before believing you are diversified.

@@ -22,22 +22,22 @@ An exporter pays the farmer, the packhouse, the cold-truck, and the freight forw
 
 #### The Real Cost of Filling That Gap the Wrong Way
 
-Most SMEs plug the hole with an overdraft or a quick digital loan. In Kenya those facilities can effectively cost **18% to 24% per year** once fees and short tenors are annualised. On a horticulture gross margin that is often 12â€“20%, that is the difference between growth and slowly going backwards.
+Most SMEs plug the hole with an overdraft or a quick digital loan. In Kenya those facilities can effectively cost **18% to 24% per year** once fees and short tenors are annualised. On a horticulture gross margin that is often 12–20%, that is the difference between growth and slowly going backwards.
 
-This is not a Kenya-only quirk, it is a continent-sized funding gap. The [African Development Bank](https://www.afdb.org/) puts Africa's unmet demand for trade finance at **US\$74â€“92 billion in 2024**, and SMEs bear the brunt: banks approve just **63% of SME trade-finance applications** versus **80% overall**, usually citing weak creditworthiness and insufficient collateral. The fix is rarely "borrow more", it is "borrow *smarter*", against the deal rather than the balance sheet.
+This is not a Kenya-only quirk, it is a continent-sized funding gap. The [African Development Bank](https://www.afdb.org/) puts Africa's unmet demand for trade finance at **US\$74–92 billion in 2024**, and SMEs bear the brunt: banks approve just **63% of SME trade-finance applications** versus **80% overall**, usually citing weak creditworthiness and insufficient collateral. The fix is rarely "borrow more", it is "borrow *smarter*", against the deal rather than the balance sheet.
 
 #### The Cost of the Wrong Tool
 
 | Financing route | Effective annual cost | Secured against |
 | --- | ---: | --- |
-| Overdraft / digital loan | 18% â€“ 24% | Your general account |
+| Overdraft / digital loan | 18% – 24% | Your general account |
 | Invoice / receivables finance | Lower, deal-linked | The confirmed export invoice |
 | LPO / purchase-order finance | Lower, deal-linked | The signed offtake order |
 | Letter of credit (LC) line | Lowest, bank-guaranteed | The buyer's bank guarantee |
 
 A simple way to see it: if you borrow KSh 1,000,000 for a 60-day shipment cycle at an effective 24% APR, the finance cost is roughly:
 
-> **KSh 1,000,000 Ã— 24% Ã— (60 Ã· 365) â‰ˆ KSh 39,450 per cycle**
+> **KSh 1,000,000 × 24% × (60 ÷ 365) ≈ KSh 39,450 per cycle**
 
 Run six cycles a year and you have handed the lender close to a quarter of a million shillings, money that should have funded the next container.
 

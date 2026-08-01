@@ -114,13 +114,13 @@ Consider an SME with a KES 2,000,000 overdraft limit. All figures illustrative.
 
 **Scenario A, the product used correctly.** The balance fluctuates with the trading cycle, averaging KES 600,000 drawn across the year, at an overdraft rate of 18%.
 
-- Interest: KES 600,000 Ã— 18% = **KES 108,000 a year**
+- Interest: KES 600,000 × 18% = **KES 108,000 a year**
 - Plus arrangement fee on the limit at 1.5%: KES 30,000
 - **Total: KES 138,000**, for a facility that absorbs every timing mismatch the business meets
 
 **Scenario B, the trap.** The same business, same limit, but the balance sits at KES 1,900,000 permanently.
 
-- Interest: KES 1,900,000 Ã— 18% = **KES 342,000 a year**
+- Interest: KES 1,900,000 × 18% = **KES 342,000 a year**
 - Plus the same KES 30,000 fee
 - **Total: KES 372,000 a year, and the principal never reduces**
 

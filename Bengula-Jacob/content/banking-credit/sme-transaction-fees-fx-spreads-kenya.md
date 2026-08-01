@@ -257,6 +257,6 @@ For the wider banking map, read [The Ultimate Guide to Banking in Kenya](/blog/u
 ### Sources and Further Reading
 
 - [Central Bank of Kenya](https://www.centralbank.go.ke/): market indicators and banking sector context.
-- Bengula Inc: [How Banks Actually Make Money](/blog/how-banks-actually-make-money-kenya), [Hedging USD/KES](/blog/usd-shilling-hedging), [Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya), [Import Finance in Kenya](/blog/import-finance-kenya-guide), [Bank Guarantees for SMEs](/blog/bank-guarantees-kenya-sme-guide), [SME Finance Handbook](/blog/sme-finance-handbook-kenya), [Why Your RM Is a Growth Asset](/blog/why-rm-is-sme-growth-asset).
+- Bengula Inc: [How Banks Actually Make Money](/blog/how-banks-actually-make-money-kenya), [How to Move Money in Kenya: Payment Rails Compared](/blog/how-to-move-money-kenya-payment-rails), [Hedging USD/KES](/blog/usd-shilling-hedging), [Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya), [Import Finance in Kenya](/blog/import-finance-kenya-guide), [Bank Guarantees for SMEs](/blog/bank-guarantees-kenya-sme-guide), [SME Finance Handbook](/blog/sme-finance-handbook-kenya), [Why Your RM Is a Growth Asset](/blog/why-rm-is-sme-growth-asset).
 
 *General financial education, not a personalised banking, treasury, or FX advisory mandate. Tariff guides and executable FX rates are institution-specific and change; verify with your bank and consider professional advice for material exposures.*

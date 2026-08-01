@@ -1,7 +1,7 @@
 ---
 id: agpo-tender-cash-flow-kenya
 title: "AGPO and Government Tender Cash-Flow in Kenya: How to Win Work Without Going Broke"
-summary: "Winning a public tender or AGPO contract is not the same as getting paid. This guide maps the full cash cycle - bid bonds, performance and advance-payment guarantees, LPO fulfilment, 90â€“180 day collections, and invoice handoffs - so SMEs can price the gap before they bid."
+summary: "Winning a public tender or AGPO contract is not the same as getting paid. This guide maps the full cash cycle - bid bonds, performance and advance-payment guarantees, LPO fulfilment, 90–180 day collections, and invoice handoffs - so SMEs can price the gap before they bid."
 category: SME Trade Finance
 date: July 15, 2026
 readTime: 14 min read
@@ -12,11 +12,11 @@ author:
 coverImage: https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
-Every year, Kenyan SMEs celebrate the same dangerous victory: **they win the tender**. The portal shows â€œawarded.â€ The WhatsApp group congratulates. The owner starts buying stock - or borrowing to buy stock - before anyone has modelled **when cash actually returns**.
+Every year, Kenyan SMEs celebrate the same dangerous victory: **they win the tender**. The portal shows “awarded.” The WhatsApp group congratulates. The owner starts buying stock - or borrowing to buy stock - before anyone has modelled **when cash actually returns**.
 
 Public procurement and **AGPO** (Access to Government Procurement Opportunities) exist to open doors for youth-, women-, and PWD-owned enterprises and for broader SME participation in government spend. The policy intent is real. The **cash-flow physics** are also real: you often fund fulfilment first, wait on inspection and paperwork, then wait again on the exchequer - while [bid and performance guarantees](/blog/bank-guarantees-kenya-sme-guide) quietly freeze collateral and [working capital](/blog/working-capital-cycle-kenya-smes) disappears into a single buyer.
 
-> **Key Insight:** A tender is a **project balance sheet**, not a sales trophy. Before you bid, compute the **working-capital gap** - cost to deliver minus advance minus cash you can safely deploy - then add guarantee costs and a realistic **90â€“180 day** collection tail for many public buyers. If the margin cannot survive that stack, declining the tender is strategy, not fear.
+> **Key Insight:** A tender is a **project balance sheet**, not a sales trophy. Before you bid, compute the **working-capital gap** - cost to deliver minus advance minus cash you can safely deploy - then add guarantee costs and a realistic **90–180 day** collection tail for many public buyers. If the margin cannot survive that stack, declining the tender is strategy, not fear.
 
 ```cards
 - icon: Gavel
@@ -42,7 +42,7 @@ Public procurement and **AGPO** (Access to Government Procurement Opportunities)
 
 ### What AGPO Is (and What It Is Not)
 
-**AGPO** is Kenyaâ€™s preference framework that channels a share of public procurement toward eligible enterprises (commonly discussed as the **30%** set-aside for youth, women, and persons with disabilities, alongside broader SME access rules). In practice you will meet:
+**AGPO** is Kenya’s preference framework that channels a share of public procurement toward eligible enterprises (commonly discussed as the **30%** set-aside for youth, women, and persons with disabilities, alongside broader SME access rules). In practice you will meet:
 
 - Registration / certification requirements for the preference categories you claim  
 - Tender notices reserved or preferential for AGPO-eligible bidders  
@@ -67,7 +67,7 @@ Official procurement rules and portals change; always read the **specific tender
 flowchart TD
   A["1. Tender advertised"] --> B["2. Bid bond / tender security"]
   B --> C["3. Award / LPO or contract"]
-  C --> D["4. Performance bond<br/>Â± advance-payment guarantee"]
+  C --> D["4. Performance bond<br/>± advance-payment guarantee"]
   D --> E["5. Buy inputs / mobilise<br/>Cash leaves"]
   E --> F["6. Deliver / inspect / accept"]
   F --> G["7. Invoice + complete file"]
@@ -84,7 +84,7 @@ flowchart TD
   style I fill:#22c55e,color:#fff,stroke:none
 ```
 
-The fatal misunderstanding is treating step 3 as income. **Award is a claim on future cash contingent on performance and paperwork.** Steps 5â€“8 are where solvent businesses become â€œbusy and broke.â€
+The fatal misunderstanding is treating step 3 as income. **Award is a claim on future cash contingent on performance and paperwork.** Steps 5–8 are where solvent businesses become “busy and broke.”
 
 ---
 
@@ -104,11 +104,11 @@ $$
 
 | Input | What to put in the model |
 |---|---|
-| **Cost to deliver** | Supplier quotes, transport, packaging, subcontractors, statutory costs - not â€œhopefulâ€ unit costs |
+| **Cost to deliver** | Supplier quotes, transport, packaging, subcontractors, statutory costs - not “hopeful” unit costs |
 | **Advance** | Only amounts the contract **actually** pays after any [APG](/blog/bank-guarantees-kenya-sme-guide) is in place |
 | **Own cash** | Surplus after payroll, tax, and emergency buffer - not the overdraft you already live on |
 | **Guarantee drag** | Commission + opportunity cost of locked FD/cash ([full pricing](/blog/bank-guarantees-kenya-sme-guide)) |
-| **Delay buffer** | Interest on [LPO finance](/blog/lpo-purchase-order-finance-kenya) or OD for **90â€“180 days** if the buyer is public |
+| **Delay buffer** | Interest on [LPO finance](/blog/lpo-purchase-order-finance-kenya) or OD for **90–180 days** if the buyer is public |
 
 If stressed need exceeds facilities you can **pre-arrange**, do not bid - or bid a smaller lot.
 
@@ -132,7 +132,7 @@ If stressed need exceeds facilities you can **pre-arrange**, do not bid - or bid
 #### 3. Award and contract / LPO
 
 - Verify the document the way a lender will ([LPO verification culture](/blog/lpo-purchase-order-finance-kenya))  
-- Do not buy the full inventory on verbal â€œyouâ€™ve wonâ€ messages  
+- Do not buy the full inventory on verbal “you’ve won” messages  
 - Map **inspection and acceptance** clauses - payment stories die on missing certificates  
 
 #### 4. Performance and advance-payment guarantees
@@ -150,14 +150,14 @@ If stressed need exceeds facilities you can **pre-arrange**, do not bid - or bid
 #### 6. Invoice and the long wait
 
 - Invoice **immediately** on acceptance with a complete attachments pack  
-- Public payment cycles often run far longer than private 30-day terms; plan **90â€“180 days** unless you have hard evidence this entity pays faster  
+- Public payment cycles often run far longer than private 30-day terms; plan **90–180 days** unless you have hard evidence this entity pays faster  
 - Age the receivable ruthlessly ([accounts receivable](/blog/what-is-accounts-receivable))  
-- Where lenders allow, **handover** from expensive order finance into invoice discounting after acceptance - the LPO articleâ€™s public-sector playbook  
+- Where lenders allow, **handover** from expensive order finance into invoice discounting after acceptance - the LPO article’s public-sector playbook  
 
 ```cards
 - icon: FileText
   title: Paper is cash
-  desc: Incomplete inspection and acceptance files are the quiet reason â€œthe ministry has not paid.â€ Build the file as you deliver.
+  desc: Incomplete inspection and acceptance files are the quiet reason “the ministry has not paid.” Build the file as you deliver.
   linkText: AR and collections
   linkUrl: /blog/what-is-accounts-receivable
 - icon: Timer
@@ -192,7 +192,7 @@ If stressed need exceeds facilities you can **pre-arrange**, do not bid - or bid
 | Opportunity cost on KES 200,000 margin @ 10% p.a. for 6 months | KES 10,000 |
 | **Margin after finance stack** | **~KES 631,000** |
 
-Still viable - **if** nothing slips. Stretch collection to 180 days, hit a partial rejection, or fund on 30%+ mobile-style APR, and the â€œwinâ€ becomes a loss. That is why the LPO guideâ€™s **~15%+ gross margin** rule of thumb before order finance matters even more on public paper.
+Still viable - **if** nothing slips. Stretch collection to 180 days, hit a partial rejection, or fund on 30%+ mobile-style APR, and the “win” becomes a loss. That is why the LPO guide’s **~15%+ gross margin** rule of thumb before order finance matters even more on public paper.
 
 **Same contract at 10% gross margin** (cost KES 3,600,000): after similar finance drag, you are funding stress for almost no equity return. **Do not bid.**
 
@@ -206,7 +206,7 @@ $$
 
 | Stage need | Better instrument | Avoid |
 |---|---|---|
-| Tender security | Bid bond under a contingent line | Personal post-dated cheques as â€œprofessionalismâ€ |
+| Tender security | Bid bond under a contingent line | Personal post-dated cheques as “professionalism” |
 | Contract security | Performance guarantee | Hoping the PE waives what the tender requires |
 | Mobilisation cash from buyer | Advance + APG, if offered | Spending advance on unrelated debts |
 | Pay suppliers to deliver | [LPO / PO finance](/blog/lpo-purchase-order-finance-kenya), supplier credit | Maxing personal digital loans |
@@ -220,14 +220,14 @@ flowchart TD
   Win["Awarded tender"] --> G{"Guarantees<br/>in place?"}
   G -->|No| Stop["Do not mobilise stock"]
   G -->|Yes| Adv{"Advance<br/>available?"}
-  Adv -->|Yes| APG["Issue APG â†’ receive advance"]
+  Adv -->|Yes| APG["Issue APG → receive advance"]
   Adv -->|No| Fund["Fund gap: LPO finance<br/>+ own equity slice"]
   APG --> Fund
   Fund --> Del["Deliver + complete file"]
   Del --> Inv["Invoice"]
   Inv --> Hand{"Long collection?"}
   Hand -->|Yes| Disc["Seek invoice discounting<br/>/ structured follow-up"]
-  Hand -->|No| Cash["Collect â†’ release securities"]
+  Hand -->|No| Cash["Collect → release securities"]
   Disc --> Cash
 
   style Stop fill:#ef4444,color:#fff,stroke:none
@@ -237,7 +237,7 @@ flowchart TD
 
 ---
 
-### Concentration and â€œOne Big Tenderâ€ Risk
+### Concentration and “One Big Tender” Risk
 
 Public buyers are strong credits **in theory** and lumpy payers **in practice**. Risks that kill SMEs:
 
@@ -271,9 +271,9 @@ Banks financing you will ask for the same pack. Build it **during** delivery, no
 1. Margin cannot survive finance + 120-day delay  
 2. Contingent limits or cash margin would freeze the rest of the business  
 3. You have never delivered comparable scope and cannot subcontract safely  
-4. Title of the â€œdealâ€ is a brokered LPO you cannot verify  
+4. Title of the “deal” is a brokered LPO you cannot verify  
 5. You would need to raid PAYE/VAT money to buy stock  
-6. Personal guarantors and family savings are the only â€œfacilityâ€  
+6. Personal guarantors and family savings are the only “facility”  
 7. The tender timeline is shorter than your real supply lead time  
 
 Walking away preserves the AGPO certificate for a **survivable** contract.

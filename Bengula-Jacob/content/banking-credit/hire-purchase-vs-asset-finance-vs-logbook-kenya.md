@@ -105,7 +105,7 @@ $$
 \text{Interest}_{\text{flat}} = P \times r_{\text{flat}} \times n_{\text{years}} = 1{,}800{,}000 \times 0.13 \times 4 = 936{,}000
 $$
 
-The monthly instalment is (1,800,000 + 936,000) Ã· 48, about **KES 57,000**, and the total financed cost is roughly **KES 2,736,000**.
+The monthly instalment is (1,800,000 + 936,000) ÷ 48, about **KES 57,000**, and the total financed cost is roughly **KES 2,736,000**.
 
 | Line | Asset finance (16% reducing) | Hire purchase (13% flat) |
 |---|---|---|

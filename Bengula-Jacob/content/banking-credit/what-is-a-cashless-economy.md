@@ -56,11 +56,11 @@ Preferences sum to more than 100% because most Kenyans use several methods side 
 
 ```mermaid
 flowchart TD
-    A["ðŸ’³ Plastic Money<br>Cards"] --> F["ðŸ¦ Cashless<br>Economy"]
-    B["ðŸ“± Mobile Wallets<br>M-Pesa, Airtel"] --> F
-    C["ðŸŒ Internet Banking<br>RTGS, PesaLink"] --> F
-    D["â‚¿ Cryptocurrencies<br>Bitcoin, stablecoins"] --> F
-    E["ðŸ”— Embedded Finance<br>BNPL, wallets in apps"] --> F
+    A["💳 Plastic Money<br>Cards"] --> F["🏦 Cashless<br>Economy"]
+    B["📱 Mobile Wallets<br>M-Pesa, Airtel"] --> F
+    C["🌐 Internet Banking<br>RTGS, PesaLink"] --> F
+    D["₿ Cryptocurrencies<br>Bitcoin, stablecoins"] --> F
+    E["🔗 Embedded Finance<br>BNPL, wallets in apps"] --> F
 
     style F fill:#5B21B6,color:#fff,stroke:none
     style A fill:#3b82f6,color:#fff,stroke:none
@@ -166,4 +166,4 @@ For businesses, the practical question is simpler: every payment that goes throu
 - [Kenya Goes Cashless: Mobile Money Subscriptions Soar, TechWeez](https://techweez.com/2025/07/01/kenya-goes-cashless-mobile-money-subscriptions-soar-to-45-million/)
 - [Digital Payments Promoting Cashless Economy in Africa, TechTrends](https://techtrendske.co.ke/2025/03/13/how-digital-payments-are-promoting-a-cashless-economy-in-africa/)
 - [World Bank Digital Payments Press Release](https://www.worldbank.org/en/news/press-release/2022/06/29/covid-19-drives-global-surge-in-use-of-digital-payments)
-- Bengula Inc: [Banking-as-a-Service in Kenya](/blog/banking-as-a-service-kenya-baas-guide), [How Embedded Finance Is Reimagining the Point of Payment](/blog/embedded-finance-kenya-guide), [Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya)
+- Bengula Inc: [Banking-as-a-Service in Kenya](/blog/banking-as-a-service-kenya-baas-guide), [How Embedded Finance Is Reimagining the Point of Payment](/blog/embedded-finance-kenya-guide), [How to Move Money in Kenya: Payment Rails Compared](/blog/how-to-move-money-kenya-payment-rails), [Ultimate Guide to Banking in Kenya](/blog/ultimate-guide-to-banking-in-kenya)

@@ -27,7 +27,7 @@ It is worth pausing on why this matters at national scale. [Micro, small and med
 | Metric | Before | After |
 | --- | ---: | ---: |
 | EBITDA margin | 6% | 18% |
-| Time-to-invoice | Baseline | âˆ’40% |
+| Time-to-invoice | Baseline | −40% |
 | Bookkeeping lag | ~1 month | Near real-time |
 | Expensive overdrafts | Rolling | Cleared from internal cash |
 | Loss-making SKUs | Several | Repriced or retired |

@@ -225,6 +225,7 @@ And when a gap does appear, the same sheet tells you what to do about it: manage
 - [The Overdraft That Never Clears](/blog/overdraft-that-never-clears-kenya) for using a revolving facility without turning it into permanent debt.
 - [What Accounts Receivable Financing Does](/blog/what-is-accounts-receivable) for bridging a collection-timing gap.
 - [VAT for Kenyan SMEs](/blog/vat-for-smes-kenya) for the fixed 20th-of-the-month outflow that belongs in the forecast alongside payroll.
+- [How to Move Money in Kenya: Payment Rails Compared](/blog/how-to-move-money-kenya-payment-rails) for choosing the rail, and beating the cut-off, on a payment the forecast says is due today.
 
 ### References
 

@@ -93,7 +93,7 @@ You have a signed order but no cash to fulfil it. The bank advances funds agains
 
 #### Invoice Discounting / Factoring
 
-You have delivered goods and invoiced the buyer, but the payment terms are 60â€“90 days. The bank buys (or lends against) the invoice at a discount and you get cash now. When the buyer pays, the bank is made whole. This is the single most under-utilised SME product in East Africa.
+You have delivered goods and invoiced the buyer, but the payment terms are 60–90 days. The bank buys (or lends against) the invoice at a discount and you get cash now. When the buyer pays, the bank is made whole. This is the single most under-utilised SME product in East Africa.
 
 #### Letters of Credit (LC) Facilities
 
@@ -146,7 +146,7 @@ None of these outcomes started with a loan application form. They started with a
 
 ### The Bottom Line
 
-The banking Relationship Manager is not a luxury reserved for corporate giants. Every bank in Kenya has RMs assigned to the SME and mid-market segment. Their job is to find growing businesses and build bankable solutions around them. If you are doing meaningful turnover, even KSh 2â€“5 million a month, you qualify for a conversation.
+The banking Relationship Manager is not a luxury reserved for corporate giants. Every bank in Kenya has RMs assigned to the SME and mid-market segment. Their job is to find growing businesses and build bankable solutions around them. If you are doing meaningful turnover, even KSh 2–5 million a month, you qualify for a conversation.
 
 Stop going to the teller window for your growth capital. Walk past it. Sit down with the person whose entire career depends on understanding businesses like yours, and bring them a story they can take to credit committee.
 

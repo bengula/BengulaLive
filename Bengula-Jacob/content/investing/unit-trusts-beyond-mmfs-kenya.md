@@ -12,11 +12,11 @@ author:
 coverImage: https://images.pexels.com/photos/6802042/pexels-photo-6802042.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
-Kenyaâ€™s collective investment story of the last decade has a clear hero: the **Money Market Fund**. Households moved emergency cash out of 3% savings accounts into CMA-regulated pools that track short-term rates, stay liquid, and scale from small balances. That shift is real - MMFs now dominate unit-trust assets - and it is covered in depth in [The Future of MMFs in Kenya](/blog/future-mmfs-kenya) and the parking decision in [Bank vs SACCO vs MMF](/blog/bank-vs-sacco-vs-mmf-savings).
+Kenya’s collective investment story of the last decade has a clear hero: the **Money Market Fund**. Households moved emergency cash out of 3% savings accounts into CMA-regulated pools that track short-term rates, stay liquid, and scale from small balances. That shift is real - MMFs now dominate unit-trust assets - and it is covered in depth in [The Future of MMFs in Kenya](/blog/future-mmfs-kenya) and the parking decision in [Bank vs SACCO vs MMF](/blog/bank-vs-sacco-vs-mmf-savings).
 
-The next maturity step is equally important: **stop using an MMF for money that has a five- or fifteen-year job.** Fixed-income funds, balanced funds, and equity funds are still â€œunit trusts.â€ They are not riskier *because* they are trusts; they are riskier because of **what they own**. This guide is the map beyond the money-market sleeve.
+The next maturity step is equally important: **stop using an MMF for money that has a five- or fifteen-year job.** Fixed-income funds, balanced funds, and equity funds are still “unit trusts.” They are not riskier *because* they are trusts; they are riskier because of **what they own**. This guide is the map beyond the money-market sleeve.
 
-> **Key Insight:** An MMF is a **liquidity product** with yield. Other unit trusts are **risk products** with professional packaging. Match the fund type to the time horizon first, then compare fees and managers. Chasing last quarterâ€™s top equity fund with next monthâ€™s school fees is how unit trusts get a bad name they do not deserve.
+> **Key Insight:** An MMF is a **liquidity product** with yield. Other unit trusts are **risk products** with professional packaging. Match the fund type to the time horizon first, then compare fees and managers. Chasing last quarter’s top equity fund with next month’s school fees is how unit trusts get a bad name they do not deserve.
 
 ```cards
 - icon: Droplets
@@ -42,12 +42,12 @@ The next maturity step is equally important: **stop using an MMF for money that 
 
 ### What a Unit Trust Is (One Structure, Many Portfolios)
 
-A **unit trust** (collective investment scheme) pools investorsâ€™ money, holds assets in a regulated structure with a manager and trustee/custodian framework under the **Capital Markets Authority (CMA)**, and issues **units** whose price moves with the portfolioâ€™s net asset value (NAV).
+A **unit trust** (collective investment scheme) pools investors’ money, holds assets in a regulated structure with a manager and trustee/custodian framework under the **Capital Markets Authority (CMA)**, and issues **units** whose price moves with the portfolio’s net asset value (NAV).
 
 You are not depositing with a bank. You are buying a share of a portfolio. That means:
 
 - **No KDIC deposit insurance** the way a bank account has (up to the insured limit)  
-- **Market and credit risk** sit with you according to the fundâ€™s mandate  
+- **Market and credit risk** sit with you according to the fund’s mandate  
 - **Fees** are usually embedded in performance (management, trustee, other expenses)  
 - **Tax** on distributions often involves **withholding** (commonly discussed at **15%** on interest-style income - confirm current treatment for your fund and status)
 
@@ -79,11 +79,11 @@ flowchart TD
 | Fund type | Typical holdings | Liquidity feel | Main risks | Best job |
 |---|---|---|---|---|
 | **Money market** | T-bills, short deposits, short paper | Days | Rate resets down; fund/platform risk | Emergency & near cash |
-| **Fixed income / bond** | Longer Treasuries, corporates per mandate | Often daysâ€“week | Interest-rate (duration), credit, liquidity of underlying | 2â€“7+ year goals, income ballast |
-| **Balanced** | Mix of bonds and equities | Daysâ€“week | Both rate and equity markets | Long-term wealth with less full equity drawdown |
-| **Equity** | Listed shares (local/regional/thematic) | Daysâ€“week (market days) | Price volatility, concentration, liquidity of NSE names | 7â€“15+ year growth |
+| **Fixed income / bond** | Longer Treasuries, corporates per mandate | Often days–week | Interest-rate (duration), credit, liquidity of underlying | 2–7+ year goals, income ballast |
+| **Balanced** | Mix of bonds and equities | Days–week | Both rate and equity markets | Long-term wealth with less full equity drawdown |
+| **Equity** | Listed shares (local/regional/thematic) | Days–week (market days) | Price volatility, concentration, liquidity of NSE names | 7–15+ year growth |
 
-**Duration risk in one line:** when market yields rise, existing longer bonds fall in price. A pure MMFâ€™s very short paper reprices quickly; a bond fund with longer average maturity can show **negative periods** even if every issuer eventually pays. That is not â€œfraudâ€ - it is bond maths. The [CBR cycle playbook](/blog/cbr-cycle-portfolio-positioning-kenya) is how you think about when to emphasise short vs long fixed income.
+**Duration risk in one line:** when market yields rise, existing longer bonds fall in price. A pure MMF’s very short paper reprices quickly; a bond fund with longer average maturity can show **negative periods** even if every issuer eventually pays. That is not “fraud” - it is bond maths. The [CBR cycle playbook](/blog/cbr-cycle-portfolio-positioning-kenya) is how you think about when to emphasise short vs long fixed income.
 
 ---
 
@@ -107,9 +107,9 @@ flowchart TD
 - Mandate and rebalancing by a manager  
 - Small recurring contributions  
 
-They do **not** remove market drawdowns. A 20â€“40% peak-to-trough move in risk assets is normal history, not a unique Kenyan curse. Balanced funds exist to **dampen** that path with bonds - at the cost of upside in roaring equity years.
+They do **not** remove market drawdowns. A 20–40% peak-to-trough move in risk assets is normal history, not a unique Kenyan curse. Balanced funds exist to **dampen** that path with bonds - at the cost of upside in roaring equity years.
 
-Offshore equity access has its own path ([foreign ETFs / offshore](/blog/foreign-etfs-offshore-investing-kenya)); do not confuse a local â€œequity fundâ€ with global diversification unless the mandate says so.
+Offshore equity access has its own path ([foreign ETFs / offshore](/blog/foreign-etfs-offshore-investing-kenya)); do not confuse a local “equity fund” with global diversification unless the mandate says so.
 
 ```cards
 - icon: Layers
@@ -173,9 +173,9 @@ Think in **jobs**, then assign unit trusts (and non-trust tools) to each.
 
 | Job | Horizon | Primary tools |
 |---|---|---|
-| **Survive shocks** | 0â€“1 year | MMF, short T-bills, transaction bank balance |
-| **Known goal (fees, deposit)** | 1â€“4 years | Short ladder, conservative fixed-income fund, avoid pure equity |
-| **Long-term wealth** | 5â€“15+ years | Balanced / equity funds, DIY shares, pension wrappers first for tax |
+| **Survive shocks** | 0–1 year | MMF, short T-bills, transaction bank balance |
+| **Known goal (fees, deposit)** | 1–4 years | Short ladder, conservative fixed-income fund, avoid pure equity |
+| **Long-term wealth** | 5–15+ years | Balanced / equity funds, DIY shares, pension wrappers first for tax |
 | **Income in retirement** | Decumulation | Bond ladders, drawdown rules - see [retirement](/blog/retirement-planning-kenya-guide) and [monthly income engine](/blog/monthly-income-engine-kenya) |
 
 **Order of operations for a salaried household:**
@@ -185,7 +185,7 @@ Think in **jobs**, then assign unit trusts (and non-trust tools) to each.
 3. [Pension tax room](/blog/nssf-tier-ii-vs-private-pension-kenya) used where cash-flow allows  
 4. Then taxable unit trusts by horizon - not before  
 
-Owner-managers should not park **working capital** in equity funds. Operating cash belongs in the [working capital cycle](/blog/working-capital-cycle-kenya-smes) design, not in last monthâ€™s top CIS table.
+Owner-managers should not park **working capital** in equity funds. Operating cash belongs in the [working capital cycle](/blog/working-capital-cycle-kenya-smes) design, not in last month’s top CIS table.
 
 ```mermaid
 flowchart LR
@@ -197,7 +197,7 @@ flowchart LR
   Pen -->|Yes| IPP["Scheme / IPP"]
   Pen -->|No / residual| Horizon{"Horizon?"}
   Horizon -->|"&lt; 3y"| FI["Fixed income / short"]
-  Horizon -->|"3â€“7y"| BAL["Balanced"]
+  Horizon -->|"3–7y"| BAL["Balanced"]
   Horizon -->|"7y+"| EQ["Equity sleeve"]
 ```
 
@@ -221,14 +221,14 @@ Percentages are **starting conversations**, not targets to copy blindly. Income 
 1. **Automate contributions** on payday - unit trusts reward consistency.  
 2. **Do not check daily NAV** for long-term sleeves; you will sell the bottom.  
 3. **Rebalance yearly**, not weekly.  
-4. **Separate accounts/goals** so school fees money never â€œtemporarilyâ€ enters an equity fund.  
+4. **Separate accounts/goals** so school fees money never “temporarily” enters an equity fund.  
 5. **Read the factsheet** when a fund is renamed or the mandate drifts.  
 6. **Platform risk is real** - operational and custody arrangements matter; diversification across managers can be rational for large balances (see the spirit of [platform risk](/blog/ultimate-guide-to-investing-in-kenya) thinking).  
 
 ```cards
 - icon: ClipboardCheck
   title: Factsheet first
-  desc: Mandate, fees, top holdings, and redemption rules beat a WhatsApp screenshot of yesterdayâ€™s yield.
+  desc: Mandate, fees, top holdings, and redemption rules beat a WhatsApp screenshot of yesterday’s yield.
   linkText: Compare cash vehicles
   linkUrl: /blog/bank-vs-sacco-vs-mmf-savings
 - icon: RefreshCw
@@ -249,7 +249,7 @@ Percentages are **starting conversations**, not targets to copy blindly. Income 
 
 ### How This Fits the Rest of the Library
 
-| If you needâ€¦ | Read |
+| If you need… | Read |
 |---|---|
 | Why MMFs exist and how yields move | [Future of MMFs](/blog/future-mmfs-kenya) |
 | MMF vs bank vs SACCO job map | [Bank vs SACCO vs MMF](/blog/bank-vs-sacco-vs-mmf-savings) |
@@ -262,7 +262,7 @@ Percentages are **starting conversations**, not targets to copy blindly. Income 
 
 ### Closing
 
-Money market funds earned their place as Kenyaâ€™s default **liquid yield** tool. Unit trusts **beyond** MMFs earn their place only when you give them the right job: fixed-income funds for ballast and medium horizons, balanced funds for automated long-term mixes, equity funds for true growth capital you will not touch in a panic.
+Money market funds earned their place as Kenya’s default **liquid yield** tool. Unit trusts **beyond** MMFs earn their place only when you give them the right job: fixed-income funds for ballast and medium horizons, balanced funds for automated long-term mixes, equity funds for true growth capital you will not touch in a panic.
 
 Build the stack in order - **buffer, debt clean-up, pension tax efficiency, then taxable risk sleeves** - and judge every fund by mandate, net-of-fee reality, and horizon fit. That is how collective schemes become a wealth system instead of a yield-chasing habit.
 

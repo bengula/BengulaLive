@@ -164,7 +164,7 @@ Modern corporate banking happens through secure integrations, not branch queues.
 
 **How do I get a lower interest rate?** Present clean audited accounts, clear your CRB record, offer security, and negotiate the risk margin rather than accepting the headline rate.
 
-**What is the difference between RTGS, EFT, and Pesalink?** RTGS is for large same-day settlements, EFT is a cheaper batch transfer that clears in a day or two, and Pesalink is instant interbank transfer up to its per-transaction limit.
+**What is the difference between RTGS, EFT, and Pesalink?** RTGS is for large same-day settlements, EFT is a cheaper batch transfer that clears in a day or two, and Pesalink is instant interbank transfer up to its per-transaction limit. The full decision guide, including M-Pesa, international TT, cut-off times, and reversibility, is in [how to move money in Kenya: payment rails compared](/blog/how-to-move-money-kenya-payment-rails).
 
 **Should I bank where I borrow?** Often yes for relationship leverage, but keep a second bank so credit tightening or downtime at one institution does not stop your operations.
 

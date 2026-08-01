@@ -60,7 +60,7 @@ Pad these estimates; inflation erodes them faster than founders expect. Doubling
 
 **Conservative.** Current run rate, no growth. This is your floor, the minimum the business needs to survive.
 
-**Base case.** Modest, evidenced growth (10â€“15% monthly, if that matches your actual trend). Grounded in real data, not ambition.
+**Base case.** Modest, evidenced growth (10–15% monthly, if that matches your actual trend). Grounded in real data, not ambition.
 
 **Stretch.** What happens if a campaign or partnership actually lands. Build this last, not first.
 

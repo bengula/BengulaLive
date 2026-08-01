@@ -111,7 +111,7 @@ You never need to forecast, but three signals tell you what your next rolls will
 ### Decision Framework: Is the Ladder Your Next Move?
 
 1. Emergency fund already parked in an MMF? (The ladder is not it.)
-2. At least KES 150,000 of dated money (three rungs Ã— the KES 50,000 minimum)?
+2. At least KES 150,000 of dated money (three rungs × the KES 50,000 minimum)?
 3. Comfortable that this money is locked to each maturity date, with the quarterly valve as your only tap?
 4. Willing to keep the two-minute weekly habit and the monthly reconciliation?
 5. Clear on the boundary where the ladder ends and bonds begin (money beyond ~18 months belongs further up [the curve](/blog/kb-bond-guide-2026))?

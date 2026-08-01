@@ -24,7 +24,7 @@ This is the classic **purchase-order (PO) financing gap**, and it is where other
 
 | Metric | Figure | Source |
 | --- | ---: | --- |
-| Africa's annual trade-finance gap (2024) | US\$74bn â€“ US\$92bn | [AfDB 2025 Trade Finance Report](https://www.afdb.org/en/news-and-events/press-releases/am2026-afdb-2025-trade-finance-report-highlights-resilience-african-financial-institutions-after-covid-19-93697) |
+| Africa's annual trade-finance gap (2024) | US\$74bn – US\$92bn | [AfDB 2025 Trade Finance Report](https://www.afdb.org/en/news-and-events/press-releases/am2026-afdb-2025-trade-finance-report-highlights-resilience-african-financial-institutions-after-covid-19-93697) |
 | Bank approval rate: SMEs vs overall | 63% vs 80% | [AfDB / GTR](https://www.gtreview.com/news/africa/africas-trade-finance-gap-tops-us74bn-as-banks-retreat-afdb-warns/) |
 | Kenya avocado exports, 2024/25 season | ~110,000 MT, >KSh 25bn | [USDA FAS](https://www.fas.usda.gov/data/kenya-avocado) |
 | Kenya macadamia production | ~51,200 tonnes / year | [FreshPlaza](https://www.freshplaza.com/asia/article/9826201/) |
@@ -56,7 +56,7 @@ Anyone evaluating an arrangement like this, as an operator or a backer, should b
 - **Currency and timing risk:** revenue is in dollars, costs are in shillings, and the gap between them moves. The practical hedging tools for this exposure are covered in [Hedging USD/KES](/blog/usd-shilling-hedging).
 - **Concentration risk:** one buyer or one corridor failing can sink the whole cycle.
 
-Illustrative deals in this space target returns in the high-teens annualised over a roughly 12â€“18 month cycle, with rolling payouts, but **a target is not a promise**, and the figure is meaningless without understanding the security behind it.
+Illustrative deals in this space target returns in the high-teens annualised over a roughly 12–18 month cycle, with rolling payouts, but **a target is not a promise**, and the figure is meaningless without understanding the security behind it.
 
 ### The Due-Diligence Checklist
 

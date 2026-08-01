@@ -1,7 +1,7 @@
 ---
 id: working-capital-cycle-kenya-smes
 title: "The Working Capital Cycle for Kenyan SMEs: How Cash Gets Stuck and How to Free It"
-summary: "Profit on paper does not pay suppliers on Friday. This guide maps the stockâ€“receivablesâ€“cash loop Kenyan SMEs actually live in, shows how to measure the cash conversion cycle, and matches overdrafts, invoice tools, and LPO finance to the right gap - before the bank does it for you."
+summary: "Profit on paper does not pay suppliers on Friday. This guide maps the stock–receivables–cash loop Kenyan SMEs actually live in, shows how to measure the cash conversion cycle, and matches overdrafts, invoice tools, and LPO finance to the right gap - before the bank does it for you."
 category: SME Finance
 date: July 15, 2026
 readTime: 14 min read
@@ -14,7 +14,7 @@ coverImage: https://images.pexels.com/photos/6694543/pexels-photo-6694543.jpeg?a
 
 Most Kenyan SMEs do not fail because they lack customers. They fail because cash arrives later than bills. You can be profitable on the P&L, fully booked for the quarter, and still unable to pay rent, payroll, or a supplier who wants cash before delivery. That is not bad luck. It is a **working capital cycle** problem: money is trapped in stock, unpaid invoices, or orders you cannot afford to fulfil.
 
-Banks see this before you name it. When an RM opens your statements, they are not only asking â€œare you profitable?â€ They are asking â€œhow long does a shilling take to leave the business and come back?â€ If that loop is slow, expensive, or unmeasured, every growth step feels like a cash crisis.
+Banks see this before you name it. When an RM opens your statements, they are not only asking “are you profitable?” They are asking “how long does a shilling take to leave the business and come back?” If that loop is slow, expensive, or unmeasured, every growth step feels like a cash crisis.
 
 > **Key Insight:** Working capital is not a leftover after profit. It is a **position** you design: how much inventory you hold, how long customers take to pay, how long suppliers let you wait, and which facility covers the gap without destroying margin. Measure the cycle first. Choose the facility second.
 
@@ -53,7 +53,7 @@ In plain language for a trading or manufacturing SME:
 - **Current assets that matter:** cash, stock (inventory), and [accounts receivable](/blog/what-is-accounts-receivable) (invoices clients have not paid).
 - **Current liabilities that matter:** supplier payables, short-term bank facilities (overdrafts, revolving credit), VAT/PAYE arrears, and other bills due within a year.
 
-Positive working capital means current assets exceed short-term obligations. It does **not** automatically mean you are liquid. You can have a large positive figure that is almost entirely stuck in slow-moving stock and 90-day government invoices - while Fridayâ€™s payroll still needs cash.
+Positive working capital means current assets exceed short-term obligations. It does **not** automatically mean you are liquid. You can have a large positive figure that is almost entirely stuck in slow-moving stock and 90-day government invoices - while Friday’s payroll still needs cash.
 
 That is why relationship managers care about the **cycle**, not only the stock figure on the balance sheet.
 
@@ -73,7 +73,7 @@ $$
 | **DSO** | Days Sales Outstanding | How long customers take to pay after sale | Lower |
 | **DPO** | Days Payable Outstanding | How long you take to pay suppliers | Higher (within trust) |
 
-A shorter CCC means cash returns faster. A longer CCC means growth consumes more cash every time sales rise - the classic â€œwe are busier than ever and broker than everâ€ trap.
+A shorter CCC means cash returns faster. A longer CCC means growth consumes more cash every time sales rise - the classic “we are busier than ever and broker than ever” trap.
 
 ```mermaid
 flowchart LR
@@ -123,15 +123,15 @@ $$
 
 **What that means:** on average, Mama Chai needs to fund about **35 days** of operating cycle with its own cash or a facility. If monthly COGS run roughly KES 650,000, a rough working-capital need is on the order of a month of cost of sales - before seasonality, safety stock, or slow payers.
 
-If DSO drifts from 30 to 60 days (common when a few large clients stretch terms), CCC jumps to **65 days** and the cash need nearly doubles without any change in â€œprofitability.â€ That single shift is why [AR discipline](/blog/what-is-accounts-receivable) is a financing strategy, not only a collections chore.
+If DSO drifts from 30 to 60 days (common when a few large clients stretch terms), CCC jumps to **65 days** and the cash need nearly doubles without any change in “profitability.” That single shift is why [AR discipline](/blog/what-is-accounts-receivable) is a financing strategy, not only a collections chore.
 
 ---
 
 ### Where Kenyan SMEs Get Stuck (Four Failure Modes)
 
-**1. Inventory that feels like wealth.** Bulk buying to â€œsave on priceâ€ locks cash. If stock turns twice a year, you are running a warehouse financed by overdraft interest. Track dead stock monthly; finance cannot fix what operations will not clear.
+**1. Inventory that feels like wealth.** Bulk buying to “save on price” locks cash. If stock turns twice a year, you are running a warehouse financed by overdraft interest. Track dead stock monthly; finance cannot fix what operations will not clear.
 
-**2. Receivables that feel like sales.** Invoice issued is not cash received. Government and large corporates often run 60â€“180 day cycles. Winning the tender without planning the gap is how profitable suppliers go insolvent. See also [LPO finance](/blog/lpo-purchase-order-finance-kenya) when the problem is *funding the order*, not only collecting after delivery.
+**2. Receivables that feel like sales.** Invoice issued is not cash received. Government and large corporates often run 60–180 day cycles. Winning the tender without planning the gap is how profitable suppliers go insolvent. See also [LPO finance](/blog/lpo-purchase-order-finance-kenya) when the problem is *funding the order*, not only collecting after delivery.
 
 **3. Paying suppliers faster than customers pay you.** Early settlement discounts can be smart; habitual cash-on-delivery while selling on 45-day terms is a structural loss. Negotiate DPO deliberately - without destroying supplier trust.
 
@@ -205,8 +205,8 @@ flowchart TD
 A practical planning approach (good enough for board packs and bank conversations):
 
 1. **Compute CCC** from the last 12 months (or trailing four quarters).
-2. **Estimate daily cash operating need** â‰ˆ annual COGS (or cash operating costs) Ã· 365.
-3. **Base WC requirement** â‰ˆ daily need Ã— CCC.
+2. **Estimate daily cash operating need** ≈ annual COGS (or cash operating costs) ÷ 365.
+3. **Base WC requirement** ≈ daily need × CCC.
 4. **Add buffers:** seasonality (school terms, festive trade, harvest), one large slow payer, and a safety stock policy you can defend.
 5. **Subtract** reliable non-cash support (stable supplier credit, customer advances, confirmed facilities).
 
@@ -214,7 +214,7 @@ $$
 \text{Rough WC need} \approx \left(\frac{\text{Annual COGS}}{365}\right) \times \text{CCC} + \text{Seasonal buffer}
 $$
 
-This is a planning model, not a statute. Lenders will still look at [financial ratios](/blog/sme-financial-ratios-kenya), account conduct, CRB, and industry norms. But owners who walk in with CCC, aging, and a facility map get better conversations - and often better structures - than owners who only say â€œwe need two million more limit.â€
+This is a planning model, not a statute. Lenders will still look at [financial ratios](/blog/sme-financial-ratios-kenya), account conduct, CRB, and industry norms. But owners who walk in with CCC, aging, and a facility map get better conversations - and often better structures - than owners who only say “we need two million more limit.”
 
 ---
 
@@ -223,18 +223,18 @@ This is a planning model, not a statute. Lenders will still look at [financial r
 Bring a file that answers these without theatre:
 
 - **13-week cash-flow** (or at least a monthly view for two quarters) with assumptions written down  
-- **Aging of receivables and payables** (0â€“30, 31â€“60, 61â€“90, 90+)  
+- **Aging of receivables and payables** (0–30, 31–60, 61–90, 90+)  
 - **Stock summary** by category: fast movers vs dead stock  
 - **Top 10 customers and suppliers** with terms  
 - **Existing facilities:** limits, utilisation, security, next review date  
-- **Purpose of any increase:** stock build, tender, temporary delay - not â€œgeneral pressureâ€
+- **Purpose of any increase:** stock build, tender, temporary delay - not “general pressure”
 
 Account conduct still matters: bounced cheques, constant limit maxing, and tax arrears read as control problems. For the proposal narrative itself, use [anatomy of a bank proposal](/blog/anatomy-of-a-bank-proposal-kenya). For why a relationship manager is part of the system, not a formality, see [why your RM is an SME growth asset](/blog/why-rm-is-sme-growth-asset).
 
 ```cards
 - icon: Calculator
   title: Know your CCC
-  desc: DIO + DSO âˆ’ DPO is the single number that turns â€œwe are tightâ€ into a bankable diagnosis.
+  desc: DIO + DSO − DPO is the single number that turns “we are tight” into a bankable diagnosis.
   linkText: Seven ratios explained
   linkUrl: /blog/sme-financial-ratios-kenya
 - icon: Building2
@@ -283,7 +283,7 @@ Run this for four quarters and you will know more about your business than most 
 
 ### Closing
 
-Growth that outruns the working capital cycle feels like success until it feels like a crisis. The fix is rarely â€œmore hustle.â€ It is **measure the loop, shorten what you control, finance what you must, and refuse deals whose margin cannot survive the cost of the gap**.
+Growth that outruns the working capital cycle feels like success until it feels like a crisis. The fix is rarely “more hustle.” It is **measure the loop, shorten what you control, finance what you must, and refuse deals whose margin cannot survive the cost of the gap**.
 
 If you know your CCC, your aging, and which of inventory, receivables, or order fulfilment is the bottleneck, you already speak the language your bank uses. From there, choosing overdraft, invoice tools, or [LPO finance](/blog/lpo-purchase-order-finance-kenya) becomes a design decision - not a panic response. The forward tool that turns this loop into weekly numbers is [the 13-week cash forecast](/blog/13-week-cash-forecast-kenya-sme); contractors running the same loop against progress claims and retention should read [the contractor cash flow stack](/blog/contractor-cash-flow-stack-kenya). If you are VAT-registered, add the tax leg to the loop: [VAT for Kenyan SMEs](/blog/vat-for-smes-kenya) shows why the 20th of every month is a working-capital event, not a filing chore.
 

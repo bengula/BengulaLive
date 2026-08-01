@@ -35,11 +35,11 @@ In the case we studied, on-farm spoilage on the connected crops fell from around
 | Metric | Figure | Source |
 | --- | ---: | --- |
 | Kenyan food lost or wasted each year | KSh 72 billion (~US\$578m) | [WRI Africa, 2025](https://www.freshplaza.com/north-america/article/9841203/) |
-| Post-harvest loss, fruits & vegetables | 30% â€“ 50% (up to 80% in some chains) | [Frontiers, 2024](https://www.frontiersin.org/journals/horticulture/articles/10.3389/fhort.2024.1474056/full) |
+| Post-harvest loss, fruits & vegetables | 30% – 50% (up to 80% in some chains) | [Frontiers, 2024](https://www.frontiersin.org/journals/horticulture/articles/10.3389/fhort.2024.1474056/full) |
 | Avocado loss: domestic vs export channel | 35% vs 15% | [Frontiers, 2024](https://www.frontiersin.org/journals/horticulture/articles/10.3389/fhort.2024.1474056/full) |
-| Grant funding for solar cold storage (2024â€“2034) | â‚¬23.3 million | [UNCDF / Mitigation Action Facility](https://www.uncdf.org/article/8922/catalysing-climate-resilient-agriculture-in-kenya-with-solar-powered-cold-storage) |
+| Grant funding for solar cold storage (2024–2034) | €23.3 million | [UNCDF / Mitigation Action Facility](https://www.uncdf.org/article/8922/catalysing-climate-resilient-agriculture-in-kenya-with-solar-powered-cold-storage) |
 
-Those numbers are why donors and impact investors are leaning in: a 2024 Mitigation Action Facility programme committed **â‚¬23.3 million** to scale solar cold storage for over **60,000 smallholder farmers** through 2034. The thesis in this case study sits inside a much larger, well-documented opportunity.
+Those numbers are why donors and impact investors are leaning in: a 2024 Mitigation Action Facility programme committed **€23.3 million** to scale solar cold storage for over **60,000 smallholder farmers** through 2034. The thesis in this case study sits inside a much larger, well-documented opportunity.
 
 ### Why It's a *Venture*, Not a Sure Thing
 

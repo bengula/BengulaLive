@@ -1,7 +1,7 @@
 ---
 id: bank-guarantees-kenya-sme-guide
 title: "Bank Guarantees in Kenya: Bid, Performance, and Advance-Payment Bonds for SMEs"
-summary: "A bank guarantee is not a loan - it is the bankâ€™s promise that stands behind your bid or contract. This guide explains bid bonds, performance guarantees, and advance-payment guarantees, how they are priced and collateralised, the cash they quietly consume, and how to fold them into tender and project margins."
+summary: "A bank guarantee is not a loan - it is the bank’s promise that stands behind your bid or contract. This guide explains bid bonds, performance guarantees, and advance-payment guarantees, how they are priced and collateralised, the cash they quietly consume, and how to fold them into tender and project margins."
 category: SME Finance
 date: July 15, 2026
 readTime: 13 min read
@@ -32,7 +32,7 @@ A guarantee is not working capital in your account. It is a **contingent promise
   type: amber
 - icon: Banknote
   title: Advance-payment guarantee
-  desc: Protects the buyerâ€™s mobilisation money. Often required before cash hits your account - plan WC around the lag.
+  desc: Protects the buyer’s mobilisation money. Often required before cash hits your account - plan WC around the lag.
   linkText: Working capital cycle
   linkUrl: /blog/working-capital-cycle-kenya-smes
   type: emerald
@@ -46,7 +46,7 @@ A guarantee is not working capital in your account. It is a **contingent promise
 |---|---|
 | A **contingent liability** product issued under your facility | Free credit you can spend on stock |
 | Payable to a **named beneficiary** on compliant claim | Automatic proof you will perform (claims still happen) |
-| Usually secured by **cash margin, fixed deposit, land, or debenture** | Something only â€œbig corporatesâ€ use - SMEs live on these instruments |
+| Usually secured by **cash margin, fixed deposit, land, or debenture** | Something only “big corporates” use - SMEs live on these instruments |
 | A fee-earning product for the bank ([how banks earn](/blog/how-banks-actually-make-money-kenya)) | A substitute for delivery capacity or margin |
 
 Related instruments you will meet in the same conversations: **letters of credit** for imports ([import finance](/blog/import-finance-kenya-guide)), **LPO finance** when the order itself needs funding ([LPO guide](/blog/lpo-purchase-order-finance-kenya)), and invoice tools when the problem is collection after delivery ([accounts receivable](/blog/what-is-accounts-receivable)).
@@ -65,7 +65,7 @@ Related instruments you will meet in the same conversations: **letters of credit
 #### 2. Performance guarantee (performance bond)
 
 - **Purpose:** Assures the client you will perform per contract (delivery, quality, timeline).  
-- **Typical size:** Often a percentage of contract value (commonly discussed in the 5â€“10% range - **always use the contract**, not market folklore).  
+- **Typical size:** Often a percentage of contract value (commonly discussed in the 5–10% range - **always use the contract**, not market folklore).  
 - **Tenor:** Through performance period plus defects liability if required.  
 - **Failure mode:** Call on non-performance, dispute, or documentary triggers you did not operationalise.
 
@@ -108,10 +108,10 @@ Banks earn **commission** (and sometimes handling fees) for contingent risk. The
 - Cash margin or blocked funds (percentage of face value)  
 - Lien over fixed deposit  
 - Legal charge over land or other assets  
-- Debenture / directorsâ€™ support for larger lines  
+- Debenture / directors’ support for larger lines  
 - Counter-indemnity - you repay the bank if it pays the beneficiary  
 
-**Illustrative all-in cost framing** (replace with your bankâ€™s actual letter):
+**Illustrative all-in cost framing** (replace with your bank’s actual letter):
 
 $$
 \text{Guarantee cost} \approx \bigl(\text{Commission rate} \times \text{Face value} \times \text{Tenor factor}\bigr) + \text{Fees} + \text{Opportunity cost of collateral}
@@ -123,7 +123,7 @@ $$
 \text{Opportunity cost} \approx 2{,}000{,}000 \times 0.10 \times \frac{9}{12} = \text{KES } 150{,}000
 $$
 
-Add commission on the face value, and a â€œsmallâ€ bond has eaten a visible slice of project margin.
+Add commission on the face value, and a “small” bond has eaten a visible slice of project margin.
 
 | Cost component | What to ask the bank |
 |---|---|
@@ -143,7 +143,7 @@ Guarantee lines often sit inside broader **trade and contingent facilities**. St
   linkUrl: /blog/sme-packager-optimization
 - icon: Files
   title: Read the claim clause
-  desc: â€œOn first demandâ€ vs conditional wording changes real risk. Align operations and legal review before signing.
+  desc: “On first demand” vs conditional wording changes real risk. Align operations and legal review before signing.
   linkText: Bank proposal anatomy
   linkUrl: /blog/anatomy-of-a-bank-proposal-kenya
   type: amber
@@ -170,7 +170,7 @@ Assume a supply contract of **KES 10,000,000**.
 | Opportunity cost @ 10% p.a. for 6 months | KES 25,000 | KES 25,000 |
 | **Margin after guarantee stack** | **~KES 755,000** (and still exposed to delivery risk) | **~KES 1,755,000** |
 
-Both â€œworkâ€ on a spreadsheet. The thin deal has little room for a fuel spike, a rejection, or a one-month delay that extends guarantee commission. The healthy deal can absorb friction. Same logic as [LPO margin arithmetic](/blog/lpo-purchase-order-finance-kenya): **finance and contingent costs are part of COGS**.
+Both “work” on a spreadsheet. The thin deal has little room for a fuel spike, a rejection, or a one-month delay that extends guarantee commission. The healthy deal can absorb friction. Same logic as [LPO margin arithmetic](/blog/lpo-purchase-order-finance-kenya): **finance and contingent costs are part of COGS**.
 
 ---
 
@@ -178,14 +178,14 @@ Both â€œworkâ€ on a spreadsheet. The thin deal has little room for a fu
 
 Expect a file that looks like credit - not a one-page email:
 
-- Company KYC, CR12, KRA compliance, directorsâ€™ IDs  
+- Company KYC, CR12, KRA compliance, directors’ IDs  
 - Contract or tender document stating the guarantee wording and amount  
 - Evidence you can **perform** (past contracts, capacity, supplier quotes)  
 - Financials / bank statements showing the business can survive a call  
 - Security you are offering and any existing limit utilisation  
 - Sometimes a **board resolution** authorising the facility and signatories  
 
-Account conduct still matters. Chronic bounced payments and maxed overdrafts make contingent limits scarce even when a tender looks perfect. Build bankability as in the handbookâ€™s foundation chapters and [eTIMS discipline](/blog/etims-kenya-sme-guide).
+Account conduct still matters. Chronic bounced payments and maxed overdrafts make contingent limits scarce even when a tender looks perfect. Build bankability as in the handbook’s foundation chapters and [eTIMS discipline](/blog/etims-kenya-sme-guide).
 
 ---
 
@@ -196,7 +196,7 @@ Account conduct still matters. Chronic bounced payments and maxed overdrafts mak
 3. **Match subcontractor and supplier terms** to your performance obligations so your failure is not their delay.  
 4. **Control variation orders** in writing; informal scope creep is how performance bonds get stressed.  
 5. **Separate guarantee limits** from day-to-day overdraft where the bank allows - so one product does not silently kill the other.  
-6. **Plan multi-bank structure** if one bankâ€™s contingent appetite is the bottleneck ([multi-bank logic](/blog/ultimate-guide-to-banking-in-kenya)).  
+6. **Plan multi-bank structure** if one bank’s contingent appetite is the bottleneck ([multi-bank logic](/blog/ultimate-guide-to-banking-in-kenya)).  
 7. **Do not bid every tender** your sales team likes - bid the ones whose guarantee stack your balance sheet can carry.
 
 ```mermaid
@@ -220,7 +220,7 @@ flowchart TD
 
 | Need | Prefer | Not a substitute |
 |---|---|---|
-| Win the right to be considered | Bid bond | Personal cheque â€œgoodwillâ€ |
+| Win the right to be considered | Bid bond | Personal cheque “goodwill” |
 | Prove you will perform after award | Performance guarantee | More sales promises |
 | Receive mobilisation safely for the buyer | Advance-payment guarantee | Unsecured verbal advance |
 | Pay an overseas supplier against documents | Letter of credit | Performance bond |
@@ -251,7 +251,7 @@ Personal and corporate guarantee entanglement is real - read the spirit of [guar
   linkUrl: /blog/why-rm-is-sme-growth-asset
 - icon: ClipboardList
   title: Build the file
-  desc: Contract wording, capacity evidence, and clean statements move guarantee requests from â€œpossibleâ€ to â€œissuedâ€.
+  desc: Contract wording, capacity evidence, and clean statements move guarantee requests from “possible” to “issued”.
   linkText: Proposal anatomy
   linkUrl: /blog/anatomy-of-a-bank-proposal-kenya
   type: amber

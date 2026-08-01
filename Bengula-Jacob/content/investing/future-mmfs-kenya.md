@@ -48,7 +48,7 @@ The headline is the scale of adoption: Kenyans now hold roughly **KES 400 billio
 
 Fund marketing always quotes the **gross** rate. What lands in your pocket is the net rate after the 15% withholding tax. If a fund advertises 14% per annum gross:
 
-> **Net yield = 14% Ã— (1 âˆ’ 0.15) = 11.9% net per annum**
+> **Net yield = 14% × (1 − 0.15) = 11.9% net per annum**
 
 That ~11.9% net still comfortably beats a savings account and, in most periods, beats inflation, which is exactly what you want from a *buffer*.
 

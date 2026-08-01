@@ -26,7 +26,7 @@ Price follows risk. A conventional loan is priced for the possibility that an un
 
 Most of the comparison searches (*asset financing vs conventional loans Kenya*, *logbook loans vs personal loans Nairobi*, *secured asset finance vs unsecured loan*) collapse three very different products into one decision. They are not the same animal.
 
-**Asset finance.** The bank or financier pays for a *specific new asset* (a vehicle, lorry, tractor, generator, medical or construction equipment) and holds the logbook or a charge over that asset as security until you finish paying. You typically put down a deposit (often 10â€“30%) and repay the balance over two to five years on a **reducing-balance** basis. Because the loan is fully secured by the thing it bought, it is priced close to the bank's base lending rate.
+**Asset finance.** The bank or financier pays for a *specific new asset* (a vehicle, lorry, tractor, generator, medical or construction equipment) and holds the logbook or a charge over that asset as security until you finish paying. You typically put down a deposit (often 10–30%) and repay the balance over two to five years on a **reducing-balance** basis. Because the loan is fully secured by the thing it bought, it is priced close to the bank's base lending rate.
 
 **A conventional (unsecured) personal or business loan.** The lender advances cash against your payslip, bank statements, or business cash flow, with no specific asset behind it. If you default, the lender has to chase you. That uncertainty is priced in, which is why unsecured rates sit well above secured ones.
 
@@ -52,8 +52,8 @@ Take [Absa Bank Kenya's asset finance (ABF) programme](https://www.absabank.co.k
 
 | Product (same bank, same borrower) | Security | Indicative rate | Why the gap |
 | --- | --- | --- | --- |
-| Asset finance (ABF) | The financed vehicle/asset | ~15.4â€“16.9% p.a. reducing balance | Lender can repossess a known, resaleable asset, so the margin is low |
-| Unsecured personal / scheme loan | None (payslip / cash flow) | ~16.5â€“21% p.a. reducing balance | No specific asset to recover, so the margin is higher |
+| Asset finance (ABF) | The financed vehicle/asset | ~15.4–16.9% p.a. reducing balance | Lender can repossess a known, resaleable asset, so the margin is low |
+| Unsecured personal / scheme loan | None (payslip / cash flow) | ~16.5–21% p.a. reducing balance | No specific asset to recover, so the margin is higher |
 | Logbook loan (microfinance) | A car you already own | Often **50%+** effective APR (flat monthly) | Short tenor, flat pricing, you pledge an asset you already owned |
 
 Two things stand out. First, the *secured* asset-finance rate is the lowest on the bank's own shelf, because pledging the asset is what buys the discount. Second, the logbook loan sits in another universe entirely. It is the fastest route, and for a genuine short-term cash emergency it has its place, but as a way to *fund an asset purchase* it is the most expensive money on the table, and you are pledging a car you already own to raise it rather than letting the new asset secure itself.
@@ -83,10 +83,10 @@ For **older ("grey") units**, the loan-to-value steps down with the year of manu
 
 **Business and commercial assets.** The programme extends well beyond personal cars:
 
-- **Commercial vehicles** (prime movers, trucks, vans and passenger vehicles) at up to **95%** for new and **90%** for used, over 60â€“72 months.
+- **Commercial vehicles** (prime movers, trucks, vans and passenger vehicles) at up to **95%** for new and **90%** for used, over 60–72 months.
 - **School buses** (brand-new units) at up to **100%** financing over **84 months, repaid termly** to match school cash flow.
 - **New-model commercial trucks** (FAW, Tata, Sino, Hyundai, Ashok Leyland and similar) at up to **90%** over 60 months, subject to a service-and-maintenance arrangement.
-- **Equipment** in three classes, **solar**, **construction**, and **medical**, financed at 90â€“100% over up to 60 months, typically with the asset registered as security on the Movable Property Security Rights (MPSR) registry. Medical equipment is for new assets, capped around KES 20,000,000.
+- **Equipment** in three classes, **solar**, **construction**, and **medical**, financed at 90–100% over up to 60 months, typically with the asset registered as security on the Movable Property Security Rights (MPSR) registry. Medical equipment is for new assets, capped around KES 20,000,000.
 - **Logbook financing** against an existing vehicle at up to 80% for newer units.
 
 This breadth is the practical point: asset finance is not a single car loan. Whether the productive asset is a school bus, a tractor, a CT scanner, a solar plant, or a fleet of delivery trucks, the same logic, that the asset secures itself so the rate falls, is available across the board. For exporters and SMEs juggling working capital against equipment needs, it pairs naturally with the structuring ideas in [SME Trade Finance & Supply-Chain Optimization](/blog/sme-trade-finance).
@@ -98,7 +98,7 @@ Asset finance is cheaper, but it is not free of risk, and it is not right for ev
 | Risk | Who it affects | What it means |
 | --- | --- | --- |
 | Repossession on default | Anyone financing an asset | Miss instalments and the financier takes the asset, and your deposit and payments may not be refunded |
-| Deposit and insurance are mandatory | Buyers short on upfront cash | You need 10â€“30% down plus comprehensive insurance (often via Insurance Premium Financing), which adds to month-one cost |
+| Deposit and insurance are mandatory | Buyers short on upfront cash | You need 10–30% down plus comprehensive insurance (often via Insurance Premium Financing), which adds to month-one cost |
 | You don't own it until the end | All asset-finance borrowers | The logbook is held jointly or by the financier until the final instalment clears |
 | The asset must exist | People wanting cash, not a thing | Asset finance buys an asset; it will not hand you cash for school fees or stock, which is what costlier unsecured credit is for |
 | Hidden charges | Rate-shoppers | Negotiation fees, valuation, excise duty, and credit-life cover lift the APR above the quoted rate, so ask for the full schedule |

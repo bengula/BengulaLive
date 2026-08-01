@@ -161,7 +161,7 @@ The risks attached to borrowing and guaranteeing, however, have grown significan
 ### References
 - [SASRA Sacco Supervision Annual Reports](https://www.sasra.go.ke/sacco-supervision-reports/). The 2024 report carries the sector assets, deposits, loan book, and NPL ratios cited here.
 - ["KUSCCO audit reveals billions lost in mismanagement, report tabled in Parliament", Capital Business, May 2025](https://www.capitalfm.co.ke/business/2025/05/kuscco-audit-reveals-billions-lost-in-mismanagement-report-tabled-in-parliament/). The PwC forensic audit findings.
-- ["Sacco provisions for Kuscco scandal losses hit Sh1.8 billionâ€¦ and rising", Daily Nation](https://nation.africa/kenya/business/companies/sacco-provisions-for-kuscco-scandal-losses-hit-sh1-8-billion-4946980). How the loss reached member SACCOs.
+- ["Sacco provisions for Kuscco scandal losses hit Sh1.8 billion… and rising", Daily Nation](https://nation.africa/kenya/business/companies/sacco-provisions-for-kuscco-scandal-losses-hit-sh1-8-billion-4946980). How the loss reached member SACCOs.
 - ["Kenya, Uganda in race to change Sacco rules as losses hit members", The EastAfrican](https://www.theeastafrican.co.ke/tea/business-tech/kenya-uganda-in-race-to-change-sacco-rules-losses-hit-members-5372036). The Committee of Experts' proposals, including the 10-to-100 minimum membership change.
 - [The Sacco Societies (Amendment) Bill, 2025, Parliament of Kenya](https://www.parliament.go.ke/node/24259). Central Liquidity Facility, Deposit Guarantee Fund, and merger provisions.
 - ["SASRA Flags Five Saccos and Boots Out Two For 2026", The Kenyan Wallstreet, February 2026](https://kenyanwallstreet.com/five-saccos-put-on-credit-only-status-as-two-exit). The 2026 licensing round.

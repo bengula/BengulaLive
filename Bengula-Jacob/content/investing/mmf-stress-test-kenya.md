@@ -81,7 +81,7 @@ As a mid-2026 library snapshot, CBK-linked short rates sat near the high-8% area
 
 | Pattern | Interpretation |
 |---|---|
-| Yield â‰ˆ T-bill after fees | Classic government-heavy or high-quality short book |
+| Yield ≈ T-bill after fees | Classic government-heavy or high-quality short book |
 | Yield modestly above T-bill | Possible credit premium or active positioning |
 | Yield far above T-bill and peers | Read holdings twice; size the position smaller |
 
@@ -196,7 +196,7 @@ For longer dated money, graduate to [T-bill ladders](/blog/advanced-dhowcsd-t-bi
 | If... | Then... |
 |---|---|
 | Money is true emergency reserve | Prefer plain, government-heavy, understandable books |
-| Yield â‰« T-bill without clear credit explanation | Do not use as sole cash home |
+| Yield ≫ T-bill without clear credit explanation | Do not use as sole cash home |
 | You cannot obtain a fact sheet | Do not invest |
 | Horizon is 12-24 months+ with known date | Consider T-bills/bonds instead of perpetual MMF parking |
 | Fund is one of several cash tools | Size the aggressive sleeve deliberately |

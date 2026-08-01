@@ -11,7 +11,6 @@ author:
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
 ---
-coverImage: https://loremflickr.com/1600/900/savings,money?lock=2020
 
 ### The Silent Cost of Idle Corporate Cash
 
@@ -22,7 +21,6 @@ However, commercial banks operate on an interest spread. They borrow from deposi
 > **Key Insight:** Bank fixed deposits represent a commercial bank's debt, whereas Treasury Bills represent the government's direct debt. Placing short-term corporate liquidity in T-bills often increases yields by **3% to 6%** while lowering default risk.
 
 ---
-coverImage: https://loremflickr.com/1600/900/savings,money?lock=2020
 
 ### Credit Risk and the Resolution Hierarchy
 
@@ -38,7 +36,6 @@ A bank deposit is fundamentally a loan you grant to a commercial bank. You becom
 Treasury Bills represent a direct loan to the Government of Kenya. They are backed by the "full faith and credit" of the state, which possesses taxation powers and controls the national currency supply. In the local currency debt hierarchy, T-bills are considered virtually zero-risk for default. The government will always meet its local currency obligations because it can issue new treasury instruments or print local currency to settle them.
 
 ---
-coverImage: https://loremflickr.com/1600/900/savings,money?lock=2020
 
 ### Yield and Tax-Efficiency Analysis
 
@@ -63,14 +60,13 @@ On a placement of **KSh 10,000,000**, the interest earned over 91 days under bot
 > **Net Savings:** By shifting KSh 10 million from a bank fixed deposit to a 91-day T-bill, the business earns an additional **KSh 137,747** in net interest over just three months, while lowering its credit risk.
 
 ---
-coverImage: https://loremflickr.com/1600/900/savings,money?lock=2020
 
 ### Placement Options Compared
 
 | Feature | Bank Fixed Deposit | CBK Treasury Bills (T-Bills) |
 | --- | --- | --- |
 | **Issuer Risk** | Commercial Bank (Credit Risk) | Government of Kenya (Sovereign Risk) |
-| **Typical Yield Range** | 7.0% â€“ 10.5% | 15.0% â€“ 16.5% |
+| **Typical Yield Range** | 7.0% – 10.5% | 15.0% – 16.5% |
 | **Minimum Placement** | KSh 100,000 (Varies by bank) | KSh 50,000 |
 | **Liquidity & Early Exit** | High penalty fee for breaking deposit | Can be discounted/sold early at CBK |
 | **Maturity Tenors** | Customizable (1, 3, 6, 12 months) | Fixed (91, 182, 364 days) |
@@ -78,7 +74,6 @@ coverImage: https://loremflickr.com/1600/900/savings,money?lock=2020
 | **Collateral Usability** | Can secure local bank facilities | Can be pledged directly to secure credit lines |
 
 ---
-coverImage: https://loremflickr.com/1600/900/savings,money?lock=2020
 
 ### Liquidity, Secondary Markets, and Collateral
 
@@ -89,7 +84,6 @@ A common objection to Treasury Bills is that they lack flexibility. However, T-b
 * **Collateral for Credit Lines:** Treasury Bills are highly liquid cash equivalents. Most commercial banks will allow you to pledge your T-bills as collateral to secure an overdraft facility or a working capital loan at very low margins (often base rate plus 1%), allowing you to access cash without breaking the interest-bearing investment.
 
 ---
-coverImage: https://loremflickr.com/1600/900/savings,money?lock=2020
 
 ### Decision Framework
 
@@ -105,7 +99,6 @@ To determine where to place your business cash:
 - [Sovereign Debt Explained: Bids, Bills, and Bonds in Kenya](/blog/sovereign-debt-explained). Understand the mechanics of Treasury auction processes and interest cycles.
 
 ---
-coverImage: https://loremflickr.com/1600/900/savings,money?lock=2020
 
 ### Confidence Note & Compliance
 

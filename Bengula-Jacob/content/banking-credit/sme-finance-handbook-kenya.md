@@ -327,11 +327,11 @@ Sooner or later every SME owner needs a number: an investor asks for one, a part
 | Method | The Logic | Best For | The Catch |
 |---|---|---|---|
 | Asset-based | Net assets at fair value: what the pieces would fetch | Asset-heavy firms; liquidation floors | Ignores the earning engine; punishes service businesses |
-| Earnings multiple | Sustainable annual profit Ã— a market multiple | Trading and service SMEs; the default | Everything hides in "sustainable" and in the multiple |
+| Earnings multiple | Sustainable annual profit × a market multiple | Trading and service SMEs; the default | Everything hides in "sustainable" and in the multiple |
 | Discounted cash flow | Future cash flows discounted to today | Businesses with credible projections | Projections; a spreadsheet will say anything |
-| Revenue multiple | Sales Ã— a sector factor | Early, unprofitable, or platform businesses | Values activity, not viability |
+| Revenue multiple | Sales × a sector factor | Early, unprofitable, or platform businesses | Values activity, not viability |
 
-**The worked example (earnings multiple, the one most Kenyan SME deals actually use).** A distribution business reports KES 4 million annual profit. Normalise it first: add back the owner's private expenses run through the business (KES 600,000), then deduct the market salary the owner never paid themselves for a full-time role (KES 1,600,000). Sustainable profit: **KES 3 million**. Private Kenyan SMEs of this size typically transact at roughly 2.5-4Ã— sustainable earnings depending on sector, customer concentration, and how transferable the business is without its owner:
+**The worked example (earnings multiple, the one most Kenyan SME deals actually use).** A distribution business reports KES 4 million annual profit. Normalise it first: add back the owner's private expenses run through the business (KES 600,000), then deduct the market salary the owner never paid themselves for a full-time role (KES 1,600,000). Sustainable profit: **KES 3 million**. Private Kenyan SMEs of this size typically transact at roughly 2.5-4× sustainable earnings depending on sector, customer concentration, and how transferable the business is without its owner:
 
 $$ \text{Indicative Value} = 3{,}000{,}000 \times (2.5 \text{ to } 4) = \text{KES } 7.5\text{M to } 12\text{M} $$
 
@@ -431,7 +431,7 @@ Facilities outlive forecasts. The difference between a rough year and a terminal
 
 ### Frequently Asked Questions
 
-**How much can my business actually borrow?** Whatever your DSCR defends: monthly free cash flow Ã· 1.5, times the tenor, is a sober ceiling. Facility marketing quotes limits; your statements set them.
+**How much can my business actually borrow?** Whatever your DSCR defends: monthly free cash flow ÷ 1.5, times the tenor, is a sober ceiling. Facility marketing quotes limits; your statements set them.
 
 **I have no collateral. Am I locked out?** No, but you are steered: toward transaction-secured facilities (invoice discounting, LPO finance, asset finance, where the deal or asset is the security), guarantee-scheme lending, and record-building small facilities. "No collateral" is a routing instruction, not a rejection.
 
@@ -454,7 +454,7 @@ Facilities outlive forecasts. The difference between a rough year and a terminal
 - **Tenor**: how long the money runs.
 - **Limit**: the ceiling on a revolving facility; interest accrues on utilisation, fees often on the limit.
 - **KESONIA / Premium K**: the published benchmark plus your risk margin; the two halves of your rate.
-- **DSCR**: cash flow Ã· debt service; the capacity number.
+- **DSCR**: cash flow ÷ debt service; the capacity number.
 - **CCC (cash conversion cycle)**: days money stays trapped between paying suppliers and being paid.
 - **LPO**: Local Purchase Order; the financeable promise of an order.
 - **Discounting vs factoring**: borrowing against invoices vs selling them.

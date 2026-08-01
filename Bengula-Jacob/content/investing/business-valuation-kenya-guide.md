@@ -34,7 +34,7 @@ A worked pass. A distribution business reports KES 4,000,000 profit:
 |---|---|
 | Reported profit | KES 4,000,000 |
 | Add back: personal expenses in the books | +KES 600,000 |
-| Deduct: market salary for the unpaid founder-GM | âˆ’KES 1,600,000 |
+| Deduct: market salary for the unpaid founder-GM | −KES 1,600,000 |
 | **Normalised sustainable earnings** | **KES 3,000,000** |
 
 Sellers habitually skip the salary deduction and overprice; buyers habitually challenge the add-backs without receipts. The eTIMS-reconciled, cleanly banked business ([the evidence discipline](/blog/sme-finance-handbook-kenya)) wins these arguments before they start, which is worth real money: every disputed KES 100,000 of earnings is KES 300,000-400,000 of price at typical multiples.
@@ -45,10 +45,10 @@ Sellers habitually skip the salary deduction and overprice; buyers habitually ch
 
 | Method | The Logic | When It Governs | The Catch |
 |---|---|---|---|
-| **Earnings multiple** | Normalised profit Ã— a market multiple | Profitable trading and service SMEs; the default for most Kenyan deals | Everything hides in the multiple |
+| **Earnings multiple** | Normalised profit × a market multiple | Profitable trading and service SMEs; the default for most Kenyan deals | Everything hides in the multiple |
 | **Asset-based** | Net assets at fair value | Asset-heavy firms; loss-makers; liquidation floors | Ignores the earning engine entirely |
 | **Discounted cash flow (DCF)** | Project the cash flows, discount them to today | Businesses with credible multi-year projections and contracts | A spreadsheet will say anything you ask it to |
-| **Revenue multiple** | Sales Ã— a sector factor | Pre-profit, high-growth, or platform businesses | Values activity, not viability |
+| **Revenue multiple** | Sales × a sector factor | Pre-profit, high-growth, or platform businesses | Values activity, not viability |
 
 Two cross-checks make any single answer honest. The **asset floor**: no going concern should sell below its net realisable assets, so compute it even when earnings govern. And the **buyer's arithmetic**: whatever the method says, a rational buyer asks what they could earn on the same money elsewhere; with tax-free infrastructure bonds paying double digits in recent issues, a Kenyan business priced above roughly 5-6x sustainable earnings needs a growth story that survives that comparison.
 
