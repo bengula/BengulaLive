@@ -106,6 +106,7 @@ The desk treats a website the way it treats a balance sheet: an asset is only an
 ### Related Reading
 
 - [Why Your Website Gets Traffic but Zero Enquiries](/blog/website-traffic-zero-enquiries). Diagnosing the conversion gap after visitors arrive.
+- [The Complete Guide to Digital Growth for Kenyan SMEs](/blog/digital-growth-kenya-sme-guide). The hub: where attention sits in the five-link chain, and how to tell whether traffic is actually your constraint.
 - [A to Z of Customer Avatars](/blog/archive-customer-avatars-buyer-persona). Building pages around the real buyer.
 - [How to Connect Business Data to Digital Visibility](/blog/bengula-inc-linkedin-company-profile). Turning data, credibility, and content into discoverability.
 - [SME Packager Margin Optimization](/blog/sme-packager-optimization). How better data changes pricing and growth decisions.

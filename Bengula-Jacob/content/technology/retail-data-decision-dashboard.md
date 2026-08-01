@@ -90,6 +90,7 @@ Retailers rarely have a data problem; they have a latency problem. The informati
 ### Related Reading
 
 - [SME Packager Margin Optimization](/blog/sme-packager-optimization). Fixing product-level profitability before scaling.
+- [The Complete Guide to Digital Growth for Kenyan SMEs](/blog/digital-growth-kenya-sme-guide). The hub: where the data loop sits in the growth chain, and the five numbers every SME should track monthly.
 - [What Is Accounts Receivable](/blog/what-is-accounts-receivable). Managing money owed to the business.
 - [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans). Understanding how risk visibility affects borrowing terms.
 - [How to Build an Accurate Startup Budget](/blog/how-to-build-an-accurate-startup-budget). Budgeting from actual numbers rather than optimism.

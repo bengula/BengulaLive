@@ -225,7 +225,7 @@ For group purchases, read [chama land-banking](/blog/chama-llp-land-banking-keny
 
 ### Sources and Further Reading
 
-- Bengula Inc: [CBK Diaspora Bond Access](/blog/cbk-diaspora-bond-access), [Kikuyu Ridge Syndicate](/blog/kikuyu-ridge-syndicate), [Chama LLP Land-Banking](/blog/chama-llp-land-banking-kenya), [Evaluate Any Investment Opportunity](/blog/evaluate-investment-opportunity-kenya), [Ultimate Guide to Investing in Kenya](/blog/ultimate-guide-to-investing-in-kenya), [Sleeping Asset Optimization](/blog/sleeping-asset-optimization).
+- Bengula Inc: [The Complete Guide to Property Money in Kenya](/blog/property-money-kenya-complete-guide) (the hub: what you are buying, what it costs, and the appreciation hurdle a plot must clear), [Capital Gains Tax in Kenya](/blog/capital-gains-tax-kenya) (what you owe when you eventually sell, and the receipts you must start keeping today), [CBK Diaspora Bond Access](/blog/cbk-diaspora-bond-access), [Kikuyu Ridge Syndicate](/blog/kikuyu-ridge-syndicate), [Chama LLP Land-Banking](/blog/chama-llp-land-banking-kenya), [Evaluate Any Investment Opportunity](/blog/evaluate-investment-opportunity-kenya), [Ultimate Guide to Investing in Kenya](/blog/ultimate-guide-to-investing-in-kenya), [Sleeping Asset Optimization](/blog/sleeping-asset-optimization).
 - Market context: [Hass Consult land index](https://www.hassconsult.com/hassindex).
 
 *General education for diaspora readers, not legal, tax, or investment advice. Land law and registry practice are professional domains; verify every step with qualified Kenyan counsel before sending funds.*

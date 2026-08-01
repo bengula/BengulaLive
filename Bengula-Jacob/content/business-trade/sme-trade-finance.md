@@ -73,6 +73,7 @@ This is exactly the kind of problem the **Finance & Banking Advisory** pillar ex
 - [Contractor Cash Flow Stack](/blog/contractor-cash-flow-stack-kenya). Guarantees, mobilisation, progress claims, and retention as one funded sequence.
 - [Tea Cooperative Strategic Restructure](/blog/tea-cooperative-restructure). Consolidating expensive overdrafts into one asset-backed facility.
 - [SME Packager Margin Optimization](/blog/sme-packager-optimization). Fixing the unit economics behind the cash squeeze.
+- [The Complete Guide to Trade Finance in Kenya](/blog/trade-finance-kenya-complete-guide). The full hub: importer and exporter journeys, the payment ladder, Incoterms, documents, and a facility for every stage.
 
 ### References
 - [African Development Bank, 2025 Trade Finance Report](https://www.afdb.org/en/news-and-events/press-releases/am2026-afdb-2025-trade-finance-report-highlights-resilience-african-financial-institutions-after-covid-19-93697)

@@ -181,6 +181,7 @@ If you would like an outside read on where your own site is leaking enquiries, t
 - [Stop Wasting Money on AI Detectors](/blog/AI-detectors). Why practical digital decisions need better evidence than shallow signals.
 
 ### References
+- Bengula Inc: [The Complete Guide to Digital Growth for Kenyan SMEs](/blog/digital-growth-kenya-sme-guide). The hub: the five-link chain, the arithmetic that shows why fixing conversion beats buying traffic, and the 90-day sequence.
 - [Google Analytics Help](https://support.google.com/analytics/). Use event tracking to measure form submissions, calls, WhatsApp clicks, and email clicks.
 - [Meta Business Help Center](https://www.facebook.com/business/help). Paid traffic should be judged by downstream conversions, not clicks alone.
 - [Nielsen Norman Group](https://www.nngroup.com/articles/first-2-words-a-signal-for-scanning/). Usability research on fast scanning and clear front-loaded language.

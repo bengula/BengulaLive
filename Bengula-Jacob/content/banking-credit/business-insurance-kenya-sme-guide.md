@@ -223,6 +223,6 @@ For facility-linked structures and broader SME finance context, see the [SME fin
 ### Sources and Further Reading
 
 - [Insurance Regulatory Authority of Kenya](https://www.ira.go.ke/): licensed insurers and market conduct context.
-- Bengula Inc: [Insurance Stack for Kenyans](/blog/insurance-stack-kenya-life-stages), [SME Risk Management](/blog/sme-risk-management-kenya), [SME Finance Handbook](/blog/sme-finance-handbook-kenya), [Accounts Receivable](/blog/what-is-accounts-receivable), [Bank Guarantees](/blog/bank-guarantees-kenya-sme-guide), [Asset Finance vs Conventional Loans](/blog/asset-finance-vs-conventional-loans).
+- Bengula Inc: [The Complete Guide to Insurance in Kenya](/blog/insurance-kenya-complete-guide) (the hub: the full product map, sizing sums insured, insurer solvency and the compensation cap), [Insurance Stack for Kenyans](/blog/insurance-stack-kenya-life-stages), [SME Risk Management](/blog/sme-risk-management-kenya), [SME Finance Handbook](/blog/sme-finance-handbook-kenya), [Accounts Receivable](/blog/what-is-accounts-receivable), [Bank Guarantees](/blog/bank-guarantees-kenya-sme-guide), [Asset Finance vs Conventional Loans](/blog/asset-finance-vs-conventional-loans).
 
 *General financial education, not individualised insurance advice. Policy wordings, statutory duties, and insurer appetite change; verify with licensed intermediaries and professional advisors before buying or cancelling cover.*

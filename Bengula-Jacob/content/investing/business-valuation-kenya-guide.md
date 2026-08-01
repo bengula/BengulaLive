@@ -111,6 +111,6 @@ The desk's rule on valuation: the number is a by-product; the *legibility* is th
 
 - [Business Registration Service](https://brs.go.ke): the formalisation layer every transferable business needs.
 - [Kenya Revenue Authority](https://www.kra.go.ke): tax records as valuation evidence, and CGT on unlisted share transfers.
-- Bengula Inc: [The Complete SME Finance Handbook](/blog/sme-finance-handbook-kenya), [What Are the Different Types of Acquisitions](/blog/types-of-acquisitions), [How to Raise Startup Capital in Kenya](/blog/how-to-raise-startup-capital-kenya), [How to Read the Numbers: Accounts Receivable](/blog/what-is-accounts-receivable), [The Ultimate Guide to Investing in Kenya](/blog/ultimate-guide-to-investing-in-kenya)
+- Bengula Inc: [Capital Gains Tax in Kenya](/blog/capital-gains-tax-kenya) (why a share sale and an asset sale on the same business produce very different net proceeds), [The Complete SME Finance Handbook](/blog/sme-finance-handbook-kenya), [What Are the Different Types of Acquisitions](/blog/types-of-acquisitions), [How to Raise Startup Capital in Kenya](/blog/how-to-raise-startup-capital-kenya), [How to Read the Numbers: Accounts Receivable](/blog/what-is-accounts-receivable), [The Ultimate Guide to Investing in Kenya](/blog/ultimate-guide-to-investing-in-kenya)
 
 *General business education, not valuation, legal, or tax advice. Multiples cited are indicative market observations, not a promise of price; significant transactions warrant professional valuation and legal support.*

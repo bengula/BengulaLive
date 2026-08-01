@@ -224,6 +224,7 @@ And when a gap does appear, the same sheet tells you what to do about it: manage
 - [The Anatomy of a Bank Proposal](/blog/anatomy-of-a-bank-proposal-kenya) for how the forecast becomes a facility application.
 - [The Overdraft That Never Clears](/blog/overdraft-that-never-clears-kenya) for using a revolving facility without turning it into permanent debt.
 - [What Accounts Receivable Financing Does](/blog/what-is-accounts-receivable) for bridging a collection-timing gap.
+- [VAT for Kenyan SMEs](/blog/vat-for-smes-kenya) for the fixed 20th-of-the-month outflow that belongs in the forecast alongside payroll.
 
 ### References
 

@@ -116,6 +116,7 @@ Use this framework to align your bond choice with your financial timeline:
 3. **Do you want to avoid currency conversion costs entirely?** Look out for CBK's occasional USD-denominated local bonds, which allow you to pay and receive interest in USD.
 
 ### Related Reading
+- [The Complete Guide to Fixed Income in Kenya](/blog/fixed-income-kenya-complete-guide). The full instrument map, tax table, and income-sleeve construction that sits behind DhowCSD access.
 - [Kenyan Treasury Bonds Demystified: Building an IFB Ladder in 2026](/blog/kb-bond-guide-2026). How to structure a tax-efficient bond portfolio once you have DhowCSD access.
 - [Sovereign Debt Explained: Bids, Bills, and Bonds in Kenya](/blog/sovereign-debt-explained). A comprehensive reference on bidding, auctions, and sovereign yield logic.
 - [Hedging USD/KES: Practical Treasury Strategies for Kenyan Exporters](/blog/usd-shilling-hedging). Understand foreign exchange risks and how to manage shilling volatility.

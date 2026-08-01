@@ -217,6 +217,6 @@ For instrument selection after the cash layer, use [the investing cornerstone](/
 
 - [Capital Markets Authority](https://www.cma.or.ke/): licensing and collective investment scheme oversight.
 - [Central Bank of Kenya](https://www.centralbank.go.ke/): T-bill and policy rate context.
-- Bengula Inc: [Future of MMFs in Kenya](/blog/future-mmfs-kenya), [Bank vs SACCO vs MMF vs Insurance](/blog/bank-vs-sacco-vs-mmf-savings), [Advanced DhowCSD T-Bill Ladder](/blog/advanced-dhowcsd-t-bill-ladder), [Evaluate Any Investment Opportunity](/blog/evaluate-investment-opportunity-kenya), [Ultimate Guide to Investing in Kenya](/blog/ultimate-guide-to-investing-in-kenya), [Monthly Income Engine](/blog/monthly-income-engine-kenya).
+- Bengula Inc: [The Complete Guide to Fixed Income in Kenya](/blog/fixed-income-kenya-complete-guide), [Future of MMFs in Kenya](/blog/future-mmfs-kenya), [Bank vs SACCO vs MMF vs Insurance](/blog/bank-vs-sacco-vs-mmf-savings), [Advanced DhowCSD T-Bill Ladder](/blog/advanced-dhowcsd-t-bill-ladder), [Evaluate Any Investment Opportunity](/blog/evaluate-investment-opportunity-kenya), [Ultimate Guide to Investing in Kenya](/blog/ultimate-guide-to-investing-in-kenya), [Monthly Income Engine](/blog/monthly-income-engine-kenya).
 
 *General financial education, not individualised investment advice. Fund holdings, yields, fees, and tax treatments change; verify current fact sheets and licences, and consider professional advice for material sums. Past performance is not a promise of future returns.*

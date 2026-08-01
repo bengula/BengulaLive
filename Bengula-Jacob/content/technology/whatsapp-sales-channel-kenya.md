@@ -207,6 +207,6 @@ For conversion architecture beyond chat, read [e-commerce storefront launch](/bl
 
 ### Sources and Further Reading
 
-- Bengula Inc: [E-commerce Storefront & Conversion Launch](/blog/ecommerce-storefront-conversion-launch), [What Is a Cashless Economy](/blog/what-is-a-cashless-economy), [Embedded Finance in Kenya](/blog/embedded-finance-kenya-guide), [SME SEO Inbound Lead Engine](/blog/sme-seo-inbound-lead-engine), [Website Traffic, Zero Enquiries](/blog/website-traffic-zero-enquiries), [SME Risk Management](/blog/sme-risk-management-kenya).
+- Bengula Inc: [The Complete Guide to Digital Growth for Kenyan SMEs](/blog/digital-growth-kenya-sme-guide) (the hub this channel sits inside), [E-commerce Storefront & Conversion Launch](/blog/ecommerce-storefront-conversion-launch), [What Is a Cashless Economy](/blog/what-is-a-cashless-economy), [Embedded Finance in Kenya](/blog/embedded-finance-kenya-guide), [SME SEO Inbound Lead Engine](/blog/sme-seo-inbound-lead-engine), [Website Traffic, Zero Enquiries](/blog/website-traffic-zero-enquiries), [SME Risk Management](/blog/sme-risk-management-kenya).
 
 *General digital commerce education for Kenyan SMEs, not platform, legal, or payments-compliance advice. WhatsApp features and business rules change; verify current terms in the app and official Meta business documentation.*

@@ -96,6 +96,8 @@ For long-horizon Kenyan savings, the desk's ranking is unchanged: a funded emerg
 
 ### Where Bonds Fit in the Bigger Plan
 
+For the whole fixed-income ladder in one place, cash and money market funds through bills, bonds and infrastructure bonds, with the withholding tax comparison and a worked income sleeve, start at [the complete guide to fixed income in Kenya](/blog/fixed-income-kenya-complete-guide).
+
 Bonds are the long-horizon anchor, not the whole portfolio. Keep your *liquid* buffer in a [Money Market Fund](/blog/future-mmfs-kenya), then ladder bonds for locked, long-term yield. For a growth-and-income equity sleeve that sits above the bond ladder on the risk ladder, see [Dividend Income on the NSE](/blog/dividend-income-nse-kenya). For the mechanics of auctions, competitive vs non-competitive bids, and DhowCSD, read [Sovereign Debt Explained](/blog/sovereign-debt-explained). If you are a Kenyan investor living overseas, check the step-by-step onboarding walkthrough in [CBK Diaspora Bond Access](/blog/cbk-diaspora-bond-access). For a real case of idle land redeployed into a bond ladder generating monthly income, see [Sleeping Asset Yield Optimization](/blog/sleeping-asset-optimization).
 
 ### References

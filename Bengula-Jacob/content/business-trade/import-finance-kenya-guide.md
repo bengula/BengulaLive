@@ -109,6 +109,6 @@ The desk's view of import finance is that it is the most systematised corner of 
 
 - [Central Bank of Kenya](https://www.centralbank.go.ke/): USD/KES reference rates (129.30, 2 July 2026) and the lending environment.
 - [Kenya Revenue Authority](https://www.kra.go.ke): import duty, VAT, and clearance requirements.
-- Bengula Inc: [The Complete SME Finance Handbook](/blog/sme-finance-handbook-kenya), [SME Trade Finance](/blog/sme-trade-finance), [LPO and Purchase Order Finance](/blog/lpo-purchase-order-finance-kenya), [USD/Shilling Hedging](/blog/usd-shilling-hedging), [Agri-Export Supply-Chain](/blog/agri-export-supply-chain), [Islamic Banking in Kenya](/blog/islamic-banking-kenya-murabaha-musharaka-hajj-savings)
+- Bengula Inc: [The Complete Guide to Trade Finance in Kenya](/blog/trade-finance-kenya-complete-guide) (the hub this article sits inside), [The Complete SME Finance Handbook](/blog/sme-finance-handbook-kenya), [SME Trade Finance](/blog/sme-trade-finance), [LPO and Purchase Order Finance](/blog/lpo-purchase-order-finance-kenya), [USD/Shilling Hedging](/blog/usd-shilling-hedging), [Agri-Export Supply-Chain](/blog/agri-export-supply-chain), [Islamic Banking in Kenya](/blog/islamic-banking-kenya-murabaha-musharaka-hajj-savings)
 
 *General business education, not credit, tax, or legal advice. LC fees, facility pricing, and customs requirements change; confirm current terms with your bank and clearing agent before committing to a consignment.*

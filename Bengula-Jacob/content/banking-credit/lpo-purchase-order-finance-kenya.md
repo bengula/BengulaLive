@@ -123,6 +123,6 @@ The desk regards LPO finance as the single most transformative facility for trad
 ### Sources and Further Reading
 
 - [Central Bank of Kenya](https://www.centralbank.go.ke/): the lending-rate environment (indicative average 14.5%, 2 July 2026).
-- Bengula Inc: [The Complete SME Finance Handbook](/blog/sme-finance-handbook-kenya), [What Is Accounts Receivable](/blog/what-is-accounts-receivable), [SME Trade Finance](/blog/sme-trade-finance), [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans), [SME Packager Margin Optimization](/blog/sme-packager-optimization), [Contractor Cash Flow Stack](/blog/contractor-cash-flow-stack-kenya)
+- Bengula Inc: [The Complete Guide to Trade Finance in Kenya](/blog/trade-finance-kenya-complete-guide), [The Complete SME Finance Handbook](/blog/sme-finance-handbook-kenya), [What Is Accounts Receivable](/blog/what-is-accounts-receivable), [SME Trade Finance](/blog/sme-trade-finance), [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans), [SME Packager Margin Optimization](/blog/sme-packager-optimization), [Contractor Cash Flow Stack](/blog/contractor-cash-flow-stack-kenya)
 
 *General business education, not credit or legal advice. Facility terms, advance rates, and fees vary by lender and buyer; figures shown are illustrative. Confirm terms in a formal offer letter before committing to any order.*

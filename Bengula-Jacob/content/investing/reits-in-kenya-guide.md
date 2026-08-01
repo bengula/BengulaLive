@@ -108,6 +108,8 @@ The desk wants Kenyan REITs to succeed; a working REIT market is the correct ans
 
 ### Sources and Further Reading
 
+- Bengula Inc: [The Complete Guide to Property Money in Kenya](/blog/property-money-kenya-complete-guide), the hub placing REITs alongside raw land, rental property, your own home and syndicate shares, with the costs and tax of each.
+
 - [Kenya's REITs FY'2025 Report, Cytonn](https://cytonnreport.com/research/kenyas-real-estate-4): pricing, yields, and listings data used in the scorecard.
 - [Nairobi Securities Exchange](https://www.nse.co.ke/): USP and restricted-segment mechanics.
 - [Capital Markets Authority](https://www.cma.or.ke/): the REIT regulatory framework and licensed managers.

@@ -98,6 +98,8 @@ The desk's position is that eTIMS is the largest forced upgrade of SME record-ke
 ### Related Reading
 
 - [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans). Why legibility lowers your interest rate.
+- [VAT for Kenyan SMEs](/blog/vat-for-smes-kenya). Why your input tax credit now depends on compliant electronic invoices, and how VAT hits working capital.
+- [Turnover Tax vs Corporation Tax](/blog/turnover-tax-vs-corporation-tax-kenya). Which income tax regime your business should be in, decided by net margin rather than revenue.
 - [What Is Accounts Receivable](/blog/what-is-accounts-receivable). Turning invoices into managed cash flow.
 - [Why the Banking Relationship Manager Is the SME's Most Underrated Growth Asset](/blog/why-rm-is-sme-growth-asset). Who to take the clean records to.
 - [Retail Data & Decision Dashboard](/blog/retail-data-decision-dashboard). What deliberate data discipline looks like.

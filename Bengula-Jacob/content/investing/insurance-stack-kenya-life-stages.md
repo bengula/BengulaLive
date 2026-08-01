@@ -258,4 +258,6 @@ A good insurance stack is boring on purpose. It does not chase the highest illus
 
 Start from the bottom of the pyramid: liquid buffer, medical, term life if others depend on you, then assets, then business continuity. Add hybrid savings products only when the foundation is stable and the premium does not cannibalise better wealth tools - pensions, bonds, diversified funds, and clean banking structure.
 
+For the full product map, how much cover the calculation actually indicates, what happens if an insurer fails, and the covers worth skipping, see [the complete guide to insurance in Kenya](/blog/insurance-kenya-complete-guide).
+
 If you want a prioritised stack for your household or company - cover gaps, beneficiary structure, or how insurance sits next to loans and investments - explore [services](/services) or [book a session](/contact). Protection is not pessimism. It is how optimistic plans survive contact with reality.
