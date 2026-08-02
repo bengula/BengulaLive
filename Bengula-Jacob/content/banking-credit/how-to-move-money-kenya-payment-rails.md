@@ -106,7 +106,7 @@ Speed and cost are what people compare. Reversibility is what they wish they had
 
 **M-Pesa is the most forgiving.** Send to a wrong number and, provided the recipient has not yet withdrawn or moved the money, there is a genuine reversal path: you can request a reversal through Safaricom, and the confirmation prompt that shows the recipient's name before you send (Hakikisha) exists precisely to prevent the error in the first place. Read the name on that prompt every time; it is the cheapest fraud control you will ever use.
 
-**PesaLink and EFT are harder.** Once money has credited another bank account, getting it back depends on the receiving bank freezing and returning it, which needs the recipient's cooperation or a legal process. It is possible, but it is a request, not a right, and it is slow.
+**PesaLink and EFT are harder.** Once money has credited another bank account, getting it back depends on the receiving bank freezing and returning it, which needs the recipient's cooperation or a legal process. It is possible, but it is a request, not a right, and it is slow. PesaLink does, like M-Pesa, display the recipient's registered account name before you confirm, so read it: on both rails the name shown at the point of sending is your strongest protection, precisely because the reversal afterwards is not. EFT, RTGS, and TT often give you no such name check, which is why they demand independent verification instead.
 
 **RTGS is effectively final.** This is the single most important safety fact in this guide. An RTGS payment, once settled, is designed to be irrevocable. There is no reversal button. If you send a large sum to the wrong account, your recourse is to beg the recipient and, failing that, to litigate. **So the rail you use for your largest payments is the rail with the least protection against error.** The discipline that follows is absolute: before you release an RTGS payment, verify the account name and number twice, ideally against a source you trust independently of the email that gave them to you, because business-email-compromise fraud specifically targets large RTGS payments by swapping account details at the last moment.
 
@@ -188,6 +188,7 @@ Match the rail to the payment using three questions, how much, how urgent, how s
 - [What Is a Cashless Economy?](/blog/what-is-a-cashless-economy) for the bigger picture of Kenya's move off cash.
 - [The 13-Week Cash Forecast](/blog/13-week-cash-forecast-kenya-sme) for planning payments against cut-off times and cash timing.
 - [Selling on WhatsApp](/blog/whatsapp-sales-channel-kenya) and the [embedded-finance guide](/blog/embedded-finance-kenya-guide) for the collections side, taking money in rather than sending it out.
+- [M-Pesa for Business: Pay Bill vs Buy Goods](/blog/mpesa-for-business-paybill-till-kenya) for the collection side in depth: choosing a till or a paybill, who pays the charge, and reconciliation.
 - [The New Business Banking Journey](/blog/new-business-banking-journey-kenya) for setting up the accounts these rails run on.
 
 ### References
