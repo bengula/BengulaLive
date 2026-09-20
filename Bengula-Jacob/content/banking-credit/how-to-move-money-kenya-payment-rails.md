@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/6289072/pexels-photo-6289072.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 ![A hand holding a smartphone showing a grid of apps](https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&w=1200 "Kenya moves money on more rails than almost any economy on earth. The skill is not having them, it is knowing which one to use for the payment in front of you. Photo: Pexels")

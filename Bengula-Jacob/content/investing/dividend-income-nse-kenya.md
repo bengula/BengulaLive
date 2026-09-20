@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/6801642/pexels-photo-6801642.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/35638668/pexels-photo-35638668.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 ![A trading screen showing market movements](https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200 "A dividend is the cash a company chooses to hand shareholders instead of keeping. A high yield can mean generosity, or it can mean the market has marked the price down for a reason. Telling the two apart is the whole skill. Photo: Pexels")

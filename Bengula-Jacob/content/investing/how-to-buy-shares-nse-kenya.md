@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 The Nairobi Securities Exchange spent 2025 reminding Kenya it exists: the NSE 20 index rose 56.13%, the NSE 25 gained 49.78%, and total market capitalisation expanded past KES 2.5 trillion. Behind the rally sat quieter changes that matter more to a beginner: since August 2025 the minimum trade is **one share**, app-based brokers onboard investors in an afternoon, and the exchange is preparing M-Pesa funding rails targeting nine million retail investors.

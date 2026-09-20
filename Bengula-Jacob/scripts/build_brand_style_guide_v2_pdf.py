@@ -65,6 +65,7 @@ S = styles()
 def inline(text):
     text = escape(text)
     text = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
+    text = re.sub(r"~~(.+?)~~", r"<strike>\1</strike>", text, flags=re.S)
     text = re.sub(r"`(.+?)`", r"<font name='Courier'>\1</font>", text)
     return text
 

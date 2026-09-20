@@ -1,5 +1,5 @@
 ---
-coverImage: https://loremflickr.com/1600/900/savings,money?lock=2020
+coverImage: https://images.pexels.com/photos/12969343/pexels-photo-12969343.jpeg?auto=compress&cs=tinysrgb&w=1600
 id: fixed-deposit-lending-arbitrage
 title: "Fixed Deposit vs. Treasury Bills: Pricing Your Business Cash"
 summary: An analytical, in-depth comparison of corporate cash placement options in Kenya, comparing yield, liquidity, and tax treatment.

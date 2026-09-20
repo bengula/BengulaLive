@@ -10,7 +10,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/7793173/pexels-photo-7793173.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 ![Notebook, calculator, and charts used for investment evaluation](https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=1200 "Every opportunity deserves the same eight questions, not a different set for each product. Photo: Pexels")

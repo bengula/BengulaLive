@@ -3,13 +3,13 @@ id: card-payments-pos-kenya-business
 title: "Card Payments and POS for Kenyan Businesses: Terminals, Gateways, and Chargebacks"
 summary: "In a country M-Pesa runs on, why would a business accept cards at all? Because some customers, tourists, corporates, online buyers, big-ticket spenders, only pay that way, and refusing the card means refusing the sale. But cards cost more than M-Pesa, settle slower, and carry a risk M-Pesa does not: the chargeback, where a completed sale is reversed out of your account weeks later. This guide covers how card acceptance works, what it really costs, and how to survive the disputes."
 category: Fintech & Banking
-date: August 2, 2026
+date: September 20, 2026
 readTime: 14 min read
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/9304565/pexels-photo-9304565.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 ![Hands at a card payment terminal beside cash](https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=1200 "In an M-Pesa economy, the card terminal earns its place by capturing the customer who would otherwise walk: the tourist, the corporate, the online buyer, the big-ticket spender. Photo: Pexels")

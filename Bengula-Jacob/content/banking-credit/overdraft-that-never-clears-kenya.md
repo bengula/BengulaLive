@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/14599163/pexels-photo-14599163.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 ![A bank statement and calculator on a desk](https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=1200 "The overdraft tells its story in the statement, not the loan agreement. Photo: Pexels")
