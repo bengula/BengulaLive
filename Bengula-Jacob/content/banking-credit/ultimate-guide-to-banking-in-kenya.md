@@ -174,7 +174,7 @@ The desk's view is that most Kenyan businesses are over-banked and under-structu
 
 ### Conclusion
 
-Banking in Kenya rewards the deliberate. The system is deep, well-regulated, and digitally advanced, which means the tools to run an efficient treasury exist; most businesses simply do not use them. Choose banks that fit how your money actually moves, structure cash so none of it sits idle, keep your data clean so you borrow at the lowest risk-based rate, read every fee, and build in redundancy. Do that, and your banking stops being a cost centre and becomes a quiet, compounding source of margin.
+Banking in Kenya rewards the deliberate. The system is deep, well-regulated, and digitally advanced, which means the tools to run an efficient treasury exist; most businesses simply do not use them. Choose banks that fit how your money actually moves, structure cash so none of it sits idle, keep your data clean so you borrow at the lowest risk-based rate, read every fee, and build in redundancy. For the scorecard that makes that choice concrete, when a second bank is rational, and a switch sequence that does not break your facilities, read [how to choose and switch your SME bank](/blog/choose-switch-sme-bank-kenya). Do that, and your banking stops being a cost centre and becomes a quiet, compounding source of margin.
 
 ### Work With Bengula
 

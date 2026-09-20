@@ -219,7 +219,7 @@ The desk supports diaspora investment in Kenya and refuses to romanticise land a
 
 We would rather you buy a boring IFB ladder this year and a cleanly diligenced plot next year than wire a deposit tonight to a persuasive brochure. Home is not a substitute for title search. Love is not a substitute for dual control on payments.
 
-For group purchases, read [chama land-banking](/blog/chama-llp-land-banking-kenya). For liquid sovereign access, read [diaspora DhowCSD](/blog/cbk-diaspora-bond-access). For help framing the portfolio split, use [services](/services) or [book a session](/contact), and retain a Kenyan advocate for the transaction itself.
+For group purchases, read [chama land-banking](/blog/chama-llp-land-banking-kenya). For liquid sovereign access, read [diaspora DhowCSD](/blog/cbk-diaspora-bond-access). If the parcel you are buying or inheriting is still titled to someone who has died, read [land succession in Kenya](/blog/land-succession-transmission-kenya) before any money moves; it sets out the checks a buyer must run and how the process is run from abroad. For help framing the portfolio split, use [services](/services) or [book a session](/contact), and retain a Kenyan advocate for the transaction itself.
 
 ---
 

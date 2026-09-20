@@ -196,7 +196,7 @@ The desk's view of chama land-banking is supportive and strict. Pooling is ratio
 
 We favour **one vehicle, clean title, dual control, written exits, and boring quarterly reports**. We distrust guaranteed appreciation narratives and broker urgency. And we insist groups compare land not only to "doing nothing," but to [liquid sovereign alternatives](/blog/advanced-dhowcsd-t-bill-ladder) for money that may be needed early.
 
-For the social and banking layer of group money, start with the [complete chama guide](/blog/complete-chama-guide-kenya). For a live syndicate design conversation, use [services](/services) or [book a session](/contact), and hire an advocate for the documents that actually bind.
+For the social and banking layer of group money, start with the [complete chama guide](/blog/complete-chama-guide-kenya). For holding family assets across generations rather than among partners, and how an LLP compares with a registered family trust and a holding company, read [family trusts and holding structures](/blog/family-trusts-holding-structures-kenya). For a live syndicate design conversation, use [services](/services) or [book a session](/contact), and hire an advocate for the documents that actually bind.
 
 ---
 

@@ -147,5 +147,6 @@ The goal is not simply to earn interest. It is to understand how money moves thr
 
 ### Related Reading
 - [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026). How to structure a tax-efficient bond ladder.
+- [The Kenyan Yield Curve](/blog/kenyan-yield-curve-explained). Reading the 91, 182 and 364 spread, and an auction result, properly.
 - [CBK Diaspora Bond Access: A Guide to DhowCSD for Overseas Kenyans](/blog/cbk-diaspora-bond-access). A complete guide for diaspora investors bidding via DhowCSD.
 - [Fixed Deposit vs. Treasury Bills: Pricing Your Business Cash](/blog/fixed-deposit-lending-arbitrage). An analytical comparison of short-term cash placement options.

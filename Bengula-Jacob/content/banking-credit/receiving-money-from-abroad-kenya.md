@@ -172,6 +172,7 @@ Do that, and the billions that come home each year work harder: more shillings r
 - [Buying Land From the Diaspora Without Getting Burned](/blog/diaspora-land-purchase-kenya) for investing remittances in property safely.
 - [CBK Diaspora Bond Access](/blog/cbk-diaspora-bond-access) for the cleanest way to invest from abroad, government securities.
 - [Foreign ETFs and Offshore Investing From Kenya](/blog/foreign-etfs-offshore-investing-kenya) for keeping some wealth in hard currency.
+- [Digital Assets in Kenya](/blog/digital-assets-kenya-regulation-tax) for the regulated position on stablecoins, often proposed as a cheaper inbound rail, and the risks that remain.
 
 ### References
 
