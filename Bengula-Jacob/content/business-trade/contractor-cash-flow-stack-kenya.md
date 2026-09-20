@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/12314551/pexels-photo-12314551.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 ![A contractor and a banker in discussion over documents](https://images.unsplash.com/photo-1758519289366-b90c073df4a7?auto=format&fit=crop&w=1200&q=80 "The contract is won with a price. It is survived with a cash plan. Most contractors who fail on a good job did the first and skipped the second. Photo: Unsplash")

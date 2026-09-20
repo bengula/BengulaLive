@@ -1,5 +1,5 @@
 ---
-coverImage: https://loremflickr.com/1600/900/home,mortgage?lock=2012
+coverImage: https://images.pexels.com/photos/7489107/pexels-photo-7489107.jpeg?auto=compress&cs=tinysrgb&w=1600
 id: kmrc-affordable-housing-mortgage
 title: "Accessing KMRC Mortgages: Single-Digit Home Loans in Kenya"
 summary: A practical, in-depth guide on how to qualify for a Kenya Mortgage Refinance Company (KMRC) backed loan, participating banks and SACCOs, and its role in affordable housing.

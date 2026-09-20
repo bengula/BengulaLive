@@ -1,5 +1,5 @@
 ---
-coverImage: https://loremflickr.com/1600/900/currency,exchange?lock=2017
+coverImage: https://images.pexels.com/photos/35404568/pexels-photo-35404568.jpeg?auto=compress&cs=tinysrgb&w=1600
 id: usd-shilling-hedging
 title: "Hedging USD/KES: Practical Treasury Strategies for Kenyan Exporters"
 summary: How mid-sized exporters can use forward contracts, multi-currency accounts, and matching cash-flows to protect profit margins against shilling volatility.

@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/6214476/pexels-photo-6214476.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/30848031/pexels-photo-30848031.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 ![A small business owner packing customer orders](https://images.pexels.com/photos/6214476/pexels-photo-6214476.jpeg?auto=compress&cs=tinysrgb&w=1200 "Getting paid is the easy part in Kenya. Getting paid in a way you can reconcile, at a cost you chose, and can prove landed, is the part most businesses never set up on purpose. Photo: Pexels")
@@ -48,6 +48,17 @@ Both are "Lipa na M-Pesa", Safaricom's business payment service, but they are bu
 **Pay Bill (a business number plus an account).** The customer selects Pay Bill, enters your **business number**, then an **account number**, then the amount. That account field is the whole point: it is where the customer types their invoice number, account reference, house number, admission number, or phone number, so the payment arrives tagged with who it is from and what it is for. Pay Bill is built for **billing**: utilities, rent, schools, SACCOs, subscriptions, and any business that invoices and needs to match payments to accounts.
 
 The one-line distinction: **Buy Goods is for a sale happening now, in front of you, with no reference needed. Pay Bill is for a payment against an account you need to identify.** Everything else, cost, settlement, reconciliation, flows from that difference.
+
+#### Pochi la Biashara: The Micro Entry Point
+
+Between a personal number and a registered till sits a third tool, and it has quickly become the most popular way the smallest traders get paid: **Pochi la Biashara**. It lets a micro-business, a mama mboga, a boda rider, a hawker, a kiosk, receive customer payments straight to their own phone, into a wallet kept separate from their personal M-Pesa balance.
+
+Its appeal is exactly the two things the smallest traders need:
+
+- **It separates business money from personal money** without registering a formal till. You can finally see what the business actually took in, which is the first step to running it as a business rather than a pocket.
+- **It is free to receive, and free for the customer**, like Buy Goods, so no charge eats the thin margins these trades run on.
+
+The customer pays it much like a till, choosing the Pochi la Biashara option and paying to the business number. What it does *not* give you is an account reference, so, like Buy Goods, it is reconciled by amount, time, and the customer rather than by invoice, and it carries smaller limits and is built for *receiving* rather than paying out. That makes it a starting rung, not a destination: a genuine upgrade on trading through a personal number, which is why so many micro-traders have adopted it, but as the business grows into invoicing or higher volumes the same Buy Goods versus Pay Bill logic below still decides the next step. Its features and limits are set by Safaricom and change; confirm the current position.
 
 ---
 
@@ -137,9 +148,10 @@ The reframing worth making is that visible, well-kept collection records are not
 Collection setups should grow with the business, and there is a natural ladder.
 
 1. **A personal number.** Where most micro-businesses start, and where they should stop as soon as they are real, because mixing personal and business money destroys reconciliation and your bankable trail from day one.
-2. **A Buy Goods till.** The right first business step for a counter business: free to customers, separates business money, gives you a business statement.
-3. **A Pay Bill.** The step up for any business that invoices or bills recurring accounts, because the account reference is the reconciliation you will otherwise do by hand.
-4. **Pay Bill plus integration.** At volume, connecting the paybill to your accounting or ERP system through Safaricom's Daraja API so that payments reconcile against invoices automatically and in real time. This is the move that turns collection from a daily chore into infrastructure, and it is the payments equivalent of the automation described in [the embedded-finance guide](/blog/embedded-finance-kenya-guide).
+2. **Pochi la Biashara.** The first real step for a micro or informal trader: it separates business receipts from personal money and is free to receive, without registering a formal till. No account reference and modest limits, so it is a starting point, not a destination, but a decisive upgrade on trading through a personal line.
+3. **A Buy Goods till.** The right step for an established counter business: free to customers, separates business money, gives you a business statement, and carries higher limits than Pochi.
+4. **A Pay Bill.** The step up for any business that invoices or bills recurring accounts, because the account reference is the reconciliation you will otherwise do by hand.
+5. **Pay Bill plus integration.** At volume, connecting the paybill to your accounting or ERP system through Safaricom's Daraja API so that payments reconcile against invoices automatically and in real time. This is the move that turns collection from a daily chore into infrastructure, and it is the payments equivalent of the automation described in [the embedded-finance guide](/blog/embedded-finance-kenya-guide).
 
 The trigger to move up a rung is always the same: when the current setup is costing you hours of reconciliation or blurring your records, the next rung pays for itself.
 
@@ -192,6 +204,9 @@ And treat the whole thing as an asset. A well-chosen, well-reconciled, honestly-
 - [eTIMS and the SME](/blog/etims-kenya-sme-guide), [VAT for Kenyan SMEs](/blog/vat-for-smes-kenya), and [Turnover Tax vs Corporation Tax](/blog/turnover-tax-vs-corporation-tax-kenya) for the tax position your till turnover feeds.
 - [The New Business Banking Journey](/blog/new-business-banking-journey-kenya) for how clean collection records become a bankable trail.
 - [Embedded Finance in Kenya](/blog/embedded-finance-kenya-guide) for integrating payments into your systems as you scale.
+- [Bulk Payments and Payroll Payouts](/blog/bulk-payments-payroll-payouts-kenya) for paying staff and suppliers at scale, the outbound counterpart to collections.
+- [Card Payments and POS for Kenyan Businesses](/blog/card-payments-pos-kenya-business) for accepting cards alongside your till, and when it is worth it.
+- [If You Send Money to the Wrong Person](/blog/recover-wrong-payment-fraud-kenya) for the fake-confirmation scam and payment fraud in full.
 
 ### References
 

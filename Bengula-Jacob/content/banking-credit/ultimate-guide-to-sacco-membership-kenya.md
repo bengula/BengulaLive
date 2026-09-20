@@ -322,6 +322,7 @@ Understand those four things and the SACCO becomes what it should be: the discip
 - [The Complete Chama Guide](/blog/complete-chama-guide-kenya) for structuring group money outside the SACCO framework.
 - [Retirement Planning in Kenya](/blog/retirement-planning-kenya-guide) for how SACCO deposits interact with a retirement plan.
 - [How Kenyan Banks Price Your Loan](/blog/how-kenyan-banks-price-loans) for comparing SACCO credit with bank lending.
+- [Wills, Nominees, and Business Continuity](/blog/wills-nominees-business-continuity-kenya) for why your nomination form outranks your will, and what happens if it is stale.
 
 ### References
 

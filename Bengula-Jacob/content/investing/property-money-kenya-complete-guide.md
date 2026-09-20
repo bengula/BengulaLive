@@ -201,7 +201,7 @@ The end of the journey is where property money is actually made or lost, and it 
 
 **And succession, if you did not sell it.** This is the quiet catastrophe in Kenyan property, and it deserves more than the sentence it usually gets: **land still titled to a parent who died years ago cannot be sold, charged, or cleanly divided until succession is completed.** Families discover this at the exact moment they need the money, and the process is slow, expensive and adversarial in proportion to how long it was left. A great deal of Kenyan household wealth is sitting in parcels that are economically frozen for this reason.
 
-The practical instruction is short. If you own property, ensure there is a valid will and that the family knows where the documents are. If you have inherited property, complete the succession before you need to transact, not after. A dedicated treatment of land succession and the diaspora version of it is the next piece in this cluster; until then, treat this as the flag it deserves and speak to an advocate.
+The practical instruction is short. If you own property, ensure there is a valid will and that the family knows where the documents are, which is the subject of [wills, nominees and business continuity](/blog/wills-nominees-business-continuity-kenya). If you have inherited property, complete the succession before you need to transact, not after. [Land succession in Kenya](/blog/land-succession-transmission-kenya) is the dedicated treatment: it separates the succession cause from the transmission and the transfer, prices the delay, covers running it from abroad, and sets out what a buyer must check before paying for land caught in an unfinished estate.
 
 ---
 
@@ -342,7 +342,7 @@ What I actually see, repeatedly, is a household with three or four parcels bough
 
 The correction is modest. Keep land where it earns its place: as the corridor bet you understand, as the home you live in, as the collateral that unlocks credit for a business. Stop holding it where it does nothing, and be honest that a parcel appreciating at 4% while a tax-free bond pays 12.7% is a losing position however good it feels. Above all, count the round trip. Six to eight per cent to get in, three to four to get out, 15% of the gain to KRA, and nothing earned in between adds up to a hurdle of around 12.5% a year. Most plots never clear it, and the ones that do are rarely the ones sold at a roadside site visit.
 
-If you take one action from this guide, make it the sixth question in the framework. Sort out the succession position on whatever your family already owns. It costs the least, it is the least glamorous, and it protects more value than any purchase you are contemplating.
+If you take one action from this guide, make it the sixth question in the framework. Sort out the succession position on whatever your family already owns, following [the land succession guide](/blog/land-succession-transmission-kenya). It costs the least, it is the least glamorous, and it protects more value than any purchase you are contemplating.
 
 ---
 

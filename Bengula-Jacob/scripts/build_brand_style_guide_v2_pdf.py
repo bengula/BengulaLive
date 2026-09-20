@@ -65,6 +65,7 @@ S = styles()
 def inline(text):
     text = escape(text)
     text = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
+    text = re.sub(r"~~(.+?)~~", r"<strike>\1</strike>", text, flags=re.S)
     text = re.sub(r"`(.+?)`", r"<font name='Courier'>\1</font>", text)
     return text
 
@@ -277,6 +278,10 @@ def blocks(markdown):
         elif re.match(r"^\d+\. ", stripped):
             flush_paragraph()
             list_items.append(re.sub(r"^\d+\. ", "", stripped))
+        elif list_items and raw[:1].isspace():
+            # Indented continuation of the bullet above: fold it back into that
+            # item rather than closing the list and starting a new paragraph.
+            list_items[-1] += " " + stripped
         else:
             flush_list()
             paragraph.append(stripped)

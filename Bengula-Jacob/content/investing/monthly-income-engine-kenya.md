@@ -207,6 +207,8 @@ For a Kenyan household, professional, SME owner, or diaspora investor, this stru
 - [Kenyan Treasury Bonds Demystified](/blog/kb-bond-guide-2026). A deeper guide to bond mechanics.
 - [Dividend Income on the NSE](/blog/dividend-income-nse-kenya). Adding a growth-and-income equity sleeve to the payout layer.
 - [Sovereign Debt Explained](/blog/sovereign-debt-explained). How ordinary investors lend to government.
+- [Turning a Pension Into Income](/blog/retirement-income-annuity-drawdown-kenya). The retirement version of this decision: annuity, regulated drawdown, or your own ladder.
+- [Inflation, the Shilling, and Your Real Return](/blog/inflation-shilling-real-return-kenya). What each layer of this engine actually keeps after tax and inflation.
 - [You Can't Save Your Way Out of Poverty](/insights/6-saving-vs-wealth). Why income and asset ownership matter.
 
 ### References

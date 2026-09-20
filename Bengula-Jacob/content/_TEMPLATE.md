@@ -112,7 +112,7 @@ Some articles mount React tools via a fenced language tag (body can be empty):
 ````
 
 Supported today:
-- `inclusion` — Financial Inclusion Score calculator (self-check, 0–100)
+- `inclusion`: Financial Inclusion Score calculator (self-check, 0–100)
 
 ---
 

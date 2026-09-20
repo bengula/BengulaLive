@@ -30,6 +30,7 @@ const categoryIds: Record<string, string> = {
   'Real Estate': 'photo-1560518883-ce09059eeffa',          // house + keys
   'Agri-Logistics': 'photo-1500382017468-9049fed747ef',    // farm field at sunset
   'Wealth Optimization': 'photo-1565514020179-026b92b84bb6', // rolled cash
+  'Rates & Policy': 'photo-1554224155-6726b3ff858f',       // rate charts on paper
 };
 
 const FALLBACK_ID = 'photo-1518186285589-2f7649de83e0'; // chart on laptop

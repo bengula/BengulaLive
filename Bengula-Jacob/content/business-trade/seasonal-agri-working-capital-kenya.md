@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://loremflickr.com/1600/900/farm,agriculture?lock=2016
+coverImage: https://images.pexels.com/photos/32506154/pexels-photo-32506154.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 ![A pile of fresh produce at market](https://images.pexels.com/photos/849683/pexels-photo-849683.jpeg?auto=compress&cs=tinysrgb&w=1200 "The harvest is the payday, but the costs came months earlier and the price is lowest exactly when everyone else is selling too. Agri finance is a calendar problem before it is a credit problem. Photo: Pexels")

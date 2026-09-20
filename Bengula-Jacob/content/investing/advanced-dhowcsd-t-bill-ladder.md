@@ -9,7 +9,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-coverImage: https://images.pexels.com/photos/6801647/pexels-photo-6801647.jpeg?auto=compress&cs=tinysrgb&w=1600
+coverImage: https://images.pexels.com/photos/6801682/pexels-photo-6801682.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 DhowCSD solved the access problem: any Kenyan with an ID, a KRA PIN, and KES 50,000 can now lend to the government directly, from a phone, with no broker and no fees. What the portal does not hand you is a system. Most retail investors buy one bill, wait, receive the maturity, let it idle in a bank account for three weeks, and repeat, leaking yield at every joint.
@@ -120,7 +120,7 @@ Five yeses: place the three bids in the same auction week and the ladder exists 
 
 ### Bengula View
 
-The desk regards the T-bill ladder as the single highest-value habit available to an ordinary Kenyan saver in 2026: sovereign credit, near-nine-percent gross yields, quarterly liquidity, zero fees, and a structure that removes both timing decisions and idle cash, the two places retail yield actually dies. The flat curve makes this the cheapest moment in years to hold the liquid version of the strategy. Build the three-rung ladder with dated money, elect the rollovers, shade toward the long rung while the cutting cycle lasts, and let the machine be boring. Boring, compounding, and never idle is the entire strategy.
+The desk regards the T-bill ladder as the single highest-value habit available to an ordinary Kenyan saver in 2026: sovereign credit, near-nine-percent gross yields, quarterly liquidity, zero fees, and a structure that removes both timing decisions and idle cash, the two places retail yield actually dies. The flat curve makes this the cheapest moment in years to hold the liquid version of the strategy, and [the yield curve guide](/blog/kenyan-yield-curve-explained) shows how to read that flatness, and an auction result, for yourself. Build the three-rung ladder with dated money, elect the rollovers, shade toward the long rung while the cutting cycle lasts, and let the machine be boring. Boring, compounding, and never idle is the entire strategy.
 
 ---
 
