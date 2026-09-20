@@ -189,6 +189,10 @@ Match the rail to the payment using three questions, how much, how urgent, how s
 - [The 13-Week Cash Forecast](/blog/13-week-cash-forecast-kenya-sme) for planning payments against cut-off times and cash timing.
 - [Selling on WhatsApp](/blog/whatsapp-sales-channel-kenya) and the [embedded-finance guide](/blog/embedded-finance-kenya-guide) for the collections side, taking money in rather than sending it out.
 - [M-Pesa for Business: Pay Bill vs Buy Goods](/blog/mpesa-for-business-paybill-till-kenya) for the collection side in depth: choosing a till or a paybill, who pays the charge, and reconciliation.
+- [If You Send Money to the Wrong Person](/blog/recover-wrong-payment-fraud-kenya) for reversals, fraud, and getting money back when a payment goes wrong.
+- [Receiving Money From Abroad](/blog/receiving-money-from-abroad-kenya) for the inbound side: remittances, M-Pesa Global, and the cheapest way in.
+- [Bulk Payments and Payroll Payouts](/blog/bulk-payments-payroll-payouts-kenya) for paying many people at once, and the controls that protect the batch.
+- [Card Payments and POS for Kenyan Businesses](/blog/card-payments-pos-kenya-business) for accepting cards, and the chargeback risk M-Pesa does not carry.
 - [The New Business Banking Journey](/blog/new-business-banking-journey-kenya) for setting up the accounts these rails run on.
 
 ### References

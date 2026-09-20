@@ -119,6 +119,7 @@ Use this framework to align your bond choice with your financial timeline:
 - [Kenyan Treasury Bonds Demystified: Building an IFB Ladder in 2026](/blog/kb-bond-guide-2026). How to structure a tax-efficient bond portfolio once you have DhowCSD access.
 - [Sovereign Debt Explained: Bids, Bills, and Bonds in Kenya](/blog/sovereign-debt-explained). A comprehensive reference on bidding, auctions, and sovereign yield logic.
 - [Hedging USD/KES: Practical Treasury Strategies for Kenyan Exporters](/blog/usd-shilling-hedging). Understand foreign exchange risks and how to manage shilling volatility.
+- [Receiving Money From Abroad](/blog/receiving-money-from-abroad-kenya). Getting your investment funds into Kenya cheaply and into a bank account, before they reach DhowCSD.
 
 ---
 

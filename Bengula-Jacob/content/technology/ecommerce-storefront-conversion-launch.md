@@ -89,6 +89,7 @@ The desk's position is that most Kenyan SMEs do not have an e-commerce problem, 
 
 - [Retail Data & Decision Dashboard](/blog/retail-data-decision-dashboard). Turning sales and stock data into better decisions.
 - [Embedded Finance in Kenya](/blog/embedded-finance-kenya-guide). Why payments and finance are moving into the buying flow.
+- [Card Payments and POS for Kenyan Businesses](/blog/card-payments-pos-kenya-business). Accepting cards at online checkout, settlement, and chargebacks.
 - [Why Your Website Gets Traffic but Zero Enquiries](/blog/website-traffic-zero-enquiries). Fixing the gap between visits and action.
 - [A to Z of Customer Avatars](/blog/archive-customer-avatars-buyer-persona). Knowing who the online channel is built for.
 
