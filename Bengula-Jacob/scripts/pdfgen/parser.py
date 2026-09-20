@@ -31,6 +31,12 @@ Content format (line oriented):
     @landscape                       switch to landscape pages from here
     @portrait                        switch back to portrait pages
     (each starts a new page)
+    @pagebreak                       start a new page, same orientation
+
+    :orientation: landscape          in the header: make the whole document
+    (cover included) landscape; omit it for the portrait default
+    :sourcepage: off                 drop the Selected Sources page; the
+    disclaimer then closes the last content page
 
     [cards]
     Card Title :: card body text
@@ -96,6 +102,10 @@ def parse_file(path):
 
         if line in ("@landscape", "@portrait"):
             body.append(("orient", line[1:].capitalize()))
+            continue
+
+        if line == "@pagebreak":
+            body.append(("pagebreak",))
             continue
 
         if line.startswith(">"):

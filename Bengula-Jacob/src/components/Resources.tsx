@@ -40,7 +40,7 @@ const resources: ResourceDoc[] = [
   {
     title: "ABSA Scheme Loan Repayment Schedule",
     tag: "Loan Schedule",
-    desc: "Indicative monthly repayments at 14.5% reducing balance for unsecured scheme loans up to KES 6M, terms from 12 to 132 months.",
+    desc: "Indicative monthly repayments at 14.5% reducing balance for unsecured scheme loans up to KES 6M, terms from 12 to 144 months.",
     file: "/documents/absa_scheme_loan_repayment_schedule.pdf",
     icon: Calculator,
   },

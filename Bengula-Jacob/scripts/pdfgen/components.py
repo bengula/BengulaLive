@@ -28,7 +28,7 @@ S = brand.STYLES
 
 
 class CoverBlock(Flowable):
-    def __init__(self, title, subtitle, tag, summary, as_of, internal=False, pillars=None):
+    def __init__(self, title, subtitle, tag, summary, as_of, internal=False, pillars=None, wide=False):
         super().__init__()
         self.title = title
         self.subtitle = subtitle
@@ -40,8 +40,16 @@ class CoverBlock(Flowable):
         # its own via the :pillars: field; fall back to generic ones only when
         # a document omits them. Capped at 3 to fit the row.
         self.pillars = (pillars or ["Evidence-led positioning", "Risk-first execution", "East Africa context"])[:3]
-        self.width = 178 * mm
-        self.height = 246 * mm
+        # Landscape covers are wider and much shorter, so the banner, the text
+        # wrap widths, and the meta row all rescale. Portrait keeps the
+        # original fixed geometry.
+        self.wide = wide
+        self.width = 257 * mm if wide else 178 * mm
+        self.height = 175 * mm if wide else 246 * mm
+        self.title_top = 44 * mm if wide else 66 * mm
+        self.title_wrap = 230 * mm if wide else 160 * mm
+        self.sub_wrap = 214 * mm if wide else 148 * mm
+        self.meta_pitch = 60 * mm if wide else 45 * mm
 
     def wrap(self, avail_width, avail_height):
         return avail_width, self.height
@@ -49,27 +57,6 @@ class CoverBlock(Flowable):
     def draw(self):
         c = self.canv
         c.saveState()
-        c.setFillColor(brand.PRIMARY_DEEP)
-        c.rect(-20 * mm, self.height - 96 * mm, 220 * mm, 118 * mm, stroke=0, fill=1)
-        c.setFillColor(brand.ACCENT)
-        c.circle(178 * mm, self.height - 8 * mm, 48 * mm, stroke=0, fill=1)
-        c.setFillColor(brand.ACCENT_INDIGO)
-        c.circle(196 * mm, self.height - 52 * mm, 30 * mm, stroke=0, fill=1)
-        c.setFillColor(colors.Color(1, 1, 1, alpha=0.08))
-        c.circle(18 * mm, self.height - 76 * mm, 46 * mm, stroke=0, fill=1)
-
-        if LOGO.exists():
-            c.setFillColor(colors.white)
-            c.roundRect(0, self.height - 34 * mm, 42 * mm, 20 * mm, 4 * mm, stroke=0, fill=1)
-            c.drawImage(str(LOGO), 4 * mm, self.height - 31 * mm, 34 * mm, 14 * mm, preserveAspectRatio=True, mask="auto")
-        else:
-            c.setFillColor(colors.white)
-            c.setFont(brand.SANS_BOLD, 13)
-            c.drawString(0, self.height - 24 * mm, "Bengula Inc")
-
-        c.setFillColor(brand.COVER_TAG)
-        c.setFont(brand.SANS_BOLD, 8)
-        c.drawRightString(self.width, self.height - 24 * mm, self.tag.upper())
 
         title_style = ParagraphStyle(
             "CoverTitle",
@@ -91,10 +78,36 @@ class CoverBlock(Flowable):
         )
         title = Paragraph(escape(self.title), title_style)
         subtitle = Paragraph(escape(self.subtitle), subtitle_style)
-        w, h = title.wrap(160 * mm, 70 * mm)
-        title.drawOn(c, 0, self.height - 66 * mm - h)
-        w, sh = subtitle.wrap(148 * mm, 36 * mm)
-        subtitle_bottom = self.height - 74 * mm - h - sh
+        w, h = title.wrap(self.title_wrap, 70 * mm)
+        w, sh = subtitle.wrap(self.sub_wrap, 36 * mm)
+
+        # Portrait uses a fixed banner; the short landscape cover sizes its
+        # banner to the wrapped title so the subtitle always clears it.
+        banner_bottom = self.height - self.title_top - h - 2 * mm if self.wide else self.height - 96 * mm
+        c.setFillColor(brand.PRIMARY_DEEP)
+        c.rect(-20 * mm, banner_bottom, self.width + 42 * mm, self.height + 22 * mm - banner_bottom, stroke=0, fill=1)
+        c.setFillColor(brand.ACCENT)
+        c.circle(self.width, self.height - 8 * mm, 48 * mm, stroke=0, fill=1)
+        c.setFillColor(brand.ACCENT_INDIGO)
+        c.circle(self.width + 18 * mm, self.height - 52 * mm, 30 * mm, stroke=0, fill=1)
+        c.setFillColor(colors.Color(1, 1, 1, alpha=0.08))
+        c.circle(18 * mm, self.height - 76 * mm, 46 * mm, stroke=0, fill=1)
+
+        if LOGO.exists():
+            c.setFillColor(colors.white)
+            c.roundRect(0, self.height - 34 * mm, 42 * mm, 20 * mm, 4 * mm, stroke=0, fill=1)
+            c.drawImage(str(LOGO), 4 * mm, self.height - 31 * mm, 34 * mm, 14 * mm, preserveAspectRatio=True, mask="auto")
+        else:
+            c.setFillColor(colors.white)
+            c.setFont(brand.SANS_BOLD, 13)
+            c.drawString(0, self.height - 24 * mm, "Bengula Inc")
+
+        c.setFillColor(brand.COVER_TAG)
+        c.setFont(brand.SANS_BOLD, 8)
+        c.drawRightString(self.width, self.height - 24 * mm, self.tag.upper())
+
+        title.drawOn(c, 0, self.height - self.title_top - h)
+        subtitle_bottom = self.height - self.title_top - 8 * mm - h - sh
         subtitle.drawOn(c, 0, subtitle_bottom)
 
         # The card top tracks the subtitle bottom so the summary panel never
@@ -116,10 +129,11 @@ class CoverBlock(Flowable):
         c.setFont(brand.SANS_BOLD, 8)
         c.drawString(8 * mm, card_top - 12 * mm, "DESK SUMMARY")
         s.drawOn(c, 8 * mm, summary_top - ph)
+        chip_pitch = (self.width - 16 * mm) / 3
         for i, label in enumerate(self.pillars):
-            x = 8 * mm + i * 54 * mm
+            x = 8 * mm + i * chip_pitch
             c.setFillColor(brand.TINT)
-            c.roundRect(x, chips_top - chips_h, 49 * mm, chips_h, 2 * mm, stroke=0, fill=1)
+            c.roundRect(x, chips_top - chips_h, chip_pitch - 5 * mm, chips_h, 2 * mm, stroke=0, fill=1)
             c.setFillColor(brand.PRIMARY)
             c.setFont(brand.SANS_BOLD, 12)
             c.drawString(x + 3 * mm, chips_top - 8 * mm, f"0{i+1}")
@@ -132,7 +146,7 @@ class CoverBlock(Flowable):
         use, status = ("Team reference", "Internal only") if self.internal else ("Client education", "Public download")
         meta = [("Brand", "Bengula Inc"), ("Prepared", self.as_of), ("Use", use), ("Status", status)]
         for i, (k, v) in enumerate(meta):
-            x = i * 45 * mm
+            x = i * self.meta_pitch
             c.setFont(brand.SANS_BOLD, 7)
             c.drawString(x, 18 * mm, k.upper())
             c.setFont(brand.SANS, 8)
@@ -233,7 +247,10 @@ def cards(items):
     if row:
         row.append("")
         data.append(row)
-    t = Table(data, colWidths=[82 * mm, 82 * mm], hAlign=TA_LEFT)
+    # Card columns track the measure, so they widen on landscape pages and
+    # stay at the original 82mm on the 170mm portrait measure.
+    half = brand.CONTENT_WIDTH * 82 / 170
+    t = Table(data, colWidths=[half, half], hAlign=TA_LEFT)
     t.setStyle(
         TableStyle(
             [

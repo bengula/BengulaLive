@@ -14,6 +14,7 @@ from reportlab.platypus import (
     Spacer,
 )
 
+from . import brand
 from . import components as c
 from .sources import SOURCES
 
@@ -34,6 +35,7 @@ BLOCK_BUILDERS = {
     "palette": lambda b: [c.palette_table(b[1])],
     # Orientation switches start a fresh page on the named template.
     "orient": lambda b: [NextPageTemplate(b[1]), PageBreak()],
+    "pagebreak": lambda b: [PageBreak()],
 }
 
 MARGIN = 20 * mm
@@ -55,6 +57,13 @@ def _frame(pagesize, frame_id):
     )
 
 
+DISCLAIMER = (
+    "This document is general market education, not individualized financial, tax, legal, "
+    "or investment advice. Readers should verify live rates, licensing status, legal documents, "
+    "and suitability before acting."
+)
+
+
 def source_page(keys, sourcenote=None):
     story = [PageBreak(), c.para("Selected Sources", "H2B")]
     if not keys:
@@ -63,7 +72,7 @@ def source_page(keys, sourcenote=None):
         label, url = SOURCES[key]
         story.append(c.para(f"<b>{label}</b><br/><font color='#5B21B6'>{url}</font>", "SmallB"))
     story.append(Spacer(1, 6))
-    story.append(c.para("This document is general market education, not individualized financial, tax, legal, or investment advice. Readers should verify live rates, licensing status, legal documents, and suitability before acting.", "SmallB"))
+    story.append(c.para(DISCLAIMER, "SmallB"))
     return story
 
 
@@ -85,16 +94,35 @@ def build_doc(spec):
         author="Bengula Inc",
     )
     land = landscape(A4)
-    doc.addPageTemplates([
+    # :orientation: landscape makes the whole document landscape, cover
+    # included: the landscape template goes first so it is the one the first
+    # page uses, and every flowable gets the wider measure.
+    wide = str(spec.get("orientation", "")).lower() == "landscape"
+    templates = [
         PageTemplate(id="Portrait", frames=[_frame(A4, "p")], onPage=c.footer, pagesize=A4),
         PageTemplate(id="Landscape", frames=[_frame(land, "l")], onPage=c.footer, pagesize=land),
-    ])
-    story = [
-        c.CoverBlock(spec["title"], spec["subtitle"], spec["tag"], spec["summary"], as_of, internal=internal, pillars=spec.get("pillars")),
-        PageBreak(),
     ]
-    for block in spec["body"]:
-        story.extend(BLOCK_BUILDERS[block[0]](block))
-    story.extend(source_page(spec["sources"], spec.get("sourcenote")))
-    doc.build(story)
+    doc.addPageTemplates(list(reversed(templates)) if wide else templates)
+    # Components size themselves from brand.CONTENT_WIDTH as the story is
+    # assembled, so the wider measure has to be in place before that starts.
+    prev_width = brand.CONTENT_WIDTH
+    if wide:
+        brand.CONTENT_WIDTH = land[0] - 2 * MARGIN
+    try:
+        story = [
+            c.CoverBlock(spec["title"], spec["subtitle"], spec["tag"], spec["summary"], as_of, internal=internal, pillars=spec.get("pillars"), wide=wide),
+            PageBreak(),
+        ]
+        for block in spec["body"]:
+            story.extend(BLOCK_BUILDERS[block[0]](block))
+        # :sourcepage: off drops the dedicated Selected Sources page, used on
+        # client-facing downloads where the source note is internal detail.
+        # The disclaimer still has to appear, so it closes the last page.
+        if str(spec.get("sourcepage", "")).lower() in ("off", "none", "no"):
+            story.extend([Spacer(1, 10), c.para(DISCLAIMER, "SmallB")])
+        else:
+            story.extend(source_page(spec["sources"], spec.get("sourcenote")))
+        doc.build(story)
+    finally:
+        brand.CONTENT_WIDTH = prev_width
     return path
