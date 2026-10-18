@@ -7,8 +7,7 @@ author:
   name: Bengula Jacob
   role: Venture Sponsor
   avatar: /images/jacob.jpg
-date: Jun 15, 2025
-readTime: 8 min read
+date: 2025-06-15
 coverImage: https://images.pexels.com/photos/15751124/pexels-photo-15751124.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 

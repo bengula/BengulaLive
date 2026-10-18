@@ -1,7 +1,7 @@
 ---
 id: sacco-savers-guarantors
 title: "Safe for Savers, Risky for Guarantors: The Changing Calculus of SACCO Membership in Kenya"
-summary: SACCOs remain one of Kenya's best wealth-building vehicles for disciplined savers, but the guarantor model is quietly transferring credit risk onto members who never borrowed a shilling. With KUSCCO's KES 13.3 billion collapse forcing the biggest regulatory overhaul in a generation, here's how the calculus has changed.
+summary: "SACCOs still reward disciplined savers, but the guarantor model shifts credit risk onto members who never borrowed. What KUSCCO's collapse changed."
 category: Wealth Optimization
 author:
   name: Bengula Jacob
@@ -11,8 +11,7 @@ coAuthors:
   - name: Winnie N.
     role: Creative Strategist, Bengula Inc
     avatar: /images/bebe.jpg
-date: June 2, 2026
-readTime: 12 min read
+date: 2026-06-02
 coverImage: https://images.pexels.com/photos/8112172/pexels-photo-8112172.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 

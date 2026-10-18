@@ -1,10 +1,9 @@
 ---
 id: top-fintech-trends-2026
 title: "Top Fintech Trends Shaping Kenya and Africa in 2026"
-summary: Fintech in 2026 is no longer emerging. It is the infrastructure. AI has crossed from experimental to operational, embedded finance is turning every app into a financial hub, and open banking is reshaping how data flows between institutions. This guide covers the ten trends defining Kenya's fintech landscape in 2026, grounded in what is actually happening on the ground.
+summary: "Fintech in 2026 is infrastructure, not emerging. AI has gone operational, embedded finance is everywhere, and open banking is reshaping how data flows."
 category: Fintech & Banking
-date: July 5, 2026
-readTime: 14 min read
+date: 2026-07-05
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

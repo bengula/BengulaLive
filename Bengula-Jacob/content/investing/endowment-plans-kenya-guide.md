@@ -1,10 +1,9 @@
 ---
 id: endowment-plans-kenya-guide
 title: "Endowment Plans in Kenya: The Complete Guide to Saving, Investing and Protecting Your Family"
-summary: How endowment plans actually work in Kenya. What your premium really buys, how bonuses and surrender values are calculated, the life insurance tax relief most employees never claim, policy loans and early-exit options, honest comparisons against MMFs, Treasury bills, SACCOs, unit trusts and fixed deposits, and a full case study of APA's Akiba Halisi anticipated endowment.
+summary: "What your premium really buys, how bonuses and surrender values are calculated, the tax relief most employees never claim, and honest comparisons against MMFs."
 category: Wealth Optimization
-date: July 10, 2026
-readTime: 25 min read
+date: 2026-07-10
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

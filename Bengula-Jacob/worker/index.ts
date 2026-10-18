@@ -70,9 +70,23 @@ async function readCount(env: Env, id: string): Promise<number> {
   return Number.isFinite(n) && n > 0 ? n : 0;
 }
 
+/**
+ * Permanent URL moves. An article's `id` is its URL, so renaming one breaks
+ * every inbound link that still points at the old slug. Add the old path here
+ * when that happens — there is no other redirect layer in front of this Worker.
+ */
+const REDIRECTS: Record<string, string> = {
+  '/blog/AI-detectors': '/blog/ai-detectors',
+};
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
+
+    const moved = REDIRECTS[url.pathname];
+    if (moved) {
+      return Response.redirect(new URL(moved + url.search, url.origin).toString(), 301);
+    }
 
     if (url.pathname === '/api/likes') {
       if (request.method === 'GET') {

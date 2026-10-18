@@ -7,8 +7,7 @@ author:
   name: Bengula Jacob
   role: Founder, Bengula Inc.
   avatar: /images/jacob.jpg
-date: Dec 18, 2025
-readTime: 9 min read
+date: 2025-12-18
 coverImage: https://images.pexels.com/photos/5973883/pexels-photo-5973883.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 

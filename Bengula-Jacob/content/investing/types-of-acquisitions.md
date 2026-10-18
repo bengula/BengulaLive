@@ -1,10 +1,9 @@
 ---
 id: types-of-acquisitions
 title: "What Are the Different Types of Acquisitions? A Kenya Business Guide"
-summary: Acquisitions reshape markets, consolidate power, and unlock new revenue streams. Kenya's corporate landscape has seen a wave of M&A activity across banking, fintech, manufacturing, and agriculture. This guide covers eight types of acquisitions including SPACs, how they differ from mergers, and what recent Kenyan deals reveal about each strategy.
+summary: "Kenya has seen an M&A wave across banking, fintech, manufacturing, and agriculture. Eight types of acquisition including SPACs, and what recent deals reveal."
 category: Corporate Finance
-date: July 4, 2026
-readTime: 12 min read
+date: 2026-07-04
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

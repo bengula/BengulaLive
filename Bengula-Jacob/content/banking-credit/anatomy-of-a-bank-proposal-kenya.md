@@ -1,10 +1,9 @@
 ---
 id: anatomy-of-a-bank-proposal-kenya
 title: "The Anatomy of a Perfect Bank Proposal: What Your RM Looks For Before Approving a KES 10M Facility"
-summary: "A credit file is a story told in numbers, and the relationship manager reading yours is asking one question the whole time: will this business generate enough cash to repay, and what happens if it does not? This guide walks the proposal from the other side of the desk, the 5 C's of credit, the debt service cover ratio that decides most files, matching the facility to your cash cycle, and the narrative that turns a maybe into a yes."
+summary: "How a relationship manager reads your credit file: the 5 C's, the debt service cover ratio that decides it, and matching the facility to your cash cycle."
 category: SME Finance
-date: July 12, 2026
-readTime: 12 min read
+date: 2026-07-12
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

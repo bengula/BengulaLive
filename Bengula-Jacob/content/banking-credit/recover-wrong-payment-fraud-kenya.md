@@ -1,10 +1,9 @@
 ---
 id: recover-wrong-payment-fraud-kenya
 title: "If You Send Money to the Wrong Person in Kenya: Reversals, Fraud, and Getting It Back"
-summary: "One wrong digit, or one clever fraudster, and your money is in someone else's account. What happens next depends almost entirely on which rail you used and how fast you move. This guide walks the actual reversal process for M-Pesa and bank transfers, explains why RTGS and international wires are effectively final, gives an hour-by-hour recovery playbook, and dismantles the frauds, reversal cons, SIM swaps, and invoice-tampering, that engineer a wrong payment in the first place."
+summary: "What happens next depends on the rail and how fast you move. Reversals for M-Pesa and bank transfers, why RTGS is final, and an hour-by-hour recovery playbook."
 category: Banking & Credit
-date: September 20, 2026
-readTime: 15 min read
+date: 2026-09-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

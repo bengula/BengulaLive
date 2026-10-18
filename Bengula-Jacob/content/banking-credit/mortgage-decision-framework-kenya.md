@@ -1,10 +1,9 @@
 ---
 id: mortgage-decision-framework-kenya
 title: "Mortgage Decision Framework for Kenya: Beyond KMRC - When to Buy, Which Loan, and What It Really Costs"
-summary: "KMRC can put single-digit fixed mortgages within reach - but only if you fit the box. This framework covers rent vs buy, affordable vs market-rate KMRC vs standard bank mortgages, LTV and closing costs, fixed vs variable pricing, the one-third income rule, and when waiting is the smarter move."
+summary: "KMRC single-digit mortgages only work if you fit the box. Rent versus buy, LTV and closing costs, fixed versus variable, and when waiting is the smarter move."
 category: Real Estate
-date: July 15, 2026
-readTime: 14 min read
+date: 2026-07-15
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

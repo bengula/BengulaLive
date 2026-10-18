@@ -1,10 +1,9 @@
 ---
 id: etims-kenya-sme-guide
 title: "eTIMS and the SME: Turning Tax Compliance Into Bankable Records"
-summary: KRA's electronic invoicing system is usually discussed as a burden. Read properly, it is forced bookkeeping, and the same records that keep you tax-compliant are what banks, suppliers, and investors ask for before they trust you with money. This guide covers who must comply, the practical onboarding routes, and how to make the records pay you back.
+summary: "eTIMS reads as a burden but works as forced bookkeeping. Who must comply, the practical onboarding routes, and how the records earn trust from banks and buyers."
 category: Banking & Credit
-date: July 9, 2026
-readTime: 9 min read
+date: 2026-07-09
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

@@ -1,14 +1,13 @@
 ---
 id: sme-seo-inbound-lead-engine
 title: "SME SEO & Inbound Lead Engine"
-summary: A case study on rebuilding a Nairobi professional-services SME's website, content engine, and search visibility so organic traffic turned into qualified monthly enquiries.
+summary: "A case study on rebuilding a Nairobi professional-services website and content engine so organic traffic turned into qualified monthly enquiries."
 category: Digital Strategy
 author:
   name: Bengula Jacob
   role: Founder, Bengula Inc.
   avatar: /images/jacob.jpg
-date: February 12, 2026
-readTime: 7 min read
+date: 2026-02-12
 coverImage: https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
@@ -73,7 +72,7 @@ In this engagement, the local layer produced the fastest wins: map-pack visibili
 
 The discipline of refusing certain tactics protected the result as much as the tactics we used:
 
-- **No mass-produced AI content.** Flooding the site with thin, generic pages would have lifted page counts and buried the proof and specificity that make a professional-services buyer pick up the phone. Volume is not authority. The desk's fuller argument on this is in [Stop Wasting Money on AI Detectors](/blog/AI-detectors): the question that matters is whether content is accurate and useful, not how it was drafted.
+- **No mass-produced AI content.** Flooding the site with thin, generic pages would have lifted page counts and buried the proof and specificity that make a professional-services buyer pick up the phone. Volume is not authority. The desk's fuller argument on this is in [Stop Wasting Money on AI Detectors](/blog/ai-detectors): the question that matters is whether content is accurate and useful, not how it was drafted.
 - **No bidding on vanity keywords.** High-volume generic terms brought browsers, not buyers. The budget went to fewer, higher-intent phrases where the searcher had a problem and a budget.
 - **No redesign for its own sake.** The visual refresh was the smallest part of the work. Buyers were not leaving because the site was ugly; they were leaving because it did not answer their question.
 - **No channel sprawl.** One website done properly beat a half-maintained presence on five platforms. New channels were only added once the core engine was measurably paying back.

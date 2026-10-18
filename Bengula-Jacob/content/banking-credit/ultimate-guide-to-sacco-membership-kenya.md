@@ -1,10 +1,9 @@
 ---
 id: ultimate-guide-to-sacco-membership-kenya
 title: "The Ultimate Guide to SACCO Membership in Kenya"
-summary: "Most SACCO guides stop at loans. This one covers everything else: what share capital actually buys you, why your deposits are not savings you can withdraw, how dividends and interest rebates are really declared, nominating a beneficiary, voting at the AGM, and the two processes nobody explains until you need them, exiting a SACCO and what happens if one fails."
+summary: "What share capital buys, why deposits are not withdrawable savings, how dividends are declared, and the two processes nobody explains: exit, and SACCO failure."
 category: Wealth Optimization
-date: July 19, 2026
-readTime: 24 min read
+date: 2026-07-19
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

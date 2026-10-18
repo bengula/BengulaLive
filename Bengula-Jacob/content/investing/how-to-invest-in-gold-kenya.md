@@ -1,10 +1,9 @@
 ---
 id: how-to-invest-in-gold-kenya
 title: "How to Invest in Gold in Kenya: The ETF, the Bar, and the Con"
-summary: Gold's job in a portfolio is insurance, not income, and Kenya offers three honest ways to hold it and one famous way to lose everything. This guide covers the NSE's NewGold ETF, physical bars and coins, offshore gold funds, the shilling layer that changes your return, how much gold a portfolio actually needs, and the anatomy of Kenya's notorious fake-gold industry.
+summary: "Gold's job is insurance, not income. The NSE's NewGold ETF, physical bars, offshore funds, the shilling layer, and Kenya's notorious fake-gold industry."
 category: Wealth Optimization
-date: July 10, 2026
-readTime: 10 min read
+date: 2026-07-10
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

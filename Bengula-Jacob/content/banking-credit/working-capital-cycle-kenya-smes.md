@@ -1,10 +1,9 @@
 ---
 id: working-capital-cycle-kenya-smes
 title: "The Working Capital Cycle for Kenyan SMEs: How Cash Gets Stuck and How to Free It"
-summary: "Profit on paper does not pay suppliers on Friday. This guide maps the stock–receivables–cash loop Kenyan SMEs actually live in, shows how to measure the cash conversion cycle, and matches overdrafts, invoice tools, and LPO finance to the right gap - before the bank does it for you."
+summary: "Profit on paper does not pay suppliers on Friday. Mapping the stock-receivables-cash loop, measuring the cash conversion cycle, and matching finance to the gap."
 category: SME Finance
-date: July 15, 2026
-readTime: 14 min read
+date: 2026-07-15
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

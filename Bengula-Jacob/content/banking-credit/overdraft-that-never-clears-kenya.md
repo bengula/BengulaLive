@@ -1,10 +1,9 @@
 ---
 id: overdraft-that-never-clears-kenya
 title: "The Overdraft That Never Clears: How Float Becomes Permanent Debt"
-summary: "An overdraft is the most flexible facility a Kenyan business can hold and the most commonly mispurchased. This guide covers how overdraft interest actually accrues on daily utilisation, the clean-down covenant most owners have never read, the statement pattern that tells a lender your overdraft has become a term loan in disguise, and the arithmetic of converting it before your next annual review does it for you."
+summary: "How overdraft interest accrues on daily utilisation, the clean-down covenant nobody reads, and the statement pattern that shows yours is now a term loan."
 category: SME Finance
-date: July 20, 2026
-readTime: 15 min read
+date: 2026-07-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

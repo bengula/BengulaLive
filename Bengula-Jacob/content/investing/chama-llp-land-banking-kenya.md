@@ -1,10 +1,9 @@
 ---
 id: chama-llp-land-banking-kenya
 title: "Chama Syndication 2.0: LLPs and Frameworks for Land-Banking Without Tears"
-summary: "When a chama graduates from merry-go-round money to buying land, trust and a notebook stop being enough. This guide covers why groups use LLP or company vehicles, how titles and exits should work, what due diligence cannot skip, and how to keep friends intact when the plot takes years to pay."
+summary: "When a chama moves from merry-go-round money to buying land, trust and a notebook stop being enough. LLP vehicles, titles, exits, and unskippable due diligence."
 category: Real Estate
-date: July 19, 2026
-readTime: 14 min read
+date: 2026-07-19
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

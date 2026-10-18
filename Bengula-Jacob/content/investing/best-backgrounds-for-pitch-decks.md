@@ -1,10 +1,9 @@
 ---
 id: best-backgrounds-for-pitch-decks
 title: "Best Backgrounds for Pitch Decks: What Works and What Kills the Deal"
-summary: The wrong background kills a pitch deck before a single slide is read. The right one makes investors lean in. This guide covers the principles behind effective pitch deck backgrounds, the six background types that work, the six that kill pitches, and where to find professional assets for free.
+summary: "The wrong background kills a deck before a slide is read. The six background types that work, the six that kill pitches, and where to find assets for free."
 category: Startup Finance
-date: July 9, 2026
-readTime: 8 min read
+date: 2026-07-09
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

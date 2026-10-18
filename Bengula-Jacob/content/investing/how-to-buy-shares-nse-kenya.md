@@ -1,10 +1,9 @@
 ---
 id: how-to-buy-shares-nse-kenya
 title: "How to Buy Shares on the Nairobi Securities Exchange: A Beginner's Guide"
-summary: The NSE just had a 50% year, the minimum trade dropped to a single share, and app-based brokers have removed the paperwork era. This guide walks a first-time investor through the whole journey, opening the accounts, placing the first order, reading a counter, the fees and taxes, and building a first portfolio that survives the market's bad years as well as its 2025s.
+summary: "The minimum trade is now a single share and app brokers removed the paperwork. Opening the accounts, placing a first order, reading a counter, fees, and taxes."
 category: Wealth Optimization
-date: July 10, 2026
-readTime: 12 min read
+date: 2026-07-10
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

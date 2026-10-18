@@ -7,8 +7,7 @@ author:
   name: Bengula Jacob
   role: Sponsor Representative
   avatar: /images/jacob.jpg
-date: Jul 11, 2025
-readTime: 8 min read
+date: 2025-07-11
 coverImage: https://images.pexels.com/photos/849683/pexels-photo-849683.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 

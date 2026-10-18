@@ -1,10 +1,9 @@
 ---
 id: nssf-tier-ii-vs-private-pension-kenya
 title: "NSSF Tier II vs Private Pension in Kenya: Where Extra Retirement Money Should Go"
-summary: "NSSF is the mandatory floor, not the full plan. This guide explains Tier I vs Tier II, contracting-out to occupational schemes, Individual Pension Plans (IPPs), the KES 30,000 monthly tax relief, and a clear decision tree for employees, informal workers, and owner-managers."
+summary: "NSSF is the mandatory floor, not the full plan. Tier I versus Tier II, contracting out, Individual Pension Plans, the KES 30,000 relief, and a decision tree."
 category: Wealth Optimization
-date: July 15, 2026
-readTime: 12 min read
+date: 2026-07-15
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

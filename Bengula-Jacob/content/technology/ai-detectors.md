@@ -1,16 +1,13 @@
 ---
-id: AI-detectors
+id: ai-detectors
 title: "Stop Wasting Money on AI Detectors: Why Statistical Guesswork Cannot Solve the AI Problem"
-metaTitle: "Why AI Detectors Fail: Guesswork, Not Proof | Bengula Inc"
-metaDescription: "AI detectors give probabilities, not proof. OpenAI retired its own classifier and universities are dropping the tools. Here is why detection is unreliable."
-summary: "AI detectors promise certainty and deliver probability. OpenAI retired its own classifier at 26% accuracy, Stanford found the tools biased against non-native English writers, and universities are quietly dropping them. This is why detection cannot settle a question of authorship, what the false-positive problem does to real people, and why provenance beats guesswork."
+summary: "AI detectors promise certainty and deliver probability. OpenAI retired its own classifier at 26% accuracy, and why provenance beats statistical guesswork."
 category: Digital Strategy
 author:
   name: Bengula Jacob
   role: Founder, Bengula Inc.
   avatar: /images/jacob.jpg
-date: June 6, 2026
-readTime: 11 min read
+date: 2026-06-06
 coverImage: https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 

@@ -1,10 +1,9 @@
 ---
 id: bulk-payments-payroll-payouts-kenya
 title: "Bulk Payments and Payroll Payouts: EFT Batches, Portals, and Host-to-Host"
-summary: "Paying five people is a task; paying fifty or five hundred is a system, and doing it by hand is slow, expensive, and the single easiest place in a business to be defrauded. This guide covers how Kenyan businesses actually run payroll and bulk payouts, choosing between EFT batches and M-Pesa B2C, the maker-checker control that stops a single person emptying the account, hitting the payday cut-off, and reconciling the payments that bounce back."
+summary: "Payroll for fifty people is a system, not a task. EFT batches versus M-Pesa B2C, the maker-checker control that stops fraud, cut-offs, and failed payments."
 category: SME Finance
-date: September 20, 2026
-readTime: 14 min read
+date: 2026-09-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

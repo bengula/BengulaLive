@@ -1,10 +1,9 @@
 ---
 id: seasonal-agri-working-capital-kenya
 title: "Seasonal Working Capital for Agribusiness: Input Credit, Harvest Bridge, and Inventory Finance"
-summary: "Farming and agri-trading run on a calendar that no ordinary loan is shaped for: cash goes out at planting, comes in at harvest, and a five-year term loan mismatches both. This guide maps the domestic seasonal cash cycle and the finance that actually fits it: input credit and merchant credit going in, harvest-bridge facilities coming out, and warehouse-receipt and inventory finance for holding produce off a glutted market. It stays on cash timing, not agronomy."
+summary: "Cash goes out at planting and comes in at harvest, and no ordinary term loan fits. Input credit, harvest-bridge facilities, and warehouse-receipt finance."
 category: SME Trade Finance
-date: July 26, 2026
-readTime: 14 min read
+date: 2026-07-26
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

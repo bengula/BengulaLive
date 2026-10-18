@@ -1,10 +1,9 @@
 ---
 id: land-succession-transmission-kenya
 title: "Land Succession in Kenya: Transmission, Transfer, and the Diaspora Problem"
-summary: "A great deal of Kenyan household wealth sits in parcels that cannot be sold, charged or divided, because the title still carries the name of someone who died years ago. This guide separates the three steps families constantly confuse, the succession cause, the transmission, and the transfer, sets out what each actually requires, prices the delay, covers running the process from abroad, and gives the checks a buyer must run before paying for land caught in an unfinished estate."
+summary: "Much household wealth sits in parcels that cannot be sold because the title names someone who died. The succession cause, transmission, and transfer, separated."
 category: Real Estate
-date: September 20, 2026
-readTime: 17 min read
+date: 2026-09-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

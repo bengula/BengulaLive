@@ -1,10 +1,9 @@
 ---
 id: how-banks-actually-make-money-kenya
 title: "How Banks Actually Make Money In Kenya"
-summary: "You earn a few per cent on your deposit and pay around 15% on your loan, and the gap is only the start. A Kenyan bank earns from four engines at once: the interest spread, fees and commissions, foreign exchange, and trade and transaction income. Understanding all four turns you from a passive customer into someone who can negotiate, because you are the source of every shilling the bank makes."
+summary: "A Kenyan bank earns from four engines at once: interest spread, fees, foreign exchange, and transaction income. Knowing all four is what lets you negotiate."
 category: Banking & Credit
-date: June 20, 2026
-readTime: 13 min read
+date: 2026-06-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

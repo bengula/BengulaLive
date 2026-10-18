@@ -1,10 +1,9 @@
 ---
 id: sme-transaction-fees-fx-spreads-kenya
 title: "The Hidden Leak: How Kenyan SMEs Bleed Money on Fees and FX Spreads"
-summary: "Interest rates get the attention; tariffs and foreign-exchange spreads often take more cash. This guide shows how to read a corporate tariff guide, spot the margin inside a USD/KES quote, run a fee audit, and negotiate like a customer who knows where the bank actually earns."
+summary: "Tariffs and FX spreads often take more cash than interest. How to read a corporate tariff guide, spot the margin in a USD/KES quote, and run a fee audit."
 category: Banking & Credit
-date: July 19, 2026
-readTime: 14 min read
+date: 2026-07-19
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

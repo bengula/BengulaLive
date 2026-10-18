@@ -1,10 +1,9 @@
 ---
 id: evaluate-investment-opportunity-kenya
 title: "How to Evaluate Any Investment Opportunity in Kenya"
-summary: "A salesperson pitch, a WhatsApp group tip, a land brochure, or a fund fact sheet: the product changes, the questions do not. This framework scores any opportunity on return, liquidity, risk, tax, time horizon, opportunity cost, inflation, and exit, then turns the answers into a printable decision checklist."
+summary: "A sales pitch, a WhatsApp tip, a land brochure: the product changes, the questions do not. Scoring any opportunity on return, liquidity, risk, tax, and exit."
 category: Wealth Optimization
-date: July 19, 2026
-readTime: 16 min read
+date: 2026-07-19
 featured: true
 author:
   name: Bengula Jacob

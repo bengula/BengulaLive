@@ -1,10 +1,9 @@
 ---
 id: mobile-loan-vs-bank-loan-apr-breakdown
 title: "Understanding Interest Rates in Kenya: APR, Flat vs Reducing Balance, and the Real Cost of Credit"
-summary: The complete Kenyan borrower guide to interest rates. Why headline rates mislead, how flat and reducing balance loans differ on the same quoted number, what the effective rate and APR actually measure, how mobile loans compare with bank loans once every fee is included, and the legal ceiling the Duplum Rule puts on what a defaulted loan can cost.
+summary: "Why headline rates mislead: flat versus reducing balance, what APR measures, mobile versus bank loans with every fee included, and the Duplum Rule ceiling."
 category: Banking & Credit
-date: July 10, 2026
-readTime: 14 min read
+date: 2026-07-10
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

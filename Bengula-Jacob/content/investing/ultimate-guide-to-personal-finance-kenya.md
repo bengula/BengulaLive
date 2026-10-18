@@ -1,10 +1,9 @@
 ---
 id: ultimate-guide-to-personal-finance-kenya
 title: "The Complete Guide to Personal Finance in Kenya (2026 Edition)"
-summary: "A master blueprint for wealth optimization in Kenya: from budgeting and Money Market Funds to SACCO deposits, government bonds, stock investing, debt management, tax compliance, and estate planning."
+summary: "A blueprint for wealth optimization in Kenya: budgeting, money market funds, SACCO deposits, bonds, shares, debt, tax compliance, and estate planning."
 category: Wealth Optimization
-date: July 15, 2026
-readTime: 35 min read
+date: 2026-07-15
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

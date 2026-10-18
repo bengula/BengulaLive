@@ -1,10 +1,9 @@
 ---
 id: how-to-read-financial-statements-kenya
 title: "How to Read Financial Statements: A Kenyan Owner's Guide to the Three Statements"
-summary: "Most business owners read one number: the bank balance. This guide walks the three statements that actually explain a business, the income statement, the balance sheet, and the cash flow statement, line by line on one set of Kenyan accounts, then shows the three places they must tie to each other. Ends with how a lender reads the same pages, and how to navigate a real NSE-listed annual report."
+summary: "Most owners read one number: the bank balance. The three statements line by line on Kenyan accounts, where they must tie, and how a lender reads the same pages."
 category: SME Finance
-date: July 19, 2026
-readTime: 21 min read
+date: 2026-07-19
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

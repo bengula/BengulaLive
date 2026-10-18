@@ -1,10 +1,9 @@
 ---
 id: vat-for-smes-kenya
 title: "VAT for Kenyan SMEs: Registration, Input Credits, and the Cash-Flow Trap"
-summary: "VAT is not a tax on your business. It is a tax you collect from your customers and hold for KRA, and the reason it destroys otherwise healthy Kenyan SMEs has nothing to do with compliance. It is timing. You remit on the 20th on invoices your customers will not pay until March. This guide treats VAT as the working-capital event it actually is: when registration pays and when it hurts, why zero-rated and exempt are opposites rather than synonyms, the input-credit rules that quietly cost money, and the discipline that stops you spending tax you were only holding."
+summary: "VAT is a tax you collect and hold, and it breaks SMEs on timing: you remit on the 20th on invoices nobody has paid. When registering pays, and when it hurts."
 category: SME Finance
-date: August 1, 2026
-readTime: 16 min read
+date: 2026-08-01
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

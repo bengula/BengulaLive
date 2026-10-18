@@ -1,10 +1,9 @@
 ---
 id: absa-corporate-credit-card-kenya
 title: "The SME and Corporate Guide to Commercial Credit Cards in Kenya"
-summary: "Commercial cards are the most underused working capital tool in Kenyan business, offering 20 to 50 days of interest-free payables, real-time spend control, and clean separation of business and personal money. This guide works through the Absa Business Credit Card: the card variants including virtual and USD options, credit limit minimums, the full tariff, the documents you need to apply, and how to keep the effective cost at zero."
+summary: "Commercial cards buy 20-50 days of interest-free payables. The Absa Business Credit Card: variants, limits, the full tariff, and keeping the cost at zero."
 category: Banking & Credit
-date: July 19, 2026
-readTime: 15 min read
+date: 2026-07-19
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

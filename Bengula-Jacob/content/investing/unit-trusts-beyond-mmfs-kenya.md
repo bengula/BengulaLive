@@ -1,10 +1,9 @@
 ---
 id: unit-trusts-beyond-mmfs-kenya
 title: "Unit Trusts Beyond MMFs in Kenya: Fixed Income, Balanced, and Equity Funds"
-summary: "Money market funds solved liquid yield for millions of Kenyans - but they are only one slice of CMA-regulated unit trusts. This guide maps fixed-income, balanced, and equity funds, shows how to read TER and net returns after tax, and gives a sleeve framework so you stop using an MMF for every job."
+summary: "MMFs are one slice of CMA-regulated unit trusts. Mapping fixed-income, balanced, and equity funds, reading TER and net returns, and a sleeve framework."
 category: Unit Trusts
-date: July 15, 2026
-readTime: 13 min read
+date: 2026-07-15
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

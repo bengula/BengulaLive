@@ -1,10 +1,9 @@
 ---
 id: green-financing-kenya-guide
 title: "Green Financing in Kenya: The Complete Guide for Businesses and Investors"
-summary: Green financing channels capital into projects that generate measurable environmental benefits. Kenya has built one of Africa's most advanced green finance frameworks, anchored by the CBK's April 2025 Green Finance Taxonomy, East Africa's first certified green bond market, and a USD 500 million sovereign green bond pipeline. This guide covers how green financing works, the instruments available, who qualifies, and how Kenyan businesses and investors can access it.
+summary: "Kenya has one of Africa's most advanced green finance frameworks. The CBK taxonomy, the green bond market, the instruments, who qualifies, and how to access it."
 category: Corporate Finance
-date: July 5, 2026
-readTime: 14 min read
+date: 2026-07-05
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

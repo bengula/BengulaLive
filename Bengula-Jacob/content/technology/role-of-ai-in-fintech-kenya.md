@@ -1,10 +1,9 @@
 ---
 id: role-of-ai-in-fintech-kenya
 title: "The Role of Artificial Intelligence in Fintech: A Kenya Perspective"
-summary: AI has moved from a feature to the core infrastructure of fintech. It now sits inside credit decisions, fraud controls, compliance checks, and customer service, making real-time calls on live money. This guide covers the seven proven AI use cases in fintech, how they apply in Kenya's market, and the regulatory and ethical risks that come with them.
+summary: "AI now sits inside credit decisions, fraud controls, and compliance, making real-time calls on live money. Seven proven use cases, and the regulatory risks."
 category: Fintech & Banking
-date: July 5, 2026
-readTime: 13 min read
+date: 2026-07-05
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

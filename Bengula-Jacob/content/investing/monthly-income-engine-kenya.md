@@ -1,10 +1,9 @@
 ---
 id: monthly-income-engine-kenya
 title: "Build a Monthly Income Engine in Kenya: MMFs, T-Bills, Bonds, and Dividends"
-summary: A practical framework for turning salary, business surplus, or diaspora remittances into a layered income system using Kenyan cash instruments, government securities, and quality dividend assets.
+summary: "Turning salary, business surplus, or remittances into a layered income system using Kenyan cash instruments, government securities, and quality dividend assets."
 category: Wealth Optimization
-date: June 21, 2026
-readTime: 14 min read
+date: 2026-06-21
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

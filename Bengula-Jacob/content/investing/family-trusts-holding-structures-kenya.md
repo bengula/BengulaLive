@@ -1,10 +1,9 @@
 ---
 id: family-trusts-holding-structures-kenya
 title: "Family Trusts and Holding Structures in Kenya: When They Are Worth It"
-summary: "Kenya's 2021 trust reforms made the registered family trust a genuinely useful instrument, and they also made it fashionable, which is a different thing. This guide sets out what a family trust actually does, what it does not protect against, how it compares with an LLP and a holding company on the things that matter, what the tax exemptions cover and where they stop, and an honest test of whether your estate is large or complicated enough to justify the cost."
+summary: "Kenya's 2021 reforms made the family trust useful, and also fashionable. What it does, what it does not protect against, and whether your estate justifies it."
 category: Wealth Optimization
-date: September 20, 2026
-readTime: 16 min read
+date: 2026-09-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

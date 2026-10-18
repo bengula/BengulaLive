@@ -1,10 +1,9 @@
 ---
 id: mobile-digital-loans-real-cost-kenya
 title: "Mobile And Digital Loans In Kenya: The Real Cost Of Fast Money"
-summary: A loan in your phone in two minutes is a genuine convenience, and a genuinely expensive one. A small monthly fee on a digital loan hides an annual rate that dwarfs standard bank facilities. Learn how to calculate the true cost, understand how digital and revolving loans affect your CRB credit score, and discover when fast money is worth the price.
+summary: "A loan in your phone in two minutes is genuinely expensive. How a small monthly fee hides a huge annual rate, the CRB effect, and when fast money is worth it."
 category: Banking & Credit
-date: June 20, 2026
-readTime: 12 min read
+date: 2026-06-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

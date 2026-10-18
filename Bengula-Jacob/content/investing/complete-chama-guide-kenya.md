@@ -1,10 +1,9 @@
 ---
 id: complete-chama-guide-kenya
 title: "The Complete Chama Guide: Structuring, Banking, and Investing Group Money"
-summary: Chamas are Kenya's most common investment vehicle, yet most run on trust and a notebook. This guide covers the three species of chama, the legal structures that protect members, how to bank group money properly, an investment ladder from MMFs to land, and the rules that keep the group intact when money gets serious.
+summary: "Most chamas run on trust and a notebook. The three species of chama, the structures that protect members, how to bank group money, and an investment ladder."
 category: Wealth Optimization
-date: July 9, 2026
-readTime: 13 min read
+date: 2026-07-09
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

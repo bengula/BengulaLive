@@ -1,10 +1,9 @@
 ---
 id: business-valuation-kenya-guide
 title: "Business Valuation in Kenya: What Your Company Is Actually Worth, and Who Decides"
-summary: Every SME owner eventually needs a number, for an investor, a partner exit, a buyer, a divorce, or a succession. This guide covers the four valuation methods and when each applies, the normalisation step that changes everything, what actually moves a Kenyan SME's multiple, a worked valuation from raw accounts to a defensible range, and the checklist that builds value years before anyone asks.
+summary: "Every owner eventually needs a number. The four valuation methods and when each applies, the normalisation step that changes everything, and a worked range."
 category: Corporate Finance
-date: July 12, 2026
-readTime: 11 min read
+date: 2026-07-12
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

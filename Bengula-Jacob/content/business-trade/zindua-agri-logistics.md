@@ -7,8 +7,7 @@ author:
   name: Bengula Jacob
   role: Venture Partner, Bengula Inc.
   avatar: /images/jacob.jpg
-date: Nov 02, 2025
-readTime: 8 min read
+date: 2025-11-02
 coverImage: https://images.pexels.com/photos/5410923/pexels-photo-5410923.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 

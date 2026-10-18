@@ -4,8 +4,7 @@ id: fixed-deposit-lending-arbitrage
 title: "Fixed Deposit vs. Treasury Bills: Pricing Your Business Cash"
 summary: An analytical, in-depth comparison of corporate cash placement options in Kenya, comparing yield, liquidity, and tax treatment.
 category: Bonds & Bills
-date: June 20, 2026
-readTime: 10 min read
+date: 2026-06-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

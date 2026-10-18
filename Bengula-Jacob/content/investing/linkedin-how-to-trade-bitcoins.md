@@ -1,14 +1,13 @@
 ---
 id: linkedin-how-to-trade-bitcoins
 title: How To Trade Bitcoins Without Confusing Speculation for Strategy
-summary: A practical Bitcoin trading guide covering volatility, custody, platform risk, regulation, position sizing, scams, and the questions beginners should answer before placing a trade.
+summary: "A practical Bitcoin trading guide: volatility, custody, platform risk, regulation, position sizing, scams, and the questions to answer before placing a trade."
 category: Digital Strategy
 author:
   name: Bengula Jacob
   role: Founder, Bengula Inc
   avatar: /images/jacob.jpg
-date: May 3, 2026
-readTime: 9 min read
+date: 2026-05-03
 coverImage: https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 

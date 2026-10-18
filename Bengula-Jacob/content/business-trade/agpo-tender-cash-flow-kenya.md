@@ -1,10 +1,9 @@
 ---
 id: agpo-tender-cash-flow-kenya
 title: "AGPO and Government Tender Cash-Flow in Kenya: How to Win Work Without Going Broke"
-summary: "Winning a public tender or AGPO contract is not the same as getting paid. This guide maps the full cash cycle - bid bonds, performance and advance-payment guarantees, LPO fulfilment, 90–180 day collections, and invoice handoffs - so SMEs can price the gap before they bid."
+summary: "Winning a public tender is not the same as getting paid. Bid bonds, guarantees, LPO fulfilment, and 90-180 day collections, so you price the gap before bidding."
 category: SME Trade Finance
-date: July 15, 2026
-readTime: 14 min read
+date: 2026-07-15
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

@@ -7,6 +7,8 @@
  * `u(id)` builds an optimized, responsive URL.
  */
 
+import { categoryPhotos, isArticleCategory } from './articleCategories';
+
 /** Build an Unsplash CDN url with sane defaults (auto format, cropped). */
 export const u = (id: string, w = 1200, q = 70) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=${q}`;
@@ -22,19 +24,14 @@ export const images = {
   markets: u('photo-1590283603385-17ffb3a7f29f', 1000),
 };
 
-/** Topical photo for each blog category (falls back to a markets chart). */
-const categoryIds: Record<string, string> = {
-  'Bonds & Bills': 'photo-1590283603385-17ffb3a7f29f',     // trading screen
-  'Unit Trusts': 'photo-1591696205602-2f950c417cb9',       // green line chart
-  'SME Trade Finance': 'photo-1542838132-92c53300491e',    // fresh produce / retail
-  'Real Estate': 'photo-1560518883-ce09059eeffa',          // house + keys
-  'Agri-Logistics': 'photo-1500382017468-9049fed747ef',    // farm field at sunset
-  'Wealth Optimization': 'photo-1565514020179-026b92b84bb6', // rolled cash
-  'Rates & Policy': 'photo-1554224155-6726b3ff858f',       // rate charts on paper
-};
-
+/**
+ * Topical photo for each blog category. The category→photo map lives in
+ * data/articleCategories.ts so the canonical category list and its imagery
+ * can't drift apart — the loader rejects any category missing from it, which
+ * is what stopped five articles from quietly sharing one fallback photo.
+ */
 const FALLBACK_ID = 'photo-1518186285589-2f7649de83e0'; // chart on laptop
 
 export const categoryImage = (category: string, w = 800) =>
-  u(categoryIds[category] ?? FALLBACK_ID, w);
+  u(isArticleCategory(category) ? categoryPhotos[category] : FALLBACK_ID, w);
 

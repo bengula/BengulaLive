@@ -1,10 +1,9 @@
 ---
 id: cbr-cycle-portfolio-positioning-kenya
 title: "How the CBR Cycle Should Change Your Money: A Practical Playbook for Kenyan Savers and SMEs"
-summary: "When the Central Bank Rate holds, cuts, or hikes, T-bill yields, loan pricing, MMFs, and fixed deposits move with it. This guide translates MPC cycles into portfolio and borrowing actions for households, SME operators, and long-term investors - without forecasting the next meeting."
+summary: "When the CBR holds, cuts, or hikes, T-bill yields, loan pricing, MMFs, and deposits move with it. Translating MPC cycles into actions, without forecasting."
 category: Bonds & Bills
-date: July 15, 2026
-readTime: 12 min read
+date: 2026-07-15
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

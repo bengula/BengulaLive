@@ -44,6 +44,16 @@ export const authorProfiles: AuthorProfile[] = [
     ],
   },
   {
+    id: "bengula-inc",
+    name: "Bengula Inc",
+    role: "Adding meaning to life",
+    avatar: "/images/ColoredBengulaIncLogo.png",
+    bio: "Bengula Inc is a data, digital business, and growth advisory brand working with East African businesses — pairing search and digital visibility with finance and banking advisory. Pieces published under the house byline are editorial or reference material produced by the team rather than a single named author.",
+    links: [
+      { label: "LinkedIn", href: "https://www.linkedin.com/company/bengula-inc/" },
+    ],
+  },
+  {
     id: "winnie-njoroge",
     name: "Winnie N.",
     role: "Creative Strategist, Bengula Inc",

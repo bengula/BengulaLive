@@ -1,10 +1,9 @@
 ---
 id: fixed-income-kenya-complete-guide
 title: "The Complete Guide to Fixed Income in Kenya: From Cash to Bonds"
-summary: "Money market funds, Treasury bills, Treasury bonds, and infrastructure bonds are usually presented as a menu of yields. They are not. Each one is a different trade between liquidity, income, and price risk, and the tax treatment differs on every rung. This is the full map: what each instrument is for, how the auction and the CBR actually reprice your money, what withholding tax does to the headline, and how to assemble a laddered income sleeve that pays you every month without guessing where rates go next."
+summary: "MMFs, T-bills, bonds, and infrastructure bonds are not a menu of yields but different trades between liquidity, income, and price risk. The full map."
 category: Bonds & Bills
-date: August 1, 2026
-readTime: 36 min read
+date: 2026-08-01
 featured: true
 author:
   name: Bengula Jacob

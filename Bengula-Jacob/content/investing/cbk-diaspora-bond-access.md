@@ -4,8 +4,7 @@ id: cbk-diaspora-bond-access
 title: "CBK Diaspora Bond Access: A Guide to DhowCSD for Overseas Kenyans"
 summary: A practical, in-depth walkthrough for Kenyan diaspora investors seeking to open a DhowCSD account, buy treasury bonds, and manage remittance routes.
 category: Bonds & Bills
-date: June 20, 2026
-readTime: 12 min read
+date: 2026-06-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

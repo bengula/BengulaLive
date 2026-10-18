@@ -1,10 +1,9 @@
 ---
 id: bank-vs-sacco-vs-mmf-savings
 title: "Bank Account vs SACCO vs MMF vs Insurance: Where Should Your Savings Actually Sit?"
-summary: The four places Kenyans park money serve four different jobs, and most savers use the wrong one for the job at hand. This decision guide compares banks, SACCOs, money market funds, and endowment plans on return, liquidity, protection, and credit access, shows the top performer in each category against what a typical saver actually earns, and gives a framework for splitting money across them.
+summary: "Banks, SACCOs, money market funds, and endowments serve four different jobs. Compared on return, liquidity, protection, and credit access, with a split rule."
 category: Wealth Optimization
-date: July 9, 2026
-readTime: 12 min read
+date: 2026-07-09
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

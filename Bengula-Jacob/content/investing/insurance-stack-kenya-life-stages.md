@@ -1,10 +1,9 @@
 ---
 id: insurance-stack-kenya-life-stages
 title: "The Insurance Stack for Kenyans: What to Buy First at Every Life Stage"
-summary: "Insurance is not a product pitch - it is a sequence. This guide builds a practical Kenyan stack from emergency fund and medical cover through term life, assets, and key-person protection, with clear priorities for starters, growing families, and owner-managers."
+summary: "Insurance is a sequence, not a product pitch. A Kenyan stack from emergency fund and medical cover through term life, assets, and key-person protection."
 category: Wealth Optimization
-date: July 15, 2026
-readTime: 13 min read
+date: 2026-07-15
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

@@ -1,10 +1,9 @@
 ---
 id: ultimate-guide-to-investing-in-kenya
 title: "The Ultimate Guide to Investing in Kenya: Every Asset Class, Honestly Compared"
-summary: Eleven asset classes, one framework. From money market funds and Treasury bonds to NSE shares, REITs, chamas, land, gold, crypto, and foreign ETFs, this cornerstone guide explains how each one works, what it actually returns, how to buy it, who it suits, and how to combine them into a portfolio that matches your goals rather than the loudest advice in the room.
+summary: "Eleven asset classes, one framework. MMFs, bonds, NSE shares, REITs, chamas, land, gold, crypto, and foreign ETFs: what each returns, and who it suits."
 category: Wealth Optimization
-date: July 10, 2026
-readTime: 45 min read
+date: 2026-07-10
 featured: true
 author:
   name: Bengula Jacob

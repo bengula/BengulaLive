@@ -1,10 +1,9 @@
 ---
 id: inflation-shilling-real-return-kenya
 title: "Inflation, the Shilling, and Your Real Return: What You Actually Keep"
-summary: "Every rate you are quoted is a gross rate. Between the advertised number and the purchasing power that reaches your pocket sit withholding tax and inflation, and together they can turn a respectable-looking yield into a loss. This guide runs the full stack on real Kenyan numbers as at September 2026, shows why an ordinary savings account is a guaranteed real loss of more than three per cent a year, and treats currency exposure as the household decision it actually is."
+summary: "Every rate quoted is gross. Withholding tax and inflation can turn a decent yield into a loss, and an ordinary savings account into a guaranteed real loss."
 category: Rates & Policy
-date: September 20, 2026
-readTime: 15 min read
+date: 2026-09-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

@@ -1,10 +1,9 @@
 ---
 id: business-insurance-kenya-sme-guide
 title: "Business Insurance in Kenya: What SMEs Need and Can Skip"
-summary: "Most owner-managers either buy a random bundle after a scare or buy nothing until a claim-sized event arrives. This guide ranks SME covers by job: liability, people, property, goods in transit, and credit life, shows what can often wait, and links insurance to the wider risk system rather than a broker's product list."
+summary: "SME covers ranked by the job they do: liability, people, property, goods in transit, and credit life, plus what can safely wait until the business is larger."
 category: SME Finance
-date: July 19, 2026
-readTime: 14 min read
+date: 2026-07-19
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

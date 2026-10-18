@@ -1,10 +1,9 @@
 ---
 id: kenyan-yield-curve-explained
 title: "The Kenyan Yield Curve: What the 91, 182 and 364 Spread Is Telling You"
-summary: "Three Treasury bill rates get published every week and almost everyone reads only the highest one. The shape they make together is the more useful signal: it tells you what the market expects, whether locking money up is being paid for, and which ladder tenor is worth choosing. This guide reads the curve as at September 2026, when 273 extra days of lock-up bought just thirty basis points, and shows how to read an auction result properly."
+summary: "Three T-bill rates publish weekly and most people read only the highest. The shape they make together tells you whether locking money up is being paid for."
 category: Rates & Policy
-date: September 20, 2026
-readTime: 14 min read
+date: 2026-09-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

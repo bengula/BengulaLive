@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import type { ArticleCategory } from './data/articleCategories';
 import type { PortfolioCategory, RiskProfile } from './data/portfolioTags';
 
 export type TabId = 'home' | 'about' | 'services' | 'portfolio' | 'blog' | 'authors' | 'investments' | 'ai-coach' | 'contact' | 'tools' | 'faq';
@@ -18,11 +19,26 @@ export interface BlogPost {
   title: string;
   summary: string;
   content: string; // Markdown supported content
-  category: string;
+  category: ArticleCategory;
   coverImage?: string;  // optional — own cover (Unsplash URL or /images/... path); falls back to the category photo
   author: Author;       // primary author
   coAuthors?: Author[]; // optional — additional authors for a co-authored piece
+  keywords?: string[];  // optional — emitted as <meta name="keywords">
+  /**
+   * Publication date formatted for display, e.g. "January 28, 2026".
+   * DERIVED by the loader from the authored ISO date — not written by hand.
+   */
   date: string;
+  /**
+   * The authored calendar date as YYYY-MM-DD. Use this (never `date`) for
+   * machine-readable output — JSON-LD, sitemaps, feeds — because it carries no
+   * timezone and so cannot drift a day when serialized.
+   */
+  dateIso: string;
+  /**
+   * DERIVED by the loader from the body word count, e.g. "8 min read".
+   * Not written by hand, so it can never drift from the actual article.
+   */
   readTime: string;
   featured?: boolean;
   // Optional SEO overrides. When set, these tune the <title> and meta

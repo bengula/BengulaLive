@@ -1,10 +1,9 @@
 ---
 id: malindi-financial-hub-kenya
 title: "Malindi as a Financial Hub Serving Neighbouring Counties"
-summary: "Malindi is quietly becoming the financial anchor for Kenya's northern coast and parts of the northeast. This is what that means in practice for Tana River, Lamu, and Garissa: where banking depth actually sits, why the mobile rails matter more than the branches, what is being financed, and the honest limits of a secondary hub living next door to Mombasa."
+summary: "Malindi is becoming the financial anchor for Kenya's northern coast. What that means for Tana River, Lamu, and Garissa, and the limits of a secondary hub."
 category: Banking & Credit
-date: July 19, 2026
-readTime: 11 min read
+date: 2026-07-19
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

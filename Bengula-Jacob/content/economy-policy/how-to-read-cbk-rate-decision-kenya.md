@@ -1,10 +1,9 @@
 ---
 id: how-to-read-cbk-rate-decision-kenya
 title: "How to Read a CBK Rate Decision: What the MPC Does to Your Money"
-summary: "Every two months a committee in Nairobi announces a number, the headlines report it, and almost nobody can explain what it does to their loan, their savings account or their money market fund. This guide is the evergreen mechanics: who decides, what they are actually deciding, the two separate channels through which the decision reaches you, the asymmetry that means your loan reprices faster than your deposit ever will, and what to do at each end of the cycle."
+summary: "Who decides the CBR, what they are actually deciding, the two channels it reaches you through, and why your loan reprices faster than your deposit ever will."
 category: Rates & Policy
-date: September 20, 2026
-readTime: 15 min read
+date: 2026-09-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

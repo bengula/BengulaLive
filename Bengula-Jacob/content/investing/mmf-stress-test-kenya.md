@@ -1,10 +1,9 @@
 ---
 id: mmf-stress-test-kenya
 title: "The MMF Stress Test: Looking Past Advertised Yield"
-summary: "Headline MMF yields are not a risk rating. This how-to shows Kenyan savers how to read a fact sheet and portfolio mix, spot commercial-paper concentration and liquidity soft spots, run a simple stress table, and decide whether a fund still fits the emergency-fund job."
+summary: "Headline MMF yields are not a risk rating. How to read a fact sheet, spot commercial-paper concentration and liquidity soft spots, and run a stress table."
 category: Unit Trusts
-date: July 19, 2026
-readTime: 12 min read
+date: 2026-07-19
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

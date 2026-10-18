@@ -1,10 +1,9 @@
 ---
 id: paye-withholding-freelance-tax-kenya
 title: "PAYE, Withholding, and Freelance Tax in Kenya: What You Actually Keep"
-summary: "Your offer letter quotes a gross figure. Your bank alert quotes a different one, and the gap between them is not one deduction but five, applied in a specific order that most earners have never seen written down. This guide runs a full Kenyan payslip from gross to net, explains why SHIF and the Housing Levy now cost you less than their face value, and shows freelancers why 5% withheld is nowhere near the tax they owe."
+summary: "The gap between your offer letter and your bank alert is five deductions in a set order. A full payslip gross to net, and why 5% withheld is not your tax bill."
 category: Wealth Optimization
-date: July 29, 2026
-readTime: 14 min read
+date: 2026-07-29
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

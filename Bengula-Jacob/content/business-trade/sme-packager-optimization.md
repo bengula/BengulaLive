@@ -7,8 +7,7 @@ author:
   name: Bengula Jacob
   role: Business Consultant
   avatar: /images/jacob.jpg
-date: Sep 22, 2025
-readTime: 9 min read
+date: 2025-09-22
 coverImage: https://images.pexels.com/photos/13974251/pexels-photo-13974251.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 

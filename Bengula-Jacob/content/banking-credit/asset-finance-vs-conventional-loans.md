@@ -1,10 +1,9 @@
 ---
 id: asset-finance-vs-conventional-loans
 title: "Why Asset Finance Is Cheaper Than a Conventional Loan in Kenya"
-summary: A logbook loan or an unsecured personal loan can feel faster, but the asset itself is the cheapest collateral you will ever pledge. Using Absa Bank Kenya's 2026 asset finance (ABF) programme as a worked example, here is why asset finance routinely undercuts conventional and logbook loans, and the few cases where it does not.
+summary: "The asset itself is the cheapest collateral you can pledge. Why asset finance undercuts conventional and logbook loans in Kenya, and where it does not."
 category: Banking & Credit
-date: June 17, 2026
-readTime: 11 min read
+date: 2026-06-17
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

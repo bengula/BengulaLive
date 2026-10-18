@@ -1,10 +1,9 @@
 ---
 id: logbook-loans-kenya
 title: "Logbook Loans in Kenya: What the Rate Really Costs and What Default Looks Like"
-summary: "A logbook loan turns the car you already own into cash in days, and it is priced and enforced quite unlike any other loan a Kenyan household takes. This guide covers what you actually sign, how a 3% monthly quote becomes a 61% annual rate, the total cost hiding outside the interest line, the repossession timeline the law really allows, and the fork where asset finance is the better instrument."
+summary: "A logbook loan turns your car into cash in days. What you sign, how 3% monthly becomes 61% a year, the repossession timeline, and when asset finance wins."
 category: Banking & Credit
-date: July 23, 2026
-readTime: 16 min read
+date: 2026-07-23
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

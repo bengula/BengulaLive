@@ -1,10 +1,9 @@
 ---
 id: hire-purchase-vs-asset-finance-vs-logbook-kenya
 title: "Hire Purchase vs Asset Finance vs Logbook: Buying the Asset Without the Wrong Debt"
-summary: "Three products can put a vehicle or machine in your yard, and they are not interchangeable. Hire purchase, asset finance, and a logbook loan differ on who owns the asset while you pay, how the rate is quoted, what deposit you need, and what default costs. This guide sets them side by side, converts a flat hire-purchase quote into its real annual cost, and gives a clean rule for which one fits your situation."
+summary: "Hire purchase, asset finance, and logbook loans are not interchangeable. Who owns the asset, how the rate is quoted, what default costs, and which one fits."
 category: Banking & Credit
-date: July 26, 2026
-readTime: 14 min read
+date: 2026-07-26
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

@@ -1,10 +1,9 @@
 ---
 id: rental-income-yield-tax-kenya
 title: "Rental Income in Kenya: Gross Yield, Net Yield, Tax, and Vacancies"
-summary: "A rented flat looks like a salary that arrives without you working, until you subtract the empty months, the repairs, the agent, the insurance, and a tax charged on your gross rent rather than your profit. This guide runs the full gross-to-net waterfall on a Kenyan rental, explains the Monthly Rental Income tax, and answers the question every landlord should ask before buying: is this actually better than a bond ladder?"
+summary: "A rented flat looks like salary until you subtract empty months, repairs, agents, and a tax on gross rent. The gross-to-net waterfall, against a bond ladder."
 category: Real Estate
-date: July 27, 2026
-readTime: 15 min read
+date: 2026-07-27
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

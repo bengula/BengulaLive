@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ReactMarkdown, { type Components } from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
@@ -154,6 +155,29 @@ function MermaidDiagram({ chart }: { chart: string }) {
         </pre>
       )}
     </figure>
+  );
+}
+
+const LINK_CLASS =
+  "text-violet-800 underline decoration-violet-800/30 underline-offset-2 hover:text-violet-700 break-words";
+
+/**
+ * Render one Markdown link. Root-relative hrefs (e.g. /blog/kb-bond-guide-2026)
+ * go through the router so an in-article cross-link is a client-side navigation
+ * rather than a full document reload; external ones open in a new tab.
+ */
+function renderLink(href: string, label: React.ReactNode, key: string) {
+  if (href.startsWith("/")) {
+    return (
+      <Link key={key} to={href} className={LINK_CLASS}>
+        {label}
+      </Link>
+    );
+  }
+  return (
+    <a key={key} href={href} target="_blank" rel="noopener noreferrer" className={LINK_CLASS}>
+      {label}
+    </a>
   );
 }
 
@@ -377,34 +401,14 @@ export function renderInlineMarkdown(text: string, strongClassName = "text-slate
       if (isImage) {
         nodes.push(label);
       } else {
-        nodes.push(
-          <a
-            key={`link-${key++}`}
-            href={href}
-            target={href.startsWith("http") ? "_blank" : undefined}
-            rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-            className="text-violet-800 underline decoration-violet-800/30 underline-offset-2 hover:text-violet-700 break-words"
-          >
-            {label}
-          </a>
-        );
+        nodes.push(renderLink(href, label, `link-${key++}`));
       }
       lastIndex = TOKEN_RE.lastIndex;
       continue;
     }
 
     const href = match[6];
-    nodes.push(
-      <a
-        key={`url-${key++}`}
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-violet-800 underline decoration-violet-800/30 underline-offset-2 hover:text-violet-700 break-words"
-      >
-        {href}
-      </a>
-    );
+    nodes.push(renderLink(href, href, `url-${key++}`));
     lastIndex = TOKEN_RE.lastIndex;
   }
 

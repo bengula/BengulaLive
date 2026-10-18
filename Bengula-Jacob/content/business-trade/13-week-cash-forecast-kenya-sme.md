@@ -1,10 +1,9 @@
 ---
 id: 13-week-cash-forecast-kenya-sme
 title: "The 13-Week Cash Forecast Every Kenyan SME Should Run"
-summary: "Profit is an opinion; cash is a fact, and the fact that closes most Kenyan SMEs is running out of it while still profitable. A rolling 13-week cash forecast is the one spreadsheet that shows the squeeze before it arrives. This guide builds it column by column in Excel, adds the three scenarios that turn it into a decision tool, and shows how the same sheet sizes an overdraft or invoice limit before you ever walk into the bank."
+summary: "A rolling 13-week cash forecast shows the squeeze before it arrives. Built column by column in Excel, with the three scenarios that make it a decision tool."
 category: SME Finance
-date: July 26, 2026
-readTime: 15 min read
+date: 2026-07-26
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

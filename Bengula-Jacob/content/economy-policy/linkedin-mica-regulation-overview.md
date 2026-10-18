@@ -1,14 +1,13 @@
 ---
 id: linkedin-mica-regulation-overview
 title: "MiCA Regulation Overview: What Europe's Crypto Rulebook Means for Digital Finance"
-summary: A practical guide to the EU Markets in Crypto-Assets regulation, why it matters for crypto platforms, stablecoins, investor protection, and Kenyan digital-finance literacy.
+summary: "A practical guide to the EU Markets in Crypto-Assets regulation: what it means for platforms, stablecoins, investor protection, and Kenyan digital finance."
 category: Digital Strategy
 author:
   name: Bengula Jacob
   role: Founder, Bengula Inc
   avatar: /images/jacob.jpg
-date: May 3, 2026
-readTime: 8 min read
+date: 2026-05-03
 coverImage: https://images.pexels.com/photos/113885/pexels-photo-113885.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 

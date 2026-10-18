@@ -1,10 +1,9 @@
 ---
 id: sme-finance-handbook-kenya
 title: "The Complete SME Finance Handbook for Kenya: Every Facility, Honestly Explained"
-summary: The full map of SME finance in Kenya. Working capital, invoice discounting and factoring, LPO and purchase order finance, import and export trade finance, asset finance, term loans and how banks actually price them, the equity ladder, business valuation, credit profiles, and treasury, with the cash conversion cycle as the organising idea and a decision framework for matching every need to the right facility.
+summary: "The full map of SME finance in Kenya: working capital, invoice discounting, LPO and trade finance, asset finance, term loans, and the equity ladder."
 category: SME Finance
-date: July 12, 2026
-readTime: 40 min read
+date: 2026-07-12
 featured: true
 author:
   name: Bengula Jacob

@@ -1,14 +1,13 @@
 ---
 id: bengula-inc-linkedin-company-profile
 title: "How to Connect Business Data to Digital Visibility and Actually Grow"
-summary: Most SMEs treat data and digital marketing as separate tasks. The businesses that grow fastest connect the two, using real numbers to drive what they publish, who they target, and how they convert attention into revenue.
+summary: "Most SMEs treat data and digital marketing as separate tasks. The firms that grow fastest use real numbers to drive what they publish and who they target."
 category: Digital Strategy
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-date: June 21, 2026
-readTime: 9 min read
+date: 2026-06-21
 coverImage: https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
@@ -165,7 +164,7 @@ That sequence, data first then digital, is the difference between a website that
 - [A to Z of Customer Avatars: Buyer Persona Creation](/blog/archive-customer-avatars-buyer-persona). Defining who the page is speaking to before writing the offer.
 - [Why the Banking Relationship Manager is the SME's Most Underrated Growth Asset](/blog/why-rm-is-sme-growth-asset). The finance side of the same data discipline: how clean numbers improve credit conversations.
 - [SME Trade Finance & Supply-Chain Optimization](/blog/sme-trade-finance). When digital growth drives more orders than your cash cycle can fund, trade finance closes the gap.
-- [Stop Wasting Money on AI Detectors](/blog/AI-detectors). Why practical digital decisions need better evidence than shallow signals.
+- [Stop Wasting Money on AI Detectors](/blog/ai-detectors). Why practical digital decisions need better evidence than shallow signals.
 
 ### References
 - [Google Search Central, SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide). Google's own guidance on building search-friendly, user-helpful websites.

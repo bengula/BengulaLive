@@ -3,3 +3,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://bengula.co.ke/sitemap.xml
+
+# Subscribe: https://bengula.co.ke/rss.xml  ·  https://bengula.co.ke/feed.json

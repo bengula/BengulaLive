@@ -1,10 +1,9 @@
 ---
 id: whatsapp-sales-channel-kenya
 title: "Selling on WhatsApp: Kenya's Favourite App as a Sales Channel"
-summary: "WhatsApp is already where Kenyan customers ask price, confirm stock, and pay. This guide shows SMEs how to run it as a deliberate channel: offer architecture, catalogues, payment and proof, response SLAs, and handoff to a proper storefront without losing the conversation thread."
+summary: "WhatsApp is already where Kenyan customers ask price and pay. Running it as a deliberate channel: catalogues, payment proof, response SLAs, and handoff."
 category: Digital Strategy
-date: July 19, 2026
-readTime: 12 min read
+date: 2026-07-19
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

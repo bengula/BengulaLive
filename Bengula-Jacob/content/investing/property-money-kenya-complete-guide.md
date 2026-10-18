@@ -1,10 +1,9 @@
 ---
 id: property-money-kenya-complete-guide
 title: "The Complete Guide to Property Money in Kenya: Buy, Fund, Hold, Exit"
-summary: "Land is the default Kenyan wealth ambition, and for two generations it was a rational one. This is the full map of property money: the five different vehicles people call the same thing, what you are actually buying when you buy a title, the 6% to 8% of transaction costs nobody budgets for, how to fund it across cash, SACCO, chama, mortgage and KMRC, how to hold it for a yield that survives contact with reality, and the exit where stamp duty and capital gains finally get counted. It ends with the comparison Kenyans avoid: a plot that rises 12.5% in three years against a Treasury bill ladder over the same period."
+summary: "The five vehicles people call the same thing, what a title actually buys, the 6% to 8% of transaction costs nobody budgets, and how to fund, hold, and exit."
 category: Real Estate
-date: August 1, 2026
-readTime: 33 min read
+date: 2026-08-01
 featured: true
 author:
   name: Bengula Jacob

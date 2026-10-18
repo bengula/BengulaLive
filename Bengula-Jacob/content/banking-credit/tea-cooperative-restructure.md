@@ -7,8 +7,7 @@ author:
   name: Bengula Jacob
   role: SME Advisory Representative
   avatar: /images/jacob.jpg
-date: Jan 28, 2026
-readTime: 8 min read
+date: 2026-01-28
 coverImage: https://images.pexels.com/photos/5672690/pexels-photo-5672690.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 

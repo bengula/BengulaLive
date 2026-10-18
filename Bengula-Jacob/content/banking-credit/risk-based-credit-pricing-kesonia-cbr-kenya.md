@@ -1,10 +1,9 @@
 ---
 id: risk-based-credit-pricing-kesonia-cbr-kenya
 title: "KESONIA, CBR, and the Revised Risk-Based Credit Pricing Model: What Changed for Kenyan Borrowers"
-summary: "Kenyan banks have moved every shilling-denominated variable-rate loan onto a new pricing model: a published benchmark, KESONIA or CBR, plus a K margin that must now be disclosed by product and risk band. This guide covers what changed, which loans are in and out, what happens to your existing loan, why your CRB grade now has a price tag, and how to use CBK's Total Cost of Credit portal to compare lenders properly."
+summary: "Every variable-rate shilling loan has moved to a published benchmark plus a disclosed K margin. What changed, what happens to your loan, and how to compare."
 category: Banking & Credit
-date: July 20, 2026
-readTime: 16 min read
+date: 2026-07-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

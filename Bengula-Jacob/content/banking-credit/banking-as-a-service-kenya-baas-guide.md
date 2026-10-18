@@ -1,10 +1,9 @@
 ---
 id: banking-as-a-service-kenya-baas-guide
 title: "Banking-as-a-Service in Kenya: The Complete Guide (2026 Edition)"
-summary: Banking-as-a-Service (BaaS) is restructuring Kenya's financial stack, letting fintechs, SACCOs, and platforms deliver regulated banking products without a banking licence. This guide covers how the ecosystem works, who the key players are, which core banking systems power it, and what to check before committing to a BaaS partner.
+summary: "BaaS lets fintechs and SACCOs offer regulated banking products without a licence. How Kenya's ecosystem works, and what to check before picking a partner."
 category: Banking & Credit
-date: July 1, 2026
-readTime: 16 min read
+date: 2026-07-01
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

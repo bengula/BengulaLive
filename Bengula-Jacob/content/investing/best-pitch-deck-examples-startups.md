@@ -1,10 +1,9 @@
 ---
 id: best-pitch-deck-examples-startups
 title: "Best Pitch Deck Examples from Startups: What They Did Right"
-summary: Twenty pitch decks that raised billions, dissected slide by slide. What Airbnb, Coinbase, Revolut, Brex, and 16 others got right, what they missed, and the one lesson from each deck that applies to your raise.
+summary: "Twenty decks that raised billions, dissected slide by slide: what Airbnb, Coinbase, Revolut, Brex and 16 others got right, and the one lesson from each."
 category: Startup Finance
-date: July 1, 2026
-readTime: 18 min read
+date: 2026-07-01
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

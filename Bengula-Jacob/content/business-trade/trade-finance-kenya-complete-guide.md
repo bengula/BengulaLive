@@ -1,10 +1,9 @@
 ---
 id: trade-finance-kenya-complete-guide
 title: "The Complete Guide to Trade Finance in Kenya: From Order to Payment"
-summary: "Trade finance is not a product. It is the answer to two questions that every cross-border deal asks: who pays first when neither side trusts the other, and who funds the months between paying a supplier and being paid by a customer. This is the full map for Kenyan importers and exporters, from the payment-method ladder and letters of credit to Incoterms, the document file, the landed-cost stack, guarantees, FX, and the regional corridor, with a facility matched to every stage of the trade cycle."
+summary: "Who pays first when neither side trusts the other, and who funds the months between. Letters of credit, Incoterms, landed cost, guarantees, and FX, by stage."
 category: SME Trade Finance
-date: August 1, 2026
-readTime: 34 min read
+date: 2026-08-01
 featured: true
 author:
   name: Bengula Jacob

@@ -1,10 +1,9 @@
 ---
 id: ultimate-guide-to-banking-in-kenya
 title: "The Ultimate Guide To Banking In Kenya (2026 Enterprise Edition)"
-summary: A complete, practical guide to banking in Kenya for business owners, executives, and investors. How the system is tiered, which bank fits your turnover, exactly what you need to open an account, how to structure cash and credit, what the fees really are, whether your money is insured, and the mistakes that quietly cost businesses millions.
+summary: "How Kenya's banking system is tiered, which bank fits your turnover, what you need to open an account, what the fees really are, and if your money is insured."
 category: Banking & Credit
-date: June 20, 2026
-readTime: 16 min read
+date: 2026-06-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

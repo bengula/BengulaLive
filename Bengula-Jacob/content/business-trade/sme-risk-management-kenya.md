@@ -1,10 +1,9 @@
 ---
 id: sme-risk-management-kenya
 title: "The Complete Guide to Risk Management for Kenyan SMEs"
-summary: "Risk management is not a corporate binder exercise. For Kenyan SMEs it is a practical system covering cash and credit, currency, operations, people, cyber-fraud, supply chain, and insurance transfer. This guide builds that system with a risk register template, severity logic, and a weekly operating rhythm."
+summary: "A practical SME risk system covering cash and credit, currency, operations, people, cyber-fraud, supply chain, and insurance, with a risk register template."
 category: SME Finance
-date: July 19, 2026
-readTime: 15 min read
+date: 2026-07-19
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

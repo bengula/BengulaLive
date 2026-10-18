@@ -119,10 +119,10 @@ export default function BlogTab() {
   const articleImage = activePost
     ? activePost.coverImage ?? categoryImage(activePost.category, 1200)
     : undefined;
-  const articleIso =
-    activePost && !isNaN(Date.parse(activePost.date))
-      ? new Date(activePost.date).toISOString()
-      : undefined;
+  // Use the authored calendar date (dateIso), never the formatted `date`:
+  // parsing "August 1, 2026" builds a local-midnight Date, and toISOString then
+  // shifts it back three hours into the previous day for a UTC+3 reader.
+  const articleIso = activePost?.dateIso;
   const articleJsonLd = activePost
     ? {
         '@context': 'https://schema.org',
@@ -228,7 +228,7 @@ export default function BlogTab() {
           <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-xs aspect-[16/7]">
             <img
               src={activePost.coverImage ?? categoryImage(activePost.category, 1200)}
-              alt={activePost.category}
+              alt={activePost.title}
               className="w-full h-full object-cover"
             />
           </div>

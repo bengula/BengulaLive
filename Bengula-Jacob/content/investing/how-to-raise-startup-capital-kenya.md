@@ -1,10 +1,9 @@
 ---
 id: how-to-raise-startup-capital-kenya
 title: "How to Raise Startup Capital in Kenya: The Full Funding Ladder"
-summary: Friends and family money is one rung on a much longer ladder. This guide maps every realistic funding source for a Kenyan startup, bootstrapping, angels, grants, accelerators, venture capital, and debt, what each one costs you, and how to know which rung you are actually standing on.
+summary: "Friends and family money is one rung on a longer ladder. Bootstrapping, angels, grants, accelerators, venture capital, and debt, and what each one costs you."
 category: Startup Finance
-date: July 9, 2026
-readTime: 10 min read
+date: 2026-07-09
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

@@ -1,10 +1,9 @@
 ---
 id: choose-switch-sme-bank-kenya
 title: "How to Choose and Switch Your SME Bank in Kenya"
-summary: "Most Kenyan businesses bank where the owner happened to bank personally, and stay there for a decade without ever testing the decision. This guide gives you a scorecard to judge a bank on the seven things that actually affect an SME, explains when running two banks is rational rather than disorganised, sets out a switch sequence that does not break your facilities or your collections, and names the red flags that justify leaving."
+summary: "A scorecard for the seven things that actually affect an SME's bank, plus a switch sequence that will not break your facilities or your collections."
 category: SME Finance
-date: September 20, 2026
-readTime: 15 min read
+date: 2026-09-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

@@ -1,10 +1,9 @@
 ---
 id: embedded-finance-kenya-guide
 title: "How Embedded Finance Is Reimagining the Point of Payment in Kenya"
-summary: Embedded finance integrates banking products directly into non-financial platforms, eliminating the need for a separate bank interaction. Kenya pioneered this model with M-Pesa in 2007. This guide covers how the ecosystem works, the five use cases reshaping Kenyan commerce, the key players, and what it means for businesses building on top of these rails.
+summary: "Embedded finance puts banking inside non-financial platforms, and Kenya pioneered it with M-Pesa. The five use cases reshaping commerce, and the key players."
 category: Fintech & Banking
-date: July 3, 2026
-readTime: 13 min read
+date: 2026-07-03
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

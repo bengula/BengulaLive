@@ -1,10 +1,9 @@
 ---
 id: mpesa-for-business-paybill-till-kenya
 title: "M-Pesa for Business: Pay Bill vs Buy Goods, Charges, and Reconciliation"
-summary: "Almost every Kenyan business gets paid through M-Pesa, and almost none chooses deliberately between a Pay Bill and a Buy Goods till. The two are priced differently, settle differently, and, above all, reconcile differently. This guide explains which to use, who actually pays the charge, why the account-reference field is the real decision, how to survive the fake-confirmation scam, and when your till becomes visible to KRA."
+summary: "Pay Bill and Buy Goods are priced, settled, and reconciled differently. Which to use, who pays the charge, the fake-confirmation scam, and when KRA sees you."
 category: Fintech & Banking
-date: August 2, 2026
-readTime: 14 min read
+date: 2026-08-02
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

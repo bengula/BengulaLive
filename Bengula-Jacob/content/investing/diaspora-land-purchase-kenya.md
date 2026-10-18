@@ -1,10 +1,9 @@
 ---
 id: diaspora-land-purchase-kenya
 title: "Buying Land From the Diaspora Without Getting Burned"
-summary: "Overseas Kenyans can buy bonds on DhowCSD with relatively clean process. Land is the opposite: remote money, local fraud risk, and family pressure. This guide is a due-diligence and governance playbook for diaspora buyers, not a corridor tip sheet."
+summary: "Bonds on DhowCSD are clean; land is the opposite, with remote money and local fraud risk. A due-diligence and governance playbook for diaspora buyers."
 category: Real Estate
-date: July 19, 2026
-readTime: 13 min read
+date: 2026-07-19
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

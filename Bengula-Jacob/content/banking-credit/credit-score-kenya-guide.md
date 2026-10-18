@@ -1,10 +1,9 @@
 ---
 id: credit-score-kenya-guide
 title: "Your Credit Score in Kenya: How the CRB System Actually Works, and How to Build a Score That Pays"
-summary: Three bureaus hold a file on every borrowing Kenyan, and most people meet theirs only when a loan is declined. This guide explains what the CRBs actually record, how scores are built, the blacklist myth, your legal rights including the free annual report, how digital loans feed the file, and the deliberate way to build a score that prices every future loan cheaper.
+summary: "What the CRBs actually record, how scores are built, the blacklist myth, your right to a free annual report, and how to build a score that prices loans cheaper."
 category: Banking & Credit
-date: July 12, 2026
-readTime: 10 min read
+date: 2026-07-12
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

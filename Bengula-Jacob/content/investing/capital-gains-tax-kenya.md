@@ -1,10 +1,9 @@
 ---
 id: capital-gains-tax-kenya
 title: "Capital Gains Tax in Kenya: Land, Shares, and Selling Your Business"
-summary: "Capital gains tax is the tax most Kenyans meet exactly once, at the end of a transaction they have already emotionally spent. The rate tripled to 15% in 2023, it falls due before the transfer can be registered, and what you actually pay is decided less by the law than by whether you can still prove what you spent on the property a decade ago. This guide covers what triggers it, how the net gain is computed, the exemptions worth knowing before you sign, and why a share sale and an asset sale produce very different tax bills on the same business."
+summary: "CGT tripled to 15% and falls due before a transfer can be registered. What triggers it, how the gain is computed, the exemptions, and share versus asset sales."
 category: Wealth Optimization
-date: August 1, 2026
-readTime: 18 min read
+date: 2026-08-01
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

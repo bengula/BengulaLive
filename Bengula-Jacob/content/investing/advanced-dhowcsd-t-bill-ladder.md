@@ -1,10 +1,9 @@
 ---
 id: advanced-dhowcsd-t-bill-ladder
 title: "Advanced DhowCSD Strategies: Building a T-Bill Rollover Ladder for 91, 182, and 364 Days"
-summary: The DhowCSD registration is the easy part. This guide covers what comes after, building a rollover ladder across the three T-bill tenors so a tranche matures every quarter, running reinvestments through the portal without manual drama, the discount maths behind what you actually pay and receive, and how to read CBK rate moves so the ladder adapts instead of just repeating.
+summary: "Registration is the easy part. Building a rollover ladder across the three T-bill tenors so a tranche matures every quarter, and the discount maths behind it."
 category: Bonds & Bills
-date: July 10, 2026
-readTime: 11 min read
+date: 2026-07-10
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

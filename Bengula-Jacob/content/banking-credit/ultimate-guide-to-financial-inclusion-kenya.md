@@ -1,10 +1,9 @@
 ---
 id: ultimate-guide-to-financial-inclusion-kenya
 title: "The Ultimate Guide to Financial Inclusion in Kenya (2026 Edition)"
-summary: "The complete map of Kenyan financial inclusion: the 2006-2026 journey from 26.7% to 84.8% access, why only 18.3% are financially healthy, the National Financial Inclusion Strategy 2025-2028, county patterns, banks vs SACCOs vs MMFs vs wallets vs investment platforms, microfinance and digital credit, CRB identity, insurance, pensions, investing, literacy, embedded finance, an interactive inclusion score, case studies, and checklists for households, SMEs, farmers, students, and retirees."
+summary: "Kenya's journey from 26.7% to 84.8% access, why only 18.3% are financially healthy, the 2025-2028 strategy, and checklists for households, SMEs, and farmers."
 category: Fintech & Banking
-date: July 17, 2026
-readTime: 55 min read
+date: 2026-07-17
 featured: true
 author:
   name: Bengula Jacob

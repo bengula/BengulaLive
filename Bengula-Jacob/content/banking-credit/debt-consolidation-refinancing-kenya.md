@@ -1,10 +1,9 @@
 ---
 id: debt-consolidation-refinancing-kenya
 title: "Debt Consolidation and Loan Refinancing in Kenya: Collapsing Expensive Debts Into One Survivable One"
-summary: Most Kenyan debt distress is not too much borrowing; it is too many borrowings, at mismatched prices, on colliding schedules. This guide covers when consolidation genuinely saves money and when it just feels better, the buy-off mechanics banks and SACCOs use, the refinancing case in a falling KESONIA cycle, the tenor trap that makes cheaper monthly payments cost more in total, and the arithmetic to run before signing anything.
+summary: "Kenyan debt distress is rarely too much borrowing; it is too many loans at mismatched prices. When consolidation saves money, and the tenor trap."
 category: Banking & Credit
-date: July 12, 2026
-readTime: 10 min read
+date: 2026-07-12
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

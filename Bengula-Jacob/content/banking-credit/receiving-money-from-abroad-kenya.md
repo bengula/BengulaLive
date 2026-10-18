@@ -1,10 +1,9 @@
 ---
 id: receiving-money-from-abroad-kenya
 title: "Receiving Money From Abroad: Remittances, M-Pesa Global, and the Cheapest Way In"
-summary: "Kenya receives billions of dollars in diaspora remittances every year, and a surprising slice of it is lost, not to fees, but to the exchange rate quietly marked against the sender. This guide compares the ways money comes into Kenya, bank wires, mobile money operators, and M-Pesa Global, on the only number that matters: how many shillings actually land. It covers where the money should arrive, the tax question families worry about, and the scams that target the diaspora."
+summary: "Diaspora money is lost less to fees than to the exchange rate. Bank wires, mobile operators, and M-Pesa Global compared on how many shillings actually land."
 category: Banking & Credit
-date: September 20, 2026
-readTime: 14 min read
+date: 2026-09-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

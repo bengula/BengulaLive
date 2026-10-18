@@ -1,10 +1,9 @@
 ---
 id: how-to-move-money-kenya-payment-rails
 title: "How to Move Money in Kenya: M-Pesa, PesaLink, EFT, RTGS, and TT Compared"
-summary: "Every payment you make travels on one of five rails, and picking the wrong one costs you money, time, or the ability to get it back. This guide compares M-Pesa, PesaLink, EFT, RTGS, and international TT on speed, cost, limits, cut-off times, and reversibility, then gives a simple decision tree so the right rail is obvious before you press send."
+summary: "Every payment travels one of five rails. M-Pesa, PesaLink, EFT, RTGS, and TT compared on speed, cost, limits, and reversibility, with a decision tree."
 category: Banking & Credit
-date: August 2, 2026
-readTime: 14 min read
+date: 2026-08-02
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

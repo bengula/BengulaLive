@@ -7,8 +7,7 @@ author:
   name: Bengula Jacob
   role: Founder, Bengula Inc.
   avatar: /images/jacob.jpg
-date: March 11, 2026
-readTime: 9 min read
+date: 2026-03-11
 coverImage: https://loremflickr.com/1600/900/shipping,container?lock=2006
 ---
 

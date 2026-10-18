@@ -1,10 +1,9 @@
 ---
 id: import-finance-kenya-guide
 title: "Import Finance in Kenya: LCs, Import Loans, and Funding the Voyage From Supplier to Shelf"
-summary: Between paying a foreign supplier and selling the goods in Kenya sits a financing gap of 60 to 180 days that kills more importers than competition does. This guide covers the full import toolkit, letters of credit, documentary collections, import loans, duty and clearing finance, the currency hedge that must happen at signing, and a worked consignment showing how the pieces chain together.
+summary: "Between paying a supplier and selling the goods sits a 60-180 day gap. Letters of credit, import loans, duty finance, and the hedge that must happen at signing."
 category: SME Trade Finance
-date: July 12, 2026
-readTime: 11 min read
+date: 2026-07-12
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

@@ -1,10 +1,9 @@
 ---
 id: credit-card-interest-free-period
 title: "How To Calculate Your Credit Card's Interest-Free Period (Up To 50 Days)"
-summary: A card that advertises "up to 50 days interest-free" only hands you all 50 days if you time the purchase to the start of your billing cycle and pay the full balance on time. Here is the simple formula, two worked examples, a calculator to do the maths for you, and the other charges to watch, from annual and late-payment fees to over-limit, cash advance, and foreign exchange fees.
+summary: "'Up to 50 days interest-free' only pays out if you time the purchase and clear the balance. The formula, worked examples, and the fees that erase the benefit."
 category: Banking & Credit
-date: June 18, 2026
-readTime: 10 min read
+date: 2026-06-18
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

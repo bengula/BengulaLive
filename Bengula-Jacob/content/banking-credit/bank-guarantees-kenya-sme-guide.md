@@ -1,10 +1,9 @@
 ---
 id: bank-guarantees-kenya-sme-guide
 title: "Bank Guarantees in Kenya: Bid, Performance, and Advance-Payment Bonds for SMEs"
-summary: "A bank guarantee is not a loan - it is the bank’s promise that stands behind your bid or contract. This guide explains bid bonds, performance guarantees, and advance-payment guarantees, how they are priced and collateralised, the cash they quietly consume, and how to fold them into tender and project margins."
+summary: "A bank guarantee is not a loan. Bid, performance, and advance-payment bonds: how they are priced and collateralised, and the cash they quietly consume."
 category: SME Finance
-date: July 15, 2026
-readTime: 13 min read
+date: 2026-07-15
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

@@ -1,10 +1,9 @@
 ---
 id: what-is-a-cashless-economy
 title: "What Is a Cashless Economy? Kenya's Digital Money Revolution"
-summary: A cashless economy eliminates physical currency from everyday transactions, replacing it with digital payment rails. Kenya is the world's leading proof of concept. This guide covers how a cashless economy works, its five core instruments, the real advantages and risks, and where Kenya's digital payments system is heading next.
+summary: "A cashless economy replaces physical currency with digital rails, and Kenya is the leading proof of concept. The instruments, the risks, and where it goes next."
 category: Fintech & Banking
-date: July 4, 2026
-readTime: 11 min read
+date: 2026-07-04
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

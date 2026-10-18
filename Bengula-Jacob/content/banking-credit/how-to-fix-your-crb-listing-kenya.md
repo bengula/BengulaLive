@@ -1,10 +1,9 @@
 ---
 id: how-to-fix-your-crb-listing-kenya
 title: "How To Check And Fix Your CRB Listing In Kenya"
-summary: A wrong or stale CRB entry can quietly raise the price of every loan you take, yet most Kenyans have never read their own credit report. Here is what a CRB listing really is, how to pull your report, and how to dispute and clear errors so your record stops costing you money.
+summary: "A wrong CRB entry quietly raises the price of every loan. What a listing is, how to pull your report, and how to dispute errors so it stops costing you."
 category: Banking & Credit
-date: June 20, 2026
-readTime: 9 min read
+date: 2026-06-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

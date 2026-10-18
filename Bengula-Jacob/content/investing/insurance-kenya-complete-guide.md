@@ -1,10 +1,9 @@
 ---
 id: insurance-kenya-complete-guide
 title: "The Complete Guide to Insurance in Kenya: What to Buy, What to Skip"
-summary: "Kenya insures 2.2% of its GDP against a global average of 7.4%, and the gap is not simply poverty. It is a market where the products that pay commission get sold and the products that transfer ruin get ignored. This is the full map: what insurance is actually for, every class of cover in one table, how the industry's economics shape what your agent recommends, what the regulator and the compensation fund will and will not do when an insurer fails, how to buy so the claim pays, and the covers most Kenyans are quietly overpaying for."
+summary: "Kenya insures 2.2% of GDP against a global average of 7.4%. Every class of cover in one table, how to buy so the claim pays, and what you are overpaying for."
 category: Wealth Optimization
-date: August 1, 2026
-readTime: 30 min read
+date: 2026-08-01
 featured: true
 author:
   name: Bengula Jacob

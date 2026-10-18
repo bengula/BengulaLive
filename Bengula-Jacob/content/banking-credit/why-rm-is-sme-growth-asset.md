@@ -1,14 +1,13 @@
 ---
 id: why-rm-is-sme-growth-asset
 title: "Why the Banking Relationship Manager is the SME's Most Underrated Growth Asset"
-summary: Most business owners only see the bank when they need a loan. A good Relationship Manager can unlock trade finance lines, structure LPO facilities, and rewire your cash management, if you know how to engage them.
+summary: "Most owners see the bank only when they need a loan. A good relationship manager can unlock trade finance lines, structure LPO facilities, and rewire cash flow."
 category: SME Trade Finance
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-date: June 21, 2026
-readTime: 10 min read
+date: 2026-06-21
 featured: true
 coverImage: https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---

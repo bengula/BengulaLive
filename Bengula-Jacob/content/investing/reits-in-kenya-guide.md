@@ -1,10 +1,9 @@
 ---
 id: reits-in-kenya-guide
 title: "REITs in Kenya: Earning Rental Income Without Buying a Building"
-summary: REITs promise the best part of Kenyan real estate, the income, without the worst parts, the lump sum, the tenants, and the year-long exit. The reality is a young market of five vehicles with very mixed records. This guide explains how I-REITs and D-REITs work, what each Kenyan REIT has actually delivered, how to buy in, the tax treatment, and an honest framework for whether they beat the alternatives.
+summary: "REITs promise the income of Kenyan property without the lump sum or the tenants. How I-REITs and D-REITs work, what each vehicle delivered, and the tax."
 category: Wealth Optimization
-date: July 10, 2026
-readTime: 11 min read
+date: 2026-07-10
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

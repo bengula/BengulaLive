@@ -1,10 +1,9 @@
 ---
 id: digital-growth-kenya-sme-guide
 title: "The Complete Guide to Digital Growth for Kenyan SMEs"
-summary: "Most Kenyan SMEs treat digital growth as a posting problem, so they buy more attention and wonder why revenue does not move. Growth is a chain: attention, enquiry, sale, retention, and the data loop that improves all four. Break any link and everything upstream is wasted spend. This guide diagnoses which link your business is actually leaking at, puts the unit economics behind it so you can tell a growth channel from an expensive habit, covers local search and the Kenyan checkout reality, and gives a 90-day sequence to fix it in the right order."
+summary: "Growth is a chain: attention, enquiry, sale, retention, and the data loop. Diagnosing which link your business actually leaks at, with a 90-day fix sequence."
 category: Digital Strategy
-date: August 1, 2026
-readTime: 30 min read
+date: 2026-08-01
 featured: true
 author:
   name: Bengula Jacob

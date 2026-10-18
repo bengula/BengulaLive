@@ -1,10 +1,9 @@
 ---
 id: foreign-etfs-offshore-investing-kenya
 title: "Foreign ETFs and Offshore Investing From Kenya: Buying the World From Nairobi"
-summary: Every other Kenyan asset shares one risk, Kenya itself. Foreign ETFs are the fix, and the access problem is solved, with platforms routing shillings into global index funds from KES 5,000. This guide covers how the platforms work, the three fee layers to read, the currency effect that can dominate any single year, which funds actually make sense, and the tax and estate wrinkles nobody mentions at signup.
+summary: "Every other Kenyan asset shares one risk: Kenya. How the platforms work, the three fee layers, the currency effect, and the tax wrinkles nobody mentions."
 category: Wealth Optimization
-date: July 10, 2026
-readTime: 11 min read
+date: 2026-07-10
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

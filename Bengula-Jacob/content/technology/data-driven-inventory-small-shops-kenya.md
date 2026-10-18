@@ -1,10 +1,9 @@
 ---
 id: data-driven-inventory-small-shops-kenya
 title: "Data-Driven Inventory: How Small Shops Stop Overstocking Capital"
-summary: "Dead stock is a working-capital problem wearing a retail face. This Excel-first guide shows Kenyan shop owners how to measure stock cover, run-rates, and reorder points, free cash from shelves, and graduate to dashboards only after the maths works on a spreadsheet."
+summary: "Dead stock is a working-capital problem wearing a retail face. Measuring stock cover, run-rates, and reorder points in Excel before buying any dashboard."
 category: Digital Strategy
-date: July 19, 2026
-readTime: 12 min read
+date: 2026-07-19
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

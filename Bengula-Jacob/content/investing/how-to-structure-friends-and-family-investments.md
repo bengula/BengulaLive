@@ -1,10 +1,9 @@
 ---
 id: how-to-structure-friends-and-family-investments
 title: "How to Structure Friends and Family Investments in Kenya"
-summary: Friends and family money is the first capital most Kenyan founders raise, and the easiest to mismanage. This guide covers the right instrument, documentation, and communication discipline to keep the money and the relationship intact.
+summary: "The first capital most Kenyan founders raise, and the easiest to mismanage. The right instrument, the documentation, and the discipline that keeps both intact."
 category: Startup Finance
-date: July 1, 2026
-readTime: 7 min read
+date: 2026-07-01
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

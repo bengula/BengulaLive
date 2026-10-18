@@ -7,8 +7,7 @@ author:
   name: Bengula Jacob
   role: Keynote Speaker
   avatar: /images/jacob.jpg
-date: May 02, 2025
-readTime: 8 min read
+date: 2025-05-02
 coverImage: https://images.pexels.com/photos/12851969/pexels-photo-12851969.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 

@@ -1,10 +1,9 @@
 ---
 id: borrowing-money-in-kenya-guide
 title: "The Complete Guide to Borrowing Money in Kenya: Every Loan, Every Lender, Every Rule"
-summary: The definitive reference for Kenyan borrowers. Every loan type from mobile apps to mortgages, banks versus SACCOs versus digital lenders honestly compared, how interest really works, APR versus the Total Cost of Credit, the CRB system, guarantors, what actually happens in default and debt collection, the Duplum Rule and your other legal protections, restructuring and consolidation, and the comparison framework that turns any loan offer into a decision.
+summary: "Every Kenyan loan type, lender, and rule in one reference: APR versus total cost of credit, the CRB system, guarantors, default, and the Duplum Rule."
 category: Banking & Credit
-date: July 12, 2026
-readTime: 40 min read
+date: 2026-07-12
 featured: true
 author:
   name: Bengula Jacob

@@ -7,8 +7,7 @@ author:
   name: Bengula Jacob
   role: Senior Portfolio Advisor
   avatar: /images/jacob.jpg
-date: Oct 12, 2025
-readTime: 8 min read
+date: 2025-10-12
 coverImage: https://images.pexels.com/photos/259065/pexels-photo-259065.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 

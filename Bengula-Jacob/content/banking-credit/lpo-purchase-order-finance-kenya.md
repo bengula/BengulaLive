@@ -1,10 +1,9 @@
 ---
 id: lpo-purchase-order-finance-kenya
 title: "LPO and Purchase Order Finance in Kenya: Funding the Order Your Balance Sheet Cannot"
-summary: The most Kenyan of financing problems is winning an order bigger than your cash. LPO finance funds fulfilment against the strength of the order and its buyer. This guide covers the full mechanics, government versus corporate LPOs, the margin arithmetic that decides whether the deal survives the fee, the fraud patterns lenders screen for, and how financed orders compound into cheaper limits.
+summary: "Winning an order bigger than your cash is the most Kenyan financing problem. LPO finance mechanics, the margin arithmetic, and the fraud lenders screen for."
 category: SME Finance
-date: July 12, 2026
-readTime: 10 min read
+date: 2026-07-12
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

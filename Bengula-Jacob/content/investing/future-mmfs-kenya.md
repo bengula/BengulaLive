@@ -7,8 +7,7 @@ author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
   avatar: /images/jacob.jpg
-date: April 18, 2026
-readTime: 8 min read
+date: 2026-04-18
 coverImage: https://images.pexels.com/photos/7054801/pexels-photo-7054801.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 

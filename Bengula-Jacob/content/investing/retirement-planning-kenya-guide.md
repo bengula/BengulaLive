@@ -1,10 +1,9 @@
 ---
 id: retirement-planning-kenya-guide
 title: "Retirement Planning in Kenya: NSSF, Personal Pensions, and Turning Savings Into Income"
-summary: Kenya has no universal state pension, most workers are informal, and people are living longer, which makes retirement the one financial goal you cannot borrow your way out of. This guide covers the three-pillar system, the February 2026 NSSF tiers, the tax relief that pays you to save, how much capital you actually need, and how to convert a lifetime of contributions into monthly income through annuities or drawdown.
+summary: "Kenya has no universal state pension. The three-pillar system, the February 2026 NSSF tiers, the tax relief that pays you to save, and the capital you need."
 category: Wealth Optimization
-date: July 12, 2026
-readTime: 13 min read
+date: 2026-07-12
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

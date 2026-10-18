@@ -1,10 +1,9 @@
 ---
 id: check-off-salary-loans-kenya
 title: "Check-Off and Salary Loans: The Payslip Product Most Kenyans Under-Compare"
-summary: "The check-off loan is the cheapest mainstream unsecured credit a salaried Kenyan can access, and the one borrowers compare least before signing. This guide covers how payroll-deduction lending is actually priced, the one-third of your pay the law protects, employer schemes versus open-market check-off versus the SACCO multiplier, the double-deduction month that ambushes refinancers, and why a clean check-off history is an asset in itself."
+summary: "The cheapest unsecured credit a salaried Kenyan can get, and the least compared. Pricing, the one-third rule, SACCO multipliers, and the double-deduction month."
 category: Banking & Credit
-date: July 20, 2026
-readTime: 15 min read
+date: 2026-07-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

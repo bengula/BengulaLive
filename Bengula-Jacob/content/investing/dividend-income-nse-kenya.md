@@ -1,10 +1,9 @@
 ---
 id: dividend-income-nse-kenya
 title: "Dividend Income on the NSE: Building a Payout Sleeve Without Chasing Yield"
-summary: "A share can pay you twice: through its price and through its dividend. For an income investor the dividend is the point, but a high advertised yield is as often a warning as a reward. This guide separates dividend yield from total return, shows how to test whether a payout is sustainable, explains the withholding tax on Kenyan dividends, and positions an equity income sleeve honestly next to bonds and money-market funds."
+summary: "A high advertised yield is as often a warning as a reward. Dividend yield versus total return, testing whether a payout is sustainable, and the withholding tax."
 category: Wealth Optimization
-date: July 26, 2026
-readTime: 14 min read
+date: 2026-07-26
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

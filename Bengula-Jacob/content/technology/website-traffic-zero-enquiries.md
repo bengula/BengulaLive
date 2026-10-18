@@ -1,10 +1,9 @@
 ---
 id: website-traffic-zero-enquiries
 title: "Why Your Website Gets Traffic but Zero Enquiries"
-summary: Traffic is not the same as demand. Here is why Kenyan business websites attract visitors but fail to generate calls, WhatsApp chats, and qualified enquiries, and how to fix the conversion leaks.
+summary: "Traffic is not demand. Why Kenyan business websites attract visitors but no calls, WhatsApp chats, or qualified enquiries, and how to fix the conversion leaks."
 category: Digital Strategy
-date: June 21, 2026
-readTime: 8 min read
+date: 2026-06-21
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
@@ -178,7 +177,7 @@ If you would like an outside read on where your own site is leaking enquiries, t
 ### Related Reading
 - [How to Connect Business Data to Digital Visibility and Actually Grow](/blog/bengula-inc-linkedin-company-profile). Using real business numbers to drive what you publish, who you target, and how you convert.
 - [A to Z of Customer Avatars: Buyer Persona Creation](/blog/archive-customer-avatars-buyer-persona). Defining who the page is speaking to before writing the offer.
-- [Stop Wasting Money on AI Detectors](/blog/AI-detectors). Why practical digital decisions need better evidence than shallow signals.
+- [Stop Wasting Money on AI Detectors](/blog/ai-detectors). Why practical digital decisions need better evidence than shallow signals.
 
 ### References
 - Bengula Inc: [The Complete Guide to Digital Growth for Kenyan SMEs](/blog/digital-growth-kenya-sme-guide). The hub: the five-link chain, the arithmetic that shows why fixing conversion beats buying traffic, and the 90-day sequence.

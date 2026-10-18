@@ -1,10 +1,9 @@
 ---
 id: new-business-banking-journey-kenya
 title: "From Registration to First Facility: The New Business Banking Journey in Kenya"
-summary: "Before a bank proposal and before loan pricing comes the unglamorous sequence every serious SME must walk: register, tax-identify, open the right accounts, build a bankable trail, then ask for the right first facility. This is chapter zero of Kenyan business banking."
+summary: "The sequence every serious SME walks: register, tax-identify, open the right accounts, build a bankable trail, then ask for the right first facility."
 category: Banking & Credit
-date: July 19, 2026
-readTime: 13 min read
+date: 2026-07-19
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

@@ -1,10 +1,9 @@
 ---
 id: how-kenyan-banks-price-loans
 title: "How Kenyan Banks Price Your Loan: The Base Rate Plus 'K' Margin Explained"
-summary: Two people can walk into the same bank, ask for the same loan, and be quoted very different rates. Under Kenya's risk-based credit pricing framework, your rate is a base rate plus a bank-set "K" margin built from real cost components. Here is exactly what goes into that number, and the levers you actually control.
+summary: "Same bank, same loan, different rates. Under risk-based pricing your rate is a base rate plus a bank-set K margin: what goes into it, and the levers you hold."
 category: Banking & Credit
-date: June 18, 2026
-readTime: 10 min read
+date: 2026-06-18
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

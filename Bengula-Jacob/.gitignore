@@ -20,3 +20,6 @@ __pycache__/
 
 # generated internal documents (not deployed)
 internal-docs/
+
+# Obsidian vault settings (workspace.json churns on every session)
+content/.obsidian/

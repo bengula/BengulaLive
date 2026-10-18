@@ -1,10 +1,9 @@
 ---
 id: retirement-income-annuity-drawdown-kenya
 title: "Turning a Pension Into Income in Kenya: Annuity, Drawdown, or a Bond Ladder"
-summary: "Kenyan retirement advice stops at the moment it gets hard. You reach retirement with a pot, and nobody tells you how to turn it into income that lasts as long as you do. This guide covers the decision itself: the three risks you are actually managing, what the Finance Act 2025 changed about tax on your benefits, how annuities, regulated income drawdown and a self-managed bond ladder genuinely differ, and what each one leaves behind for your family."
+summary: "You reach retirement with a pot and nobody says how to turn it into lasting income. Annuity, regulated drawdown, or a bond ladder, and what each leaves behind."
 category: Wealth Optimization
-date: September 20, 2026
-readTime: 18 min read
+date: 2026-09-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

@@ -1,10 +1,9 @@
 ---
 id: tax-compliance-cash-kenya-guide
 title: "Tax, Compliance, and Cash in Kenya: What Earners and SMEs Actually Keep"
-summary: "Kenyans compute their taxes one at a time and never add them up. This is the hub that does: the three families of tax, the distinction between money you collected on somebody else's behalf and money assessed on your own profit, a complete filing calendar, the penalty table across every tax head, and why a tax compliance certificate is a commercial asset rather than a chore. It links out to the deep-dives on PAYE, VAT, turnover tax and capital gains rather than repeating them, and answers the question none of them answers alone: what does the whole stack actually cost you?"
+summary: "Kenyans compute taxes one at a time and never add them up. The three families of tax, a full filing calendar, the penalty table, and what the whole stack costs."
 category: Wealth Optimization
-date: August 1, 2026
-readTime: 31 min read
+date: 2026-08-01
 featured: true
 author:
   name: Bengula Jacob

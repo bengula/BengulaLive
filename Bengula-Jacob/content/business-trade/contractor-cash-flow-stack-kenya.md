@@ -1,10 +1,9 @@
 ---
 id: contractor-cash-flow-stack-kenya
 title: "Contractor Cash Flow: Guarantees, Mobilisation, Progress Claims, and Retention"
-summary: "A construction or supply contract can be profitable on paper and ruin the contractor who wins it, because the cash goes out long before it comes in. This guide maps the contractor's cash cycle end to end: pricing bid, performance, and advance guarantees into the margin, funding mobilisation, surviving the progress-certificate lag, and getting retention back. It stitches guarantees, LPO finance, and AGPO cash-flow tools into one operating system."
+summary: "A contract can be profitable and still ruin the contractor, because the cash leaves before it arrives. Guarantees, mobilisation, progress claims, and retention."
 category: SME Trade Finance
-date: July 26, 2026
-readTime: 15 min read
+date: 2026-07-26
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

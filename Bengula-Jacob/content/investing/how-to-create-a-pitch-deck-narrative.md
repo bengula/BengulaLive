@@ -1,10 +1,9 @@
 ---
 id: how-to-create-a-pitch-deck-narrative
 title: "How to Create a Pitch Deck Narrative That Raises Money"
-summary: Most Kenyan founders treat a pitch deck as a slide checklist. Investors fund stories, not checklists. This guide covers the narrative structure behind the decks that raised billions, and how to build yours from problem to ask.
+summary: "Most founders treat a deck as a slide checklist, but investors fund stories. The narrative structure behind decks that raised billions, from problem to ask."
 category: Startup Finance
-date: July 1, 2026
-readTime: 11 min read
+date: 2026-07-01
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

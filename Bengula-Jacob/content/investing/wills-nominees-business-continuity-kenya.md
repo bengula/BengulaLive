@@ -1,10 +1,9 @@
 ---
 id: wills-nominees-business-continuity-kenya
 title: "Wills, Nominees, and Business Continuity in Kenya: What Happens When an Owner Dies"
-summary: "Most Kenyan estates are not divided by the family's wishes. They are divided by a default rule in the Law of Succession Act that almost nobody has read, and by nomination forms signed years ago and never revisited. This guide sets out what the law actually does when there is no will, why a SACCO nomination and a pension nomination behave completely differently, what happens to a business bank account the day the owner dies, and the short continuity list that keeps a one-owner SME alive."
+summary: "Most Kenyan estates are divided by a default rule nobody has read. What the law does without a will, how nominations differ, and a continuity list for an SME."
 category: Wealth Optimization
-date: September 20, 2026
-readTime: 17 min read
+date: 2026-09-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

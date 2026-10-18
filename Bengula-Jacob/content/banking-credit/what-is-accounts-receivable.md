@@ -1,10 +1,9 @@
 ---
 id: what-is-accounts-receivable
 title: "What Is Accounts Receivable and Why It Decides Your Business Survival"
-summary: Accounts receivable is money owed to your business for goods or services already delivered. For most Kenyan SMEs, it is also the single biggest source of cash flow risk. This guide covers what AR is, how to manage it, how to finance it, and the collection practices that separate businesses that grow from those that stall.
+summary: "Receivables are money already earned but not yet paid, and the biggest cash-flow risk most Kenyan SMEs carry. How to manage it, finance it, and collect it."
 category: SME Finance
-date: July 3, 2026
-readTime: 11 min read
+date: 2026-07-03
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

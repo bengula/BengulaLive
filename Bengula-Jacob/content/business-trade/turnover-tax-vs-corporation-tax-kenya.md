@@ -1,10 +1,9 @@
 ---
 id: turnover-tax-vs-corporation-tax-kenya
 title: "Turnover Tax vs Corporation Tax: Which Regime Should Your Business Be In?"
-summary: "Turnover tax is marketed as the simple option for small businesses, and for a shop earning a fat margin it genuinely is. For a high-volume, thin-margin trader it is a punishment, because 1.5% of gross sales is charged whether or not there was a profit to tax. The regime choice is decided by net margin, not revenue, and the crossover is a number you can calculate in one line. This guide runs the arithmetic both ways, explains the exclusion that quietly disqualifies most consultants, and covers the election that lets you leave."
+summary: "Turnover tax charges 1.5% of gross sales whether or not you profited. The choice is decided by net margin, not revenue, and the crossover is one calculation."
 category: SME Finance
-date: August 1, 2026
-readTime: 17 min read
+date: 2026-08-01
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

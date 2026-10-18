@@ -1,10 +1,9 @@
 ---
 id: islamic-banking-kenya-murabaha-musharaka-hajj-savings
 title: "Islamic Banking in Kenya: Murabaha, Musharaka, Hajj Savings, and What Customers Should Check"
-summary: Islamic banking in Kenya is not simply conventional banking with Arabic names. This guide explains how Shariah-compliant accounts and financing work, where murabaha and musharaka fit, and how to evaluate specialised products such as Hajj savings plans before you sign.
+summary: "Islamic banking is not conventional banking with Arabic names. How Shariah-compliant accounts work, where murabaha and musharaka fit, and judging Hajj plans."
 category: Banking & Credit
-date: June 23, 2026
-readTime: 14 min read
+date: 2026-06-23
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

@@ -1,10 +1,9 @@
 ---
 id: how-to-build-an-accurate-startup-budget
 title: "How to Build an Accurate Startup Budget in Kenya"
-summary: Most startup budgets fail because founders guess instead of building from real numbers. This guide covers fixed costs, variable costs, three-scenario planning, cash flow discipline, and the monthly habit that separates businesses that survive from those that don't.
+summary: "Most startup budgets fail because founders guess instead of building from real numbers. Fixed costs, variable costs, three scenarios, and the monthly habit."
 category: Startup Finance
-date: July 1, 2026
-readTime: 6 min read
+date: 2026-07-01
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

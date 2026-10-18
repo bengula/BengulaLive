@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite-react-ssg dev",
-    "build": "vite-react-ssg build && node scripts/gen-sitemap.mjs",
-    "build:web": "vite-react-ssg build && node scripts/gen-sitemap.mjs",
+    "build": "vite-react-ssg build && node scripts/gen-sitemap.mjs && node scripts/gen-feed.mjs",
+    "build:web": "vite-react-ssg build && node scripts/gen-sitemap.mjs && node scripts/gen-feed.mjs",
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "update-rates": "node scripts/update-rates.mjs",

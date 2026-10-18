@@ -1,10 +1,9 @@
 ---
 id: digital-assets-kenya-regulation-tax
 title: "Digital Assets in Kenya: The Law, the Tax, and the Risks That Remain"
-summary: "Kenya stopped ignoring crypto. The Virtual Asset Service Providers Act came into force in November 2025, the punitive 3% Digital Asset Tax was repealed, and from July 2026 platforms must report their users to KRA. This guide sets out who regulates what, what you actually owe, why stablecoins matter more here than speculation does, and the platform and custody risks that regulation has not removed."
+summary: "The Virtual Asset Service Providers Act is in force, the 3% Digital Asset Tax is repealed, and from July 2026 platforms report users to KRA. Who regulates what."
 category: Rates & Policy
-date: September 20, 2026
-readTime: 16 min read
+date: 2026-09-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

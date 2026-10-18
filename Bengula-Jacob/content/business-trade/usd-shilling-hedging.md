@@ -4,8 +4,7 @@ id: usd-shilling-hedging
 title: "Hedging USD/KES: Practical Treasury Strategies for Kenyan Exporters"
 summary: How mid-sized exporters can use forward contracts, multi-currency accounts, and matching cash-flows to protect profit margins against shilling volatility.
 category: SME Trade Finance
-date: June 20, 2026
-readTime: 12 min read
+date: 2026-06-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

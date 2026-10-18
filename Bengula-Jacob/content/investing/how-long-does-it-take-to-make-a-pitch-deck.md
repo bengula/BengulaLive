@@ -1,10 +1,9 @@
 ---
 id: how-long-does-it-take-to-make-a-pitch-deck
 title: "How Long Does It Take to Make a Pitch Deck? A Realistic Timeline"
-summary: Building a pitch deck takes between one day and three months, depending on what you already know, who is helping you, and how many iterations investors force you through. This guide breaks down realistic timelines by stage, the tasks that take longest, and how to cut the timeline without cutting corners.
+summary: "A deck takes a day to three months depending on what you know and how many iterations investors force. Realistic timelines by stage, and what takes longest."
 category: Startup Finance
-date: July 9, 2026
-readTime: 7 min read
+date: 2026-07-09
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

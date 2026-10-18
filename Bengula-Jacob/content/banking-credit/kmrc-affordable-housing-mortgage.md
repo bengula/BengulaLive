@@ -2,10 +2,9 @@
 coverImage: https://images.pexels.com/photos/7489107/pexels-photo-7489107.jpeg?auto=compress&cs=tinysrgb&w=1600
 id: kmrc-affordable-housing-mortgage
 title: "Accessing KMRC Mortgages: Single-Digit Home Loans in Kenya"
-summary: A practical, in-depth guide on how to qualify for a Kenya Mortgage Refinance Company (KMRC) backed loan, participating banks and SACCOs, and its role in affordable housing.
+summary: "How to qualify for a KMRC-backed loan, the participating banks and SACCOs, and the scheme's role in Kenya's affordable housing market."
 category: Real Estate
-date: June 20, 2026
-readTime: 12 min read
+date: 2026-06-20
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

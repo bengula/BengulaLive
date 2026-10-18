@@ -1,10 +1,9 @@
 ---
 id: sme-financial-ratios-kenya
 title: "Financial Ratios Every SME Owner Should Know: The Seven Numbers That Explain Your Business"
-summary: "Your accounts hold the answer to almost every question you have about your business, but only if you know which numbers to divide by which. This guide walks seven ratios that turn a set of statements into a diagnosis: gross and net margin, the current ratio, leverage, return on assets and equity, and the cash conversion cycle, each with a formula and a single worked Kenyan example you can copy straight into your own spreadsheet."
+summary: "Seven ratios that turn statements into a diagnosis: margins, the current ratio, leverage, returns, and the cash conversion cycle, each worked in Kenyan figures."
 category: SME Finance
-date: July 12, 2026
-readTime: 13 min read
+date: 2026-07-12
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
