@@ -18,7 +18,7 @@ There is a strange silence in Kenyan money writing. We explain how to get a loan
 
 That silence is expensive, because the process that follows a default is not arbitrary. It is a sequence, it is written down, and most of it moves slowly enough that an informed borrower has real choices at several points. People lose property not because the law is merciless but because they did not know which rung of the ladder they were standing on, and so they did nothing until they were standing on the last one.
 
-This guide walks the whole ladder, from the first missed instalment to the last day a judgment can be enforced. It is the hub for a cluster: separate pieces on what a creditor cannot take, and on what a write-off really means, follow it, and this article deliberately stops short of the detail those will own.
+This guide walks the whole ladder, from the first missed instalment to the last day a judgment can be enforced. It is the hub for a cluster, and it deliberately stops short of the detail the companion pieces own: [what a creditor cannot take](/blog/protected-property-attachment-kenya), [what collectors and auctioneers are allowed to do](/blog/debt-collectors-auctioneers-rules-kenya), [what a write-off really means](/blog/written-off-debt-limitation-kenya), and [what happens when debts exceed assets](/blog/insolvency-bankruptcy-business-rescue-kenya).
 
 > **Key Insight:** Almost everything people fear about default sits at the bottom of the ladder, and almost every opportunity to change the outcome sits at the top. The auctioneer at the gate is the end of a process that began months earlier with a letter that went unanswered. The single most valuable thing in this article is not the law on attachment. It is the fact that a creditor must climb every rung in order, and that each rung takes time you can use.
 
@@ -49,13 +49,13 @@ This stage is badly misunderstood. Borrowers treat the calls as the problem and 
 
 If the pressure is coming from several lenders at once, the shape of the problem matters more than any single conversation. Work out whether this is a liquidity problem or a solvency problem before you negotiate with anyone. The [13-week cash forecast](/blog/13-week-cash-forecast-kenya-sme) is the tool for that, and [debt consolidation and refinancing](/blog/debt-consolidation-refinancing-kenya) is the route if the answer is that the debt is serviceable but badly structured.
 
-A word on collectors, because the question always comes up. **Kenya has no standalone debt collectors statute and no debt collector's licence.** What binds a collector comes from four different places: the Central Bank of Kenya's Digital Credit Providers Regulations 2022, which licence and supervise digital lenders; the Business Laws (Amendment) Act 2024, which extends CBK supervision across credit providers and outlaws digital debt-shaming; the Data Protection Act 2019, enforced by the Office of the Data Protection Commissioner; and the Auctioneers Act and Rules, which bind auctioneers only. The Data Protection Act is where harassment actually gets punished in practice. The ODPC has fined a digital credit provider KES 2,975,000 for using contact details harvested from third parties to send threatening debt-recovery messages, and fined another operator KES 250,000 in March 2025 for listing a person as a loan guarantor without consent. If you are being contacted through your relatives, your employer or your phone contacts, that is a data protection complaint, not a banking complaint.
+A word on collectors, because the question always comes up. **Kenya has no standalone debt collectors statute and no debt collector's licence.** What binds a collector comes from four different places: the Central Bank of Kenya's Digital Credit Providers Regulations 2022, which licence and supervise digital lenders; the Business Laws (Amendment) Act 2024, which extends CBK supervision across credit providers and outlaws digital debt-shaming; the Data Protection Act 2019, enforced by the Office of the Data Protection Commissioner; and the Auctioneers Act and Rules, which bind auctioneers only. The Data Protection Act is where harassment actually gets punished in practice. The ODPC has fined a digital credit provider KES 2,975,000 for using contact details harvested from third parties to send threatening debt-recovery messages, and fined another operator KES 250,000 in March 2025 for listing a person as a loan guarantor without consent. If you are being contacted through your relatives, your employer or your phone contacts, that is a data protection complaint, not a banking complaint. The full map of what each rulebook allows is in [debt collectors and auctioneers](/blog/debt-collectors-auctioneers-rules-kenya).
 
 ### Part 2: The CRB Listing Is Not Enforcement
 
 A credit bureau listing feels like punishment and is often described as one. It is not a step in enforcement. It does not transfer any property, it does not create any obligation, and it does not entitle anyone to take anything. It is a record.
 
-It matters for your access to credit, and the process for correcting an inaccurate one is a separate subject handled in [how to fix your CRB listing](/blog/how-to-fix-your-crb-listing-kenya). Two points belong here and only here. A listing can coexist with a perfectly current negotiation, so being listed does not mean talks have failed. And clearing a listing does not extinguish the debt, which is a confusion so common it gets its own treatment in the piece on write-offs.
+It matters for your access to credit, and the process for correcting an inaccurate one is a separate subject handled in [how to fix your CRB listing](/blog/how-to-fix-your-crb-listing-kenya). Two points belong here and only here. A listing can coexist with a perfectly current negotiation, so being listed does not mean talks have failed. And clearing a listing does not extinguish the debt, which is a confusion so common it gets its own treatment in [the piece on write-offs](/blog/written-off-debt-limitation-kenya).
 
 ### Part 3: The Suit, and Which Court Hears It
 
@@ -91,39 +91,17 @@ A decree holder chooses how to enforce. The main routes:
 
 ### Part 5: What a Creditor Cannot Take
 
-Section 44 of the Civil Procedure Act, Cap 21, states the general rule and then carves out a list. The general rule is broad: all property belonging to a judgment debtor, including property held in someone else's name on his behalf, is liable to attachment and sale.
+Section 44 of the Civil Procedure Act, Cap 21, states a broad general rule: all property belonging to a judgment debtor, including property held in someone else's name on his behalf, is liable to attachment and sale. It then carves out a list of exemptions, covering among other things necessary clothing, cooking vessels and bedding, the tools needed for your trade, books of accounts and certain pensions.
 
-The exemptions are where the practical protection lives. Property **not** liable to attachment includes:
-
-- necessary wearing apparel, cooking vessels, beds and bedding of the debtor, his wife and children, and personal ornaments a woman cannot be parted from under religious usage
-- the tools and implements necessary for the performance of his trade or profession
-- books of accounts
-- a right to sue for damages, and a right of personal service
-- stipends and gratuities of government pensioners, service family pension fund payments, and political pensions
-- a contingent or possible right or interest, including an expectancy of succession by survivorship
-- a right of future maintenance
-- any fund or allowance declared exempt by any other law
-- **two thirds of the salary of a public officer or other person in employment**
-
-That last one is the rule everybody has heard and most people state backwards. Two thirds of salary is **protected**. One third is exposed.
+The one everybody has heard, and most people state backwards, is salary. **Two thirds of the salary of a person in employment is protected.** One third is exposed.
 
 $$ \text{Maximum attachable from salary} = \frac{1}{3} \times \text{Salary} $$
 
 On a salary of KES 90,000, the most that can be reached by attachment is KES 30,000, and KES 60,000 is beyond the creditor's reach no matter how large the decree.
 
-Now the part nobody tells you. The section also protects an agriculturalist's means of production, and it does so in figures that were set by amendments in 1969 and 1981 and have **never been uprated**:
+The rest of the list is uneven in ways that matter. The protection attaches to salary, so the self-employed have no equivalent. Tools of trade are protected without a cash limit, while a farmer's livestock, equipment and produce are protected only up to ceilings set in 1969 and 1981 and never uprated. Retirement savings get a stronger shield from two separate statutes than anything in section 44. And none of it applies itself: an exemption has to be claimed, through an objection procedure that runs on a seven day clock.
 
-| Protected category, agriculturalist | Statutory ceiling |
-|---|---:|
-| Livestock | First **KES 10,000** in value |
-| Implements, tools, utensils, plant and machinery for stock, dairy or crop production | First **KES 5,000** in value |
-| Agricultural produce necessary to earn a livelihood | First **KES 1,000** in value |
-
-Read those numbers against any real Kenyan farm in 2026. One dairy cow exhausts the livestock protection. A single water pump exhausts the equipment protection. The provision that is supposed to stop a creditor stripping a farmer of the ability to farm has been quietly hollowed out by fifty years of inflation, and it is still the operative law. No popular explainer of this subject mentions it.
-
-One drafting relic worth knowing if you read the section yourself: section 44(2) still refers to the Armed Forces Act, Cap 199, which the Kenya Defence Forces Act 2012 replaced. The cross-reference is stale; the point survives.
-
-The full treatment of protected property, including how the exemptions are argued in practice, is the subject of the next article in this cluster.
+All of that, including the farmer's ceilings and the objection procedure step by step, is set out in [what a creditor cannot take](/blog/protected-property-attachment-kenya).
 
 ### Part 6: The Auctioneer, and the Clock You Did Not Know You Had
 
@@ -131,7 +109,7 @@ An auctioneer acting on a court warrant or a letter of instruction works to the 
 
 For **movable property** other than perishables and livestock, the auctioneer must prepare a proclamation on the prescribed form, setting out the specific items, their value and their condition, with the inventory signed by the owner or by an adult residing or working at the premises. The owner is then entitled to a written notice period, reported as seven days on the prescribed sale form, within which the goods may be redeemed by paying the amount set out in the warrant or letter of instruction.
 
-For **immovable property**, the timetable is longer and involves newspaper advertisement, with the sale to be arranged no earlier than fourteen days after the first advertisement.
+For **immovable property**, the timetable is much longer. Under rule 15, the auctioneer must give the owner written notice of **not less than forty five days** within which the property may be redeemed by paying the amount in the warrant or letter of instruction. Only once that notice expires unpaid can the sale be arranged, and then **no earlier than fourteen days after the first newspaper advertisement**. Taken together, that is roughly two months between notice and the earliest possible sale.
 
 Those periods are stated as at September 2026 from the Auctioneers Rules 1997 and secondary summaries of them. Confirm the current rule text before relying on a specific day count, and if an auctioneer is at your gate, the date on the proclamation is the first thing to photograph.
 
@@ -163,9 +141,9 @@ Two different clocks run, and people conflate them.
 
 The **limitation clock** is in section 4(4) of the Limitation of Actions Act, Cap 22. An action may not be brought upon a judgment after **twelve years** from the date the judgment was delivered, or from the date of default where the judgment directed payment at a particular date or at recurring intervals. Separately, **arrears of interest on a judgment debt cannot be recovered after six years** from the date the interest became due. Note the asymmetry: the principal judgment has a long tail, the interest arrears a shorter one.
 
-That section governs bringing an action **upon** a judgment. The execution timeline engages Order 22 of the Rules as well, and courts have generally run time from the last attempt at execution rather than from the original decree. Treat twelve years as the outer horizon and take advice on the execution position in any specific case.
+Kenyan courts treat execution of a decree as an action upon the judgment, so the same twelve years caps enforcement itself. The leading authority is the Court of Appeal's decision in *M'Ikiara M'Rinkanya & another v Gilbert Kabeere M'Mbijiwe* (Civil Appeal 124 of 2003), which held that a decree must be enforced before the twelve year period expires. Time runs from the date of the judgment, or from the relevant default where payment was directed in instalments, and a failed or abandoned attempt at execution does not restart it.
 
-The **accounting clock** is entirely separate and is the source of the single most damaging misconception in this whole area. When a lender writes a debt off, it is making an entry in its own books to reflect that it no longer expects to collect. It is not forgiving you. The obligation survives a write-off, the file can be sold to somebody else, and enforcement can continue. "Written off" and "written away" are different things, and the gap between them is the subject of the next article but one in this cluster.
+The **accounting clock** is entirely separate and is the source of the single most damaging misconception in this whole area. When a lender writes a debt off, it is making an entry in its own books to reflect that it no longer expects to collect. It is not forgiving you. The obligation survives a write-off, the file can be sold to somebody else, and enforcement can continue. "Written off" and "written away" are different things, and the gap between them is the subject of [written off is not written away](/blog/written-off-debt-limitation-kenya).
 
 ```cards
 - icon: ShieldCheck
@@ -176,8 +154,8 @@ The **accounting clock** is entirely separate and is the source of the single mo
 - icon: Percent
   title: Two Thirds Is Yours
   desc: Only one third of a salary can be reached by attachment. The protection is automatic, but it does not apply itself if you never raise it.
-  linkText: How banks price loans
-  linkUrl: /blog/how-kenyan-banks-price-loans
+  linkText: Protected property
+  linkUrl: /blog/protected-property-attachment-kenya
   type: amber
 - icon: Landmark
   title: Complaints Have a Home
@@ -197,7 +175,7 @@ The **accounting clock** is entirely separate and is the source of the single mo
 
 **Is the pressure coming through your contacts, your employer or your family?** That is a data protection complaint to the ODPC, and it runs in parallel with everything else. It does not reduce the debt, but it stops the conduct.
 
-**Is the problem solvency rather than liquidity?** If the arithmetic does not work at any repayment level, the enforcement ladder is the wrong frame entirely, and the insolvency route becomes the relevant conversation. That is its own article in this cluster.
+**Is the problem solvency rather than liquidity?** If the arithmetic does not work at any repayment level, the enforcement ladder is the wrong frame entirely, and the insolvency route becomes the relevant conversation. That is covered in [when debts exceed assets](/blog/insolvency-bankruptcy-business-rescue-kenya).
 
 ### Bengula View
 
@@ -229,11 +207,16 @@ If you are somewhere on this ladder right now, the useful question is not how ba
 
 **They are calling my relatives and my boss. Is that legal?** Processing your contacts' data to pressure you engages the Data Protection Act 2019 and is a complaint to the ODPC, which has imposed fines in the millions of shillings for exactly this conduct.
 
-**How long can a judgment be enforced against me?** Section 4(4) of the Limitation of Actions Act sets twelve years for an action upon a judgment, and six years for arrears of interest on a judgment debt. The execution position in a specific case depends on the history of attempts and warrants advice.
+**How long can a judgment be enforced against me?** Twelve years from the date of the judgment, under section 4(4) of the Limitation of Actions Act, and the Court of Appeal has held that execution itself must happen within that period. Arrears of interest on a judgment debt cannot be recovered after six years.
 
 ### Related Reading
 
 - [The Complete Guide to Borrowing Money in Kenya](/blog/borrowing-money-in-kenya-guide) for the cornerstone this article sits beneath.
+- [What a Creditor Cannot Take](/blog/protected-property-attachment-kenya) for the full list of protected income and property, and how to claim it.
+- [Debt Collectors and Auctioneers](/blog/debt-collectors-auctioneers-rules-kenya) for what each rulebook allows and where a complaint goes.
+- [Written Off Is Not Written Away](/blog/written-off-debt-limitation-kenya) for write-offs, limitation and the acknowledgement trap.
+- [When Debts Exceed Assets](/blog/insolvency-bankruptcy-business-rescue-kenya) for bankruptcy, liquidation and business rescue.
+- [When a Customer Will Not Pay](/blog/creditor-recovery-demand-small-claims-kenya) for the same process seen from the creditor's side.
 - [How to Fix Your CRB Listing](/blog/how-to-fix-your-crb-listing-kenya) for correcting a listing rather than fearing it.
 - [The Overdraft That Never Clears](/blog/overdraft-that-never-clears-kenya) for how a facility becomes permanent debt long before default.
 - [Logbook Loans in Kenya](/blog/logbook-loans-kenya) for repossession under a chattels security, which follows a different path from a decree.
@@ -250,6 +233,7 @@ If you are somewhere on this ladder right now, the useful question is not how ba
 - [The Judiciary of Kenya, Small Claims Court](https://judiciary.go.ke/small-claims-court/). Pecuniary jurisdiction and the categories of claim heard.
 - [Auctioneers Rules, 1997](https://new.kenyalaw.org/akn/ke/act/ln/1997/120/eng@2022-12-31) and the Auctioneers Act, Cap 526. Proclamation, inventory, redemption notice and advertisement periods.
 - Civil Procedure Rules, Order 22 (execution) and Order 23 (garnishee proceedings).
+- *M'Ikiara M'Rinkanya & another v Gilbert Kabeere M'Mbijiwe*, Court of Appeal, Civil Appeal 124 of 2003, on execution within the twelve year limitation period.
 - *In re Zipporah Wambui Mathara* [2010] eKLR, and *Kailikia v M'Thiringi & 2 others* (Civil Appeal E017 of 2024) [2024] KEHC 5860 (KLR), on committal and the means test.
 - [Data Protection Act, 2019](https://www.odpc.go.ke/) and the Office of the Data Protection Commissioner. Complaints under section 56 and administrative penalties under section 63; published enforcement decisions against digital credit providers.
 - [Central Bank of Kenya](https://www.centralbank.go.ke/), Digital Credit Providers Regulations 2022, and the Business Laws (Amendment) Act 2024.

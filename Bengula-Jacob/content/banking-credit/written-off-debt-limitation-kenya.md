@@ -60,7 +60,7 @@ A written-off debt remains property of the lender, and property can be transferr
 
 This is why people receive demands from companies they have never dealt with, years after the original lender went quiet, and assume it must be a scam. Sometimes it is. Often it is an assignee of a real debt. The practical response is the same in both cases and it is not to pay anything: ask for proof of the assignment and a statement of account showing how the figure was arrived at, and check the dates in Part 4 before you engage further. Do not, under any circumstances, make a goodwill payment to buy time. Part 6 explains why that single act can be the most expensive thing you do.
 
-On collection conduct, the boundaries are covered in [the enforcement ladder](/blog/debt-enforcement-ladder-kenya): there is no debt collectors statute in Kenya, and harassment or contacting your relatives is a data protection complaint to the ODPC rather than a banking one.
+On collection conduct, the boundaries are covered in [debt collectors and auctioneers](/blog/debt-collectors-auctioneers-rules-kenya): there is no debt collectors statute in Kenya, and harassment or contacting your relatives is a data protection complaint to the ODPC rather than a banking one.
 
 ### Part 4: The Law's Clock
 
@@ -126,7 +126,7 @@ Having established what does not end it, the honest list of what does:
 
 **The limitation period expiring without revival.** The remedy is barred and the creditor cannot sue. The obligation technically survives, but with no enforcement route.
 
-**Discharge in bankruptcy.** The genuine legal reset, available through the insolvency route, with consequences of its own that deserve their own treatment. That is the next article in this cluster.
+**Discharge in bankruptcy.** The genuine legal reset, available through the insolvency route, with consequences of its own that deserve their own treatment, set out in [when debts exceed assets](/blog/insolvency-bankruptcy-business-rescue-kenya).
 
 **Death, partly.** Debts do not follow heirs personally, but they are claims against the deceased's estate and reduce what is distributed, which is why they belong in the succession conversation in [wills, nominees and business continuity](/blog/wills-nominees-business-continuity-kenya).
 
@@ -180,6 +180,8 @@ The two endings that genuinely work are a written release from the creditor and 
 
 - [The Debt Enforcement Ladder in Kenya](/blog/debt-enforcement-ladder-kenya) for what a creditor can do while the claim is live.
 - [What a Creditor Cannot Take](/blog/protected-property-attachment-kenya) for the property and income that stay out of reach.
+- [When Debts Exceed Assets](/blog/insolvency-bankruptcy-business-rescue-kenya) for discharge in bankruptcy, the ending a write-off is not.
+- [Debt Collectors and Auctioneers](/blog/debt-collectors-auctioneers-rules-kenya) for what a collector chasing an old file may and may not do.
 - [How to Fix Your CRB Listing](/blog/how-to-fix-your-crb-listing-kenya) for the bureau record, which is separate from the debt.
 - [How Kenyan Banks Price Loans](/blog/how-kenyan-banks-price-loans) for why classification and provisioning matter to the lender.
 - [How Banks Actually Make Money](/blog/how-banks-actually-make-money-kenya) for the balance sheet logic behind a write-off.
