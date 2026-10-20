@@ -1,10 +1,9 @@
 ---
 id: insolvency-bankruptcy-business-rescue-kenya
 title: "When Debts Exceed Assets: Insolvency, Bankruptcy and Business Rescue in Kenya"
-summary: "There is a point at which the problem is no longer a cash-flow gap. It is a balance sheet that cannot be repaired by selling harder or refinancing cheaper. Kenyan law has a framework for that point, and it does not work the way most people assume. This guide walks the Insolvency Act 2015 from the debtor's side, covering both the individual and the company, including the one route that tries to save the business rather than bury it."
+summary: "When debts exceed assets in Kenya: bankruptcy and its three year discharge, company liquidation, administration as a rescue route, and director liability."
 category: Banking & Credit
-date: September 26, 2026
-readTime: 17 min read
+date: 2026-09-26
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

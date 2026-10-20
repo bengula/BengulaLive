@@ -1,10 +1,9 @@
 ---
 id: debt-collectors-auctioneers-rules-kenya
 title: "Debt Collectors and Auctioneers: What the Rules Actually Allow in Kenya"
-summary: "Kenya has no standalone Debt Collectors Act. What binds a collector instead is a patchwork of four different rulebooks, covering data protection, digital credit, auctioneers, and general credit provision. This guide breaks down what a collector can do, what an auctioneer must do, and exactly where a complaint goes when the line is crossed."
+summary: "Kenya has no Debt Collectors Act. The four rulebooks that bind collectors, what an auctioneer must do before a sale, and where to complain."
 category: Banking & Credit
-date: September 26, 2026
-readTime: 14 min read
+date: 2026-09-26
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

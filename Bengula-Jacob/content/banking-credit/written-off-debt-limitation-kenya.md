@@ -1,10 +1,9 @@
 ---
 id: written-off-debt-limitation-kenya
 title: "Written Off Is Not Written Away: What a Write-Off, a Time Bar and a Discharge Actually Do"
-summary: "A written-off loan has not been forgiven. It has been moved to a memorandum account that the bank's auditors keep looking at, and it can still be sued on, sold on, or enforced. Two separate clocks run on every Kenyan debt, the bank's and the law's, and they do completely different things. This guide explains both, and the single most expensive mistake a borrower can make near the end of the second one."
+summary: "A written-off loan is not forgiven. The bank's clock, the law's six and twelve year limits, and the small payment that restarts the clock."
 category: Banking & Credit
-date: September 22, 2026
-readTime: 16 min read
+date: 2026-09-22
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

@@ -1,10 +1,9 @@
 ---
 id: creditor-recovery-demand-small-claims-kenya
 title: "When a Customer Will Not Pay: Demand Letters, Small Claims Court and Statutory Demands in Kenya"
-summary: "Your enforcement cluster tells borrowers what happens when they default. This article flips the desk. It is written for the SME that delivered the goods, issued the invoice, waited ninety days, and is now wondering what comes next. The answer is a sequence, it runs on fixed timelines, and the cheapest step is always the first one you should have sent."
+summary: "Recovering money a customer owes you in Kenya: demand letters, Small Claims Court up to KES 1 million, summary judgment and statutory demands."
 category: Banking & Credit
-date: September 26, 2026
-readTime: 16 min read
+date: 2026-09-26
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
