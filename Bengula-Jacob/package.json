@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite-react-ssg dev",
-    "build": "vite-react-ssg build && node scripts/gen-sitemap.mjs && node scripts/gen-feed.mjs",
-    "build:web": "vite-react-ssg build && node scripts/gen-sitemap.mjs && node scripts/gen-feed.mjs",
+    "build": "node scripts/validate-content.mjs && vite-react-ssg build && node scripts/gen-sitemap.mjs && node scripts/gen-feed.mjs",
+    "build:web": "node scripts/validate-content.mjs && vite-react-ssg build && node scripts/gen-sitemap.mjs && node scripts/gen-feed.mjs",
+    "validate": "node scripts/validate-content.mjs",
+    "content-gap": "node scripts/content-gap.mjs",
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "update-rates": "node scripts/update-rates.mjs",

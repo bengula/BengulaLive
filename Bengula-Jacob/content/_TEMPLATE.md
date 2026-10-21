@@ -2,22 +2,33 @@
 # Copy this file into a section folder (banking-credit / investing / technology /
 # economy-policy / business-trade), rename it to your-article-id.md, and fill it in.
 # Files starting with "_" are ignored, so this template never shows on the site.
+#
+# Every field below is validated by src/data/articles/index.ts and the build
+# FAILS on anything malformed, listing every problem in the vault at once.
 
-id: your-article-id            # must equal the filename (without .md); URL-safe, lowercase-hyphens
+id: your-article-id            # must equal the filename (without .md); lowercase-hyphens only
 title: "Your Article Headline Goes Here"
-summary: A one or two sentence teaser shown on the card under the title.
 
-# Drives the cover photo + the blog filter pill. Use one of the existing values:
+# Used VERBATIM as the meta description, so keep it under 160 characters —
+# the build fails past that, and Google truncates it anyway.
+summary: A one or two sentence teaser shown on the card and in search results.
+
+# Drives the cover photo + the blog filter pill. Must be one of these 13:
 #   Bonds & Bills | Unit Trusts | SME Trade Finance | Real Estate
-#   Agri-Logistics | Wealth Optimization | Digital Strategy
-#   Banking & Credit | SME Finance | Fintech & Banking
+#   Agri-Logistics | Wealth Optimization | Digital Strategy | Rates & Policy
+#   Banking & Credit | Fintech & Banking | Corporate Finance
+#   Startup Finance | SME Finance
 category: Bonds & Bills
 
-date: June 2, 2026             # any readable format; shown as-is and used for ordering (newest first)
-readTime: 6 min read
+date: 2026-06-02               # ISO calendar date, YYYY-MM-DD. Nothing else parses.
+                               # The displayed "June 2, 2026" is formatted from this.
 
-# featured: true               # optional flag
-# coverImage: /images/your-cover.jpg   # optional, overrides the category photo (file in public/images/)
+# NOTE: do NOT add `readTime` — it is computed from the body word count.
+# Nor `metaTitle`/`metaDescription` — unused. The build fails if you set any.
+
+# keywords: [unsecured loans kenya, loan without collateral]   # optional topic tags
+# featured: true                                                # optional flag
+# coverImage: /images/your-cover.jpg   # optional, overrides the category photo
 
 author:
   name: Bengula Jacob
