@@ -1,10 +1,9 @@
 ---
 id: protected-property-attachment-kenya
 title: "What a Creditor Cannot Take: Protected Income and Protected Property in Kenya"
-summary: "A decree does not give a creditor everything you own. Section 44 of the Civil Procedure Act carves out a list, two pension statutes go further than anything in the Civil Procedure Act, and the protections apply to some Kenyans far more generously than others. This guide sets out exactly what is out of reach, what is fully exposed, and the seven day procedure that turns a protection on paper into property still in your hands."
+summary: "What a Kenyan creditor cannot take: two thirds of salary, tools of trade, pensions and NSSF, and the seven day objection that keeps them yours."
 category: Banking & Credit
-date: September 21, 2026
-readTime: 17 min read
+date: 2026-09-21
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.

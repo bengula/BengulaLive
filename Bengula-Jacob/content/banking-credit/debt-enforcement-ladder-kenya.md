@@ -1,10 +1,9 @@
 ---
 id: debt-enforcement-ladder-kenya
 title: "What Happens When You Cannot Pay: The Debt Enforcement Ladder in Kenya"
-summary: "Kenyan financial writing explains how to borrow in detail and goes quiet at the point where the borrowing stops working. This guide follows the money the rest of the way: from the first missed instalment through demand, listing, suit and decree, into execution by attachment, garnishee and auction, and finally to the question of how long a judgment debt can follow you. Every step is taken from the statute rather than from what people say happens."
+summary: "From the first missed instalment to auction: every rung of Kenya's debt enforcement ladder, the clock on each, and where you still have choices."
 category: Banking & Credit
-date: September 21, 2026
-readTime: 18 min read
+date: 2026-09-21
 author:
   name: Bengula Jacob
   role: Relationship Manager & Founder of Bengula Inc.
