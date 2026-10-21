@@ -5,8 +5,19 @@
  * live in src/data/articles/index.ts, which runs inside Vite and can't be
  * imported by plain Node. This script mirrors that file's mechanical checks so
  * you get the same errors in under a second instead of two minutes into an SSG
- * build. It is deliberately a SUBSET — it cannot catch a broken Mermaid block
- * or a bad card grid, only malformed frontmatter.
+ * build. It is deliberately a SUBSET of the loader's rules.
+ *
+ * It also checks two things the loader does NOT, both of which used to reach
+ * readers silently:
+ *   • ```cards blocks must be parseable YAML. A bad one does not fail the
+ *     build — the renderer catches the throw and prints a red error box into
+ *     the published page.
+ *   • internal /blog/<id> links must resolve. All 2002 in the vault currently
+ *     do, so this is a hard error — it stays clean by never being allowed to
+ *     break. Only the markdown link form ](/blog/id) counts; an external URL
+ *     that merely contains /blog/ is somebody else's site, not a broken link.
+ *
+ * A broken Mermaid diagram is still not caught — that needs the real parser.
  *
  * If you change a rule in the loader, change it here too. The category list is
  * read straight out of articleCategories.ts so that one, at least, cannot drift.
@@ -61,9 +72,14 @@ function validIsoDate(value) {
   return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === iso;
 }
 
+/** Mirror of the renderer in src/utils/markdownText.tsx: ```card and ```cards. */
+const CARD_FENCE = /^```cards?[ \t]*$\n([\s\S]*?)^```[ \t]*$/gm;
+const BLOG_LINK = /\]\(\/blog\/([a-z0-9-]+)\)/g;
+
 const CATEGORIES = readCategories();
 const problems = [];
 const seen = new Map();
+const bodies = [];
 
 for (const path of markdownFiles(CONTENT_DIR)) {
   const rel = relative(ROOT, path);
@@ -100,7 +116,28 @@ for (const path of markdownFiles(CONTENT_DIR)) {
   else if (summary.length > MAX_SUMMARY_LENGTH)
     fail(`\`summary\` is ${summary.length} chars; keep it under ${MAX_SUMMARY_LENGTH} — it is the meta description`);
 
-  if (!match[2].trim()) fail('the Markdown body is empty');
+  const body = match[2].trim();
+  if (!body) fail('the Markdown body is empty');
+  bodies.push({ rel, body });
+
+  // Card blocks: the renderer yaml.load()s these at render time and prints a
+  // red error box into the page on a throw, so a bad one ships silently.
+  let cardIndex = 0;
+  for (const block of body.matchAll(CARD_FENCE)) {
+    cardIndex += 1;
+    let cards;
+    try {
+      cards = yaml.load(block[1]);
+    } catch (error) {
+      fail(`\`\`\`cards block ${cardIndex} is not valid YAML — ${error.message.split('\n')[0]}`);
+      continue;
+    }
+    const list = Array.isArray(cards) ? cards : [cards];
+    list.forEach((card, i) => {
+      if (!card || typeof card !== 'object' || Array.isArray(card))
+        fail(`\`\`\`cards block ${cardIndex}, card ${i + 1} is not a mapping (each card needs icon/title/desc keys)`);
+    });
+  }
 
   if (!CATEGORIES.has(meta.category))
     fail(`\`category\` ${JSON.stringify(meta.category)} is not one of: ${[...CATEGORIES].join(', ')}`);
@@ -126,6 +163,15 @@ for (const path of markdownFiles(CONTENT_DIR)) {
     fail('`readTime` is computed from the body word count — remove it from the frontmatter');
   if (meta.metaTitle !== undefined || meta.metaDescription !== undefined)
     fail('`metaTitle`/`metaDescription` are unused — title comes from `title`, description from `summary`');
+}
+
+// Internal links, once every id is known.
+for (const { rel, body } of bodies) {
+  const dead = new Set();
+  for (const link of body.matchAll(BLOG_LINK)) {
+    if (!seen.has(link[1])) dead.add(link[1]);
+  }
+  for (const id of dead) problems.push(`${rel}: link to /blog/${id} — no article has that id`);
 }
 
 if (problems.length) {

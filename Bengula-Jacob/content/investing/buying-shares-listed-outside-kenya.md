@@ -29,7 +29,7 @@ This guide covers what is genuinely purchasable, why your existing account canno
 ```cards
 - icon: Search
   title: Check what is listed first
-  desc: "Dangote" is a group, not a ticker. Some of its companies are publicly traded and some are not. Buying the wrong assumption costs more than buying the wrong stock.
+  desc: 'Dangote is a group, not a ticker. Some of its companies are publicly traded and some are not. Buying the wrong assumption costs more than buying the wrong stock.'
 - icon: Landmark
   title: Your CDS account stops at the border
   desc: The CDSC settles Kenyan and East African cross-listed securities. It does not clear Nigerian shares. A different depository has to hold them.
@@ -61,7 +61,7 @@ So the honest framing: today you can buy the **listed Dangote companies** on the
 
 ### Part 2: Why Your CDS Account Cannot Do This
 
-Kenyan shares settle through the **Central Depository and Settlement Corporation (CDSC)**. Your CDS account is a record in that system. It can hold securities the CDSC is set up to clear: companies listed on the Nairobi Securities Exchange, government paper, and shares **cross-listed** onto the NSE from elsewhere in East Africa.
+Kenyan shares settle through the **Central Depository and Settlement Corporation (CDSC)**. Your CDS account is a record in that system — if you have not opened one yet, [how to buy shares on the NSE](/blog/how-to-buy-shares-nse-kenya) covers that ground first, and it is the right place to start. It can hold securities the CDSC is set up to clear: companies listed on the Nairobi Securities Exchange, government paper, and shares **cross-listed** onto the NSE from elsewhere in East Africa.
 
 Cross-listing is the mechanism people are unconsciously hoping for. When a company lists its existing shares on a second exchange, investors on that second exchange can buy them locally, in local currency, through their normal account. Within the East African Community this genuinely happens — there is a working history of cross-listings between the Nairobi, Uganda, Dar es Salaam and Rwanda exchanges, which is why a Nairobi investor can sometimes reach a Kampala or Dar company without leaving the NSE.
 
