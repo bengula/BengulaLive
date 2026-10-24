@@ -181,6 +181,7 @@ Tax is not the enemy of wealth. Surprise is.
 ### Related Reading
 
 - [Tax, Compliance, and Cash in Kenya](/blog/tax-compliance-cash-kenya-guide) for the whole stack added up, the filing calendar, and the penalty table across every tax head
+- [The Statutory Deduction Stack in Kenya](/blog/statutory-deductions-payroll-kenya) for PAYE, SHIF, Housing Levy, NSSF and NITA on both the employee and employer side
 - [The Complete Guide to Fixed Income in Kenya](/blog/fixed-income-kenya-complete-guide) for the same after-tax principle applied to investment returns
 - [VAT for Kenyan SMEs](/blog/vat-for-smes-kenya) for the business-side tax that is a cash-flow event rather than a cost
 - [Turnover Tax vs Corporation Tax](/blog/turnover-tax-vs-corporation-tax-kenya) for why professional and management fees are excluded from turnover tax, so most consultants cannot use that regime at all
