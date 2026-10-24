@@ -19,7 +19,8 @@ __pycache__/
 *.pyc
 
 # generated internal documents (not deployed)
-internal-docs/
+internal-docs/*
+!internal-docs/article-pipeline.md
 
 # Obsidian vault settings (workspace.json churns on every session)
 content/.obsidian/
