@@ -4,14 +4,13 @@
  */
 
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Seo from '../seo';
 import { portfolioItemsList } from '../data/portfolioData';
 import { categoryBadgeStyles, portfolioCategoryFilters, portfolioItemTags, type PortfolioCategory, type PortfolioCategoryFilter, riskBadgeStyles } from '../data/portfolioTags';
 import { Award, Layers, TrendingUp, MapPin, Calendar, ArrowUpRight } from 'lucide-react';
 
 export default function PortfolioTab() {
-  const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState<PortfolioCategoryFilter>('All');
 
   const filteredItems = activeCategory === 'All'
@@ -65,10 +64,7 @@ export default function PortfolioTab() {
         {filteredItems.map((item) => (
           <div
             key={item.id}
-            onClick={() => item.blogId && navigate(`/blog/${item.blogId}`)}
-            className={`glass-card rounded-2xl p-6 flex flex-col justify-between transition duration-300 relative group overflow-hidden ${
-              item.blogId ? 'cursor-pointer' : ''
-            }`}
+            className="card-link-surface glass-card rounded-2xl p-6 flex flex-col justify-between transition duration-300 group overflow-hidden"
           >
             {/* Top Row: category & icon */}
             <div className="space-y-4">
@@ -96,16 +92,14 @@ export default function PortfolioTab() {
                     {item.title}
                   </h2>
                   {item.blogId && (
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        navigate(`/blog/${item.blogId!}`);
-                      }}
-                      className="text-[10px] bg-violet-50 hover:bg-violet-100 text-violet-800 border border-violet-100 px-2 py-0.5 rounded font-extrabold flex items-center gap-0.5 cursor-pointer transition shrink-0 font-sans"
+                    <Link
+                      to={`/blog/${item.blogId}`}
+                      aria-label={`Read the analysis behind ${item.title}`}
+                      className="stretched-link text-[10px] bg-violet-50 hover:bg-violet-100 text-violet-800 border border-violet-100 px-2 py-0.5 rounded font-extrabold flex items-center gap-0.5 transition shrink-0 font-sans"
                     >
                       <span>Analysis</span>
                       <ArrowUpRight className="w-3.5 h-3.5 text-violet-800" />
-                    </button>
+                    </Link>
                   )}
                 </div>
                 <p className="text-xs text-slate-500 leading-normal font-normal">
@@ -150,12 +144,12 @@ export default function PortfolioTab() {
       {/* Footer reassurance callout */}
       <div className="bg-violet-50/70 rounded-xl p-4 border border-violet-100 text-xs text-violet-950 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xs">
         <span className="font-semibold text-center sm:text-left">To plan a growth engagement, banking introduction, or co-investment with the Bengula Inc desk:</span>
-        <button
-          onClick={() => navigate('/services')}
-          className="bg-violet-800 hover:bg-violet-700 text-white py-2 px-4 rounded-xl font-bold text-[11px] shrink-0 transition-all uppercase tracking-wider cursor-pointer shadow-xs"
+        <Link
+          to="/services"
+          className="bg-violet-800 hover:bg-violet-700 text-white py-2 px-4 rounded-xl font-bold text-[11px] shrink-0 transition-all uppercase tracking-wider shadow-xs"
         >
           Book Strategic Briefing
-        </button>
+        </Link>
       </div>
 
     </div>

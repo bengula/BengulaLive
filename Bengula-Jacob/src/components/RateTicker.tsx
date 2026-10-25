@@ -44,9 +44,11 @@ export default function RateTicker() {
         <Run />
       </div>
 
-      {/* Source / freshness badge (masks the scroll on the right edge) */}
-      <div className="hidden sm:flex absolute right-0 top-0 h-full items-center pl-6 pr-4 bg-gradient-to-l from-violet-950 via-violet-950 to-transparent">
-        <span className="flex items-center gap-1.5">
+      {/* Source / freshness badge (masks the scroll on the right edge). The
+          badge text sits on its own opaque block rather than on the fading
+          end of the gradient, where passing rates used to show through it. */}
+      <div className="hidden sm:flex absolute right-0 top-0 h-full items-center pl-10 bg-gradient-to-l from-violet-950 from-50% to-transparent">
+        <span className="flex h-full items-center gap-1.5 bg-violet-950 pl-3 pr-4">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-glow"></span>
           <span className="text-emerald-300">CBK · {exchangeRates.asOf}</span>
         </span>

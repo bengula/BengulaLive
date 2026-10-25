@@ -16,7 +16,7 @@ import {
   MessageCircle,
   ShieldCheck,
 } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import InsightDeck from './InsightDeck';
 import Seo from '../seo';
 import { siteConfig, whatsappHref } from '../data/siteConfig';
@@ -26,7 +26,6 @@ import { trackConversion } from '../utils/conversion';
 import Typewriter from './Typewriter';
 
 export default function HomeTab() {
-  const navigate = useNavigate();
   const [newsletterEmail, setNewsletterEmail] = useState('');
   const [newsletterSuccess, setNewsletterSuccess] = useState(false);
 
@@ -122,7 +121,7 @@ export default function HomeTab() {
         path="/"
       />
       <section className="home-hero grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center rounded-3xl glass-strong p-6 md:p-10 lg:p-12 animate-popIn">
-        <div className="lg:col-span-7 space-y-7 text-center lg:text-left">
+        <div className="lg:col-span-7 space-y-7 text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-violet-50 border border-violet-100 rounded-full text-[10px] font-bold text-violet-800 uppercase tracking-widest leading-none shadow-sm">
             <ShieldCheck className="w-3.5 h-3.5 text-violet-700" />
             <span>Bengula Inc Advisory Platform</span>
@@ -132,12 +131,12 @@ export default function HomeTab() {
             <h1 className="editorial-heading text-4xl md:text-6xl font-bold text-slate-950 tracking-tight leading-[1.04]">
               Better business decisions start with <span className="text-gradient"><Typewriter words={['clarity, not guesswork.', 'right-fit banking & capital.', 'data-driven growth.', 'financial confidence.']} /></span>
             </h1>
-            <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl">
               Bengula helps East African businesses, professionals, and investors connect their numbers, banking options, digital visibility, and growth strategy into one practical decision desk.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl mx-auto lg:mx-0">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl">
             {[
               'Banking & capital advisory',
               'Data & SEO growth',
@@ -153,14 +152,7 @@ export default function HomeTab() {
             ))}
           </div>
 
-          <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-            <button
-              onClick={() => navigate('/services')}
-              className="sheen glass text-slate-700 hover:text-violet-800 font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-2 cursor-pointer transition"
-            >
-              <span>Explore Advisory</span>
-              <ChevronRight className="w-4 h-4" />
-            </button>
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3">
             <a
               href={whatsappHref(
                 siteConfig.contact.whatsapp,
@@ -169,11 +161,18 @@ export default function HomeTab() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackConversion('whatsapp_click', 'home_hero_fit_check')}
-              className="sheen bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-5 py-3 rounded-lg flex items-center gap-2 transition shadow-lg shadow-emerald-700/20 transform hover:-translate-y-0.5"
+              className="sheen bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-5 py-3.5 rounded-lg flex items-center justify-center gap-2 transition shadow-lg shadow-emerald-700/20 transform hover:-translate-y-0.5"
             >
               <MessageCircle className="w-4 h-4" />
               <span>Get a Free Fit Check</span>
             </a>
+            <Link
+              to="/services"
+              className="sheen glass text-slate-700 hover:text-violet-800 font-bold text-xs px-5 py-3.5 rounded-lg flex items-center justify-center gap-2 transition"
+            >
+              <span>Explore Advisory</span>
+              <ChevronRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
 
@@ -220,10 +219,10 @@ export default function HomeTab() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
           {metrics.map((stat) => (
-            <div key={stat.label} className="glass-card space-y-1.5 p-4 rounded-lg">
+            <div key={stat.label} className="glass-card space-y-1.5 p-5 rounded-lg">
+              <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block font-mono">{stat.label}</span>
               <span className="text-xl font-black text-violet-800 block font-sans tracking-tight">{stat.value}</span>
-              <span className="text-xs font-bold text-slate-900 block">{stat.label}</span>
-              <span className="text-[10px] text-slate-500 block leading-tight font-medium">{stat.desc}</span>
+              <span className="text-xs text-slate-600 block leading-relaxed font-medium">{stat.desc}</span>
             </div>
           ))}
         </div>
@@ -269,7 +268,7 @@ export default function HomeTab() {
           {portals.map((portal) => (
             <div
               key={portal.title}
-              className="glass-card rounded-xl p-6 flex flex-col justify-between group"
+              className="card-link-surface glass-card rounded-xl p-6 flex flex-col justify-between group"
             >
               <div className="space-y-4">
                 <div className="bg-violet-50 text-violet-800 border border-violet-100 p-2.5 rounded-lg w-fit group-hover:bg-violet-700 group-hover:text-white transition duration-300">
@@ -280,13 +279,13 @@ export default function HomeTab() {
                   <p className="text-xs text-slate-500 mt-1.5 leading-normal font-normal">{portal.desc}</p>
                 </div>
               </div>
-              <button
-                onClick={() => navigate(portal.path)}
-                className="text-xs font-bold text-violet-800 hover:text-violet-900 flex items-center gap-1 pt-6 transition duration-300 cursor-pointer"
+              <Link
+                to={portal.path}
+                className="stretched-link text-xs font-bold text-violet-800 hover:text-violet-900 flex items-center gap-1 pt-6 transition duration-300"
               >
                 <span>{portal.btn}</span>
                 <ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-              </button>
+              </Link>
             </div>
           ))}
         </div>
@@ -339,7 +338,7 @@ export default function HomeTab() {
         <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Practical tools</span>
         <h2 className="text-2xl font-bold text-slate-900">Check the numbers before the conversation</h2>
         <p className="text-sm text-slate-600 max-w-xl mx-auto">Explore loan affordability, bond and savings scenarios, and card grace periods. These educational calculators do not replace advice from a licensed provider.</p>
-        <button onClick={() => navigate('/tools')} className="btn-primary mx-auto">Explore tools <ChevronRight className="w-4 h-4" /></button>
+        <Link to="/tools" className="btn-primary mx-auto w-fit">Explore tools <ChevronRight className="w-4 h-4" /></Link>
       </section>
 
       <section className="space-y-4 glass rounded-2xl p-6 md:p-8 reveal">
@@ -377,7 +376,7 @@ export default function HomeTab() {
         <span className="text-xs font-semibold text-violet-700 uppercase tracking-widest">Need a quick answer?</span>
         <h2 className="text-2xl font-bold text-slate-900">Frequently asked questions</h2>
         <p className="text-sm text-slate-600 max-w-xl mx-auto">Understand how Bengula works, what we do, and how enquiries are handled.</p>
-        <button onClick={() => navigate('/faq')} className="btn-secondary mx-auto">Read the FAQ <ChevronRight className="w-4 h-4" /></button>
+        <Link to="/faq" className="btn-secondary mx-auto w-fit">Read the FAQ <ChevronRight className="w-4 h-4" /></Link>
       </section>
 
       <section id="newsletter-signup-section" className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-10 text-white relative overflow-hidden shadow-md reveal">

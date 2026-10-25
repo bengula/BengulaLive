@@ -244,9 +244,9 @@ export default function ServicesTab() {
 
               {/* Dynamic Selected Service Detail Pop-In */}
               <div className="p-3.5 bg-violet-50/70 border border-violet-100/45 rounded-xl space-y-2 animate-fadeIn text-xs">
-                <div className="flex justify-between items-center font-bold text-violet-950 text-xs">
-                  <span className="text-slate-800 font-bold">{activeSvc.title}</span>
-                  <span className="text-amber-700 font-extrabold text-[11px] whitespace-nowrap">{activeSvc.pricing}</span>
+                <div className="font-bold text-violet-950 text-xs space-y-1">
+                  <p className="text-slate-800 font-bold leading-snug">{activeSvc.title}</p>
+                  <p className="text-amber-700 font-extrabold text-[11px]">{activeSvc.pricing}</p>
                 </div>
                 <p className="text-slate-600 text-[11px] leading-relaxed font-normal">
                   {activeSvc.longDescription}

@@ -419,7 +419,7 @@ export function renderInlineMarkdown(text: string, strongClassName = "text-slate
   return nodes;
 }
 
-function getTextContent(node: React.ReactNode): string {
+export function getTextContent(node: React.ReactNode): string {
   if (!node) return "";
   if (typeof node === "string" || typeof node === "number") {
     return String(node);
@@ -802,7 +802,9 @@ const markdownComponents: Components = {
 
     if (!language) {
       return (
-        <code className="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[0.88em] font-semibold text-slate-800">
+        // break-words: a long identifier or formula in inline code used to
+        // push the whole page wider than a phone screen.
+        <code className="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[0.88em] font-semibold text-slate-800 break-words">
           {children}
         </code>
       );
@@ -846,6 +848,70 @@ const markdownComponents: Components = {
   },
   pre: ({ children }) => <>{children}</>,
 };
+
+/**
+ * Stable, URL-safe id for a heading. The in-article table of contents and the
+ * heading renderer both derive ids through this one function, so every `#anchor`
+ * the contents list emits resolves to a heading that actually carries that id.
+ */
+export function slugifyHeading(text: string) {
+  const slug = text
+    .toLowerCase()
+    .replace(/[`*_~]/g, "")
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .slice(0, 60)
+    .replace(/-+$/, "");
+  return slug || "section";
+}
+
+export interface ArticleHeading {
+  id: string;
+  text: string;
+  level: 2 | 3;
+}
+
+/**
+ * The H2/H3 headings of an article body, in document order. Fenced code blocks
+ * are skipped so a `# comment` inside a sample never shows up as a section.
+ */
+export function extractHeadings(markdown: string): ArticleHeading[] {
+  const headings: ArticleHeading[] = [];
+  const seen = new Map<string, number>();
+  let inFence = false;
+
+  for (const line of markdown.split("\n")) {
+    if (/^\s*(```|~~~)/.test(line)) {
+      inFence = !inFence;
+      continue;
+    }
+    if (inFence) continue;
+
+    const match = /^(#{2,3})\s+(.+?)\s*#*$/.exec(line);
+    if (!match) continue;
+
+    // Strip the inline markdown a heading may carry so the contents list reads
+    // as plain text: **bold**, `code`, and [label](href) all collapse to label.
+    const text = match[2]
+      .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+      .replace(/[`*_]/g, "")
+      .trim();
+    if (!text) continue;
+
+    const base = slugifyHeading(text);
+    const count = seen.get(base) ?? 0;
+    seen.set(base, count + 1);
+
+    headings.push({
+      id: count === 0 ? base : `${base}-${count + 1}`,
+      text,
+      level: match[1].length === 2 ? 2 : 3,
+    });
+  }
+
+  return headings;
+}
 
 export function MarkdownContent({
   content,

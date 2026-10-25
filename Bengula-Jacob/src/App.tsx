@@ -5,7 +5,7 @@
  * Layout shell: header/nav, footer, market ticker, and the routed page outlet.
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ArrowUp, ChevronDown, Menu, MessageCircle, X } from 'lucide-react';
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { Head } from 'vite-react-ssg';
@@ -40,6 +40,86 @@ function BackToTopButton() {
     >
       <ArrowUp className="w-5 h-5" />
     </button>
+  );
+}
+
+/**
+ * The desktop "Explore" dropdown. Open state lives here rather than in a CSS
+ * `:hover` rule so the trigger can report `aria-expanded` honestly, a tap
+ * works on a touch screen, and Escape closes the menu and hands focus back.
+ */
+function ExploreMenu({
+  items,
+  isActive,
+}: {
+  items: typeof activeNav;
+  isActive: (path: string) => boolean;
+}) {
+  const [open, setOpen] = useState(false);
+  const trigger = useRef<HTMLButtonElement>(null);
+
+  // Escape closes from anywhere inside the menu, including a focused item.
+  useEffect(() => {
+    if (!open) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return;
+      setOpen(false);
+      trigger.current?.focus();
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [open]);
+
+  return (
+    <div
+      className={`nav-more relative ${open ? 'is-open' : ''}`}
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+      onFocus={() => setOpen(true)}
+      onBlur={(e) => {
+        // Only close once focus has actually left the whole menu, otherwise
+        // tabbing from the trigger onto the first item would shut it.
+        if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setOpen(false);
+      }}
+    >
+      <button
+        ref={trigger}
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        aria-controls="nav-explore-menu"
+        className={`sheen px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1 transition-all cursor-pointer ${
+          items.some((item) => isActive(item.path))
+            ? 'bg-violet-700 text-white shadow-sm'
+            : 'text-slate-600 hover:text-violet-800 hover:bg-white/80'
+        }`}
+      >
+        Explore
+        <ChevronDown className={`w-3.5 h-3.5 transition-transform ${open ? 'rotate-180' : ''}`} />
+      </button>
+      <div id="nav-explore-menu" className="nav-more-menu absolute right-0 top-full pt-2 w-60">
+        <div className="glass-strong rounded-2xl p-2 shadow-2xl shadow-violet-950/15">
+          {items.map((item) => {
+            const Icon = item.icon;
+            return (
+              <Link
+                key={item.id}
+                to={item.path}
+                aria-current={isActive(item.path) ? 'page' : undefined}
+                onClick={() => setOpen(false)}
+                className={`flex items-center gap-3 rounded-xl px-3 py-3 text-xs font-bold transition-colors ${
+                  isActive(item.path)
+                    ? 'bg-white/80 text-violet-900'
+                    : 'text-slate-700 hover:bg-white/80 hover:text-violet-900'
+                }`}
+              >
+                <span className="grid h-8 w-8 place-items-center rounded-lg bg-violet-100/80 text-violet-700"><Icon className="h-4 w-4" /></span>
+                {item.label}
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -78,12 +158,13 @@ export default function Layout() {
   const isActive = (path: string) =>
     path === '/' ? pathname === '/' : pathname === path || pathname.startsWith(path + '/');
 
-  const primaryNav = activeNav.filter((item) =>
-    ['home', 'services', 'tools', 'portfolio', 'blog', 'contact'].includes(item.id)
-  );
-  const exploreNav = activeNav.filter((item) =>
-    ['about', 'investments', 'ai-coach', 'authors', 'faq'].includes(item.id)
-  );
+  // The header splits the registry in two: these ids ride in the top bar, and
+  // everything else falls through to "Explore". Taking the second group as the
+  // remainder rather than a second hardcoded list means a nav item added to
+  // sections.tsx shows up somewhere instead of silently disappearing.
+  const primaryIds = ['home', 'services', 'tools', 'portfolio', 'blog', 'contact'];
+  const primaryNav = activeNav.filter((item) => primaryIds.includes(item.id));
+  const exploreNav = activeNav.filter((item) => !primaryIds.includes(item.id));
 
   return (
     <div className="site-shell relative min-h-screen text-slate-800 font-sans flex flex-col justify-between selection:bg-violet-600/15 selection:text-violet-900">
@@ -145,6 +226,7 @@ export default function Layout() {
                     key={item.id}
                     id={`nav-btn-${item.id}`}
                     to={item.path}
+                    aria-current={isActive(item.path) ? 'page' : undefined}
                     className={`sheen px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center transition-all cursor-pointer ${
                       isActive(item.path)
                         ? 'bg-violet-700 text-white shadow-sm'
@@ -155,39 +237,16 @@ export default function Layout() {
                   </Link>
                 );
               })}
-              <div className="nav-more relative">
-                <button
-                  className={`sheen px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1 transition-all ${
-                    exploreNav.some((item) => isActive(item.path))
-                      ? 'bg-violet-700 text-white shadow-sm'
-                      : 'text-slate-600 hover:text-violet-800 hover:bg-white/80'
-                  }`}
-                  aria-haspopup="true"
-                >
-                  Explore <ChevronDown className="w-3.5 h-3.5" />
-                </button>
-                <div className="nav-more-menu absolute right-0 top-full pt-2 w-60">
-                  <div className="glass-strong rounded-2xl p-2 shadow-2xl shadow-violet-950/15">
-                    {exploreNav.map((item) => {
-                      const Icon = item.icon;
-                      return (
-                        <Link key={item.id} to={item.path} className="flex items-center gap-3 rounded-xl px-3 py-3 text-xs font-bold text-slate-700 hover:bg-white/80 hover:text-violet-900 transition-colors">
-                          <span className="grid h-8 w-8 place-items-center rounded-lg bg-violet-100/80 text-violet-700"><Icon className="h-4 w-4" /></span>
-                          {item.label}
-                        </Link>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
+              <ExploreMenu items={exploreNav} isActive={isActive} />
             </nav>
 
             {/* Mobile menu trigger */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="lg:hidden p-2 rounded-lg text-slate-500 hover:text-violet-800 hover:bg-slate-100 focus:outline-none cursor-pointer"
-              aria-label="Toggle navigation menu"
+              aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
               aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-nav-panel"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -197,25 +256,40 @@ export default function Layout() {
 
         {/* Mobile Navigation Dropdown */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-b border-white/60 glass-strong p-4 space-y-2 shadow-sm animate-fadeIn">
-            {activeNav.map((item) => {
-              const Icon = item.icon;
-              return (
-                <Link
-                  key={item.id}
-                  to={item.path}
-                  className={`w-full text-left px-4 py-3 rounded-lg text-xs font-bold flex items-center gap-3 transition-colors cursor-pointer ${
-                    isActive(item.path)
-                      ? 'bg-violet-700 text-white shadow-xs'
-                      : 'text-slate-600 hover:text-violet-800 hover:bg-slate-50'
-                  }`}
-                >
-                  <Icon className="w-4.5 h-4.5" />
-                  <span>{item.label}</span>
-                </Link>
-              );
-            })}
-          </div>
+          <nav
+            id="mobile-nav-panel"
+            aria-label="Primary navigation"
+            className="mobile-nav-panel lg:hidden border-b border-white/60 glass-strong p-4 shadow-sm animate-fadeIn"
+          >
+            {/* Same two groups as the desktop bar, so the small screen gives
+                the same sense of what is a main section and what is extra. */}
+            {[
+              { heading: 'Main', items: primaryNav },
+              { heading: 'Explore', items: exploreNav },
+            ].map((group) => (
+              <div key={group.heading} className="space-y-2 first:mt-0 mt-5">
+                <p className="footer-heading px-1">{group.heading}</p>
+                {group.items.map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <Link
+                      key={item.id}
+                      to={item.path}
+                      aria-current={isActive(item.path) ? 'page' : undefined}
+                      className={`w-full text-left px-4 py-3 rounded-lg text-xs font-bold flex items-center gap-3 transition-colors cursor-pointer ${
+                        isActive(item.path)
+                          ? 'bg-violet-700 text-white shadow-xs'
+                          : 'text-slate-600 hover:text-violet-800 hover:bg-slate-50'
+                      }`}
+                    >
+                      <Icon className="w-4.5 h-4.5" />
+                      <span>{item.label}</span>
+                    </Link>
+                  );
+                })}
+              </div>
+            ))}
+          </nav>
         )}
       </header>
 

@@ -4,13 +4,12 @@
  */
 
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { User, Briefcase, Award, ShieldCheck, Milestone, ArrowRight, Star } from 'lucide-react';
 import { images } from '../data/media';
 import Seo from '../seo';
 
 export default function AboutTab() {
-  const navigate = useNavigate();
   return (
     <div id="about-tab-root" className="space-y-12 animate-fadeIn">
       <Seo
@@ -191,10 +190,10 @@ export default function AboutTab() {
               blogId: "future-mmfs-kenya"
             }
           ].map((rec, idx) => (
-            <div 
-              key={idx} 
-              onClick={() => navigate(`/blog/${rec.blogId}`)}
-              className="glass-card rounded-xl p-4 space-y-1.5 transition cursor-pointer group"
+            <Link
+              key={idx}
+              to={`/blog/${rec.blogId}`}
+              className="glass-card rounded-xl p-4 space-y-1.5 transition group block"
             >
               <div className="flex justify-between items-start">
                 <span className="text-[9px] bg-violet-50 text-violet-800 border border-violet-100 font-extrabold tracking-wide uppercase px-2.5 py-0.5 rounded-full inline-block font-mono">
@@ -208,7 +207,7 @@ export default function AboutTab() {
               <h3 className="font-bold text-slate-900 text-sm group-hover:text-violet-800 transition-colors">{rec.title}</h3>
               <p className="text-[11px] text-slate-500 font-semibold">{rec.venue}</p>
               <p className="text-xs text-slate-500 font-light leading-relaxed pt-1">{rec.desc}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

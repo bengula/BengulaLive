@@ -76,8 +76,10 @@ html { scroll-behavior: smooth; }
   transform-origin: top right;
   transition: opacity 180ms ease, transform 180ms ease, visibility 180ms;
 }
-.nav-more:hover .nav-more-menu,
-.nav-more:focus-within .nav-more-menu {
+/* Driven by the component's own open state rather than `:hover`, so that the
+   button's aria-expanded is always the truth, a tap opens the menu on a touch
+   screen, and Escape can close it. */
+.nav-more.is-open .nav-more-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0) scale(1);
@@ -763,4 +765,115 @@ textarea:focus-visible {
   .sheen::after {
     transition: none !important;
   }
+}
+
+/* ── Long-form article reading layout ───────────────────────────────
+   The article body used to run the full 1216px content width at 14px —
+   about 160 characters a line, far past the ~75 where the eye starts
+   losing its place between lines. The body now sits in a measured
+   column, with a sticky contents rail in the gutter on wide screens. */
+.article-layout {
+  display: grid;
+  /* The measure lives on the track, not on the column box: an `auto` margin
+     on a grid item opts it out of stretching and sizes it to its own content,
+     which let the article run wider than the phone viewport. */
+  grid-template-columns: minmax(0, 46rem);
+  justify-content: center;
+  gap: 2.5rem;
+}
+.article-column { min-width: 0; }
+.article-aside { display: none; }
+
+@media (min-width: 1280px) {
+  .article-layout {
+    grid-template-columns: minmax(0, 46rem) 17rem;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: start;
+  }
+  .article-aside {
+    display: block;
+    position: sticky;
+    top: 5.5rem;
+    max-height: calc(100vh - 7.5rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
+
+/* Reading typography — deliberately larger, darker and looser than the UI
+   copy the same markdown components render elsewhere on the site. Scoped to
+   direct children so cards, tables and callouts keep their own compact type. */
+.article-prose > p,
+.article-prose > blockquote p {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: #334155;
+}
+.article-prose > ul,
+.article-prose > ol {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #334155;
+}
+.article-prose > ul > li + li,
+.article-prose > ol > li + li {
+  margin-top: 0.4rem;
+}
+.article-prose > h2 { font-size: 1.625rem; }
+.article-prose > h3 { font-size: 1.3rem; }
+
+/* Anchor jumps have to clear the sticky header and the rate ticker. */
+.article-prose > h2,
+.article-prose > h3 {
+  scroll-margin-top: 6.5rem;
+}
+
+/* Three-up card rows are cramped in the narrower reading column. */
+@media (min-width: 768px) {
+  .article-prose > div[class*="grid-cols-3"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* KaTeX display blocks are wider than a phone screen often enough that they
+   used to drag the whole page into horizontal scroll. Let the formula scroll
+   inside its own box instead. */
+.article-prose .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-block: 2px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ── Whole-card links ───────────────────────────────────────────────
+   Article and recognition cards used to be plain <div>s with an onClick,
+   which meant the keyboard could not reach them, middle-click and
+   "open in new tab" did nothing, and crawlers saw no link at all. The
+   card now stays a container and one real anchor inside it covers the
+   whole surface; the controls that sit on top (like, share) opt back in
+   above the cover so they stay clickable. */
+.card-link-surface { position: relative; }
+.stretched-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.card-link-actions { position: relative; z-index: 2; }
+
+/* Ring the whole card, not just the title the anchor wraps. */
+.card-link-surface:has(.stretched-link:focus-visible) {
+  outline: 3px solid rgba(124, 58, 237, 0.28);
+  outline-offset: 3px;
+}
+.stretched-link:focus-visible { outline: none; }
+
+/* The mobile nav panel lists every section; on a short phone that is
+   taller than what is left of the viewport under the sticky header, so
+   it scrolls itself rather than running off the bottom unreachably. */
+.mobile-nav-panel {
+  max-height: calc(100vh - 8.5rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
