@@ -4,7 +4,7 @@
  *
  * Scrolling market ticker — all figures are official Central Bank of Kenya data
  * parsed at build time from the CSVs in /data (see src/data/cbkRates.ts).
- * Update them by editing data/forex.csv / data/key-rates.csv and pushing.
+ * A scheduled GitHub Action re-scrapes CBK and commits them twice a day.
  */
 
 import React from 'react';
@@ -33,7 +33,7 @@ export default function RateTicker() {
       ))}
 
       <span className="text-slate-500">•</span>
-      <span className="text-slate-400">CBK indicative · {exchangeRates.asOf}</span>
+      <span className="text-slate-400">CBK indicative FX as of {exchangeRates.asOf}</span>
     </div>
   );
 
@@ -50,7 +50,7 @@ export default function RateTicker() {
       <div className="hidden sm:flex absolute right-0 top-0 h-full items-center pl-10 bg-gradient-to-l from-violet-950 from-50% to-transparent">
         <span className="flex h-full items-center gap-1.5 bg-violet-950 pl-3 pr-4">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-glow"></span>
-          <span className="text-emerald-300">CBK · {exchangeRates.asOf}</span>
+          <span className="text-emerald-300">CBK FX as of {exchangeRates.asOf}</span>
         </span>
       </div>
     </div>

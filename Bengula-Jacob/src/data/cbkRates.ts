@@ -3,12 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * Market rates, parsed at BUILD TIME from CSVs committed in /data:
- *   • data/forex.csv      — CBK "Trade Weighted Average Indicative Rates"
- *                           (download from https://www.centralbank.go.ke/forex/)
+ *   • data/forex.csv      — CBK indicative exchange rates (latest day only)
  *   • data/key-rates.csv  — CBK Key Rates (Central Bank Rate, T-Bill, etc.)
  *
- * To update rates, edit those CSVs (locally OR directly on GitHub) and push —
- * Cloudflare rebuilds and the new numbers go live. No code change needed.
+ * Both are refreshed from https://www.centralbank.go.ke/forex/ twice a day by
+ * scripts/scrape-cbk-rates.mjs (GitHub Action "Update CBK rates"); its commit
+ * triggers the Cloudflare rebuild. You can still edit them by hand and push.
  */
 
 import forexCsv from '../../data/forex.csv?raw';
