@@ -182,6 +182,21 @@ export default function BlogTab() {
     return blogPosts.find(p => p.id === currentActivePostId);
   }, [currentActivePostId]);
 
+  // Most articles open their body with the cover photo again, captioned. Shown
+  // under the cover that already heads the page it is the same picture twice,
+  // a full screen apart, so the leading copy is lifted out of the body and its
+  // caption moves under the cover. Compared without the query string, since
+  // the two copies usually ask the CDN for different widths.
+  const { body: articleBody, caption: coverCaption } = useMemo(() => {
+    if (!activePost) return { body: '', caption: undefined };
+    const cover = activePost.coverImage ?? categoryImage(activePost.category, 1200);
+    const lead = activePost.content.match(/^\s*!\[[^\]]*\]\((\S+?)(?:\s+"([^"]*)")?\)[ \t]*(?:\r?\n|$)/);
+    if (!lead || lead[1].split('?')[0] !== cover.split('?')[0]) {
+      return { body: activePost.content, caption: undefined };
+    }
+    return { body: activePost.content.slice(lead[0].length), caption: lead[2] };
+  }, [activePost]);
+
   // Section headings of the open article, used by the contents rail.
   const headings = useMemo(
     () => (activePost ? extractHeadings(activePost.content) : []),
@@ -369,13 +384,18 @@ export default function BlogTab() {
           <div className="article-layout mt-6">
             <article className="article-column space-y-6">
               {/* Cover image */}
-              <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-xs aspect-[16/7]">
-                <img
-                  src={activePost.coverImage ?? categoryImage(activePost.category, 1200)}
-                  alt={activePost.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <figure className="space-y-2">
+                <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-xs aspect-[16/7]">
+                  <img
+                    src={activePost.coverImage ?? categoryImage(activePost.category, 1200)}
+                    alt={activePost.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {coverCaption && (
+                  <figcaption className="text-xs text-slate-500 italic px-1">{coverCaption}</figcaption>
+                )}
+              </figure>
 
               {/* Featured Header */}
               <div className="space-y-4 border-b border-slate-100 pb-6 pt-4">
@@ -383,7 +403,7 @@ export default function BlogTab() {
                   {activePost.category}
                 </span>
 
-                <h1 className="text-2xl md:text-3xl font-extrabold text-slate-950 leading-tight">
+                <h1 className="text-2xl md:text-3xl xl:text-4xl font-extrabold text-slate-950 leading-tight">
                   {activePost.title}
                 </h1>
 
@@ -452,7 +472,7 @@ export default function BlogTab() {
 
               {/* Body Narrative details */}
               <div className="article-prose space-y-5 prose prose-slate font-sans pb-8">
-                <MarkdownContent content={activePost.content} components={headingComponents} />
+                <MarkdownContent content={articleBody} components={headingComponents} />
               </div>
 
 
