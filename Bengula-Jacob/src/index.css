@@ -768,16 +768,18 @@ textarea:focus-visible {
 }
 
 /* ── Long-form article reading layout ───────────────────────────────
-   The article body used to run the full 1216px content width at 14px —
-   about 160 characters a line, far past the ~75 where the eye starts
-   losing its place between lines. The body now sits in a measured
-   column, with a sticky contents rail in the gutter on wide screens. */
+   The article body used to run the full 1216px content width at 14px,
+   about 160 characters a line. It now sits in a measured column, with a
+   sticky contents rail beside it on wide screens. The column takes all
+   the width the rail leaves rather than a fixed 46rem: the fixed track
+   left a dead gutter between text and rail on big monitors, and the
+   larger type below keeps the line length readable at that width. */
 .article-layout {
   display: grid;
   /* The measure lives on the track, not on the column box: an `auto` margin
      on a grid item opts it out of stretching and sizes it to its own content,
      which let the article run wider than the phone viewport. */
-  grid-template-columns: minmax(0, 46rem);
+  grid-template-columns: minmax(0, 54rem);
   justify-content: center;
   gap: 2.5rem;
 }
@@ -786,9 +788,9 @@ textarea:focus-visible {
 
 @media (min-width: 1280px) {
   .article-layout {
-    grid-template-columns: minmax(0, 46rem) 17rem;
-    justify-content: space-between;
-    gap: 3rem;
+    grid-template-columns: minmax(0, 1fr) 16rem;
+    justify-content: stretch;
+    gap: 2.5rem;
     align-items: start;
   }
   .article-aside {
@@ -819,6 +821,31 @@ textarea:focus-visible {
 .article-prose > ul > li + li,
 .article-prose > ol > li + li {
   margin-top: 0.4rem;
+}
+/* The wide-screen column is wider, so the type grows with it to keep the
+   line near 90 characters. */
+@media (min-width: 1280px) {
+  .article-prose > p,
+  .article-prose > blockquote p,
+  .article-prose > ul,
+  .article-prose > ol {
+    font-size: 1.125rem;
+  }
+}
+/* On the widest screens the article shell itself grows (App.tsx), so the
+   rail and the type grow again rather than leaving the room as margin. */
+@media (min-width: 1536px) {
+  .article-layout {
+    grid-template-columns: minmax(0, 1fr) 18rem;
+    gap: 3rem;
+  }
+  .article-prose > p,
+  .article-prose > blockquote p,
+  .article-prose > ul,
+  .article-prose > ol {
+    font-size: 1.1875rem;
+    line-height: 1.8;
+  }
 }
 .article-prose > h2 { font-size: 1.625rem; }
 .article-prose > h3 { font-size: 1.3rem; }

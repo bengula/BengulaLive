@@ -294,7 +294,14 @@ export default function Layout() {
       </header>
 
       {/* Main Page Area — routed content */}
-      <main id="main-content" className="page-shell flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-14">
+      {/* Article pages run wider on big monitors, so the reading column and
+          contents rail fill the room instead of leaving it as side margin. */}
+      <main
+        id="main-content"
+        className={`page-shell flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-14 ${
+          pathname.startsWith('/blog/') ? '2xl:max-w-[96rem]' : ''
+        }`}
+      >
         <div key={pathname} className="animate-fadeIn">
           <Outlet />
         </div>
