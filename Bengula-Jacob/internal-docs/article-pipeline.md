@@ -1,7 +1,7 @@
 # Bengula Article Pipeline
 
 Internal planning document. Not deployed (internal-docs is excluded from the build).
-Last updated: 26 September 2026.
+Last updated: 1 November 2026.
 
 House rules for every piece (from the Brand & Editorial Style Guide v2.0 plus owner overrides):
 - Title Case headings, no em dashes, British/Kenyan spelling, "KES" never "KSh" or "Kshs".
@@ -597,7 +597,7 @@ The largest single gap in the library and a candidate for a pillar of its own. S
 | ID | Working Title | Verdict | Main gap / caution |
 |---|---|---|---|
 | L1 | Data Protection for Kenyan SMEs: ODPC Registration, Consent and What a Breach Costs | **Shipped 26 September 2026** | Published as [data-protection-smes-odpc-kenya] (technology/, Digital Strategy). Explains who must register, the reality of consent vs contract, the marketing trap, and ODPC administrative penalties. |
-| L2 | The County Layer: Single Business Permits and Devolved Levies | **Adjust** | `single business permit` returns zero, but regimes differ by county. Needs a framing that teaches the structure rather than quoting 47 fee schedules. |
+| L2 | The County Layer: Single Business Permits and Devolved Levies | **Shipped 1 November 2026** | Published as [county-business-permits-levies-kenya] (business-trade/, SME Finance). Adjust condition met: teaches the structure (Art. 209 and Fourth Schedule powers, what each county charge pays for, how Finance Acts set fees) and owns the **County Licensing (Uniform Procedures) Act 2024**: 28-day deemed approval (s.13), one-year validity from issue (s.17(3)) against the calendar-year practice, 14-day cancellation notice, 21-day review, KES 1M penalty. No county fee schedule quoted. |
 
 - **Links:** C9 digital growth, eTIMS, new-business-banking-journey, C3 SME handbook. Folder: `technology/` for L1, `business-trade/` for L2.
 
@@ -607,7 +607,7 @@ The largest single gap in the library and a candidate for a pillar of its own. S
 |---|---|---|---|
 | T1 | Tax Residency and Foreign Income: Remote Work, Diaspora Returns and Double Taxation | **Shipped 26 September 2026** | Published as [tax-residency-foreign-income-kenya] (investing/, Wealth Optimization). Covers physical presence tests (183 days, averaging), taxation of remote work, non-resident taxes on Kenyan income, and Double Taxation Agreements (DTAs). |
 | H1 | Paying for University: HELB, Education Policies and Fee Plans | **Shipped 26 September 2026** | Published as [paying-for-university-helb-kenya] (investing/, Wealth Optimization). Explains HELB mechanics, the new NHEF means-tested model, and using private education policies vs bond ladders for the household contribution gap. |
-| H2 | Money and Marriage: Matrimonial Property, Joint Accounts and What Splits | **Adjust** | `matrimonial` already appears inside E3 and C1. Needs an angle that does not re-own the trust and succession material. |
+| H2 | Money and Marriage: Matrimonial Property, Joint Accounts and What Splits | **Shipped 1 November 2026** | Published as [money-marriage-matrimonial-property-kenya] (investing/, Wealth Optimization). Adjust condition met: both spouses alive throughout; death, succession and trusts are linked out to R3-10, E2 and E3. Owns s.6 definition, contribution (s.2, s.7), JOO v MBO (2023) on Art. 45(3), s.14 presumptions, s.10 shared liabilities, s.12 and Land Act s.79(3) consent, s.6(3)/(4) prenups, and the contributions file. |
 
 ### Cluster R: Retail Operating Economics
 
@@ -615,8 +615,8 @@ Lower priority and included only where the question is genuinely financial. The 
 
 | ID | Working Title | Verdict | Main gap / caution |
 |---|---|---|---|
-| R5-1 | What Rent Should Cost: Occupancy Ratios, Lease Terms and Deposits | **Ready** | A ratio question, which is on-brand. Sits beside [sme-financial-ratios-kenya]. |
-| R5-2 | Running the Shop You Are Not Standing In: Cash Controls and Reconciliation | **Adjust** | Only worth it if it holds ground the 13-week forecast and the M-Pesa collection piece do not already cover. |
+| R5-1 | What Rent Should Cost: Occupancy Ratios, Lease Terms and Deposits | **Shipped 1 November 2026** | Published as [business-rent-occupancy-cost-kenya] (business-trade/, SME Finance). Occupancy cost ratio and rent-as-share-of-gross-profit formulas, required-sales worked example, escalation table, up-front package, and the Cap 301 five-year line (s.2, s.4(4) two months, s.4(5), BPRT). Ratio ranges labelled expert judgment. |
+| R5-2 | Running the Shop You Are Not Standing In: Cash Controls and Reconciliation | **Shipped 1 November 2026** | Published as [absentee-owner-cash-controls-kenya] (business-trade/, SME Finance). Adjust condition met: owns the controls layer between forecast and collection (leak patterns, present-absent test, role separation, daily close with blind count and variance tolerance, imprest petty cash, shrinkage). Forecast and till/paybill mechanics linked out, not repeated. |
 
 ### Verify Before Drafting (Round Five)
 
@@ -667,7 +667,7 @@ Enforcement core first, because it is the biggest hole and the strongest demand,
 2. ~~**S1 (deduction stack)**~~ then ~~**S2 (terminal dues)**~~
 3. ~~**F3 (creditor recovery)**~~ then ~~**F6 (insolvency)**~~
 4. ~~**L1 (data protection)**~~ then ~~**T1 (tax residency)**~~ then ~~**H1 (HELB)**~~
-5. ~~**F4**~~, **L2, H2, R5-1, R5-2** as capacity allows, each subject to its Adjust condition being met
+5. ~~**F4**~~, ~~**L2, H2, R5-1, R5-2**~~ shipped 1 November 2026. **Round Five is complete.**
 
 ### Deliberately Not Doing
 
@@ -848,3 +848,29 @@ Note: reverse links from existing companions into this batch not yet added (forw
 | G8 | diaspora-land-purchase-kenya | investing/ |
 | P3-2 | data-driven-inventory-small-shops-kenya | technology/ |
 | G10 | whatsapp-sales-channel-kenya | technology/ |
+
+---
+
+## Shipped 1 November 2026 (Round Five tail: L2, H2, R5-1, R5-2)
+
+| ID | Published slug | Folder | Category | Words |
+|---|---|---|---|---:|
+| L2 | county-business-permits-levies-kenya | business-trade/ | SME Finance | ~3,600 |
+| H2 | money-marriage-matrimonial-property-kenya | investing/ | Wealth Optimization | ~3,500 |
+| R5-1 | business-rent-occupancy-cost-kenya | business-trade/ | SME Finance | ~3,100 |
+| R5-2 | absentee-owner-cash-controls-kenya | business-trade/ | SME Finance | ~3,000 |
+
+**Covers:** Pexels 6358840 (stamp), 6963888 (couple with paperwork), 17580992 (units to let), 30020992 (shopkeeper). Each checked to return `image/jpeg`, viewed for topicality, and confirmed absent from every existing cover and body image.
+
+**Reverse links wired (4):** 13-week forecast to R5-2, wills and nominees to H2, SME financial ratios to R5-1, new business banking journey to L2.
+
+**Verification notes, because these are the claims most likely to be challenged:**
+- **County Licensing (Uniform Procedures) Act, No. 8 of 2024** read from the full published text (assent 28 June 2024, commencement 28 December 2024): ss. 7 to 10, 13, 15 to 17, 20 to 24 and the general penalty. Implementing regulations (reported as LN 91 of 2025) were **not** verified and are not cited. The s.17(3) one-year-from-issue reading against calendar-year practice is presented as the desk's working view; no court decision on it was found.
+- **Nairobi Unified Business Permit:** the bundle (trade, fire, health, signage) is described as Nairobi presents it. The widely repeated "31 March deadline and 3% a month penalty" could only be confirmed for **property rates** in the Nairobi City County Finance Act 2023, so the article states no UBP deadline or penalty.
+- **Matrimonial Property Act:** ~~ss.6, 7, 10, 12, 14 from secondary quotation~~ **resolved 1 November 2026: the owner supplied the full text** (Cap 152, revised by LN 221 of 2023 to 31 December 2022), and H2 was checked against every section. Corrections made: **s.12(5)** requires the written and informed consent of both spouses to mortgage or lease the matrimonial home and is **not** limited to monogamous marriages (the draft had called the polygamous position unclear); s.9 gives a beneficial interest **equal to** the contribution, not proportional; added s.3 (Islamic law), s.5 (pre-marriage and inherited property excluded), s.6(2) (trust and customary trust property excluded), s.2 matrimonial home includes leased property, s.8 polygamous rules stated precisely, s.11 customary law, s.12(2) caveat, s.12(3) and (4) eviction, s.15 gifts presumption, s.16 antecedent debts, and s.17 declaration without divorce. JOO v MBO and MNK v POM (both 27 January 2023) confirmed from the Supreme Court record listings and multiple summaries.
+- **Cap 301:** s.4(4) two-month minimum and s.4(5) grounds and one-month reply read from the section text and confirmed by BPRT rulings 2021 to 2025. **Stamp duty on leases (1% up to three years, 2% longer)** is secondary-source only and is flagged in the article as confirm-current.
+- **R5-1 occupancy ratio ranges, escalation and deposit levels, and all of R5-2's tolerances,** are labelled expert judgment or market observation in the text, per section 4.7 of the style guide.
+
+### What Is Left
+
+The written backlog is empty again. **KESONIA loan pricing** remains the only blocked item (owner's Absa example). Round Six needs sourcing before more drafting.

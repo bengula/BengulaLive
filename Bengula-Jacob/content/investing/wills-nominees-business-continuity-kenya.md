@@ -199,6 +199,7 @@ None of this requires wealth to matter. It requires a family, or a business, or 
 - [The New Business Banking Journey](/blog/new-business-banking-journey-kenya) for account mandates, signatories and dual authorisation.
 - [Business Valuation in Kenya](/blog/business-valuation-kenya-guide) for what the shares in your estate are actually worth.
 - [Retirement Planning in Kenya](/blog/retirement-planning-kenya-guide) for the accumulation side that feeds all of this.
+- [Money and Marriage in Kenya](/blog/money-marriage-matrimonial-property-kenya) for what the law says about matrimonial property while both spouses are alive.
 
 ### References
 
