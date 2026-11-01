@@ -801,6 +801,18 @@ const markdownComponents: Components = {
     const code = String(children).replace(/\n$/, "");
 
     if (!language) {
+      // An untagged fence carrying newlines is a block (ASCII art, plain output),
+      // not inline code: inline styling would collapse it into a single line.
+      if (code.includes("\n")) {
+        return (
+          <figure className="my-5 overflow-hidden rounded-xl border border-slate-200 bg-slate-950 shadow-xs">
+            <pre className="overflow-x-auto p-4 text-xs leading-relaxed text-slate-100">
+              <code>{code}</code>
+            </pre>
+          </figure>
+        );
+      }
+
       return (
         // break-words: a long identifier or formula in inline code used to
         // push the whole page wider than a phone screen.
