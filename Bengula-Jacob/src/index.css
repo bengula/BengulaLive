@@ -832,6 +832,21 @@ textarea:focus-visible {
     font-size: 1.125rem;
   }
 }
+/* On the widest screens the article shell itself grows (App.tsx), so the
+   rail and the type grow again rather than leaving the room as margin. */
+@media (min-width: 1536px) {
+  .article-layout {
+    grid-template-columns: minmax(0, 1fr) 18rem;
+    gap: 3rem;
+  }
+  .article-prose > p,
+  .article-prose > blockquote p,
+  .article-prose > ul,
+  .article-prose > ol {
+    font-size: 1.1875rem;
+    line-height: 1.8;
+  }
+}
 .article-prose > h2 { font-size: 1.625rem; }
 .article-prose > h3 { font-size: 1.3rem; }
 
