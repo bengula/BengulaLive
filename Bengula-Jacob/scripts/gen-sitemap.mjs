@@ -27,6 +27,8 @@ const today = new Date().toISOString().slice(0, 10);
 const urls = walk(DIST)
   .map((f) => f.slice(DIST.length + 1).replace(/\\/g, "/").replace(/\.html$/, ""))
   .filter((rel) => rel !== "404")
+  // /desk/ is a private, password-locked tool: keep it out of the sitemap.
+  .filter((rel) => !rel.startsWith("desk/"))
   .map((rel) => ({
     loc: rel === "index" ? `${SITE}/` : `${SITE}/${rel}`,
     lastmod: articleDates.get(rel) ?? today,
