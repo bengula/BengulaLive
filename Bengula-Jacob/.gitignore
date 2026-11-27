@@ -24,3 +24,8 @@ internal-docs/*
 
 # Obsidian vault settings (workspace.json churns on every session)
 content/.obsidian/
+
+# local tool caches and scratch work (never part of the site)
+.vite/
+.antigravity/
+scratch/
